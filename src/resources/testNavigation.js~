@@ -1,0 +1,95 @@
+/* Esta funciï¿½n rellena el combo para seleccionar un test. Se genera de forma automï¿½tica durante la construcciï¿½n de los test. Se genera
+con enlaces a los test que se han generado.
+
+* Una vez generados todos los tests, se generan las funciones de navegación, poniendo enlaces a todos los 
+* los test que se hayan generado en el árbol de directorios.
+*/
+
+
+
+function addOption(theSel, theValue, theText)
+{
+		  var newOpt = new Option(theText, theValue);
+		  var selLength = theSel.length;
+		  theSel.options[selLength] = newOpt;
+}
+
+function deleteOption(theSel, theIndex)
+{ 
+		 var selLength = theSel.length;
+		  	if(selLength>0)
+		  	{
+		  	  theSel.options[theIndex] = null;
+		  }
+}
+
+
+function renderTestSelector(){
+
+	var box = document.getElementById('test_navigation');
+	
+##FLAG
+}
+
+
+function renderTestSelectorBloque(bloque){
+
+	var box = document.getElementById('test_navigation');
+
+##FLAG
+
+}
+
+
+function renderTestSelectorTematica(){
+
+	var boxTema = document.getElementById('tema_navigation');
+	var tema = boxTema.options[boxTema.selectedIndex].value;
+	var box = document.getElementById('test_navigation');
+
+
+	// Borramos lo que hubiera de antes
+	for (i = box.length - 1; i>=0; i--) {
+		deleteOption(box, i);
+	    }
+
+
+	// Cargamos los valores de cada temï¿½tica
+##FLAG
+
+}
+
+function renderTemas() {
+		var box = document.getElementById('tema_navigation');
+
+##FLAG
+
+}
+
+
+//////// Menú de navegación.
+
+function addElement(theList, theText, theHref, selected){
+
+
+	// Create a new <li> element for to insert inside <ul id="myList">
+	var new_element = document.createElement('li');
+	//new_element.innerHTML = 'jkf';
+	if (selected == 1) 
+		new_element.setAttribute ('class', 'current_page_item')
+	new_element.innerHTML = '<a href="' + theHref  +'">' + theText + '</a>';
+
+	// Add new listItem to List
+	theList.insertBefore(new_element, theList.firstChild);
+}
+
+
+
+function renderMenuTest (){
+
+	var list = document.getElementById('menuTest');
+
+
+##FLAG
+
+}

@@ -1,0 +1,8 @@
+# Tests que vamos a hacer
+test.number=6000,6001
+
+# Palabras clave que vamos a buscar en cada test.
+test.6000.keywords=hola,doce;
+
+# Palabras clave que vamos a buscar en cada test.
+test.6001.keywords=123,56;
