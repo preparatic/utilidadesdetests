@@ -23,6 +23,10 @@ import java.util.Iterator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.preparatic.csvreaders.FicheroExcel;
+import com.preparatic.csvreaders.IExcel;
+import com.preparatic.csvreaders.PreguntaTest;
+
 class RevisorTest {
 
 	private static Logger logger = LogManager.getLogger(RevisorTest.class);
@@ -31,7 +35,7 @@ class RevisorTest {
 		
 		logger.info("Corrección de tests en excel y su exportación a MySQL.");
 		
-		FicheroExcel ficheroExcel = new FicheroExcel();
+		IExcel ficheroExcel = new FicheroExcel();
 		GestorConsultas gestorConsultas = new GestorConsultas();
 
 		// Abrimos el excel

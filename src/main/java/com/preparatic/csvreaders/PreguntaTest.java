@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.preparatic.revisortests;
+package com.preparatic.csvreaders;
 
 import java.util.ArrayList;
 
@@ -22,27 +22,27 @@ public class PreguntaTest {
 	// Si cambia el orden o la cantidad de columnas del excel, solo habrá que
 	// modificar este atributo.
 	private enum Campo {
-		PREGUNTA(0), 
-		BLANCO(1), // Columna en blanco
-		RESPUESTA_A(2), 
-		RESPUESTA_B(3), 
-		RESPUESTA_C(4), 
-		RESPUESTA_D(5), 
-		RESPUESTA_CORRECTA(6), 
-		BLOQUE(7), 
-		AUTOR(8), 
-		PROMOCION(9), 
-		ANNO_CREACION(10), 
-		OBSERVACIONES(11), 
-		NUMERO_TEST(12), 
-		NUMERO_PREGUNTA(13), 
-		ID(14), 
-		TEMAS(15), 
-		REVISADA(16), 
-		ESTADO(17), 
-		REVISOR(18), 
-		SENTENCIA(19),
-
+		PREGUNTA(0),  // A
+		//BLANCO(1), // Columna en blanco
+		RESPUESTA_A(1), // B
+		RESPUESTA_B(2), // C
+		RESPUESTA_C(3), // D
+		RESPUESTA_D(4), //E
+		RESPUESTA_CORRECTA(5), // F 
+		BLOQUE(6), // G
+		AUTOR(7), // H
+		PROMOCION(8),  // I
+		ANNO_CREACION(9), // J
+		OBSERVACIONES(10), // K
+		NUMERO_TEST(11), // L
+		NUMERO_PREGUNTA(12), // M
+		ID(13),  // N
+		TEMAS(14),  // O
+		REVISADA(15),  // P
+		ESTADO(16),  // Q
+		REVISOR(17),  // R
+		SENTENCIA(18), // S
+		NOTAS(19), // T
 		NUM_COLUMNAS(20); // Número total de columnas en el excel.
 
 		public int index; // Número de columna del excel que se corresponde con
@@ -75,7 +75,8 @@ public class PreguntaTest {
 	private String estado;
 	private String revisor;
 	private String sentencia;
-
+	private String notas;
+	
 	public PreguntaTest() {
 	}
 
@@ -99,6 +100,7 @@ public class PreguntaTest {
 		this.setEstado(celdas.get(Campo.ESTADO.index));
 		this.setRevisor(celdas.get(Campo.REVISOR.index));
 		this.setSentencia(celdas.get(Campo.SENTENCIA.index));
+		this.setNotas(celdas.get(Campo.NOTAS.index));
 	}
 
 	@Override
@@ -124,9 +126,10 @@ public class PreguntaTest {
 		cadena = cadena + "Estado: " + this.estado + "\n";
 		cadena = cadena + "Revisor: " + this.revisor + "\n";
 		cadena = cadena + "Sentencia: " + this.sentencia + "\n";
-
+		cadena = cadena + "Notas: " + this.notas + "\n";
 		return cadena;
 	}
+
 
 	@Override
 	public int hashCode() {
@@ -293,4 +296,12 @@ public class PreguntaTest {
 		this.sentencia = sentencia;
 	}
 
+
+	public String getNotas() {
+		return notas;
+	}
+
+	public void setNotas(String notas) {
+		this.notas = notas;
+	}
 }

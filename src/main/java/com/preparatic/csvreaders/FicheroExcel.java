@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.preparatic.revisortests;
+package com.preparatic.csvreaders;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -27,7 +27,7 @@ import org.apache.poi.ss.usermodel.Row;
 import com.preparatic.ConfigProperties;
 
 
-public class FicheroExcel {
+public class FicheroExcel implements IExcel {
 
 	private HSSFWorkbook fichero;
 	private ArrayList<PreguntaTest> listaPreguntas;
@@ -37,6 +37,9 @@ public class FicheroExcel {
 		this.setListaPreguntas(null);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.preparatic.revisortests.IExcel#abrirExcel()
+	 */
 	public void abrirExcel() throws IOException {
 		FileInputStream excel = new FileInputStream(new File(ConfigProperties.getProperty("excel.ruta")));
 		// Crear el objeto que tendra el libro de Excel
@@ -94,6 +97,9 @@ public class FicheroExcel {
 		this.fichero = fichero;
 	}
 
+	/* (non-Javadoc)
+	 * @see com.preparatic.revisortests.IExcel#getListaPreguntas()
+	 */
 	public ArrayList<PreguntaTest> getListaPreguntas() {
 		return listaPreguntas;
 	}

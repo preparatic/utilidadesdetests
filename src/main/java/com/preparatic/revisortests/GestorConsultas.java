@@ -25,6 +25,7 @@ import java.util.Iterator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.preparatic.csvreaders.PreguntaTest;
 import com.preparatic.entidades.GestorConexionBD;
 
 public class GestorConsultas {
