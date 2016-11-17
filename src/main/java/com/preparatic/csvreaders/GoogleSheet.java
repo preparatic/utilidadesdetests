@@ -110,8 +110,14 @@ public class GoogleSheet implements IExcel {
 				int line = 0;
 				for (List row : values) {
 					line++;
-					if (row.isEmpty() || row.get(0).toString().isEmpty()) {
+					if (row.isEmpty() || 
+							row.get(0).toString().isEmpty() ||
+							row.get(1).toString().isEmpty() ||
+							row.get(2).toString().isEmpty() ||
+							row.get(3).toString().isEmpty() ||
+							row.get(4).toString().isEmpty()) {
 						System.out.printf("Empty row at position %d\n", line);
+						continue;
 					}
 					// Print question and line number
 					System.out.printf("Question number %d: %s\n", line, row.get(0));

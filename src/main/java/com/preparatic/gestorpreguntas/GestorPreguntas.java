@@ -39,8 +39,6 @@ public class GestorPreguntas {
 
 	ArrayList<Integer> ListaPregunta;
 
-	// private static Logger logger = Logger.getLogger(TemaBD.class);
-
 	public GestorPreguntas() {
 		ListaPregunta = new ArrayList<Integer>();
 	}
@@ -96,7 +94,7 @@ public class GestorPreguntas {
 	}
 
 	/**
-	 * Se aÃ±ade esta pregunta al tema, para que luego sea elegible.
+	 * Se añde esta pregunta al tema, para que luego sea elegible.
 	 * 
 	 * @param pregunta
 	 */

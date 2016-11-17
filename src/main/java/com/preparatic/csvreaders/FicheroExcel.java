@@ -52,7 +52,7 @@ public class FicheroExcel implements IExcel {
 		this.listaPreguntas = new ArrayList<PreguntaTest>();
 
 		/*
-		 * Obtenemos la primera pestaña que se quiera procesar indicando el
+		 * Obtenemos la primera pesta� que se quiera procesar indicando el
 		 * índice. Una vez obtenida la hoja excel con las filas que se quieren
 		 * leer obtenemos el iterator que nos permite recorrer cada una de las
 		 * filas que contiene.

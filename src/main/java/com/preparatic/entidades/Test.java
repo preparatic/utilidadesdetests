@@ -21,6 +21,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -28,6 +29,7 @@ import org.apache.logging.log4j.Logger;
 import com.preparatic.ConfigProperties;
 import com.preparatic.archivos.HtmlGenerator;
 import com.preparatic.archivos.PdfGenerator;
+import com.preparatic.csvreaders.PreguntaTest;
 
 /**
  * Un Test tiene la secuencia de identificadores de pregunta que se van a poner
@@ -52,8 +54,11 @@ public class Test {
 	private int idTest;
 	String tituloTematica;
 	private List<Integer> ListaPreguntas;
-	private static Integer NumPreguntas = Integer.parseInt(ConfigProperties
-			.getProperty("tests.num_preguntas_por_test")); // Número de
+	private static Integer NumPreguntas = Integer
+			.parseInt(ConfigProperties.getProperty("tests.num_preguntas_por_test")); // Número
+	private final int MaxNumPreguntas;
+	
+	// de
 	// preguntas que debe tener este test.
 	private static Logger logger = LogManager.getLogger(Test.class);
 
@@ -64,10 +69,19 @@ public class Test {
 		super();
 		this.tipoTest = eTipoTest.aleatorio;
 		this.idTest = idTest;
-		ListaPreguntas = new ArrayList<Integer>(Test.NumPreguntas);
+		MaxNumPreguntas = Test.NumPreguntas;
+		ListaPreguntas = new ArrayList<Integer>(MaxNumPreguntas);
 
 	}
+	
+	public Test(int idTest, int max) {
+		super();
+		this.tipoTest = eTipoTest.aleatorio;
+		this.idTest = idTest;
+		MaxNumPreguntas = max;
+		ListaPreguntas = new ArrayList<Integer>(MaxNumPreguntas);
 
+	}
 	/**
 	 * Generación de test por bloques o temáticas
 	 * 
@@ -77,7 +91,8 @@ public class Test {
 		this.tipoTest = tipoTest;
 		this.idBloqueTematicaAnho = idBloqueTematicaAnho;
 		this.idTest = idTest;
-		ListaPreguntas = new ArrayList<Integer>(Test.NumPreguntas);
+		MaxNumPreguntas = Test.NumPreguntas;
+		ListaPreguntas = new ArrayList<Integer>(MaxNumPreguntas);
 	}
 
 	/**
@@ -113,7 +128,7 @@ public class Test {
 	 * @return
 	 */
 	public boolean estaCompleto() {
-		return this.ListaPreguntas.size() >= Test.NumPreguntas;
+		return this.ListaPreguntas.size() >= MaxNumPreguntas;
 	}
 
 	private String sentenciaSQL = "";
@@ -131,8 +146,7 @@ public class Test {
 		// Generamos al azar la sentencia para extraer cosas de la base de
 		// datos.
 
-		StringBuilder sSql = new StringBuilder(
-				" SELECT *  FROM PREGUNTAS_TEST WHERE ");
+		StringBuilder sSql = new StringBuilder(" SELECT *  FROM PREGUNTAS_TEST WHERE ");
 		boolean esPrimero = true;
 		Random rnd = new Random();
 
@@ -170,9 +184,7 @@ public class Test {
 			return resultados;
 
 		} catch (Exception e) {
-			logger
-					.error("Error al extraer el contenido de las preguntas del test."
-							+ e.getMessage());
+			logger.error("Error al extraer el contenido de las preguntas del test." + e.getMessage());
 			logger.error(sSql);
 		}
 		return null;
@@ -197,15 +209,13 @@ public class Test {
 		// Para que no se aburran esperando, les ponemos un mensaje en la
 		// consola.
 		if (tipoTest == eTipoTest.bloque)
-			logger.info("Generando Test. Bloque " + idBloqueTematicaAnho + " Test "
-					+ idTest);
+			logger.info("Generando Test. Bloque " + idBloqueTematicaAnho + " Test " + idTest);
 		else if (tipoTest == eTipoTest.aleatorio)
 			logger.info("Generando Test. Test " + idTest);
 		else if (tipoTest == eTipoTest.anho)
 			logger.info("Generando Test Anho " + idBloqueTematicaAnho + " Test " + idTest);
 		else {
-			logger.info("Generando Test por temática. Temática"
-					+ tituloTematica + " Test " + idTest);
+			logger.info("Generando Test por temática. Temática" + tituloTematica + " Test " + idTest);
 			pdfGenerator.setTituloTematica(tituloTematica);
 		}
 
@@ -220,6 +230,42 @@ public class Test {
 		HtmlGenerator htmlGenerator = new HtmlGenerator(this);
 		htmlGenerator.generarTestHtml(resultados);
 
+		return true;
+	}
+
+	public boolean generarDocumentos(List<PreguntaTest> resultados, int TotalTestsBloque) {
+		if (resultados == null)
+			return false;
+		
+		// Genera el pdf
+		PdfGenerator pdfGenerator = new PdfGenerator(this);
+
+		// Para que no se aburran esperando, les ponemos un mensaje en la
+		// consola.
+		if (tipoTest == eTipoTest.bloque)
+			logger.info("Generando Test. Bloque " + idBloqueTematicaAnho + " Test " + idTest);
+		else if (tipoTest == eTipoTest.aleatorio)
+			logger.info("Generando Test. Test " + idTest);
+		else if (tipoTest == eTipoTest.anho)
+			logger.info("Generando Test Anho " + idBloqueTematicaAnho + " Test " + idTest);
+		else {
+			logger.info("Generando Test por temática. Temática" + tituloTematica + " Test " + idTest);
+			pdfGenerator.setTituloTematica(tituloTematica);
+		}
+		
+		try {
+			List<PreguntaTest> filteredList = resultados.stream() 
+						.filter(question -> ListaPreguntas.contains(question.getNumId()))
+						.collect(Collectors.toList());;
+			pdfGenerator.agregarPreguntas(filteredList);
+			pdfGenerator.guardarPDF();
+		} catch (Exception e) {
+			logger.error("Error al generar pdf" + e.getMessage());
+		}
+
+		// Genera el html
+				HtmlGenerator htmlGenerator = new HtmlGenerator(this);
+//				htmlGenerator.generarTestHtml(resultados);
 		return true;
 	}
 

@@ -16,6 +16,8 @@
 package com.preparatic.archivos;
 
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -29,6 +31,7 @@ import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.MultiColumnText;
 import com.lowagie.text.pdf.PdfWriter;
 import com.preparatic.ConfigProperties;
+import com.preparatic.csvreaders.PreguntaTest;
 import com.preparatic.entidades.Test;
 
 public class PdfGenerator {
@@ -66,7 +69,7 @@ public class PdfGenerator {
 	}
 
 	/**
-	 * AÃ±ade al test una colección de preguntas.
+	 * Añde al test una colección de preguntas.
 	 * 
 	 * @param resultados
 	 */
@@ -77,29 +80,58 @@ public class PdfGenerator {
 		}
 	}
 
+	public void agregarPreguntas(List<PreguntaTest> resultados) throws Exception {
+		// resultados.forEach(pt -> agregarPregunta(pt));
+
+		for (int i = 0; i < resultados.size(); ++i) {
+			agregarPregunta(resultados.get(i), i + 1 == resultados.size());
+		}
+	}
+
 	/**
-	 * AÃ±ade una pregunta al test.
+	 * Añde una pregunta al test.
 	 * 
 	 * @param resultados
 	 * @throws Exception
 	 */
+	private void agregarPregunta(PreguntaTest pregunta, boolean isLast) {
+		// Creamos una lista para las respuestas.
+		listaRespuestas = new com.lowagie.text.List(true, true);
+
+		listaRespuestas.add(new ListItem(pregunta.getRespuesta_a(), miFuentePregs));
+		listaRespuestas.add(new ListItem(pregunta.getRespuesta_b(), miFuentePregs));
+		listaRespuestas.add(new ListItem(pregunta.getRespuesta_c(), miFuentePregs));
+		listaRespuestas.add(new ListItem(pregunta.getRespuesta_d(), miFuentePregs));
+
+		// Incorporamos la lista de respuestas en un único Párrafo
+		Paragraph parrafoPregunta = new Paragraph(pregunta.getPregunta(), miFuentePregs);
+		parrafoPregunta.setKeepTogether(true);
+		parrafoPregunta.add(listaRespuestas);
+		if (!isLast)
+			parrafoPregunta.setSpacingAfter(distanciaInterPregunta);
+
+		// Metemos la pregunta como un Li en ListaPreguntas.
+		ListItem li = new ListItem(parrafoPregunta);
+		li.setKeepTogether(true);
+		listaPreguntas.add(li);
+		String cadenaSolucion = pregunta.getRespuesta_correcta().toUpperCase();
+		if (pregunta.getTemas() != null)
+			cadenaSolucion += " (T" + pregunta.getTemas() + ")";
+		listaSoluciones.add(new ListItem(cadenaSolucion, miFuenteSols));
+	}
+
 	private void agregarPregunta(ResultSet resultados) throws Exception {
 
 		// Creamos una lista para las respuestas.
 		listaRespuestas = new com.lowagie.text.List(true, true);
 
-		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_A"),
-				miFuentePregs));
-		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_B"),
-				miFuentePregs));
-		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_C"),
-				miFuentePregs));
-		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_D"),
-				miFuentePregs));
+		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_A"), miFuentePregs));
+		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_B"), miFuentePregs));
+		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_C"), miFuentePregs));
+		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_D"), miFuentePregs));
 
 		// Incorporamos la lista de respuestas en un único Párrafo
-		Paragraph parrafoPregunta = new Paragraph(
-				resultados.getString("PREGUNTA"), miFuentePregs);
+		Paragraph parrafoPregunta = new Paragraph(resultados.getString("PREGUNTA"), miFuentePregs);
 		parrafoPregunta.setKeepTogether(true);
 		parrafoPregunta.add(listaRespuestas);
 		if (!resultados.isLast())
@@ -109,8 +141,7 @@ public class PdfGenerator {
 		ListItem li = new ListItem(parrafoPregunta);
 		li.setKeepTogether(true);
 		listaPreguntas.add(li);
-		String cadenaSolucion = resultados.getString("RESPUESTA_CORRECTA")
-				.toUpperCase();
+		String cadenaSolucion = resultados.getString("RESPUESTA_CORRECTA").toUpperCase();
 		if (resultados.getString(7) != null)
 			cadenaSolucion += " (T" + resultados.getString("TEMAS") + ")";
 		listaSoluciones.add(new ListItem(cadenaSolucion, miFuenteSols));
@@ -127,41 +158,34 @@ public class PdfGenerator {
 		docpregs = new Document();
 		docsols = new Document();
 
-		PdfWriter.getInstance(
-				docpregs,
-				FactoriaArchivo.pdfTest(test.getTipoTest(),
-						test.getIdBloqueTematicaAnho(), test.getIdTest()));
-		PdfWriter.getInstance(
-				docsols,
-				FactoriaArchivo.pdfSol(test.getTipoTest(),
-						test.getIdBloqueTematicaAnho(), test.getIdTest()));
+		PdfWriter.getInstance(docpregs,
+				FactoriaArchivo.pdfTest(test.getTipoTest(), test.getIdBloqueTematicaAnho(), test.getIdTest()));
+		PdfWriter.getInstance(docsols,
+				FactoriaArchivo.pdfSol(test.getTipoTest(), test.getIdBloqueTematicaAnho(), test.getIdTest()));
 
 		docpregs.open();
 		docsols.open();
-		if ((test.getTipoTest() == Test.eTipoTest.bloque)
-				|| (test.getTipoTest() == Test.eTipoTest.anho))
+		if ((test.getTipoTest() == Test.eTipoTest.bloque) || (test.getTipoTest() == Test.eTipoTest.anho))
 			docsols.setMargins(120, 108, 72, 36);
 
-		// AÃ±adir logo
-		Image gif = Image.getInstance(ConfigProperties
-				.getProperty("files.rootDir") + "/images/logo.png");
+		// Añdir logo
+		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo.png");
 		gif.setAlignment(Image.LEFT);
 		docpregs.add(gif);
 		docsols.add(gif);
 
 		ponerTitulo(docpregs, docsols);
 
-		// AÃ±adimos las preguntas al documento de preguntas
+		// Añdimos las preguntas al documento de preguntas
 		docpregs.add(listaPreguntas);
 
 		/*
-		 * AÃ±adimos las respuestas, en varias columnas al documento de
+		 * Añdimos las respuestas, en varias columnas al documento de
 		 * respuestas.
 		 */
 		MultiColumnText multiColumnTextSoluciones = new MultiColumnText();
-		multiColumnTextSoluciones.addRegularColumns(docsols.left(), docsols
-				.right(), 10f, Integer.parseInt(ConfigProperties
-				.getProperty("tests.solucion.columnas")));
+		multiColumnTextSoluciones.addRegularColumns(docsols.left(), docsols.right(), 10f,
+				Integer.parseInt(ConfigProperties.getProperty("tests.solucion.columnas")));
 		multiColumnTextSoluciones.addElement(listaSoluciones);
 		docsols.add(multiColumnTextSoluciones);
 
@@ -183,13 +207,11 @@ public class PdfGenerator {
 
 		try {
 			// Ponemos los tÃ­tulos
-			Paragraph parrafo = new Paragraph(tituloPregs, new Font(
-					Font.UNDEFINED, Font.DEFAULTSIZE * 2, Font.BOLD));
+			Paragraph parrafo = new Paragraph(tituloPregs, new Font(Font.UNDEFINED, Font.DEFAULTSIZE * 2, Font.BOLD));
 			parrafo.setAlignment(Paragraph.ALIGN_CENTER);
 			docpregs.add(parrafo);
 
-			parrafo = new Paragraph(tituloSols, new Font(Font.UNDEFINED,
-					Font.DEFAULTSIZE * 2, Font.BOLD));
+			parrafo = new Paragraph(tituloSols, new Font(Font.UNDEFINED, Font.DEFAULTSIZE * 2, Font.BOLD));
 			parrafo.setAlignment(Paragraph.ALIGN_CENTER);
 			docsols.add(parrafo);
 
@@ -210,8 +232,7 @@ public class PdfGenerator {
 
 			// SubTÃ­tulo
 			if (subtitulo != "") {
-				parrafo = new Paragraph(subtitulo, new Font(Font.UNDEFINED,
-						Font.DEFAULTSIZE, Font.BOLD));
+				parrafo = new Paragraph(subtitulo, new Font(Font.UNDEFINED, Font.DEFAULTSIZE, Font.BOLD));
 				parrafo.setSpacingAfter(distanciaInterPregunta);
 				parrafo.setAlignment(Paragraph.ALIGN_CENTER);
 				docpregs.add(parrafo);

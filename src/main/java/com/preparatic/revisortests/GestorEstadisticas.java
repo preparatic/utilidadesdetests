@@ -96,7 +96,7 @@ public class GestorEstadisticas {
 		logger.info("***** Preguntas totales revisadas:" +  (numeroUPDATE+numeroDELETE+numeroINSERT));
 		logger.info("***** Preguntas totales actualizadas:" +  numeroUPDATE );
 		logger.info("***** Preguntas totales eliminadas:" + numeroDELETE);
-		logger.info("***** Preguntas totales aÃ±adidas:" + numeroINSERT);
+		logger.info("***** Preguntas totales añdidas:" + numeroINSERT);
 
 		if(numeroErroresTotales > 0){
 			logger.warn("***** " + listaErrores.size() + " errores detectados: *****\n");

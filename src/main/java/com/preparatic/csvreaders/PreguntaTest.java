@@ -251,7 +251,11 @@ public class PreguntaTest {
 	public String getId() {
 		return id;
 	}
-
+	public int getNumId() {
+		if(id == null || id.trim().isEmpty())
+			return -1;
+		return Integer.parseInt(id);
+	}
 	public void setId(String id) {
 		this.id = id;
 	}

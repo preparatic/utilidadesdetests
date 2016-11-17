@@ -25,7 +25,7 @@ public final class ReadGoogleSheet {
 
 	public static void main(String[] args) throws Exception {
 		
-		logger.info("Corrección de tests en excel y su exportación a MySQL.");
+		logger.info("Proceso de preguntas en excel y pruebas de tratamiento con Lambda.");
 		
 		IExcel ficheroExcel = CSVReaderFactory.GetCSVReader();
 		//GestorConsultas gestorConsultas = new GestorConsultas();

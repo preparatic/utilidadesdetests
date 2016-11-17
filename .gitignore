@@ -13,3 +13,4 @@ hs_err_pid*
 
 tests/pdf
 tests/html
+target/
