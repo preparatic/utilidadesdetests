@@ -31,7 +31,7 @@ import com.lowagie.text.Paragraph;
 import com.lowagie.text.pdf.MultiColumnText;
 import com.lowagie.text.pdf.PdfWriter;
 import com.preparatic.ConfigProperties;
-import com.preparatic.csvreaders.PreguntaTest;
+import com.preparatic.entidades.PreguntaTest;
 import com.preparatic.entidades.Test;
 
 public class PdfGenerator {

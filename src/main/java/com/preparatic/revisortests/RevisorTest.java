@@ -25,7 +25,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.preparatic.csvreaders.FicheroExcel;
 import com.preparatic.csvreaders.IExcel;
-import com.preparatic.csvreaders.PreguntaTest;
+import com.preparatic.entidades.PreguntaTest;
 
 class RevisorTest {
 

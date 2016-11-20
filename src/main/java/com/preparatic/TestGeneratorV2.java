@@ -27,17 +27,20 @@ import org.apache.logging.log4j.Logger;
 
 import com.preparatic.csvreaders.CSVReaderFactory;
 import com.preparatic.csvreaders.IExcel;
-import com.preparatic.csvreaders.PreguntaTest;
+import com.preparatic.entidades.GestorBloque;
+import com.preparatic.entidades.InfoBloque;
+import com.preparatic.entidades.PreguntaTest;
 import com.preparatic.entidades.Test;
 import com.preparatic.gestorpreguntas.GestorPreguntas;
+import com.preparatic.gestorpreguntas.GestorPreguntasBloque;
 import com.preparatic.gestorpreguntas.GestorPreguntasUsadas;
 
 public class TestGeneratorV2 extends GeneradorPreguntasTest {
 
 	private static Logger logger = LogManager.getLogger(TestGeneratorV2.class);
 
-	public static void main(String[] args) throws Exception {	
-		
+	public static void main(String[] args) throws Exception {
+
 		logger.info("Generador de test. Promoción XXIV. Diciembre 2016");
 		logger.info("Se generan los test en función de las estadísticas.");
 
@@ -52,33 +55,36 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			// Abrimos el excel
 			ficheroExcel.abrirExcel();
 
+			// Obtenemos todas los bloques del excel
+			List<InfoBloque> listaBloques = ficheroExcel.getListaBloques();
+						
 			// Obtenemos todas las preguntas del excel
 			List<PreguntaTest> listaPreguntas = ficheroExcel.getListaPreguntas();
 			// convert list to stream
-			List<PreguntaTest> filteredList = listaPreguntas.stream() 
-/*					
- 					 // filters the  question, equals to  some year
- 					.filter(question -> question.getAnno_creacion().equals("2016"))
- 					 // filters the  question, equals to  some author
-					.filter(question -> question.getAutor().equals("LGD")) 
-*/					
+			List<PreguntaTest> filteredList = listaPreguntas.stream()
+					/*
+					 * // filters the question, equals to some year
+					 * .filter(question -> question.getAnno_creacion().equals("2016")) 
+					 * // filters the question, equals to some author 
+					 * .filter(question -> question.getAutor().equals("LGD"))
+					 */
 					// collect the output and convert streams to a List
-					.collect(Collectors.toList()); 
+					.collect(Collectors.toList());
 
 			int id = 10000;
-			for(PreguntaTest pt : filteredList)
-			{ 
-				//if(pt.getNumId() == -1)
-					pt.setId(Integer.toString(id++));
-			} 
-			
+			for (PreguntaTest pt : filteredList) {
+				// if(pt.getNumId() == -1)
+				pt.setId(Integer.toString(id++));
+			}
+
 			// Para depurar con salidas por pantalla.
 			filteredList.forEach(pt -> logger.debug(pt.toString()));
-//			for (PreguntaTest pt : filteredList) {
-//				logger.debug(pt.toString());
-			
-			generarTestAleatorios(filteredList);
-//			}
+			// for (PreguntaTest pt : filteredList) {
+			// logger.debug(pt.toString());
+
+			//generarTodosLosTest(filteredList);
+			//generarTestAleatorios(filteredList);
+			generarTestBloques(filteredList, listaBloques);
 
 		} catch (SQLException e) {
 			logger.error(e.getMessage());
@@ -88,28 +94,33 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	}
 
 	/**
-	 * Distribuye las preguntas en tantos Test como haga falta.
+	 * Genera un test con todas las preguntas disponibles
 	 * 
-	 * @param numTest
+	 * @param listaPreguntas
 	 */
-	private static void generarTestAleatorios(List<PreguntaTest> listaPreguntas) {
-		
+	private static void generarTodosLosTest(List<PreguntaTest> listaPreguntas) {
+
 		/*
-		 * Primero generamos un test con todas las preguntas disponibles.
+		 * Generamos un test con todas las preguntas disponibles.
 		 */
 		Test testcompleto = new Test(0, listaPreguntas.size());
-		for(PreguntaTest t : listaPreguntas) 
-		{
+		for (PreguntaTest t : listaPreguntas) {
 			try {
-				int id  = t.getNumId();
+				int id = t.getNumId();
 				testcompleto.asignarIdPregunta(id);
-			}catch (Exception ex)
-			{
+			} catch (Exception ex) {
 				logger.error("Error procesing id of question " + t);
 			}
 		}
 		testcompleto.generarDocumentos(listaPreguntas, listaPreguntas.size());
-		
+	}
+	
+	/**
+	 * Distribuye las preguntas en tantos Test como haga falta.
+	 * 
+	 * @param listaPreguntas
+	 */
+	private static void generarTestAleatorios(List<PreguntaTest> listaPreguntas) {
 
 		/*
 		 * Distribuimos las preguntas en tantos test como diga la configuración.
@@ -117,7 +128,6 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		int inicio_test = 1 + Integer.parseInt(ConfigProperties.getProperty("tests.por_frecuencia_y_fecha"));
 		int numTestAleatorios = Integer.parseInt(ConfigProperties.getProperty("tests.aleatorios"));
 
-		
 		for (int i = inicio_test; i <= inicio_test + numTestAleatorios; i++) {
 			Test test = new Test(i);
 			Collections.shuffle(listaPreguntas);
@@ -125,15 +135,55 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			while ((!test.estaCompleto()) && (iterator.hasNext())) {
 				PreguntaTest t = iterator.next();
 				try {
-					int id  = t.getNumId();
+					int id = t.getNumId();
 					test.asignarIdPregunta(id);
-				}catch (Exception ex)
-				{
+				} catch (Exception ex) {
 					logger.error("Error procesing id of question " + t);
 				}
 			}
 			test.generarDocumentos(listaPreguntas, inicio_test + numTestAleatorios);
 		}
+
+	}
+ 
+	/**
+	 * Generamos los test por bloques.
+	 * 
+	 * @param numBloque
+	 * @param numTest
+	 */
+	private static void generarTestBloques(List<PreguntaTest> listaPreguntas, List<InfoBloque> listaBloques) {
+		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
 		
+		/*
+		 * Por cada bloque, usamos un tema al que le vamos a asignar todas las
+		 * preguntas.
+		 */
+		for (InfoBloque bloque : listaBloques) {
+			List<PreguntaTest> filteredList = listaPreguntas.stream()
+					.filter(question -> question.getBloques().contains(bloque.getNombreBloque()))
+					.collect(Collectors.toList());
+			int totalPreguntasBloque = filteredList.size();
+			int totalTestsBloque = Math.round(totalPreguntasBloque / num_preguntas_por_test);
+
+			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
+			// Repartimos las preguntas entre los test del bloque.
+			for (int i = 1; i <= totalTestsBloque; i++) {
+				Test test = new Test(Test.eTipoTest.bloque, bloque.getNombreBloque() /* + ". " + bloque.getTitulo() */, i);
+				while ((!test.estaCompleto()) && (iterator.hasNext())) {
+					PreguntaTest t = iterator.next();
+					try {
+						int id = t.getNumId();
+						test.asignarIdPregunta(id);
+					} catch (Exception ex) {
+						logger.error("Error procesing id of question " + t);
+					}
+				}
+				test.generarDocumentos(listaPreguntas, totalTestsBloque);
+			}
+
+			logger.info("Generado test bloque " + bloque.getTitulo());
+		}
+		return;
 	}
 }

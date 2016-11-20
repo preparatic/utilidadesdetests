@@ -25,8 +25,8 @@ import java.util.Iterator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.preparatic.csvreaders.PreguntaTest;
 import com.preparatic.entidades.GestorConexionBD;
+import com.preparatic.entidades.PreguntaTest;
 
 public class GestorConsultas {
 
@@ -117,7 +117,7 @@ public class GestorConsultas {
 			updateStatement.setString(4, pregunta.getRespuesta_c());
 			updateStatement.setString(5, pregunta.getRespuesta_d());
 			updateStatement.setString(6, pregunta.getRespuesta_correcta());
-			updateStatement.setString(7, pregunta.getBloque());
+			updateStatement.setString(7, pregunta.getBloquesStr());
 			updateStatement.setString(8, pregunta.getAutor());
 			updateStatement.setString(9, pregunta.getPromocion());
 
@@ -136,7 +136,7 @@ public class GestorConsultas {
 			else
 				updateStatement.setInt(13, 0);
 
-			updateStatement.setString(14, pregunta.getTemas());
+			updateStatement.setString(14, pregunta.getTemasStr());
 
 			if (!pregunta.getRevisada().equals("") && !pregunta.getRevisada().equals("NULL"))
 				updateStatement.setInt(15, Integer.parseInt(pregunta.getRevisada()));
@@ -181,7 +181,7 @@ public class GestorConsultas {
 			insertStatement.setString(4, pregunta.getRespuesta_c());
 			insertStatement.setString(5, pregunta.getRespuesta_d());
 			insertStatement.setString(6, pregunta.getRespuesta_correcta());
-			insertStatement.setString(7, pregunta.getBloque());
+			insertStatement.setString(7, pregunta.getBloquesStr());
 			insertStatement.setString(8, pregunta.getAutor());
 			insertStatement.setString(9, pregunta.getPromocion());
 
@@ -200,7 +200,7 @@ public class GestorConsultas {
 			else
 				insertStatement.setInt(13, 0);
 
-			insertStatement.setString(14, pregunta.getTemas());
+			insertStatement.setString(14, pregunta.getTemasStr());
 
 			if (!pregunta.getRevisada().equals(""))
 				insertStatement.setInt(15, Integer.parseInt(pregunta.getRevisada()));

@@ -11,7 +11,8 @@ import org.apache.logging.log4j.Logger;
 
 import com.preparatic.csvreaders.CSVReaderFactory;
 import com.preparatic.csvreaders.IExcel;
-import com.preparatic.csvreaders.PreguntaTest;
+import com.preparatic.entidades.PreguntaTest;
+
 import java.util.stream.Collectors;
 
 

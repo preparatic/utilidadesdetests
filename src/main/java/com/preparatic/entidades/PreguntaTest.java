@@ -13,9 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-package com.preparatic.csvreaders;
+package com.preparatic.entidades;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class PreguntaTest {
 
@@ -52,7 +54,8 @@ public class PreguntaTest {
 			index = indice;
 		}
 	};
-
+	public static final int NUM_COLUMNAS = 	Campo.NUM_COLUMNAS.index;
+	
 	private Campo campo;
 
 	private String pregunta;
@@ -62,7 +65,7 @@ public class PreguntaTest {
 	private String respuesta_c;
 	private String respuesta_d;
 	private String respuesta_correcta;
-	private String bloque;
+	private List<String> bloques = new ArrayList<String>();
 	private String autor;
 	private String promocion;
 	private String anno_creacion;
@@ -70,7 +73,7 @@ public class PreguntaTest {
 	private String numeroTest;
 	private String numeroPregunta;
 	private String id;
-	private String temas;
+	private List<Integer>  temas = new ArrayList<Integer>();
 	private String revisada;
 	private String estado;
 	private String revisor;
@@ -87,7 +90,7 @@ public class PreguntaTest {
 		this.setRespuesta_c(celdas.get(Campo.RESPUESTA_C.index));
 		this.setRespuesta_d(celdas.get(Campo.RESPUESTA_D.index));
 		this.setRespuesta_correcta(celdas.get(Campo.RESPUESTA_CORRECTA.index));
-		this.setBloque(celdas.get(Campo.BLOQUE.index));
+		//this.setBloque(celdas.get(Campo.BLOQUE.index));
 		this.setAutor(celdas.get(Campo.AUTOR.index));
 		this.setPromocion(celdas.get(Campo.PROMOCION.index));
 		this.setAnno_creacion(celdas.get(Campo.ANNO_CREACION.index));
@@ -112,7 +115,7 @@ public class PreguntaTest {
 		cadena = cadena + "C) " + this.respuesta_c + "\n";
 		cadena = cadena + "D) " + this.respuesta_d + "\n";
 		cadena = cadena + "Correcta: " + this.respuesta_correcta + "\n";
-		cadena = cadena + "Bloque: " + this.bloque + "\n";
+		cadena = cadena + "Bloques: " + this.bloques + "\n";
 		cadena = cadena + "Autor: " + this.autor + "\n";
 		cadena = cadena + "Promoción: " + this.promocion + "\n";
 		cadena = cadena + "Año: " + this.anno_creacion + "\n";
@@ -192,12 +195,30 @@ public class PreguntaTest {
 		this.respuesta_correcta = respuesta_correcta;
 	}
 
-	public String getBloque() {
-		return bloque;
+	public List<String> getBloques() {
+		return bloques;
 	}
-
-	public void setBloque(String bloque) {
-		this.bloque = bloque;
+	
+	public String getBloquesStr() {
+		String joined = String.join(", ", bloques);
+		return joined;
+	}
+	
+	public void calculaBloques(List<InfoBloque> listaBloques)
+	{
+		for (Integer t : this.temas) {
+			for (InfoBloque b : listaBloques) {
+				if (t >= b.getMinPregunta() && t <= b.getMaxPregunta()) {
+					this.bloques.add(b.getNombreBloque());
+					continue;
+				}
+			}
+		}
+	}
+	
+	
+	public void setBloques( List<String> bloques) {
+		this.bloques = bloques;
 	}
 
 	public String getAutor() {
@@ -260,12 +281,22 @@ public class PreguntaTest {
 		this.id = id;
 	}
 
-	public String getTemas() {
+	public List<Integer> getTemas() {
 		return temas;
 	}
-
+	
+	public String getTemasStr() {
+		String joined = temas.stream().map(Object::toString).collect(Collectors.joining(", "));
+		return joined;
+	}
+	
 	public void setTemas(String temas) {
-		this.temas = temas;
+		String[] temasArr = temas.split(",");
+		for(String t : temasArr)
+		{
+			int tema = Integer.parseInt(t);
+			this.temas.add(tema);
+		}
 	}
 
 	public String getRevisada() {

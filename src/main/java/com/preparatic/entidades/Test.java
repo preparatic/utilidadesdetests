@@ -29,7 +29,6 @@ import org.apache.logging.log4j.Logger;
 import com.preparatic.ConfigProperties;
 import com.preparatic.archivos.HtmlGenerator;
 import com.preparatic.archivos.PdfGenerator;
-import com.preparatic.csvreaders.PreguntaTest;
 
 /**
  * Un Test tiene la secuencia de identificadores de pregunta que se van a poner

@@ -25,6 +25,10 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
 import com.preparatic.ConfigProperties;
+import com.preparatic.entidades.InfoBloque;
+import com.preparatic.entidades.InfoTema;
+import com.preparatic.entidades.InfoTematica;
+import com.preparatic.entidades.PreguntaTest;
 
 
 public class FicheroExcel implements IExcel {
@@ -106,6 +110,18 @@ public class FicheroExcel implements IExcel {
 
 	public void setListaPreguntas(ArrayList<PreguntaTest> listaPreguntas) {
 		this.listaPreguntas = listaPreguntas;
+	}
+	
+	public ArrayList<InfoBloque> getListaBloques() {
+		return null; // Not yet implemented
+	}
+	
+	public ArrayList<InfoTema> getListaTemas() {
+		return null; // Not yet implemented
+	}
+	
+	public ArrayList<InfoTematica> getListaTematicas() {
+		return null; // Not yet implemented
 	}
 
 }
