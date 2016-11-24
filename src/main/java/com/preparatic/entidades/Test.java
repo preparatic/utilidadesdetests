@@ -258,13 +258,15 @@ public class Test {
 						.collect(Collectors.toList());;
 			pdfGenerator.agregarPreguntas(filteredList);
 			pdfGenerator.guardarPDF();
+			
+			// Genera el html
+			HtmlGenerator htmlGenerator = new HtmlGenerator(this);
+			htmlGenerator.generarTestHtml(filteredList);
+			
 		} catch (Exception e) {
-			logger.error("Error al generar pdf" + e.getMessage());
+			logger.error("Error al generar los tests" + e.getMessage());
 		}
 
-		// Genera el html
-				HtmlGenerator htmlGenerator = new HtmlGenerator(this);
-//				htmlGenerator.generarTestHtml(resultados);
 		return true;
 	}
 

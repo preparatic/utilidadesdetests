@@ -60,22 +60,22 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 					escribirRenderTestSelector(salida);
 					break;
 				case 2: // Bloque
-					escribirRenderTestBloque(salida);
+//TODO PENDING					escribirRenderTestBloque(salida);
 					break;
 				case 3: // Render Selector Tematica
-					escribirRenderTestSelectorTematica(salida);
+//TODO PENDING					escribirRenderTestSelectorTematica(salida);
 					break;
 				case 4: // Render Temas
-					escribirRenderTemas(salida);
+//TODO PENDING					escribirRenderTemas(salida);
 					break;
 				case 5: // Render Anhos
-					escribirRenderTestAnho(salida);
+//TODO PENDING					escribirRenderTestAnho(salida);
 					break;
 				case 6:
-					escribirRenderMenuTest(salida);
+//TODO PENDING					escribirRenderMenuTest(salida);
 					break;
 				case 7:
-					escribirRenderMenuIndex(salida);
+//TODO PENDING					escribirRenderMenuIndex(salida);
 				default:
 					break;
 				}

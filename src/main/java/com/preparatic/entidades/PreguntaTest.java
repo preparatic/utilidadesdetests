@@ -19,11 +19,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class PreguntaTest {
+	private static Logger logger = LogManager.getLogger(PreguntaTest.class);
 
 	// Si cambia el orden o la cantidad de columnas del excel, solo habrá que
 	// modificar este atributo.
-	private enum Campo {
+	public enum Campo {
 		PREGUNTA(0),  // A
 		//BLANCO(1), // Columna en blanco
 		RESPUESTA_A(1), // B
@@ -208,7 +212,7 @@ public class PreguntaTest {
 	{
 		for (Integer t : this.temas) {
 			for (InfoBloque b : listaBloques) {
-				if (t >= b.getMinPregunta() && t <= b.getMaxPregunta()) {
+				if (t >= b.getMinPregunta() && t <= b.getMaxPregunta() && !this.bloques.contains(b.getNombreBloque())) {
 					this.bloques.add(b.getNombreBloque());
 					continue;
 				}
@@ -294,8 +298,12 @@ public class PreguntaTest {
 		String[] temasArr = temas.split(",");
 		for(String t : temasArr)
 		{
-			int tema = Integer.parseInt(t);
-			this.temas.add(tema);
+			try {
+				int tema = Integer.parseInt(t.trim());
+				this.temas.add(tema);
+			} catch (Exception e) {
+				logger.error("Error al convertir temas " + temas + " a bloques en pregunta " + this.getPregunta());
+			}
 		}
 	}
 
@@ -338,5 +346,53 @@ public class PreguntaTest {
 
 	public void setNotas(String notas) {
 		this.notas = notas;
+	}
+	
+	public String getString(Campo campo) {
+		switch (campo)
+		{
+			case PREGUNTA:
+				return this.getPregunta();
+			case RESPUESTA_A:
+				return this.getRespuesta_a();
+			case RESPUESTA_B:
+				return this.getRespuesta_b();
+			case RESPUESTA_C:
+				return this.getRespuesta_c();
+			case RESPUESTA_D:
+				return this.getRespuesta_d();
+			case RESPUESTA_CORRECTA:
+				return this.getRespuesta_correcta();
+			case BLOQUE:
+				return this.getBloquesStr();
+			case AUTOR:
+				return this.getAutor();
+			case PROMOCION:
+				return this.getPromocion();
+			case ANNO_CREACION:
+				return this.getAnno_creacion();
+			case OBSERVACIONES:
+				return this.getObservaciones();
+			case NUMERO_TEST:
+				return this.getNumeroTest();
+			case NUMERO_PREGUNTA:
+				return this.getNumeroPregunta();
+			case ID:
+				return this.getId();
+			case TEMAS:
+				return this.getTemasStr();
+			case REVISADA:
+				return this.getPregunta();
+			case ESTADO:
+				return this.getRevisada();
+			case REVISOR:
+				return this.getRevisor();
+			case SENTENCIA:
+				return this.getSentencia();
+			case NOTAS:
+				return this.getNotas();
+			default:
+				return null;
+		}
 	}
 }

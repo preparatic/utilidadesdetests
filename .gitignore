@@ -13,4 +13,5 @@ hs_err_pid*
 
 tests/pdf
 tests/html
+tests/script/data
 target/

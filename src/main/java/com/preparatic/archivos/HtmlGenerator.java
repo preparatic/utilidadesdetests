@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.logging.log4j.LogManager;
@@ -30,7 +31,9 @@ import com.preparatic.ConfigProperties;
 import com.preparatic.entidades.GestorAnho;
 import com.preparatic.entidades.GestorBloque;
 import com.preparatic.entidades.GestorTematica;
+import com.preparatic.entidades.PreguntaTest;
 import com.preparatic.entidades.GestorTematica.tematica;
+import com.preparatic.entidades.PreguntaTest.Campo;
 import com.preparatic.entidades.Test;
 import com.preparatic.entidades.Test.eTipoTest;
 
@@ -72,7 +75,17 @@ public class HtmlGenerator {
 		generarHtml();
 		generarJSQuestion(resultados);
 	}
-
+	
+	/**
+	 * Genera todos los ficheros de test.
+	 * 
+	 * @param num_test
+	 */
+	public void generarTestHtml(List<PreguntaTest> listapreguntas) {
+		generarHtml();
+		generarJSQuestion(listapreguntas);
+	}
+	
 	/**
 	 * Genera el archivo test_???.html dentro de la carpeta pages.
 	 */
@@ -159,7 +172,44 @@ public class HtmlGenerator {
 
 		return true;
 	}
+	
+	/**
+	 * Genera el fichero con las preguntas y respuestas dentro de un JavaScript.
+	 * 
+	 * @param resultados
+	 * @return
+	 */
+	private boolean generarJSQuestion(List<PreguntaTest> listapreguntas) {
 
+		if (listapreguntas == null || listapreguntas.isEmpty())
+			return false;
+
+		try {
+			// Generamos el archivo de salida.
+			PrintStream salida = FactoriaArchivo.archivoJavascriptTest(
+					tipoTest, test.getIdBloqueTematicaAnho(), test.getIdTest());
+
+			// Copiamos la cabecera común a todos los ficheros de javascript.
+			BufferedReader entrada = new BufferedReader(new FileReader(
+					pathResources
+							+ ConfigProperties
+									.getProperty("files.templates.Javascript")));
+			while (copiarHastaFlag(salida, entrada) == true)
+				;
+
+			/* Cogemos las preguntas de test desde el principio */
+			int n_pregunta = 0;
+			for (PreguntaTest pregunta : listapreguntas) {
+				escribirPreguntaTest(salida, pregunta, n_pregunta);
+				n_pregunta++;
+			}
+			salida.close();
+		} catch (Exception e) {
+			logger.error("escribirJavascript " + e.getMessage());
+		}
+
+		return true;
+	}
 	/**
 	 * 
 	 * @param salida
@@ -178,7 +228,7 @@ public class HtmlGenerator {
 
 			// Comentario con el ID de pregunta.
 			s = "//  Id pregunta: " + campoAHtml(resultados, "ID");
-			s += " AÃ±o de creación de pregunta: "
+			s += " Año de creación de pregunta: "
 					+ campoAHtml(resultados, "ANNO_CREACION");
 			salida.println(s);
 			
@@ -246,6 +296,84 @@ public class HtmlGenerator {
 		return true;
 	}
 
+	private static boolean escribirPreguntaTest(PrintStream salida,
+			PreguntaTest pregunta, int idCuestion) {
+
+		if (pregunta == null)
+			return false;
+
+		String s = "";
+		try {
+
+			// Comentario con el ID de pregunta.
+			s = "//  Id pregunta: " + campoAHtml(pregunta, Campo.ID);
+			s += " Año de creación de pregunta: "
+					+ campoAHtml(pregunta, Campo.ANNO_CREACION);
+			salida.println(s);
+			
+			//DEBUG:
+//			int debug;
+//			if(campoAHtml(resultados, "ID").equals("9540"))
+//				debug = 1;
+
+			// Question
+			s = " questions[" + idCuestion + "]= \"" + (idCuestion + 1) + ")  "
+					+ campoAHtml(pregunta, Campo.PREGUNTA) + "\";";
+			salida.println(s);
+
+			// Choices
+			s = " choices[" + idCuestion + "]= new Array();";
+			salida.println(s);
+
+			s = " choices[" + idCuestion + "][0] = \""
+					+ campoAHtml(pregunta, Campo.RESPUESTA_A) + "\";";
+			salida.println(s);
+
+			s = " choices[" + idCuestion + "][1] = \""
+					+ campoAHtml(pregunta, Campo.RESPUESTA_B) + "\";";
+			salida.println(s);
+
+			s = " choices[" + idCuestion + "][2] = \""
+					+ campoAHtml(pregunta, Campo.RESPUESTA_C) + "\";";
+			salida.println(s);
+
+			s = " choices[" + idCuestion + "][3] = \""
+					+ campoAHtml(pregunta, Campo.RESPUESTA_D) + "\";";
+			salida.println(s);
+
+			// Respuesta correcta
+			s = " answers["
+					+ idCuestion
+					+ "] = choices["
+					+ idCuestion
+					+ "]["
+					+ OptionToNumber.toNumber(pregunta.getString(Campo.RESPUESTA_CORRECTA)) + "];";
+			salida.println(s);
+
+			// Temas
+			s = " units[" + idCuestion + "] = \""
+					+ campoAHtml(pregunta, Campo.TEMAS) + "\";";
+			salida.println(s);
+
+			// Comentarios
+			s = " comments[" + idCuestion + "] = \"" + "Id Pregunta: "
+					+ campoAHtml(pregunta, Campo.ID) + ". "
+					+ campoAHtml(pregunta, Campo.OBSERVACIONES) + "\";";
+			salida.println(s);
+
+			// Para separar entre preguntas.
+			salida.println("");
+			salida.println("");
+		} catch (Exception e) {
+			logger.error("escribirPreguntaTest " + e.getMessage());
+			logger.error("escribirPreguntaTest idPregunta "
+					+ campoAHtml(pregunta, Campo.ID));
+			return false;
+		}
+
+		return true;
+	}
+	
 	/**
 	 * Convierte un campo de lo que venga en resultados, y le quita todo tipo de
 	 * caracteres raros. Quita \n. Convierte secuencias de escape como comillas,
@@ -261,6 +389,20 @@ public class HtmlGenerator {
 
 			s = textoAHtml(s);
 		} catch (SQLException e) {
+			logger.error("Campo a hmtl" + e.getMessage());
+			logger.error(s);
+		}
+		return s;
+	}
+	
+	private static String campoAHtml(PreguntaTest pregunta, Campo campo) {
+
+		String s = "";
+		try {
+			s = pregunta.getString(campo);
+
+			s = textoAHtml(s);
+		} catch (Exception e) {
 			logger.error("Campo a hmtl" + e.getMessage());
 			logger.error(s);
 		}

@@ -223,7 +223,7 @@ public class PdfGenerator {
 				subtitulo = " Bloque " + test.getIdBloqueTematicaAnho();
 				break;
 			case anho:
-				subtitulo = " AÃ±o " + test.getIdBloqueTematicaAnho();
+				subtitulo = " Año " + test.getIdBloqueTematicaAnho();
 				break;
 			case tematica:
 				subtitulo = " Temas " + tituloTematica;
@@ -240,7 +240,7 @@ public class PdfGenerator {
 			}
 
 		} catch (DocumentException e) {
-			logger.error("Crear PDF. Poner tÃ­tulo.");
+			logger.error("Crear PDF. Poner título.");
 			logger.error(e.getMessage());
 		}
 

@@ -99,7 +99,7 @@ public class GestorPreguntasPorFechas extends GestorPreguntas {
 		if (ListaPreguntasPorAnno == null)
 			ListaPreguntasPorAnno = new HashMap<Integer, GestorPreguntas>();
 
-		// Si no existe el aÃ±o, se genera.
+		// Si no existe el año, se genera.
 		if (!ListaPreguntasPorAnno.containsKey(anno))
 			ListaPreguntasPorAnno.put(anno, new GestorPreguntas());
 
@@ -119,7 +119,7 @@ public class GestorPreguntasPorFechas extends GestorPreguntas {
 		}
 
 		/*
-		 * Selecciono el aÃ±o más moderno que aún tenga preguntas sin usar, y le
+		 * Selecciono el año más moderno que aún tenga preguntas sin usar, y le
 		 * pido una pregunta aleatoria.
 		 */
 
@@ -136,7 +136,7 @@ public class GestorPreguntasPorFechas extends GestorPreguntas {
 			}
 
 		}
-		// Si ya no quedan preguntas en ningún aÃ±o:
+		// Si ya no quedan preguntas en ningún año:
 		return null;
 	}
 
@@ -147,13 +147,13 @@ public class GestorPreguntasPorFechas extends GestorPreguntas {
 		if (ListaPreguntasPorAnno.isEmpty())
 			return null;
 
-		// Si aún existe el último aÃ±o, con preguntas, es el que devolvemos.
+		// Si aún existe el último año, con preguntas, es el que devolvemos.
 		if (ListaPreguntasPorAnno.containsKey(ultimoAnno))
 			return ultimoAnno;
 
 		/*
 		 * Si no vale el que devolvimos en la llamada anterior, volvemos a
-		 * calcular cuál es el último aÃ±o.
+		 * calcular cuál es el último año.
 		 */
 		ultimoAnno = 0;
 		Iterator<Integer> itr = ListaPreguntasPorAnno.keySet().iterator();

@@ -21,1203 +21,903 @@ var response = new Array();
 var units = new Array();
 var comments = new Array();
 
-//  Id pregunta: 571 AÃ±o de creación de pregunta: 2006-01-01
- questions[0]= "1)   Stephen P. Robbins aport&oacute; a los sistemas de informaci&oacute;n";
+//  Id pregunta: 10499 Año de creación de pregunta: 2016
+ questions[0]= "1)  A tenor de la Ley 47/2003, de 26 de noviembre, General Presupuestaria, la cuant&iacute;a global de los anticipos de caja fija no podr&aacute; superar para cada ministerio y organismo aut&oacute;nomo:";
  choices[0]= new Array();
- choices[0][0] = "Algoritmos de ordenaci&oacute;n num&eacute;rica";
- choices[0][1] = "Una m&eacute;todo de  de gesti&oacute;n de colas";
- choices[0][2] = "Estudios sobre planificaci&oacute;n estrat&eacute;gica";
- choices[0][3] = "Un m&eacute;todo de planificaci&oacute;n de procesos";
- answers[0] = choices[0][2];
- units[0] = "23";
- comments[0] = "Id Pregunta: 571. ";
+ choices[0][0] = "El 7% del total de cr&eacute;ditos del cap&iacute;tulo destinado a gastos corrientes en bienes y servicios del presupuesto vigente en cada momento.";
+ choices[0][1] = "El 5% del total de cr&eacute;ditos del cap&iacute;tulo destinado a gastos corrientes en bienes y servicios del presupuesto vigente en cada momento.";
+ choices[0][2] = "El 6% del total de cr&eacute;ditos del cap&iacute;tulo destinado a gastos corrientes en bienes y servicios del presupuesto vigente en cada momento.";
+ choices[0][3] = "El 8% del total de cr&eacute;ditos del cap&iacute;tulo destinado a gastos corrientes en bienes y servicios del presupuesto vigente en cada momento.";
+ answers[0] = choices[0][0];
+ units[0] = "10";
+ comments[0] = "Id Pregunta: 10499. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 648 AÃ±o de creación de pregunta: 2006-01-01
- questions[1]= "2)  Cu&aacute;l de las siguientes relaciones entre Organismos internacionales y europeos es incorrecta:";
+//  Id pregunta: 10518 Año de creación de pregunta: 2016
+ questions[1]= "2)  Las Corporaciones de Derecho P&uacute;blico se regir&aacute;n por:";
  choices[1]= new Array();
- choices[1][0] = "ITU-T - ETSI";
- choices[1][1] = "IEC - CENELEC";
- choices[1][2] = "Comit&eacute; conjunto JTC-1 (ISO - CEN/CENELEC)";
- choices[1][3] = "ISO -CEN";
- answers[1] = choices[1][2];
- units[1] = "42";
- comments[1] = "Id Pregunta: 648. ";
+ choices[1][0] = "su normativa espec&iacute;fica en el ejercicio de las funciones p&uacute;blicas que les hayan sido atribuidas por Ley o delegadas por una Administraci&oacute;n P&uacute;blica, y supletoriamente por la presente Ley";
+ choices[1][1] = "la presente Ley, y supletoriamente por su normativa espec&iacute;fica en el ejercicio de las funciones p&uacute;blicas que les hayan sido atribuidas por Ley o delegadas por una Administraci&oacute;n P&uacute;blica";
+ choices[1][2] = "su normativa espec&iacute;fica en el ejercicio de las funciones p&uacute;blicas que les hayan sido atribuidas por Ley o cedidas por una Administraci&oacute;n P&uacute;blica, y supletoriamente por la presente Ley";
+ choices[1][3] = "la presente Ley, y supletoriamente por su normativa espec&iacute;fica en el ejercicio de las funciones p&uacute;blicas que les hayan sido atribuidas por Ley o cedidas por una Administraci&oacute;n P&uacute;blica";
+ answers[1] = choices[1][0];
+ units[1] = "7";
+ comments[1] = "Id Pregunta: 10518. LEY 39/2015";
 
 
-//  Id pregunta: 855 AÃ±o de creación de pregunta: 2002-01-01
- questions[2]= "3)  &iquest;Cu&aacute;l de las siguientes proposiciones es falsa respecto de WML?:";
+//  Id pregunta: 10326 Año de creación de pregunta: 2016
+ questions[2]= "3)  La Mesa del Parlamento estar&aacute; compuesta por:";
  choices[2]= new Array();
- choices[2][0] = "El significado de las siglas WML es Wireless Mask Language";
- choices[2][1] = "El lenguaje WML est&aacute; basado en el est&aacute;ndar XML";
- choices[2][2] = "La DTD puede estar en la red o puede almacenarse localmente";
- choices[2][3] = "El lenguaje WML no s&oacute;lo permite texto sino que tambi&eacute;n permite im&aacute;genes";
- answers[2] = choices[2][0];
- units[2] = "69";
- comments[2] = "Id Pregunta: 855. NULL";
+ choices[2][0] = "El Presidente, doce Vicepresidentes y los Cuestores.";
+ choices[2][1] = "El Presidente, diez Vicepresidentes y los Cuestores.";
+ choices[2][2] = "El Presidente, dos Vicepresidentes y los Cuestores.";
+ choices[2][3] = "El Presidente, catorce Vicepresidentes y los Cuestores.";
+ answers[2] = choices[2][3];
+ units[2] = "5";
+ comments[2] = "Id Pregunta: 10326. UNION EUROPEA";
 
 
-//  Id pregunta: 1459 AÃ±o de creación de pregunta: 2002-01-01
- questions[3]= "4)  En las interfaces orientadas a objetos (OOUI) es falso que:";
+//  Id pregunta: 10322 Año de creación de pregunta: 2016
+ questions[3]= "4)  El Tribunal de Justicia est&aacute; formado por:";
  choices[3]= new Array();
- choices[3][0] = "los iconos representan objetos que se pueden manipular directamente";
- choices[3][1] = "los objetos son de 3 tipos: datos, contenedores y dispositivos";
- choices[3][2] = "un ejemplo de interfaz orientada a objeto lo representan los accesos directos de Windows, donde cada objeto tiene su propia tarea asociada";
- choices[3][3] = "el estilo de interacci&oacute;n es el de acci&oacute;n-objeto y no el de objeto-acci&oacute;n";
- answers[3] = choices[3][3];
- units[3] = "52";
- comments[3] = "Id Pregunta: 1459. ";
+ choices[3][0] = "Un Juez de cada Estado miembro.";
+ choices[3][1] = "Por dos Jueces de cada Estado miembro.";
+ choices[3][2] = "Por veinte Jueces.";
+ choices[3][3] = "Por ocho Jueces.";
+ answers[3] = choices[3][0];
+ units[3] = "5";
+ comments[3] = "Id Pregunta: 10322. UNION EUROPEA";
 
 
-//  Id pregunta: 1463 AÃ±o de creación de pregunta: 2002-01-01
- questions[4]= "5)  ISA, PCI, AGP, IDE, PCMCIA&hellip;, son:";
+//  Id pregunta: 10274 Año de creación de pregunta: 2016
+ questions[4]= "5)  La Ley 19/2013 de 9 de diciembre, de transparencia, acceso a la informaci&oacute;n p&uacute;blica y buen gobierno ha establecido el derecho:";
  choices[4]= new Array();
- choices[4][0] = "buses internos";
- choices[4][1] = "buses externos";
- choices[4][2] = "organismos de estandarizaci&oacute;n  ";
- choices[4][3] = "est&aacute;ndares de almacenamiento";
- answers[4] = choices[4][0];
- units[4] = "47";
- comments[4] = "Id Pregunta: 1463. ";
+ choices[4][0] = "Al acceso a la informaci&oacute;n p&uacute;blica, en desarrollo de los t&eacute;rminos ya previstos por la Ley 11/2007, de acceso electr&oacute;nico de los ciudadano a los servicios p&uacute;blicos.";
+ choices[4][1] = "Al acceso a la informaci&oacute;n p&uacute;blica, por primera vez en nuestra legislaci&oacute;n positiva.";
+ choices[4][2] = "Al acceso a la informaci&oacute;n p&uacute;blica a trav&eacute;s del portal de transparencia.";
+ choices[4][3] = "Al acceso a la informaci&oacute;n p&uacute;blica, con las limitaciones derivadas del posible perjuicio para la defensa, seguridad nacional o funciones administrativas de inspecci&oacute;n, entre otras.";
+ answers[4] = choices[4][3];
+ units[4] = "22";
+ comments[4] = "Id Pregunta: 10274. LEY DE TRANSPARENCIA";
 
 
-//  Id pregunta: 1514 AÃ±o de creación de pregunta: 2003-01-01
- questions[5]= "6)  &iquest;Se pueden ejecutar programas MS Windows bajo un entorno Linux?";
+//  Id pregunta: 10101 Año de creación de pregunta: 2016
+ questions[5]= "6)  El Teorema de Brewer o Principio CAP recoge las siguientes garant&iacute;as:";
  choices[5]= new Array();
- choices[5][0] = "Nunca";
- choices[5][1] = "De forma nativa, linux es compatible binario con MS Windows";
- choices[5][2] = "S&iacute;, a trav&eacute;s de programas espec&iacute;fico para ello";
- choices[5][3] = "S&iacute;, a trav&eacute;s del comando SMB";
- answers[5] = choices[5][2];
- units[5] = "53,61";
- comments[5] = "Id Pregunta: 1514. EXAMEN CASTILLA LA MANCHA";
+ choices[5][0] = "Consistencia (Consistency), Disponibilidad (Availability) y Persistencia (Persistence)";
+ choices[5][1] = "Consistencia (Consistency), Disponibilidad (Availability) y Tolerancia a la Partici&oacute;n (Partition Tolerance)";
+ choices[5][2] = "Consistencia (Consistency), Atomicidad (Atomicity) y Tolerancia a la Partici&oacute;n (Partition Tolerance)";
+ choices[5][3] = "Confidencialidad (Confidentiality), Autenticidad (Authentication) y Protecci&oacute;n (Protection)";
+ answers[5] = choices[5][1];
+ units[5] = "73";
+ comments[5] = "Id Pregunta: 10101. ";
 
 
-//  Id pregunta: 1921 AÃ±o de creación de pregunta: 2006-01-01
- questions[6]= "7)  &iquest; Cu&aacute;l de las siguientes funciones no es compatible con un lenguaje de programamci&oacute;n orientado a objetos?";
+//  Id pregunta: 10538 Año de creación de pregunta: 2016
+ questions[6]= "7)  Ser&aacute;/n interoperable/s con los registros electr&oacute;nicos generales y particulares de apoderamientos:";
  choices[6]= new Array();
- choices[6][0] = "Encapsulaci&oacute;n";
- choices[6][1] = "Herencia";
- choices[6][2] = "Polimorfismo";
- choices[6][3] = "Historicismo";
+ choices[6][0] = "los registros mercantiles";
+ choices[6][1] = "los registros de la propiedad";
+ choices[6][2] = "los protocolos notariales";
+ choices[6][3] = "todas son correctas";
  answers[6] = choices[6][3];
- units[6] = "82";
- comments[6] = "Id Pregunta: 1921. ";
+ units[6] = "7";
+ comments[6] = "Id Pregunta: 10538. LEY 39/2015";
 
 
-//  Id pregunta: 2514 AÃ±o de creación de pregunta: 2002-01-01
- questions[7]= "8)  Uno de los m&eacute;todos utilizados para la identificaci&oacute;n de objetos es:";
+//  Id pregunta: 10490 Año de creación de pregunta: 2016
+ questions[7]= "8)  De acuerdo con la Ley 47/2003, de 26 de noviembre, General Presupuestaria, la obligaci&oacute;n de pagar los intereses de la Deuda del Estado y la de devolver los capitales llamados a reembolso, contados respectivamente a partir del vencimiento de los intereses y del d&iacute;a del llamamiento a reembolso prescribir&aacute;:";
  choices[7]= new Array();
- choices[7][0] = "Tarjetas CRC";
- choices[7][1] = "An&aacute;lisis l&eacute;xico";
- choices[7][2] = "Contraste de modelos";
- choices[7][3] = "Todas las anteriores son ciertas";
- answers[7] = choices[7][3];
- units[7] = "82";
- comments[7] = "Id Pregunta: 2514. ";
+ choices[7][0] = "A los cinco a&ntilde;os.";
+ choices[7][1] = "A los dos a&ntilde;os.";
+ choices[7][2] = "A los tres a&ntilde;os.";
+ choices[7][3] = "A los cuatro a&ntilde;os.";
+ answers[7] = choices[7][0];
+ units[7] = "10";
+ comments[7] = "Id Pregunta: 10490. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 2573 AÃ±o de creación de pregunta: 2004-01-01
- questions[8]= "9)  En la calidad del Software basandonos en el coste de implantaci&oacute;n, la Teor&iacute;a de la Productividad dice:";
+//  Id pregunta: 10645 Año de creación de pregunta: 2016
+ questions[8]= "9)  Seg&uacute;n la ley de igualdad entre mujeres y hombres y contra la violencia de g&eacute;nero en Extremadura: &iquest;qu&eacute; &oacute;rgano tiene como fin esencial promover las condiciones para que la igualdad entre los sexos sea real y efectiva dentro del &aacute;mbito de competencias de la Junta de Extremadura?";
  choices[8]= new Array();
- choices[8][0] = "Un producto de calidad es mas caro de producir; el coste aumenta exponencialmente con el aumento de la calidad";
- choices[8][1] = "Un producto de calidad es mas barato de producir; el coste disminuye exponencialmente cuando disminuye la calidad";
- choices[8][2] = "Un producto de calidad es mas barato de producir; el coste disminuye exponencialmente con el aumento de la calidad";
- choices[8][3] = "Un producto de calidad es mas barato de producir; el coste aumenta exponencialmente con el aumento de la calidad";
- answers[8] = choices[8][2];
- units[8] = "87,88,92";
- comments[8] = "Id Pregunta: 2573. ";
+ choices[8][0] = "La Consejer&iacute;a con competencias en pol&iacute;ticas sociales.";
+ choices[8][1] = "La Consejer&iacute;a con competencias en pol&iacute;ticas sanitarias.";
+ choices[8][2] = "El Organismo P&uacute;blico de la Mujer.";
+ choices[8][3] = "El Instituto de la Mujer de Extremadura.";
+ answers[8] = choices[8][3];
+ units[8] = "14";
+ comments[8] = "Id Pregunta: 10645. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 2825 AÃ±o de creación de pregunta: 2006-01-01
- questions[9]= "10)  Sobre el M&Eacute;TODO DE JONES se puede decir...";
+//  Id pregunta: 10116 Año de creación de pregunta: 2016
+ questions[9]= "10)  &iquest;Cu&aacute;l de las siguientes es una pol&iacute;tica pasiva de empleo?";
  choices[9]= new Array();
- choices[9][0] = "Jones utiliza el Rect&aacute;ngulo de Probabilidades para calcular el coste m&aacute;ximo y m&iacute;nimo del mantenimiento (en el caso menos favorable y en el m&aacute;s favorable), e indica que el coste estimado cae dentro del Rect&aacute;ngulo de Probabilidades.";
- choices[9][1] = "Una desventaja de las unidades de costo es que todos los gastos asociados al mantenimiento no se pueden expresar en la misma unidad. ";
- choices[9][2] = "Se estima el n&uacute;mero de unidades programables que hay que mantener y se calcula el n&uacute;mero de personas requeridas para gestionar el mismo bas&aacute;ndose en datos hist&oacute;ricos de proyectos anteriores y en la experiencia.";
- choices[9][3] = "Se basa en el Tr&aacute;fico de Cambio Anual&quot; de Boehm.";
- answers[9] = choices[9][0];
- units[9] = "90";
- comments[9] = "Id Pregunta: 2825. ";
+ choices[9][0] = "La organizaci&oacute;n de cursos de formaci&oacute;n gratuitos para desempleados";
+ choices[9][1] = "La intermediaci&oacute;n en el mercado laboral, es decir, recoger las ofertas de trabajo y cruzarlas con las demandas.";
+ choices[9][2] = "Adecuar los planes de estudio a la realidad laboral";
+ choices[9][3] = "El pago de subsidios a parados";
+ answers[9] = choices[9][3];
+ units[9] = "15";
+ comments[9] = "Id Pregunta: 10116. ";
 
 
-//  Id pregunta: 3795 AÃ±o de creación de pregunta: 2002-01-01
- questions[10]= "11)  Respecto a las interfaces en RDSI:";
+//  Id pregunta: 10640 Año de creación de pregunta: 2016
+ questions[10]= "11)  Los sistemas de archivos gestionados por Windows 2008 Server son:";
  choices[10]= new Array();
- choices[10][0] = "La interfaz R es la definida para poder conectar los equipos no RDSI (X21, RS232&hellip;) a la especificaci&oacute;n RDSI";
- choices[10][1] = "La interfaz R es la utilizada por los equipos remotos";
- choices[10][2] = "La Interfaz R est&aacute; todav&iacute;a indefinida pues depende de las compa&ntilde;&iacute;as proveedoras de servicio";
- choices[10][3] = "Todas las respuestas anteriores son err&oacute;neas";
+ choices[10][0] = "Fat y Ntfs.";
+ choices[10][1] = "Extfat y Fat.";
+ choices[10][2] = "Fat y Nfst.";
+ choices[10][3] = "ext2fs y Ntfs.";
  answers[10] = choices[10][0];
- units[10] = "103";
- comments[10] = "Id Pregunta: 3795. ";
+ units[10] = "58";
+ comments[10] = "Id Pregunta: 10640. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 3985 AÃ±o de creación de pregunta: 2006-01-01
- questions[11]= "12)  En las tramas 802.3 el pre&aacute;mbulo est&aacute; formado por:";
+//  Id pregunta: 10467 Año de creación de pregunta: 2016
+ questions[11]= "12)  Seg&uacute;n la Ley 47/2003, de 26 de noviembre, General Presupuestaria, el Ministro de Econom&iacute;a y Competitividad podr&aacute; autorizar a la Secretar&iacute;a General del Tesoro y Pol&iacute;tica Financiera a realizar operaciones pasivas de pr&eacute;stamo a un plazo no superior a:";
  choices[11]= new Array();
- choices[11][0] = "Un patr&oacute;n alternativo de unos y ceros";
- choices[11][1] = "El flag de sincronizaci&oacute;n 01111110";
- choices[11][2] = "El tipo de protocolo de nivel superior";
- choices[11][3] = "El c&oacute;digo de redundancia c&iacute;clica";
+ choices[11][0] = "Tres meses.";
+ choices[11][1] = "Nueve meses.";
+ choices[11][2] = "Cuatro meses.";
+ choices[11][3] = "Seis meses.";
  answers[11] = choices[11][0];
- units[11] = "101";
- comments[11] = "Id Pregunta: 3985. ";
+ units[11] = "10";
+ comments[11] = "Id Pregunta: 10467. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 4386 AÃ±o de creación de pregunta: 2007-01-01
- questions[12]= "13)  En el entorno .NET se han desarrollado una serie de lenguajes de programaci&oacute;n para que sean compatibles con el marco de trabajo .NET. &iquest;Cu&aacute;l de los siguientes no es uno de esos lenguajes?";
+//  Id pregunta: 10166 Año de creación de pregunta: 2016
+ questions[12]= "13)  El indicador de la Comisi&oacute;n Europea &ldquo;DESI&rdquo; (Digital Economy &amp; Society Index) tiene entre sus dimensiones:";
  choices[12]= new Array();
- choices[12][0] = "Java";
- choices[12][1] = "C#";
- choices[12][2] = "Visual Basic";
- choices[12][3] = "C++";
- answers[12] = choices[12][0];
- units[12] = "59";
- comments[12] = "Id Pregunta: 4386. ";
+ choices[12][0] = "Interoperabilidad";
+ choices[12][1] = "Integridad";
+ choices[12][2] = "Capital humano";
+ choices[12][3] = "Trazabilidad";
+ answers[12] = choices[12][2];
+ units[12] = "19";
+ comments[12] = "Id Pregunta: 10166. https://ec.europa.eu/digital-single-market/en/desi Conectividad, Capital humano, Uso de internet, Integraci&oacute;n de tecnolog&iacute;a digital, Servicios p&uacute;blicos digitales";
 
 
-//  Id pregunta: 4398 AÃ±o de creación de pregunta: 2007-01-01
- questions[13]= "14)  En el modelo relacional, &iquest;qu&eacute; se entiende por integridad referencial?";
+//  Id pregunta: 10052 Año de creación de pregunta: 2016
+ questions[13]= "14)  Las normas ISO que cubren los procesos de especificaci&oacute;n de requisitos de calidad del software y evaluaci&oacute;n de la calidad del software corresponden a la serie:";
  choices[13]= new Array();
- choices[13][0] = "Que todos los datos est&eacute;n referenciados por su clave y &eacute;sta sea &uacute;nica.";
- choices[13][1] = "Que todo atributo que represente una relaci&oacute;n sea nulo, o bien exista en la clave primaria del elemento relacionado.";
- choices[13][2] = "Que todo conjunto de operaciones que constituya una unidad, progrese en conjunto o bien falle en conjunto, pero que no progrese nunca en situaciones intermedias";
- choices[13][3] = "Que se pueda referenciar la totalidad de la base de datos.";
- answers[13] = choices[13][1];
- units[13] = "58";
- comments[13] = "Id Pregunta: 4398. ";
+ choices[13][0] = "ISO/IEC 25000";
+ choices[13][1] = "ISO/IEC 27000";
+ choices[13][2] = "ISO 9000";
+ choices[13][3] = "ISO 9001";
+ answers[13] = choices[13][0];
+ units[13] = "93";
+ comments[13] = "Id Pregunta: 10052. AGE A1 2015";
 
 
-//  Id pregunta: 4402 AÃ±o de creación de pregunta: 2007-01-01
- questions[14]= "15)  Seg&uacute;n Magerit v.2 los elementos del an&aacute;lisis de riesgos son:";
+//  Id pregunta: 10438 Año de creación de pregunta: 2016
+ questions[14]= "15)  El Real Decreto 424/2016, de 11 de noviembre establece la estructura org&aacute;nica b&aacute;sica de los departamentos ministeriales. Se&ntilde;ale la respuesta falsa.";
  choices[14]= new Array();
- choices[14][0] = "Impacto, riesgos calculados y riesgos intr&iacute;nsecos.";
- choices[14][1] = "Activos, amenazas y salvaguardas.";
- choices[14][2] = "Vulnerabilidades, riesgos e impacto.";
- choices[14][3] = "Entorno, sistema de informaci&oacute;n, informaci&oacute;n, funciones y otros.";
- answers[14] = choices[14][1];
- units[14] = "33";
- comments[14] = "Id Pregunta: 4402. ";
+ choices[14][0] = "Dentro del Ministerio de Energ&iacute;a, Turismo y Agenda Digital se encuentra la Secretar&iacute;a de Estado para la Sociedad de la Informaci&oacute;n y la Agenda Digital, de la que depende la Direcci&oacute;n General de Telecomunicaciones y Tecnolog&iacute;as de la Informaci&oacute;n.";
+ choices[14][1] = "Suprime la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y las Comunicaciones.";
+ choices[14][2] = "La Direcci&oacute;n General de Racionalizaci&oacute;n y Centralizaci&oacute;n de la Contrataci&oacute;n es un &oacute;rgano directivo perteneciente a la Subsecretar&iacute;a de Hacienda y Funci&oacute;n P&uacute;blica.";
+ choices[14][3] = "La Secretar&iacute;a General de Administraci&oacute;n Digital, con rango de Direcci&oacute;n general depende de la Secretar&iacute;a de Estado de Funci&oacute;n P&uacute;blica.";
+ answers[14] = choices[14][3];
+ units[14] = "43";
+ comments[14] = "Id Pregunta: 10438. SERVICIOS COMUNES";
 
 
-//  Id pregunta: 4755 AÃ±o de creación de pregunta: 2007-01-01
- questions[15]= "16)  La definici&oacute;n de usabilidad seg&uacute;n el est&aacute;ndar ISO 9241-11:1998 es la siguiente:";
+//  Id pregunta: 10273 Año de creación de pregunta: 2016
+ questions[15]= "16)  Se&ntilde;ale la opci&oacute;n correcta";
  choices[15]= new Array();
- choices[15][0] = "Grado en que un producto puede ser usado por una persona con alg&uacute;n tipo de discapacidad (f&iacute;sica, cognitiva o tecnol&oacute;gica) respecto a c&oacute;mo lo usar&iacute;a una persona sin discapacidad";
- choices[15][1] = "Capacidad de uso, es decir, caracter&iacute;stica que distingue a los objetos dise&ntilde;ados para su utilizaci&oacute;n de los que no.";
- choices[15][2] = "Grado en que un producto puede ser usado por los usuarios especificados para obtener los resultados especificados con efectividad, eficiencia, y satisfacci&oacute;n en un contexto de uso especificado";
- choices[15][3] = "Ninguna de las anteriores";
- answers[15] = choices[15][2];
- units[15] = "39";
- comments[15] = "Id Pregunta: 4755. ";
+ choices[15][0] = "Jenkins un servidor de integraci&oacute;n continua comercial.";
+ choices[15][1] = "Extiende su funcionalidad a trav&eacute;s de plugins.";
+ choices[15][2] = "Solamente soporta herramientas de control de versiones como CVS, Gity Clearcase.";
+ choices[15][3] = "No posee un historial de cambios realizados por build o versi&oacute;n.";
+ answers[15] = choices[15][1];
+ units[15] = "92";
+ comments[15] = "Id Pregunta: 10273. INTEGRACION CONTINUA";
 
 
-//  Id pregunta: 4857 AÃ±o de creación de pregunta: 2007-01-01
- questions[16]= "17)  El marco legislativo espa&ntilde;ol de la Propiedad Intelectual e Industrial configurado mediante el Real DecretoLegislativo 1/1996, de 12 de abril, por el que se aprueba el Texto Refundido de la Ley de Propiedad Intelectual, enlo referente al software, establece que son objeto de protecci&oacute;n:";
+//  Id pregunta: 10651 Año de creación de pregunta: 2016
+ questions[16]= "17)  &iquest;Qu&eacute; propiedades ofrecen las conexiones VPN que usan protocolos como PPTP, L2TP/IPsec y SSTP?";
  choices[16]= new Array();
- choices[16][0] = "Exclusivamente los programas de ordenador, entendidos como secuencias de instrucciones o indicacionesdestinadas a ser utilizadas en un sistema inform&aacute;tico para realizar una determinada funci&oacute;n o tarea";
- choices[16][1] = "Los programas de ordenador y su documentaci&oacute;n preparatoria, comprendi&eacute;ndose en dicho concepto ladocumentaci&oacute;n t&eacute;cnica y los manuales de uso del programa";
- choices[16][2] = "Los programas de ordenador y todas las definiciones documentadas de sus interfaces que posibilitan el usocolaborativo del software";
- choices[16][3] = "&Uacute;nicamente los algoritmos y conceptos inventivos documentados en los que se basan cualquiera de loselementos de los programas de ordenador";
- answers[16] = choices[16][1];
- units[16] = "36";
- comments[16] = "Id Pregunta: 4857. ";
+ choices[16][0] = "Encapsulaci&oacute;n y autenticaci&oacute;n.";
+ choices[16][1] = "Encapsulaci&oacute;n y cifrado de datos.";
+ choices[16][2] = "Autenticaci&oacute;n y cifrado de datos.";
+ choices[16][3] = "Encapsulaci&oacute;n, autenticaci&oacute;n y cifrado de datos.";
+ answers[16] = choices[16][3];
+ units[16] = "120";
+ comments[16] = "Id Pregunta: 10651. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 5091 AÃ±o de creación de pregunta: 2003-01-01
- questions[17]= "18)  La informaci&oacute;n en el chip del DNI est&aacute; distribuida en tres zonas, con diferentes niveles y condiciones de acceso. &iquest;Cu&aacute;l no es una de ellas?";
+//  Id pregunta: 10356 Año de creación de pregunta: 2016
+ questions[17]= "18)  Se&ntilde;ale la respuesta correcta respecto a las directivas comunitarias:";
  choices[17]= new Array();
- choices[17][0] = "Zona privada";
- choices[17][1] = "Zona de control";
- choices[17][2] = "Zona de seguridad";
- choices[17][3] = "Zona p&uacute;blica";
- answers[17] = choices[17][1];
- units[17] = "74";
- comments[17] = "Id Pregunta: 5091. NULL";
+ choices[17][0] = "No se aplican directamente en los Estados.";
+ choices[17][1] = "No son vinculantes.";
+ choices[17][2] = "Habitualmente se dictan sobre materias que son competencias exclusivas de la Uni&oacute;n Europea.";
+ choices[17][3] = "Tienen alcance general.";
+ answers[17] = choices[17][0];
+ units[17] = "5";
+ comments[17] = "Id Pregunta: 10356. UNION EUROPEA";
 
 
-//  Id pregunta: 5123 AÃ±o de creación de pregunta: 2003-01-01
- questions[18]= "19)  &iquest;Qu&eacute; tipo de driver JDBC es aquel que convierte las llamadas JDBC a llamadas nativas de la base de datos?";
+//  Id pregunta: 10124 Año de creación de pregunta: 2016
+ questions[18]= "19)  Se&ntilde;ale la VERDADERA con respecto a las las reclamaciones ante el Consejo de Transparencia y Buen Gobierno:";
  choices[18]= new Array();
- choices[18][0] = "Tipo 1";
- choices[18][1] = "Tipo 2";
- choices[18][2] = "Tipo 3";
- choices[18][3] = "Tipo 4";
- answers[18] = choices[18][1];
- units[18] = "60";
- comments[18] = "Id Pregunta: 5123. Examen TIC A Castilla La Mancha 2007";
+ choices[18][0] = "El plazo m&aacute;ximo para resolver y notificar la resoluci&oacute;n ser&aacute; de tres meses, transcurrido el cual, la reclamaci&oacute;n se entender&aacute; desestimada.";
+ choices[18][1] = "El plazo m&aacute;ximo para resolver y notificar la resoluci&oacute;n ser&aacute; de seis meses, transcurrido el cual, la reclamaci&oacute;n se entender&aacute; desestimada.";
+ choices[18][2] = "El plazo m&aacute;ximo para resolver y notificar la resoluci&oacute;n ser&aacute; de veinte d&iacute;as, transcurrido el cual, la reclamaci&oacute;n se entender&aacute; desestimada.";
+ choices[18][3] = "El plazo m&aacute;ximo para resolver y notificar la resoluci&oacute;n ser&aacute; de veinte d&iacute;as, transcurrido el cual, la reclamaci&oacute;n se entender&aacute; estimada";
+ answers[18] = choices[18][0];
+ units[18] = "22";
+ comments[18] = "Id Pregunta: 10124. ";
 
 
-//  Id pregunta: 5608 AÃ±o de creación de pregunta: 2003-01-01
- questions[19]= "20)  Ventajas de la versi&oacute;n SNMPv3 sobre SNMPv2";
+//  Id pregunta: 10637 Año de creación de pregunta: 2016
+ questions[19]= "20)  En el sistema operativo Unix/Linux, el comando id:";
  choices[19]= new Array();
- choices[19][0] = "SNMPv2 presentaba debilidades en la recuperaci&oacute;n de grandes cantidades de informaci&oacute;n.";
- choices[19][1] = "Introduce mecanismos de autentificaci&oacute;n, privacidad y control de accesos m&aacute;s solidos";
- choices[19][2] = "SNMPv3 introdujo nuevas operaciones: GetBulk, Inform, Report";
- choices[19][3] = "Ninguna de las anteriores";
- answers[19] = choices[19][1];
- units[19] = "104";
- comments[19] = "Id Pregunta: 5608. ";
+ choices[19][0] = "Muestra el n&uacute;mero de identificaci&oacute;n y el grupo al que pertenece el usuario.";
+ choices[19][1] = "El comando id no existe.";
+ choices[19][2] = "Muestra el n&uacute;mero de procesos lanzados por el usuario.";
+ choices[19][3] = "Muestra las hebras y las identificaciones de los archivos abiertos por el usuario.";
+ answers[19] = choices[19][0];
+ units[19] = "57";
+ comments[19] = "Id Pregunta: 10637. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 5748 AÃ±o de creación de pregunta: 2009-01-01
- questions[20]= "21)  &iquest;Qu&eacute; es una firma secuencial?";
+//  Id pregunta: 10544 Año de creación de pregunta: 2016
+ questions[20]= "21)  &iquest;Cu&aacute;l es el &oacute;rgano superior de gobernanza TIC en la Administraci&oacute;n General del Estado?";
  choices[20]= new Array();
- choices[20][0] = "Un documento que incluye las firmas de varios usuarios, todas ellas sobre el mismo documento original";
- choices[20][1] = "Un documento que incluye las firmas de varios usuarios, cada una de ellas incluyendo las firmas anteriores en el tiempo";
- choices[20][2] = "Un documento que incluye la firma de un usuario, y uno o varios documentos originales";
- choices[20][3] = "Un documento que contiene un documento original, la firma de uno o varios usuarios, y uno o varios sellos de tiempo";
- answers[20] = choices[20][1];
- units[20] = "74";
- comments[20] = "Id Pregunta: 5748. NULL";
+ choices[20][0] = "El Comit&eacute; de Direcci&oacute;n TIC";
+ choices[20][1] = "El Consejo Superior de Administraci&oacute;n Electr&oacute;nica";
+ choices[20][2] = "La Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n";
+ choices[20][3] = "La Comisi&oacute;n de Estrategia TIC";
+ answers[20] = choices[20][3];
+ units[20] = "26";
+ comments[20] = "Id Pregunta: 10544. Gobernanza TIC";
 
 
-//  Id pregunta: 5844 AÃ±o de creación de pregunta: 2009-01-01
- questions[21]= "22)  De entre los siguientes protocolos de encaminamiento interno, indique cu&aacute;l era clasificado por CISCO como h&iacute;brido por utilizar algoritmos basados en Vector Distancia y algoritmos basados en el Estado del Enlace";
+//  Id pregunta: 10089 Año de creación de pregunta: 2016
+ questions[21]= "22)  En un contrato cuyo presupuesto es de 100.000 euros sin IVA y se adjudica por 80.000, IVA excluido, la garant&iacute;a definitiva ser&aacute; de:";
  choices[21]= new Array();
- choices[21][0] = "EIGRP (Enhanced Interior Gateway Routing Protocol)";
- choices[21][1] = "IGRP (Interior Gateway Routing Protocol)";
- choices[21][2] = "OSPF (Open Shortest Path First)";
- choices[21][3] = "RIPv2 (Routing Information Protocol ver. 2)";
- answers[21] = choices[21][0];
- units[21] = "102";
- comments[21] = "Id Pregunta: 5844. MAP 2008 A1";
+ choices[21][0] = "2.400 euros";
+ choices[21][1] = "4.000 euros";
+ choices[21][2] = "3.200 euros";
+ choices[21][3] = "1.600 euros";
+ answers[21] = choices[21][1];
+ units[21] = "37";
+ comments[21] = "Id Pregunta: 10089. AGE A1 2015";
 
 
-//  Id pregunta: 5899 AÃ±o de creación de pregunta: 2009-01-01
- questions[22]= "23)  &iquest;Qu&eacute; es JPA?";
+//  Id pregunta: 10677 Año de creación de pregunta: 2016
+ questions[22]= "23)  Las situaciones de dependencia se clasifican en los siguientes grados:";
  choices[22]= new Array();
- choices[22][0] = "Una tecnolog&iacute;a Java de acceso a bases de datos alternativa a JDBC y con la cu&aacute;l no tiene nada que ver";
- choices[22][1] = "Una tecnolog&iacute;a Java de acceso a bases de datos de mayor nivel que JDBC, en la cu&aacute;l se apoya";
- choices[22][2] = "Es la capa que soporta la portabilidad entre gestores de bases de datos en JDBC";
- choices[22][3] = "Ninguna de las anteriores";
- answers[22] = choices[22][1];
- units[22] = "60";
- comments[22] = "Id Pregunta: 5899. NULL";
+ choices[22][0] = "Grado I dependencia leve, grado II dependencia grave, grado III dependencia muy grave";
+ choices[22][1] = "Grado I dependencia moderada, grado II dependencia severa, grado III dependencia muy severa";
+ choices[22][2] = "Grado I dependencia moderada, grado II dependencia severa, grado III gran dependencia";
+ choices[22][3] = "Grado I dependencia leve, grado II dependencia grave, grado III dependencia muy grave, grado IV gran dependencia";
+ answers[22] = choices[22][2];
+ units[22] = "14";
+ comments[22] = "Id Pregunta: 10677. Dependencia";
 
 
-//  Id pregunta: 6166 AÃ±o de creación de pregunta: 2010-01-01
- questions[23]= "24)  Se&ntilde;ale cual es el flujo general de informaci&oacute;n dentro de la organizaci&oacute;n:";
+//  Id pregunta: 10655 Año de creación de pregunta: 2016
+ questions[23]= "24)  &iquest;Qu&eacute; aplicativo no se encuentra dentro del ecosistemas de Haddoop?";
  choices[23]= new Array();
- choices[23][0] = "Entrada, procesado, almacenamiento, difusi&oacute;n y utilizaci&oacute;n.";
- choices[23][1] = "Entrada, almacenamiento, utilizaci&oacute;n, procesado y difusi&oacute;n.";
- choices[23][2] = "Entrada, procesado, almacenamiento, utilizaci&oacute;n y difusi&oacute;n.";
- choices[23][3] = "Entrada, almacenamiento, procesado, difusi&oacute;n y utilizaci&oacute;n.";
+ choices[23][0] = "Yarn";
+ choices[23][1] = "Flume";
+ choices[23][2] = "Hive";
+ choices[23][3] = "BizAgi";
  answers[23] = choices[23][3];
- units[23] = "21";
- comments[23] = "Id Pregunta: 6166. ";
+ units[23] = "73";
+ comments[23] = "Id Pregunta: 10655. ";
 
 
-//  Id pregunta: 6180 AÃ±o de creación de pregunta: 2010-01-01
- questions[24]= "25)  RMI, DCOM, CORBA y RPC se consideran:";
+//  Id pregunta: 10313 Año de creación de pregunta: 2016
+ questions[24]= "25)  Indique qui&eacute;n propone al candidato para el cargo de Presidente de la Comisi&oacute;n Europea:";
  choices[24]= new Array();
- choices[24][0] = "Precursores de los Servicios Web.";
- choices[24][1] = "Formas de comunicar aplicaciones distribuidas.";
- choices[24][2] = "Formas de comunicar aplicaciones heterog&eacute;neas.";
- choices[24][3] = "Todas las anteriores son respuestas correctas.";
- answers[24] = choices[24][3];
- units[24] = "69";
- comments[24] = "Id Pregunta: 6180. NULL";
+ choices[24][0] = "El Consejo Europeo.";
+ choices[24][1] = "El Consejo de la Uni&oacute;n Europea.";
+ choices[24][2] = "Los miembros de la Comisi&oacute;n Europea.";
+ choices[24][3] = "El Parlamento Europeo.";
+ answers[24] = choices[24][0];
+ units[24] = "5";
+ comments[24] = "Id Pregunta: 10313. UNION EUROPEA";
 
 
-//  Id pregunta: 8431 AÃ±o de creación de pregunta: 2011-01-01
- questions[25]= "26)  &iquest;Cu&aacute;l de los siguientes programas es la continuaci&oacute;n del programa IDABC finalizado en diciembre de 2009?";
+//  Id pregunta: 10046 Año de creación de pregunta: 2016
+ questions[25]= "26)  Indique cu&aacute;l de las siguientes afirmaciones es correcta:";
  choices[25]= new Array();
- choices[25][0] = "AIF";
- choices[25][1] = "IDA";
- choices[25][2] = "ISA";
- choices[25][3] = "IMA";
- answers[25] = choices[25][2];
- units[25] = "30";
- comments[25] = "Id Pregunta: 8431. ";
+ choices[25][0] = "En un sistema de cifrado de clave asim&eacute;trica la seguridad radica en la transmisi&oacute;n de la clave, mediante canal seguro, entre el emisor y el receptor del mensaje.";
+ choices[25][1] = "Las huellas digitales devueltas por una misma funci&oacute;n hash tienen id&eacute;ntica longitud.";
+ choices[25][2] = "Para ofrecer un nivel de seguridad equivalente, los sistemas de clave p&uacute;blica requieren menores longitudes de clave que los sistemas sim&eacute;tricos.";
+ choices[25][3] = "Se denomina criptograma al procedimiento empleado para cifrar un mensaje.";
+ answers[25] = choices[25][1];
+ units[25] = "76";
+ comments[25] = "Id Pregunta: 10046. AGE A1 2015";
 
 
-//  Id pregunta: 8468 AÃ±o de creación de pregunta: 2011-01-01
- questions[26]= "27)  GPRS es un servicio que soporta la transmisi&oacute;n de paquetes via radio:";
+//  Id pregunta: 10377 Año de creación de pregunta: 2016
+ questions[26]= "27)  Es un elemento caracter&iacute;stico de la naturaleza jur&iacute;dica de la Uni&oacute;n Europea:";
  choices[26]= new Array();
- choices[26][0] = "Utilizando el protocolo HSDPA y el mismo BSS de GSM";
- choices[26][1] = "Utilizando el protocolo IP y el mismo BSS de GSM";
- choices[26][2] = "Utilizando el protocolo IP y transmisi&oacute;n WCDMA de banda ancha";
- choices[26][3] = "Ninguna de las anteriores";
- answers[26] = choices[26][1];
- units[26] = "108";
- comments[26] = "Id Pregunta: 8468. Analista Ayto. Madrid 2010";
+ choices[26][0] = "Tener una estructura institucional.";
+ choices[26][1] = "El establecimiento de un Ordenamiento jur&iacute;dico propio.";
+ choices[26][2] = "La transferencia de competencias a las instituciones comunitarias.";
+ choices[26][3] = "Todas las respuestas son correctas.";
+ answers[26] = choices[26][3];
+ units[26] = "5";
+ comments[26] = "Id Pregunta: 10377. UNION EUROPEA";
 
 
-//  Id pregunta: 8524 AÃ±o de creación de pregunta: 2011-01-01
- questions[27]= "28)  &iquest;Cu&aacute;nto overhead o sobrecarga genera cada paquete MPLS?";
+//  Id pregunta: 10256 Año de creación de pregunta: 2016
+ questions[27]= "28)  El Art&iacute;culo 21 de la Constituci&oacute;n Espa&ntilde;ola se&ntilde;ala que:";
  choices[27]= new Array();
- choices[27][0] = "4 bits.";
- choices[27][1] = "5 bits.";
- choices[27][2] = "32 bits.";
- choices[27][3] = "258 bits.";
- answers[27] = choices[27][2];
- units[27] = "100";
- comments[27] = "Id Pregunta: 8524. Examen TIC A2 2010 interna";
+ choices[27][0] = "Se reconoce el derecho de reuni&oacute;n pac&iacute;fica y con armas.";
+ choices[27][1] = "Se reconoce el derecho de reuni&oacute;n pac&iacute;fica siempre dentro del derecho de manifestaci&oacute;n previa autorizaci&oacute;n.";
+ choices[27][2] = "Se reconoce el derecho de reuni&oacute;n pac&iacute;fica y sin armas.";
+ choices[27][3] = "No se reconoce expl&iacute;citamente tal derecho de reuni&oacute;n.";
+ answers[27] = choices[27][0];
+ units[27] = "1";
+ comments[27] = "Id Pregunta: 10256. CONSTITUCION1978";
 
 
-//  Id pregunta: 8785 AÃ±o de creación de pregunta: 2011-01-01
- questions[28]= "29)  OLAP proporciona mayor velocidad de procesamiento en la sentencia SQL";
+//  Id pregunta: 10267 Año de creación de pregunta: 2016
+ questions[28]= "29)  El T&iacute;tulo Primero de la Constituci&oacute;n Espa&ntilde;ola est&aacute; dedicado a:";
  choices[28]= new Array();
- choices[28][0] = "INSERT";
- choices[28][1] = "UPDATE";
- choices[28][2] = "DELETE";
- choices[28][3] = "SELECT";
- answers[28] = choices[28][3];
- units[28] = "57, 58";
- comments[28] = "Id Pregunta: 8785. Examen UPM A2 2011";
+ choices[28][0] = "Los Derechos y Deberes fundamentales.";
+ choices[28][1] = "La Corona.";
+ choices[28][2] = "El Poder Judicial.";
+ choices[28][3] = "Las Cortes Generales.";
+ answers[28] = choices[28][2];
+ units[28] = "1";
+ comments[28] = "Id Pregunta: 10267. CONSTITUCION1978";
 
 
-//  Id pregunta: 9021 AÃ±o de creación de pregunta: 2011-01-01
- questions[29]= "30)  Un articulista est&aacute; escribiendo sobre las ventajas econ&oacute;micas de los sistemas WDM (Wavelength-Division Multiplexing), que se manifiestan principalmente en los sistemas:";
+//  Id pregunta: 10048 Año de creación de pregunta: 2016
+ questions[29]= "30)  El Reglamento (UE) 910/2014 del Parlamento Europeo y del Consejo relativo a la identificaci&oacute;n electr&oacute;nica y los servicios de confianza para las transacciones electr&oacute;nicas en el mercado interior establece:";
  choices[29]= new Array();
- choices[29][0] = "De baja capacidad y elevado alcance.";
- choices[29][1] = "De alta capacidad y reducido alcance.";
- choices[29][2] = "De alta capacidad y elevado alcance.";
- choices[29][3] = "Ninguna de las anteriores";
- answers[29] = choices[29][2];
- units[29] = "99";
- comments[29] = "Id Pregunta: 9021. Teleco Ayto. Madrid 2010";
+ choices[29][0] = "La norma reguladora de los certificados de sede electr&oacute;nica en la Uni&oacute;n Europea.";
+ choices[29][1] = "Cinco a&ntilde;os como el periodo m&aacute;ximo de vigencia de los certificados electr&oacute;nicos.";
+ choices[29][2] = "La plena prohibici&oacute;n del uso de seud&oacute;nimos en el uso de las transacciones electr&oacute;nicas.";
+ choices[29][3] = "La regulaci&oacute;n del certificado de sello electr&oacute;nico y su uso en los servicios p&uacute;blicos.";
+ answers[29] = choices[29][3];
+ units[29] = "77";
+ comments[29] = "Id Pregunta: 10048. AGE A1 2015";
 
 
-//  Id pregunta: 9045 AÃ±o de creación de pregunta: 2011-01-01
- questions[30]= "31)  Se&ntilde;ale la afirmaci&oacute;n incorrecta sobre M&eacute;trica";
+//  Id pregunta: 10661 Año de creación de pregunta: 2016
+ questions[30]= "31)  &iquest;Qu&eacute; tipos de nodos tiene un cl&uacute;ster Hadoop?";
  choices[30]= new Array();
- choices[30][0] = "Sirve tanto para desarrollo estructurado como para desarrollo orientado a objetos";
- choices[30][1] = "Est&aacute; prohibido su uso fuera de la administraci&oacute;n";
- choices[30][2] = "Los cuatro interfaces son aseguramiento de la calidad, seguridad, Gesti&oacute;n de Configuraci&oacute;n y Gesti&oacute;n de Proyectos ";
- choices[30][3] = "La &uacute;ltima versi&oacute;n es la tercera";
- answers[30] = choices[30][1];
- units[30] = "86";
- comments[30] = "Id Pregunta: 9045. NULL";
+ choices[30][0] = "Varios namenodes y varios datanodes por cluster";
+ choices[30][1] = "varios namenodes y obligatoriamente 1 datanode por cluster";
+ choices[30][2] = "1 namenode y varios datanodes por cluster";
+ choices[30][3] = "1 namenode y obligatoriamente 1 datanode por cluster";
+ answers[30] = choices[30][2];
+ units[30] = "73";
+ comments[30] = "Id Pregunta: 10661. ";
 
 
-//  Id pregunta: 9047 AÃ±o de creación de pregunta: 2011-01-01
- questions[31]= "32)  Cu&aacute;l no es un derecho de las personas seg&uacute;n la LOPD";
+//  Id pregunta: 10383 Año de creación de pregunta: 2016
+ questions[31]= "32)  &iquest;Qu&eacute; &oacute;rgano colegiado de consulta y asesoramiento crea la Ley Org&aacute;nica 3/2007, con el fin esencial de servir de cauce para la participaci&oacute;n de las mujeres en la consecuci&oacute;n efectiva del principio de igualdad de trato y de oportunidades entre mujeres y hombres, y la lucha contra la discriminaci&oacute;n por raz&oacute;n de sexo?";
  choices[31]= new Array();
- choices[31][0] = "Impugnaci&oacute;n de valoraciones";
- choices[31][1] = "Derecho de acceso";
- choices[31][2] = "Derecho a cobrar dinero por el tratamiento de sus datos";
- choices[31][3] = "Derecho de rectificaci&oacute;n";
- answers[31] = choices[31][2];
- units[31] = "29";
- comments[31] = "Id Pregunta: 9047. ";
+ choices[31][0] = "El Consejo Nacional de la Mujer";
+ choices[31][1] = "El Consejo de la Mujer";
+ choices[31][2] = "El Instituto de la Mujer";
+ choices[31][3] = "El Consejo de Participaci&oacute;n de la Mujer";
+ answers[31] = choices[31][3];
+ units[31] = "14";
+ comments[31] = "Id Pregunta: 10383. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 9083 AÃ±o de creación de pregunta: 2013-01-01
- questions[32]= "33)  Seg&uacute;n M&eacute;trica v3, se&ntilde;ale la afirmaci&oacute;n FALSA en relaci&oacute;n a la Planificaci&oacute;n de Sistemas de Informaci&oacute;n";
+//  Id pregunta: 10587 Año de creación de pregunta: 2016
+ questions[32]= "33)  &iquest;Qui&eacute;n y cu&aacute;ndo presenta el informe de seguimiento sobre el grado de avance de la implementaci&oacute;n de la Estrategia TIC?";
  choices[32]= new Array();
- choices[32][0] = "Es fundamental que la alta direcci&oacute;n tome parte activa en la decisi&oacute;n del PSI para garantizar su &eacute;xito";
- choices[32][1] = "En cualquier caso, como paso previo para detectar aspectos importantes que puedan afectar a la organizaci&oacute;n, es necesario investigar sus puntos fuertes, &aacute;reas de mejora, riesgos y amenazas posibles y hacer un diagn&oacute;stico de los mismos.";
- choices[32][2] = "Dentro del Plan de Acci&oacute;n se incluye un calendario de proyectos, con posibles alternativas, y una estimaci&oacute;n de recursos, cuyo detalle ser&aacute; mayor para los m&aacute;s inmediatos.";
- choices[32][3] = "La elaboraci&oacute;n de un nuevo Plan de Sistemas de Informaci&oacute;n debe partir de cero, y no tener en cuenta las planificaciones estrat&eacute;gicas realizadas en periodos anteriores";
- answers[32] = choices[32][3];
- units[32] = "77";
- comments[32] = "Id Pregunta: 9083. ";
+ choices[32][0] = "La Secretar&iacute;a General de Administraci&oacute;n Digital con apoyo de las CMADs, anualmente";
+ choices[32][1] = "La Secretar&iacute;a General de Administraci&oacute;n Digital con apoyo de las CMADs, bienalmente";
+ choices[32][2] = "La Secretar&iacute;a General de Administraci&oacute;n Digital, bienalmente";
+ choices[32][3] = "La Secretar&iacute;a General de Administraci&oacute;n Digital, sin periodicidad definida";
+ answers[32] = choices[32][0];
+ units[32] = "19";
+ comments[32] = "Id Pregunta: 10587. Estrategia TIC";
 
 
-//  Id pregunta: 9754 AÃ±o de creación de pregunta: 2014-01-01
- questions[33]= "34)  La tarea de especificaci&oacute;n de necesidades de Migraci&oacute;n en M&eacute;trica v3 se tiene en cuenta en la actividad:";
+//  Id pregunta: 10549 Año de creación de pregunta: 2016
+ questions[33]= "34)  El presidente del pleno de la Comisi&oacute;n de Estrategia TIC es :";
  choices[33]= new Array();
- choices[33][0] = "Elaboraci&oacute;n del modelo de datos en ASI";
- choices[33][1] = "Dise&ntilde;o de clases en DSI";
- choices[33][2] = "Dise&ntilde;o de la Migraci&oacute;n y carga inicial de datos en DSI";
- choices[33][3] = "A y B son correctas";
- answers[33] = choices[33][3];
- units[33] = "86";
- comments[33] = "Id Pregunta: 9754. Ambas actividades tienen una tarea llamada &quot;Especificaci&oacute;n de necesidades de Migraci&oacute;n y Carga inicial de datos&quot;";
+ choices[33][0] = "El Ministro de Energ&iacute;a, Turismo y Agenda Digital";
+ choices[33][1] = "El Ministro de Hacienda y Administraciones P&uacute;blicas";
+ choices[33][2] = "El Presidente del Gobierno";
+ choices[33][3] = "El Secretario General de Administraci&oacute;n Digital";
+ answers[33] = choices[33][1];
+ units[33] = "26";
+ comments[33] = "Id Pregunta: 10549. Gobernanza TIC";
 
 
-//  Id pregunta: 9771 AÃ±o de creación de pregunta: 2014-01-01
- questions[34]= "35)  Seg&uacute;n la Ley 37/2007 de Reutilizaci&oacute;n de Informaci&oacute;n del Sector P&uacute;blico, la funci&oacute;n sancionadora es competencia de:";
+//  Id pregunta: 10375 Año de creación de pregunta: 2016
+ questions[34]= "35)  Las relaciones entre el Derecho Comunitario y el Derecho nacional se caracterizan por:";
  choices[34]= new Array();
- choices[34][0] = "MITyC";
- choices[34][1] = "Ministerio de Hacienda y Administraciones P&uacute;blicas";
- choices[34][2] = "Ministro del ministerio que ofrezca los datos si las infracciones son muy graves y un rango m&iacute;nimo de Direcci&oacute;n General para infracciones graves y leves";
- choices[34][3] = "Direcci&oacute;n General que haya publicado los datos.";
- answers[34] = choices[34][2];
- units[34] = "22";
- comments[34] = "Id Pregunta: 9771. ";
+ choices[34][0] = "Complementariedad, por tratarse de un ordenamiento para los Estados miembros.";
+ choices[34][1] = "Primac&iacute;a del Derecho Comunitario, puesto que se impone a los Estados miembros.";
+ choices[34][2] = "Autonom&iacute;a del Derecho Comunitario frente al nacional.";
+ choices[34][3] = "Todas las respuestas son correctas.";
+ answers[34] = choices[34][3];
+ units[34] = "5";
+ comments[34] = "Id Pregunta: 10375. UNION EUROPEA";
 
 
-//  Id pregunta: 9934 AÃ±o de creación de pregunta: 2014-01-01
- questions[35]= "36)  En la Capa de Sesi&oacute;n (nivel 5) &iquest;cu&aacute;ntos tipos de puntos de sincronizaci&oacute;n existen?";
+//  Id pregunta: 10278 Año de creación de pregunta: 2016
+ questions[35]= "36)  Respecto al Consejo de Transparencia y Buen Gobierno:";
  choices[35]= new Array();
- choices[35][0] = "2, uno mayor y otro menor.";
- choices[35][1] = "3, mayor, mediano y menor.";
- choices[35][2] = "Ninguno.";
- choices[35][3] = "Depende del protocolo implementado.";
- answers[35] = choices[35][0];
- units[35] = "100";
- comments[35] = "Id Pregunta: 9934. NULL";
+ choices[35][0] = "Su estatuto entra en vigor el 10 de diciembre de 2014.";
+ choices[35][1] = "Estatuto se estructura en cinco cap&iacute;tulos.";
+ choices[35][2] = "El Consejo de Ministros aprobar&aacute;, en el plazo de tres meses desde la publicaci&oacute;n de la Ley 19/2013 en el &laquo;Bolet&iacute;n Oficial del Estado&raquo;, un Real Decreto por el que se apruebe el Estatuto org&aacute;nico del Consejo de Transparencia y Buen Gobierno.";
+ choices[35][3] = "Su estatuto se regula por el Real Decreto 919/2014, de 31 de octubre.";
+ answers[35] = choices[35][1];
+ units[35] = "22";
+ comments[35] = "Id Pregunta: 10278. LEY DE TRANSPARENCIA";
 
 
-//  Id pregunta: 9972 AÃ±o de creación de pregunta: 2014-01-01
- questions[36]= "37)  &iquest;Cu&aacute;l de los siguientes se corresponde con un m&oacute;dulo dentro de un ERP (Enterprise Resource Planning)?";
+//  Id pregunta: 10063 Año de creación de pregunta: 2016
+ questions[36]= "37)  El modelo de servicio en la nube en el que el consumidor no tiene control sobre la red, los servidores, sistemas operativos o almacenamiento, pero s&iacute; sobre las aplicaciones desplegadas y sobre los ajustes de configuraci&oacute;n de dichas aplicaciones, se denomina:";
  choices[36]= new Array();
- choices[36][0] = "Recursos Humanos";
- choices[36][1] = "Planificaci&oacute;n Estrat&eacute;gica";
- choices[36][2] = "Seguridad de Informaci&oacute;n";
- choices[36][3] = "HelpDesk";
- answers[36] = choices[36][0];
- units[36] = "65";
- comments[36] = "Id Pregunta: 9972. Examen TICA1, Xunta de GaliciA, 2011";
+ choices[36][0] = "Infrastructure as a Service (IaaS)";
+ choices[36][1] = "Platform as a Service (PaaS)";
+ choices[36][2] = "Software as a Service (SaaS)";
+ choices[36][3] = "Application as a Service (AaaS)";
+ answers[36] = choices[36][1];
+ units[36] = "52";
+ comments[36] = "Id Pregunta: 10063. AGE A1 2015";
 
 
-//  Id pregunta: 9990 AÃ±o de creación de pregunta: 2014-01-01
- questions[37]= "38)  &iquest;Cu&aacute;l de los siguientes es sistemas de gesti&oacute;n de conocimiento tiene una versi&oacute;n con licencia de fuentes abiertas?";
+//  Id pregunta: 10066 Año de creación de pregunta: 2016
+ questions[37]= "38)  Para los siguientes tipos de copias de seguridad, indique cu&aacute;l de las siguientes secuencias los ordena de mayor a menor tiempo de restauraci&oacute;n:";
  choices[37]= new Array();
- choices[37][0] = "Blackboard";
- choices[37][1] = "WebCT";
- choices[37][2] = "Dokeos";
- choices[37][3] = "Desire2Learn";
- answers[37] = choices[37][2];
- units[37] = "66";
- comments[37] = "Id Pregunta: 9990. ";
+ choices[37][0] = "Incremental, diferencial, completa";
+ choices[37][1] = "Completa, incremental, diferencial";
+ choices[37][2] = "Completa, diferencial, incremental";
+ choices[37][3] = "No hay diferencia en el tiempo de restauraci&oacute;n, encontr&aacute;ndose la diferencia en el espacio de almacenamiento consumido.";
+ answers[37] = choices[37][0];
+ units[37] = "53";
+ comments[37] = "Id Pregunta: 10066. AGE A1 2015. Pregunta anulada en el examen real. La opci&oacute;n A dec&iacute;a &quot;Diferencial, incremental, completa&quot;, por lo que ninguna respuesta pod&iacute;a considerarse correcta";
 
 
-//  Id pregunta: 10007 AÃ±o de creación de pregunta: 2014-01-01
- questions[38]= "39)  En la direcci&oacute;n de proyectos de Tecnolog&iacute;as de la Informaci&oacute;n, es fundamental la gesti&oacute;n del alcance del proyecto. Ello supone";
+//  Id pregunta: 10051 Año de creación de pregunta: 2016
+ questions[38]= "39)  De acuerdo con el Real Decreto 1720/2007 indique qu&eacute; medida ha de ser aplicada obligatoriamente a los ficheros de los que sean responsables las Administraciones tributarias en el ejercicio de sus potestades tributarias:";
  choices[38]= new Array();
- choices[38][0] = "estimar la duraci&oacute;n de las actividades.";
- choices[38][1] = "definir la secuencia entre las actividades.";
- choices[38][2] = "asegurar que el proyecto incluya todo el trabajo requerido, y s&oacute;lo el trabajo requerido.";
- choices[38][3] = "preparar el presupuesto de costes.";
- answers[38] = choices[38][2];
- units[38] = "27";
- comments[38] = "Id Pregunta: 10007. ";
+ choices[38][0] = "Cifrado de las comunicaciones";
+ choices[38][1] = "Al menos, una auditor&iacute;a bienal (cada 2 a&ntilde;os)";
+ choices[38][2] = "Registro de los accesos";
+ choices[38][3] = "No queda regulado en dicho Real Decreto al depender de la criticidad del fichero.";
+ answers[38] = choices[38][1];
+ units[38] = "35";
+ comments[38] = "Id Pregunta: 10051. AGE A1 2015. Pregunta anulada en el examen real, ya que la opci&oacute;n B dec&iacute;a &quot;bianual&quot; en lugar de &quot;bienal&quot;";
 
 
-//  Id pregunta: 10125 AÃ±o de creación de pregunta: 2014-01-01
- questions[39]= "40)  La red TESTA tiene el rango de direcciones:";
+//  Id pregunta: 10058 Año de creación de pregunta: 2016
+ questions[39]= "40)  Se&ntilde;ale cu&aacute;l de los siguientes apartados NO ha sido declarado como servicio compartido en la Administraci&oacute;n General del Estado:";
  choices[39]= new Array();
- choices[39][0] = "10.0.0.0";
- choices[39][1] = "192.0.0.0";
- choices[39][2] = "62.0.0.0";
- choices[39][3] = "62.62.0.0";
- answers[39] = choices[39][3];
- units[39] = "103";
- comments[39] = "Id Pregunta: 10125. ";
+ choices[39][0] = "Servicio com&uacute;n de gesti&oacute;n econ&oacute;mico-presupuestaria";
+ choices[39][1] = "Servicio com&uacute;n de georreferenciaci&oacute;n";
+ choices[39][2] = "Servicio de seguridad gestionada";
+ choices[39][3] = "Servicio de gesti&oacute;n de notificaciones";
+ answers[39] = choices[39][1];
+ units[39] = "26";
+ comments[39] = "Id Pregunta: 10058. AGE A1 2015";
 
 
-//  Id pregunta: 10214 AÃ±o de creación de pregunta: 2014-01-01
- questions[40]= "41)  Tres alternativas A, B y C han obtenido respectivamente las puntuaciones directas 300, 450 y 250 respecto de un criterio. Seg&uacute;n el m&eacute;todo de fracci&oacute;n del ideal, &iquest;qu&eacute; puntuaci&oacute;n normalizada corresponde a la alternativa A?";
+//  Id pregunta: 10504 Año de creación de pregunta: 2016
+ questions[40]= "41)  Sobre el per&iacute;odo medio de pagos, se&ntilde;ale la respuesta falsa:";
  choices[40]= new Array();
- choices[40][0] = "0,25 puntos";
- choices[40][1] = "0,75 puntos";
- choices[40][2] = "0,33 puntos";
- choices[40][3] = "0,66 puntos";
- answers[40] = choices[40][0];
- units[40] = "34";
- comments[40] = "Id Pregunta: 10214. Puntuaci&oacute;n normalizada por factor del ideal = (puntuacion - puntuacion_min) / (puntuacion_max - puntuacion_min) = (300 - 250) / (450 - 250) = 0,25";
+ choices[40][0] = "Se entiende que existe sostenibilidad de la deuda comercial, cuando el periodo medio de pago a los proveedores no supere el plazo m&aacute;ximo previsto en la normativa sobre morosidad.";
+ choices[40][1] = "Este control informatizado y sistematizado de las facturas favorecer&aacute; un seguimiento riguroso de la morosidad a trav&eacute;s de un indicador, el periodo medio de pagos, que visualizar&aacute; el volumen de deuda comercial de las Administraciones P&uacute;blicas.";
+ choices[40][2] = "Para el c&aacute;lculo econ&oacute;mico del per&iacute;odo medio de pago a proveedores, se tendr&aacute;n en cuenta las facturas expedidas desde el 1 de enero de 2015 que consten en el registro contable de facturas o sistema equivalente y las certificaciones mensuales de obra aprobadas a partir de la misma fecha.";
+ choices[40][3] = "El per&iacute;odo medio de pagos se calcular&aacute; mediante la siguiente f&oacute;rmula: Periodo medio de pago global a proveedores = &Sigma; (periodo medio de pago de cada entidad x importe operaciones de la entidad)/ &Sigma; importe operaciones de las entidades";
+ answers[40] = choices[40][2];
+ units[40] = "10";
+ comments[40] = "Id Pregunta: 10504. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 10286 AÃ±o de creación de pregunta: 2014-01-01
- questions[41]= "42)  &iquest;Qu&eacute; tipo de mantenimiento debe realizarse como consecuencia de los cambios en el entorno de operaci&oacute;n?";
+//  Id pregunta: 10576 Año de creación de pregunta: 2016
+ questions[41]= "42)  Se&ntilde;ale, de entre los siguientes, cu&aacute;l es un gestor de base de datos relacional:";
  choices[41]= new Array();
- choices[41][0] = "Operativo";
- choices[41][1] = "Correctivo";
- choices[41][2] = "Perfectivo";
- choices[41][3] = "Adaptativo";
- answers[41] = choices[41][3];
- units[41] = "91";
- comments[41] = "Id Pregunta: 10286. TIC A2, libre, examen 2013";
+ choices[41][0] = "PostgreSQL";
+ choices[41][1] = "Datawarehouse";
+ choices[41][2] = "Snowflake";
+ choices[41][3] = "CouchDB";
+ answers[41] = choices[41][0];
+ units[41] = "61";
+ comments[41] = "Id Pregunta: 10576. Tema 61. TAI 2016.";
 
 
-//  Id pregunta: 10348 AÃ±o de creación de pregunta: 2014-01-01
- questions[42]= "43)  &iquest;C&oacute;mo se llama la organizaci&oacute;n que desarrolla est&aacute;ndares abiertos para la industria de la telefon&iacute;a m&oacute;vil?";
+//  Id pregunta: 10461 Año de creación de pregunta: 2016
+ questions[42]= "43)  De acuerdo con la Ley 47/2003, de 26 de noviembre, General Presupuestaria, a qui&eacute;n le corresponde aprobar y comprometer los gastos propios de los servicios a su cargo:";
  choices[42]= new Array();
- choices[42][0] = "BSA (Business  Software Alliance)";
- choices[42][1] = "OpenMG (Open Mobile Group)";
- choices[42][2] = "OMA (Open Mobile Alliance)";
- choices[42][3] = "The Open Group";
- answers[42] = choices[42][2];
- units[42] = "37";
- comments[42] = "Id Pregunta: 10348. La OMA est&aacute; integrada, entre otros, por operadores de telefon&iacute;a m&oacute;vil, y provedores de aplicaciones y contenidos para m&oacute;viles";
+ choices[42][0] = "A los ministros.";
+ choices[42][1] = "Las respuestas a) y b) son correctas.";
+ choices[42][2] = "Las respuestas a) y b) no son correctas.";
+ choices[42][3] = "A los titulares de los &oacute;rganos del Estado.";
+ answers[42] = choices[42][1];
+ units[42] = "10";
+ comments[42] = "Id Pregunta: 10461. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 10359 AÃ±o de creación de pregunta: 2014-01-01
- questions[43]= "44)  En relaci&oacute;n con los sistemas abiertos, se&ntilde;ale la respuesta err&oacute;nea:";
+//  Id pregunta: 10595 Año de creación de pregunta: 2016
+ questions[43]= "44)  &iquest;Qui&eacute;n elabora y ejecuta los Planes de Acci&oacute;n Sectoriales?";
  choices[43]= new Array();
- choices[43][0] = "Un sistema abierto es aquel cuyas especificaciones est&aacute;n aprobadas, publicadas y respaldadas por organismos independientes de normalizaci&oacute;n";
- choices[43][1] = "Un sistema abierto es aquel capaz de interconectarse con otros de acuerdo con unas normas establecidas";
- choices[43][2] = "Los sistemas abiertos se caracterizan por su interopeabilidad, portabilidad y escalabilidad";
- choices[43][3] = "Los sistemas abiertos deben hacer uso de est&aacute;ndares abiertos";
- answers[43] = choices[43][3];
- units[43] = "40";
- comments[43] = "Id Pregunta: 10359. Un sistema puede ser abierto pero no hacer uso de est&aacute;ndares abiertos";
+ choices[43][0] = "La CETIC";
+ choices[43][1] = "Los Ministerios";
+ choices[43][2] = "La Secretar&iacute;a General de Administraci&oacute;n Digital";
+ choices[43][3] = "Ninguno de los anteriores";
+ answers[43] = choices[43][1];
+ units[43] = "19";
+ comments[43] = "Id Pregunta: 10595. Estrategia TIC";
 
 
-//  Id pregunta: 10429 AÃ±o de creación de pregunta: 2014-01-01
- questions[44]= "45)  La virtualizaci&oacute;n basada en VDI (Virtual Desktop Infrastructure) ";
+//  Id pregunta: 10091 Año de creación de pregunta: 2016
+ questions[44]= "45)  &iquest;Cu&aacute;l de las siguientes opciones muestra exclusivamente herramientas directamente relacionadas con la realizaci&oacute;n de pruebas para asegurar la calidad del software?";
  choices[44]= new Array();
- choices[44][0] = "permite ratios de consolidaci&oacute;n de 10 a 1 respecto a servidores de terminales. ";
- choices[44][1] = "est&aacute; basado en la soluci&oacute;n XenApp de Citrix.";
- choices[44][2] = "aporta aislamiento y control sobre los puestos de trabajo gestionados.";
- choices[44][3] = "no est&aacute; dise&ntilde;ado para soportar el perfil de Desarrolladores, por el control limitado del entorno.  ";
+ choices[44][0] = "JUnit, Artifactory y SonarQube";
+ choices[44][1] = "JUnit, Artifactory y Selenium";
+ choices[44][2] = "JUnit, SonarQube y Selenium";
+ choices[44][3] = "ArtiFactory, SonarQube y Selenium";
  answers[44] = choices[44][2];
- units[44] = "119";
- comments[44] = "Id Pregunta: 10429. Examen TIC A1 2013";
+ units[44] = "92";
+ comments[44] = "Id Pregunta: 10091. AGE A1 2015";
 
 
-//  Id pregunta: 10448 AÃ±o de creación de pregunta: 2014-01-01
- questions[45]= "46)  El m&eacute;todo de compresi&oacute;n de archivos denominado &quot;algoritmo de deflaci&oacute;n&quot;, que fue originalmente definido por Phil Katz, se utiliza en el formato de imagen ";
+//  Id pregunta: 10217 Año de creación de pregunta: 2016
+ questions[45]= "46)  Tal y como marca la Constituci&oacute;n Espa&ntilde;ola de 1978, en el caso de los refer&eacute;ndums consultivos:";
  choices[45]= new Array();
- choices[45][0] = "TIFF.";
- choices[45][1] = "GIF.";
- choices[45][2] = "PNG.";
- choices[45][3] = "JPEG.";
- answers[45] = choices[45][2];
- units[45] = "93";
- comments[45] = "Id Pregunta: 10448. Examen TIC A1 2013";
+ choices[45][0] = "Su propuesta parte del Presidente del Gobierno, ha de ser autorizada por el Congreso de los Diputados.";
+ choices[45][1] = "Son propuestos por el Consejo de Ministros, siendo autorizados previamente por el Presidente del Gobierno.";
+ choices[45][2] = "Son refrendados por el Rey.";
+ choices[45][3] = "Son convocados por el Presidente del Gobierno.";
+ answers[45] = choices[45][0];
+ units[45] = "1";
+ comments[45] = "Id Pregunta: 10217. CONSTITUCION1978";
 
 
-//  Id pregunta: 10497 AÃ±o de creación de pregunta: 2014-01-01
- questions[46]= "47)  &iquest;Se puede filtrar el tr&aacute;fico, mediante un firewall de nivel 3, entre dos m&aacute;quinas situadas en la misma LAN?";
+//  Id pregunta: 10378 Año de creación de pregunta: 2016
+ questions[46]= "47)  Indique por cu&aacute;ntos miembros est&aacute; formado actualmente el Tribunal de Cuentas:";
  choices[46]= new Array();
- choices[46][0] = "Si";
- choices[46][1] = "No";
- choices[46][2] = "Depende de la configuraci&oacute;n del FW";
- choices[46][3] = "Depende de la configuraci&oacute;n de la LAN";
+ choices[46][0] = "Quince miembros.";
+ choices[46][1] = "Un miembro de cada pa&iacute;s de la Uni&oacute;n Europea.";
+ choices[46][2] = "Los miembros que determine el Consejo.";
+ choices[46][3] = "Un Presidente y quince miembros.";
  answers[46] = choices[46][1];
- units[46] = "111";
- comments[46] = "Id Pregunta: 10497. Por definici&oacute;n, un FW de nivel 3 solo puede cortar tr&aacute;fico a ese nivel. Por otro lado, 2 m&aacute;quinas situadas en la misma LAN se encuentran conectadas a nivel 2 y por tanto no es posible el filtrado de tr&aacute;fico a nivel 3 dentro de una misma LAN. En el caso de";
+ units[46] = "14";
+ comments[46] = "Id Pregunta: 10378. UNION EUROPEA";
 
 
-//  Id pregunta: 10604 AÃ±o de creación de pregunta: 2015-01-01
- questions[47]= "48)  SET es:";
+//  Id pregunta: 10425 Año de creación de pregunta: 2016
+ questions[47]= "48)  Todos los tribunales y &oacute;rganos de selecci&oacute;n del personal de la Administraci&oacute;n General del Estado y los organismos p&uacute;blicos vinculados o dependientes de ella responder&aacute;n al principio:";
  choices[47]= new Array();
- choices[47][0] = "Una tecnolog&iacute;a definida por MasterCard con el fin de verificar la identidad de los titulares que efect&uacute;an compras por Internet.";
- choices[47][1] = "Un sistema de micropagos.";
- choices[47][2] = "Un protocolo est&aacute;ndar para el pago remoto con tarjetas de cr&eacute;dito.";
- choices[47][3] = "Un negocio de comercio electr&oacute;nico que permite realizar pagos o transferencias monetarias a trav&eacute;s de Internet.";
- answers[47] = choices[47][2];
- units[47] = "70";
- comments[47] = "Id Pregunta: 10604. ";
+ choices[47][0] = "Presencia equilibrada.";
+ choices[47][1] = "Presencia paritaria.";
+ choices[47][2] = "Presencia consensuada.";
+ choices[47][3] = "presencia horizontal.";
+ answers[47] = choices[47][0];
+ units[47] = "14";
+ comments[47] = "Id Pregunta: 10425. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10608 AÃ±o de creación de pregunta: 2015-01-01
- questions[48]= "49)  El formato de redifusi&oacute;n web Atom est&aacute; estandarizado en:";
+//  Id pregunta: 10492 Año de creación de pregunta: 2016
+ questions[48]= "49)  El R&eacute;gimen Jur&iacute;dico de la Deuda del Estado se encuentran regulados en la Ley 47/2003, de 26 de noviembre, General Presupuestaria:";
  choices[48]= new Array();
- choices[48][0] = "IETF RFC 1738";
- choices[48][1] = "IETF RFC 1392";
- choices[48][2] = "IETF RFC 2616";
- choices[48][3] = "IETF RFC 4287";
- answers[48] = choices[48][3];
- units[48] = "69";
- comments[48] = "Id Pregunta: 10608. ";
+ choices[48][0] = "T&iacute;tulo V, Cap&iacute;tulo II, Secci&oacute;n 4.";
+ choices[48][1] = "T&iacute;tulo V, Cap&iacute;tulo I, Secci&oacute;n 2.";
+ choices[48][2] = "T&iacute;tulo IV, Cap&iacute;tulo II, Secci&oacute;n 3.";
+ choices[48][3] = "T&iacute;tulo IV, Cap&iacute;tulo II, Secci&oacute;n 4.";
+ answers[48] = choices[48][2];
+ units[48] = "10";
+ comments[48] = "Id Pregunta: 10492. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 10640 AÃ±o de creación de pregunta: 2015-01-01
- questions[49]= "50)  Indique cu&aacute;l de &eacute;stas no es una herramienta BPM:";
+//  Id pregunta: 10330 Año de creación de pregunta: 2016
+ questions[49]= "50)  &iquest;Cu&aacute;les son las funciones de la Conferencia para Asuntos Relacionados con las Comunidades Europeas?:";
  choices[49]= new Array();
- choices[49][0] = "Intalio";
- choices[49][1] = "Scrum";
- choices[49][2] = "Tibco";
- choices[49][3] = "Adonis";
- answers[49] = choices[49][1];
- units[49] = "79";
- comments[49] = "Id Pregunta: 10640. ";
+ choices[49][0] = "Garantizar el cumplimiento en las Conferencias Sectoriales de los procedimientos y f&oacute;rmulas de participaci&oacute;n de las Comunidades Aut&oacute;nomas.";
+ choices[49][1] = "El tratamiento y resoluci&oacute;n con arreglo al principio de cooperaci&oacute;n de aquellas cuestiones de alcance general o contenido institucional relacionadas con las Comunidades Europeas.";
+ choices[49][2] = "Todas son correctas.";
+ choices[49][3] = "Informaci&oacute;n a las Comunidades Aut&oacute;nomas y la discusi&oacute;n en com&uacute;n sobre el desarrollo del proceso de constituci&oacute;n europea.";
+ answers[49] = choices[49][2];
+ units[49] = "5";
+ comments[49] = "Id Pregunta: 10330. UNION EUROPEA";
 
 
-//  Id pregunta: 10641 AÃ±o de creación de pregunta: 2015-01-01
- questions[50]= "51)  Las fases por ciclo en el Modelo de Ciclo de Vida en espiral son:";
+//  Id pregunta: 10053 Año de creación de pregunta: 2016
+ questions[50]= "51)  &iquest;Cu&aacute;l de los siguientes objetivos est&aacute; fuera del alcance de una reuni&oacute;n diaria de SCRUM (daily scrum)?";
  choices[50]= new Array();
- choices[50][0] = "Planificaci&oacute;n, An&aacute;lisis de Riesgos, Ingenier&iacute;a y Evaluaci&oacute;n.";
- choices[50][1] = "Planificaci&oacute;n, Dise&ntilde;o, Codificaci&oacute;n e Integraci&oacute;n.";
- choices[50][2] = "Construcci&oacute;n y Transici&oacute;n.";
- choices[50][3] = "Adaptaci&oacute;n, Composici&oacute;n y Reemplazo.";
- answers[50] = choices[50][0];
- units[50] = "76";
- comments[50] = "Id Pregunta: 10641. ";
+ choices[50][0] = "Exponer las tareas no planificadas que tambi&eacute;n est&aacute;n haciendo los miembros del equipo.";
+ choices[50][1] = "Resolver detalladamente los problemas que puedan tener los miembros del equipo.";
+ choices[50][2] = "Poner de manifiesto el ritmo de trabajo de cada miembro del equipo.";
+ choices[50][3] = "Identificar las tareas que puedan afectar a otros miembros del equipo.";
+ answers[50] = choices[50][1];
+ units[50] = "84";
+ comments[50] = "Id Pregunta: 10053. AGE A1 2015";
 
 
-//  Id pregunta: 10648 AÃ±o de creación de pregunta: 2015-01-01
- questions[51]= "52)  La construcci&oacute;n de los diagramas de flujo de datos se basa en el principio de:";
+//  Id pregunta: 10500 Año de creación de pregunta: 2016
+ questions[51]= "52)  Conforme a la Ley 47/2003, de 26 de noviembre, General Presupuestaria, el programa plurianual de la Seguridad Social se elaborar&aacute; por:";
  choices[51]= new Array();
- choices[51][0] = "Partici&oacute;n.";
- choices[51][1] = "Descomposici&oacute;n.";
- choices[51][2] = "Inconsistencia.";
- choices[51][3] = "Todos los anteriores.";
- answers[51] = choices[51][1];
- units[51] = "81";
- comments[51] = "Id Pregunta: 10648. ";
+ choices[51][0] = "El presidente de las Cortes Generales.";
+ choices[51][1] = "El Presidente del Gobierno.";
+ choices[51][2] = "El Ministro de Hacienda y Funci&oacute;n P&uacute;blica.";
+ choices[51][3] = "El Ministro de Trabajo y Asuntos Sociales.";
+ answers[51] = choices[51][3];
+ units[51] = "10";
+ comments[51] = "Id Pregunta: 10500. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 10808 AÃ±o de creación de pregunta: 2015-01-01
- questions[52]= "53)  Indique cu&aacute;l de los siguientes es un documento m&iacute;nimo reclamado por la ISO 22301 de gesti&oacute;n de la continuidad del negocio:";
+//  Id pregunta: 10303 Año de creación de pregunta: 2016
+ questions[52]= "53)  Indique el n&uacute;mero de miembros con que cuenta la Comisi&oacute;n Europea en la actualidad:";
  choices[52]= new Array();
- choices[52][0] = "Procedimiento para el control de la informaci&oacute;n documentada.";
- choices[52][1] = "Estructura de respuesta a incidentes.";
- choices[52][2] = "Los contratos y acuerdos de nivel de servicio con los proveedores.";
- choices[52][3] = "Formaci&oacute;n y plan de sensibilizaci&oacute;n.";
+ choices[52][0] = "Veinticinco.";
+ choices[52][1] = "Veintisiete.";
+ choices[52][2] = "Veintinueve.";
+ choices[52][3] = "Cuarenta y uno.";
  answers[52] = choices[52][1];
- units[52] = "31, 32, 33";
- comments[52] = "Id Pregunta: 10808. Examen GSI 2014";
+ units[52] = "5";
+ comments[52] = "Id Pregunta: 10303. UNION EUROPEA";
 
 
-//  Id pregunta: 10813 AÃ±o de creación de pregunta: 2015-01-01
- questions[53]= "54)  Se&ntilde;ale cu&aacute;les de los siguientes formatos de archivo en la actualidad NO se consideran de formato abierto de texto para documentos:";
+//  Id pregunta: 10659 Año de creación de pregunta: 2016
+ questions[53]= "54)  &iquest;De qu&eacute; modelo de programaci&oacute;n es una implementaci&oacute;n Hadoop?";
  choices[53]= new Array();
- choices[53][0] = "PDF";
- choices[53][1] = "EPUB";
- choices[53][2] = "RTF";
- choices[53][3] = "FLAC";
- answers[53] = choices[53][3];
- units[53] = "61, 62";
- comments[53] = "Id Pregunta: 10813. Examen GSI 2014";
+ choices[53][0] = "Orientaci&oacute;n a objetos";
+ choices[53][1] = "MapReduce";
+ choices[53][2] = "Pipeline filtering";
+ choices[53][3] = "Programaci&oacute;n funcional";
+ answers[53] = choices[53][1];
+ units[53] = "73";
+ comments[53] = "Id Pregunta: 10659. ";
 
 
-//  Id pregunta: 10853 AÃ±o de creación de pregunta: 2015-01-01
- questions[54]= "55)  Se&ntilde;ale la respuesta INCORRECTA respecto a la tecnolog&iacute;a de Servicios Web REST:";
+//  Id pregunta: 10503 Año de creación de pregunta: 2016
+ questions[54]= "55)  Respecto a la Ley Org&aacute;nica 2/2012 se&ntilde;ale la respuesta falsa:";
  choices[54]= new Array();
- choices[54][0] = "JAX-RS es una API Java que proporciona soporte en la creaci&oacute;n de servicios web de acuerdo con REST.";
- choices[54][1] = "Jersey es una implementaci&oacute;n de referencia de servicios web REST.";
- choices[54][2] = "REST publica recursos que son accesibles a trav&eacute;s de m&eacute;todos http, por ejemplo POST y GET.";
- choices[54][3] = "Los recursos REST permiten s&oacute;lo 3 operaciones: CREATE, UPDATE y DELETE.";
+ choices[54][0] = "La elaboraci&oacute;n, aprobaci&oacute;n y ejecuci&oacute;n de los Presupuestos y dem&aacute;s actuaciones que afecten a los gastos o ingresos de las Administraciones P&uacute;blicas y dem&aacute;s entidades que forman parte del sector p&uacute;blico se someter&aacute; al principio de estabilidad presupuestaria.";
+ choices[54][1] = "Ninguna Administraci&oacute;n P&uacute;blica podr&aacute; incurrir en d&eacute;ficit estructural, definido como d&eacute;ficit ajustado del ciclo, neto de medidas excepcionales y temporales.";
+ choices[54][2] = "Excepcionalmente, el Estado y las Comunidades Aut&oacute;nomas podr&aacute;n incurrir en d&eacute;ficit estructural en caso de cat&aacute;strofes naturales, recesi&oacute;n econ&oacute;mica grave o situaciones de emergencia extraordinaria que escapen al control de las Administraciones P&uacute;blicas y perjudiquen considerablemente su situaci&oacute;n financiera o su sostenibilidad econ&oacute;mica o social.";
+ choices[54][3] = "Las Corporaciones Locales deber&aacute;n mantener una posici&oacute;n de equilibrio presupuestario.";
  answers[54] = choices[54][3];
- units[54] = "51";
- comments[54] = "Id Pregunta: 10853. Examen GSI 2014";
+ units[54] = "10";
+ comments[54] = "Id Pregunta: 10503. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 10864 AÃ±o de creación de pregunta: 2015-01-01
- questions[55]= "56)  &iquest;Cu&aacute;l de las siguientes respuestas incluye un est&aacute;ndar correcto del proceso de software?";
+//  Id pregunta: 10320 Año de creación de pregunta: 2016
+ questions[55]= "56)  Indique a qui&eacute;n corresponde la funci&oacute;n de velar por que se apliquen los Tratados y las medidas adoptadas por las Instituciones en virtud de &eacute;stos:";
  choices[55]= new Array();
- choices[55][0] = "IEEE 930:1998. Pr&aacute;cticas recomendadas para la Especificaci&oacute;n de Requisitos del Software (ERS).";
- choices[55][1] = "IEEE 29148:2011. Ingenier&iacute;a de Sistemas y Software - Procesos de ciclo de vida - Ingenier&iacute;a de requisitos.";
- choices[55][2] = "IEEE 1216:1987. Pr&aacute;cticas recomendadas para la Especificaci&oacute;n del Dise&ntilde;o del Software.";
- choices[55][3] = "IEEE 830: 2004. Pr&aacute;cticas recomendadas para la Especificaci&oacute;n de Requisitos del Software (ERS).";
- answers[55] = choices[55][1];
- units[55] = "76, 78, 79";
- comments[55] = "Id Pregunta: 10864. Examen GSI 2014";
+ choices[55][0] = "Al Consejo Europeo.";
+ choices[55][1] = "Al Consejo de la Uni&oacute;n Europea.";
+ choices[55][2] = "A la Comisi&oacute;n Europea.";
+ choices[55][3] = "Al Parlamento Europeo.";
+ answers[55] = choices[55][2];
+ units[55] = "5";
+ comments[55] = "Id Pregunta: 10320. UNION EUROPEA";
 
 
-//  Id pregunta: 10865 AÃ±o de creación de pregunta: 2015-01-01
- questions[56]= "57)  De las estrategias de dise&ntilde;o propuestas por M&eacute;trica v3 para obtener el diagrama de estructura &iquest;en qu&eacute; se diferencian el an&aacute;lisis de transformaci&oacute;n y el an&aacute;lisis de transacci&oacute;n?";
+//  Id pregunta: 10379 Año de creación de pregunta: 2016
+ questions[56]= "57)  Seg&uacute;n recoge la Ley Org&aacute;nica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y hombres, &iquest;con qu&eacute; frecuencia debe elaborar el Gobierno un informe sobre el conjunto de actuaciones en relaci&oacute;n con le efectividad del principio de igualdad entre mujeres y hombres?";
  choices[56]= new Array();
- choices[56][0] = "No existe ninguna diferencia, ambas son estrategias de dise&ntilde;o que se aplican a los DFD.";
- choices[56][1] = "El an&aacute;lisis de transformaci&oacute;n se aplica cuando el DFD realiza modificaciones independientemente de la entrada y la salida, mientras que el an&aacute;lisis de transacci&oacute;n se aplica cuando en un DFD en funci&oacute;n del flujo de llegada se realiza la elecci&oacute;n de uno o m&aacute;s flujos de informaci&oacute;n.";
- choices[56][2] = "El an&aacute;lisis de transacci&oacute;n se aplica cuando el DFD realiza modificaciones independientemente de la entrada y la salida, mientras que el an&aacute;lisis de transformaci&oacute;n se aplica a los DFD cuando en funci&oacute;n del flujo de llegada se realiza la elecci&oacute;n de uno o m&aacute;s flujos de informaci&oacute;n.";
- choices[56][3] = "El an&aacute;lisis de transacci&oacute;n se centra en los resultados del diagrama mientras que el an&aacute;lisis de transformaci&oacute;n se centra en c&oacute;mo se realizan dichos cambios.";
- answers[56] = choices[56][1];
- units[56] = "86, 81, 82";
- comments[56] = "Id Pregunta: 10865. Examen GSI 2014";
+ choices[56][0] = "Anual.";
+ choices[56][1] = "Semestral.";
+ choices[56][2] = "Seg&uacute;n se determine reglamentariamente.";
+ choices[56][3] = "Bienal.";
+ answers[56] = choices[56][2];
+ units[56] = "14";
+ comments[56] = "Id Pregunta: 10379. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10866 AÃ±o de creación de pregunta: 2015-01-01
- questions[57]= "58)  Se&ntilde;ale la respuesta FALSA acerca de la tecnolog&iacute;a Java Web Start:";
+//  Id pregunta: 10043 Año de creación de pregunta: 2016
+ questions[57]= "58)  &iquest;Cu&aacute;l de los siguientes principios NO est&aacute; recogido en el Manifiesto por el Desarrollo &Aacute;gil del Software?";
  choices[57]= new Array();
- choices[57][0] = "El software de Java Web Start permite descargar y ejecutar aplicaciones Java desde la Web.";
- choices[57][1] = "Garantiza que se est&aacute; ejecutando la &uacute;ltima versi&oacute;n de la aplicaci&oacute;n.";
- choices[57][2] = "Incluido en el JDK desde la versi&oacute;n 6, permitiendo instalar aplicaciones a trav&eacute;s de URLs con JMLP (Java Main Launch Protocol).";
- choices[57][3] = "Permite desplegar f&aacute;cilmente aplicaciones standalone de escritorio.";
+ choices[57][0] = "La simplicidad, o el arte de maximizar la cantidad de trabajo no realizado, es esencial.";
+ choices[57][1] = "Aceptamos que los requisitos cambien, incluso en etapas tard&iacute;as del desarrollo. Los procesos &aacute;giles aprovechan el cambio para proporcionar ventaja competitiva al cliente.";
+ choices[57][2] = "Las mejores arquitecturas, requisitos y dise&ntilde;os emergen por la aplicaci&oacute;n de unos procesos bien organizados.";
+ choices[57][3] = "El software funcionando es la medida principal del progreso.";
  answers[57] = choices[57][2];
- units[57] = "60, 116";
- comments[57] = "Id Pregunta: 10866. Examen GSI 2014";
+ units[57] = "34";
+ comments[57] = "Id Pregunta: 10043. AGE A1 2015";
 
 
-//  Id pregunta: 10876 AÃ±o de creación de pregunta: 2015-01-01
- questions[58]= "59)  Entre las configuraciones de almacenamiento en RAID, NO ofrece redundancia de datos:";
+//  Id pregunta: 10080 Año de creación de pregunta: 2016
+ questions[58]= "59)  Seg&uacute;n el Real Decreto 3/2010, de 8 de enero, por el que se regula el Esquema Nacional de Seguridad en el &aacute;mbito de la Administraci&oacute;n Electr&oacute;nica, se&ntilde;ale la respuesta correcta respecto a la auditor&iacute;a de seguridad:";
  choices[58]= new Array();
- choices[58][0] = "Todas las configuraciones RAID garantizan la redundancia de la informaci&oacute;n.";
- choices[58][1] = "RAID 0.";
- choices[58][2] = "RAID 1.";
- choices[58][3] = "RAID 5.";
- answers[58] = choices[58][1];
- units[58] = "48";
- comments[58] = "Id Pregunta: 10876. Examen GSI 2014";
+ choices[58][0] = "Se realizar&aacute;, al menos, cada dieciocho meses para los sistemas de todas las categor&iacute;as, y con car&aacute;cter extraordinario, siempre que se produzcan modificaciones sustanciales en el sistema de informaci&oacute;n, que puedan repercutir en las medidas de seguridad requeridas.";
+ choices[58][1] = "El equipo auditor, en el dise&ntilde;o de sus pruebas y revisiones, debe limitarse a la revisi&oacute;n de documentos facilitados por los responsables de la informaci&oacute;n, del servicio y de seguridad.";
+ choices[58][2] = "Cuando existan razones que lo justifiquen, dentro de las tareas de la auditoria de seguridad podr&aacute;n incluirse adem&aacute;s la ejecuci&oacute;n de trabajos de consultor&iacute;a.";
+ choices[58][3] = "El informe de auditor&iacute;a deber&aacute; dictaminar sobre la adecuaci&oacute;n de las medidas exigidas por el Esquema Nacional de Seguridad, identificar sus deficiencias y proponer las medidas correctoras o complementarias necesarias.";
+ answers[58] = choices[58][3];
+ units[58] = "46";
+ comments[58] = "Id Pregunta: 10080. AGE A1 2015";
 
 
-//  Id pregunta: 10883 AÃ±o de creación de pregunta: 2015-01-01
- questions[59]= "60)  Se&ntilde;ale cu&aacute;l de las siguientes NO es una Protocol Data Unit (PDU) del protocolo SNMP v3:";
+//  Id pregunta: 10009 Año de creación de pregunta: 2016
+ questions[59]= "60)  Con respecto a los entornos de integraci&oacute;n continua, indique cu&aacute;l de las siguientes afirmaciones es cierta:";
  choices[59]= new Array();
- choices[59][0] = "SetRequest PDU";
- choices[59][1] = "InformRequest PDU";
- choices[59][2] = "Report PDU";
- choices[59][3] = "GetBackRequest PDU";
- answers[59] = choices[59][3];
- units[59] = "112";
- comments[59] = "Id Pregunta: 10883. Examen GSI 2014";
+ choices[59][0] = "Jenkins no dispone de la funcionalidad de extenderse mediante plugins.";
+ choices[59][1] = "SonarQube utiliza herramientas de an&aacute;lisis est&aacute;tico de c&oacute;digo que permiten obtener m&eacute;tricas para mejorar la calidad del c&oacute;digo.";
+ choices[59][2] = "El fichero POM empleado en Maven no siempre es un fichero XML.";
+ choices[59][3] = "Jenkins es un software de integraci&oacute;n continua bajo licencia Oracle.";
+ answers[59] = choices[59][1];
+ units[59] = "95";
+ comments[59] = "Id Pregunta: 10009. AGE A1 2015";
 
 
-//  Id pregunta: 10892 AÃ±o de creación de pregunta: 2015-01-01
- questions[60]= "61)  &iquest;Cu&aacute;l es el tipo de la direcci&oacute;n IPv6 ::1/128?";
+//  Id pregunta: 10341 Año de creación de pregunta: 2016
+ questions[60]= "61)  Tras la cuarta ampliaci&oacute;n de la Uni&oacute;n (Austria, Suecia y Finlandia), el n&uacute;mero total de diputados se estableci&oacute; en:";
  choices[60]= new Array();
- choices[60][0] = "Loopback.";
- choices[60][1] = "Indefinida (Unspecified).";
- choices[60][2] = "Multicast.";
- choices[60][3] = "No es v&aacute;lida.";
- answers[60] = choices[60][0];
- units[60] = "100";
- comments[60] = "Id Pregunta: 10892. Examen GSI 2014";
+ choices[60][0] = "623";
+ choices[60][1] = "649";
+ choices[60][2] = "626";
+ choices[60][3] = "565";
+ answers[60] = choices[60][2];
+ units[60] = "5";
+ comments[60] = "Id Pregunta: 10341. UNION EUROPEA";
 
 
-//  Id pregunta: 10899 AÃ±o de creación de pregunta: 2015-01-01
- questions[61]= "62)  &iquest;Cu&aacute;l de los siguientes modos de funcionamiento NO se corresponde con el algoritmo de cifrado DES?";
+//  Id pregunta: 10032 Año de creación de pregunta: 2016
+ questions[61]= "62)  El art&iacute;culo 16 del Esquema Nacional de Interoperabilidad establece las condiciones de licenciamiento aplicables en el &aacute;mbito de la reutilizaci&oacute;n y transferencia de tecnolog&iacute;a, &iquest;cu&aacute;l de las siguientes licencias recomienda expresamente aplicar, sin perjuicio de otras licencias que garanticen los derechos expuestos en el mencionado art&iacute;culo?";
  choices[61]= new Array();
- choices[61][0] = "Modo ECB (Electronic CodeBook).";
- choices[61][1] = "Modo CBC (Cipher Block Chaining).";
- choices[61][2] = "Modo OFB (Output FeedBack).";
- choices[61][3] = "Modo UBC (Uncipher Block Chaining).";
- answers[61] = choices[61][3];
- units[61] = "73, 74";
- comments[61] = "Id Pregunta: 10899. Examen GSI 2014";
+ choices[61][0] = "ASF-AL (Apache License 2.0)";
+ choices[61][1] = "EUPL (European Union Public License)";
+ choices[61][2] = "LGPL (Lesser General Public License)";
+ choices[61][3] = "MIT(MIT License)";
+ answers[61] = choices[61][1];
+ units[61] = "43";
+ comments[61] = "Id Pregunta: 10032. AGE A1 2015";
 
 
-//  Id pregunta: 10954 AÃ±o de creación de pregunta: 2015-01-01
- questions[62]= "63)  &iquest;C&uacute;al de las siguientes opciones NO es un sistema de control de versiones?";
+//  Id pregunta: 10400 Año de creación de pregunta: 2016
+ questions[62]= "63)  Corresponde probar la ausencia de discriminaci&oacute;n en las medidas adoptadas y su proporcionalidad, a:";
  choices[62]= new Array();
- choices[62][0] = "Subversion.";
- choices[62][1] = "Git";
- choices[62][2] = "Ruby.";
- choices[62][3] = "SourceSafe.";
- answers[62] = choices[62][2];
- units[62] = "28";
- comments[62] = "Id Pregunta: 10954. TIC A1 AGE 2014";
+ choices[62][0] = "A la persona demandante.";
+ choices[62][1] = "A la persona demandada.";
+ choices[62][2] = "Al &oacute;rgano judicial.";
+ choices[62][3] = "Al &oacute;rgano administrativo.";
+ answers[62] = choices[62][1];
+ units[62] = "14";
+ comments[62] = "Id Pregunta: 10400. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10964 AÃ±o de creación de pregunta: 2015-01-01
- questions[63]= "64)  Respecto a RTMP (Real Time Messaging Protocol), se&ntilde;ale la respuesta correcta:";
+//  Id pregunta: 10022 Año de creación de pregunta: 2016
+ questions[63]= "64)  La composici&oacute;n inicial del Comit&eacute; Ejecutivo de la Comisi&oacute;n de Estrategia TIC, fijada por la disposici&oacute;n adicional quinta del Real Decreto 806/2014, incluye, entre otros, a:";
  choices[63]= new Array();
- choices[63][0] = "Junto con ICMP proporciona las funciones de monitorizaci&oacute;n y control de TCP/IP.";
- choices[63][1] = "Permite la gesti&oacute;n conjunta de mensajer&iacute;a instant&aacute;nea y mensajes cortos GSM.";
- choices[63][2] = "Se emplea para la emisi&oacute;n en tiempo real de streaming de v&iacute;deo.";
- choices[63][3] = "Define el est&aacute;ndar de comunicaciones para los procesadores de sistemas de tiempo real cr&iacute;tico.";
- answers[63] = choices[63][2];
- units[63] = "117";
- comments[63] = "Id Pregunta: 10964. TIC A1 AGE 2014";
+ choices[63][0] = "Los responsables de las unidades ministeriales de tecnolog&iacute;as de la informaci&oacute;n y las comunicaciones.";
+ choices[63][1] = "La Inspecci&oacute;n General del Ministerio de Hacienda y Administraciones P&uacute;blicas.";
+ choices[63][2] = "El titular de la Secretar&iacute;a de Estado de Telecomunicaciones y para la Sociedad de la Informaci&oacute;n.";
+ choices[63][3] = "Representantes de las empresas del sector TIC nacional.";
+ answers[63] = choices[63][1];
+ units[63] = "26";
+ comments[63] = "Id Pregunta: 10022. AGE A1 2015";
 
 
-//  Id pregunta: 10979 AÃ±o de creación de pregunta: 2015-01-01
- questions[64]= "65)  Dentro del modelo de referencia COBIT 5 para la gesti&oacute;n de las TI de una organizaci&oacute;n, se definen:";
+//  Id pregunta: 10139 Año de creación de pregunta: 2016
+ questions[64]= "65)  Las siglas de SAREB, entidad privada creada por Real Decreto para ayudar al saneamiento del sector financiero espa&ntilde;ol, hacen referencia a:";
  choices[64]= new Array();
- choices[64][0] = "5 procesos de gobierno, que incluyen pr&aacute;cticas de Evaluaci&oacute;n, Orientaci&oacute;n y Supervisi&oacute;n.";
- choices[64][1] = "5 procesos de gobierno con cuatro &aacute;reas de dominio para la planificaci&oacute;n, construcci&oacute;n, ejecuci&oacute;n y supervisi&oacute;n.";
- choices[64][2] = "5 procesos de gobierno donde se gestiona la estrategia, la arquitectura empresarial, el portfolio, el presupuesto y los recursos humanos.";
- choices[64][3] = "4 procesos de gobierno con 5 &aacute;reas de dominio para la planificaci&oacute;n, dise&ntilde;o, construcci&oacute;n, ejecuci&oacute;n y supervisi&oacute;n.";
+ choices[64][0] = "Sociedad de Gesti&oacute;n de Activos Procedentes de la Reestructuraci&oacute;n Bancaria.";
+ choices[64][1] = "Static &amp; Active process for REsolution Bank.";
+ choices[64][2] = "Sociedad de Ayudas Principales para la Resoluci&oacute;n Bancaria.";
+ choices[64][3] = "Super Active REsponse for Banks";
  answers[64] = choices[64][0];
- units[64] = "98";
- comments[64] = "Id Pregunta: 10979. TIC A1 AGE 2014";
+ units[64] = "12";
+ comments[64] = "Id Pregunta: 10139. Leyes modelo econ&oacute;mico";
 
 
-//  Id pregunta: 11025 AÃ±o de creación de pregunta: 2015-01-01
- questions[65]= "66)  &iquest;Es AENOR un miembro de ISO?";
+//  Id pregunta: 10676 Año de creación de pregunta: 2016
+ questions[65]= "66)  Es un Servicio previsto en la Ley 39/2006, de 14 de diciembre, de Promoci&oacute;n de la Autonom&iacute;a Personal y Atenci&oacute;n a las personas en situaci&oacute;n de dependencia:";
  choices[65]= new Array();
- choices[65][0] = "No";
- choices[65][1] = "S&iacute;, es miembro nato";
- choices[65][2] = "Si, es miembro suscrito";
- choices[65][3] = "No, pero tiene previsto incorporarse en 2016";
- answers[65] = choices[65][1];
- units[65] = "42";
- comments[65] = "Id Pregunta: 11025. ";
+ choices[65][0] = "El servicio de teleasistencia.";
+ choices[65][1] = "El servicio de ayuda a domicilio.";
+ choices[65][2] = "El servicio de centro de d&iacute;a y de noche.";
+ choices[65][3] = "Todas las anteriores son correctas.";
+ answers[65] = choices[65][3];
+ units[65] = "14";
+ comments[65] = "Id Pregunta: 10676. Dependencia";
 
 
-//  Id pregunta: 11031 AÃ±o de creación de pregunta: 2015-01-01
- questions[66]= "67)  &iquest;Cu&aacute;l se corresponde con el nivel alto de planificaci&oacute;n del procesador?";
+//  Id pregunta: 10394 Año de creación de pregunta: 2016
+ questions[66]= "67)  La situaci&oacute;n en que una disposici&oacute;n, criterio o pr&aacute;ctica aparentemente neutros pone a personas de un sexo en desventaja particular con respecto a personas del otro, se denomina:";
  choices[66]= new Array();
- choices[66][0] = "Scheduler";
- choices[66][1] = "Planificator";
- choices[66][2] = "High Planificator";
- choices[66][3] = "Dispatcher";
+ choices[66][0] = "Discriminaci&oacute;n indirecta.";
+ choices[66][1] = "Discriminaci&oacute;n directa.";
+ choices[66][2] = "Discriminaci&oacute;n por raz&oacute;n de sexo.";
+ choices[66][3] = "Discriminaci&oacute;n abusiva.";
  answers[66] = choices[66][0];
- units[66] = "52";
- comments[66] = "Id Pregunta: 11031. ";
+ units[66] = "14";
+ comments[66] = "Id Pregunta: 10394. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 11039 AÃ±o de creación de pregunta: 2015-01-01
- questions[67]= "68)  &iquest;Cu&aacute;l de las siguientes afirmaciones acerca del modelo l&oacute;gico relacional es correcta?";
+//  Id pregunta: 10293 Año de creación de pregunta: 2016
+ questions[67]= "68)  Las sesiones plenarias mensuales, a las que asisten todos los diputados, se celebran en:";
  choices[67]= new Array();
- choices[67][0] = "Fue creado por Peter Chen";
- choices[67][1] = "Est&aacute; basado en la teor&iacute;a de conjuntos y la l&oacute;gica de predicados";
- choices[67][2] = "Las estructuras de datos son complejas";
- choices[67][3] = "No permite incorporar aspectos sem&aacute;nticos mediante el establecimiento de reglas de integridad";
- answers[67] = choices[67][1];
- units[67] = "58";
- comments[67] = "Id Pregunta: 11039. ";
+ choices[67][0] = "Estrasburgo.";
+ choices[67][1] = "Bruselas.";
+ choices[67][2] = "Luxemburgo.";
+ choices[67][3] = "Holanda.";
+ answers[67] = choices[67][0];
+ units[67] = "5";
+ comments[67] = "Id Pregunta: 10293. UNION EUROPEA";
 
 
-//  Id pregunta: 11047 AÃ±o de creación de pregunta: 2015-01-01
- questions[68]= "69)  &iquest;Cu&aacute;l es la &uacute;ltima versi&oacute;n de HTTP a fecha Octubre 2015?";
+//  Id pregunta: 10458 Año de creación de pregunta: 2016
+ questions[68]= "69)  Seg&uacute;n la Ley 47/2003, de 26 de noviembre, General Presupuestaria, el Intervenci&oacute;n General de la Administraci&oacute;n del Estado ejercer&aacute; sus funciones de control conforme a los principios de:";
  choices[68]= new Array();
- choices[68][0] = "1.1";
- choices[68][1] = "2";
- choices[68][2] = "1.3";
- choices[68][3] = "3";
- answers[68] = choices[68][1];
- units[68] = "69";
- comments[68] = "Id Pregunta: 11047. ";
+ choices[68][0] = "a) Autonom&iacute;a, ejercicio desconcentrado y jerarqu&iacute;a externa.";
+ choices[68][1] = "b) Eficacia, ejercicio desconcentrado y jerarqu&iacute;a externa.";
+ choices[68][2] = "c) Autonom&iacute;a, eficacia y ejercicio desconcentrado.";
+ choices[68][3] = "d) Autonom&iacute;a, ejercicio desconcentrado y jerarqu&iacute;a interna.";
+ answers[68] = choices[68][3];
+ units[68] = "10";
+ comments[68] = "Id Pregunta: 10458. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 11068 AÃ±o de creación de pregunta: 2015-01-01
- questions[69]= "70)  &iquest;Cual de la siguientes afirmaciones es CORRECTA para TODOS los procesos?";
+//  Id pregunta: 10260 Año de creación de pregunta: 2016
+ questions[69]= "70)  &iquest;En qu&eacute; art&iacute;culo de la Constituci&oacute;n se recoge el principio de unidad jurisdiccional?:";
  choices[69]= new Array();
- choices[69][0] = "Definen actividades, roles, responsabilidades, funciones y m&eacute;tricas";
- choices[69][1] = "Crean valor para las partes interesadas (stakeholders)";
- choices[69][2] = "Se entrega por un Proveedor de Servicios como soporte a un Cliente";
- choices[69][3] = "Son unidades de las Organizaciones, responsables de resultados espec&iacute;ficos";
- answers[69] = choices[69][1];
- units[69] = "98";
- comments[69] = "Id Pregunta: 11068. ";
+ choices[69][0] = "117.5";
+ choices[69][1] = "117.1";
+ choices[69][2] = "116";
+ choices[69][3] = "15";
+ answers[69] = choices[69][0];
+ units[69] = "1";
+ comments[69] = "Id Pregunta: 10260. CONSTITUCION1978";
 
 
-//  Id pregunta: 11091 AÃ±o de creación de pregunta: 2015-01-01
- questions[70]= "71)  &iquest;Cu&aacute;l de los siguientes NO es un modelo de programaci&oacute;n paralela?";
+//  Id pregunta: 10545 Año de creación de pregunta: 2016
+ questions[70]= "71)  &iquest;Cu&aacute;l es la nueva denominaci&oacute;n para la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n tras la aprobaci&oacute;n del Real Decreto 424/2016, de 11 de noviembre, por el que se establece la estructura org&aacute;nica b&aacute;sica de los departamentos ministeriales?";
  choices[70]= new Array();
- choices[70][0] = "CUDA";
- choices[70][1] = "OpenCL";
- choices[70][2] = "OpenStack";
- choices[70][3] = "MPI";
- answers[70] = choices[70][2];
- units[70] = "45";
- comments[70] = "Id Pregunta: 11091. ";
+ choices[70][0] = "Subsecretar&iacute;a de Energ&iacute;a, Turismo y Agenda Digital";
+ choices[70][1] = "Secretar&iacute;a General de Administraci&oacute;n Digital";
+ choices[70][2] = "Direcci&oacute;n General de Telecomunicaciones y Tecnolog&iacute;as de la Informaci&oacute;n";
+ choices[70][3] = "Secretar&iacute;a de Estado de Administraci&oacute;n Digital";
+ answers[70] = choices[70][1];
+ units[70] = "26";
+ comments[70] = "Id Pregunta: 10545. Gobernanza TIC";
 
 
-//  Id pregunta: 11142 AÃ±o de creación de pregunta: 2015-01-01
- questions[71]= "72)  Seleccione la respuesta verdadera";
+//  Id pregunta: 10565 Año de creación de pregunta: 2016
+ questions[71]= "72)  &iquest;Qu&eacute; limites marca el &quot;pacto fiscal europeo&quot; de 2012 para sus Estados Miembros?";
  choices[71]= new Array();
- choices[71][0] = "Los m&eacute;todos de aprendizaje no supervisado se utilizan para t&eacute;cnicas de clustering o agrupaci&oacute;n";
- choices[71][1] = "Los m&eacute;todos de aprendizaje supervisado y no supervisado parten de la misma base de datos de conocimiento";
- choices[71][2] = "Los m&eacute;todos de aprendizaje no supervisado permiten clasificar una muestra en funci&oacute;n de las clases conocidas";
- choices[71][3] = "Las redes neuronales son t&eacute;cnicas de aprendizaje no supervisado";
- answers[71] = choices[71][0];
- units[71] = "63";
- comments[71] = "Id Pregunta: 11142. ";
+ choices[71][0] = "Un d&eacute;ficit estructural &lt; 1% del PIB y deuda p&uacute;blica &lt; 40% del PIB";
+ choices[71][1] = "Un d&eacute;ficit estructural &lt; 1% del PIB y deuda p&uacute;blica &lt; 60% del PIB";
+ choices[71][2] = "Un d&eacute;ficit estructural &lt; 0,5% del PIB y deuda p&uacute;blica &lt; 50% del PIB";
+ choices[71][3] = "Un d&eacute;ficit estructural &lt; 0,5% del PIB y deuda p&uacute;blica &lt; 60% del PIB";
+ answers[71] = choices[71][3];
+ units[71] = "12";
+ comments[71] = "Id Pregunta: 10565. Modelo econ&oacute;mico";
 
 
-//  Id pregunta: 11162 AÃ±o de creación de pregunta: 2015-01-01
- questions[72]= "73)  &iquest;Cu&aacute;l de los siguientes no es un modo de COCOMO (Constructive Cost Model) para estimar el n&uacute;mero de instrucciones de c&oacute;digo fuente seg&uacute;n el entorno de aplicaci&oacute;n que se utiliza?";
+//  Id pregunta: 10577 Año de creación de pregunta: 2016
+ questions[72]= "73)  &iquest;Cu&aacute;ndo fue aprobada la Estrategia TIC?";
  choices[72]= new Array();
- choices[72][0] = "Org&aacute;nico";
- choices[72][1] = "Acoplado";
- choices[72][2] = "Semiacoplado";
- choices[72][3] = "Empotrado";
- answers[72] = choices[72][1];
- units[72] = "88";
- comments[72] = "Id Pregunta: 11162. ";
+ choices[72][0] = "El 2 de Octubre de 2015";
+ choices[72][1] = "El 15 de Septiembre de 2015";
+ choices[72][2] = "El 1 de Octubre de 2015";
+ choices[72][3] = "El 5 de Octubre de 2015";
+ answers[72] = choices[72][0];
+ units[72] = "19";
+ comments[72] = "Id Pregunta: 10577. Estrategia TIC";
 
 
-//  Id pregunta: 11169 AÃ±o de creación de pregunta: 2015-01-01
- questions[73]= "74)  &iquest;Cu&aacute;les es el orden correcto de los bloques b&aacute;sicos de procesamiento de un sistema biom&eacute;trico de reconocimiento de voz?";
+//  Id pregunta: 10146 Año de creación de pregunta: 2016
+ questions[73]= "74)  La declaraci&oacute;n de lesividad de los actos anulables:";
  choices[73]= new Array();
- choices[73][0] = "Preprocesamiento, Obtenci&oacute;n de datos del sensor, Extracci&oacute;n de caracter&iacute;sticas, Comparaci&oacute;n y Decisi&oacute;n.";
- choices[73][1] = "Obtenci&oacute;n de datos del sensor, Preprocesamiento, Extracci&oacute;n de caracter&iacute;sticas, Comparaci&oacute;n y Decisi&oacute;n.";
- choices[73][2] = "Extracci&oacute;n de caracter&iacute;sticas, Obtenci&oacute;n de datos del sensor, Preprocesamiento, Comparaci&oacute;n y Decisi&oacute;n.";
- choices[73][3] = "Obtenci&oacute;n de datos del sensor, Extracci&oacute;n de caracter&iacute;sticas, Preprocesamiento, Comparaci&oacute;n y Decisi&oacute;n.";
- answers[73] = choices[73][2];
- units[73] = "94";
- comments[73] = "Id Pregunta: 11169. ";
+ choices[73][0] = "No podr&aacute; adoptarse una vez transcurridos cuatro a&ntilde;os desde que se dict&oacute; el acto administrativo";
+ choices[73][1] = "No es necesaria para impugnar ante el orden jurisdiccional contencioso-administrativo los actos favorables para los interesados";
+ choices[73][2] = "Se adoptar&aacute; en todo caso por el Consejo de Estado";
+ choices[73][3] = "Si el acto proviniera de las entidades que integran la Administraci&oacute;n Local, la declaraci&oacute;n de lesividad se adoptar&aacute; por la Comunidad Aut&oacute;noma a la que pertenece dicha entidad";
+ answers[73] = choices[73][0];
+ units[73] = "8";
+ comments[73] = "Id Pregunta: 10146. Ley 39/2015, Art&iacute;culo 107";
 
 
-//  Id pregunta: 11176 AÃ±o de creación de pregunta: 2015-01-01
- questions[74]= "75)  &iquest;Cu&aacute;l de los siguientes Grupos de Trabajo del Comit&eacute; de Estandarizaci&oacute;n 802 permanece Activo?";
+//  Id pregunta: 10401 Año de creación de pregunta: 2016
+ questions[74]= "75)  Entre los criterios generales de actuaci&oacute;n los Poderes P&uacute;blicos, tienen:";
  choices[74]= new Array();
- choices[74][0] = "802.3 CSMA/CD Ethernet";
- choices[74][1] = "802.14 Redes CATV";
- choices[74][2] = "802.10 Seguridad en Est&aacute;ndares IEEE";
- choices[74][3] = "802.4 Token Bus";
- answers[74] = choices[74][0];
- units[74] = "101";
- comments[74] = "Id Pregunta: 11176. ";
-
-
-//  Id pregunta: 11182 AÃ±o de creación de pregunta: 2015-01-01
- questions[75]= "76)  &iquest;C&oacute;mo se denominan los sistemas de comunicaciones m&oacute;viles que realizan la transmisi&oacute;n y recepci&oacute;n de forma secuencial en un sentido cada vez?";
- choices[75]= new Array();
- choices[75][0] = "Paralelos";
- choices[75][1] = "D&uacute;plex";
- choices[75][2] = "Semi-duplex";
- choices[75][3] = "Ninguno de los anteriores";
- answers[75] = choices[75][2];
- units[75] = "108";
- comments[75] = "Id Pregunta: 11182. ";
-
-
-//  Id pregunta: 11199 AÃ±o de creación de pregunta: 2015-01-01
- questions[76]= "77)  &iquest;Cu&aacute;l de los siguientes no es un objetivo de la Estrategia Europea 2020 en materia de sostenibilidad energ&eacute;tica?";
- choices[76]= new Array();
- choices[76][0] = "20% de las energ&iacute;as deben proceder de una fuente renovable";
- choices[76][1] = "20% de aumento de la eficiencia energ&eacute;tica";
- choices[76][2] = "20% de los coches deben ser el&eacute;ctricos";
- choices[76][3] = "Emisiones de gases invernadero un 20% menores a los niveles de 1990";
- answers[76] = choices[76][2];
- units[76] = "30";
- comments[76] = "Id Pregunta: 11199. ";
-
-
-//  Id pregunta: 11200 AÃ±o de creación de pregunta: 2015-01-01
- questions[77]= "78)  &iquest;Cu&aacute;l de los siguientes no es un pilar de la Agenda Digital Europea?";
- choices[77]= new Array();
- choices[77][0] = "Mercado Digital Din&aacute;mico &Uacute;nico";
- choices[77][1] = "Investigaci&oacute;n e innovaci&oacute;n";
- choices[77][2] = "Econom&iacute;a Digital e Internacionalizaci&oacute;n";
- choices[77][3] = "Beneficios TIC para la Sociedad UE";
- answers[77] = choices[77][2];
- units[77] = "30";
- comments[77] = "Id Pregunta: 11200. ";
-
-
-//  Id pregunta: 11223 AÃ±o de creación de pregunta: 2015-01-01
- questions[78]= "79)  En el Framework de .NET, los servicios web:";
- choices[78]= new Array();
- choices[78][0] = "Se definen en ficheros de extensi&oacute;n .asmx incluyendo la directiva WebService.";
- choices[78][1] = "ASP.NET no se puede integrar f&aacute;cilmente con tecnolog&iacute;as como AJAX para construir aplicaciones RIA.";
- choices[78][2] = "Los servicios Web WCF pueden ser SOAP o REST, aunque no soportan un formato no XML como JSON.";
- choices[78][3] = "Los servicios WCF (Windows Communication Foundation) siempre se ejecutan directamente sobre TCP.";
- answers[78] = choices[78][0];
- units[78] = "59";
- comments[78] = "Id Pregunta: 11223. ";
-
-
-//  Id pregunta: 11230 AÃ±o de creación de pregunta: 2015-01-01
- questions[79]= "80)  &iquest;Cu&aacute;l de las siguientes no es un API de la especificaci&oacute;n J2EE?";
- choices[79]= new Array();
- choices[79][0] = "JNDI.";
- choices[79][1] = "API Java IDL.";
- choices[79][2] = "JTA (Java Transaction API).";
- choices[79][3] = "JMS (Java Mobile Service).";
- answers[79] = choices[79][3];
- units[79] = "116";
- comments[79] = "Id Pregunta: 11230. ";
-
-
-//  Id pregunta: 11322 AÃ±o de creación de pregunta: 2015-01-01
- questions[80]= "81)  Las directivas JSP nos permiten configurar alguna informaci&oacute;n que pueda ser usada en nuestra p&aacute;gina JSP. Cu&aacute;l de las siguientes no es una directiva jsp";
- choices[80]= new Array();
- choices[80][0] = "DocRel";
- choices[80][1] = "Page";
- choices[80][2] = "Include";
- choices[80][3] = "Taglib";
- answers[80] = choices[80][0];
- units[80] = "115";
- comments[80] = "Id Pregunta: 11322. ";
-
-
-//  Id pregunta: 11324 AÃ±o de creación de pregunta: 2015-01-01
- questions[81]= "82)  De las siguientes definiciones, seleccione la correcta para la definici&oacute;n de ARP";
- choices[81]= new Array();
- choices[81][0] = "Es un protocolo de nivel de enlace responsable de encontrar la direcci&oacute;n hardware (MAC)";
- choices[81][1] = "Es un protocolo de nivel de RED responsable de encontrar la direcci&oacute;n hardware (MAC)";
- choices[81][2] = "Es un protocolo de nivel de enlace responsable de encontrar la direcci&oacute;n de red (IP)";
- choices[81][3] = "Es un protocolo de nivel de red responsable de encontrar la direcci&oacute;n de red (IP)";
- answers[81] = choices[81][0];
- units[81] = "113";
- comments[81] = "Id Pregunta: 11324. ";
-
-
-//  Id pregunta: 11326 AÃ±o de creación de pregunta: 2015-01-01
- questions[82]= "83)  Seg&uacute;n la Ley Org&aacute;nica de Protecci&oacute;n de Datos, Ley 15/99, el encargado del tratamiento es:";
- choices[82]= new Array();
- choices[82][0] = "Persona f&iacute;sica o jur&iacute;dica, autoridad p&uacute;blica o privada previa certificaci&oacute;n por la AEPD";
- choices[82][1] = "Persona f&iacute;sica, ya sea trabajador de una entidad p&uacute;blica, en cuyo caso ser&aacute; un funcionario o privada";
- choices[82][2] = "Persona f&iacute;sica, jur&iacute;dica o  entidad sin personalidad jur&iacute;dica, p&uacute;blica o privada, servicio o cualquier otro organismo";
- choices[82][3] = "Persona f&iacute;sica o jur&iacute;dica, autoridad p&uacute;blica o privada, servicio o cualquier otro organismo";
- answers[82] = choices[82][3];
- units[82] = "29";
- comments[82] = "Id Pregunta: 11326. ";
-
-
-//  Id pregunta: 11340 AÃ±o de creación de pregunta: 2015-01-01
- questions[83]= "84)  En relaci&oacute;n con los diagramas de casos de uso, se&ntilde;ale la afirmaci&oacute;n correcta";
- choices[83]= new Array();
- choices[83][0] = "Las relaciones entre casos de uso y actores pueden ser de tipo usa o extiende";
- choices[83][1] = "Las relaciones s&oacute;lo pueden ser entre actores y casos de uso";
- choices[83][2] = "Los elementos principales son: casos de uso, relaciones, actores y extensiones";
- choices[83][3] = "M&eacute;trica no contempla su uso";
- answers[83] = choices[83][2];
- units[83] = "86";
- comments[83] = "Id Pregunta: 11340. ";
-
-
-//  Id pregunta: 11343 AÃ±o de creación de pregunta: 2015-01-01
- questions[84]= "85)  Se&ntilde;ale la afirmaci&oacute;n falsa de entre las siguientes:";
- choices[84]= new Array();
- choices[84][0] = "Las relaciones regulares son entre dos entidades fuertes";
- choices[84][1] = "La existencia de las entidades fuertes, depende de otra entidad";
- choices[84][2] = "Las entidades pueden ser fuertes o d&eacute;biles";
- choices[84][3] = "Las relaciones d&eacute;biles se producen entre una entidad fuerte y otra d&eacute;bil";
- answers[84] = choices[84][1];
- units[84] = "80";
- comments[84] = "Id Pregunta: 11343. ";
-
-
-//  Id pregunta: 11440 AÃ±o de creación de pregunta: 2015-01-01
- questions[85]= "86)  Seg&uacute;n la Ley 9/2014, los abonados podr&aacute;n conservar los n&uacute;meros que les hayan sido asignados:";
- choices[85]= new Array();
- choices[85][0] = "Siempre que se mantenga el mismo operador.";
- choices[85][1] = "Sin ning&uacute;n requisito previo.";
- choices[85][2] = "Previa solicitud.";
- choices[85][3] = "Seg&uacute;n fije la CNMC mediante resoluci&oacute;n.";
- answers[85] = choices[85][2];
- units[85] = "110";
- comments[85] = "Id Pregunta: 11440. ";
-
-
-//  Id pregunta: 11487 AÃ±o de creación de pregunta: 2015-01-01
- questions[86]= "87)  La titularidad de los derechos de los programas de ordenador desarrollados por trabajadores asalariados";
- choices[86]= new Array();
- choices[86][0] = "Pertenecen a los trabajadores que han creado el programa";
- choices[86][1] = "Pertenecen a los trabajadores que han creado el programa, salvo pacto en contrario";
- choices[86][2] = "Pertenecen al empresario que los ha contratado";
- choices[86][3] = "Pertenecen al empresario que los ha contratado, salvo pacto en contrario";
- answers[86] = choices[86][3];
- units[86] = "36";
- comments[86] = "Id Pregunta: 11487. NULL";
-
-
-//  Id pregunta: 11530 AÃ±o de creación de pregunta: 2015-01-01
- questions[87]= "88)  Indicar cu&aacute;l de las siguientes afirmaciones es m&aacute;s id&oacute;nea para definir un sistema de Workflow.";
- choices[87]= new Array();
- choices[87][0] = "Se trata de un sistema de invocaci&oacute;n en la ejecuci&oacute;n de operaciones de entrada salida";
- choices[87][1] = "Se trata de una herramienta para mejorar la ejecuci&oacute;n y el control de los procesos de negocio";
- choices[87][2] = "Se trata de una herramienta para el dibujo de diagramas de flujo";
- choices[87][3] = "Se trata de una herramienta que nos permite establecer prioridades en una cola de trabajo";
- answers[87] = choices[87][1];
- units[87] = "71";
- comments[87] = "Id Pregunta: 11530. NULL";
-
-
-//  Id pregunta: 11548 AÃ±o de creación de pregunta: 2015-01-01
- questions[88]= "89)  De acuerdo a los 6 niveles definidos en CMMI para medir la capacidad de los procesos, &iquest;Qu&eacute; nivel corresponde a un proceso que adem&aacute;s de ser gestionado, se ajusta a la pol&iacute;tica de procesos que existe en la organizaci&oacute;n, alineada con las directivas de la empresa?";
- choices[88]= new Array();
- choices[88][0] = "Nivel 3 Definido";
- choices[88][1] = "Nivel 4 Cuantitativamente Gestionado";
- choices[88][2] = "Nivel 3 Predecible";
- choices[88][3] = "Nivel 5 Optimizado";
- answers[88] = choices[88][0];
- units[88] = "87";
- comments[88] = "Id Pregunta: 11548. NULL";
-
-
-//  Id pregunta: 11570 AÃ±o de creación de pregunta: 2015-01-01
- questions[89]= "90)  El nivel de enlace para la se&ntilde;alizaci&oacute;n por canal D de un enlace RDSI es:";
- choices[89]= new Array();
- choices[89][0] = "V.120";
- choices[89][1] = "LAPB";
- choices[89][2] = "Q.921";
- choices[89][3] = "Q.931";
- answers[89] = choices[89][2];
- units[89] = "109";
- comments[89] = "Id Pregunta: 11570. NULL";
-
-
-//  Id pregunta: 11643 AÃ±o de creación de pregunta: 2015-01-01
- questions[90]= "91)  En la versi&oacute;n de 2013 del modelo EFQM se introduce como nuevo concepto fundamental:";
- choices[90]= new Array();
- choices[90][0] = "Alcanzar el &eacute;xito mediante el talento de las personas";
- choices[90][1] = "Crear un futuro sostenible";
- choices[90][2] = "Gestionar con agilidad";
- choices[90][3] = "Aprovechar la creatividad y la innovaci&oacute;n";
- answers[90] = choices[90][2];
- units[90] = "92";
- comments[90] = "Id Pregunta: 11643. ";
-
-
-//  Id pregunta: 11674 AÃ±o de creación de pregunta: 2015-01-01
- questions[91]= "92)  Son plataformas para almacenar y compartir fotos:";
- choices[91]= new Array();
- choices[91][0] = "Flickr, Backpackit y Picasa";
- choices[91][1] = "Photobucket, Picasa y ThisLife";
- choices[91][2] = "ThisLife, Drupal y Flickr";
- choices[91][3] = "Photobucket, Backpackit y Feedreader";
- answers[91] = choices[91][1];
- units[91] = "120";
- comments[91] = "Id Pregunta: 11674. ";
-
-
-//  Id pregunta: 11680 AÃ±o de creación de pregunta: 2015-01-01
- questions[92]= "93)  Se&ntilde;ale la falsa con respecto al usuario root del sistema operativo UNIX:";
- choices[92]= new Array();
- choices[92][0] = "Su UID es el 0.";
- choices[92][1] = "Recibe el nombre de superusuario.";
- choices[92][2] = "Puede eliminarse por medio del comando rmuser, con los permisos adecuados.";
- choices[92][3] = "Puede fijar prioridades a los procesos.";
- answers[92] = choices[92][2];
- units[92] = "53, 54";
- comments[92] = "Id Pregunta: 11680. ";
-
-
-//  Id pregunta: 11700 AÃ±o de creación de pregunta: 2015-01-01
- questions[93]= "94)  Una WAN X.25 est&aacute;ndar corresponde a una red f&iacute;sica:";
- choices[93]= new Array();
- choices[93][0] = "Punto a punto";
- choices[93][1] = "Broadcast multi-acceso";
- choices[93][2] = "No broadcast multi-acceso";
- choices[93][3] = "Broadcast punto a multipunto";
- answers[93] = choices[93][2];
- units[93] = "104";
- comments[93] = "Id Pregunta: 11700. NULL";
-
-
-//  Id pregunta: 11709 AÃ±o de creación de pregunta: 2015-01-01
- questions[94]= "95)  En el &aacute;mbito de la seguridad,&iquest;a qu&eacute; atienden las siglas AAA?";
- choices[94]= new Array();
- choices[94][0] = "Authentication, Authorization and Accounting";
- choices[94][1] = "Acknowledge, Authorization and Accounting";
- choices[94][2] = "Authentication, Authorization and Access";
- choices[94][3] = "Authentication, Approval and Accounting";
- answers[94] = choices[94][0];
- units[94] = "111";
- comments[94] = "Id Pregunta: 11709. NULL";
-
-
-//  Id pregunta: 11717 AÃ±o de creación de pregunta: 2015-01-01
- questions[95]= "96)  &iquest;Qu&eacute; factor determina en TCP el tama&ntilde;o de ventana? ";
- choices[95]= new Array();
- choices[95][0] = "la cantidad de datos que el destino puede procesar a la vez ";
- choices[95][1] = " el n&uacute;mero de servicios incluidos en el segmento TCP ";
- choices[95][2] = " la cantidad de datos que la fuente es capaz de enviar de una sola vez ";
- choices[95][3] = "la cantidad de datos a transmitir";
- answers[95] = choices[95][0];
- units[95] = "102";
- comments[95] = "Id Pregunta: 11717. NULL";
-
-
-//  Id pregunta: 11753 AÃ±o de creación de pregunta: 2015-01-01
- questions[96]= "97)  &iquest;Cu&aacute;l de los siguientes sistemas no permite una lectura del texto de una p&aacute;gina web?";
- choices[96]= new Array();
- choices[96][0] = "ReadMe";
- choices[96][1] = "ReadSpeaker";
- choices[96][2] = "JAWS";
- choices[96][3] = "WebAnywhere";
- answers[96] = choices[96][0];
- units[96] = "39";
- comments[96] = "Id Pregunta: 11753. ";
-
-
-//  Id pregunta: 11756 AÃ±o de creación de pregunta: 2015-01-01
- questions[97]= "98)  &iquest;Para que se utiliza el sistema de multiplexaci&oacute;n CWDM?";
- choices[97]= new Array();
- choices[97][0] = "dar soporte a aplicaciones de redes de &aacute;rea metropolitana, donde se busca no tanto alcanzar largas distancias sino reducci&oacute;n de costes";
- choices[97][1] = "se utiliza para el transporte de grandes cantidades de informaci&oacute;n a larga distancia";
- choices[97][2] = "Actualmente no se utiliza";
- choices[97][3] = "El sistema CWDM es interoperable con DWDM.";
- answers[97] = choices[97][0];
- units[97] = "99";
- comments[97] = "Id Pregunta: 11756. ";
-
-
-//  Id pregunta: 11757 AÃ±o de creación de pregunta: 2015-01-01
- questions[98]= "99)  &iquest;Cu&aacute;l de las siguientes dificultades no tiene que hacer frente el par telef&oacute;nico para la transmisi&oacute;n de alta velocidad de datos?";
- choices[98]= new Array();
- choices[98][0] = "Ruido impulsivo";
- choices[98][1] = "Ruido de fondo";
- choices[98][2] = "Diafon&iacute;a";
- choices[98][3] = "Medio costoso";
- answers[98] = choices[98][3];
- units[98] = "107";
- comments[98] = "Id Pregunta: 11757. ";
-
-
-//  Id pregunta: 11774 AÃ±o de creación de pregunta: 2015-01-01
- questions[99]= "100)  &iquest;C&oacute;mo se llama la unidad encargada de la contrataci&oacute;n centralizada en el &aacute;mbito de la Administraci&oacute;n General del Estado?";
- choices[99]= new Array();
- choices[99][0] = "Subdirecci&oacute;n General de Compras";
- choices[99][1] = "Central de Compras Estatal";
- choices[99][2] = "Direcci&oacute;n General de Racionalizaci&oacute;n y Centralizaci&oacute;n de la Contrataci&oacute;n&nbsp;";
- choices[99][3] = "Direcci&oacute;n General de Patrimonio del Estado";
- answers[99] = choices[99][2];
- units[99] = "41, 24";
- comments[99] = "Id Pregunta: 11774. ";
+ choices[74][0] = "La implantaci&oacute;n de un lenguaje no sexista en el &aacute;mbito administrativo, y en la totalidad de las relaciones sociales, culturales y art&iacute;sticas.";
+ choices[74][1] = "La participaci&oacute;n equilibrada de mujeres y hombres en las candidaturas electorales y toma de decisiones.";
+ choices[74][2] = "Ambas son correctas.";
+ choices[74][3] = "A y B son incorrectas.";
+ answers[74] = choices[74][2];
+ units[74] = "14";
+ comments[74] = "Id Pregunta: 10401. POLITICAS DE IGUALDAD";
 
 

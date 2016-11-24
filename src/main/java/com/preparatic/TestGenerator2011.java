@@ -188,9 +188,7 @@ public class TestGenerator2011 extends GeneradorPreguntasTest {
 		generarTestBloques();
 		generarTestAnhos();
 
-		TestNavigatorGenerator t = new TestNavigatorGenerator();
-		t.generarTestNavigation();
-
+		TestNavigatorGenerator.generarTestNavigation();
 	}
 
 	/**

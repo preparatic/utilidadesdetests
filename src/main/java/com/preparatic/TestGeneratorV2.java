@@ -25,13 +25,16 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.preparatic.archivos.TestNavigatorGenerator;
 import com.preparatic.csvreaders.CSVReaderFactory;
 import com.preparatic.csvreaders.IExcel;
+import com.preparatic.entidades.GestorAnho;
 import com.preparatic.entidades.GestorBloque;
 import com.preparatic.entidades.InfoBloque;
 import com.preparatic.entidades.PreguntaTest;
 import com.preparatic.entidades.Test;
 import com.preparatic.gestorpreguntas.GestorPreguntas;
+import com.preparatic.gestorpreguntas.GestorPreguntasAnho;
 import com.preparatic.gestorpreguntas.GestorPreguntasBloque;
 import com.preparatic.gestorpreguntas.GestorPreguntasUsadas;
 
@@ -82,9 +85,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			// for (PreguntaTest pt : filteredList) {
 			// logger.debug(pt.toString());
 
-			//generarTodosLosTest(filteredList);
-			//generarTestAleatorios(filteredList);
-			generarTestBloques(filteredList, listaBloques);
+			 generarTest(filteredList, listaBloques);
 
 		} catch (SQLException e) {
 			logger.error(e.getMessage());
@@ -93,6 +94,22 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		logger.info("Preparatic XXIV. Generación de test terminada.");
 	}
 
+	/**
+	 * Se generan tanto los tests aleatorios, como los test por bloques.
+	 */
+	private static void generarTest(List<PreguntaTest> listaPreguntas, List<InfoBloque> listaBloques) {
+		generarTodosLosTest(listaPreguntas);
+
+		// generarTestTematica();
+
+		// generarTestPorFrecuenciaFecha(listaPreguntas);
+		generarTestAleatorios(listaPreguntas);
+		generarTestBloques(listaPreguntas, listaBloques);
+		generarTestAnhos(listaPreguntas);
+
+		TestNavigatorGenerator.generarTestNavigation();
+	}
+	
 	/**
 	 * Genera un test con todas las preguntas disponibles
 	 * 
@@ -183,6 +200,47 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			}
 
 			logger.info("Generado test bloque " + bloque.getTitulo());
+		}
+		return;
+	}
+	
+	/**
+	 * Generamos los test por anhos
+	 * 
+	 */
+
+	private static void generarTestAnhos(List<PreguntaTest> listaPreguntas) {
+		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
+		String[] annos = ConfigProperties.getProperty("tests.anhos").toString().split(",");
+		
+		/*
+		 * Por cada anho, usamos un tema al que le vamos a asignar todas las
+		 * preguntas.
+		 */
+		for (String idAnho : annos) {
+			List<PreguntaTest> filteredList = listaPreguntas.stream()
+					.filter(question -> question.getAnno_creacion().equalsIgnoreCase(idAnho.trim()))
+					.collect(Collectors.toList());
+			int totalPreguntasBloque = filteredList.size();
+			int totalTestsAnho = Math.round(totalPreguntasBloque / num_preguntas_por_test);
+
+			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
+			// Repartimos las preguntas entre los test del anho
+			for (int i = 1; i <= totalTestsAnho; i++) {
+				Test test = new Test(Test.eTipoTest.anho, idAnho, i);
+				while ((!test.estaCompleto()) && (iterator.hasNext())) {
+					PreguntaTest t = iterator.next();
+					try {
+						int id = t.getNumId();
+						test.asignarIdPregunta(id);
+					} catch (Exception ex) {
+						logger.error("Error procesing id of question " + t);
+					}
+				}
+				test.generarDocumentos(listaPreguntas, totalTestsAnho);
+			}
+
+			logger.info("Generado test Anho " + idAnho);
 		}
 		return;
 	}

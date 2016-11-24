@@ -21,1203 +21,903 @@ var response = new Array();
 var units = new Array();
 var comments = new Array();
 
-//  Id pregunta: 679 AÃ±o de creación de pregunta: 2002-01-01
- questions[0]= "1)  &iquest;Cu&aacute;l de los siguientes no se considera un riesgo de origen accidental?:";
+//  Id pregunta: 10601 Año de creación de pregunta: 2016
+ questions[0]= "1)  Los criptosistemas pueden clasificarse en:";
  choices[0]= new Array();
- choices[0][0] = "Huelga del personal";
- choices[0][1] = "Errores en la utilizaci&oacute;n de los datos";
- choices[0][2] = "Aver&iacute;as en las instalaciones el&eacute;ctricas";
- choices[0][3] = "Interrupci&oacute;n de suministro de energ&iacute;a";
- answers[0] = choices[0][0];
- units[0] = "32,33";
- comments[0] = "Id Pregunta: 679. ";
+ choices[0][0] = "Concretos, Estables e Inestables.";
+ choices[0][1] = "Sim&eacute;tricos, Paralelos y Referenciales.";
+ choices[0][2] = "Asim&eacute;tricos, Referenciales y Concretos.";
+ choices[0][3] = "Sim&eacute;tricos, Asim&eacute;tricos e H&iacute;bridos.";
+ answers[0] = choices[0][3];
+ units[0] = "76";
+ comments[0] = "Id Pregunta: 10601. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 680 AÃ±o de creación de pregunta: 2002-01-01
- questions[1]= "2)  &iquest;Cu&aacute;l de las siguientes operaciones se realiza a trav&eacute;s de servicios de transferencia electr&oacute;nica de fondos?:";
+//  Id pregunta: 10106 Año de creación de pregunta: 2016
+ questions[1]= "2)  &iquest;En qu&eacute; consiste el paradigma MapReduce?";
  choices[1]= new Array();
- choices[1][0] = "Autorizaci&oacute;n y control de transacciones con pago por tarjeta de cr&eacute;dito o d&eacute;bito";
- choices[1][1] = "Consultas de estado de cuenta";
- choices[1][2] = "Consulta o acceso a bancos de datos";
- choices[1][3] = "Todas las anteriores";
- answers[1] = choices[1][3];
- units[1] = "70";
- comments[1] = "Id Pregunta: 680. hay una errata en lugar de servidos ser&iacute;a servicios.";
+ choices[1][0] = "Map toma un conjunto de datos y lo convierte en otro conjunto donde los elementos individuales son separados en tuplas (pares clave/valor)";
+ choices[1][1] = "Reduce obtiene la salida de map como datos de entrada y combina tuplas en un conjunto m&aacute;s peque&ntilde;o de las mismas";
+ choices[1][2] = "A) y B) son verdaderas";
+ choices[1][3] = "A) es la definici&oacute;n del procedimiento intermedio Shuffle";
+ answers[1] = choices[1][2];
+ units[1] = "73";
+ comments[1] = "Id Pregunta: 10106. ";
 
 
-//  Id pregunta: 748 AÃ±o de creación de pregunta: 2004-01-01
- questions[2]= "3)  En relaci&oacute;n con la huella digital y las funciones hash, se&ntilde;alar la opci&oacute;n falsa:";
+//  Id pregunta: 10659 Año de creación de pregunta: 2016
+ questions[2]= "3)  &iquest;De qu&eacute; modelo de programaci&oacute;n es una implementaci&oacute;n Hadoop?";
  choices[2]= new Array();
- choices[2][0] = "Dos mensajes id&eacute;nticos, producen la misma huella";
- choices[2][1] = "Dada una huella es computacionalmente imposible encontrar un mensaje que produzca esa huella";
- choices[2][2] = "Si dos huellas son id&eacute;nticas, s&oacute;lo pueden haber sido originadas con el mismo mensaje";
- choices[2][3] = "Si dos huellas son id&eacute;nticas, pueden haber sido originadas por distintos mensajes con muy poca probabilidad";
- answers[2] = choices[2][2];
- units[2] = "72";
- comments[2] = "Id Pregunta: 748. Similar a examen TIC SS A 2003";
+ choices[2][0] = "Orientaci&oacute;n a objetos";
+ choices[2][1] = "MapReduce";
+ choices[2][2] = "Pipeline filtering";
+ choices[2][3] = "Programaci&oacute;n funcional";
+ answers[2] = choices[2][1];
+ units[2] = "73";
+ comments[2] = "Id Pregunta: 10659. ";
 
 
-//  Id pregunta: 753 AÃ±o de creación de pregunta: 2004-01-01
- questions[3]= "4)  Un ejemplo de herramienta Open Source de administraci&oacute;n remota de sistemas Unix/Linux es:";
+//  Id pregunta: 10013 Año de creación de pregunta: 2016
+ questions[3]= "4)  JNDI se usa para el acceso a:";
  choices[3]= new Array();
- choices[3][0] = "WebMin";
- choices[3][1] = "WMI (Web Management &amp; Instrumentation)";
- choices[3][2] = "syslog";
- choices[3][3] = "Performance Monitor";
- answers[3] = choices[3][0];
- units[3] = "53,61,62";
- comments[3] = "Id Pregunta: 753. ";
+ choices[3][0] = "Datos de ficheros";
+ choices[3][1] = "Sistemas gestores de bases de datos";
+ choices[3][2] = "Directorios de nombres";
+ choices[3][3] = "Colas de mensajer&iacute;a";
+ answers[3] = choices[3][2];
+ units[3] = "64";
+ comments[3] = "Id Pregunta: 10013. AGE A1 2015";
 
 
-//  Id pregunta: 830 AÃ±o de creación de pregunta: 2002-01-01
- questions[4]= "5)  Comparando la criptograf&iacute;a de clave secreta frente a la criptograf&iacute;a asim&eacute;trica. &iquest;C&uacute;al de los dos tipos de criptograf&iacute;a es m&aacute;s segura, suponiendo igual longitud de clave?:";
+//  Id pregunta: 10608 Año de creación de pregunta: 2016
+ questions[4]= "5)  Una de las condiciones que un &aacute;rbol debe cumplir para ser &aacute;rbol b, siendo n el orden del &aacute;rbol, es:";
  choices[4]= new Array();
- choices[4][0] = "La de clave secreta";
- choices[4][1] = "La asim&eacute;trica";
- choices[4][2] = "Son igual de seguras";
- choices[4][3] = "Depende del lenguaje de programaci&oacute;n empleado";
- answers[4] = choices[4][0];
- units[4] = "72";
- comments[4] = "Id Pregunta: 830. ";
+ choices[4][0] = "Cada p&aacute;gina contiene como m&aacute;ximo 2n + 1 elementos.";
+ choices[4][1] = "Cada p&aacute;gina, excepto la ra&iacute;z, contiene al menos n elementos.";
+ choices[4][2] = "Cada p&aacute;gina o es una hoja o tiene m descendientes, siendo m el n&uacute;mero de elementos o claves que tiene.";
+ choices[4][3] = "Las hojas no tienen por qu&eacute; estar al mismo nivel.";
+ answers[4] = choices[4][1];
+ units[4] = "56";
+ comments[4] = "Id Pregunta: 10608. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 834 AÃ±o de creación de pregunta: 2002-01-01
- questions[5]= "6)  &iquest;Cu&aacute;l de las siguientes afirmaciones es cierta respecto a los procedimientos almacenados en los sistemas de gesti&oacute;n de bases de datos relacionales?:";
+//  Id pregunta: 10081 Año de creación de pregunta: 2016
+ questions[5]= "6)  El lenguaje SPARK es un subconjunto de:";
  choices[5]= new Array();
- choices[5][0] = "Es un conjunto de instrucciones y l&oacute;gica de procedimiento de SQL compilado, verificado y almacenado en base de datos";
- choices[5][1] = "Instrucciones SQL embebidas en el c&oacute;digo de los programas y convertidas en un plan de acceso en el tiempo de preparaci&oacute;n del programa";
- choices[5][2] = "Instrucciones SQL embebidas en el c&oacute;digo de los programas y convertidas en un plan de acceso en el tiempo de ejecuci&oacute;n del programa";
- choices[5][3] = "Los procedimientos almacenados no admiten par&aacute;metros de entrada";
- answers[5] = choices[5][0];
- units[5] = "57";
- comments[5] = "Id Pregunta: 834. ";
+ choices[5][0] = "Java";
+ choices[5][1] = "Fortran";
+ choices[5][2] = "Ruby";
+ choices[5][3] = "Ada";
+ answers[5] = choices[5][3];
+ units[5] = "73";
+ comments[5] = "Id Pregunta: 10081. AGE A1 2015";
 
 
-//  Id pregunta: 841 AÃ±o de creación de pregunta: 2002-01-01
- questions[6]= "7)  &iquest;Cu&aacute;l de las siguientes afirmaciones se ajusta m&aacute;s a la definici&oacute;n de MIPS?:";
+//  Id pregunta: 10108 Año de creación de pregunta: 2016
+ questions[6]= "7)  Son proyectos de Apache relacionados con Big Data:";
  choices[6]= new Array();
- choices[6][0] = "Expresa la capacidad de ejecuci&oacute;n de instrucciones de una m&aacute;quina";
- choices[6][1] = "Expresa la velocidad de ejecuci&oacute;n en miles de intrucciones por segundo";
- choices[6][2] = "Expresa la potencia de c&aacute;lculo cient&iacute;fico de un computador";
- choices[6][3] = "Expresa la potencia de c&aacute;lculo de generaci&oacute;n de gr&aacute;ficos";
- answers[6] = choices[6][0];
- units[6] = "45";
- comments[6] = "Id Pregunta: 841. ";
+ choices[6][0] = "Hadoop";
+ choices[6][1] = "Spark";
+ choices[6][2] = "A) y B)";
+ choices[6][3] = "Niguno de los anteriores";
+ answers[6] = choices[6][2];
+ units[6] = "73";
+ comments[6] = "Id Pregunta: 10108. ";
 
 
-//  Id pregunta: 845 AÃ±o de creación de pregunta: 2002-01-01
- questions[7]= "8)  &iquest;Cu&aacute;l de las siguientes alternativas indica los tres tipos de informaci&oacute;n manejados por un Sistema de Informaci&oacute;n Geogr&aacute;fica (SIG) en el caso m&aacute;s general?:";
+//  Id pregunta: 10623 Año de creación de pregunta: 2016
+ questions[7]= "8)  En PHP 5.0, &iquest;cu&aacute;l es la regla para formar los nombres de las variables?";
  choices[7]= new Array();
- choices[7][0] = "Topol&oacute;gica, vectorial y r&aacute;ster.";
- choices[7][1] = "Posicional, temporal y tem&aacute;tica.";
- choices[7][2] = "Topol&oacute;gica, tem&aacute;tica y posicional.";
- choices[7][3] = "Posicional, r&aacute;ster y topol&oacute;gica.";
- answers[7] = choices[7][2];
- units[7] = "67";
- comments[7] = "Id Pregunta: 845. NULL";
+ choices[7][0] = "Una variable debe comenzar con el signo $ seguido del nombre de la variable.";
+ choices[7][1] = "Una variable debe comenzar con el signo &amp; seguido del nombre de la variable.";
+ choices[7][2] = "Una variable debe comenzar por un car&aacute;cter num&eacute;rico.";
+ choices[7][3] = "No hay regla para la formaci&oacute;n de los nombres de las variables.";
+ answers[7] = choices[7][0];
+ units[7] = "65";
+ comments[7] = "Id Pregunta: 10623. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 939 AÃ±o de creación de pregunta: 2002-01-01
- questions[8]= "9)  &iquest;Qu&eacute; se entiende por autoridad de certificaci&oacute;n?:";
+//  Id pregunta: 10065 Año de creación de pregunta: 2016
+ questions[8]= "9)  Respecto a las arquitecturas de almacenamiento SAN Fibre Channel, indique la respuesta incorrecta:";
  choices[8]= new Array();
- choices[8][0] = "Un juez";
- choices[8][1] = "Una compa&ntilde;&iacute;a que certifica la seguridad de sus sistemas En la actualidad s&oacute;lo puede considerarse a Microsoft como tal,";
- choices[8][2] = "Son &oacute;rganos administrativos dependientes del Consejo Superior de Inform&aacute;tica que dictan las normas de certificaci&oacute;n digital, de acuerdo a las Directivas de la Uni&oacute;n Europea";
- choices[8][3] = "Son entidades que expiden certificados digitales de manera que garantizan la correspondencia entre la identidad de un usuario y su par de claves";
- answers[8] = choices[8][3];
- units[8] = "74";
- comments[8] = "Id Pregunta: 939. NULL";
+ choices[8][0] = "Cada equipo de la red se identifica de forma un&iacute;voca mediante una direcci&oacute;n de 64 bits.";
+ choices[8][1] = "El SNS asigna los FCID y permite traducir de FCID a WWN.";
+ choices[8][2] = "Los switches FC intercambian informaci&oacute;n de enrutado de tramas mediante un protocolo del tipo EGP adaptado a las redes FC.";
+ choices[8][3] = "La se&ntilde;alizaci&oacute;n del canal de fibra puede funcionar sobre pares de cobre.";
+ answers[8] = choices[8][2];
+ units[8] = "53";
+ comments[8] = "Id Pregunta: 10065. AGE A1 2015";
 
 
-//  Id pregunta: 972 AÃ±o de creación de pregunta: 2002-01-01
- questions[9]= "10)  Cuando se quiere simular una base de datos multidimensional con una base de datos relacional y hay jerarqu&iacute;as en las dimensiones, lo m&aacute;s adecuado es el:";
+//  Id pregunta: 10107 Año de creación de pregunta: 2016
+ questions[9]= "10)  Son bases de datos NoSQL orientadas a objetos:";
  choices[9]= new Array();
- choices[9][0] = "Esquema en estrella.";
- choices[9][1] = "Esquema en tornillo.";
- choices[9][2] = "Esquema de hechos.";
- choices[9][3] = "Esquema en copo de nieve.";
- answers[9] = choices[9][3];
- units[9] = "68";
- comments[9] = "Id Pregunta: 972. ";
+ choices[9][0] = "GemStone";
+ choices[9][1] = "Zope Object DB";
+ choices[9][2] = "Las dos anteriores";
+ choices[9][3] = "Solo B)";
+ answers[9] = choices[9][2];
+ units[9] = "73";
+ comments[9] = "Id Pregunta: 10107. ";
 
 
-//  Id pregunta: 987 AÃ±o de creación de pregunta: 2002-01-01
- questions[10]= "11)  Dentro de los modos de direccionamiento se llama direccionamiento indirecto a:";
+//  Id pregunta: 10046 Año de creación de pregunta: 2016
+ questions[10]= "11)  Indique cu&aacute;l de las siguientes afirmaciones es correcta:";
  choices[10]= new Array();
- choices[10][0] = "Cuando el objeto se halla direccionado en la propia instrucci&oacute;n";
- choices[10][1] = "Cuando el objeto direccionado es la direcci&oacute;n del objeto buscado";
- choices[10][2] = "Cuando el objeto est&aacute; en un direcci&oacute;n predeterminada";
- choices[10][3] = "Cuando se expresa un desplazamiento sobre una direcci&oacute;n base";
+ choices[10][0] = "En un sistema de cifrado de clave asim&eacute;trica la seguridad radica en la transmisi&oacute;n de la clave, mediante canal seguro, entre el emisor y el receptor del mensaje.";
+ choices[10][1] = "Las huellas digitales devueltas por una misma funci&oacute;n hash tienen id&eacute;ntica longitud.";
+ choices[10][2] = "Para ofrecer un nivel de seguridad equivalente, los sistemas de clave p&uacute;blica requieren menores longitudes de clave que los sistemas sim&eacute;tricos.";
+ choices[10][3] = "Se denomina criptograma al procedimiento empleado para cifrar un mensaje.";
  answers[10] = choices[10][1];
- units[10] = "52";
- comments[10] = "Id Pregunta: 987. ";
+ units[10] = "76";
+ comments[10] = "Id Pregunta: 10046. AGE A1 2015";
 
 
-//  Id pregunta: 1019 AÃ±o de creación de pregunta: 2002-01-01
- questions[11]= "12)  El interfaz socket:";
+//  Id pregunta: 10576 Año de creación de pregunta: 2016
+ questions[11]= "12)  Se&ntilde;ale, de entre los siguientes, cu&aacute;l es un gestor de base de datos relacional:";
  choices[11]= new Array();
- choices[11][0] = "S&oacute;lo es aplicable a TCP/IP";
- choices[11][1] = "S&oacute;lo es aplicable a UNIX";
- choices[11][2] = "Es el &uacute;nico modelo en Unix para acceder a TCP/IP";
- choices[11][3] = "Ninguna de las respuestas anteriores es correcta";
- answers[11] = choices[11][3];
- units[11] = "100";
- comments[11] = "Id Pregunta: 1019. NULL";
+ choices[11][0] = "PostgreSQL";
+ choices[11][1] = "Datawarehouse";
+ choices[11][2] = "Snowflake";
+ choices[11][3] = "CouchDB";
+ answers[11] = choices[11][0];
+ units[11] = "61";
+ comments[11] = "Id Pregunta: 10576. Tema 61. TAI 2016.";
 
 
-//  Id pregunta: 1023 AÃ±o de creación de pregunta: 2002-01-01
- questions[12]= "13)  El lenguaje COBOL:";
+//  Id pregunta: 10048 Año de creación de pregunta: 2016
+ questions[12]= "13)  El Reglamento (UE) 910/2014 del Parlamento Europeo y del Consejo relativo a la identificaci&oacute;n electr&oacute;nica y los servicios de confianza para las transacciones electr&oacute;nicas en el mercado interior establece:";
  choices[12]= new Array();
- choices[12][0] = "Es un lenguaje de programaci&oacute;n que no cuenta con ninguna variedad para el sistema operativo UNIX";
- choices[12][1] = "Es un lenguaje de programaci&oacute;n desarrollado por CODASYL a principios de los a&ntilde;os 60";
- choices[12][2] = "Es un lenguaje de programaci&oacute;n desarrollado por CODASYL a principios de los a&ntilde;os 70";
- choices[12][3] = "Es un lenguaje de programaci&oacute;n que dej&oacute; de utilizarse por incompatibilidad con el efecto 2000";
- answers[12] = choices[12][1];
- units[12] = "";
- comments[12] = "Id Pregunta: 1023. ";
+ choices[12][0] = "La norma reguladora de los certificados de sede electr&oacute;nica en la Uni&oacute;n Europea.";
+ choices[12][1] = "Cinco a&ntilde;os como el periodo m&aacute;ximo de vigencia de los certificados electr&oacute;nicos.";
+ choices[12][2] = "La plena prohibici&oacute;n del uso de seud&oacute;nimos en el uso de las transacciones electr&oacute;nicas.";
+ choices[12][3] = "La regulaci&oacute;n del certificado de sello electr&oacute;nico y su uso en los servicios p&uacute;blicos.";
+ answers[12] = choices[12][3];
+ units[12] = "77";
+ comments[12] = "Id Pregunta: 10048. AGE A1 2015";
 
 
-//  Id pregunta: 1030 AÃ±o de creación de pregunta: 2002-01-01
- questions[13]= "14)  Frecuencia de paginaci&oacute;n es:";
+//  Id pregunta: 10023 Año de creación de pregunta: 2016
+ questions[13]= "14)  &iquest;Cu&aacute;l de los siguientes lenguajes propone el W3C para consultar datos en formato RDF?";
  choices[13]= new Array();
- choices[13][0] = "N&uacute;mero de peticiones de servicio por unidad de tiempo";
- choices[13][1] = "N&uacute;mero de programas sacados de memoria por unidad de tiempo";
- choices[13][2] = "N&uacute;mero de trabajos de un programa en un entorno de memoria virtual por unidad de tiempo";
- choices[13][3] = "N&uacute;mero de fallos de p&aacute;gina que se producen por unidad de tiempo";
- answers[13] = choices[13][3];
- units[13] = "52";
- comments[13] = "Id Pregunta: 1030. ";
+ choices[13][0] = "SPARQL";
+ choices[13][1] = "UnQL";
+ choices[13][2] = "XQUERY";
+ choices[13][3] = "RQL";
+ answers[13] = choices[13][0];
+ units[13] = "74";
+ comments[13] = "Id Pregunta: 10023. AGE A1 2015";
 
 
-//  Id pregunta: 1032 AÃ±o de creación de pregunta: 2002-01-01
- questions[14]= "15)  El mecanismo de overlay,  utilizado para poder ejecutar programas de mayor tama&ntilde;o que la memoria principal se caracteriza por:";
+//  Id pregunta: 10045 Año de creación de pregunta: 2016
+ questions[14]= "15)  46. &iquest;Cu&aacute;l de las siguientes NO es una de las APIs incorporadas a HTML5?";
  choices[14]= new Array();
- choices[14][0] = "Es un mecanismo que permite al programador no preocuparse por el tama&ntilde;o de los programas";
- choices[14][1] = "El programador debe partir los programas en trozos de tama&ntilde;os similares";
- choices[14][2] = "No es necesario que los programas contengan instrucciones que gestionen el proceso de cargar en memoria el c&oacute;digo que se va a ejecutar en un momento dado";
- choices[14][3] = "Sustituy&oacute; al proceso de paginaci&oacute;n a lo largo de los a&ntilde;os 60";
+ choices[14][0] = "HTML Drag and Drop, para arrastrar un objeto a otra localizaci&oacute;n.";
+ choices[14][1] = "HTML Advanced Search, para parametrizar y modificar el comportamiento de los buscadores.";
+ choices[14][2] = "HTML Local Storage, para almacenar datos en el navegador.";
+ choices[14][3] = "HTML SSE, para actualizar una p&aacute;gina web autom&aacute;ticamente sin preguntar al servidor.";
  answers[14] = choices[14][1];
- units[14] = "52";
- comments[14] = "Id Pregunta: 1032. ";
+ units[14] = "74";
+ comments[14] = "Id Pregunta: 10045. AGE A1 2015";
 
 
-//  Id pregunta: 1063 AÃ±o de creación de pregunta: 2002-01-01
- questions[15]= "16)  El transistor fue inventado en 1947 por:";
+//  Id pregunta: 10063 Año de creación de pregunta: 2016
+ questions[15]= "16)  El modelo de servicio en la nube en el que el consumidor no tiene control sobre la red, los servidores, sistemas operativos o almacenamiento, pero s&iacute; sobre las aplicaciones desplegadas y sobre los ajustes de configuraci&oacute;n de dichas aplicaciones, se denomina:";
  choices[15]= new Array();
- choices[15][0] = "Shottky y Gunn.";
- choices[15][1] = "E. W. Intel.";
- choices[15][2] = "Bardeen, Brattain, Shockley.";
- choices[15][3] = "Ohm y Watt.";
- answers[15] = choices[15][2];
- units[15] = "";
- comments[15] = "Id Pregunta: 1063. ";
+ choices[15][0] = "Infrastructure as a Service (IaaS)";
+ choices[15][1] = "Platform as a Service (PaaS)";
+ choices[15][2] = "Software as a Service (SaaS)";
+ choices[15][3] = "Application as a Service (AaaS)";
+ answers[15] = choices[15][1];
+ units[15] = "52";
+ comments[15] = "Id Pregunta: 10063. AGE A1 2015";
 
 
-//  Id pregunta: 1082 AÃ±o de creación de pregunta: 2002-01-01
- questions[16]= "17)  En el lenguaje de programaci&oacute;n BASIC:";
+//  Id pregunta: 10639 Año de creación de pregunta: 2016
+ questions[16]= "17)  En cuanto al proceso de autenticaci&oacute;n en Linux, indique cu&aacute;l de las siguientes afirmaciones es correcta:";
  choices[16]= new Array();
- choices[16][0] = "No se puede trabajar en modo int&eacute;rprete";
- choices[16][1] = "No es posible compilar un programa para su posterior ejecuci&oacute;n.";
- choices[16][2] = "S&oacute;lo se puede trabajar en modo int&eacute;rprete en la fase de pruebas.";
- choices[16][3] = "Puede trabajarse en modo int&eacute;rprete o ejecutarse el programa una vez compilado.";
- answers[16] = choices[16][3];
- units[16] = "";
- comments[16] = "Id Pregunta: 1082. ";
+ choices[16][0] = "Linux emplea para el proceso de autenticaci&oacute;n por contrase&ntilde;a el sistema DEC.";
+ choices[16][1] = "Linux emplea para el proceso de autenticaci&oacute;n por contrase&ntilde;a el sistema MD6.";
+ choices[16][2] = "Linux emplea dos sistemas para el proceso de autenticaci&oacute;n por contrase&ntilde;a, DES y MD5.";
+ choices[16][3] = "Linux emplea dos sistemas para el proceso de autenticaci&oacute;n por contrase&ntilde;a, DEC y MD6.";
+ answers[16] = choices[16][2];
+ units[16] = "57";
+ comments[16] = "Id Pregunta: 10639. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1120 AÃ±o de creación de pregunta: 2002-01-01
- questions[17]= "18)  En los criptosistemas asim&eacute;tricos:";
+//  Id pregunta: 10094 Año de creación de pregunta: 2016
+ questions[17]= "18)  &iquest;Cu&aacute;l de las siguientes caracter&iacute;sticas NO es propia de Apache Hadoop?";
  choices[17]= new Array();
- choices[17][0] = "El emisor cifra con la clave p&uacute;blica del receptor y el receptor descifra con la clave p&uacute;blica del emisor";
- choices[17][1] = "El emisor cifra con su clave p&uacute;blica y el receptor descifra con su clave privada";
- choices[17][2] = "El emisor cifra con la clave p&uacute;blica del receptor y el receptor descifra con su clave privada";
- choices[17][3] = "El emisor cifra con su clave privada y el receptor descifra con su clave p&uacute;blica";
- answers[17] = choices[17][2];
- units[17] = "72";
- comments[17] = "Id Pregunta: 1120. ";
+ choices[17][0] = "Es un framework de software libre.";
+ choices[17][1] = "Es una base de datos NoSQL.";
+ choices[17][2] = "Est&aacute; basado en MapReduce.";
+ choices[17][3] = "Puede emplearse en sistemas de datos masivos (Big Data).";
+ answers[17] = choices[17][1];
+ units[17] = "73";
+ comments[17] = "Id Pregunta: 10094. AGE A1 2015";
 
 
-//  Id pregunta: 1148 AÃ±o de creación de pregunta: 2002-01-01
- questions[18]= "19)  En un sistema operativo, el 'dispatcher' se encarga de:";
+//  Id pregunta: 10047 Año de creación de pregunta: 2016
+ questions[18]= "19)  &iquest;Cu&aacute;l de las siguientes caracter&iacute;sticas es propia de OCSP?";
  choices[18]= new Array();
- choices[18][0] = "Asignar un proceso a un procesador que ha quedado libre";
- choices[18][1] = "Optimizar el uso de la memoria RAM";
- choices[18][2] = "Gestionar las interrupciones de entrada/salida";
- choices[18][3] = "Asignar nuevas p&aacute;ginas de memoria al proceso que se est&eacute; ejecutando si las necesita";
- answers[18] = choices[18][0];
- units[18] = "52";
- comments[18] = "Id Pregunta: 1148. ";
+ choices[18][0] = "Es un m&eacute;todo de validaci&oacute;n del estado de un certificado electr&oacute;nico que emplea suplementariamente la descarga y consulta de CRLs.";
+ choices[18][1] = "Permite la consulta off-line del estado de revocaci&oacute;n de un certificado proporcionado por una autoridad de certificaci&oacute;n.";
+ choices[18][2] = "No permite implementar mecanismos de tarificaci&oacute;n.";
+ choices[18][3] = "Permite verificar el estado de los certificados mediante la consulta a una autoridad de validaci&oacute;n.";
+ answers[18] = choices[18][3];
+ units[18] = "78";
+ comments[18] = "Id Pregunta: 10047. AGE A1 2015";
 
 
-//  Id pregunta: 1165 AÃ±o de creación de pregunta: 2002-01-01
- questions[19]= "20)  Entre las caracter&iacute;sticas de JAVA que se describen a continuaci&oacute;n s&oacute;lo una es cierta. Se&ntilde;&aacute;lela:";
+//  Id pregunta: 10039 Año de creación de pregunta: 2016
+ questions[19]= "20)  &iquest;Cu&aacute;l de las siguientes respuestas NO es un servicio definido por el Open Geospatial Consortium (OGC)?";
  choices[19]= new Array();
- choices[19][0] = "JAVA es similar a C++ pero m&aacute;s complejo que &eacute;ste";
- choices[19][1] = "La portabilidad de los programas JAVA no requiere recompilar.";
- choices[19][2] = "JAVA es del orden de 10 veces m&aacute;s r&aacute;pido que C++";
- choices[19][3] = "Todas las anteriores son ciertas";
- answers[19] = choices[19][1];
- units[19] = "60";
- comments[19] = "Id Pregunta: 1165. JCED - Preparatic XVII";
+ choices[19][0] = "WMS sirve mapas de forma din&aacute;mica presentando la informaci&oacute;n como im&aacute;genes digitales.";
+ choices[19][1] = "WMTS permite la visualizaci&oacute;n de mapas a trav&eacute;s de teselas (tiles) de im&aacute;genes.";
+ choices[19][2] = "WRS permite la consulta de colecciones de mapas raster.";
+ choices[19][3] = "WFS permite la consulta y descarga de datos vectoriales.";
+ answers[19] = choices[19][2];
+ units[19] = "71";
+ comments[19] = "Id Pregunta: 10039. AGE A1 2015";
 
 
-//  Id pregunta: 1216 AÃ±o de creación de pregunta: 2002-01-01
- questions[20]= "21)  La deducci&oacute;n por medio de los sistemas de Kleene en inteligencia artificial hace referencia a:";
+//  Id pregunta: 10101 Año de creación de pregunta: 2016
+ questions[20]= "21)  El Teorema de Brewer o Principio CAP recoge las siguientes garant&iacute;as:";
  choices[20]= new Array();
- choices[20][0] = "La orientaci&oacute;n heur&iacute;stica";
- choices[20][1] = "La orientaci&oacute;n l&oacute;gica";
- choices[20][2] = "La representaci&oacute;n del conocimiento";
- choices[20][3] = "Las redes sem&aacute;nticas";
+ choices[20][0] = "Consistencia (Consistency), Disponibilidad (Availability) y Persistencia (Persistence)";
+ choices[20][1] = "Consistencia (Consistency), Disponibilidad (Availability) y Tolerancia a la Partici&oacute;n (Partition Tolerance)";
+ choices[20][2] = "Consistencia (Consistency), Atomicidad (Atomicity) y Tolerancia a la Partici&oacute;n (Partition Tolerance)";
+ choices[20][3] = "Confidencialidad (Confidentiality), Autenticidad (Authentication) y Protecci&oacute;n (Protection)";
  answers[20] = choices[20][1];
- units[20] = "63";
- comments[20] = "Id Pregunta: 1216. ";
+ units[20] = "73";
+ comments[20] = "Id Pregunta: 10101. ";
 
 
-//  Id pregunta: 1343 AÃ±o de creación de pregunta: 2002-01-01
- questions[21]= "22)  Se&ntilde;ale el enunciado falso:";
+//  Id pregunta: 10658 Año de creación de pregunta: 2016
+ questions[21]= "22)  &iquest;Qu&eacute; tecnolog&iacute;a de tratamiento de datos no guarda relaci&oacute;n con BigData?";
  choices[21]= new Array();
- choices[21][0] = "Los sistemas transaccionales deben bloquear los registros que vayan a modificar";
- choices[21][1] = "Cuando la aplicaci&oacute;n indica que la transacci&oacute;n ha terminado es cuando se actualizan las bases de datos y se suelen liberar los registros intervinientes";
- choices[21][2] = "Todos los aspectos de una transacci&oacute;n deben completarse o el sistema debe actuar como si ninguna se hubiera completado";
- choices[21][3] = "Los efectos de una transacci&oacute;n deben ser visibles por las dem&aacute;s transacciones antes que la transacci&oacute;n se complete";
- answers[21] = choices[21][3];
- units[21] = "58";
- comments[21] = "Id Pregunta: 1343. ";
+ choices[21][0] = "NoSQL";
+ choices[21][1] = "Sistemas de baja latencia";
+ choices[21][2] = "MapReduce";
+ choices[21][3] = "Business Intelligence";
+ answers[21] = choices[21][1];
+ units[21] = "73";
+ comments[21] = "Id Pregunta: 10658. ";
 
 
-//  Id pregunta: 1375 AÃ±o de creación de pregunta: 2002-01-01
- questions[22]= "23)  Symbian es:";
+//  Id pregunta: 10654 Año de creación de pregunta: 2016
+ questions[22]= "23)  &iquest;Qu&eacute; significa la tolerancia a partici&oacute;n dentro del teorema CAP?";
  choices[22]= new Array();
- choices[22][0] = "Un procesador de AMD";
- choices[22][1] = "Unas especificaciones a modo de sistema operativo o soporte para el desarrollo de aplicaciones software sobre dispositivos m&oacute;viles";
- choices[22][2] = "Un est&aacute;ndar de facto para el cableado de edificios";
- choices[22][3] = "Un m&eacute;todo de procesamiento sim&eacute;trico en paralelo";
- answers[22] = choices[22][1];
- units[22] = "47";
- comments[22] = "Id Pregunta: 1375. ";
+ choices[22][0] = "El sistema podr&aacute; seguir procesando una petici&oacute;n aunque se pierda la conectividad con algun nodo";
+ choices[22][1] = "Las modificaciones se aplican a todos los nodos en su conjunto en el mismo momento";
+ choices[22][2] = "Cualquier peticion recibida en un nodo debe tener respuesta";
+ choices[22][3] = "El teorema CAP no habla de tolerancia a particiones";
+ answers[22] = choices[22][0];
+ units[22] = "73";
+ comments[22] = "Id Pregunta: 10654. ";
 
 
-//  Id pregunta: 1450 AÃ±o de creación de pregunta: 2002-01-01
- questions[23]= "24)  &iquest;Cu&aacute;l de las siguientes no es una herramienta caracter&iacute;stica de un SGBDD?:";
+//  Id pregunta: 10104 Año de creación de pregunta: 2016
+ questions[23]= "24)  Son bases de datos NoSQL:";
  choices[23]= new Array();
- choices[23][0] = "Diccionario de palabras vac&iacute;as";
- choices[23][1] = "Diccionario de sin&oacute;nimos, acr&oacute;nimos, abreviaturas, etc.";
- choices[23][2] = "Tesauro";
- choices[23][3] = "Corrector sem&aacute;ntico y gramatical";
- answers[23] = choices[23][3];
- units[23] = "58";
- comments[23] = "Id Pregunta: 1450. NULL";
+ choices[23][0] = "MongoDB y Maria DB";
+ choices[23][1] = "HBase y Dynamo";
+ choices[23][2] = "MariaDB, Cassandra y BigTable";
+ choices[23][3] = "La A) y la C)";
+ answers[23] = choices[23][1];
+ units[23] = "73";
+ comments[23] = "Id Pregunta: 10104. ";
 
 
-//  Id pregunta: 1465 AÃ±o de creación de pregunta: 2002-01-01
- questions[24]= "25)  La consistencia de un interfaz de usuario:";
+//  Id pregunta: 10036 Año de creación de pregunta: 2016
+ questions[24]= "25)  &iquest;Cu&aacute;l es la interfaz est&aacute;ndar de programaci&oacute;n Java para invocar a m&eacute;todos nativos escritos en otros lenguajes como C o C++?";
  choices[24]= new Array();
- choices[24][0] = "Contribuye a que &eacute;ste sea menos vers&aacute;til en su utilizaci&oacute;n";
- choices[24][1] = "Se refiere a la uniformidad en su utilizaci&oacute;n a lo largo de toda su exposici&oacute;n";
- choices[24][2] = "S&oacute;lo se puede garantizar si &eacute;ste es gr&aacute;fico";
- choices[24][3] = "Garantiza su facilidad de uso";
+ choices[24][0] = "JAXP";
+ choices[24][1] = "JNI";
+ choices[24][2] = "JNDI";
+ choices[24][3] = "JDBC";
  answers[24] = choices[24][1];
- units[24] = "52";
- comments[24] = "Id Pregunta: 1465. ";
+ units[24] = "64";
+ comments[24] = "Id Pregunta: 10036. AGE A1 2015";
 
 
-//  Id pregunta: 1502 AÃ±o de creación de pregunta: 2002-01-01
- questions[25]= "26)  La utilidad &quot;ping&quot;:";
+//  Id pregunta: 10109 Año de creación de pregunta: 2016
+ questions[25]= "26)  Big Data:";
  choices[25]= new Array();
- choices[25][0] = "Se basa en los comandos &quot;echo request&quot; y &quot;echo reply&quot; del protocolo ICMP";
- choices[25][1] = "Se basa en el protocolo PING";
- choices[25][2] = "Se basa en el protocolo UDP";
- choices[25][3] = "Se basa en el protocolo TCP";
- answers[25] = choices[25][0];
- units[25] = "52,55";
- comments[25] = "Id Pregunta: 1502. ";
+ choices[25][0] = "Solo aplica a datos generados m&aacute;quina a m&aacute;quina (M2M)";
+ choices[25][1] = "No puede emplearse para tratar datos no estructurados";
+ choices[25][2] = "Suele utilizar tecnolog&iacute;as relacionales a la hora de analizar los datos";
+ choices[25][3] = "Ninguna de las anteriores";
+ answers[25] = choices[25][3];
+ units[25] = "73";
+ comments[25] = "Id Pregunta: 10109. ";
 
 
-//  Id pregunta: 1520 AÃ±o de creación de pregunta: 2003-01-01
- questions[26]= "27)  C&oacute;mo objetos de una base de datos ORACLE, &iquest;cu&aacute;l es la diferencia principal entre una funci&oacute;n y un procedimiento?:";
+//  Id pregunta: 10031 Año de creación de pregunta: 2016
+ questions[26]= "27)  &iquest;Qu&eacute; es MongoDB?";
  choices[26]= new Array();
- choices[26][0] = "Una funci&oacute;n no puede ejecutarse de forma nativa; un procedimiento si.";
- choices[26][1] = "Una funci&oacute;n puede invocar otra funci&oacute;n; un procedimiento no.";
- choices[26][2] = "Una funci&oacute;n est&aacute; almacenada en la base de datos; un procedimiento no.";
- choices[26][3] = "Una funci&oacute;n puede devolver un valor al programa que la invoca; un procedimiento no.";
- answers[26] = choices[26][3];
- units[26] = "58";
- comments[26] = "Id Pregunta: 1520. Junta Andaluc&iacute;a";
+ choices[26][0] = "Una herramienta Object Relational Mapping (ORM) para facilitar el desarrollo.";
+ choices[26][1] = "Una base de datos de c&oacute;digo abierto de documentos tipo JSON.";
+ choices[26][2] = "Un sistema gestor de base de datos relacional.";
+ choices[26][3] = "Una base de datos jer&aacute;rquica de relaciones encadenadas.";
+ answers[26] = choices[26][1];
+ units[26] = "73";
+ comments[26] = "Id Pregunta: 10031. AGE A1 2015";
 
 
-//  Id pregunta: 1523 AÃ±o de creación de pregunta: 2003-01-01
- questions[27]= "28)  Con las memorias DDR-SDRAM podernos obtener una velocidad equivalente a la obtenida con:";
+//  Id pregunta: 10638 Año de creación de pregunta: 2016
+ questions[27]= "28)  Indique cu&aacute;l de las siguientes afirmaciones es la correcta:";
  choices[27]= new Array();
- choices[27][0] = "pc66.";
- choices[27][1] = "pc100.";
- choices[27][2] = "pc133.";
- choices[27][3] = "multiplo (x2) de pc66, pc100 o pc133.";
+ choices[27][0] = "Linux dispone de los tres principales protocolos de red para sistemas UNIX: Novel, TCP/IP y UUCP.";
+ choices[27][1] = "Linux dispone &uacute;nicamente del protocolo TCP/IP.";
+ choices[27][2] = "Linux dispone de todos los protocolos de red existentes.";
+ choices[27][3] = "Linux dispone de los dos principales protocolos de red para sistemas UNIX: TCP/IP y UUCP.";
  answers[27] = choices[27][3];
- units[27] = "47";
- comments[27] = "Id Pregunta: 1523. Junta Andaluc&iacute;a";
+ units[27] = "57";
+ comments[27] = "Id Pregunta: 10638. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1538 AÃ±o de creación de pregunta: 2003-01-01
- questions[28]= "29)  &iquest; Cu&aacute;l no es una aplicaci&oacute;n de LDAP ?";
+//  Id pregunta: 10649 Año de creación de pregunta: 2016
+ questions[28]= "29)  Los objetivos que persegu&iacute;a Codd con el modelo relacional, se pueden resumir en:";
  choices[28]= new Array();
- choices[28][0] = "Gesti&oacute;n de configuraci&oacute;n";
- choices[28][1] = "Seguridad";
- choices[28][2] = "Correo Electr&oacute;nico";
- choices[28][3] = "Transmisi&oacute;n de ficheros";
- answers[28] = choices[28][3];
- units[28] = "74";
- comments[28] = "Id Pregunta: 1538. NULL";
+ choices[28][0] = "Independencia f&iacute;sica, independencia l&oacute;gica, flexibilidad, uniformidad y sencillez.";
+ choices[28][1] = "Independencia f&iacute;sica, independencia l&oacute;gica y uniformidad.";
+ choices[28][2] = "Independencia f&iacute;sica, flexibilidad, uniformidad y sencillez.";
+ choices[28][3] = "Independencia f&iacute;sica, independencia l&oacute;gica, independencia conceptual, flexibilidad, uniformidad y sencillez.";
+ answers[28] = choices[28][0];
+ units[28] = "60";
+ comments[28] = "Id Pregunta: 10649. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1545 AÃ±o de creación de pregunta: 2003-01-01
- questions[29]= "30)  &iquest; Qu&eacute; escritorio de software libre utiliza CORBA como mecanismo de IPC ?";
+//  Id pregunta: 10611 Año de creación de pregunta: 2016
+ questions[29]= "30)  Una de las caracter&iacute;sticas de seguridad en SQL Server 2008 es el cifrado transparente de datos. Se&ntilde;ala la afirmaci&oacute;n correcta:";
  choices[29]= new Array();
- choices[29][0] = "KDE";
- choices[29][1] = "GNOME";
- choices[29][2] = "ambos ";
- choices[29][3] = "Ninguno de los 2";
+ choices[29][0] = "SQL Server no puede cifrar informaci&oacute;n a nivel de archivos de registro.";
+ choices[29][1] = "SQL Server ofrece la capacidad de buscar dentro de los datos cifrados.";
+ choices[29][2] = "Para trabajar con datos cifrados utilizando esta caracter&iacute;stica hay que introducir cambios en las aplicaciones.";
+ choices[29][3] = "SQL Server no puede cifrar informaci&oacute;n a nivel de archivos de datos.";
  answers[29] = choices[29][1];
- units[29] = "53,61";
- comments[29] = "Id Pregunta: 1545. ";
+ units[29] = "63";
+ comments[29] = "Id Pregunta: 10611. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1557 AÃ±o de creación de pregunta: 2003-01-01
- questions[30]= "31)  &iquest;Cu&aacute;l de las siguientes operaciones l&oacute;gicas es incorrecta?:";
+//  Id pregunta: 10609 Año de creación de pregunta: 2016
+ questions[30]= "31)  Dentro de las t&eacute;cnicas de clasificaci&oacute;n de datos tenemos los m&eacute;todos de clasificaci&oacute;n interna. &iquest;A qu&eacute; tipo de algoritmo de ordenaci&oacute;n o clasificaci&oacute;n pertenece el m&eacute;todo de la burbuja?";
  choices[30]= new Array();
- choices[30][0] = "complementario de (A+B) = complementario (A) . complementario (B)";
- choices[30][1] = "complementario de (A.B) = complementario (A) + complementario (B)";
- choices[30][2] = "complementario de (A . A) = complementario (A)";
- choices[30][3] = "doble complementario (A) = A";
- answers[30] = choices[30][2];
- units[30] = "";
- comments[30] = "Id Pregunta: 1557. Junta Andaluc&iacute;a";
+ choices[30][0] = "Clasificaci&oacute;n por inserci&oacute;n.";
+ choices[30][1] = "Clasificaci&oacute;n por cuenta.";
+ choices[30][2] = "Clasificaci&oacute;n por selecci&oacute;n.";
+ choices[30][3] = "Clasificaci&oacute;n por intercambio.";
+ answers[30] = choices[30][3];
+ units[30] = "56";
+ comments[30] = "Id Pregunta: 10609. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1627 AÃ±o de creación de pregunta: 2003-01-01
- questions[31]= "32)  Si un programa se distribuye con licencia GPL, la empresa que lo modifica puede:";
+//  Id pregunta: 10028 Año de creación de pregunta: 2016
+ questions[31]= "32)  En UNIX, la llamada &ldquo;FORK&rdquo;:";
  choices[31]= new Array();
- choices[31][0] = "No puede venderlo";
- choices[31][1] = "Integrarlo en otro SW y venderlo como propietario ";
- choices[31][2] = "Venderlo a otra empresa como software libre";
- choices[31][3] = "Venderlo a otra empresa como software propietario";
+ choices[31][0] = "Controla el tiempo de ejecuci&oacute;n de un proceso.";
+ choices[31][1] = "Env&iacute;a una se&ntilde;al al proceso especificado.";
+ choices[31][2] = "Crea una copia del proceso que hace la llamada.";
+ choices[31][3] = "Elimina el mapa de memoria del proceso que hace la llamada.";
  answers[31] = choices[31][2];
- units[31] = "61";
- comments[31] = "Id Pregunta: 1627. ";
+ units[31] = "57";
+ comments[31] = "Id Pregunta: 10028. AGE A1 2015";
 
 
-//  Id pregunta: 1650 AÃ±o de creación de pregunta: 2003-01-01
- questions[32]= "33)  Respecto a tecnolog&iacute;as RAID:";
+//  Id pregunta: 10633 Año de creación de pregunta: 2016
+ questions[32]= "33)  Respecto a la b&uacute;squeda en un &aacute;rbol binario, el peor de los casos para el algoritmo T, &ldquo;b&uacute;squeda e inserci&oacute;n en un &aacute;rbol&rdquo;, se da cuando las claves se han introducido en el &aacute;rbol de forma:";
  choices[32]= new Array();
- choices[32][0] = "RAID 0 aumenta el rendimiento ";
- choices[32][1] = "RAID 1 utiliza c&oacute;digos hamming";
- choices[32][2] = "RAID 2 utiliza discos espejo";
- choices[32][3] = "RAID 5 utiliza discos espejo";
- answers[32] = choices[32][0];
- units[32] = "48";
- comments[32] = "Id Pregunta: 1650. Pregunta similar a la del ex&aacute;men de SS del 2003 salvo en algunas opciones";
+ choices[32][0] = "Aleatoria o al azar, que producir&iacute;a un &aacute;rbol degenerado que especificar&iacute;a esencialmente una b&uacute;squeda binaria &oacute;ptima.";
+ choices[32][1] = "Aleatoria o al azar, que producir&iacute;a un &aacute;rbol degenerado que especificar&iacute;a esencialmente una b&uacute;squeda secuencial.";
+ choices[32][2] = "Creciente u ordenada, que producir&iacute;a un &aacute;rbol degenerado que especificar&iacute;a esencialmente una b&uacute;squeda binaria &oacute;ptima.";
+ choices[32][3] = "Creciente u ordenada, que producir&iacute;a un &aacute;rbol degenerado que especificar&iacute;a esencialmente una b&uacute;squeda secuencial.";
+ answers[32] = choices[32][3];
+ units[32] = "56";
+ comments[32] = "Id Pregunta: 10633. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1703 AÃ±o de creación de pregunta: 2006-01-01
- questions[33]= "34)  Se&ntilde;ale la opci&oacute;n correcta respecto a los puertos IEEE 1394:";
+//  Id pregunta: 10636 Año de creación de pregunta: 2016
+ questions[33]= "34)  El soporte de m&oacute;dulos en Linux tiene tres componentes:";
  choices[33]= new Array();
- choices[33][0] = "Apple los denomina Firewire y Sony i.Link";
- choices[33][1] = "No son &uacute;tiles para transferencias de alta velocidad";
- choices[33][2] = "La velocidad, superior a puertos USB, es independiente de los dispositivos conectados";
- choices[33][3] = "La velocidad, inferior a puertos USB, se reparte entre los dispositivos conectados";
- answers[33] = choices[33][0];
- units[33] = "47";
- comments[33] = "Id Pregunta: 1703. ";
+ choices[33][0] = "Gesti&oacute;n de E/S, Interfaces y Gesti&oacute;n del almacenamiento.";
+ choices[33][1] = "Gesti&oacute;n del almacenamiento, Gesti&oacute;n de seguridad y Gesti&oacute;n de integridad.";
+ choices[33][2] = "Gesti&oacute;n de m&oacute;dulos, M&oacute;dulo registro de controladores y Mecanismo de resoluci&oacute;n de conflictos.";
+ choices[33][3] = "Gesti&oacute;n de memoria, Gesti&oacute;n de discos y Gesti&oacute;n de impresi&oacute;n.";
+ answers[33] = choices[33][2];
+ units[33] = "57";
+ comments[33] = "Id Pregunta: 10636. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1707 AÃ±o de creación de pregunta: 2006-01-01
- questions[34]= "35)  Se&ntilde;ale la opci&oacute;n correcta respecto a RAID, Redundant Array of Independent (or Inexpensive) Disks:";
+//  Id pregunta: 10641 Año de creación de pregunta: 2016
+ questions[34]= "35)  La estructura de un Directorio Activo se basa en los siguientes conceptos:";
  choices[34]= new Array();
- choices[34][0] = "RAID se puede implementar por software o hardware";
- choices[34][1] = "RAID se puede implementar s&oacute;lo por software";
- choices[34][2] = "RAID se puede implementar s&oacute;lo por hardware";
- choices[34][3] = "RAID no se puede implementar por software y hardware a la vez";
- answers[34] = choices[34][0];
- units[34] = "48";
- comments[34] = "Id Pregunta: 1707. ";
+ choices[34][0] = "Directorios, Unidades f&iacute;sicas y Usuarios.";
+ choices[34][1] = "Dominio, Unidad Organizativa, Grupos y Objetos.";
+ choices[34][2] = "Unidades f&iacute;sicas, Unidades l&oacute;gicas y Directorios.";
+ choices[34][3] = "Ficheros, Directorios, Particiones y Unidades.";
+ answers[34] = choices[34][1];
+ units[34] = "58";
+ comments[34] = "Id Pregunta: 10641. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1798 AÃ±o de creación de pregunta: 2006-01-01
- questions[35]= "36)  En la t&eacute;cnica de representaci&oacute;n del conocimiento mediante marcos (frameworks), el m&eacute;todo de equiparaci&oacute;n de marcos mediante coincidencia con base de control se basa en:";
+//  Id pregunta: 10030 Año de creación de pregunta: 2016
+ questions[35]= "36)  El sistema operativo OS X El Capit&aacute;n incluye un conjunto de servicios de red para compartir archivos entre Mac y PC, &iquest;cu&aacute;l es el protocolo por defecto que emplea OS X El Capit&aacute;n?";
  choices[35]= new Array();
- choices[35][0] = "asociar una etiqueta a cada slot de los marcos de la base para forzar la coincidencia en algunos slots importantes";
- choices[35][1] = "uso de t&eacute;cnicas de razonamiento aproximado, como l&oacute;gica difusa, Mycin, Dempster-Shafer";
- choices[35][2] = "manejar una base de conocimiento local a cada marco que expresa mediante otro tipo de representaci&oacute;n la importancia que tiene cada slot en el proceso de equiparaci&oacute;n";
- choices[35][3] = "comprobar que los slots que est&aacute;n en el marco pregunta y del marco candidato tienen los mismos valores";
- answers[35] = choices[35][2];
- units[35] = "64";
- comments[35] = "Id Pregunta: 1798. ";
+ choices[35][0] = "SMB3";
+ choices[35][1] = "AFP";
+ choices[35][2] = "NFS";
+ choices[35][3] = "FTP";
+ answers[35] = choices[35][0];
+ units[35] = "59";
+ comments[35] = "Id Pregunta: 10030. AGE A1 2015";
 
 
-//  Id pregunta: 1808 AÃ±o de creación de pregunta: 2006-01-01
- questions[36]= "37)  En un GIS, el modelo vectorial ";
+//  Id pregunta: 10061 Año de creación de pregunta: 2016
+ questions[36]= "37)  Indique a partir de qu&eacute; versi&oacute;n del sistema operativo Android se introdujo la posibilidad de que el usuario pudiera gestionar la concesi&oacute;n de permisos para cada aplicaci&oacute;n:";
  choices[36]= new Array();
- choices[36][0] = "Utiliza nodos, l&iacute;neas y pol&iacute;gonos para representar los datos geogr&aacute;ficos.";
- choices[36][1] = "Cada l&iacute;nea se define por todos los puntos intermedios, almacenando todos ellos.";
- choices[36][2] = "Utiliza m&aacute;s espacio de almacenamiento que el modelo r&aacute;ster.";
- choices[36][3] = "Es preferible al modelo r&aacute;ster para superposici&oacute;n de planos.";
- answers[36] = choices[36][0];
- units[36] = "67";
- comments[36] = "Id Pregunta: 1808. NULL";
+ choices[36][0] = "Lollipop";
+ choices[36][1] = "Jelly Bean";
+ choices[36][2] = "Marshmallow";
+ choices[36][3] = "KitKat";
+ answers[36] = choices[36][2];
+ units[36] = "59";
+ comments[36] = "Id Pregunta: 10061. AGE A1 2015";
 
 
-//  Id pregunta: 1829 AÃ±o de creación de pregunta: 2006-01-01
- questions[37]= "38)  &iquest;Con cu&aacute;l de las siguientes categor&iacute;as de software est&aacute; m&aacute;s relacionado el Business Intelligence?";
+//  Id pregunta: 10653 Año de creación de pregunta: 2016
+ questions[37]= "38)  &iquest;Cual de las siguientes bases de datos no est&aacute; orientada a grafos?";
  choices[37]= new Array();
- choices[37][0] = "ERP.";
- choices[37][1] = "Datawarehouse y OLAP.";
- choices[37][2] = "Document Management y Content Management.";
- choices[37][3] = "SCM.";
- answers[37] = choices[37][1];
- units[37] = "68";
- comments[37] = "Id Pregunta: 1829. ";
+ choices[37][0] = "Neo4J ";
+ choices[37][1] = "OrientDB ";
+ choices[37][2] = "InfoGrid ";
+ choices[37][3] = "SimpleDB";
+ answers[37] = choices[37][3];
+ units[37] = "73";
+ comments[37] = "Id Pregunta: 10653. ";
 
 
-//  Id pregunta: 1844 AÃ±o de creación de pregunta: 2006-01-01
- questions[38]= "39)  Indique la respuesta falsa en relaci&oacute;n a las ventajas aportadas por una herramienta de Workflow:";
+//  Id pregunta: 10610 Año de creación de pregunta: 2016
+ questions[38]= "39)  En el lenguaje de manipulaci&oacute;n de datos, &iquest;cu&aacute;l de las siguientes cl&aacute;usulas va asociada a la cl&aacute;usula HAVING?";
  choices[38]= new Array();
- choices[38][0] = "Incremento de la productividad";
- choices[38][1] = "Monitorizaci&oacute;n del estado de cualquier proceso";
- choices[38][2] = "Reducci&oacute;n de los tiempos muertos";
- choices[38][3] = "Todas las anteriores son ciertas";
- answers[38] = choices[38][3];
- units[38] = "71";
- comments[38] = "Id Pregunta: 1844. ";
+ choices[38][0] = "GROUP BY.";
+ choices[38][1] = "COUNT.";
+ choices[38][2] = "WHERE.";
+ choices[38][3] = "DISTINCT.";
+ answers[38] = choices[38][0];
+ units[38] = "60";
+ comments[38] = "Id Pregunta: 10610. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1845 AÃ±o de creación de pregunta: 2006-01-01
- questions[39]= "40)  Indique la respuesta falsa en relaci&oacute;n al WfMC (Workflow Management Coalition):";
+//  Id pregunta: 10004 Año de creación de pregunta: 2016
+ questions[39]= "40)  Un wireframe es:";
  choices[39]= new Array();
- choices[39][0] = "Organizaci&oacute;n destinada a establecer est&aacute;ndares relativos a la terminolog&iacute;a del software, su interoperabilidad y conectividad";
- choices[39][1] = "Organizaci&oacute;n creada por las principales empresas del sector para el facilitar la compatibilidad de sus herramientas";
- choices[39][2] = "Ha desarrollado el denominado Modelo de Referencia de Workflow";
- choices[39][3] = "Est&aacute; dividida en tres comit&eacute;s principales: el Comit&eacute; T&eacute;cnico, el Comit&eacute; de Relaciones Externas y el Comit&eacute; Directivo";
- answers[39] = choices[39][1];
- units[39] = "71";
- comments[39] = "Id Pregunta: 1845. ";
+ choices[39][0] = "Un marco de referencia para el dise&ntilde;o y despliegue de redes WiFi.";
+ choices[39][1] = "Un marco de referencia para el dise&ntilde;o y despliegue de redes WiMAX.";
+ choices[39][2] = "Un modelo que permite evaluar el impacto de las nuevas tecnolog&iacute;as en la mejora de la calidad de vida durante la puesta en marcha de una ciudad inteligente (smart city).";
+ choices[39][3] = "Una interfaz visual que representa la estructura visual de un sitio web y la relaci&oacute;n entre sus p&aacute;ginas.";
+ answers[39] = choices[39][3];
+ units[39] = "62";
+ comments[39] = "Id Pregunta: 10004. AGE A1 2015";
 
 
-//  Id pregunta: 1861 AÃ±o de creación de pregunta: 2006-01-01
- questions[40]= "41)  Se&ntilde;ale la correcta:";
+//  Id pregunta: 10093 Año de creación de pregunta: 2016
+ questions[40]= "41)  Entre las tecnolog&iacute;as o herramientas utilizadas para trabajar en sistemas de Big Data NO se encuentra:";
  choices[40]= new Array();
- choices[40][0] = "El protocolo X500 es un est&aacute;ndar de la IETF";
- choices[40][1] = "El  est&aacute;ndar de certificados digitales X509v3 introdujo el concepto de extensi&oacute;n";
- choices[40][2] = "El protocolo de la ITU LDAP dispone su informaci&oacute;n relacionada jer&aacute;rquicamente.";
- choices[40][3] = "Ninguna de las anteriores";
- answers[40] = choices[40][1];
+ choices[40][0] = "Almacenamiento orientado a columnas";
+ choices[40][1] = "Framework MapReduce";
+ choices[40][2] = "OLTP";
+ choices[40][3] = "Bases de datos clave-valor";
+ answers[40] = choices[40][2];
  units[40] = "73";
- comments[40] = "Id Pregunta: 1861. ";
+ comments[40] = "Id Pregunta: 10093. AGE A1 2015";
 
 
-//  Id pregunta: 1863 AÃ±o de creación de pregunta: 2006-01-01
- questions[41]= "42)  &iquest;Cu&aacute;l de los siguientes no es un sistema operativo utilizado en la arquitectura de un sistema de tarjeta inteligente?";
+//  Id pregunta: 10037 Año de creación de pregunta: 2016
+ questions[41]= "42)  Seg&uacute;n el proyecto GNU, &iquest;cu&aacute;l de las siguientes NO puede ser considerada una libertad esencial del software libre?";
  choices[41]= new Array();
- choices[41][0] = "MultOS";
- choices[41][1] = "Jini";
- choices[41][2] = "Java Card";
- choices[41][3] = "SCfW";
- answers[41] = choices[41][1];
- units[41] = "74";
- comments[41] = "Id Pregunta: 1863. NULL";
+ choices[41][0] = "La libertad de ejecutar el programa como se desee, con cualquier prop&oacute;sito.";
+ choices[41][1] = "La libertad de estudiar c&oacute;mo funciona el programa, y modificarlo para que tenga la funcionalidad deseada.";
+ choices[41][2] = "La libertad de redistribuir copias para ayudar al pr&oacute;jimo.";
+ choices[41][3] = "La libertad de distribuir a terceros versiones modificadas siempre que no tengan uso comercial.";
+ answers[41] = choices[41][3];
+ units[41] = "66";
+ comments[41] = "Id Pregunta: 10037. AGE A1 2015";
 
 
-//  Id pregunta: 1868 AÃ±o de creación de pregunta: 2006-01-01
- questions[42]= "43)  &iquest;D&oacute;nde se recoge la posici&oacute;n de los contactos del chip enuna tarjetainteligente?";
+//  Id pregunta: 10602 Año de creación de pregunta: 2016
+ questions[42]= "43)  Como todo criptosistema de clave p&uacute;blica, el protocolo del criptosistema RSA:";
  choices[42]= new Array();
- choices[42][0] = "ISO 7816-1";
- choices[42][1] = "ISO 7816-2";
- choices[42][2] = "ISO 7816-3";
- choices[42][3] = "ISO 7816-4";
- answers[42] = choices[42][1];
- units[42] = "74";
- comments[42] = "Id Pregunta: 1868. NULL";
+ choices[42][0] = "Tiene dos partes: Cifrado de Mensajes, Descifrado de Mensajes.";
+ choices[42][1] = "Se basa en la dificultad que supone resolver el &lt;Problema de la Factorizaci&oacute;n Externa&gt;.";
+ choices[42][2] = "Tiene tres partes: Generaci&oacute;n de claves, Cifrado de mensajes, Descifrado de mensajes.";
+ choices[42][3] = "Se basa en la dificultad que supone resolver el &lt;Problema de Socrates- Arquimedes&gt;.";
+ answers[42] = choices[42][2];
+ units[42] = "76";
+ comments[42] = "Id Pregunta: 10602. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 1877 AÃ±o de creación de pregunta: 2006-01-01
- questions[43]= "44)  El &oacute;rgano encargado de la supervisi&oacute;n y control de los servicios de la Sociedad de la Informaci&oacute;n es:";
+//  Id pregunta: 10038 Año de creación de pregunta: 2016
+ questions[43]= "44)  LAMP es el acr&oacute;nimo usado para describir un sistema de infraestructura de internet aplicable a la pila:";
  choices[43]= new Array();
- choices[43][0] = "El Ministerio de Econom&iacute;a y Hacienda.";
- choices[43][1] = "El Ministerio de Industria, Turismo y Comercio";
- choices[43][2] = "El Ministerio de Justicia";
- choices[43][3] = "No hay ning&uacute;n &oacute;rgano encargado de la supervisi&oacute;n y control dado que no se requiere autorizaci&oacute;n previa.";
- answers[43] = choices[43][1];
- units[43] = "30";
- comments[43] = "Id Pregunta: 1877. Ley 34/2002, art&iacute;culo 35 (extinto Ministerio de Ciencia y Tecnolog&iacute;a)";
+ choices[43][0] = "Linux, Ant, MySQL/MariaDB y PJava";
+ choices[43][1] = "Linux, Apache, Microsoft SQLServer y Perl, PHP, o Python";
+ choices[43][2] = "Linux, Ant, MongoDB y Perl, PHP, o Python";
+ choices[43][3] = "Linux, Apache, MySQL/MariaDB y Perl, PHP, o Python";
+ answers[43] = choices[43][3];
+ units[43] = "62";
+ comments[43] = "Id Pregunta: 10038. AGE A1 2015";
 
 
-//  Id pregunta: 1947 AÃ±o de creación de pregunta: 2006-01-01
- questions[44]= "45)  La t&eacute;cnica que se emplea para la modelizaci&oacute;n sem&aacute;ntica de datos a la hora de dise&ntilde;ar un sistema de informaci&oacute;n, se denomina:";
+//  Id pregunta: 10635 Año de creación de pregunta: 2016
+ questions[44]= "45)  En el modelo relacional existen diversas clasificaciones de las relaciones. Indica qu&eacute; tipos de relaciones se consideran relaciones persistentes:";
  choices[44]= new Array();
- choices[44][0] = "Modelo Entidad/Relaci&oacute;n";
- choices[44][1] = "Diagrama de Flujo de Datos";
- choices[44][2] = "Diagrama de Contexto";
- choices[44][3] = "Modelo de Datos";
- answers[44] = choices[44][0];
- units[44] = "58";
- comments[44] = "Id Pregunta: 1947. ";
+ choices[44][0] = "Relaciones base y vistas.";
+ choices[44][1] = "Relaciones base, vistas y el resultado de una consulta.";
+ choices[44][2] = "Relaciones base, vistas y relaciones temporales.";
+ choices[44][3] = "Relaciones base, vistas e instant&aacute;neas.";
+ answers[44] = choices[44][3];
+ units[44] = "60";
+ comments[44] = "Id Pregunta: 10635. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 3889 AÃ±o de creación de pregunta: 2003-01-01
- questions[45]= "46)  En cuanto a los Servicios Web, no se puede decir que:";
+//  Id pregunta: 10637 Año de creación de pregunta: 2016
+ questions[45]= "46)  En el sistema operativo Unix/Linux, el comando id:";
  choices[45]= new Array();
- choices[45][0] = "Es independiente del lenguaje de programaci&oacute;n";
- choices[45][1] = "Es independiente de la plataforma";
- choices[45][2] = "Es independiente del lenguaje de programaci&oacute;n y de la plataforma";
- choices[45][3] = "Sus est&aacute;ndares son m&aacute;s complejos que los usados en CORBA";
- answers[45] = choices[45][3];
- units[45] = "51";
- comments[45] = "Id Pregunta: 3889. Nuevo tema. Arquitectura SOA";
+ choices[45][0] = "Muestra el n&uacute;mero de identificaci&oacute;n y el grupo al que pertenece el usuario.";
+ choices[45][1] = "El comando id no existe.";
+ choices[45][2] = "Muestra el n&uacute;mero de procesos lanzados por el usuario.";
+ choices[45][3] = "Muestra las hebras y las identificaciones de los archivos abiertos por el usuario.";
+ answers[45] = choices[45][0];
+ units[45] = "57";
+ comments[45] = "Id Pregunta: 10637. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 4357 AÃ±o de creación de pregunta: 2007-01-01
- questions[46]= "47)  fundamental de los lenguajes de codificaci&oacute;n de tercera generaci&oacute;n es que:";
+//  Id pregunta: 10096 Año de creación de pregunta: 2016
+ questions[46]= "47)  Indique cu&aacute;l de las siguientes soluciones tecnol&oacute;gicas NO se utiliza para virtualizaci&oacute;n:";
  choices[46]= new Array();
- choices[46][0] = "Suelen ser herramientas para aplicaciones espec&iacute;ficas.";
- choices[46][1] = "Utilizan y aplican las metodolog&iacute;as de programaci&oacute;n estructurada.";
- choices[46][2] = "Son leguajes que permiten programar simb&oacute;licamente.";
- choices[46][3] = "Est&aacute;n pensados para la ense&ntilde;anza.";
- answers[46] = choices[46][1];
- units[46] = "";
- comments[46] = "Id Pregunta: 4357. ";
+ choices[46][0] = "VMware ESX";
+ choices[46][1] = "XenServer";
+ choices[46][2] = "Alfresco";
+ choices[46][3] = "Microsoft Hyper-V";
+ answers[46] = choices[46][2];
+ units[46] = "54";
+ comments[46] = "Id Pregunta: 10096. AGE A1 2015";
 
 
-//  Id pregunta: 4468 AÃ±o de creación de pregunta: 2007-01-01
- questions[47]= "48)  Los prestadores de servicios de certificaci&oacute;n con car&aacute;cter previo al cese definitivo de su actividad, &iquest;que gesti&oacute;n deber&aacute;n realizar con la informaci&oacute;n relativa a los certificados electr&oacute;nicos cuya vigencia haya sido extinguida?";
+//  Id pregunta: 10012 Año de creación de pregunta: 2016
+ questions[47]= "48)  Indique cu&aacute;l de las siguientes proposiciones es cierta:";
  choices[47]= new Array();
- choices[47][0] = "Remitirla al ministerio competente.";
- choices[47][1] = "Remitirla al prestador al que se propone la gesti&oacute;n de los certificados vigentes.";
- choices[47][2] = "Ninguna. La ley solo obliga la transferencia de la informaci&oacute;n relativa a los certificados vigentes.";
- choices[47][3] = "Debe conservarla en soporte perdurable durante al menos 30 anos.";
+ choices[47][0] = "AngularJS es un framework de JavaScript de c&oacute;digo abierto que sigue el patr&oacute;n de dise&ntilde;o MVC.";
+ choices[47][1] = "PrimeFaces y RichFaces son librer&iacute;as que extienden el framework .NET de Microsoft.";
+ choices[47][2] = "PrimeFaces es una extensi&oacute;n de AngularJS que permite la integraci&oacute;n de componentes RichFaces.";
+ choices[47][3] = "El framework Spring es compatible con el uso delORM Hibernate, pero es incompatible con el uso de Java Server Faces en la capa de presentaci&oacute;n.";
  answers[47] = choices[47][0];
- units[47] = "30";
- comments[47] = "Id Pregunta: 4468. Ley 59/2003, art&iacute;culo 21";
+ units[47] = "62";
+ comments[47] = "Id Pregunta: 10012. AGE A1 2015";
 
 
-//  Id pregunta: 4570 AÃ±o de creación de pregunta: 2007-01-01
- questions[48]= "49)  &iquest;Cuantos tipos de drivers existen en JDBC?:";
+//  Id pregunta: 10049 Año de creación de pregunta: 2016
+ questions[48]= "49)  &iquest;Qu&eacute; facilita un ORM?";
  choices[48]= new Array();
- choices[48][0] = "2";
- choices[48][1] = "3";
- choices[48][2] = "4";
- choices[48][3] = "tantos como SGBD's";
- answers[48] = choices[48][2];
- units[48] = "60";
- comments[48] = "Id Pregunta: 4570. NULL";
+ choices[48][0] = "Conversi&oacute;n de objetos a tablas relacionales";
+ choices[48][1] = "Conversi&oacute;n de objetos a documentos";
+ choices[48][2] = "Conversi&oacute;n de tipos de driver JDBC";
+ choices[48][3] = "Conversi&oacute;n de ADO.NET a OLE DB";
+ answers[48] = choices[48][0];
+ units[48] = "62";
+ comments[48] = "Id Pregunta: 10049. AGE A1 2015";
 
 
-//  Id pregunta: 4624 AÃ±o de creación de pregunta: 2007-01-01
- questions[49]= "50)  &iquest;En que lenguaje esta basado XML? ";
+//  Id pregunta: 10640 Año de creación de pregunta: 2016
+ questions[49]= "50)  Los sistemas de archivos gestionados por Windows 2008 Server son:";
  choices[49]= new Array();
- choices[49][0] = "HTML";
- choices[49][1] = "XSL";
- choices[49][2] = "SGML";
- choices[49][3] = "XTML";
- answers[49] = choices[49][2];
- units[49] = "69";
- comments[49] = "Id Pregunta: 4624. ";
+ choices[49][0] = "Fat y Ntfs.";
+ choices[49][1] = "Extfat y Fat.";
+ choices[49][2] = "Fat y Nfst.";
+ choices[49][3] = "ext2fs y Ntfs.";
+ answers[49] = choices[49][0];
+ units[49] = "58";
+ comments[49] = "Id Pregunta: 10640. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 4747 AÃ±o de creación de pregunta: 2007-01-01
- questions[50]= "51)  En relaci&oacute;n a los modelos vectorial frente a r&aacute;ster en un SIG, se&ntilde;ale la opci&oacute;n verdadera.";
+//  Id pregunta: 10034 Año de creación de pregunta: 2016
+ questions[50]= "51)  &iquest;Cu&aacute;les de los siguientes mecanismos no existe espec&iacute;ficamente como cach&eacute; de c&oacute;digo PHP?";
  choices[50]= new Array();
- choices[50][0] = "Las operaciones de c&aacute;lculo se simplifican al utilizar modelos vectoriales.";
- choices[50][1] = "No se deben mezclar datos raster con datos vectoriales entre capas o las prestaciones globales del SIG se ver&aacute;n comprometidas.";
- choices[50][2] = "La precisi&oacute;n gr&aacute;fica del modelo raster supera al modelo vectorial, al no tener que reescalar nada.";
- choices[50][3] = "La cartograf&iacute;a digital tradicional es fundamentalmente de tipo vectorial.";
- answers[50] = choices[50][3];
- units[50] = "67";
- comments[50] = "Id Pregunta: 4747. NULL";
+ choices[50][0] = "Memcached";
+ choices[50][1] = "OpCache";
+ choices[50][2] = "WinCache Extension for PHP";
+ choices[50][3] = "Alternative PHP Cache";
+ answers[50] = choices[50][0];
+ units[50] = "65";
+ comments[50] = "Id Pregunta: 10034. AGE A1 2015";
 
 
-//  Id pregunta: 4810 AÃ±o de creación de pregunta: 2007-01-01
- questions[51]= "52)  &iquest;Cu&aacute;l es la Forma Normal (FN) m&aacute;s avanzada en la que se encuentra la relaci&oacute;n R( {A,B,C,D}, {A--&gt;B; B--&gt;C; C--&gt;D} ) ?";
+//  Id pregunta: 10044 Año de creación de pregunta: 2016
+ questions[51]= "52)  &iquest;Cu&aacute;les son las propiedades que debe cumplir una unidad l&oacute;gica de trabajo para ser calificada como transacci&oacute;n?";
  choices[51]= new Array();
- choices[51][0] = "Primera FN";
- choices[51][1] = "Segunda FN";
- choices[51][2] = "Tercera FN";
- choices[51][3] = "FNBC (Forma Normal de Boyce-Codd)";
+ choices[51][0] = "Atomicidad, concurrencia, aislamiento y temporalidad";
+ choices[51][1] = "Atomicidad, consistencia, aislamiento y durabilidad";
+ choices[51][2] = "Atomicidad, concurrencia, escalabilidad y durabilidad";
+ choices[51][3] = "Atomicidad, consistencia, aislamiento y temporalidad";
  answers[51] = choices[51][1];
- units[51] = "57";
- comments[51] = "Id Pregunta: 4810. ";
+ units[51] = "60";
+ comments[51] = "Id Pregunta: 10044. AGE A1 2015";
 
 
-//  Id pregunta: 4911 AÃ±o de creación de pregunta: 2003-01-01
- questions[52]= "53)  En el contexto de Almac&eacute;n de datos (Data Warehouse) la creaci&oacute;n de &ldquo;duplicaciones&rdquo; locales o departamentales basadas en subconjuntos de la informaci&oacute;n contenida en el Data Warehouse central o maestro, se identifica con el t&eacute;rmino:";
+//  Id pregunta: 10068 Año de creación de pregunta: 2016
+ questions[52]= "53)  &iquest;Cu&aacute;l de las siguientes opciones se refiere al conjunto de metodolog&iacute;as, procesos, arquitecturas y tecnolog&iacute;as que permiten reunir, depurar y transformar datos de los sistemas transaccionales e informaci&oacute;n desestructurada en informaci&oacute;n estructurada, para su explotaci&oacute;n directa o para su an&aacute;lisis y conversi&oacute;n en conocimiento, dando as&iacute; soporte a la toma de decisiones sobre el negocio?";
  choices[52]= new Array();
- choices[52][0] = "Data Marts.";
- choices[52][1] = "Metadata.";
- choices[52][2] = "Middleware.";
- choices[52][3] = "Dataware.";
- answers[52] = choices[52][0];
- units[52] = "68";
- comments[52] = "Id Pregunta: 4911. Examen TIC B 2007";
+ choices[52][0] = "Data Mining (miner&iacute;a de datos)";
+ choices[52][1] = "Business Intelligence (inteligencia de negocio)";
+ choices[52][2] = "Data Warehouse (almac&eacute;n de datos)";
+ choices[52][3] = "An&aacute;lisis OLTP (procesamiento en l&iacute;nea transaccional)";
+ answers[52] = choices[52][1];
+ units[52] = "72";
+ comments[52] = "Id Pregunta: 10068. AGE A1 2015";
 
 
-//  Id pregunta: 5001 AÃ±o de creación de pregunta: 2003-01-01
- questions[53]= "54)  &iquest;Qu&eacute; es una aplicaci&oacute;n CRM en un sitio de e-commerce interactivo?:";
+//  Id pregunta: 10066 Año de creación de pregunta: 2016
+ questions[53]= "54)  Para los siguientes tipos de copias de seguridad, indique cu&aacute;l de las siguientes secuencias los ordena de mayor a menor tiempo de restauraci&oacute;n:";
  choices[53]= new Array();
- choices[53][0] = "Es la aplicaci&oacute;n usada para administrar la relaci&oacute;n con los clientes, describir perfiles de compras y dise&ntilde;arcampa&ntilde;as de marketing directo on-line";
- choices[53][1] = "Es el Cargo Resource Management, o aplicaci&oacute;n utilizada para gestionar los recursos de carga en las ventas";
- choices[53][2] = "Es el programa que se ejecuta al recibir una petici&oacute;n de una p&aacute;gina web din&aacute;mica";
- choices[53][3] = "Es el Catalog Resource Management, o aplicaci&oacute;n que genera un catalogo on-line de los productosdisponibles para la venta";
+ choices[53][0] = "Incremental, diferencial, completa";
+ choices[53][1] = "Completa, incremental, diferencial";
+ choices[53][2] = "Completa, diferencial, incremental";
+ choices[53][3] = "No hay diferencia en el tiempo de restauraci&oacute;n, encontr&aacute;ndose la diferencia en el espacio de almacenamiento consumido.";
  answers[53] = choices[53][0];
- units[53] = "70";
- comments[53] = "Id Pregunta: 5001. Examen TIC A 2007";
+ units[53] = "53";
+ comments[53] = "Id Pregunta: 10066. AGE A1 2015. Pregunta anulada en el examen real. La opci&oacute;n A dec&iacute;a &quot;Diferencial, incremental, completa&quot;, por lo que ninguna respuesta pod&iacute;a considerarse correcta";
 
 
-//  Id pregunta: 5020 AÃ±o de creación de pregunta: 2003-01-01
- questions[54]= "55)  &iquest;Cu&aacute;l de las siguientes afirmaciones define el tipo de procesamiento conocido como OLAP?";
+//  Id pregunta: 10100 Año de creación de pregunta: 2016
+ questions[54]= "55)  Entre los tipos de Bases de Datos NoSQL no se encuentran:";
  choices[54]= new Array();
- choices[54][0] = "Procesamiento transaccional en tiempo real que consiste en realizar transacciones, es decir actualizaciones y consultas a la base de datos con un objetivo operacional.";
- choices[54][1] = "Procesamiento anal&iacute;tico en tiempo real que engloba un conjunto de operaciones, exclusivamente de consulta, en las que se requiere agregar y cruzar gran cantidad de informaci&oacute;n.";
- choices[54][2] = "Procesamiento anal&iacute;tico en tiempo real que engloba un conjunto de operaciones de consulta y actualizaci&oacute;n, en las que se requiere agregar y cruzar gran cantidad de informaci&oacute;n.";
- choices[54][3] = "Procesamiento transaccional en tiempo real que engloba un conjunto de operaciones, de consulta y actualizaci&oacute;n, con el objetivo de realizar informes y res&uacute;menes para el apoyo en la toma de decisiones.";
- answers[54] = choices[54][1];
- units[54] = "68";
- comments[54] = "Id Pregunta: 5020. Examen TIC A 2007";
+ choices[54][0] = "Bases de datos orientadas a filas";
+ choices[54][1] = "Bases de datos orientadas a documentos";
+ choices[54][2] = "Bases de datos de clave/valor";
+ choices[54][3] = "Bases de datos orientadas a objetos";
+ answers[54] = choices[54][0];
+ units[54] = "73";
+ comments[54] = "Id Pregunta: 10100. ";
 
 
-//  Id pregunta: 5125 AÃ±o de creación de pregunta: 2003-01-01
- questions[55]= "56)  &iquest;Cu&aacute;l de los siguientes acr&oacute;nimos hace referencia a un est&aacute;ndar de modelo de agregaci&oacute;n de contenidos Web para eLearning?";
+//  Id pregunta: 10575 Año de creación de pregunta: 2016
+ questions[55]= "56)  &iquest;Cu&aacute;l de los siguientes sistemas de bases de datos es orientado a objetos?";
  choices[55]= new Array();
- choices[55][0] = "CORBA";
- choices[55][1] = "OWR";
- choices[55][2] = "SCORM";
- choices[55][3] = "IQC";
+ choices[55][0] = "MySQL";
+ choices[55][1] = "SQLite";
+ choices[55][2] = "Zope";
+ choices[55][3] = "MariaDB";
  answers[55] = choices[55][2];
- units[55] = "66";
- comments[55] = "Id Pregunta: 5125. Examen TIC A Castilla La Mancha 2007";
+ units[55] = "61";
+ comments[55] = "Id Pregunta: 10575. Tema 61. TAI 2016.";
 
 
-//  Id pregunta: 5507 AÃ±o de creación de pregunta: 2003-01-01
- questions[56]= "57)  Qu&eacute; formato se emplea para la emision de facturas electr&oacute;nicas por parte de la AGE?";
+//  Id pregunta: 10103 Año de creación de pregunta: 2016
+ questions[56]= "57)  En qu&eacute; consiste el principio BASE:";
  choices[56]= new Array();
- choices[56][0] = "XBRL";
- choices[56][1] = "ebXML";
- choices[56][2] = "UBL";
- choices[56][3] = "Facturae";
+ choices[56][0] = "Es equivalente al principio ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad)";
+ choices[56][1] = "Es de aplicaci&oacute;n a todo tipo de bases de datos como las relacionales";
+ choices[56][2] = "No pueden existir inconsistencias temporales aunque progresen a un estado final estable";
+ choices[56][3] = "Todas las anteriores son falsas";
  answers[56] = choices[56][3];
- units[56] = "70";
- comments[56] = "Id Pregunta: 5507. NULL";
+ units[56] = "73";
+ comments[56] = "Id Pregunta: 10103. ";
 
 
-//  Id pregunta: 5619 AÃ±o de creación de pregunta: 2003-01-01
- questions[57]= "58)  En UNIX, un archivo se compone de:";
+//  Id pregunta: 10035 Año de creación de pregunta: 2016
+ questions[57]= "58)  &iquest;Qu&eacute; es Java Web Start?";
  choices[57]= new Array();
- choices[57][0] = "Un conjunto de i-nodos m&aacute;s un conjunto de bloques de datos";
- choices[57][1] = "Una secuencia de bytes";
- choices[57][2] = "Un conjunto de bloques de datos m&aacute;s la estructura de punteros que determina d&oacute;nde se encuentran &eacute;stos";
- choices[57][3] = "Un bloque de datos m&aacute;s una cabecera de direccionamiento";
- answers[57] = choices[57][1];
- units[57] = "53";
- comments[57] = "Id Pregunta: 5619. ";
+ choices[57][0] = "Un motor para la ejecuci&oacute;n de Java Serlvets y JavaServer Pages.";
+ choices[57][1] = "Una interfaz de programaci&oacute;n para entornos de ventanas en Java.";
+ choices[57][2] = "Una tecnolog&iacute;a de compiladores empleada por Java.";
+ choices[57][3] = "Una tecnolog&iacute;a que permite descargar y ejecutar aplicaciones Java.";
+ answers[57] = choices[57][3];
+ units[57] = "64";
+ comments[57] = "Id Pregunta: 10035. AGE A1 2015";
 
 
-//  Id pregunta: 5698 AÃ±o de creación de pregunta: 2003-01-01
- questions[58]= "59)  Respecto a la validez de los certificados del DNI electr&oacute;nico, se&ntilde;ale la falsa:";
+//  Id pregunta: 10655 Año de creación de pregunta: 2016
+ questions[58]= "59)  &iquest;Qu&eacute; aplicativo no se encuentra dentro del ecosistemas de Haddoop?";
  choices[58]= new Array();
- choices[58][0] = "La p&eacute;rdida de validez del DNI implica su p&eacute;rdida de validez";
- choices[58][1] = " La renovaci&oacute;n implica la expedici&oacute;n de nuevos certificados";
- choices[58][2] = "La expedici&oacute;n de duplicados implica la expedici&oacute;n de nuevos certificados";
- choices[58][3] = "La caducidad de los certificados implica la renovaci&oacute;n del DNI";
+ choices[58][0] = "Yarn";
+ choices[58][1] = "Flume";
+ choices[58][2] = "Hive";
+ choices[58][3] = "BizAgi";
  answers[58] = choices[58][3];
- units[58] = "74";
- comments[58] = "Id Pregunta: 5698. NULL";
+ units[58] = "73";
+ comments[58] = "Id Pregunta: 10655. ";
 
 
-//  Id pregunta: 5705 AÃ±o de creación de pregunta: 2003-01-01
- questions[59]= "60)  &iquest;Cu&aacute;l de los siguientes est&aacute;ndares no est&aacute; asociado a los servicios web?";
+//  Id pregunta: 10011 Año de creación de pregunta: 2016
+ questions[59]= "60)  Nada m&aacute;s arrancar el servidor de aplicaciones, usted intenta acceder a su aplicaci&oacute;n y se produce un error de memoria. En ese momento, sospecha que el error se produce porque est&aacute; utilizando unas librer&iacute;as de terceros de gran tama&ntilde;o. &iquest;Qu&eacute; tipo de error deber&iacute;a estar d&aacute;ndose para corroborar su hip&oacute;tesis?";
  choices[59]= new Array();
- choices[59][0] = "SOAP";
- choices[59][1] = " UDDI";
- choices[59][2] = "CORBA";
- choices[59][3] = "HTTP";
- answers[59] = choices[59][2];
- units[59] = "51";
- comments[59] = "Id Pregunta: 5705. NULL";
+ choices[59][0] = "java.lang.OutOfMemoryError: Java heap space";
+ choices[59][1] = "java.lang.OutOfMemoryError: PermGen space";
+ choices[59][2] = "java.lang.OutOfMemoryError: Requested array size exceeds VM limit";
+ choices[59][3] = "java.lang.OutOfMemoryError: request &lt;size&gt; bytes for &lt;reason&gt;. Out of swap space";
+ answers[59] = choices[59][1];
+ units[59] = "64";
+ comments[59] = "Id Pregunta: 10011. AGE A1 2015";
 
 
-//  Id pregunta: 5737 AÃ±o de creación de pregunta: 2009-01-01
- questions[60]= "61)  &iquest;Qu&eacute; caracter&iacute;sticas debe reunir, entre otras, la firma electr&oacute;nica avanzada?";
+//  Id pregunta: 10612 Año de creación de pregunta: 2016
+ questions[60]= "61)  Dentro del &aacute;lgebra relacional, se&ntilde;ala cu&aacute;l de los siguientes operadores es derivado:";
  choices[60]= new Array();
- choices[60][0] = "Usar un certificado X.509";
- choices[60][1] = "Usar medios de criptograf&iacute;a asim&eacute;trica";
- choices[60][2] = "Que el firmante tenga bajo su exclusivo control los medios de creaci&oacute;n de firma";
- choices[60][3] = "Que el canal de comunicaci&oacute;n por el que se transfiere la firma sea seguro";
- answers[60] = choices[60][2];
- units[60] = "72";
- comments[60] = "Id Pregunta: 5737. ";
+ choices[60][0] = "Intersecci&oacute;n.";
+ choices[60][1] = "Uni&oacute;n.";
+ choices[60][2] = "Restricci&oacute;n.";
+ choices[60][3] = "Diferencia.";
+ answers[60] = choices[60][0];
+ units[60] = "60";
+ comments[60] = "Id Pregunta: 10612. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 5891 AÃ±o de creación de pregunta: 2009-01-01
- questions[61]= "62)  &iquest;Qu&eacute; tecnolog&iacute;a Java permite la invocaci&oacute;n de m&eacute;todos de un objeto remoto?";
+//  Id pregunta: 10624 Año de creación de pregunta: 2016
+ questions[61]= "62)  En Java, la sentencia try-catch-throw se utiliza:";
  choices[61]= new Array();
- choices[61][0] = "RMI";
- choices[61][1] = "JNI";
- choices[61][2] = "JDBC";
- choices[61][3] = "JRM";
- answers[61] = choices[61][0];
- units[61] = "60";
- comments[61] = "Id Pregunta: 5891. NULL";
+ choices[61][0] = "En sentencias switch para alterar el control de flujo.";
+ choices[61][1] = "Para manejar excepciones.";
+ choices[61][2] = "Como la sentencia while, para ejecutar bucles.";
+ choices[61][3] = "Para devolver el control del programa al final de un m&eacute;todo.";
+ answers[61] = choices[61][1];
+ units[61] = "64";
+ comments[61] = "Id Pregunta: 10624. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 5894 AÃ±o de creación de pregunta: 2009-01-01
- questions[62]= "63)  &iquest;Cu&aacute;l de las siguientes no corresponde a una tecnolog&iacute;a est&aacute;ndar Java?";
+//  Id pregunta: 10033 Año de creación de pregunta: 2016
+ questions[62]= "63)  Respecto al desarrollo empleando tecnolog&iacute;a Microsoft, &iquest;cu&aacute;l de las siguientes afirmaciones es correcta?";
  choices[62]= new Array();
- choices[62][0] = "JSTL";
- choices[62][1] = "JavaScript";
- choices[62][2] = "JNDI";
- choices[62][3] = "JavaCard";
+ choices[62][0] = "WINAPI (Windows API) permite un acceso a alto nivel del sistema, directamente usable en cualquier lenguaje y entorno de programaci&oacute;n.";
+ choices[62][1] = "El framework .NET se compone de una biblioteca de clases denominada FCL (Framework Class Library) y del entorno com&uacute;n de ejecuci&oacute;n CLR (Common Language Runtime).";
+ choices[62][2] = "En .NET el resultado de la compilaci&oacute;n de las aplicaciones es un m&oacute;dulo ensamblado en formato de fichero PE32 o PE32+ (Windows portable executable) directamente ejecutable sobre el hardware.";
+ choices[62][3] = "Los compiladores para CLR producen c&oacute;digo FL (Final Language) denominado c&oacute;digo administrado.";
  answers[62] = choices[62][1];
- units[62] = "60";
- comments[62] = "Id Pregunta: 5894. NULL";
+ units[62] = "63";
+ comments[62] = "Id Pregunta: 10033. AGE A1 2015";
 
 
-//  Id pregunta: 5926 AÃ±o de creación de pregunta: 2009-01-01
- questions[63]= "64)  Para aumentar las posibilidades de interacci&oacute;n con la Web, se promueven tecnolog&iacute;as como JavaScript, applets, ActiveX,..., de entre las afirmaciones siguientes, &iquest;cu&aacute;l se refiere a los &quot;applets de Java&quot;?:";
+//  Id pregunta: 10661 Año de creación de pregunta: 2016
+ questions[63]= "64)  &iquest;Qu&eacute; tipos de nodos tiene un cl&uacute;ster Hadoop?";
  choices[63]= new Array();
- choices[63][0] = "Son programas residentes en el servidor, que se ejecutan en el mismo bajo solicitud de un cliente, para recoger o enviar alg&uacute;n tipo de informaci&oacute;n especial del cliente";
- choices[63][1] = "Son programas que se ejecutan bajo el entorno Java del navegador, en un espacio de memoria aparte, llamado &quot;Sandbox&quot;";
- choices[63][2] = "Son trozos de c&oacute;digo que se a&ntilde;aden a los browsers para obtener nuevos servicios y cuya fiabilidad queda garantizada por la obligatoriedad del uso de la tecnologia &quot;authenticode&quot;";
- choices[63][3] = "La forma de controlar la fiabilidad y seguridad de esta tecnolog&iacute;a consiste &uacute;nicamente en el sistema de verificaci&oacute;n digital y de firmas electr&oacute;nicas";
- answers[63] = choices[63][1];
- units[63] = "60";
- comments[63] = "Id Pregunta: 5926. MAP 2008 A1";
+ choices[63][0] = "Varios namenodes y varios datanodes por cluster";
+ choices[63][1] = "varios namenodes y obligatoriamente 1 datanode por cluster";
+ choices[63][2] = "1 namenode y varios datanodes por cluster";
+ choices[63][3] = "1 namenode y obligatoriamente 1 datanode por cluster";
+ answers[63] = choices[63][2];
+ units[63] = "73";
+ comments[63] = "Id Pregunta: 10661. ";
 
 
-//  Id pregunta: 6097 AÃ±o de creación de pregunta: 2010-01-01
- questions[64]= "65)  El sistema operativo MSDOS es:";
+//  Id pregunta: 10622 Año de creación de pregunta: 2016
+ questions[64]= "65)  Qu&eacute; nombre reciben las unidades de almacenamieto de las que est&aacute; compuesta un documento XML?";
  choices[64]= new Array();
- choices[64][0] = "Multiprocesador asim&eacute;trico.";
- choices[64][1] = "Multiprocesador sim&eacute;trico.";
- choices[64][2] = "Multiusuario.";
- choices[64][3] = "Monoprocesador.";
- answers[64] = choices[64][3];
- units[64] = "52";
- comments[64] = "Id Pregunta: 6097. TIC A 2009";
+ choices[64][0] = "Entradas (entities).";
+ choices[64][1] = "Atributos (attribs).";
+ choices[64][2] = "M&oacute;dulos (modules).";
+ choices[64][3] = "Objetos (objects).";
+ answers[64] = choices[64][0];
+ units[64] = "74";
+ comments[64] = "Id Pregunta: 10622. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 6491 AÃ±o de creación de pregunta: 2010-01-01
- questions[65]= "66)  Respecto a los servicios de directorio se puede afirmar que:";
+//  Id pregunta: 10064 Año de creación de pregunta: 2016
+ questions[65]= "66)  De entre los siguientes sistemas operativos para dispositivos m&oacute;viles, indique cu&aacute;l est&aacute; afectado por la vulnerabilidad Stagefright:";
  choices[65]= new Array();
- choices[65][0] = "LDAP define el modelo completo de servicio de directorio";
- choices[65][1] = "X.500 es un protocolo de acceso a un servicio de directorio LDAP";
- choices[65][2] = "LDAP es un protocolo de acceso a servicios de directorio X.500";
- choices[65][3] = "Ninguna de las anteriores es correcta";
- answers[65] = choices[65][2];
- units[65] = "74";
- comments[65] = "Id Pregunta: 6491. Castilla La Mancha 2009";
+ choices[65][0] = "Windows Phone";
+ choices[65][1] = "Blackberry";
+ choices[65][2] = "iOS";
+ choices[65][3] = "Android";
+ answers[65] = choices[65][3];
+ units[65] = "59";
+ comments[65] = "Id Pregunta: 10064. AGE A1 2015";
 
 
-//  Id pregunta: 6520 AÃ±o de creación de pregunta: 2010-01-01
- questions[66]= "67)  La versi&oacute;n 2.0 de JavaServer Faces (JSF) est&aacute; definida en la especificaci&oacute;n:";
+//  Id pregunta: 10025 Año de creación de pregunta: 2016
+ questions[66]= "67)  &iquest;Mediante qu&eacute; tipo de objetos se implementa el acceso a los recursos gestionados con la tecnolog&iacute;a JMX?";
  choices[66]= new Array();
- choices[66][0] = "JSR 186";
- choices[66][1] = "JSR 168";
- choices[66][2] = "JSR 175";
- choices[66][3] = "JSR 314";
- answers[66] = choices[66][3];
- units[66] = "116";
- comments[66] = "Id Pregunta: 6520. NULL";
+ choices[66][0] = "SessionBean";
+ choices[66][1] = "JavaBean";
+ choices[66][2] = "MBeans";
+ choices[66][3] = "MessageDrivenBean";
+ answers[66] = choices[66][2];
+ units[66] = "64";
+ comments[66] = "Id Pregunta: 10025. AGE A1 2015";
 
 
-//  Id pregunta: 6594 AÃ±o de creación de pregunta: 2010-01-01
- questions[67]= "68)  En el trabajo de auditor:";
+//  Id pregunta: 10015 Año de creación de pregunta: 2016
+ questions[67]= "68)  Si una aplicaci&oacute;n web desplegada en una JVM utiliza un servlet para generar p&aacute;ginas web de forma din&aacute;mica, dicho servlet no implementa la interfaz SingleThreadModel, y en un momento determinado se encuentra recibiendo m&uacute;ltiples peticiones de clientes de forma concurrente, &iquest;cu&aacute;ntos objetos de dicha clase estar&aacute;n cargados en la memoria de la JVM?";
  choices[67]= new Array();
- choices[67][0] = "Se distinguen de forma general tres etapas";
- choices[67][1] = "Una de las etapas se denomina proceso, donde se realiza el an&aacute;lisis cuantitativo y cualitativo de la informaci&oacute;n recabada.";
- choices[67][2] = "A y B son correctas";
- choices[67][3] = "A y B son incorrectas";
- answers[67] = choices[67][2];
- units[67] = "75";
- comments[67] = "Id Pregunta: 6594. NULL";
+ choices[67][0] = "0";
+ choices[67][1] = "1";
+ choices[67][2] = "Tantos como peticiones concurrentes tenga.";
+ choices[67][3] = "Tantos como le permita la memoria de la JVM.";
+ answers[67] = choices[67][1];
+ units[67] = "64";
+ comments[67] = "Id Pregunta: 10015. AGE A1 2015";
 
 
-//  Id pregunta: 7154 AÃ±o de creación de pregunta: 2010-01-01
- questions[68]= "69)  Si 100 personas reciben un correo electr&oacute;nico, destinado a toda la empresa, con un archivo adjunto de 1 MB, y cada destinatario decide guardar el archivo adjunto localmente, a la hora de hacer backup de esos escritorios se precisar&aacute;n 100 MB de espacio de copias de seguridad. &iquest;C&oacute;mo se denomina la tecnolog&iacute;a que permite reducir este espacio a un uno por ciento del espacio original necesario?";
+//  Id pregunta: 10079 Año de creación de pregunta: 2016
+ questions[68]= "69)  La Ley 25/2013, de 27 de diciembre, de impulso de la factura electr&oacute;nica y creaci&oacute;n del Registro Contable de Facturas en el Sector P&uacute;blico, prev&eacute; que anualmente se realice una auditor&iacute;a de sistemas para verificar que los correspondientes registros contables de facturas cumplen con las condiciones de funcionamiento previstas en la normativa aplicable. En el &aacute;mbito de la Administraci&oacute;n General del Estado dicha auditor&iacute;a se realizar&aacute; por:";
  choices[68]= new Array();
- choices[68][0] = "Compresion LZ";
- choices[68][1] = "Filtrado de Kalman";
- choices[68][2] = "Renderizaci&oacute;n especulativa";
- choices[68][3] = "Deduplicaci&oacute;n";
- answers[68] = choices[68][3];
- units[68] = "48";
- comments[68] = "Id Pregunta: 7154. Examen TIC B 2009";
+ choices[68][0] = "La Secretar&iacute;a General de Administraci&oacute;n Digital";
+ choices[68][1] = "La Intervenci&oacute;n General de la Administraci&oacute;n del Estado";
+ choices[68][2] = "Las Inspecciones Generales de los Servicios";
+ choices[68][3] = "La Agencia Estatal de la Administraci&oacute;n Tributaria";
+ answers[68] = choices[68][1];
+ units[68] = "75";
+ comments[68] = "Id Pregunta: 10079. AGE A1 2015: En la pregunta del examen original, se hablaba de la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaci&oacute;n, actualmente asume sus funciones la Secretar&iacute;a General de Administraci&oacute;n Digital seg&uacute;n Real Decreto 424/2016";
 
 
-//  Id pregunta: 7323 AÃ±o de creación de pregunta: 2010-01-01
- questions[69]= "70)  &iquest;Cu&aacute;l de los siguientes no es un est&aacute;ndar utilizado para el intercambio de datos relativos al comercio electr&oacute;nico?";
+//  Id pregunta: 10102 Año de creación de pregunta: 2016
+ questions[69]= "70)  Entre las caracter&iacute;sticas de las Bases de Datos NoSQL se encuentran:";
  choices[69]= new Array();
- choices[69][0] = "EDIFACT";
- choices[69][1] = "ebXML";
- choices[69][2] = "XMT ";
- choices[69][3] = "UBL";
+ choices[69][0] = "Pueden manejar enormes cantidades de datos estructurados";
+ choices[69][1] = "Existe un control estricto de las transacciones (propiedades ACID - Atomicidad, Consistencia, Aislamiento y Durabilidad)";
+ choices[69][2] = "Se basan en sistemas distribuidos";
+ choices[69][3] = "Se basan en el modelo de datos relacional";
  answers[69] = choices[69][2];
- units[69] = "70";
- comments[69] = "Id Pregunta: 7323. NULL";
+ units[69] = "73";
+ comments[69] = "Id Pregunta: 10102. ";
 
 
-//  Id pregunta: 8352 AÃ±o de creación de pregunta: 2011-01-01
- questions[70]= "71)  &iquest;Cu&aacute;l de las siguientes partes del SOAP sirve para expresar instancias de tipos de datos definidos por la aplicaci&oacute;n?";
+//  Id pregunta: 10070 Año de creación de pregunta: 2016
+ questions[70]= "71)  &iquest;Qui&eacute;n determina las condiciones t&eacute;cnicas normalizadas del Punto General de Entrada de Factura Electr&oacute;nica?";
  choices[70]= new Array();
- choices[70][0] = "SOAP envelope.";
- choices[70][1] = "SOAP binding framework";
- choices[70][2] = "SOAP encoding rules.";
- choices[70][3] = "SOAP  RPC representation.";
- answers[70] = choices[70][2];
- units[70] = "51";
- comments[70] = "Id Pregunta: 8352. Examen TIC A2 2010";
+ choices[70][0] = "La Secretar&iacute;a de Estado de Administraciones P&uacute;blicas conjuntamente con la Secretar&iacute;a de Estado de Presupuestos y Gastos";
+ choices[70][1] = "La Secretar&iacute;a de Estado de Hacienda conjuntamente con la Comisi&oacute;n Ministerial de Administraci&oacute; Digital";
+ choices[70][2] = "La Secretar&iacute;a de Estado de Telecomunicaciones y para la Sociedad de la Informaci&oacute;n";
+ choices[70][3] = "La Secretar&iacute;a General de Administraci&oacute;n Digital";
+ answers[70] = choices[70][0];
+ units[70] = "75";
+ comments[70] = "Id Pregunta: 10070. AGE A1 2015: En la pregunta del examen original, se hablaba de la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaci&oacute;n, actualmente asume sus funciones la Secretar&iacute;a General de Administraci&oacute;n Digital seg&uacute;n Real Decreto 424/2016";
 
 
-//  Id pregunta: 8420 AÃ±o de creación de pregunta: 2011-01-01
- questions[71]= "72)  &iquest;Qu&eacute; tipo de conector de alta velocidad (anteriormente conocido por su nombre clave Light Peak) hace uso de la tecnolog&iacute;a &oacute;ptica llegando a ofrecer anchos de banda de hasta 10 Gbps?";
+//  Id pregunta: 10657 Año de creación de pregunta: 2016
+ questions[71]= "72)  &iquest;Qu&eacute; es el machine learning?";
  choices[71]= new Array();
- choices[71][0] = "FireWire";
- choices[71][1] = "Thunderbolt";
- choices[71][2] = "USB";
- choices[71][3] = "HDMI";
- answers[71] = choices[71][1];
- units[71] = "47";
- comments[71] = "Id Pregunta: 8420. ";
+ choices[71][0] = "El uso de los datos para el desarrollo de mecanismos de predicci&oacute;n y aprendizaje";
+ choices[71][1] = "l uso de datos para la automatizaci&oacute;n de tareas repetitivas";
+ choices[71][2] = "El aprendizaje de mecanismos de monitorizaci&oacute;n y alertas";
+ choices[71][3] = "Un paradigma en el desarrollo de mecanismos de control ";
+ answers[71] = choices[71][0];
+ units[71] = "73";
+ comments[71] = "Id Pregunta: 10657. ";
 
 
-//  Id pregunta: 8612 AÃ±o de creación de pregunta: 2011-01-01
- questions[72]= "73)  Para la gesti&oacute;n del sistema operativo queremos	llevar un inventar&iacute;o. &iquest;Cu&aacute;l de los siguientes recursos NO es necesario en el mismo?";
+//  Id pregunta: 10660 Año de creación de pregunta: 2016
+ questions[72]= "73)  &iquest;Qu&eacute; herramienta dentro del ecosistema Hadoop sirve para trasladar datos masivos entre Hadoop y sistemas de tratamiento estructurados?";
  choices[72]= new Array();
- choices[72][0] = "Listado de todos los equipos";
- choices[72][1] = "Listado de software usado en cada equipo.";
- choices[72][2] = "Esquema de la red.";
- choices[72][3] = "Todos son necesarios.";
- answers[72] = choices[72][3];
- units[72] = "52";
- comments[72] = "Id Pregunta: 8612. Examen TIC A2 2010 interna";
+ choices[72][0] = "Avro";
+ choices[72][1] = "Sqoop";
+ choices[72][2] = "UIMA";
+ choices[72][3] = "Jaql";
+ answers[72] = choices[72][1];
+ units[72] = "73";
+ comments[72] = "Id Pregunta: 10660. ";
 
 
-//  Id pregunta: 8643 AÃ±o de creación de pregunta: 2011-01-01
- questions[73]= "74)  &iquest;Cu&aacute;l de las siguientes estructuras de datos requiere m&aacute;s capacidad de almacenamiento de informaci&oacute;n?";
+//  Id pregunta: 10632 Año de creación de pregunta: 2016
+ questions[73]= "74)  El sistema operativo que se dise&ntilde;a pensando en los tipos de datos y recursos que va a manejar: ficheros, procesos, memoria, hardware, etc., y en las propiedades y servicios que &eacute;stos pueden prestar, se construye siguiendo un modelo:";
  choices[73]= new Array();
- choices[73][0] = "&Aacute;rbol Binario";
- choices[73][1] = "Lista.";
- choices[73][2] = "Lista enlazada.";
- choices[73][3] = "&Aacute;rbol-B";
+ choices[73][0] = "Monol&iacute;tico.";
+ choices[73][1] = "Estratificado.";
+ choices[73][2] = "Cliente/servidor.";
+ choices[73][3] = "Orientado a objetos.";
  answers[73] = choices[73][3];
- units[73] = "57";
- comments[73] = "Id Pregunta: 8643. Examen TIC A2 2010 interna";
+ units[73] = "56";
+ comments[73] = "Id Pregunta: 10632. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 8673 AÃ±o de creación de pregunta: 2011-01-01
- questions[74]= "75)  El protocolo OCSP, se utiliza en:";
+//  Id pregunta: 10652 Año de creación de pregunta: 2016
+ questions[74]= "75)  Dentro del proceso de MapReduce &iquest;Que es el shuffle?";
  choices[74]= new Array();
- choices[74][0] = "la validaci&oacute;n en tiempo real del certificado digital";
- choices[74][1] = "comprobaci&oacute;n de la validez de una trama";
- choices[74][2] = "la comunicaci&oacute;n entre sistemas abiertos";
- choices[74][3] = "la validaci&oacute;n de la direcci&oacute;n de origen de un equipo";
- answers[74] = choices[74][0];
- units[74] = "74";
- comments[74] = "Id Pregunta: 8673. Examen UPM A2 2011";
-
-
-//  Id pregunta: 8785 AÃ±o de creación de pregunta: 2011-01-01
- questions[75]= "76)  OLAP proporciona mayor velocidad de procesamiento en la sentencia SQL";
- choices[75]= new Array();
- choices[75][0] = "INSERT";
- choices[75][1] = "UPDATE";
- choices[75][2] = "DELETE";
- choices[75][3] = "SELECT";
- answers[75] = choices[75][3];
- units[75] = "57, 58";
- comments[75] = "Id Pregunta: 8785. Examen UPM A2 2011";
-
-
-//  Id pregunta: 8808 AÃ±o de creación de pregunta: 2011-01-01
- questions[76]= "77)  El est&aacute;ndar de e-learning participado por el IEEE, que incluye un modelo de referencia para objetos software educativos compartibles, un entorno de ejecuci&oacute;n y un modelo de agregaci&oacute;n de contenido es:";
- choices[76]= new Array();
- choices[76][0] = "AEIC.";
- choices[76][1] = "LOM.";
- choices[76][2] = "LCMS.";
- choices[76][3] = "SCORM.";
- answers[76] = choices[76][3];
- units[76] = "66";
- comments[76] = "Id Pregunta: 8808. Examen UPM A2 2011";
-
-
-//  Id pregunta: 8880 AÃ±o de creación de pregunta: 2011-01-01
- questions[77]= "78)  Un driver JDBC de tipo 4 es aquel que cumple:";
- choices[77]= new Array();
- choices[77][0] = "Es un driver escrito en java que habla con un middleware en el lado del servidor.";
- choices[77][1] = "Es un driver escrito en java que emplea el protocolo nativo de la base de datos.";
- choices[77][2] = "Es un driver que habla con la librer&iacute;a nativa de base de datos en el cliente y esta comunica por red con la base de datos.";
- choices[77][3] = "JDBC solamente tiene drivers de hasta tipo 3 inclusive.";
- answers[77] = choices[77][1];
- units[77] = "57, 58";
- comments[77] = "Id Pregunta: 8880. Examen UPM A2 2011";
-
-
-//  Id pregunta: 8884 AÃ±o de creación de pregunta: 2011-01-01
- questions[78]= "79)  &iquest;Cu&aacute;l de los siguientes no es un &iacute;ndice para medir la potencia de un microprocesador?";
- choices[78]= new Array();
- choices[78][0] = "SPEC";
- choices[78][1] = "SPEint";
- choices[78][2] = "SPECfp";
- choices[78][3] = "SPEC#";
- answers[78] = choices[78][3];
- units[78] = "47";
- comments[78] = "Id Pregunta: 8884. ";
-
-
-//  Id pregunta: 8980 AÃ±o de creación de pregunta: 2011-01-01
- questions[79]= "80)  &iquest;Cu&aacute;l es la arquitectura del kernel empleado en Windows 7?";
- choices[79]= new Array();
- choices[79][0] = "Monol&iacute;tico";
- choices[79][1] = "Microkernel";
- choices[79][2] = "Nanokernel";
- choices[79][3] = "Hibrida";
- answers[79] = choices[79][3];
- units[79] = "52";
- comments[79] = "Id Pregunta: 8980. ";
-
-
-//  Id pregunta: 9043 AÃ±o de creación de pregunta: 2011-01-01
- questions[80]= "81)  Cu&aacute;l no es una implementaci&oacute;n de Linux";
- choices[80]= new Array();
- choices[80][0] = "Debian";
- choices[80][1] = "Ubuntu";
- choices[80][2] = "Red Hat";
- choices[80][3] = "Mono";
- answers[80] = choices[80][3];
- units[80] = "53";
- comments[80] = "Id Pregunta: 9043. ";
-
-
-//  Id pregunta: 9145 AÃ±o de creación de pregunta: 2013-01-01
- questions[81]= "82)  &iquest;Cu&aacute;ntos cent&iacute;meros tiene el Blu-ray?";
- choices[81]= new Array();
- choices[81][0] = "12";
- choices[81][1] = "13";
- choices[81][2] = "11";
- choices[81][3] = "15";
- answers[81] = choices[81][0];
- units[81] = "47";
- comments[81] = "Id Pregunta: 9145. ";
-
-
-//  Id pregunta: 9172 AÃ±o de creación de pregunta: 2013-01-01
- questions[82]= "83)  La norma que regula las obligaciones de facturaci&oacute;n es:";
- choices[82]= new Array();
- choices[82][0] = "Orden PRE/2971/2007";
- choices[82][1] = "Real Decreto 1496/2003";
- choices[82][2] = "Real Decreto 1619/2012";
- choices[82][3] = "Real Decreto 1783/2012";
- answers[82] = choices[82][2];
- units[82] = "70";
- comments[82] = "Id Pregunta: 9172. ";
-
-
-//  Id pregunta: 9210 AÃ±o de creación de pregunta: 2013-01-01
- questions[83]= "84)  &iquest;C&oacute;mo son las conexiones FC?";
- choices[83]= new Array();
- choices[83][0] = "Punto a punto";
- choices[83][1] = "Bucle arbitrado";
- choices[83][2] = "Red Conmutada";
- choices[83][3] = "Todas son v&aacute;lidas";
- answers[83] = choices[83][3];
- units[83] = "48";
- comments[83] = "Id Pregunta: 9210. ";
-
-
-//  Id pregunta: 9224 AÃ±o de creación de pregunta: 2013-01-01
- questions[84]= "85)  &iquest;En qu&eacute; se parece CICS e IMS?";
- choices[84]= new Array();
- choices[84][0] = "Ambos son sistemas transaccionales";
- choices[84][1] = "No tienen nada que ver";
- choices[84][2] = "Son protocolos de acceso a ficheros";
- choices[84][3] = "Son correctas A) y C)";
- answers[84] = choices[84][0];
- units[84] = "49";
- comments[84] = "Id Pregunta: 9224. ";
-
-
-//  Id pregunta: 9276 AÃ±o de creación de pregunta: 2013-01-01
- questions[85]= "86)  Indique la frase ERR&Oacute;NEA acerca de las t&eacute;cnicas de configuraci&oacute;n de servidores.";
- choices[85]= new Array();
- choices[85][0] = "Existen tres tipos de cluster: de alta disponibilidad, de alto rendimiento y de balanceo de carga.";
- choices[85][1] = "La principal limitaci&oacute;n t&eacute;cnica para un centro de respaldo en configuraci&oacute;n activo activo es el tiempo de latencia";
- choices[85][2] = "El balanceo de carga solo puede implementarse por software.";
- choices[85][3] = "La virtualizaci&oacute;n permite optimizar el uso del procesador y la memoria de los equipos f&iacute;sicos.";
- answers[85] = choices[85][2];
- units[85] = "49";
- comments[85] = "Id Pregunta: 9276. Examen TIC-A1 2011";
-
-
-//  Id pregunta: 9626 AÃ±o de creación de pregunta: 2014-01-01
- questions[86]= "87)  &iquest;Cu&aacute;l de las siguientes aplicaciones, incluida en KOffice, se emplea para generaci&oacute;n de informes?";
- choices[86]= new Array();
- choices[86][0] = "Kexi.";
- choices[86][1] = "Kivio.";
- choices[86][2] = "Konqueror.";
- choices[86][3] = "Kugar.";
- answers[86] = choices[86][3];
- units[86] = "62";
- comments[86] = "Id Pregunta: 9626. Examen TIC A1 2013";
-
-
-//  Id pregunta: 9670 AÃ±o de creación de pregunta: 2014-01-01
- questions[87]= "88)  La gesti&oacute;n NUMA:";
- choices[87]= new Array();
- choices[87][0] = "Significa Not Uniform Memory Access.";
- choices[87][1] = "Significa Not Unit of Memory Available.";
- choices[87][2] = "Implica que se introducen criterios de preferencia en el acceso a memoria compartida.";
- choices[87][3] = "La a) y la c)";
- answers[87] = choices[87][3];
- units[87] = "45";
- comments[87] = "Id Pregunta: 9670. ";
-
-
-//  Id pregunta: 10163 AÃ±o de creación de pregunta: 2014-01-01
- questions[88]= "89)  En el modelo l&oacute;gico relacional, la cardinalidad de una relaci&oacute;n se corresponde con:";
- choices[88]= new Array();
- choices[88][0] = "N&uacute;mero de atributos de la relaci&oacute;n";
- choices[88][1] = "N&uacute;mero m&iacute;nimo de ocurrencias de una entidad que pueden participar en la relaci&oacute;n";
- choices[88][2] = "N&uacute;mero de entidades que participan en la relaci&oacute;n o asociaci&oacute;n";
- choices[88][3] = "N&uacute;mero de tuplas de la relaci&oacute;n";
- answers[88] = choices[88][3];
- units[88] = "58";
- comments[88] = "Id Pregunta: 10163. ";
-
-
-//  Id pregunta: 10167 AÃ±o de creación de pregunta: 2014-01-01
- questions[89]= "90)  &iquest;A qu&eacute; t&eacute;rmino corresponde la siguiente definici&oacute;n: &quot;Dada una relaci&oacute;n, un atributo o grupo de atributos B depende funcionalmente de A, pero no de ning&uacute;n subconjunto de atributos de A&quot;?";
- choices[89]= new Array();
- choices[89][0] = "Dependencia funcional";
- choices[89][1] = "Dependencia multivaluada";
- choices[89][2] = "Dependencia funcional trivial";
- choices[89][3] = "Dependencia funcional completa";
- answers[89] = choices[89][3];
- units[89] = "58";
- comments[89] = "Id Pregunta: 10167. ";
-
-
-//  Id pregunta: 10306 AÃ±o de creación de pregunta: 2014-01-01
- questions[90]= "91)  &iquest;Cu&aacute;l de estas instrucciones NO vac&iacute;a el contenido del fichero con nombre 2013 en Linux?";
- choices[90]= new Array();
- choices[90][0] = "true &gt; 2013";
- choices[90][1] = "&gt; 2013";
- choices[90][2] = "cat /dev/null &gt; 2013";
- choices[90][3] = "| &gt; 2013";
- answers[90] = choices[90][3];
- units[90] = "53";
- comments[90] = "Id Pregunta: 10306. TIC A2, promoci&oacute;n interna, examen 2013";
-
-
-//  Id pregunta: 10457 AÃ±o de creación de pregunta: 2014-01-01
- questions[91]= "92)  &iquest;Cu&aacute;l de los siguientes elementos no forma parte de HTML 5?";
- choices[91]= new Array();
- choices[91][0] = "&lt;canvas&gt;";
- choices[91][1] = "&lt;applet&gt;";
- choices[91][2] = "&lt;keygen&gt;";
- choices[91][3] = "&lt;audio&gt;";
- answers[91] = choices[91][1];
- units[91] = "69";
- comments[91] = "Id Pregunta: 10457. NULL";
-
-
-//  Id pregunta: 10611 AÃ±o de creación de pregunta: 2015-01-01
- questions[92]= "93)  En una arquitectura PKI, la Autoridad de Validaci&oacute;n:";
- choices[92]= new Array();
- choices[92][0] = "Verifica la identidad del titular antes de la expedici&oacute;n del certificado.";
- choices[92][1] = "Comprueba si un certificado ha sido revocado mediante servicios de directorio, CRL y OCSP.";
- choices[92][2] = "Expide, gestiona y revoca certificados digitales.";
- choices[92][3] = "Procesa solicitudes de revocaci&oacute;n de certificados.";
- answers[92] = choices[92][1];
- units[92] = "74";
- comments[92] = "Id Pregunta: 10611. ";
-
-
-//  Id pregunta: 10614 AÃ±o de creación de pregunta: 2015-01-01
- questions[93]= "94)  Elija la opci&oacute;n correcta:";
- choices[93]= new Array();
- choices[93][0] = "La copia de seguridad incremental hace una copia de seguridad de todos los archivos.";
- choices[93][1] = "La copia de seguridad diferencial hace una copia de seguridad de todos los archivos.";
- choices[93][2] = "La copia de seguridad diferencial requiere m&aacute;s espacio en cinta y tiempo que la copia de seguridad incremental.";
- choices[93][3] = "La copia de seguridad incremental hace una copia de seguridad solo de los archivos que han cambiado desde la &uacute;ltima copia de seguridad diferencial.";
- answers[93] = choices[93][2];
- units[93] = "48";
- comments[93] = "Id Pregunta: 10614. ";
-
-
-//  Id pregunta: 10793 AÃ±o de creación de pregunta: 2015-01-01
- questions[94]= "95)  En Android, las aplicaciones se distribuyen en paquetes:";
- choices[94]= new Array();
- choices[94][0] = "yum";
- choices[94][1] = "apk";
- choices[94][2] = "ipa";
- choices[94][3] = "gpm";
- answers[94] = choices[94][1];
- units[94] = "52";
- comments[94] = "Id Pregunta: 10793. Examen GSI 2014";
-
-
-//  Id pregunta: 10799 AÃ±o de creación de pregunta: 2015-01-01
- questions[95]= "96)  Se&ntilde;ale la respuesta INCORRECTA relativa a una arquitectura basada en servicios web:";
- choices[95]= new Array();
- choices[95][0] = "WS-Security permite crear servicios web seguros.";
- choices[95][1] = "SOAP es un protocolo usado para el intercambio de informaci&oacute;n en un entorno descentralizado y distribuido basado en XML a trav&eacute;s de servicios web.";
- choices[95][2] = "AXIS2 es un motor de servicios web desarrollado por Apache. Una de las implementaciones disponible est&aacute; realizada en lenguaje C.";
- choices[95][3] = "Los lenguajes de desarrollo distintos a Java poseen dificultad para integrarse con los Servicios Web.";
- answers[95] = choices[95][3];
- units[95] = "51";
- comments[95] = "Id Pregunta: 10799. Examen GSI 2014";
-
-
-//  Id pregunta: 10813 AÃ±o de creación de pregunta: 2015-01-01
- questions[96]= "97)  Se&ntilde;ale cu&aacute;les de los siguientes formatos de archivo en la actualidad NO se consideran de formato abierto de texto para documentos:";
- choices[96]= new Array();
- choices[96][0] = "PDF";
- choices[96][1] = "EPUB";
- choices[96][2] = "RTF";
- choices[96][3] = "FLAC";
- answers[96] = choices[96][3];
- units[96] = "61, 62";
- comments[96] = "Id Pregunta: 10813. Examen GSI 2014";
-
-
-//  Id pregunta: 11052 AÃ±o de creación de pregunta: 2015-01-01
- questions[97]= "98)  &iquest;Cu&aacute;l es el plazo m&aacute;ximo de validez de los certificados reconocidos para firma electr&oacute;nica?";
- choices[97]= new Array();
- choices[97][0] = "30 meses";
- choices[97][1] = "4 a&ntilde;os";
- choices[97][2] = "5 a&ntilde;os";
- choices[97][3] = "10 a&ntilde;os";
- answers[97] = choices[97][2];
- units[97] = "73";
- comments[97] = "Id Pregunta: 11052. Modificado por Ley 9/2014";
-
-
-//  Id pregunta: 11530 AÃ±o de creación de pregunta: 2015-01-01
- questions[98]= "99)  Indicar cu&aacute;l de las siguientes afirmaciones es m&aacute;s id&oacute;nea para definir un sistema de Workflow.";
- choices[98]= new Array();
- choices[98][0] = "Se trata de un sistema de invocaci&oacute;n en la ejecuci&oacute;n de operaciones de entrada salida";
- choices[98][1] = "Se trata de una herramienta para mejorar la ejecuci&oacute;n y el control de los procesos de negocio";
- choices[98][2] = "Se trata de una herramienta para el dibujo de diagramas de flujo";
- choices[98][3] = "Se trata de una herramienta que nos permite establecer prioridades en una cola de trabajo";
- answers[98] = choices[98][1];
- units[98] = "71";
- comments[98] = "Id Pregunta: 11530. NULL";
-
-
-//  Id pregunta: 11612 AÃ±o de creación de pregunta: 2015-01-01
- questions[99]= "100)  Con respecto al sistema operativo Windows 10, se&ntilde;ale la falsa:";
- choices[99]= new Array();
- choices[99][0] = "Se mantiene y mejora el Men&uacute; de Inicio.";
- choices[99][1] = "Desaparece el entorno Modern UI.";
- choices[99][2] = "Permite crear y administrar escritorios virtuales.";
- choices[99][3] = "Incluye el asistente personal Cortana.";
- answers[99] = choices[99][1];
- units[99] = "56";
- comments[99] = "Id Pregunta: 11612. ";
+ choices[74][0] = "Es un proceso de adaptaci&oacute;n de los datos antes de entrar en la etapa de Map";
+ choices[74][1] = "Es un aplicativo dentro del ecosistema Hadoop que sirve para distribuir datos en el HDFS";
+ choices[74][2] = "Es el proceso por el que los datos llegan de los mappers a los reducers";
+ choices[74][3] = "Es un algoritmo de mineria de datos usado en Big Data";
+ answers[74] = choices[74][2];
+ units[74] = "73";
+ comments[74] = "Id Pregunta: 10652. ";
 
 
