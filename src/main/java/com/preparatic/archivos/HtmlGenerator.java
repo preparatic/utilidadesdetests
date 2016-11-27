@@ -16,6 +16,7 @@
 package com.preparatic.archivos;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
@@ -30,6 +31,8 @@ import org.apache.logging.log4j.Logger;
 import com.preparatic.ConfigProperties;
 import com.preparatic.entidades.GestorAnho;
 import com.preparatic.entidades.GestorBloque;
+import com.preparatic.entidades.GestorInfoBloque;
+import com.preparatic.entidades.GestorInfoTema;
 import com.preparatic.entidades.GestorTematica;
 import com.preparatic.entidades.PreguntaTest;
 import com.preparatic.entidades.GestorTematica.tematica;
@@ -69,46 +72,21 @@ public class HtmlGenerator {
 
 	}
 	
-	public static class Link {
-	    String url;
-	    String title;
-	    public Link(String url, String title) {
-	        this.url = url;
-	        this.title = title;
-	    }
-	    public String getUrl() { return url; }
-	    public String getTitle()  { return title; }
-	}
-	
-	public static void generarStringTemplatePrueba()
+
+	public static void generarMetaInfo()
 	{
 		
 		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
 		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate");
-		StringTemplate helloAgain = group.getInstanceOf(testTemplateName);
-		 
-		helloAgain.setAttribute("titulo", "Test 001");
-		helloAgain.setAttribute("titulocompleto", "Test 001. Test global");
-		helloAgain.setAttribute("javascriptdata", "../js/data/test_0001.js");
 
-		System.out.println(helloAgain.toString());
+		StringTemplate infotestTemplate = group.getInstanceOf("info_tests");
+		infotestTemplate.setAttribute("listabloques", GestorInfoBloque.getInstance().getBloques());
+		infotestTemplate.setAttribute("listatemas", GestorInfoTema.getInstance().getTemas());
 
-		// Creamos la salida
-		PrintStream salida = FactoriaArchivo.archivoHtmlTest(eTipoTest.aleatorio, "global", 9999);
-		salida.print(helloAgain.toString());
-		salida.close();
-		
-		Link[] links = new Link[] {
-			    new Link("test_0000.html", "Test 0000"),
-			    new Link("test_0001.html", "Test 0001"),
-			    new Link("test_0002.html", "Test 0002"),
-			    new Link("test_0003.html", "Test 0003")
-			};
-		 
-		StringTemplate testNav = group.getInstanceOf("testNavTemplate");
-		testNav.setAttribute("hreflist", links);
-
-		System.out.println(testNav.toString());
+		//System.out.println(infotestTemplate.toString());
+		PrintStream file = FactoriaArchivo.filenameToPrintStream("testsV2/data/info_tests.js");
+		file.println(infotestTemplate.toString());
+		file.close();
 	}
 
 	/**
@@ -129,6 +107,20 @@ public class HtmlGenerator {
 	public void generarTestHtml(List<PreguntaTest> listapreguntas) {
 		generarHtml();
 		generarJSQuestion(listapreguntas);
+		
+		generarHtmlV2();
+		generarJSQuestionV2(listapreguntas);
+	}
+	
+	public String getHtmlFilename()
+	{
+		return FactoriaArchivo.htmlTestFilename(tipoTest,
+				test.getIdBloqueTematicaAnho(), test.getIdTest());
+	}
+	public String getJsFilename()
+	{
+		return FactoriaArchivo.NombreArchivoJavascriptPreguntas(tipoTest,
+				test.getIdBloqueTematicaAnho(), test.getIdTest());
 	}
 	
 	/**
@@ -178,6 +170,26 @@ public class HtmlGenerator {
 		}
 	}
 
+	private void generarHtmlV2() {
+		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
+		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate");
+		StringTemplate htmlTemplate = group.getInstanceOf(testTemplateName);
+		
+		String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
+				test.getIdBloqueTematicaAnho(), test.getIdTest());
+		htmlTemplate.setAttribute("titulo",  test.getTitulo());
+		htmlTemplate.setAttribute("titulocompleto", test.getTitulo());
+		htmlTemplate.setAttribute("javascriptdata", "../data/" +  filename + ".js ");
+
+		//System.out.println(htmlTemplate.toString());
+
+		// Creamos la salida
+		filename = "testsV2/tests/" +  filename + ".html";
+		PrintStream salida = FactoriaArchivo.filenameToPrintStream(filename);
+		salida.print(htmlTemplate.toString());
+		salida.close();
+	}
+	
 	/**
 	 * Genera el fichero con las preguntas y respuestas dentro de un JavaScript.
 	 * 
@@ -255,6 +267,40 @@ public class HtmlGenerator {
 
 		return true;
 	}
+	private boolean generarJSQuestionV2(List<PreguntaTest> listapreguntas) {
+
+		if (listapreguntas == null || listapreguntas.isEmpty())
+			return false;
+
+		try {
+			String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
+					test.getIdBloqueTematicaAnho(), test.getIdTest());
+			filename = "testsV2/data/" +  filename + ".js";
+			// Generamos el archivo de salida.
+			PrintStream salida = FactoriaArchivo.filenameToPrintStream(filename);
+
+			// Copiamos la cabecera común a todos los ficheros de javascript.
+			BufferedReader entrada = new BufferedReader(new FileReader(
+					pathResources
+							+ ConfigProperties
+									.getProperty("files.templates.Javascript")));
+			while (copiarHastaFlag(salida, entrada) == true)
+				;
+
+			/* Cogemos las preguntas de test desde el principio */
+			int n_pregunta = 0;
+			for (PreguntaTest pregunta : listapreguntas) {
+				escribirPreguntaTest(salida, pregunta, n_pregunta);
+				n_pregunta++;
+			}
+			salida.close();
+		} catch (Exception e) {
+			logger.error("escribirJavascript " + e.getMessage());
+		}
+
+		return true;
+	}
+	
 	/**
 	 * 
 	 * @param salida

@@ -63,14 +63,22 @@ public class FactoriaArchivo {
 	public static FileOutputStream pdfTest(Test.eTipoTest tipoTest,
 			String idBloqueTematica, Integer idTest) {
 
+		String filename = pdfTestFilename(tipoTest, idBloqueTematica, idTest);
+
+		return filenameToOutoutStream(filename);
+	}
+
+	public static String pdfTestFilename(Test.eTipoTest tipoTest,
+			String idBloqueTematica, Integer idTest) {
+
 		checkAndCreateDir(pathPdfs);
 		StringBuilder nombreArchivo = new StringBuilder(pathPdfs);
 		nombreArchivo.append(NombreArchivoTest(tipoTest, idBloqueTematica, idTest));
 		nombreArchivo.append(".pdf");
 
-		return filenameToOutoutStream(nombreArchivo.toString());
+		return  nombreArchivo.toString();
 	}
-
+	
 	/**
 	 * Crea el archivo pdf para una solución de un test.
 	 * @param tipoTest
@@ -99,14 +107,21 @@ public class FactoriaArchivo {
 	public static PrintStream archivoHtmlTest(Test.eTipoTest tipoTest,
 			String idBloqueTematica, Integer idTest) {
 
+		String filename = htmlTestFilename(tipoTest, idBloqueTematica, idTest);
+
+		return filenameToPrintStream(filename);
+	}
+	
+	public static String htmlTestFilename(Test.eTipoTest tipoTest,
+			String idBloqueTematica, Integer idTest) {
 		checkAndCreateDir(pathHtml);
 		StringBuilder nombreArchivo = new StringBuilder(pathHtml);
 		nombreArchivo.append(NombreArchivoTest(tipoTest, idBloqueTematica, idTest));
 		nombreArchivo.append(".html");
-
-		return filenameToPrintStream(nombreArchivo.toString());
+	
+		return nombreArchivo.toString();
 	}
-
+	
 	private static void checkAndCreateDir (String dirPath)
 	{
 		File directory = new File(String.valueOf(dirPath));
@@ -129,6 +144,7 @@ public class FactoriaArchivo {
 
 	}
 
+	
 	/**
 	 * Crea el archivo para los datos de las preguntas de un test.
 	 * @param tipoTest
@@ -164,7 +180,7 @@ public class FactoriaArchivo {
 	 * @param idTest
 	 * @return
 	 */
-	private static String NombreArchivoTest(Test.eTipoTest tipoTest,
+	public static String NombreArchivoTest(Test.eTipoTest tipoTest,
 			String bloqueTematica, Integer idTest) {
 		
 		// Se van a formatear todos los test con un número de 4 cifras.
@@ -269,7 +285,7 @@ public class FactoriaArchivo {
 		return null;
 	}
 
-	private static PrintStream filenameToPrintStream(String nombreArchivo) {
+	public static PrintStream filenameToPrintStream(String nombreArchivo) {
 
 		PrintStream salida = null;
 		try {

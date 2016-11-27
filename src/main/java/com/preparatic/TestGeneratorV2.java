@@ -34,6 +34,7 @@ import com.preparatic.entidades.GestorBloque;
 import com.preparatic.entidades.GestorInfoBloque;
 import com.preparatic.entidades.GestorInfoTema;
 import com.preparatic.entidades.GestorPreguntaTest;
+import com.preparatic.entidades.GestorTests;
 import com.preparatic.entidades.InfoBloque;
 import com.preparatic.entidades.InfoTema;
 import com.preparatic.entidades.PreguntaTest;
@@ -47,6 +48,8 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 
 	private static Logger logger = LogManager.getLogger(TestGeneratorV2.class);
 
+	private static GestorTests gestorTest = GestorTests.getInstance();
+	
 	public static void main(String[] args) throws Exception {
 
 		logger.info("Generador de test. Promoción XXIV. Diciembre 2016");
@@ -68,7 +71,8 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			
 			// Obtenemos todas los temas del excel
 			GestorInfoTema.getInstance().leerTemas(ficheroExcel);
-						
+			HtmlGenerator.generarMetaInfo();		
+			
 			// Obtenemos todas las preguntas del excel
 			GestorPreguntaTest.getInstance().leerPreguntas(ficheroExcel);
 			GestorPreguntaTest.getInstance().reasignaIdentificadores();
@@ -120,7 +124,8 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			}
 		}
 		testcompleto.generarDocumentos(listaPreguntas, listaPreguntas.size());
-	}
+		gestorTest.addTest(testcompleto);
+		}
 	
 	/**
 	 * Distribuye las preguntas en tantos Test como haga falta.
@@ -149,6 +154,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 				}
 			}
 			test.generarDocumentos(listaPreguntas, inicio_test + numTestAleatorios);
+			gestorTest.addTest(test);
 		}
 
 	}
@@ -188,6 +194,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 					}
 				}
 				test.generarDocumentos(listaPreguntas, totalTestsBloque);
+				gestorTest.addTest(test);
 			}
 
 			logger.info("Generado test bloque " + bloque.getTitulo());
@@ -230,6 +237,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 					}
 				}
 				test.generarDocumentos(listaPreguntas, totalTestsTema);
+				gestorTest.addTest(test);
 			}
 
 			logger.info("Generado test bloque " + tema.getTituloCorto());
@@ -271,6 +279,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 					}
 				}
 				test.generarDocumentos(listaPreguntas, totalTestsAnho);
+				gestorTest.addTest(test);
 			}
 
 			logger.info("Generado test Anho " + idAnho);

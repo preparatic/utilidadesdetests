@@ -18,6 +18,8 @@ package com.preparatic.entidades;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -56,11 +58,15 @@ public class Test {
 	 */
 	private String idBloqueTematicaAnho = "";
 	private int idTest;
-	String tituloTematica;
+	private String tituloTematica;
 	private List<Integer> ListaPreguntas;
 	private static Integer NumPreguntas = Integer
 			.parseInt(ConfigProperties.getProperty("tests.num_preguntas_por_test")); // Número
 	private final int MaxNumPreguntas;
+	
+	private String htmlFilename;
+	private String pdfFilename;
+	private String jsFilename;
 	
 	// de
 	// preguntas que debe tener este test.
@@ -264,11 +270,14 @@ public class Test {
 						.filter(question -> ListaPreguntas.contains(question.getNumId()))
 						.collect(Collectors.toList());;
 			pdfGenerator.agregarPreguntas(filteredList);
-			pdfGenerator.guardarPDF();
+			pdfFilename = pdfGenerator.guardarPDF();
 			
 			// Genera el html
 			HtmlGenerator htmlGenerator = new HtmlGenerator(this);
 			htmlGenerator.generarTestHtml(filteredList);
+			
+			htmlFilename = htmlGenerator.getHtmlFilename();
+			jsFilename = htmlGenerator.getJsFilename();
 			
 		} catch (Exception e) {
 			logger.error("Error al generar los tests" + e.getMessage());
@@ -281,6 +290,11 @@ public class Test {
 		return idTest;
 	}
 
+	public String getIdTestStr() {
+		NumberFormat formatter = new DecimalFormat("#0000");
+		return formatter.format(idTest);
+	}
+	
 	public eTipoTest getTipoTest() {
 		return tipoTest;
 	}
@@ -295,6 +309,51 @@ public class Test {
 
 	public void setTituloTematica(String tituloTematica) {
 		this.tituloTematica = tituloTematica;
+	}
+
+	
+	public String getTitulo()
+	{
+		if (tipoTest == eTipoTest.bloque)
+			return "Test Bloque " + idBloqueTematicaAnho + ", Id: " + getIdTestStr();
+		else if (tipoTest == eTipoTest.aleatorio)
+			return "Test Global, Id: " + getIdTestStr();
+		else if (tipoTest == eTipoTest.anho)
+			return "Test convocatoria " + idBloqueTematicaAnho + ", Id: " + getIdTestStr();
+		else if (tipoTest == eTipoTest.tema) {
+			return "Test Tema " + idBloqueTematicaAnho + ", Id: " + getIdTestStr();
+		} else
+			return "Test " + getIdTestStr();
+	}
+	
+	/**
+	 * @return the htmlFilename
+	 */
+	public String getHtmlFilename() {
+		return htmlFilename;
+	}
+
+	/**
+	 * @return the pdfFilename
+	 */
+	public String getPdfFilename() {
+		return pdfFilename;
+	}
+
+	/**
+	 * @return the jsFilename
+	 */
+	public String getJsFilename() {
+		return jsFilename;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Test [idBloqueTematicaAnho=" + idBloqueTematicaAnho + ", idTest=" + idTest + ", htmlFilename="
+				+ htmlFilename + ", pdfFilename=" + pdfFilename + ", jsFilename=" + jsFilename + "]";
 	}
 
 }

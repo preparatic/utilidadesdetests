@@ -18,6 +18,7 @@ package com.preparatic.entidades;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -133,7 +134,7 @@ public class InfoTema {
 	 * @return the titulo
 	 */
 	public String getTituloCorto() {
-		return tituloCorto;
+		return StringEscapeUtils.escapeHtml(tituloCorto);
 	}
 
 	/**
@@ -145,7 +146,7 @@ public class InfoTema {
 	}
 
 	public String getTituloLargo() {
-		return tituloLargo;
+		return StringEscapeUtils.escapeHtml(tituloLargo);
 	}
 
 	public void setTituloLargo(String tituloLargo) {

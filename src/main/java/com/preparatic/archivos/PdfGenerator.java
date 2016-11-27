@@ -15,6 +15,7 @@
  *******************************************************************************/
 package com.preparatic.archivos;
 
+import java.io.FileOutputStream;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
@@ -152,12 +153,14 @@ public class PdfGenerator {
 	 * 
 	 * @throws Exception
 	 */
-	public void guardarPDF() throws Exception {
+	public String guardarPDF() throws Exception {
 
 		// Abrir documentos
 		docpregs = new Document();
 		docsols = new Document();
 
+		String pregsFilename = FactoriaArchivo.pdfTestFilename(test.getTipoTest(), test.getIdBloqueTematicaAnho(),
+				test.getIdTest());
 		PdfWriter.getInstance(docpregs,
 				FactoriaArchivo.pdfTest(test.getTipoTest(), test.getIdBloqueTematicaAnho(), test.getIdTest()));
 		PdfWriter.getInstance(docsols,
@@ -192,6 +195,8 @@ public class PdfGenerator {
 		// Cerramos los documentos
 		docpregs.close();
 		docsols.close();
+		
+		return pregsFilename;
 	}
 
 	public void setTituloTematica(String tituloTematica) {

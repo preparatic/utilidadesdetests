@@ -8,19 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tests Preparatic XXIV | $titulo$ </title>
     <!-- Bootstrap -->
-    <link href="../../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- Custom Theme Style -->
-    <link href="../../build/css/custom.min.css" rel="stylesheet">
+    <link href="../css/custom.min.css" rel="stylesheet">
 
     <!-- Preparatic Style -->
     <link href="../css/preparatic.css" rel="stylesheet">
     <script src="../js/quiz_functions.js"></script>
     <script src="../js/testNavigation.js"></script>
-    <script src="../js/data/test_bloques.js"></script>
+
     <script src="$javascriptdata$"></script>
 </head>
 <body class="nav-md">
@@ -184,15 +184,15 @@
         </div>
     </div>
     <!-- jQuery -->
-    <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="../../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="../../vendors/fastclick/lib/fastclick.js"></script>
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="../../vendors/nprogress/nprogress.js"></script>
+    <script src="../vendors/nprogress/nprogress.js"></script>
 
     <!-- Custom Theme Scripts -->
-    <script src="../../build/js/custom.min.js"></script>
+    <script src="../js/custom.min.js"></script>
 </body>
 </html>
