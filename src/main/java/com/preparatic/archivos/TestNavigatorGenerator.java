@@ -23,10 +23,12 @@ import java.util.List;
 
 import com.preparatic.ConfigProperties;
 import com.preparatic.entidades.GestorAnho;
-import com.preparatic.entidades.GestorBloque;
+import com.preparatic.entidades.GestorInfoBloque;
+import com.preparatic.entidades.GestorInfoTema;
 import com.preparatic.entidades.GestorTematica;
 import com.preparatic.entidades.Test;
-import com.preparatic.entidades.GestorTematica.tematica;
+import com.preparatic.entidades.InfoBloque;
+import com.preparatic.entidades.InfoTema;
 import com.preparatic.entidades.Test.eTipoTest;
 
 public class TestNavigatorGenerator extends HtmlGenerator {
@@ -60,22 +62,22 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 					escribirRenderTestSelector(salida);
 					break;
 				case 2: // Bloque
-//TODO PENDING					escribirRenderTestBloque(salida);
+					escribirRenderTestBloque(salida);
 					break;
 				case 3: // Render Selector Tematica
 //TODO PENDING					escribirRenderTestSelectorTematica(salida);
 					break;
 				case 4: // Render Temas
-//TODO PENDING					escribirRenderTemas(salida);
+					escribirRenderTemas(salida);
 					break;
 				case 5: // Render Anhos
-//TODO PENDING					escribirRenderTestAnho(salida);
+					escribirRenderTestAnho(salida);
 					break;
 				case 6:
-//TODO PENDING					escribirRenderMenuTest(salida);
+					escribirRenderMenuTest(salida);
 					break;
 				case 7:
-//TODO PENDING					escribirRenderMenuIndex(salida);
+					escribirRenderMenuIndex(salida);
 				default:
 					break;
 				}
@@ -108,11 +110,11 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 	private static void escribirRenderTemas(PrintStream salida) {
 
 		// Temáticas
-		GestorTematica g = new GestorTematica();
+		GestorInfoTema g = GestorInfoTema.getInstance();
 
-		for (GestorTematica.tematica t : g.getTematicas()) {
-			escribirNavigationAddOption(salida, "box", t.id.toString(),
-					t.descripcion);
+		for (InfoTema t : g.getTemas()) {
+			escribirNavigationAddOption(salida, "box", "" + t.getNumTema(),
+					t.getTituloCorto());
 		}
 
 	}
@@ -157,8 +159,9 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 	 */
 	private static void escribirRenderTestBloque(PrintStream salida) {
 
-		GestorBloque g = new GestorBloque();
-		for (String idBloque : g.getBloque()) {
+		GestorInfoBloque g = GestorInfoBloque.getInstance();
+		for (InfoBloque bloque : g.getBloques()) {
+			String idBloque = bloque.getNombreBloque();
 			FachadaArchivos f = new FachadaArchivos(Test.eTipoTest.bloque,
 					idBloque);
 			// Sólo escribimos contenido si hay algún archivo que referenciar.
@@ -262,33 +265,32 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 		for (int i = l.size() - 1; i >= 0; i--) {
 			String idAnho = l.get(i);
 			f = new FachadaArchivos(eTipoTest.anho, idAnho);
-			escribirAddElement(salida, "list", f.getNombreArchivosTest(),
-					AnhoToString.ToDescripcion(idAnho), "tipoTest=='"
-							+ Test.eTipoTest.anho + "' && id=='" + idAnho
-							+ "'");
+			String filenameA = f.getNombreArchivosTest();
+			if (filenameA != null)
+				escribirAddElement(salida, "list", filenameA, AnhoToString.ToDescripcion(idAnho),
+						"tipoTest=='" + Test.eTipoTest.anho + "' && id=='" + idAnho + "'");
 		}
 
 		
 		
-		// Entrada para la temática
-		GestorTematica gt = new GestorTematica();
-		tematica t = gt.getTematicas().get(0);
-		f = new FachadaArchivos(eTipoTest.tematica, t.id
-				.toString());
-		escribirAddElement(salida, "list", f.getNombreArchivosTest(),
-				"Test por temas", "tipoTest=='" + Test.eTipoTest.tematica
-						+ "' ");
+		// Entrada para los temas
+		GestorInfoTema gt =   GestorInfoTema.getInstance();
+		InfoTema t = gt.getTemas().get(0);
+		f = new FachadaArchivos(eTipoTest.tema, "T" + t.getNumTema());
+		String filenameT = f.getNombreArchivosTest();
+		if (filenameT != null)
+			escribirAddElement(salida, "list", filenameT, "Test por temas", "tipoTest=='" + Test.eTipoTest.tema + "' ");
 
 		// Entradas para los bloques, en orden inverso.
-		GestorBloque g = new GestorBloque();
-		List<String> ls = g.getBloque();
+		GestorInfoBloque g = GestorInfoBloque.getInstance();
+		List<InfoBloque> ls = g.getBloques();
 		for (int i = ls.size() - 1; i >= 0; i--) {
-			String idBloque = ls.get(i);
+			String idBloque = ls.get(i).getNombreBloque();
 			f = new FachadaArchivos(eTipoTest.bloque, idBloque);
-			escribirAddElement(salida, "list", f.getNombreArchivosTest(),
-					BloqueToString.ToDescripcion(idBloque), "tipoTest=='"
-							+ Test.eTipoTest.bloque + "' && id=='" + idBloque
-							+ "'");
+			String filenameB = f.getNombreArchivosTest();
+			if (filenameB != null)
+				escribirAddElement(salida, "list", filenameB, BloqueToString.ToDescripcion(idBloque),
+						"tipoTest=='" + Test.eTipoTest.bloque + "' && id=='" + idBloque + "'");
 		}
 
 		// Entrada para los tests aleatorios:
@@ -321,33 +323,33 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 		for (int i = l.size() - 1; i >= 0; i--) {
 			String idAnho = l.get(i);
 			f = new FachadaArchivos(eTipoTest.anho, idAnho);
-			escribirAddElement(salida, "list", "pages/"+ f.getNombreArchivosTest(),
-					AnhoToString.ToDescripcion(idAnho), "tipoTest=='"
-							+ Test.eTipoTest.anho + "' && id=='" + idAnho
-							+ "'");
+			String filenameA = f.getNombreArchivosTest();
+			if (filenameA != null)
+				escribirAddElement(salida, "list", "pages/" + filenameA, AnhoToString.ToDescripcion(idAnho),
+						"tipoTest=='" + Test.eTipoTest.anho + "' && id=='" + idAnho + "'");
 		}
 
 		
 		
-		// Entrada para la temática
-		GestorTematica gt = new GestorTematica();
-		tematica t = gt.getTematicas().get(0);
-		f = new FachadaArchivos(eTipoTest.tematica, t.id
-				.toString());
-		escribirAddElement(salida, "list", "pages/"+f.getNombreArchivosTest(),
-				"Test por temas", "tipoTest=='" + Test.eTipoTest.tematica
-						+ "' ");
+		// Entrada para los temas
+		GestorInfoTema gt =   GestorInfoTema.getInstance();
+		InfoTema t = gt.getTemas().get(0);
+		f = new FachadaArchivos(eTipoTest.tema, "T" + t.getNumTema());
+		String filenameT = f.getNombreArchivosTest();
+		if (filenameT != null)
+			escribirAddElement(salida, "list", "pages/" + filenameT, "Test por temas",
+					"tipoTest=='" + Test.eTipoTest.tema + "' ");
 
 		// Entradas para los bloques, en orden inverso.
-		GestorBloque g = new GestorBloque();
-		List<String> ls = g.getBloque();
+		GestorInfoBloque g = GestorInfoBloque.getInstance();
+		List<InfoBloque> ls = g.getBloques();
 		for (int i = ls.size() - 1; i >= 0; i--) {
-			String idBloque = ls.get(i);
+			String idBloque = ls.get(i).getNombreBloque();
 			f = new FachadaArchivos(eTipoTest.bloque, idBloque);
-			escribirAddElement(salida, "list", "pages/"+f.getNombreArchivosTest(),
-					BloqueToString.ToDescripcion(idBloque), "tipoTest=='"
-							+ Test.eTipoTest.bloque + "' && id=='" + idBloque
-							+ "'");
+			String filenameB = f.getNombreArchivosTest();
+			if (filenameB != null)
+				escribirAddElement(salida, "list", "pages/" + filenameB, BloqueToString.ToDescripcion(idBloque),
+						"tipoTest=='" + Test.eTipoTest.bloque + "' && id=='" + idBloque + "'");
 		}
 
 		// Entrada para los tests aleatorios:

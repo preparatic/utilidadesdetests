@@ -22,6 +22,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 
@@ -46,6 +48,7 @@ import com.preparatic.entidades.InfoTematica;
 import com.preparatic.entidades.PreguntaTest;
 
 public class GoogleSheet implements IExcel {
+	private static Logger logger = LogManager.getLogger(InfoTema.class);
 
 	/** Application name. */
 	private static final String APPLICATION_NAME = "Google Sheets API Java Quickstart";
@@ -127,22 +130,17 @@ public class GoogleSheet implements IExcel {
 			response = service.spreadsheets().values().get(spreadsheetId, range).execute();
 			List<List<Object>> values = response.getValues();
 			if (values == null || values.size() == 0) {
-				System.out.println("No data found.");
+				logger.warn("No data found.");
 			} else {
 				int line = 0;
 				for (List row : values) {
 					line++;
-					if (row.isEmpty() || 
-							row.get(0).toString().isEmpty() ||
-							row.get(1).toString().isEmpty() ||
-							row.get(2).toString().isEmpty() ||
-							row.get(3).toString().isEmpty() ||
-							row.get(4).toString().isEmpty()) {
-						System.out.printf("Empty row at position %d\n", line);
+					if (row.isEmpty() || row.get(0).toString().isEmpty()) {
+						logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
 						continue;
 					}
 					// Print question and line number
-					System.out.printf("Question number %d: %s\n", line, row.get(0));
+					//System.out.printf("Question number %d: %s\n", line, row.get(0));
 					ArrayList<String> celdasPregunta = new ArrayList<String>();
 					for (int columna = 0; columna < PreguntaTest.NUM_COLUMNAS; columna++) {
 						// If the cell is missing from the file, generate a
@@ -172,13 +170,13 @@ public class GoogleSheet implements IExcel {
 			response = service.spreadsheets().values().get(spreadsheetMetaId, bloqueRange).execute();
 			List<List<Object>> values = response.getValues();
 			if (values == null || values.size() == 0) {
-				System.out.println("No data found.");
+				System.out.println("No data found reading bloques.");
 			} else {
 				int line = 0;
 				for (List row : values) {
 					line++;
-					if (row.isEmpty()) {
-						System.out.printf("Empty row at position %d\n", line);
+					if (row.isEmpty() || row.get(0).toString().isEmpty()) {
+						logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
 						continue;
 					}
 					// Print info and line number
@@ -205,13 +203,13 @@ public class GoogleSheet implements IExcel {
 			response = service.spreadsheets().values().get(spreadsheetMetaId, temaRange).execute();
 			List<List<Object>> values = response.getValues();
 			if (values == null || values.size() == 0) {
-				System.out.println("No data found.");
+				logger.warn("No data found reading temas.");
 			} else {
 				int line = 0;
 				for (List row : values) {
 					line++;
-					if (row.isEmpty()) {
-						System.out.printf("Empty row at position %d\n", line);
+					if (row.isEmpty() || row.get(0).toString().isEmpty()) {
+						logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
 						continue;
 					}
 					// Print info and line number
@@ -238,13 +236,13 @@ public class GoogleSheet implements IExcel {
 			response = service.spreadsheets().values().get(spreadsheetMetaId, tematicaRange).execute();
 			List<List<Object>> values = response.getValues();
 			if (values == null || values.size() == 0) {
-				System.out.println("No data found.");
+				logger.warn("No data found reading tematica.");
 			} else {
 				int line = 0;
 				for (List row : values) {
 					line++;
-					if (row.isEmpty()) {
-						System.out.printf("Empty row at position %d\n", line);
+					if (row.isEmpty() || row.get(0).toString().isEmpty()) {
+						logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
 						continue;
 					}
 					// Print info and line number

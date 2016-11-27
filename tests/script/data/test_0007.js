@@ -21,903 +21,903 @@ var response = new Array();
 var units = new Array();
 var comments = new Array();
 
-//  Id pregunta: 10215 Año de creación de pregunta: 2016
- questions[0]= "1)  Seg&uacute;n establece la Constituci&oacute;n Espa&ntilde;ola, las asociaciones se inscribir&aacute;n en un registro a efectos de:";
+//  Id pregunta: 100 Año de creación de pregunta: 2016
+ questions[0]= "1)  Entre los tipos de Bases de Datos NoSQL no se encuentran:";
  choices[0]= new Array();
- choices[0][0] = "Publicidad.";
- choices[0][1] = "Constituci&oacute;n.";
- choices[0][2] = "Legalidad.";
- choices[0][3] = "Creaci&oacute;n.";
+ choices[0][0] = "Bases de datos orientadas a filas";
+ choices[0][1] = "Bases de datos orientadas a documentos";
+ choices[0][2] = "Bases de datos de clave/valor";
+ choices[0][3] = "Bases de datos orientadas a objetos";
  answers[0] = choices[0][0];
- units[0] = "1";
- comments[0] = "Id Pregunta: 10215. CONSTITUCION1978";
+ units[0] = "73";
+ comments[0] = "Id Pregunta: 100. ";
 
 
-//  Id pregunta: 10598 Año de creación de pregunta: 2016
- questions[1]= "2)  Entre la documentaci&oacute;n de la Seguridad de la Organizaci&oacute;n nos podremos encontrar:";
+//  Id pregunta: 9 Año de creación de pregunta: 2016
+ questions[1]= "2)  Con respecto a los entornos de integraci&oacute;n continua, indique cu&aacute;l de las siguientes afirmaciones es cierta:";
  choices[1]= new Array();
- choices[1][0] = "La Pol&iacute;tica de Seguridad Corporativa ser&aacute; elaborada por el Responsable de Seguridad Corporativa y aprobada por el Comit&eacute; de Seguridad Corporativa y por la Alta Direcci&oacute;n.";
- choices[1][1] = "La Pol&iacute;tica de Seguridad de las TIC que debe estar alineada en todo momento con el Mantenimiento de los Sistemas de Informaci&oacute;n.";
- choices[1][2] = "El Documento de Seguridad que ha de estar presente en toda documentaci&oacute;n de la seguridad de la informaci&oacute;n.";
- choices[1][3] = "Todas las respuestas anteriores son correctas.";
- answers[1] = choices[1][0];
- units[1] = "45";
- comments[1] = "Id Pregunta: 10598. Junta de Extremadura A1 2015";
+ choices[1][0] = "Jenkins no dispone de la funcionalidad de extenderse mediante plugins.";
+ choices[1][1] = "SonarQube utiliza herramientas de an&aacute;lisis est&aacute;tico de c&oacute;digo que permiten obtener m&eacute;tricas para mejorar la calidad del c&oacute;digo.";
+ choices[1][2] = "El fichero POM empleado en Maven no siempre es un fichero XML.";
+ choices[1][3] = "Jenkins es un software de integraci&oacute;n continua bajo licencia Oracle.";
+ answers[1] = choices[1][1];
+ units[1] = "95";
+ comments[1] = "Id Pregunta: 9. AGE A1 2015";
 
 
-//  Id pregunta: 10370 Año de creación de pregunta: 2016
- questions[2]= "3)  Establecer la interpretaci&oacute;n adecuada de los Tratados de la Uni&oacute;n Europea y las normas de derecho derivado es el objeto de:";
+//  Id pregunta: 446 Año de creación de pregunta: 2016
+ questions[2]= "3)  Dentro de la l&oacute;gica presupuestaria, los ingresos tienen car&aacute;cter...";
  choices[2]= new Array();
- choices[2][0] = "Un recurso de incumplimiento.";
- choices[2][1] = "Recurso de carencia.";
- choices[2][2] = "Cuesti&oacute;n o incidente prejudicial.";
- choices[2][3] = "Ninguna es correcta.";
+ choices[2][0] = "Ejecutivo";
+ choices[2][1] = "Limitativo";
+ choices[2][2] = "Estimativo";
+ choices[2][3] = "Progresivo";
  answers[2] = choices[2][2];
- units[2] = "5";
- comments[2] = "Id Pregunta: 10370. UNION EUROPEA";
+ units[2] = "10";
+ comments[2] = "Id Pregunta: 446. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 10264 Año de creación de pregunta: 2016
- questions[3]= "4)  &iquest;Cu&aacute;ntos vocales componen el Consejo General del Poder Judicial?";
+//  Id pregunta: 547 Año de creación de pregunta: 2016
+ questions[3]= "4)  La gobernanza TIC incluye, entre otros, los siguientes aspectos:";
  choices[3]= new Array();
- choices[3][0] = "Veinte.";
- choices[3][1] = "Quince.";
- choices[3][2] = "Diez.";
- choices[3][3] = "Doce.";
- answers[3] = choices[3][1];
- units[3] = "1";
- comments[3] = "Id Pregunta: 10264. CONSTITUCION1978";
+ choices[3][0] = "Integrar la estrategia TIC con la de negocio";
+ choices[3][1] = "Adoptar e implantar un marco de control de las TIC";
+ choices[3][2] = "Proporcionar las estructuras organizativas encargadas de implantar la estrategia TIC";
+ choices[3][3] = "Todas las anteriores";
+ answers[3] = choices[3][3];
+ units[3] = "26";
+ comments[3] = "Id Pregunta: 547. Gobernanza TIC";
 
 
-//  Id pregunta: 10053 Año de creación de pregunta: 2016
- questions[4]= "5)  &iquest;Cu&aacute;l de los siguientes objetivos est&aacute; fuera del alcance de una reuni&oacute;n diaria de SCRUM (daily scrum)?";
+//  Id pregunta: 29 Año de creación de pregunta: 2016
+ questions[4]= "5)  De acuerdo con el art&iacute;culo 62 de la Ley 9/2014, de 9 de mayo, General de Telecomunicaciones, se&ntilde;ale la respuesta correcta:";
  choices[4]= new Array();
- choices[4][0] = "Exponer las tareas no planificadas que tambi&eacute;n est&aacute;n haciendo los miembros del equipo.";
- choices[4][1] = "Resolver detalladamente los problemas que puedan tener los miembros del equipo.";
- choices[4][2] = "Poner de manifiesto el ritmo de trabajo de cada miembro del equipo.";
- choices[4][3] = "Identificar las tareas que puedan afectar a otros miembros del equipo.";
- answers[4] = choices[4][1];
- units[4] = "84";
- comments[4] = "Id Pregunta: 10053. AGE A1 2015";
+ choices[4][0] = "El uso del dominio p&uacute;blico radioel&eacute;ctrico s&oacute;lo puede ser de dos tipos: especial o privativo.";
+ choices[4][1] = "El uso com&uacute;n del dominio p&uacute;blico radioel&eacute;ctrico precisa de t&iacute;tulo habilitante.";
+ choices[4][2] = "El uso privativo del dominio p&uacute;blico radioel&eacute;ctrico es el que se realiza mediante la explotaci&oacute;n en exclusiva, o por un n&uacute;mero limitado de usuarios, de determinadas frecuencias en un mismo &aacute;mbito f&iacute;sico de aplicaci&oacute;n.";
+ choices[4][3] = "El uso privativo del dominio p&uacute;blico radioel&eacute;ctrico es el que se lleve a cabo de las bandas de frecuencias habilitadas para su explotaci&oacute;n de forma compartida, sin limitaci&oacute;n de n&uacute;mero de operadores o usuarios y con las condiciones t&eacute;cnicas y para los servicios que se establezcan en cada caso.";
+ answers[4] = choices[4][2];
+ units[4] = "121";
+ comments[4] = "Id Pregunta: 29. AGE A1 2015";
 
 
-//  Id pregunta: 10351 Año de creación de pregunta: 2016
- questions[5]= "6)  La sede del Parlamento Europeo se encuentra en:";
+//  Id pregunta: 222 Año de creación de pregunta: 2016
+ questions[5]= "6)  &iquest;Cu&aacute;ntos cap&iacute;tulos tiene el T&iacute;tulo VIII de la Constituci&oacute;n?.";
  choices[5]= new Array();
- choices[5][0] = "En Estrasburgo, aunque celebra algunas sesiones en Bruselas.";
- choices[5][1] = "En Estrasburgo, aunque celebra algunas sesiones en Bruselas y la Secretar&iacute;a del Parlamento tiene su sede en Luxemburgo.";
- choices[5][2] = "La Secretar&iacute;a del Parlamento tiene su sede en Luxemburgo.";
- choices[5][3] = "Celebra todas sus sesiones en Bruselas.";
+ choices[5][0] = "Dos Cap&iacute;tulos.";
+ choices[5][1] = "Tres Cap&iacute;tulos.";
+ choices[5][2] = "Un Cap&iacute;tulo.";
+ choices[5][3] = "Cuatro Cap&iacute;tulos.";
  answers[5] = choices[5][1];
- units[5] = "5";
- comments[5] = "Id Pregunta: 10351. UNION EUROPEA";
+ units[5] = "1";
+ comments[5] = "Id Pregunta: 222. CONSTITUCION1978";
 
 
-//  Id pregunta: 10325 Año de creación de pregunta: 2016
- questions[6]= "7)  Indique el n&uacute;mero m&iacute;nimo de Diputados necesario para constituir un Grupo Pol&iacute;tico en el Parlamento Europeo:";
+//  Id pregunta: 579 Año de creación de pregunta: 2016
+ questions[6]= "7)  &iquest;Cu&aacute;les son principios rectores del Plan de Transformaci&oacute;n Digital de la AGE y sus OOPP?";
  choices[6]= new Array();
- choices[6][0] = "Veinticinco.";
- choices[6][1] = "Veintiuno.";
- choices[6][2] = "Dieciocho.";
- choices[6][3] = "Diecinueve.";
- answers[6] = choices[6][0];
- units[6] = "5";
- comments[6] = "Id Pregunta: 10325. UNION EUROPEA";
+ choices[6][0] = "Transparencia e innovaci&oacute;n, orientaci&oacute;n al usuario del servicio y fomentar el uso de est&aacute;ndares";
+ choices[6][1] = "Colaboraci&oacute;n y alianzas, unidad y visi&oacute;n integral y orientaci&oacute;n al usuario del servicio";
+ choices[6][2] = "Unidad y visi&oacute;n integral, orientaci&oacute;n al usuario del servicio y prestaci&oacute;n de servicios compartidos";
+ choices[6][3] = "Colaboraci&oacute;n y alianzas, fomentar el uso de est&aacute;ndares e incrementar la productividad y la eficacia";
+ answers[6] = choices[6][1];
+ units[6] = "19";
+ comments[6] = "Id Pregunta: 579. Estrategia TIC";
 
 
-//  Id pregunta: 10512 Año de creación de pregunta: 2016
- questions[7]= "8)  Podr&aacute;n establecerse especialidades del procedimiento referidas a los &oacute;rganos competentes, plazos propios del concreto procedimiento por raz&oacute;n de la materia, formas de iniciaci&oacute;n y terminaci&oacute;n, publicaci&oacute;n e informes a recabar:";
+//  Id pregunta: 115 Año de creación de pregunta: 2016
+ questions[7]= "8)  &iquest;Qu&eacute; Tratado Europeo introduce un t&iacute;tulo dedicado al empleo en el Tratado de Roma?";
  choices[7]= new Array();
- choices[7][0] = "solo mediante ley";
- choices[7][1] = "reglamentariamente";
- choices[7][2] = "mediante ley o reglamentariamente";
- choices[7][3] = "ninguna es correcta";
+ choices[7][0] = "El Tratado de Lisboa";
+ choices[7][1] = "El Tratado de Amsterdam";
+ choices[7][2] = "El Tratado de Niza";
+ choices[7][3] = "El Acta &Uacute;nica Europea";
  answers[7] = choices[7][1];
- units[7] = "7";
- comments[7] = "Id Pregunta: 10512. LEY 39/2015";
+ units[7] = "15";
+ comments[7] = "Id Pregunta: 115. ";
 
 
-//  Id pregunta: 10119 Año de creación de pregunta: 2016
- questions[8]= "9)  &iquest;Con qu&eacute; periodicidad se publica la EPA (Encuesta de Poblaci&oacute;n Activa)?";
+//  Id pregunta: 10 Año de creación de pregunta: 2016
+ questions[8]= "9)  El servicio mediante el cual se localiza un terminal m&oacute;vil dentro de alguna de las N c&eacute;lulas gestionadas coordinadamente en una zona de cobertura se denomina:";
  choices[8]= new Array();
- choices[8][0] = "Anual";
- choices[8][1] = "Mensual";
- choices[8][2] = "Semestral";
- choices[8][3] = "Trimestral";
- answers[8] = choices[8][3];
- units[8] = "15";
- comments[8] = "Id Pregunta: 10119. ";
+ choices[8][0] = "Paging";
+ choices[8][1] = "Roaming";
+ choices[8][2] = "Handover";
+ choices[8][3] = "Trunking";
+ answers[8] = choices[8][0];
+ units[8] = "117";
+ comments[8] = "Id Pregunta: 10. AGE A1 2015";
 
 
-//  Id pregunta: 10500 Año de creación de pregunta: 2016
- questions[9]= "10)  Conforme a la Ley 47/2003, de 26 de noviembre, General Presupuestaria, el programa plurianual de la Seguridad Social se elaborar&aacute; por:";
+//  Id pregunta: 53 Año de creación de pregunta: 2016
+ questions[9]= "10)  &iquest;Cu&aacute;l de los siguientes objetivos est&aacute; fuera del alcance de una reuni&oacute;n diaria de SCRUM (daily scrum)?";
  choices[9]= new Array();
- choices[9][0] = "El presidente de las Cortes Generales.";
- choices[9][1] = "El Presidente del Gobierno.";
- choices[9][2] = "El Ministro de Hacienda y Funci&oacute;n P&uacute;blica.";
- choices[9][3] = "El Ministro de Trabajo y Asuntos Sociales.";
- answers[9] = choices[9][3];
- units[9] = "10";
- comments[9] = "Id Pregunta: 10500. PRESUPUESTOS GENERALES";
+ choices[9][0] = "Exponer las tareas no planificadas que tambi&eacute;n est&aacute;n haciendo los miembros del equipo.";
+ choices[9][1] = "Resolver detalladamente los problemas que puedan tener los miembros del equipo.";
+ choices[9][2] = "Poner de manifiesto el ritmo de trabajo de cada miembro del equipo.";
+ choices[9][3] = "Identificar las tareas que puedan afectar a otros miembros del equipo.";
+ answers[9] = choices[9][1];
+ units[9] = "84";
+ comments[9] = "Id Pregunta: 53. AGE A1 2015";
 
 
-//  Id pregunta: 10192 Año de creación de pregunta: 2016
- questions[10]= "11)  Seg&uacute;n la Constituci&oacute;n, las poblaciones de Ceuta y Melilla estar&aacute;n representadas por:";
+//  Id pregunta: 409 Año de creación de pregunta: 2016
+ questions[10]= "11)  La mayor novedad de la Ley para la igualdad efectiva de mujeres y hombres, radica en:";
  choices[10]= new Array();
- choices[10][0] = "Un diputado y un senador, cada una de ellas";
- choices[10][1] = "Dos diputados y un senador, cada una de ellas.";
- choices[10][2] = "Un diputado y dos senadores, cada una de ellas";
- choices[10][3] = "dos diputados y dos senadores, cada una de ellas.";
+ choices[10][0] = "Prevenir las conductas discriminatorias.";
+ choices[10][1] = "Proveer pol&iacute;ticas activas para hacer efectivo el principio de igualdad.";
+ choices[10][2] = "Todas son correctas.";
+ choices[10][3] = "Proveer pol&iacute;ticas pasivas para hacer efectivo el principio de igualdad.";
  answers[10] = choices[10][2];
- units[10] = "1";
- comments[10] = "Id Pregunta: 10192. CONSTITUCION1978";
+ units[10] = "14";
+ comments[10] = "Id Pregunta: 409. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10115 Año de creación de pregunta: 2016
- questions[11]= "12)  &iquest;Qu&eacute; Tratado Europeo introduce un t&iacute;tulo dedicado al empleo en el Tratado de Roma?";
+//  Id pregunta: 305 Año de creación de pregunta: 2016
+ questions[11]= "12)  Indique en donde tiene su sede de la Comisi&oacute;n Europea:";
  choices[11]= new Array();
- choices[11][0] = "El Tratado de Lisboa";
- choices[11][1] = "El Tratado de Amsterdam";
- choices[11][2] = "El Tratado de Niza";
- choices[11][3] = "El Acta &Uacute;nica Europea";
+ choices[11][0] = "Estrasburgo.";
+ choices[11][1] = "Bruselas.";
+ choices[11][2] = "Luxemburgo.";
+ choices[11][3] = "Par&iacute;s.";
  answers[11] = choices[11][1];
- units[11] = "15";
- comments[11] = "Id Pregunta: 10115. ";
+ units[11] = "5";
+ comments[11] = "Id Pregunta: 305. UNION EUROPEA";
 
 
-//  Id pregunta: 10576 Año de creación de pregunta: 2016
- questions[12]= "13)  Se&ntilde;ale, de entre los siguientes, cu&aacute;l es un gestor de base de datos relacional:";
+//  Id pregunta: 274 Año de creación de pregunta: 2016
+ questions[12]= "13)  La Ley 19/2013 de 9 de diciembre, de transparencia, acceso a la informaci&oacute;n p&uacute;blica y buen gobierno ha establecido el derecho:";
  choices[12]= new Array();
- choices[12][0] = "PostgreSQL";
- choices[12][1] = "Datawarehouse";
- choices[12][2] = "Snowflake";
- choices[12][3] = "CouchDB";
- answers[12] = choices[12][0];
- units[12] = "61";
- comments[12] = "Id Pregunta: 10576. Tema 61. TAI 2016.";
+ choices[12][0] = "Al acceso a la informaci&oacute;n p&uacute;blica, en desarrollo de los t&eacute;rminos ya previstos por la Ley 11/2007, de acceso electr&oacute;nico de los ciudadano a los servicios p&uacute;blicos.";
+ choices[12][1] = "Al acceso a la informaci&oacute;n p&uacute;blica, por primera vez en nuestra legislaci&oacute;n positiva.";
+ choices[12][2] = "Al acceso a la informaci&oacute;n p&uacute;blica a trav&eacute;s del portal de transparencia.";
+ choices[12][3] = "Al acceso a la informaci&oacute;n p&uacute;blica, con las limitaciones derivadas del posible perjuicio para la defensa, seguridad nacional o funciones administrativas de inspecci&oacute;n, entre otras.";
+ answers[12] = choices[12][3];
+ units[12] = "22";
+ comments[12] = "Id Pregunta: 274. LEY DE TRANSPARENCIA";
 
 
-//  Id pregunta: 10238 Año de creación de pregunta: 2016
- questions[13]= "14)  En caso de dimisi&oacute;n del Presidente del Gobierno:";
+//  Id pregunta: 736 Año de creación de pregunta: 2016
+ questions[13]= "14)  Las iniciativas que se lancen al amparo del Plan de Acci&oacute;n de la Administraci&oacute;n Electr&oacute;nica de la UE se ce&ntilde;ir&aacute;n a:";
  choices[13]= new Array();
- choices[13][0] = "El Gobierno cesa a continuaci&oacute;n.";
- choices[13][1] = "El Rey podr&aacute; proponer, a trav&eacute;s del Presidente del Congreso, un nuevo candidato a la Presidencia del Gobierno.";
- choices[13][2] = "El Pleno del Congreso, por mayor&iacute;a absoluta, podr&aacute; proponer al Rey un nuevo candidato a la Presidencia del Gobierno.";
- choices[13][3] = "El Pleno del Congreso y del Senado, por mayor&iacute;a absoluta, podr&aacute; proponer al Rey un nuevo candidato a la Presidencia del Gobierno.";
+ choices[13][0] = "6 principios.";
+ choices[13][1] = "7 principios.";
+ choices[13][2] = "5 principios.";
+ choices[13][3] = "6 directrices.";
  answers[13] = choices[13][1];
- units[13] = "1";
- comments[13] = "Id Pregunta: 10238. CONSTITUCION1978";
+ units[13] = "28";
+ comments[13] = "Id Pregunta: 736. Estrategia TIC";
 
 
-//  Id pregunta: 10347 Año de creación de pregunta: 2016
- questions[14]= "15)  La Comisi&oacute;n Europea est&aacute; integrada por:";
+//  Id pregunta: 549 Año de creación de pregunta: 2016
+ questions[14]= "15)  El presidente del pleno de la Comisi&oacute;n de Estrategia TIC es :";
  choices[14]= new Array();
- choices[14][0] = "18 miembros.";
- choices[14][1] = "Ninguna es correcta.";
- choices[14][2] = "22 miembros.";
- choices[14][3] = "21 miembros.";
+ choices[14][0] = "El Ministro de Energ&iacute;a, Turismo y Agenda Digital";
+ choices[14][1] = "El Ministro de Hacienda y Administraciones P&uacute;blicas";
+ choices[14][2] = "El Presidente del Gobierno";
+ choices[14][3] = "El Secretario General de Administraci&oacute;n Digital";
  answers[14] = choices[14][1];
- units[14] = "5";
- comments[14] = "Id Pregunta: 10347. UNION EUROPEA";
+ units[14] = "26";
+ comments[14] = "Id Pregunta: 549. Gobernanza TIC";
 
 
-//  Id pregunta: 10340 Año de creación de pregunta: 2016
- questions[15]= "16)  En el &aacute;mbito de las relaciones internacionales de la Comunidad Europea con terceros pa&iacute;ses:";
+//  Id pregunta: 80 Año de creación de pregunta: 2016
+ questions[15]= "16)  Seg&uacute;n el Real Decreto 3/2010, de 8 de enero, por el que se regula el Esquema Nacional de Seguridad en el &aacute;mbito de la Administraci&oacute;n Electr&oacute;nica, se&ntilde;ale la respuesta correcta respecto a la auditor&iacute;a de seguridad:";
  choices[15]= new Array();
- choices[15][0] = "El Consejo negocia los tratados internacionales y la Comisi&oacute;n los aprueba.";
- choices[15][1] = "La Comisi&oacute;n negocia los tratados internacionales y el Parlamento Europeo los sanciona.";
- choices[15][2] = "La Comisi&oacute;n negocia los tratados internacionales y el Consejo los aprueba.";
- choices[15][3] = "Un n&uacute;mero indeterminado de diputados europeos negocia ios tratados internacionales y la Comisi&oacute;n los aprueba.";
- answers[15] = choices[15][2];
- units[15] = "5";
- comments[15] = "Id Pregunta: 10340. UNION EUROPEA";
+ choices[15][0] = "Se realizar&aacute;, al menos, cada dieciocho meses para los sistemas de todas las categor&iacute;as, y con car&aacute;cter extraordinario, siempre que se produzcan modificaciones sustanciales en el sistema de informaci&oacute;n, que puedan repercutir en las medidas de seguridad requeridas.";
+ choices[15][1] = "El equipo auditor, en el dise&ntilde;o de sus pruebas y revisiones, debe limitarse a la revisi&oacute;n de documentos facilitados por los responsables de la informaci&oacute;n, del servicio y de seguridad.";
+ choices[15][2] = "Cuando existan razones que lo justifiquen, dentro de las tareas de la auditoria de seguridad podr&aacute;n incluirse adem&aacute;s la ejecuci&oacute;n de trabajos de consultor&iacute;a.";
+ choices[15][3] = "El informe de auditor&iacute;a deber&aacute; dictaminar sobre la adecuaci&oacute;n de las medidas exigidas por el Esquema Nacional de Seguridad, identificar sus deficiencias y proponer las medidas correctoras o complementarias necesarias.";
+ answers[15] = choices[15][3];
+ units[15] = "46";
+ comments[15] = "Id Pregunta: 80. AGE A1 2015";
 
 
-//  Id pregunta: 10249 Año de creación de pregunta: 2016
- questions[16]= "17)  &iquest;En qu&eacute; art&iacute;culo de la Constituci&oacute;n se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen?.";
+//  Id pregunta: 299 Año de creación de pregunta: 2016
+ questions[16]= "17)  Indique por cu&aacute;ntos miembros est&aacute; formado actualmente el Tribunal de Cuentas:";
  choices[16]= new Array();
- choices[16][0] = "Art&iacute;culo 16.2.";
- choices[16][1] = "Art&iacute;culo 17.1.";
- choices[16][2] = "Art&iacute;culo 18.1.";
- choices[16][3] = "Art&iacute;culo 18.2.";
- answers[16] = choices[16][0];
- units[16] = "1";
- comments[16] = "Id Pregunta: 10249. CONSTITUCION1978";
+ choices[16][0] = "Quince miembros.";
+ choices[16][1] = "Un miembro de cada pa&iacute;s de la Uni&oacute;n Europea.";
+ choices[16][2] = "Los miembros que determine el Consejo.";
+ choices[16][3] = "Un Presidente y quince miembros.";
+ answers[16] = choices[16][1];
+ units[16] = "5";
+ comments[16] = "Id Pregunta: 299. UNION EUROPEA";
 
 
-//  Id pregunta: 10657 Año de creación de pregunta: 2016
- questions[17]= "18)  &iquest;Qu&eacute; es el machine learning?";
+//  Id pregunta: 24 Año de creación de pregunta: 2016
+ questions[17]= "18)  De acuerdo con la Ley 9/2014, de 9 de mayo, General de Telecomunicaciones, una de las funciones de la Comisi&oacute;n Nacional de los Mercados y la Competencia es:";
  choices[17]= new Array();
- choices[17][0] = "El uso de los datos para el desarrollo de mecanismos de predicci&oacute;n y aprendizaje";
- choices[17][1] = "l uso de datos para la automatizaci&oacute;n de tareas repetitivas";
- choices[17][2] = "El aprendizaje de mecanismos de monitorizaci&oacute;n y alertas";
- choices[17][3] = "Un paradigma en el desarrollo de mecanismos de control ";
- answers[17] = choices[17][0];
- units[17] = "73";
- comments[17] = "Id Pregunta: 10657. ";
+ choices[17][0] = "Gestionar en per&iacute;odo voluntario las tasas en materia de telecomunicaciones a que se refiere la presente Ley.";
+ choices[17][1] = "Proponer al Gobierno la pol&iacute;tica a seguir para facilitar el desarrollo y la evoluci&oacute;n de las obligaciones de servicio p&uacute;blico.";
+ choices[17][2] = "Gestionar el Registro de Operadores.";
+ choices[17][3] = "Establecer el procedimiento para cuantificar los beneficios no monetarios obtenidos por los operadores encargados de la prestaci&oacute;n del servicio universal.";
+ answers[17] = choices[17][3];
+ units[17] = "121";
+ comments[17] = "Id Pregunta: 24. AGE A1 2015";
 
 
-//  Id pregunta: 10126 Año de creación de pregunta: 2016
- questions[18]= "19)  Se&ntilde;ale la respuesta FALSA respecto a la solicitud de acceso a la informaci&oacute;n p&uacute;blica seg&uacute;n la ley 19/2013";
+//  Id pregunta: 78 Año de creación de pregunta: 2016
+ questions[18]= "19)  En relaci&oacute;n con la Ley Org&aacute;nica 15/1999, de 13 de diciembre, de protecci&oacute;n de datos de car&aacute;cter personal, se&ntilde;ale la respuesta correcta:";
  choices[18]= new Array();
- choices[18][0] = "Transcurrido el plazo m&aacute;ximo para resolver sin que se haya dictado y notificado resoluci&oacute;n expresa se entender&aacute; que la solicitud ha sido desestimada.";
- choices[18][1] = "Las resoluciones dictadas en materia de acceso a la informaci&oacute;n p&uacute;blica son recurribles directamente ante la Jurisdicci&oacute;n Contencioso-administrativa, sin perjuicio de la posibilidad de interposici&oacute;n de la reclamaci&oacute;n potestativa prevista en el art&iacute;culo 24.";
- choices[18][2] = "El incumplimiento reiterado de la obligaci&oacute;n de resolver en plazo tendr&aacute; la consideraci&oacute;n de infracci&oacute;n grave a los efectos de la aplicaci&oacute;n a sus responsables del r&eacute;gimen disciplinario previsto en la correspondiente normativa reguladora.";
- choices[18][3] = "La resoluci&oacute;n en la que se conceda o deniegue el acceso a deber&aacute; notificarse al solicitante y a los terceros afectados que as&iacute; lo hayan solicitado en el plazo m&aacute;ximo de 15 d&iacute;as desde la recepci&oacute;n de la solicitud por el &oacute;rgano competente para resolver.";
- answers[18] = choices[18][3];
- units[18] = "22";
- comments[18] = "Id Pregunta: 10126. ";
+ choices[18][0] = "En caso de datos de car&aacute;cter personal registrados inexactos o incompletos, el interesado debe instar su rectificaci&oacute;n, sin que puedan ser cancelados y sustituidos de oficio por los datos rectificados o completados.";
+ choices[18][1] = "En caso de datos de car&aacute;cter personal registrados inexactos o incompletos, ser&aacute;n cancelados y sustituidos de oficio por los datos rectificados o completados, sin perjuicio del derecho de rectificaci&oacute;n y cancelaci&oacute;n del afectado.";
+ choices[18][2] = "El responsable del tratamiento tendr&aacute; la obligaci&oacute;n de hacer efectivo el derecho de rectificaci&oacute;n o cancelaci&oacute;n del interesado en el plazo de 15 d&iacute;as.";
+ choices[18][3] = "El responsable del tratamiento tendr&aacute; la obligaci&oacute;n de hacer efectivo el derecho de rectificaci&oacute;n o cancelaci&oacute;n del interesado en el plazo de 1 mes.";
+ answers[18] = choices[18][1];
+ units[18] = "35";
+ comments[18] = "Id Pregunta: 78. AGE A1 2015";
 
 
-//  Id pregunta: 10505 Año de creación de pregunta: 2016
- questions[19]= "20)  Respecto a la regla de gasto. Se&ntilde;ale la respuesta falsa:";
+//  Id pregunta: 239 Año de creación de pregunta: 2016
+ questions[19]= "20)  Respecto de las relaciones que constitucionalmente se regulan entre los miembros del Gobierno y las Cortes Generales:";
  choices[19]= new Array();
- choices[19][0] = "La variaci&oacute;n del gasto computable de la Administraci&oacute;n Central, de las Comunidades Aut&oacute;nomas y de las Corporaciones Locales, no podr&aacute; superar la tasa de referencia de crecimiento del Producto Interior Bruto de medio plazo de la econom&iacute;a espa&ntilde;ola.";
- choices[19][1] = "No obstante, cuando exista un desequilibrio estructural en las cuentas p&uacute;blicas o una deuda p&uacute;blica superior al objetivo establecido, el crecimiento del gasto p&uacute;blico computable se ajustar&aacute; a la senda establecida en los respectivos planes econ&oacute;mico-financieros y de reequilibrio previstos.";
- choices[19][2] = "Corresponde al Ministerio de Econom&iacute;a y Competitividad calcular la tasa de referencia de crecimiento del Producto Interior Bruto de medio plazo de la econom&iacute;a espa&ntilde;ola, de acuerdo con la metodolog&iacute;a utilizada por la Comisi&oacute;n Europea en aplicaci&oacute;n de su normativa.";
- choices[19][3] = "Esta tasa se publicar&aacute; en el informe de situaci&oacute;n de la econom&iacute;a. Ser&aacute; la referencia a tener en cuenta por la Administraci&oacute;n Central en la elaboraci&oacute;n de sus Presupuestos.";
- answers[19] = choices[19][3];
- units[19] = "10";
- comments[19] = "Id Pregunta: 10505. PRESUPUESTOS GENERALES";
+ choices[19][0] = "La comparecencia de los miembros del Gobierno ante las C&aacute;maras y sus Comisiones puede extenderse tambi&eacute;n a los funcionarios de sus Departamentos.";
+ choices[19][1] = "Los funcionarios s&oacute;lo comparecer&aacute;n si as&iacute; lo solicitasen las propias C&aacute;maras o sus Comisiones.";
+ choices[19][2] = "Los funcionarios s&oacute;lo comparecer&aacute;n si as&iacute; lo deciden los miembros del Gobierno.";
+ choices[19][3] = "Los funcionarios no comparecer&aacute;n en ning&uacute;n caso.";
+ answers[19] = choices[19][0];
+ units[19] = "1";
+ comments[19] = "Id Pregunta: 239. CONSTITUCION1978";
 
 
-//  Id pregunta: 10082 Año de creación de pregunta: 2016
- questions[20]= "21)  La titularidad de los derechos de explotaci&oacute;n de un programa de ordenador por una persona jur&iacute;dica expirar&aacute;:";
+//  Id pregunta: 401 Año de creación de pregunta: 2016
+ questions[20]= "21)  Entre los criterios generales de actuaci&oacute;n los Poderes P&uacute;blicos, tienen:";
  choices[20]= new Array();
- choices[20][0] = "A los setenta a&ntilde;os, computados desde el d&iacute;a siguiente al de su divulgaci&oacute;n.";
- choices[20][1] = "A los cincuenta a&ntilde;os, computados desde el d&iacute;a uno de enero del a&ntilde;o siguiente al de su divulgaci&oacute;n l&iacute;cita, o al de su creaci&oacute;n si no se hubiera divulgado.";
- choices[20][2] = "A los cincuenta a&ntilde;os, computados desde el d&iacute;a siguiente al de su divulgaci&oacute;n.";
- choices[20][3] = "A los setenta a&ntilde;os, computados desde el d&iacute;a uno de enero del a&ntilde;o siguiente al de su divulgaci&oacute;n l&iacute;cita o al de su creaci&oacute;n si no se hubiera divulgado.";
- answers[20] = choices[20][3];
- units[20] = "41";
- comments[20] = "Id Pregunta: 10082. AGE A1 2015";
+ choices[20][0] = "La implantaci&oacute;n de un lenguaje no sexista en el &aacute;mbito administrativo, y en la totalidad de las relaciones sociales, culturales y art&iacute;sticas.";
+ choices[20][1] = "La participaci&oacute;n equilibrada de mujeres y hombres en las candidaturas electorales y toma de decisiones.";
+ choices[20][2] = "Ambas son correctas.";
+ choices[20][3] = "A y B son incorrectas.";
+ answers[20] = choices[20][2];
+ units[20] = "14";
+ comments[20] = "Id Pregunta: 401. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10349 Año de creación de pregunta: 2016
- questions[21]= "22)  El Tratado de Par&iacute;s que crea la Comunidad Europea del Carb&oacute;n y del Acero entr&oacute; en vigor:";
+//  Id pregunta: 256 Año de creación de pregunta: 2016
+ questions[21]= "22)  El Art&iacute;culo 21 de la Constituci&oacute;n Espa&ntilde;ola se&ntilde;ala que:";
  choices[21]= new Array();
- choices[21][0] = "El 23 de julio de 1952.";
- choices[21][1] = "El 18 de abril de 1951.";
- choices[21][2] = "El 16 de abril de 1948.";
- choices[21][3] = "d)Ninguna de las respuestas son correctas.";
+ choices[21][0] = "Se reconoce el derecho de reuni&oacute;n pac&iacute;fica y con armas.";
+ choices[21][1] = "Se reconoce el derecho de reuni&oacute;n pac&iacute;fica siempre dentro del derecho de manifestaci&oacute;n previa autorizaci&oacute;n.";
+ choices[21][2] = "Se reconoce el derecho de reuni&oacute;n pac&iacute;fica y sin armas.";
+ choices[21][3] = "No se reconoce expl&iacute;citamente tal derecho de reuni&oacute;n.";
  answers[21] = choices[21][0];
- units[21] = "5";
- comments[21] = "Id Pregunta: 10349. UNION EUROPEA";
+ units[21] = "1";
+ comments[21] = "Id Pregunta: 256. CONSTITUCION1978";
 
 
-//  Id pregunta: 10639 Año de creación de pregunta: 2016
- questions[22]= "23)  En cuanto al proceso de autenticaci&oacute;n en Linux, indique cu&aacute;l de las siguientes afirmaciones es correcta:";
+//  Id pregunta: 158 Año de creación de pregunta: 2016
+ questions[22]= "23)  Seg&uacute;n la ley 39/2015, cuando la notificaci&oacute;n por medios electr&oacute;nicos sea de car&aacute;cter obligatorio, o haya sido expresamente elegida por el interesado:";
  choices[22]= new Array();
- choices[22][0] = "Linux emplea para el proceso de autenticaci&oacute;n por contrase&ntilde;a el sistema DEC.";
- choices[22][1] = "Linux emplea para el proceso de autenticaci&oacute;n por contrase&ntilde;a el sistema MD6.";
- choices[22][2] = "Linux emplea dos sistemas para el proceso de autenticaci&oacute;n por contrase&ntilde;a, DES y MD5.";
- choices[22][3] = "Linux emplea dos sistemas para el proceso de autenticaci&oacute;n por contrase&ntilde;a, DEC y MD6.";
- answers[22] = choices[22][2];
- units[22] = "57";
- comments[22] = "Id Pregunta: 10639. Junta de Extremadura A1 2015";
+ choices[22][0] = "se entender&aacute; rechazada cuando hayan transcurrido 10 d&iacute;as h&aacute;biles desde la puesta a disposici&oacute;n de la notificaci&oacute;n sin que se acceda a su contenido";
+ choices[22][1] = "se entender&aacute; rechazada cuando hayan transcurrido 10 d&iacute;as naturales desde la puesta a disposici&oacute;n de la notificaci&oacute;n sin que se acceda a su contenido";
+ choices[22][2] = "se entender&aacute; efectuada cuando hayan transcurrido 10 d&iacute;as h&aacute;biles desde la puesta a disposici&oacute;n de la notificaci&oacute;n sin que se acceda a su contenido";
+ choices[22][3] = "se entender&aacute; efectuada cuando hayan transcurrido 10 d&iacute;as naturales desde la puesta a disposici&oacute;n de la notificaci&oacute;n sin que se acceda a su contenido";
+ answers[22] = choices[22][1];
+ units[22] = "7";
+ comments[22] = "Id Pregunta: 158. Ley 39/2015, Art&iacute;culo 43";
 
 
-//  Id pregunta: 10037 Año de creación de pregunta: 2016
- questions[23]= "24)  Seg&uacute;n el proyecto GNU, &iquest;cu&aacute;l de las siguientes NO puede ser considerada una libertad esencial del software libre?";
+//  Id pregunta: 772 Año de creación de pregunta: 2016
+ questions[23]= "24)  La Administraci&oacute;n General del Estado act&uacute;a y se organiza de acuerdo con los principios establecidos en el art&iacute;culo 3, as&iacute; como los de:";
  choices[23]= new Array();
- choices[23][0] = "La libertad de ejecutar el programa como se desee, con cualquier prop&oacute;sito.";
- choices[23][1] = "La libertad de estudiar c&oacute;mo funciona el programa, y modificarlo para que tenga la funcionalidad deseada.";
- choices[23][2] = "La libertad de redistribuir copias para ayudar al pr&oacute;jimo.";
- choices[23][3] = "La libertad de distribuir a terceros versiones modificadas siempre que no tengan uso comercial.";
- answers[23] = choices[23][3];
- units[23] = "66";
- comments[23] = "Id Pregunta: 10037. AGE A1 2015";
+ choices[23][0] = "desconcentraci&oacute;n funcional y descentralizaci&oacute;n funcional y territorial";
+ choices[23][1] = "descentralizaci&oacute;n territorial y desconcentraci&oacute;n funcional y territorial";
+ choices[23][2] = "descentralizaci&oacute;n funcional y desconcentraci&oacute;n funcional y territorial";
+ choices[23][3] = "desconcentraci&oacute;n territorial y descentralizaci&oacute;n funcional y territorial";
+ answers[23] = choices[23][2];
+ units[23] = "4, 7, 8, 9";
+ comments[23] = "Id Pregunta: 772. Ley 40/2015";
 
 
-//  Id pregunta: 10313 Año de creación de pregunta: 2016
- questions[24]= "25)  Indique qui&eacute;n propone al candidato para el cargo de Presidente de la Comisi&oacute;n Europea:";
+//  Id pregunta: 692 Año de creación de pregunta: 2016
+ questions[24]= "25)  Se&ntilde;ale la afirmaci&oacute;n falsa:";
  choices[24]= new Array();
- choices[24][0] = "El Consejo Europeo.";
- choices[24][1] = "El Consejo de la Uni&oacute;n Europea.";
- choices[24][2] = "Los miembros de la Comisi&oacute;n Europea.";
- choices[24][3] = "El Parlamento Europeo.";
- answers[24] = choices[24][0];
- units[24] = "5";
- comments[24] = "Id Pregunta: 10313. UNION EUROPEA";
+ choices[24][0] = "El Reglamento (UE) 910/2014 no prev&eacute; la emisi&oacute;n de certificados de firma electr&oacute;nica a favor de personas jur&iacute;dicas o entidades sin personalidad jur&iacute;dica";
+ choices[24][1] = "Con la aprobaci&oacute;n del Reglamento (UE) 910/2014 queda derogada la Ley 59/2003, de 19 de diciembre, de firma electr&oacute;nica";
+ choices[24][2] = "El Reglamento (UE) 910/2014 desplaza desde el 1 de julio de 2016 los preceptos de la Ley 59/2003 que se opongan a su contenido";
+ choices[24][3] = "A partir del 1 de julio de 2016 dejar&aacute;n de emitirse certificados de firma electr&oacute;nica de personas jur&iacute;dicas y entidades sin personalidad jur&iacute;dica, pudiendo en su lugar expedirse certificados de sello electr&oacute;nico o certificados de firma de persona f&iacute;sica representante";
+ answers[24] = choices[24][1];
+ units[24] = "77";
+ comments[24] = "Id Pregunta: 692. http://www.minetad.gob.es/telecomunicaciones/es-ES/Servicios/FirmaElectronica/Documents/nota-web-certifs-pers-juridica.pdf";
 
 
-//  Id pregunta: 10606 Año de creación de pregunta: 2016
- questions[25]= "26)  En ITIL v3, entre las metas del Proceso de la Planificaci&oacute;n y Soporte de la Transici&oacute;n del Servicio, se incluye:";
+//  Id pregunta: 766 Año de creación de pregunta: 2016
+ questions[25]= "26)  Respecto a los &oacute;rganos administrativos (se&ntilde;ala la incorrecta):";
  choices[25]= new Array();
- choices[25][0] = "Planificar y coordinar recursos para garantizar el cumplimiento de las especificaciones de la mejora continua del servicio.";
- choices[25][1] = "Identificar, gestionar y limitar riesgos que puedan interrumpir el servicio a partir de la fase de transici&oacute;n del servicio.";
- choices[25][2] = "Planificar, identificar y gestionar recursos para garantizar el cumplimiento de las especificaciones de la mejora continua del servicio.";
- choices[25][3] = "Todas las respuestas son correctas.";
+ choices[25][0] = "corresponde a cada Administraci&oacute;n P&uacute;blica delimitar, en su respectivo &aacute;mbito competencial, las unidades administrativas que configuran los &oacute;rganos administrativos propios de las especialidades derivadas de su organizaci&oacute;n";
+ choices[25][1] = "en ning&uacute;n caso podr&aacute;n crearse nuevos &oacute;rganos que supongan duplicaci&oacute;n de otros ya existentes";
+ choices[25][2] = "la creaci&oacute;n de un nuevo &oacute;rgano s&oacute;lo tendr&aacute; lugar previa comprobaci&oacute;n de que no existe otro en la misma Administraci&oacute;n P&uacute;blica que desarrolle igual funci&oacute;n sobre el mismo territorio y poblaci&oacute;n";
+ choices[25][3] = "todas son correctas";
  answers[25] = choices[25][1];
- units[25] = "101";
- comments[25] = "Id Pregunta: 10606. Junta de Extremadura A1 2015";
+ units[25] = "4, 7, 8, 9";
+ comments[25] = "Id Pregunta: 766. Ley 40/2015";
 
 
-//  Id pregunta: 10050 Año de creación de pregunta: 2016
- questions[26]= "27)  &iquest;Cu&aacute;l de las siguientes caracter&iacute;sticas del DNI electr&oacute;nico es exclusiva del DNIe 3.0?";
+//  Id pregunta: 431 Año de creación de pregunta: 2016
+ questions[26]= "27)  En el supuesto de que una empresa haga publicidad enga&ntilde;osa de sus acciones de responsabilidad en materia de igualdad, podr&aacute;n ejercer la acci&oacute;n de cesaci&oacute;n cuando se considere:";
  choices[26]= new Array();
- choices[26][0] = "Cumple la norma ISO 7816 para tarjetas inteligentes.";
- choices[26][1] = "Emplea la tecnolog&iacute;a inal&aacute;mbrica NFC.";
- choices[26][2] = "Contiene certificados de componente, autenticaci&oacute;n y firma.";
- choices[26][3] = "Sus certificados cumplen la norma X509 v3.";
- answers[26] = choices[26][1];
- units[26] = "78";
- comments[26] = "Id Pregunta: 10050. AGE A1 2015";
+ choices[26][0] = "El Instituto de la Mujer.";
+ choices[26][1] = "&Oacute;rganos equivalentes al anterior pertenecientes a las CCAA.";
+ choices[26][2] = "Ambas son correctas.";
+ choices[26][3] = "A y B son incorrectas.";
+ answers[26] = choices[26][2];
+ units[26] = "14";
+ comments[26] = "Id Pregunta: 431. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10240 Año de creación de pregunta: 2016
- questions[27]= "28)  Las dos C&aacute;maras que configuran las Cortes Generales:";
+//  Id pregunta: 271 Año de creación de pregunta: 2016
+ questions[27]= "28)  La delegaci&oacute;n legislativa de las Cortes Generales en el Gobierno, cuando se trata de refundir varios textos legales en uno solo, deber&aacute; otorgarse mediante:";
  choices[27]= new Array();
- choices[27][0] = "Se re&uacute;nen en dos periodos ordinarios: de septiembre a diciembre, y de febrero a julio.";
- choices[27][1] = "Se re&uacute;nen en dos periodos ordinarios: de septiembre a noviembre, y de febrero a junio.";
- choices[27][2] = "Pueden reunirse en sesiones extraordinarias, a petici&oacute;n de la Diputaci&oacute;n Permanente.";
- choices[27][3] = "Pueden reunirse en sesiones extraordinarias, a petici&oacute;n de la mayor&iacute;a simple de los miembros de cualquiera de las C&aacute;maras.";
+ choices[27][0] = "Ley org&aacute;nica.";
+ choices[27][1] = "Ley ordinaria.";
+ choices[27][2] = "Ley de bases.";
+ choices[27][3] = "Ley marco.";
  answers[27] = choices[27][0];
  units[27] = "1";
- comments[27] = "Id Pregunta: 10240. CONSTITUCION1978";
+ comments[27] = "Id Pregunta: 271. CONSTITUCION1978";
 
 
-//  Id pregunta: 10513 Año de creación de pregunta: 2016
- questions[28]= "29)  La presente Ley se aplica al sector p&uacute;blico, que comprende (se&ntilde;ala la incorrecta):";
+//  Id pregunta: 328 Año de creación de pregunta: 2016
+ questions[28]= "29)  El principal &oacute;rgano decisorio de la Comunidad Europea es:";
  choices[28]= new Array();
- choices[28][0] = "la Administraci&oacute;n General del Estado y las Administraciones de las Comunidades Aut&oacute;nomas";
- choices[28][1] = "las Entidades que integran la Administraci&oacute;n Local";
- choices[28][2] = "el sector p&uacute;blico institucional";
- choices[28][3] = "el sector privado corporativo";
- answers[28] = choices[28][3];
- units[28] = "7";
- comments[28] = "Id Pregunta: 10513. LEY 39/2015";
+ choices[28][0] = "El Presidente del Consejo Europeo.";
+ choices[28][1] = "La Comisi&oacute;n.";
+ choices[28][2] = "El Consejo.";
+ choices[28][3] = "El Parlamento Europeo.";
+ answers[28] = choices[28][2];
+ units[28] = "5";
+ comments[28] = "Id Pregunta: 328. UNION EUROPEA";
 
 
-//  Id pregunta: 10217 Año de creación de pregunta: 2016
- questions[29]= "30)  Tal y como marca la Constituci&oacute;n Espa&ntilde;ola de 1978, en el caso de los refer&eacute;ndums consultivos:";
+//  Id pregunta: 94 Año de creación de pregunta: 2016
+ questions[29]= "30)  &iquest;Cu&aacute;l de las siguientes caracter&iacute;sticas NO es propia de Apache Hadoop?";
  choices[29]= new Array();
- choices[29][0] = "Su propuesta parte del Presidente del Gobierno, ha de ser autorizada por el Congreso de los Diputados.";
- choices[29][1] = "Son propuestos por el Consejo de Ministros, siendo autorizados previamente por el Presidente del Gobierno.";
- choices[29][2] = "Son refrendados por el Rey.";
- choices[29][3] = "Son convocados por el Presidente del Gobierno.";
- answers[29] = choices[29][0];
- units[29] = "1";
- comments[29] = "Id Pregunta: 10217. CONSTITUCION1978";
+ choices[29][0] = "Es un framework de software libre.";
+ choices[29][1] = "Es una base de datos NoSQL.";
+ choices[29][2] = "Est&aacute; basado en MapReduce.";
+ choices[29][3] = "Puede emplearse en sistemas de datos masivos (Big Data).";
+ answers[29] = choices[29][1];
+ units[29] = "73";
+ comments[29] = "Id Pregunta: 94. AGE A1 2015";
 
 
-//  Id pregunta: 10355 Año de creación de pregunta: 2016
- questions[30]= "31)  En el marco de la Uni&oacute;n Europea, los dict&aacute;menes:";
+//  Id pregunta: 778 Año de creación de pregunta: 2016
+ questions[30]= "31)  En la organizaci&oacute;n territorial de la Administraci&oacute;n General del Estado son &oacute;rganos directivos:";
  choices[30]= new Array();
- choices[30][0] = "Son vinculantes solamente.";
- choices[30][1] = "No son vinculantes, ya que su contenido no obliga a aqu&eacute;llos a los que van dirigidos.";
- choices[30][2] = "Son preceptivos y vinculantes.";
- choices[30][3] = "Son preceptivos y no vinculantes.";
- answers[30] = choices[30][1];
- units[30] = "5";
- comments[30] = "Id Pregunta: 10355. UNION EUROPEA";
+ choices[30][0] = "los Delegados del Gobierno en las Comunidades Aut&oacute;nomas";
+ choices[30][1] = "los Subdelegados del Gobierno en las provincias";
+ choices[30][2] = "los Subdelegados del Gobierno en las entidades locales";
+ choices[30][3] = "a y b son correctas";
+ answers[30] = choices[30][3];
+ units[30] = "4, 7, 8, 9";
+ comments[30] = "Id Pregunta: 778. Ley 40/2015";
 
 
-//  Id pregunta: 10528 Año de creación de pregunta: 2016
- questions[31]= "32)  Podr&aacute;n actuar en representaci&oacute;n de otras ante las Administraciones P&uacute;blicas:";
+//  Id pregunta: 757 Año de creación de pregunta: 2016
+ questions[31]= "32)  Tienen la consideraci&oacute;n de Administraciones P&uacute;blicas (se&ntilde;ala la incorrecta):";
  choices[31]= new Array();
- choices[31][0] = "las personas f&iacute;sicas con o sin capacidad de obrar y las personas jur&iacute;dicas, aunque no est&eacute; previsto en sus Estatutos";
- choices[31][1] = "las personas f&iacute;sicas con capacidad de obrar y las personas jur&iacute;dicas, aunque no est&eacute; previsto en sus Estatutos";
- choices[31][2] = "las personas f&iacute;sicas con o sin capacidad de obrar y las personas jur&iacute;dicas, siempre que ello est&eacute; previsto en sus Estatutos";
- choices[31][3] = "las personas f&iacute;sicas con capacidad de obrar y las personas jur&iacute;dicas, siempre que ello est&eacute; previsto en sus Estatutos";
+ choices[31][0] = "la Administraci&oacute;n General del Estado";
+ choices[31][1] = "las Administraciones de las Comunidades Aut&oacute;nomas";
+ choices[31][2] = "las Entidades que integran la Administraci&oacute;n Local";
+ choices[31][3] = "cualesquiera organismos p&uacute;blicos y entidades de derecho p&uacute;blico o privado vinculados o dependientes de las Administraciones P&uacute;blicas";
  answers[31] = choices[31][3];
- units[31] = "7";
- comments[31] = "Id Pregunta: 10528. LEY 39/2015";
+ units[31] = "4, 7, 8, 9";
+ comments[31] = "Id Pregunta: 757. Ley 40/2015";
 
 
-//  Id pregunta: 10590 Año de creación de pregunta: 2016
- questions[32]= "33)  &iquest;Cu&aacute;les son objetivos estrat&eacute;gicos del Plan de Transformaci&oacute;n Digital de la AGE y sus OOPP?";
+//  Id pregunta: 384 Año de creación de pregunta: 2016
+ questions[32]= "33)  De conformidad con lo establecido en la Org&aacute;nica 3/2007 para la igualdad efectiva entre mujeres y hombres, los &oacute;rganos de contrataci&oacute;n podr&aacute;n establecer en los pliegos de cl&aacute;usulas administrativas particulares la preferencia, en igualdad de condiciones jur&iacute;dicas y econ&oacute;micas, en la adjudicaci&oacute;n de los contratos de las proposiciones presentadas por aquellas empresas que:";
  choices[32]= new Array();
- choices[32][0] = "Incrementar la productividad y la eficacia del funcionamiento interno de la Administraci&oacute;n";
- choices[32][1] = "Convertir el canal digital en el preferente para la relaci&oacute;n de los ciudadanos y empresas con la Administraci&oacute;n";
- choices[32][2] = "Adoptar una estrategia corporativa de seguridad y usabilidad de los servicios p&uacute;blicos digitales";
- choices[32][3] = "Todos los anteriores";
- answers[32] = choices[32][3];
- units[32] = "19";
- comments[32] = "Id Pregunta: 10590. Estrategia TIC";
+ choices[32][0] = "Sean dirigidas por mujeres";
+ choices[32][1] = "Cuenten con un colectivo paritario de trabajadores y trabajadoras";
+ choices[32][2] = "Incluyan en su proposici&oacute;n para ejecutar el contrato medidas para promover la igualdad efectiva entre mujeres y hombres";
+ choices[32][3] = "Fomenten el acceso de las mujeres a puestos directivos.";
+ answers[32] = choices[32][2];
+ units[32] = "14";
+ comments[32] = "Id Pregunta: 384. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10680 Año de creación de pregunta: 2016
- questions[33]= "34)  Seg&uacute;n el Real Decreto Ley 5/2013, de 15 de marzo, de medidas para favorecer la continuidad de la vida laboral de los trabajadores de mayor edad y promover el envejecimiento activo:";
+//  Id pregunta: 541 Año de creación de pregunta: 2016
+ questions[33]= "34)  Se&ntilde;ala la correcta:";
  choices[33]= new Array();
- choices[33][0] = "La cuant&iacute;a de la pensi&oacute;n de jubilaci&oacute;n compatible con el trabajo ser&aacute; equivalente al 50 por 100 del importe resultante en el reconocimiento inicial, una vez aplicado, si procede, el l&iacute;mite m&aacute;ximo de pensi&oacute;n p&uacute;blica, o del que se est&eacute; percibiendo, en el momento de inicio de la compatibilidad con el trabajo, excluido, en todo caso, el complemento por m&iacute;nimos, cualquiera que sea la jornada laboral o la actividad que realice el pensionista.";
- choices[33][1] = "El trabajo compatible debe realizarse a tiempo parcial.";
- choices[33][2] = "Finalizada la relaci&oacute;n laboral por cuenta ajena o producido el cese en la actividad por cuenta propia, se restablecer&aacute; el percibo &iacute;ntegro de la pensi&oacute;n de jubilaci&oacute;n transcurridos 12 meses de la finalizaci&oacute;n de la relaci&oacute;n laboral.";
- choices[33][3] = "El acceso a la pensi&oacute;n podr&aacute; tener lugar hasta 5 a&ntilde;os antes de la edad que en cada caso resulte de aplicaci&oacute;n.";
- answers[33] = choices[33][0];
- units[33] = "14";
- comments[33] = "Id Pregunta: 10680. Pensiones";
+ choices[33][0] = "la falta o insuficiente acreditaci&oacute;n de la representaci&oacute;n impedir&aacute; que se tenga por realizado el acto de que se trate";
+ choices[33][1] = "el documento electr&oacute;nico que acredite el resultado de la consulta al registro electr&oacute;nico de apoderamientos correspondiente tendr&aacute; la condici&oacute;n de acreditaci&oacute;n a estos efectos";
+ choices[33][2] = "los registros electr&oacute;nicos generales y particulares de apoderamientos pertenecientes a todas y cada una de las Administraciones, ser&aacute;n preferiblemente interoperables entre s&iacute;";
+ choices[33][3] = "el interesado no podr&aacute; comparecer por s&iacute; mismo en un procedimiento en el que haya designado representante";
+ answers[33] = choices[33][1];
+ units[33] = "7";
+ comments[33] = "Id Pregunta: 541. LEY 39/2015";
 
 
-//  Id pregunta: 10457 Año de creación de pregunta: 2016
- questions[34]= "35)  Seg&uacute;n el art&iacute;culo 44.3 de la Ley 47/2003, de 26 de noviembre, General Presupuestaria, los cr&eacute;ditos para la acci&oacute;n protectora en su modalidad no contributiva y universal se especificar&aacute;n:";
+//  Id pregunta: 827 Año de creación de pregunta: 2016
+ questions[34]= "35)  Ley 40/2015, de 1 de octubre, de R&eacute;gimen Jur&iacute;dico del Sector P&uacute;blico. La formalizaci&oacute;n de las encomiendas de gesti&oacute;n se ajustar&aacute; a las siguientes reglas:";
  choices[34]= new Array();
- choices[34][0] = "A nivel de secci&oacute;n de programa.";
- choices[34][1] = "A nivel de grupo de programa.";
- choices[34][2] = "Ninguna de las respuestas es correcta.";
- choices[34][3] = "A nivel de programa.";
+ choices[34][0] = "Cuando la encomienda de gesti&oacute;n se realice entre &oacute;rganos administrativos o Entidades de Derecho P&uacute;blico pertenecientes a la misma Administraci&oacute;n deber&aacute; formalizarse en los t&eacute;rminos que establezca su normativa propia y, en su defecto, por acuerdo expreso de los &oacute;rganos o Entidades de Derecho P&uacute;blico intervinientes. En todo caso, el instrumento de formalizaci&oacute;n de la encomienda de gesti&oacute;n y su resoluci&oacute;n deber&aacute; ser publicada, para su eficacia, en el Bolet&iacute;n Oficial del Estado, en el Bolet&iacute;n oficial de la Comunidad Aut&oacute;noma o en el de la Provincia, seg&uacute;n la Administraci&oacute;n a que pertenezca el &oacute;rgano encomendante.";
+ choices[34][1] = "Cada Administraci&oacute;n podr&aacute; regular los requisitos necesarios para la validez de tales acuerdos que incluir&aacute;n, al menos, expresa menci&oacute;n de la actividad o actividades a las que afecten, el plazo de vigencia y la naturaleza y alcance de la gesti&oacute;n encomendada.";
+ choices[34][2] = "Cuando la encomienda de gesti&oacute;n se realice entre &oacute;rganos y Entidades de Derecho P&uacute;blico de distintas Administraciones se formalizar&aacute; mediante firma del correspondiente convenio entre ellas, que deber&aacute; ser publicado en el &laquo;Bolet&iacute;n Oficial del Estado&raquo;, en el Bolet&iacute;n oficial de la Comunidad Aut&oacute;noma o en el de la Provincia, seg&uacute;n la Administraci&oacute;n a que pertenezca el &oacute;rgano encomendante, salvo en el supuesto de la gesti&oacute;n ordinaria de los servicios de las Comunidades Aut&oacute;nomas por las Diputaciones Provinciales o en su caso Cabildos o Consejos insulares, que se regir&aacute; por la legislaci&oacute;n de R&eacute;gimen Local.";
+ choices[34][3] = "Todas son correctas.";
  answers[34] = choices[34][3];
- units[34] = "10";
- comments[34] = "Id Pregunta: 10457. PRESUPUESTOS GENERALES";
+ units[34] = "4, 7, 8, 9";
+ comments[34] = "Id Pregunta: 827. Ley 40/2015";
 
 
-//  Id pregunta: 10623 Año de creación de pregunta: 2016
- questions[35]= "36)  En PHP 5.0, &iquest;cu&aacute;l es la regla para formar los nombres de las variables?";
+//  Id pregunta: 54 Año de creación de pregunta: 2016
+ questions[35]= "36)  &iquest;A qu&eacute; tipo de ataque nos referimos cuando se suplanta la identidad de una direcci&oacute;n IP origen?";
  choices[35]= new Array();
- choices[35][0] = "Una variable debe comenzar con el signo $ seguido del nombre de la variable.";
- choices[35][1] = "Una variable debe comenzar con el signo &amp; seguido del nombre de la variable.";
- choices[35][2] = "Una variable debe comenzar por un car&aacute;cter num&eacute;rico.";
- choices[35][3] = "No hay regla para la formaci&oacute;n de los nombres de las variables.";
- answers[35] = choices[35][0];
- units[35] = "65";
- comments[35] = "Id Pregunta: 10623. Junta de Extremadura A1 2015";
+ choices[35][0] = "DoS";
+ choices[35][1] = "Phishing";
+ choices[35][2] = "Sniffing";
+ choices[35][3] = "Spoofing";
+ answers[35] = choices[35][3];
+ units[35] = "119";
+ comments[35] = "Id Pregunta: 54. AGE A1 2015";
 
 
-//  Id pregunta: 10056 Año de creación de pregunta: 2016
- questions[36]= "37)  En cuanto al Plan de Sistemas de Informaci&oacute;n:";
+//  Id pregunta: 722 Año de creación de pregunta: 2016
+ questions[36]= "37)  &iquest;Cu&aacute;l es la principal desventaja de sprints m&aacute;s largos?";
  choices[36]= new Array();
- choices[36][0] = "Sirve como punto de partida del Plan Estrat&eacute;gico de la Organizaci&oacute;n.";
- choices[36][1] = "No es abordado detalladamente dentro de la metodolog&iacute;a M&Eacute;TRICA Versi&oacute;n 3.";
- choices[36][2] = "Fija el plan de proyectos a desarrollar, detallando los m&aacute;s inmediatos.";
- choices[36][3] = "Es un documento r&iacute;gido que debe ser actualizado s&oacute;lo ante discontinuidades de los productos tecnol&oacute;gicos sobre los que se sustenta.";
- answers[36] = choices[36][2];
- units[36] = "83";
- comments[36] = "Id Pregunta: 10056. AGE A1 2015";
+ choices[36][0] = "Permite reaccionar al equipo mejor ante imprevistos";
+ choices[36][1] = "Se obtiene feedback de los clientes con mayor brevedad";
+ choices[36][2] = "Se reduce el n&uacute;mero de reuniones de sprint";
+ choices[36][3] = "Se puede desarrollar algo diferente a lo requerido y obtener el feedback del cliente m&aacute;s tarde.";
+ answers[36] = choices[36][3];
+ units[36] = "34, 84";
+ comments[36] = "Id Pregunta: 722. Metodologias &aacute;giles";
 
 
-//  Id pregunta: 10373 Año de creación de pregunta: 2016
- questions[37]= "38)  &iquest;Cu&aacute;ntos Abogados Generales asisten al Tribunal Superior de Justicia?:";
+//  Id pregunta: 577 Año de creación de pregunta: 2016
+ questions[37]= "38)  &iquest;Cu&aacute;ndo fue aprobada la Estrategia TIC?";
  choices[37]= new Array();
- choices[37][0] = "Nueve.";
- choices[37][1] = "Diez.";
- choices[37][2] = "Siete.";
- choices[37][3] = "Ocho.";
- answers[37] = choices[37][3];
- units[37] = "5";
- comments[37] = "Id Pregunta: 10373. UNION EUROPEA";
+ choices[37][0] = "El 2 de Octubre de 2015";
+ choices[37][1] = "El 15 de Septiembre de 2015";
+ choices[37][2] = "El 1 de Octubre de 2015";
+ choices[37][3] = "El 5 de Octubre de 2015";
+ answers[37] = choices[37][0];
+ units[37] = "19";
+ comments[37] = "Id Pregunta: 577. Estrategia TIC";
 
 
-//  Id pregunta: 10426 Año de creación de pregunta: 2016
- questions[38]= "39)  La aprobaci&oacute;n de convocatorias de pruebas selectivas para el acceso al empleo p&uacute;blico deber&aacute; acompa&ntilde;arse de:";
+//  Id pregunta: 77 Año de creación de pregunta: 2016
+ questions[38]= "39)  Respecto al uso de servicios de firma de documentos electr&oacute;nicos mediante certificados electr&oacute;nicos centralizados, mediante el sistema Cl@ve, indique cu&aacute;l de las siguientes afirmaciones es incorrecta:";
  choices[38]= new Array();
- choices[38][0] = "Un plan de igualdad.";
- choices[38][1] = "Un informe de impacto de g&eacute;nero.";
- choices[38][2] = "Un programa de igualdad.";
- choices[38][3] = "Todas son correctas.";
- answers[38] = choices[38][1];
- units[38] = "14";
- comments[38] = "Id Pregunta: 10426. POLITICAS DE IGUALDAD";
+ choices[38][0] = "Para poder acceder al servicio, el usuario deber&aacute; solicitar previa y expresamente la emisi&oacute;n de los certificados electr&oacute;nicos centralizados correspondientes.";
+ choices[38][1] = "Los certificados electr&oacute;nicos centralizados ser&aacute;n emitidos con las mismas garant&iacute;as de identificaci&oacute;n del DNI electr&oacute;nico del ciudadano.";
+ choices[38][2] = "El acceso al servicio requiere en todo caso que el usuario se haya registrado en Cl@ve y haya activado su Cl@ve permanente.";
+ choices[38][3] = "En el momento de la identificaci&oacute;n, se requerir&aacute; la utilizaci&oacute;n de una verificaci&oacute;n de seguridad adicional mediante un c&oacute;digo de un solo uso y validez limitada en el tiempo que se enviar&aacute; al tel&eacute;fono m&oacute;vil del usuario registrado.";
+ answers[38] = choices[38][2];
+ units[38] = "47";
+ comments[38] = "Id Pregunta: 77. AGE A1 2015";
 
 
-//  Id pregunta: 10326 Año de creación de pregunta: 2016
- questions[39]= "40)  La Mesa del Parlamento estar&aacute; compuesta por:";
+//  Id pregunta: 691 Año de creación de pregunta: 2016
+ questions[39]= "40)  Se&ntilde;ale cu&aacute;l de los siguientes no es uno de los contenidos de los certificados cualificados de firma electr&oacute;nica seg&uacute;n el Reglamento (UE) 910/2014";
  choices[39]= new Array();
- choices[39][0] = "El Presidente, doce Vicepresidentes y los Cuestores.";
- choices[39][1] = "El Presidente, diez Vicepresidentes y los Cuestores.";
- choices[39][2] = "El Presidente, dos Vicepresidentes y los Cuestores.";
- choices[39][3] = "El Presidente, catorce Vicepresidentes y los Cuestores.";
- answers[39] = choices[39][3];
- units[39] = "5";
- comments[39] = "Id Pregunta: 10326. UNION EUROPEA";
+ choices[39][0] = "El nombre del firmante o un seudo&#769;nimo";
+ choices[39][1] = "Los datos de validacio&#769;n de la firma electro&#769;nica";
+ choices[39][2] = "La firma electro&#769;nica cualificada o el sello electro&#769;nico cualificado del prestador de servicios de confianza expedidor";
+ choices[39][3] = "La localizacio&#769;n de los servicios que se pueden utilizar para consultar el estado de validez del certificado";
+ answers[39] = choices[39][2];
+ units[39] = "77";
+ comments[39] = "Id Pregunta: 691. Anexo I del Reglamento 910/2014";
 
 
-//  Id pregunta: 10070 Año de creación de pregunta: 2016
- questions[40]= "41)  &iquest;Qui&eacute;n determina las condiciones t&eacute;cnicas normalizadas del Punto General de Entrada de Factura Electr&oacute;nica?";
+//  Id pregunta: 26 Año de creación de pregunta: 2016
+ questions[40]= "41)  Usted, como directivo TIC de la AGE, decide crear un portal web, con una direcci&oacute;n electr&oacute;nica nueva, con el objetivo de informar al ciudadano sobre determinados aspectos relacionados con su unidad. &iquest;Cu&aacute;l de los siguientes tipos de certificado utilizar&iacute;a para identificar a los servidores de su portal informativo?";
  choices[40]= new Array();
- choices[40][0] = "La Secretar&iacute;a de Estado de Administraciones P&uacute;blicas conjuntamente con la Secretar&iacute;a de Estado de Presupuestos y Gastos";
- choices[40][1] = "La Secretar&iacute;a de Estado de Hacienda conjuntamente con la Comisi&oacute;n Ministerial de Administraci&oacute; Digital";
- choices[40][2] = "La Secretar&iacute;a de Estado de Telecomunicaciones y para la Sociedad de la Informaci&oacute;n";
- choices[40][3] = "La Secretar&iacute;a General de Administraci&oacute;n Digital";
- answers[40] = choices[40][0];
- units[40] = "75";
- comments[40] = "Id Pregunta: 10070. AGE A1 2015: En la pregunta del examen original, se hablaba de la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaci&oacute;n, actualmente asume sus funciones la Secretar&iacute;a General de Administraci&oacute;n Digital seg&uacute;n Real Decreto 424/2016";
+ choices[40][0] = "Sello electr&oacute;nico";
+ choices[40][1] = "Sede electr&oacute;nica";
+ choices[40][2] = "Servidor seguro (SSL/TLS)";
+ choices[40][3] = "Empleado p&uacute;blico";
+ answers[40] = choices[40][2];
+ units[40] = "7";
+ comments[40] = "Id Pregunta: 26. AGE A1 2015";
 
 
-//  Id pregunta: 10346 Año de creación de pregunta: 2016
- questions[41]= "42)  La duraci&oacute;n del mandato de un diputado del Parlamento Europeo es de:";
+//  Id pregunta: 116 Año de creación de pregunta: 2016
+ questions[41]= "42)  &iquest;Cu&aacute;l de las siguientes es una pol&iacute;tica pasiva de empleo?";
  choices[41]= new Array();
- choices[41][0] = "25 diputados lo son con car&aacute;cter vitalicio y el resto se renueva cada cinco a&ntilde;os.";
- choices[41][1] = "Cuatro a&ntilde;os, como un diputado espa&ntilde;ol.";
- choices[41][2] = "Cinco a&ntilde;os.";
- choices[41][3] = "Ninguna es correcta.";
- answers[41] = choices[41][2];
- units[41] = "5";
- comments[41] = "Id Pregunta: 10346. UNION EUROPEA";
+ choices[41][0] = "La organizaci&oacute;n de cursos de formaci&oacute;n gratuitos para desempleados";
+ choices[41][1] = "La intermediaci&oacute;n en el mercado laboral, es decir, recoger las ofertas de trabajo y cruzarlas con las demandas.";
+ choices[41][2] = "Adecuar los planes de estudio a la realidad laboral";
+ choices[41][3] = "El pago de subsidios a parados";
+ answers[41] = choices[41][3];
+ units[41] = "15";
+ comments[41] = "Id Pregunta: 116. ";
 
 
-//  Id pregunta: 10654 Año de creación de pregunta: 2016
- questions[42]= "43)  &iquest;Qu&eacute; significa la tolerancia a partici&oacute;n dentro del teorema CAP?";
+//  Id pregunta: 172 Año de creación de pregunta: 2016
+ questions[42]= "43)  La Constituci&oacute;n Espa&ntilde;ola reconoce el derecho de reuni&oacute;n:";
  choices[42]= new Array();
- choices[42][0] = "El sistema podr&aacute; seguir procesando una petici&oacute;n aunque se pierda la conectividad con algun nodo";
- choices[42][1] = "Las modificaciones se aplican a todos los nodos en su conjunto en el mismo momento";
- choices[42][2] = "Cualquier peticion recibida en un nodo debe tener respuesta";
- choices[42][3] = "El teorema CAP no habla de tolerancia a particiones";
- answers[42] = choices[42][0];
- units[42] = "73";
- comments[42] = "Id Pregunta: 10654. ";
+ choices[42][0] = "Pac&iacute;fica y sin armas pero con necesidad de autorizaci&oacute;n previa.";
+ choices[42][1] = "En lugares de tr&aacute;nsito p&uacute;blico previa autorizaci&oacute;n de la autoridad.";
+ choices[42][2] = "En los casos de reuniones en lugares de tr&aacute;nsito p&uacute;blico y manifestaciones se dar&aacute; comunicaci&oacute;n previa a la autoridad.";
+ choices[42][3] = "No es preciso realizar ninguna actuaci&oacute;n.";
+ answers[42] = choices[42][2];
+ units[42] = "1";
+ comments[42] = "Id Pregunta: 172. CONSTITUCION1978";
 
 
-//  Id pregunta: 10145 Año de creación de pregunta: 2016
- questions[43]= "44)  Puede interponerse un recurso extraordinario de revisi&oacute;n:";
+//  Id pregunta: 649 Año de creación de pregunta: 2016
+ questions[43]= "44)  Los objetivos que persegu&iacute;a Codd con el modelo relacional, se pueden resumir en:";
  choices[43]= new Array();
- choices[43][0] = "Ante actos firmes en la v&iacute;a administrativa cuando al dictarlos se hubiera incurrido en error de hecho, que resulte de los propios documentos incorporados al expediente";
- choices[43][1] = "Ante actos firmes en la v&iacute;a administrativa cuando en la resoluci&oacute;n hayan influido esencialmente documentos o testimonios declarados falsos por sentencia judicial firme, anterior o posterior a aquella resoluci&oacute;n";
- choices[43][2] = "Ante actos firmes en la v&iacute;a administrativa cuando la resoluci&oacute;n se hubiese dictado como consecuencia de prevaricaci&oacute;n, cohecho, violencia, maquinaci&oacute;n fraudulenta u otra conducta punible y se haya declarado as&iacute; en virtud de sentencia judicial firme";
- choices[43][3] = "Todas las anteriores son ciertas";
- answers[43] = choices[43][3];
- units[43] = "8";
- comments[43] = "Id Pregunta: 10145. Ley 39/2015, Art&iacute;culo 125";
+ choices[43][0] = "Independencia f&iacute;sica, independencia l&oacute;gica, flexibilidad, uniformidad y sencillez.";
+ choices[43][1] = "Independencia f&iacute;sica, independencia l&oacute;gica y uniformidad.";
+ choices[43][2] = "Independencia f&iacute;sica, flexibilidad, uniformidad y sencillez.";
+ choices[43][3] = "Independencia f&iacute;sica, independencia l&oacute;gica, independencia conceptual, flexibilidad, uniformidad y sencillez.";
+ answers[43] = choices[43][0];
+ units[43] = "60";
+ comments[43] = "Id Pregunta: 649. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 10253 Año de creación de pregunta: 2016
- questions[44]= "45)  La Constituci&oacute;n Espa&ntilde;ola establece sobre la inform&aacute;tica que:";
+//  Id pregunta: 451 Año de creación de pregunta: 2016
+ questions[44]= "45)  En los Presupuestos, &iquest;qu&eacute; es lo que se prev&eacute; liquidar?";
  choices[44]= new Array();
- choices[44][0] = "La Ley potenciar&aacute; el uso de la inform&aacute;tica para garantizar la libertad de residencia y las transacciones electr&oacute;nicas en el marco de la econom&iacute;a de mercado y la planificaci&oacute;n del desarrollo econ&oacute;mico nacional.";
- choices[44][1] = "La Ley limitar&aacute; el uso de la inform&aacute;tica para garantizar el secreto de las comunicaciones, la informaci&oacute;n veraz y la solidaridad entre todos los ciudadanos.";
- choices[44][2] = "En la Constituci&oacute;n Espa&ntilde;ola de 1978 no se hace referencia expresa a la inform&aacute;tica.";
- choices[44][3] = "La Ley limitar&aacute; el uso de la inform&aacute;tica para garantizar el honor y la intimidad personal y familiar de los ciudadanos y el pleno ejercicio de sus derechos.";
- answers[44] = choices[44][3];
- units[44] = "1";
- comments[44] = "Id Pregunta: 10253. CONSTITUCION1978";
+ choices[44][0] = "Los cr&eacute;ditos";
+ choices[44][1] = "Las partidas presupuestarias";
+ choices[44][2] = "Los derechos";
+ choices[44][3] = "Las obligaciones";
+ answers[44] = choices[44][2];
+ units[44] = "10";
+ comments[44] = "Id Pregunta: 451. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 10134 Año de creación de pregunta: 2016
- questions[45]= "46)  La Ley 2/2015, de desindexaci&oacute;n de la econom&iacute;a espa&ntilde;ola, parte de un compromiso del Gobierno en el marco:";
+//  Id pregunta: 56 Año de creación de pregunta: 2016
+ questions[45]= "46)  En cuanto al Plan de Sistemas de Informaci&oacute;n:";
  choices[45]= new Array();
- choices[45][0] = "Del Programa Nacional de Reformas 2015 y 2016.";
- choices[45][1] = "Del Plan de Transformaci&oacute;n Digital 2015-2020.";
- choices[45][2] = "Del Programa Nacional de Reformas 2013 y 2014.";
- choices[45][3] = "Del Pacto Fiscal Europeo de 2012.";
+ choices[45][0] = "Sirve como punto de partida del Plan Estrat&eacute;gico de la Organizaci&oacute;n.";
+ choices[45][1] = "No es abordado detalladamente dentro de la metodolog&iacute;a M&Eacute;TRICA Versi&oacute;n 3.";
+ choices[45][2] = "Fija el plan de proyectos a desarrollar, detallando los m&aacute;s inmediatos.";
+ choices[45][3] = "Es un documento r&iacute;gido que debe ser actualizado s&oacute;lo ante discontinuidades de los productos tecnol&oacute;gicos sobre los que se sustenta.";
  answers[45] = choices[45][2];
- units[45] = "12";
- comments[45] = "Id Pregunta: 10134. Leyes modelo econ&oacute;mico";
+ units[45] = "83";
+ comments[45] = "Id Pregunta: 56. AGE A1 2015";
 
 
-//  Id pregunta: 10549 Año de creación de pregunta: 2016
- questions[46]= "47)  El presidente del pleno de la Comisi&oacute;n de Estrategia TIC es :";
+//  Id pregunta: 394 Año de creación de pregunta: 2016
+ questions[46]= "47)  La situaci&oacute;n en que una disposici&oacute;n, criterio o pr&aacute;ctica aparentemente neutros pone a personas de un sexo en desventaja particular con respecto a personas del otro, se denomina:";
  choices[46]= new Array();
- choices[46][0] = "El Ministro de Energ&iacute;a, Turismo y Agenda Digital";
- choices[46][1] = "El Ministro de Hacienda y Administraciones P&uacute;blicas";
- choices[46][2] = "El Presidente del Gobierno";
- choices[46][3] = "El Secretario General de Administraci&oacute;n Digital";
- answers[46] = choices[46][1];
- units[46] = "26";
- comments[46] = "Id Pregunta: 10549. Gobernanza TIC";
+ choices[46][0] = "Discriminaci&oacute;n indirecta.";
+ choices[46][1] = "Discriminaci&oacute;n directa.";
+ choices[46][2] = "Discriminaci&oacute;n por raz&oacute;n de sexo.";
+ choices[46][3] = "Discriminaci&oacute;n abusiva.";
+ answers[46] = choices[46][0];
+ units[46] = "14";
+ comments[46] = "Id Pregunta: 394. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10227 Año de creación de pregunta: 2016
- questions[47]= "48)  En relaci&oacute;n con el Defensor del Pueblo, se&ntilde;ale la afirmaci&oacute;n correcta:";
+//  Id pregunta: 390 Año de creación de pregunta: 2016
+ questions[47]= "48)  &iquest;Qu&eacute; &oacute;rgano colegiado de consulta y asesoramiento crea la Ley Org&aacute;nica 3/2007, con el fin esencial de servir de cauce para la participaci&oacute;n de las mujeres en la consecuci&oacute;n efectiva del principio de igualdad de trato y de oportunidades entre hombres y mujeres, y la lucha contra la discriminaci&oacute;n por raz&oacute;n de sexo?";
  choices[47]= new Array();
- choices[47][0] = "Es el supremo &oacute;rgano consultivo del Gobierno.";
- choices[47][1] = "Puede supervisar la actividad de la Administraci&oacute;n del Estado, pero no la de las Comunidades Aut&oacute;nomas.";
- choices[47][2] = "Puede anular resoluciones e imponer sanciones, siempre que no impliquen privaci&oacute;n de libertad.";
- choices[47][3] = "Tiene como misi&oacute;n la defensa de todos los derechos comprendidos en el T&iacute;tulo I de la Constituci&oacute;n Espa&ntilde;ola, y no s&oacute;lo los susceptibles de recurso de amparo.";
+ choices[47][0] = "El Consejo Nacional de la Mujer.";
+ choices[47][1] = "El Consejo de la Mujer.";
+ choices[47][2] = "El Instituto de la Mujer.";
+ choices[47][3] = "El Consejo de Participaci&oacute;n de la Mujer.";
  answers[47] = choices[47][3];
- units[47] = "1";
- comments[47] = "Id Pregunta: 10227. CONSTITUCION1978";
+ units[47] = "14";
+ comments[47] = "Id Pregunta: 390. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10429 Año de creación de pregunta: 2016
- questions[48]= "49)  Para la prevenci&oacute;n del acoso sexual y del acoso por raz&oacute;n de sexo, las Administraciones P&uacute;blicas negociar&aacute;n con la representaci&oacute;n legal de las trabajadoras y trabajadores, un protocolo de actuaci&oacute;n que comprender&aacute;:";
+//  Id pregunta: 255 Año de creación de pregunta: 2016
+ questions[48]= "49)  La soberan&iacute;a nacional reside en:";
  choices[48]= new Array();
- choices[48][0] = "La identificaci&oacute;n de las personas responsables de atender a quienes formulen una queja o denuncia.";
- choices[48][1] = "El tratamiento p&uacute;blico de las denuncias de hechos que pudieran ser constitutivos de acoso sexual o de acoso por raz&oacute;n de sexo.";
- choices[48][2] = "Ambas son correctas.";
- choices[48][3] = "Ambas son incorrectas.";
- answers[48] = choices[48][0];
- units[48] = "14";
- comments[48] = "Id Pregunta: 10429. POLITICAS DE IGUALDAD";
+ choices[48][0] = "el Parlamento nacional.";
+ choices[48][1] = "el Parlamento auton&oacute;mico o Asamblea.";
+ choices[48][2] = "el pueblo espa&ntilde;ol.";
+ choices[48][3] = "el Congreso y el Senado.";
+ answers[48] = choices[48][3];
+ units[48] = "1";
+ comments[48] = "Id Pregunta: 255. CONSTITUCION1978";
 
 
-//  Id pregunta: 10610 Año de creación de pregunta: 2016
- questions[49]= "50)  En el lenguaje de manipulaci&oacute;n de datos, &iquest;cu&aacute;l de las siguientes cl&aacute;usulas va asociada a la cl&aacute;usula HAVING?";
+//  Id pregunta: 174 Año de creación de pregunta: 2016
+ questions[49]= "50)  De conformidad con la Constituci&oacute;n Espa&ntilde;ola, &iquest; cu&aacute;l de los siguientes derechos y libertades es susceptible de tutela a trav&eacute;s del recurso de amparo ante el Tribunal Constitucional?";
  choices[49]= new Array();
- choices[49][0] = "GROUP BY.";
- choices[49][1] = "COUNT.";
- choices[49][2] = "WHERE.";
- choices[49][3] = "DISTINCT.";
- answers[49] = choices[49][0];
- units[49] = "60";
- comments[49] = "Id Pregunta: 10610. Junta de Extremadura A1 2015";
+ choices[49][0] = "El derecho a la propiedad privada.";
+ choices[49][1] = "El derecho de asociaci&oacute;n.";
+ choices[49][2] = "El derecho de fundaci&oacute;n.";
+ choices[49][3] = "El derecho de negociaci&oacute;n colectiva.";
+ answers[49] = choices[49][1];
+ units[49] = "1";
+ comments[49] = "Id Pregunta: 174. CONSTITUCION1978";
 
 
-//  Id pregunta: 10656 Año de creación de pregunta: 2016
- questions[50]= "51)  &iquest;Qu&eacute; aplicativo se suele usar como herramienta administrativa para el control de los nodos dentro del ecosistema BidData?";
+//  Id pregunta: 437 Año de creación de pregunta: 2016
+ questions[50]= "51)  Los Portales de EE.LL. y CC.AA. ofrecen una herramienta de gesti&oacute;n de identidades de los empleados p&uacute;blicos de las entidades locales o auton&oacute;micas. Se&ntilde;ale la respuesta incorrecta.";
  choices[50]= new Array();
- choices[50][0] = "Cassandra";
- choices[50][1] = "Riak";
- choices[50][2] = "Avro";
- choices[50][3] = "Zookeeper";
- answers[50] = choices[50][3];
- units[50] = "73";
- comments[50] = "Id Pregunta: 10656. ";
+ choices[50][0] = "Los empleados p&uacute;blicos de las EE.LL. o CC.AA. tienen que solicitar el alta en alguna unidad local o auton&oacute;mica.";
+ choices[50][1] = "Proporcionan tambi&eacute;n informaci&oacute;n del cargo y rol asociados.";
+ choices[50][2] = "Cualquier organismo p&uacute;blico puede solicitar la inclusi&oacute;n en la plataforma de nuevas aplicaciones dirigidas a las EE.LL. o CC.AA.: &eacute;stas podr&aacute;n acceder desde un punto centralizado al nuevo servicio.";
+ choices[50][3] = "Los portales est&aacute;n integrados y sincronizados con el Directorio Com&uacute;n de Unidades Org&aacute;nicas y Oficinas &#8208; DIR3, permitiendo que la gesti&oacute;n de usuarios y roles no se vea afectada por cambios en el directorio.";
+ answers[50] = choices[50][0];
+ units[50] = "43";
+ comments[50] = "Id Pregunta: 437. SERVICIOS COMUNES";
 
 
-//  Id pregunta: 10400 Año de creación de pregunta: 2016
- questions[51]= "52)  Corresponde probar la ausencia de discriminaci&oacute;n en las medidas adoptadas y su proporcionalidad, a:";
+//  Id pregunta: 608 Año de creación de pregunta: 2016
+ questions[51]= "52)  Una de las condiciones que un &aacute;rbol debe cumplir para ser &aacute;rbol b, siendo n el orden del &aacute;rbol, es:";
  choices[51]= new Array();
- choices[51][0] = "A la persona demandante.";
- choices[51][1] = "A la persona demandada.";
- choices[51][2] = "Al &oacute;rgano judicial.";
- choices[51][3] = "Al &oacute;rgano administrativo.";
+ choices[51][0] = "Cada p&aacute;gina contiene como m&aacute;ximo 2n + 1 elementos.";
+ choices[51][1] = "Cada p&aacute;gina, excepto la ra&iacute;z, contiene al menos n elementos.";
+ choices[51][2] = "Cada p&aacute;gina o es una hoja o tiene m descendientes, siendo m el n&uacute;mero de elementos o claves que tiene.";
+ choices[51][3] = "Las hojas no tienen por qu&eacute; estar al mismo nivel.";
  answers[51] = choices[51][1];
- units[51] = "14";
- comments[51] = "Id Pregunta: 10400. POLITICAS DE IGUALDAD";
+ units[51] = "56";
+ comments[51] = "Id Pregunta: 608. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 10679 Año de creación de pregunta: 2016
- questions[52]= "53)  De acuerdo a la Ley 27/2011, de 1 de agosto, sobre actualizaci&oacute;n, adecuaci&oacute;n y modernizaci&oacute;n del sistema de Seguridad Social, la edad exigida de jubilaci&oacute;n:";
+//  Id pregunta: 359 Año de creación de pregunta: 2016
+ questions[52]= "53)  Los Reglamentos no se caracterizan por:";
  choices[52]= new Array();
- choices[52][0] = "A partir del a&ntilde;o 2020, ser&aacute; de 67 a&ntilde;os para quellas personas con un periodo cotizado menor de 38 a&ntilde;os y 6 meses, y de 65 a&ntilde;os para personas con un perido cotizado igual o superior a 38 a&ntilde;os y 6 meses.";
- choices[52][1] = "A partir del a&ntilde;o 2027, ser&aacute; de 67 a&ntilde;os para quellas personas con un periodo cotizado menor de 38 a&ntilde;os y 6 meses, y de 65 a&ntilde;os para personas con un perido cotizado igual o superior a 38 a&ntilde;os y 6 meses.";
- choices[52][2] = "A partir del a&ntilde;o 2027, ser&aacute; de 67 a&ntilde;os para todas las personas con independencia del periodo cotizado.";
- choices[52][3] = "Aumenta progresivamente desde los 65 a los 67 a&ntilde;os desde el a&ntilde;o 2013 al 2027, si bien se mantiene en los 65 a&ntilde;os para personas con un periodo cotizado igual o mayor a 35 a&ntilde;os.";
- answers[52] = choices[52][1];
- units[52] = "14";
- comments[52] = "Id Pregunta: 10679. Pensiones";
+ choices[52][0] = "Ser de aplicaci&oacute;n directa a los Estados miembros.";
+ choices[52][1] = "Todas son caracter&iacute;sticas de los Reglamentos.";
+ choices[52][2] = "Ser obligatorios.";
+ choices[52][3] = "No poseer alcance general.";
+ answers[52] = choices[52][3];
+ units[52] = "5";
+ comments[52] = "Id Pregunta: 359. UNION EUROPEA";
 
 
-//  Id pregunta: 10137 Año de creación de pregunta: 2016
- questions[53]= "54)  La creaci&oacute;n de la Autoridad Independiente de Responsabilidad Fiscal, dentro de la Ley Org&aacute;nica 6/2013, tiene por objeto:";
+//  Id pregunta: 398 Año de creación de pregunta: 2016
+ questions[53]= "54)  &iquest;Qu&eacute; art&iacute;culo de la Ley Org&aacute;nica 3/2007 para la igualdad efectiva de mujeres y hombres, regula las acciones positivas?";
  choices[53]= new Array();
- choices[53][0] = "Garantizar el cumplimiento efectivo por las Administraciones P&uacute;blicas del principio de estabilidad presupuestaria previsto en el art&iacute;culo 135 de la Constituci&oacute;n Espa&ntilde;ola.";
- choices[53][1] = "La evaluaci&oacute;n continua del ciclo presupuestario, del endeudamiento p&uacute;blico, y el an&aacute;lisis de las previsiones econ&oacute;micas.";
- choices[53][2] = "Ejercer sus funciones con autonom&iacute;a e independencia funcional respecto de las Administraciones P&uacute;blicas.";
- choices[53][3] = "Todos las anteriores son ciertas.";
- answers[53] = choices[53][3];
- units[53] = "12";
- comments[53] = "Id Pregunta: 10137. Leyes modelo econ&oacute;mico";
+ choices[53][0] = "Art. 13, L.O.3/2007.";
+ choices[53][1] = "Art. 14, L.O.3/2007.";
+ choices[53][2] = "Art. 11, L.O.3/2007.";
+ choices[53][3] = "Ninguna es correcta.";
+ answers[53] = choices[53][2];
+ units[53] = "14";
+ comments[53] = "Id Pregunta: 398. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10136 Año de creación de pregunta: 2016
- questions[54]= "55)  La Ley 15/2014, de racionalizaci&oacute;n del Sector P&uacute;blico y otras medidas de reforma administrativa, no incluye:";
+//  Id pregunta: 221 Año de creación de pregunta: 2016
+ questions[54]= "55)  &iquest;C&oacute;mo se denomina el T&iacute;tulo I de la Constituci&oacute;n Espa&ntilde;ola?:";
  choices[54]= new Array();
- choices[54][0] = "Modificaci&oacute;n de la Ley General Presupuestaria para permitir de manera m&aacute;s eficaz el control de las cuentas corrientes en las que se sit&uacute;an fondos de Tesoro P&uacute;blico.";
- choices[54][1] = "Permiso para la reordenaci&oacute;n de organismos p&uacute;blicos con el fin de mejorar su eficiencia y reducir el gasto p&uacute;blico.";
- choices[54][2] = "Modificaci&oacute;n normativa para hacer uso de certificados electr&oacute;nicos &uacute;nicos para grupos o colectivos de personas f&iacute;sicas.";
- choices[54][3] = "Implantaci&oacute;n del BOE como Tabl&oacute;n Edictal &Uacute;nico para la realizaci&oacute;n de notificaciones administrativas.";
- answers[54] = choices[54][2];
- units[54] = "12";
- comments[54] = "Id Pregunta: 10136. Leyes modelo econ&oacute;mico";
+ choices[54][0] = "De los derechos y deberes fundamentales.";
+ choices[54][1] = "De los espa&ntilde;oles y los extranjeros.";
+ choices[54][2] = "Derechos y libertades.";
+ choices[54][3] = "De la Corona.";
+ answers[54] = choices[54][0];
+ units[54] = "1";
+ comments[54] = "Id Pregunta: 221. CONSTITUCION1978";
 
 
-//  Id pregunta: 10188 Año de creación de pregunta: 2016
- questions[55]= "56)  &iquest;Puede el Estado transferir o delegar a las Comunidades Aut&oacute;nomas facultadas que son de su titularidad?";
+//  Id pregunta: 623 Año de creación de pregunta: 2016
+ questions[55]= "56)  En PHP 5.0, &iquest;cu&aacute;l es la regla para formar los nombres de las variables?";
  choices[55]= new Array();
- choices[55][0] = "No, en ning&uacute;n caso.";
- choices[55][1] = "S&iacute;, mediante Ley Org&aacute;nica, en relaci&oacute;n con cualquier tipo de facultades.";
- choices[55][2] = "S&iacute;, mediante Ley Org&aacute;nica, en relaci&oacute;n con las facultades que por su propia naturaleza sean susceptibles de transferencia o delegaci&oacute;n, sin que el Estado se pueda reservar ninguna forma de control.";
- choices[55][3] = ", mediante Ley Org&aacute;nica, en relaci&oacute;n con las facultades que por su propia naturaleza sean susceptibles de transferencia o delegaci&oacute;n, previendo en cada caso la correspondiente transferencia de medios financieros, as&iacute; como las formas de control que se reserve el Estado.";
- answers[55] = choices[55][3];
- units[55] = "1";
- comments[55] = "Id Pregunta: 10188. CONSTITUCION1978";
+ choices[55][0] = "Una variable debe comenzar con el signo $ seguido del nombre de la variable.";
+ choices[55][1] = "Una variable debe comenzar con el signo &amp; seguido del nombre de la variable.";
+ choices[55][2] = "Una variable debe comenzar por un car&aacute;cter num&eacute;rico.";
+ choices[55][3] = "No hay regla para la formaci&oacute;n de los nombres de las variables.";
+ answers[55] = choices[55][0];
+ units[55] = "65";
+ comments[55] = "Id Pregunta: 623. Junta de Extremadura A1 2015";
 
 
-//  Id pregunta: 10646 Año de creación de pregunta: 2016
- questions[56]= "57)  En Itil v3 se diferencia entre la Gesti&oacute;n de la Cartera de Servicios y la Gesti&oacute;n del Cat&aacute;logo de Servicios ya que:";
+//  Id pregunta: 13 Año de creación de pregunta: 2016
+ questions[56]= "57)  JNDI se usa para el acceso a:";
  choices[56]= new Array();
- choices[56][0] = "La Cartera de Servicios contiene informaci&oacute;n sobre cada servicio y su estado.";
- choices[56][1] = "La Cartera de Servicios es un subconjunto del Cat&aacute;logo de Servicios.";
- choices[56][2] = "La Cartera de Servicios divide los servicios en componentes y contiene pol&iacute;ticas, directrices y responsabilidades , as&iacute; como precios, acuerdos de nivel de servicio y condiciones de entrega.";
- choices[56][3] = "Todas las respuestas son correctas.";
- answers[56] = choices[56][0];
- units[56] = "101";
- comments[56] = "Id Pregunta: 10646. Junta de Extremadura A1 2015";
+ choices[56][0] = "Datos de ficheros";
+ choices[56][1] = "Sistemas gestores de bases de datos";
+ choices[56][2] = "Directorios de nombres";
+ choices[56][3] = "Colas de mensajer&iacute;a";
+ answers[56] = choices[56][2];
+ units[56] = "64";
+ comments[56] = "Id Pregunta: 13. AGE A1 2015";
 
 
-//  Id pregunta: 10430 Año de creación de pregunta: 2016
- questions[57]= "58)  En el acceso a bienes y servicios, ning&uacute;n contratante podr&aacute; indagar sobre la situaci&oacute;n de embarazo de una mujer demandante del mismo, salvo por razones de:";
+//  Id pregunta: 412 Año de creación de pregunta: 2016
+ questions[57]= "58)  &Aacute;mbito de aplicaci&oacute;n de la Ley Org&aacute;nica para la igualdad efectiva de mujeres y hombre:";
  choices[57]= new Array();
- choices[57][0] = "Incompatibilidad del puesto con una baja maternal.";
- choices[57][1] = "Protecci&oacute;n de su salud.";
- choices[57][2] = "Ninguna es correcta.";
- choices[57][3] = "A y B son correctas.";
+ choices[57][0] = "Toda persona, f&iacute;sica o jur&iacute;dica, que act&uacute;e o se encuentre en territorio Europeo.";
+ choices[57][1] = "Toda persona, f&iacute;sica o jur&iacute;dica, que act&uacute;e o se encuentre en territorio Espa&ntilde;ol.";
+ choices[57][2] = "Toda persona, f&iacute;sica o jur&iacute;dica, que act&uacute;e o se encuentre en territorio Internacional.";
+ choices[57][3] = "Ninguna de ellas se ajusta al &aacute;mbito de aplicaci&oacute;n.";
  answers[57] = choices[57][1];
  units[57] = "14";
- comments[57] = "Id Pregunta: 10430. POLITICAS DE IGUALDAD";
+ comments[57] = "Id Pregunta: 412. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10189 Año de creación de pregunta: 2016
- questions[58]= "59)  De conformidad a lo establecido en la Constituci&oacute;n Espa&ntilde;ola, las Cortes pueden delegar en el Gobierno la potestad de dictar normas con rango de Ley. Cuando se trata de que el Gobierno elabore y apruebe textos articulados esta delegaci&oacute;n tiene que otorgarse mediante:";
+//  Id pregunta: 263 Año de creación de pregunta: 2016
+ questions[58]= "59)  Los Vocales integrantes del &oacute;rgano de gobierno del Poder Judicial:";
  choices[58]= new Array();
- choices[58][0] = "Ley Org&aacute;nica.";
- choices[58][1] = "Ley de Bases.";
- choices[58][2] = "Ley ordinaria.";
- choices[58][3] = "Mandato.";
+ choices[58][0] = "Ser&aacute;n nombrados por el Presidente del Tribunal Supremo y del Consejo del Poder Judicial, por un periodo de cinco a&ntilde;os.";
+ choices[58][1] = "Ser&aacute;n nombrados por el Congreso de los Diputados y por el Senado por un periodo de cinco a&ntilde;os.";
+ choices[58][2] = "Ser&aacute;n nombrados por el Rey por un periodo de cinco a&ntilde;os.";
+ choices[58][3] = "er&aacute;n nombrados por el Rey por un periodo de tres a&ntilde;os.";
  answers[58] = choices[58][1];
  units[58] = "1";
- comments[58] = "Id Pregunta: 10189. CONSTITUCION1978";
+ comments[58] = "Id Pregunta: 263. CONSTITUCION1978";
 
 
-//  Id pregunta: 10329 Año de creación de pregunta: 2016
- questions[59]= "60)  Si el Consejo en alg&uacute;n acuerdo necesita de mayor&iacute;a cualificada se produce:";
+//  Id pregunta: 664 Año de creación de pregunta: 2016
+ questions[59]= "60)  De acuerdo a la Ley 39/2015, el formato del expediente administrativo ser&aacute;:";
  choices[59]= new Array();
- choices[59][0] = "Acuerdos cualificados.";
- choices[59][1] = "Acuerdos ponderados.";
- choices[59][2] = "Valoraci&oacute;n de los votos.";
- choices[59][3] = "Ponderaci&oacute;n de los votos.";
- answers[59] = choices[59][3];
- units[59] = "5";
- comments[59] = "Id Pregunta: 10329. UNION EUROPEA";
+ choices[59][0] = "Siempre en formato electr&oacute;nico.";
+ choices[59][1] = "Siempre en formato papel.";
+ choices[59][2] = "Las personas f&iacute;sicas podr&aacute;n elegir en todo momento el formato del expediente administrativo.";
+ choices[59][3] = "La ley no regula el formato del expediente.";
+ answers[59] = choices[59][0];
+ units[59] = "7";
+ comments[59] = "Id Pregunta: 664. Art&iacute;culo 70 de la Ley 39/2015";
 
 
-//  Id pregunta: 10456 Año de creación de pregunta: 2016
- questions[60]= "61)  Seg&uacute;n la Ley 47/2003, de 26 de noviembre, General Presupuestaria, los escenarios presupuestarios plurianuales contendr&aacute;n la distribuci&oacute;n org&aacute;nica de los recursos disponibles y se desarrollar&aacute;n en programas plurianuales, referidos a:";
+//  Id pregunta: 209 Año de creación de pregunta: 2016
+ questions[60]= "61)  Corresponde aprobar el proyecto de Ley de Presupuestos Generales del Estado a:";
  choices[60]= new Array();
- choices[60][0] = "a) Los cuatro ejercicios siguientes.";
- choices[60][1] = "b) El ejercicio siguiente.";
- choices[60][2] = "c) Los dos ejercicios siguientes.";
- choices[60][3] = "d) Los tres ejercicios siguientes.";
+ choices[60][0] = "El Ministerio de Econom&iacute;a y Hacienda.";
+ choices[60][1] = "El Congreso de los Diputados.";
+ choices[60][2] = "Las Cortes Generales.";
+ choices[60][3] = "El Consejo de Ministros";
  answers[60] = choices[60][3];
- units[60] = "10";
- comments[60] = "Id Pregunta: 10456. PRESUPUESTOS GENERALES";
+ units[60] = "1";
+ comments[60] = "Id Pregunta: 209. CONSTITUCION1978";
 
 
-//  Id pregunta: 10467 Año de creación de pregunta: 2016
- questions[61]= "62)  Seg&uacute;n la Ley 47/2003, de 26 de noviembre, General Presupuestaria, el Ministro de Econom&iacute;a y Competitividad podr&aacute; autorizar a la Secretar&iacute;a General del Tesoro y Pol&iacute;tica Financiera a realizar operaciones pasivas de pr&eacute;stamo a un plazo no superior a:";
+//  Id pregunta: 50 Año de creación de pregunta: 2016
+ questions[61]= "62)  &iquest;Cu&aacute;l de las siguientes caracter&iacute;sticas del DNI electr&oacute;nico es exclusiva del DNIe 3.0?";
  choices[61]= new Array();
- choices[61][0] = "Tres meses.";
- choices[61][1] = "Nueve meses.";
- choices[61][2] = "Cuatro meses.";
- choices[61][3] = "Seis meses.";
- answers[61] = choices[61][0];
- units[61] = "10";
- comments[61] = "Id Pregunta: 10467. PRESUPUESTOS GENERALES";
+ choices[61][0] = "Cumple la norma ISO 7816 para tarjetas inteligentes.";
+ choices[61][1] = "Emplea la tecnolog&iacute;a inal&aacute;mbrica NFC.";
+ choices[61][2] = "Contiene certificados de componente, autenticaci&oacute;n y firma.";
+ choices[61][3] = "Sus certificados cumplen la norma X509 v3.";
+ answers[61] = choices[61][1];
+ units[61] = "78";
+ comments[61] = "Id Pregunta: 50. AGE A1 2015";
 
 
-//  Id pregunta: 10375 Año de creación de pregunta: 2016
- questions[62]= "63)  Las relaciones entre el Derecho Comunitario y el Derecho nacional se caracterizan por:";
+//  Id pregunta: 710 Año de creación de pregunta: 2016
+ questions[62]= "63)  Si un ciudadano solicita informaci&oacute;n a la Administraci&oacute;n y son de aplicaci&oacute;n los l&iacute;mites de derecho de acceso previstos en el art&iacute;culo 14 de la Ley 19/2013 pero &eacute;stos no afectan a la totalidad de la informaci&oacute;n:";
  choices[62]= new Array();
- choices[62][0] = "Complementariedad, por tratarse de un ordenamiento para los Estados miembros.";
- choices[62][1] = "Primac&iacute;a del Derecho Comunitario, puesto que se impone a los Estados miembros.";
- choices[62][2] = "Autonom&iacute;a del Derecho Comunitario frente al nacional.";
- choices[62][3] = "Todas las respuestas son correctas.";
+ choices[62][0] = "Nunca se conceder&aacute; el acceso parcial a la informaci&oacute;n.";
+ choices[62][1] = "Se ofrecer&aacute; acceso parcial sin indicar al solicitante que parte de la informaci&oacute;n ha sido omitida.";
+ choices[62][2] = "Siempre se conder&aacute; acceso parcial a la informaci&oacute;n a la que no le afecte la limitaci&oacute;n prevista en el art&iacute;culo 14.";
+ choices[62][3] = "Se conceder&aacute; el acceso parcial previa omisi&oacute;n de la informaci&oacute;n afectada por el l&iacute;mite de acceso, salvo que de ello resulte una informaci&oacute;n distorsionada o que carezca de sentido.";
  answers[62] = choices[62][3];
- units[62] = "5";
- comments[62] = "Id Pregunta: 10375. UNION EUROPEA";
+ units[62] = "22";
+ comments[62] = "Id Pregunta: 710. Ley de transparencia";
 
 
-//  Id pregunta: 10484 Año de creación de pregunta: 2016
- questions[63]= "64)  Seg&uacute;n la Ley 47/2003, de 26 de noviembre, General Presupuestaria, dirigir la contabilidad de las entidades que integran el sistema de la Seguridad Social y gestionar la contabilidad de las entidades gestoras y servicios comunes de la Seguridad Social es una funci&oacute;n de:";
+//  Id pregunta: 553 Año de creación de pregunta: 2016
+ questions[63]= "64)  &iquest;Cu&aacute;l de las siguientes iniciativas busca la mejora del acceso de los consumidores y las empresas a los bienes y servicios digitales, como parte de la estrategia para el Mercado &Uacute;nico Digital de la UE?";
  choices[63]= new Array();
- choices[63][0] = "El Ministerio de Hacienda y Funci&oacute;n P&uacute;blica.";
- choices[63][1] = "La Intervenci&oacute;n General de la Seguridad Social.";
- choices[63][2] = "La Intervenci&oacute;n General de la Administraci&oacute;n del Estado.";
- choices[63][3] = "La Intervenci&oacute;n General de la Defensa.";
- answers[63] = choices[63][2];
- units[63] = "10";
- comments[63] = "Id Pregunta: 10484. PRESUPUESTOS GENERALES";
+ choices[63][0] = "Una paqueter&iacute;a m&aacute;s eficiente y asequible";
+ choices[63][1] = "Revisar el marco de comunicaci&oacute;n audiovisual con el fin de adecuarlo al siglo XXI";
+ choices[63][2] = "Reforzar la confianza y la seguridad en los servicios digitales, en particular en relaci&oacute;n con el tratamiento de datos personales";
+ choices[63][3] = "Todas lo son";
+ answers[63] = choices[63][0];
+ units[63] = "17";
+ comments[63] = "Id Pregunta: 553. Mercado &Uacute;nico Digital";
 
 
-//  Id pregunta: 10348 Año de creación de pregunta: 2016
- questions[64]= "65)  &iquest;En qu&eacute; fecha naci&oacute; la Uni&oacute;n Europea?:";
+//  Id pregunta: 520 Año de creación de pregunta: 2016
+ questions[64]= "65)  El t&iacute;tulo preliminar de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Com&uacute;n de las Administraciones P&uacute;blicas se denomina:";
  choices[64]= new Array();
- choices[64][0] = "El 1 de noviembre de 1994.";
- choices[64][1] = "El 1 de noviembre de 1992.";
- choices[64][2] = "El 1 de noviembre de 1995.";
- choices[64][3] = "El 1 de noviembre de 1993.";
- answers[64] = choices[64][3];
- units[64] = "5";
- comments[64] = "Id Pregunta: 10348. UNION EUROPEA";
+ choices[64][0] = "De los interesados en el procedimiento";
+ choices[64][1] = "De la actividad de las Administraciones P&uacute;blicas";
+ choices[64][2] = "Disposiciones generales";
+ choices[64][3] = "De los actos administrativos";
+ answers[64] = choices[64][2];
+ units[64] = "7";
+ comments[64] = "Id Pregunta: 520. LEY 39/2015";
 
 
-//  Id pregunta: 10154 Año de creación de pregunta: 2016
- questions[65]= "66)  Los t&eacute;rminos y plazos establecidos en la ley 39/2015 u otras leyes obligan a:";
+//  Id pregunta: 532 Año de creación de pregunta: 2016
+ questions[65]= "66)  Deber&aacute; incorporar al expediente administrativo acreditaci&oacute;n de la condici&oacute;n de representante y de los poderes que tiene reconocidos en dicho momento:";
  choices[65]= new Array();
- choices[65][0] = "las autoridades al servicio de las Administraciones P&uacute;blicas competentes para la tramitaci&oacute;n de los asuntos";
- choices[65][1] = "el personal al servicio de las Administraciones P&uacute;blicas competentes para la tramitaci&oacute;n de los asuntos";
- choices[65][2] = "los interesados en la tramitaci&oacute;n de los asuntos";
- choices[65][3] = "todas son correctas";
- answers[65] = choices[65][3];
+ choices[65][0] = "el &oacute;rgano competente para la iniciaci&oacute;n del procedimiento";
+ choices[65][1] = "el &oacute;rgano competente para la instrucci&oacute;n del procedimiento";
+ choices[65][2] = "el &oacute;rgano competente para la tramitaci&oacute;n del procedimiento";
+ choices[65][3] = "el &oacute;rgano competente para la terminaci&oacute;n del procedimiento";
+ answers[65] = choices[65][2];
  units[65] = "7";
- comments[65] = "Id Pregunta: 10154. Ley 39/2015, Art&iacute;culo 29";
+ comments[65] = "Id Pregunta: 532. LEY 39/2015";
 
 
-//  Id pregunta: 10247 Año de creación de pregunta: 2016
- questions[66]= "67)  Seg&uacute;n la Constituci&oacute;n Espa&ntilde;ola, la Regencia se ejercer&aacute;:";
+//  Id pregunta: 342 Año de creación de pregunta: 2016
+ questions[66]= "67)  La moci&oacute;n de censura contra la Comisi&oacute;n existe desde:";
  choices[66]= new Array();
- choices[66][0] = "Por mandato constitucional y siempre en nombre del Rey.";
- choices[66][1] = "Por Orden Ministerial.";
- choices[66][2] = "Por mandato constitucional y siempre en nombre del pueblo espa&ntilde;ol.";
- choices[66][3] = "Por mandato de las Cortes Generales y siempre en nombre del pueblo espa&ntilde;ol.";
- answers[66] = choices[66][0];
- units[66] = "1";
- comments[66] = "Id Pregunta: 10247. CONSTITUCION1978";
+ choices[66][0] = "El Tratado de Maastrich.";
+ choices[66][1] = "El Tratado de Amsterdam.";
+ choices[66][2] = "El Tratado de Par&iacute;s.";
+ choices[66][3] = "El Tratado de Roma.";
+ answers[66] = choices[66][3];
+ units[66] = "5";
+ comments[66] = "Id Pregunta: 342. UNION EUROPEA";
 
 
-//  Id pregunta: 10236 Año de creación de pregunta: 2016
- questions[67]= "68)  El T&iacute;tulo Preliminar de la Constituci&oacute;n Espa&ntilde;ola de 1978 engloba una serie de preceptos entre los que se encuentra el relativo a:";
+//  Id pregunta: 654 Año de creación de pregunta: 2016
+ questions[67]= "68)  &iquest;Qu&eacute; significa la tolerancia a partici&oacute;n dentro del teorema CAP?";
  choices[67]= new Array();
- choices[67][0] = "La regulaci&oacute;n sobre la adquisici&oacute;n de la nacionalidad espa&ntilde;ola.";
- choices[67][1] = "La naturaleza, funcionamiento y estructura de los partidos pol&iacute;ticos.";
- choices[67][2] = "La entrada en vigor de la propia Constituci&oacute;n.";
- choices[67][3] = "El reconocimiento de los derechos hist&oacute;ricos de los territorios forales.";
- answers[67] = choices[67][3];
- units[67] = "1";
- comments[67] = "Id Pregunta: 10236. CONSTITUCION1978";
+ choices[67][0] = "El sistema podr&aacute; seguir procesando una petici&oacute;n aunque se pierda la conectividad con algun nodo";
+ choices[67][1] = "Las modificaciones se aplican a todos los nodos en su conjunto en el mismo momento";
+ choices[67][2] = "Cualquier peticion recibida en un nodo debe tener respuesta";
+ choices[67][3] = "El teorema CAP no habla de tolerancia a particiones";
+ answers[67] = choices[67][0];
+ units[67] = "73";
+ comments[67] = "Id Pregunta: 654. ";
 
 
-//  Id pregunta: 10020 Año de creación de pregunta: 2016
- questions[68]= "69)  Con respecto al &aacute;mbito objetivo de aplicaci&oacute;n de la Ley 37/2007, de 16 de noviembre, sobre reutilizaci&oacute;n de la informaci&oacute;n del sector p&uacute;blico:";
+//  Id pregunta: 339 Año de creación de pregunta: 2016
+ questions[68]= "69)  La presidencia del Consejo se ejerce de forma rotatoria cada:";
  choices[68]= new Array();
- choices[68][0] = "Abarca el intercambio de documentos entre Administraciones y organismos del sector p&uacute;blico en el ejercicio de las funciones p&uacute;blicas que tengan atribuidas.";
- choices[68][1] = "Ser&aacute; aplicable incluso sobre los documentos que obran en las Administraciones y organismos del sector p&uacute;blico para finalidades ajenas a sus funciones de servicio p&uacute;blico.";
- choices[68][2] = "No afecta a la existencia de derechos de propiedad intelectual de las Administraciones y organismos del sector p&uacute;blico ni a su posesi&oacute;n por &eacute;stos.";
- choices[68][3] = "Fija la prevalencia del derecho fundamental a la protecci&oacute;n de datos de car&aacute;cter personal, a&uacute;n cuando se apliquen medidas de disociaci&oacute;n de datos.";
- answers[68] = choices[68][2];
- units[68] = "27";
- comments[68] = "Id Pregunta: 10020. AGE A1 2015";
+ choices[68][0] = "4 meses seg&uacute;n un orden fijado por unanimidad del Consejo.";
+ choices[68][1] = "6 meses seg&uacute;n un orden fijado por unanimidad del Consejo.";
+ choices[68][2] = "4 meses seg&uacute;n un orden fijado por mayor&iacute;a cualificada del Consejo.";
+ choices[68][3] = "6 meses seg&uacute;n un orden fijado por mayor&iacute;a cualificada del Consejo.";
+ answers[68] = choices[68][1];
+ units[68] = "5";
+ comments[68] = "Id Pregunta: 339. UNION EUROPEA";
 
 
-//  Id pregunta: 10439 Año de creación de pregunta: 2016
- questions[69]= "70)  Sobre el Sistema de Interconexi&oacute;n de Registros (SIR):";
+//  Id pregunta: 538 Año de creación de pregunta: 2016
+ questions[69]= "70)  Ser&aacute;/n interoperable/s con los registros electr&oacute;nicos generales y particulares de apoderamientos:";
  choices[69]= new Array();
- choices[69][0] = "Es la infraestructura b&aacute;sica que permite el intercambio de asientos electr&oacute;nicos de registro entre los &oacute;rganos y organismos de la Administraci&oacute;n General del Estado.";
- choices[69][1] = "Permite eliminar el tr&aacute;nsito de papel entre administraciones, aumentando la eficiencia y eliminando los costes de manipulaci&oacute;n y remisi&oacute;n del papel, gracias a la generaci&oacute;n de copias aut&eacute;nticas electr&oacute;nicas de la documentaci&oacute;n presentada en los asientos de registro.";
- choices[69][2] = "No es necesario que la aplicaci&oacute;n de registro est&eacute; certificada con la norma SICRES 3.0.";
- choices[69][3] = "La integraci&oacute;n en SIR se realiza mediante aplicaciones de registro comunes como GEISER y ORVE o bien, siempre que se justifique, mediante aplicaciones previamente certificadas por la Comisi&oacute;n de Estrategia TIC.";
- answers[69] = choices[69][1];
- units[69] = "43";
- comments[69] = "Id Pregunta: 10439. SERVICIOS COMUNES";
+ choices[69][0] = "los registros mercantiles";
+ choices[69][1] = "los registros de la propiedad";
+ choices[69][2] = "los protocolos notariales";
+ choices[69][3] = "todas son correctas";
+ answers[69] = choices[69][3];
+ units[69] = "7";
+ comments[69] = "Id Pregunta: 538. LEY 39/2015";
 
 
-//  Id pregunta: 10567 Año de creación de pregunta: 2016
- questions[70]= "71)  El sector que tiene un mayor peso en el PIB espa&ntilde;ol es el:";
+//  Id pregunta: 492 Año de creación de pregunta: 2016
+ questions[70]= "71)  El R&eacute;gimen Jur&iacute;dico de la Deuda del Estado se encuentran regulados en la Ley 47/2003, de 26 de noviembre, General Presupuestaria:";
  choices[70]= new Array();
- choices[70][0] = "Primario, que incluye la agricultura y la pesca";
- choices[70][1] = "Secundario, compuesto por los sectores industrial, de la energ&iacute;a y de la construcci&oacute;n";
- choices[70][2] = "Minero, junto con las exportaciones de comercio";
- choices[70][3] = "Servicios";
- answers[70] = choices[70][3];
- units[70] = "12";
- comments[70] = "Id Pregunta: 10567. Modelo econ&oacute;mico";
+ choices[70][0] = "T&iacute;tulo V, Cap&iacute;tulo II, Secci&oacute;n 4.";
+ choices[70][1] = "T&iacute;tulo V, Cap&iacute;tulo I, Secci&oacute;n 2.";
+ choices[70][2] = "T&iacute;tulo IV, Cap&iacute;tulo II, Secci&oacute;n 3.";
+ choices[70][3] = "T&iacute;tulo IV, Cap&iacute;tulo II, Secci&oacute;n 4.";
+ answers[70] = choices[70][2];
+ units[70] = "10";
+ comments[70] = "Id Pregunta: 492. PRESUPUESTOS GENERALES";
 
 
-//  Id pregunta: 10007 Año de creación de pregunta: 2016
- questions[71]= "72)  &iquest;Cu&aacute;l de las siguientes asociaciones de protocolos y niveles OSI es correcta?";
+//  Id pregunta: 408 Año de creación de pregunta: 2016
+ questions[71]= "72)  La igualdad efectiva entre mujeres y hombres est&aacute; regulada en:";
  choices[71]= new Array();
- choices[71][0] = "Nivel 7 - MPLS.";
- choices[71][1] = "Nivel 3 - RARP.";
- choices[71][2] = "Nivel 2 - HDLC.";
- choices[71][3] = "Nivel 1 &ndash; CSMA/CD.";
- answers[71] = choices[71][2];
- units[71] = "105";
- comments[71] = "Id Pregunta: 10007. AGE A1 2015";
+ choices[71][0] = "Ley Org&aacute;nica 7/2003, de 22 de marzo.";
+ choices[71][1] = "Ley Org&aacute;nica 3/2003, de 22 de marzo.";
+ choices[71][2] = "Ley 13/2007, de 26 de noviembre.";
+ choices[71][3] = "Ley 3/2007, de 26 de noviembre.";
+ answers[71] = choices[71][1];
+ units[71] = "14";
+ comments[71] = "Id Pregunta: 408. POLITICAS DE IGUALDAD";
 
 
-//  Id pregunta: 10446 Año de creación de pregunta: 2016
- questions[72]= "73)  Dentro de la l&oacute;gica presupuestaria, los ingresos tienen car&aacute;cter...";
+//  Id pregunta: 703 Año de creación de pregunta: 2016
+ questions[72]= "73)  &iquest;Cu&aacute;l de los siguientes NO es un principio t&eacute;cnico de los mencionados en la Ley 19/2013 al que debe atenerse la informaci&oacute;n publicada en el Portal de Transparencia de la Administraci&oacute;n General del Estado?";
  choices[72]= new Array();
- choices[72][0] = "Ejecutivo";
- choices[72][1] = "Limitativo";
- choices[72][2] = "Estimativo";
- choices[72][3] = "Progresivo";
- answers[72] = choices[72][2];
- units[72] = "10";
- comments[72] = "Id Pregunta: 10446. PRESUPUESTOS GENERALES";
+ choices[72][0] = "Compatibilidad";
+ choices[72][1] = "Interoperabilidad";
+ choices[72][2] = "Reutilizaci&oacute;n";
+ choices[72][3] = "Accesibilidad";
+ answers[72] = choices[72][0];
+ units[72] = "22";
+ comments[72] = "Id Pregunta: 703. Ley de transparencia";
 
 
-//  Id pregunta: 10529 Año de creación de pregunta: 2016
- questions[73]= "74)  Se presumir&aacute; la representaci&oacute;n para:";
+//  Id pregunta: 84 Año de creación de pregunta: 2016
+ questions[73]= "74)  En el marco europeo de interoperabilidad de sistemas de informaci&oacute;n, &iquest;qu&eacute; programa de la Uni&oacute;n Europea ha estado en vigor entre 2010 y 2015?";
  choices[73]= new Array();
- choices[73][0] = "formular solicitudes";
- choices[73][1] = "los actos y gestiones de mero tr&aacute;mite";
- choices[73][2] = "presentar declaraciones responsables o comunicaciones";
- choices[73][3] = "interponer recursos, desistir de acciones y renunciar a derechos en nombre de otra persona";
+ choices[73][0] = "Interchange of Data between Administrations (IDA)";
+ choices[73][1] = "Interoperability Solutions for European Public Administrations (ISA)";
+ choices[73][2] = "Interoperable Delivery of Pan-European eGovernment Services to Public Administrations, Businesses and Citizens (IDABC)";
+ choices[73][3] = "Interoperability Electronic European Solution (IEES)";
  answers[73] = choices[73][1];
- units[73] = "7";
- comments[73] = "Id Pregunta: 10529. LEY 39/2015";
+ units[73] = "43";
+ comments[73] = "Id Pregunta: 84. AGE A1 2015";
 
 
-//  Id pregunta: 10256 Año de creación de pregunta: 2016
- questions[74]= "75)  El Art&iacute;culo 21 de la Constituci&oacute;n Espa&ntilde;ola se&ntilde;ala que:";
+//  Id pregunta: 41 Año de creación de pregunta: 2016
+ questions[74]= "75)  En cuanto al an&aacute;lisis DAFO:";
  choices[74]= new Array();
- choices[74][0] = "Se reconoce el derecho de reuni&oacute;n pac&iacute;fica y con armas.";
- choices[74][1] = "Se reconoce el derecho de reuni&oacute;n pac&iacute;fica siempre dentro del derecho de manifestaci&oacute;n previa autorizaci&oacute;n.";
- choices[74][2] = "Se reconoce el derecho de reuni&oacute;n pac&iacute;fica y sin armas.";
- choices[74][3] = "No se reconoce expl&iacute;citamente tal derecho de reuni&oacute;n.";
- answers[74] = choices[74][0];
- units[74] = "1";
- comments[74] = "Id Pregunta: 10256. CONSTITUCION1978";
+ choices[74][0] = "Considera detallada y exclusivamente factores internos.";
+ choices[74][1] = "Es una t&eacute;cnica aplicable dentro de la Planificaci&oacute;n de Sistemas de Informaci&oacute;n.";
+ choices[74][2] = "Considera detallada y exclusivamente factores externos.";
+ choices[74][3] = "Se obtiene como resultado final del proceso de Planificaci&oacute;n Estrat&eacute;gica.";
+ answers[74] = choices[74][1];
+ units[74] = "83";
+ comments[74] = "Id Pregunta: 41. AGE A1 2015";
 
 

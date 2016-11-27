@@ -25,6 +25,7 @@ import org.apache.logging.log4j.Logger;
 public class InfoBloque {
 	private static Logger logger = LogManager.getLogger(InfoBloque.class);
 	
+
 	// En caso de que no se disponga conexion a internet (sin BD ni acceso a google) 
 	// el programa utilizara esta lista para la generacion de tests. 
 	// ATENCION. Puede estar desactualizado y solo usarlo para pruebas puntuales
@@ -38,7 +39,7 @@ public class InfoBloque {
 		BloquesPorDefecto.add(new InfoBloque("B.Temas específicos.", "B1", "Organización y gestión de los sistemas de información", 24, 48));
 		BloquesPorDefecto.add(new InfoBloque("B.Temas específicos.", "B2", "Tecnología Básica", 49, 81));
 		BloquesPorDefecto.add(new InfoBloque("B.Temas específicos.", "B3", "Ingeniería de los Sistemas de Información", 82, 102));
-		BloquesPorDefecto.add(new InfoBloque("B.Temas específicos.", "B4", "Redes, Comunicaciones e Internet", 103, 125));
+		BloquesPorDefecto.add(new InfoBloque("B.Temas específicos.", "B4", "Redes, Comunicaciones e Internet", 103, 126));
 	}
 	
 	// Si cambia el orden o la cantidad de columnas del excel, solo habrá que

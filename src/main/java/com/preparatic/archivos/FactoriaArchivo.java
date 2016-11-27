@@ -186,7 +186,14 @@ public class FactoriaArchivo {
 			nombreArchivo.append(bloqueTematica + "_");
 			nombreArchivo.append(formatter.format(idTest));
 			break;
-		
+			
+		case tema:
+			nombreArchivo.append(ConfigProperties
+					.getProperty("files.prefixThemeTest"));
+			nombreArchivo.append(bloqueTematica + "_");
+			nombreArchivo.append(formatter.format(idTest));
+			break;
+			
 		case anho:
 			nombreArchivo.append(ConfigProperties
 					.getProperty("files.prefixYearTest"));
@@ -224,7 +231,14 @@ public class FactoriaArchivo {
 			nombreArchivo.append(idBloqueTematica + "_");
 			nombreArchivo.append(idTest);
 			break;
-		
+			
+		case tema:
+			nombreArchivo.append(ConfigProperties
+					.getProperty("files.prefixThemeTestSol"));
+			nombreArchivo.append(idBloqueTematica + "_");
+			nombreArchivo.append(idTest);
+			break;
+			
 		case anho:
 			nombreArchivo.append(ConfigProperties
 					.getProperty("files.prefixYearTestSol"));

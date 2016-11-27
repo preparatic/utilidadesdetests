@@ -115,35 +115,6 @@ function renderTestSelector(){
 			 addOption (box, 'test_0069.html', 'Test 0069');
 			 addOption (box, 'test_0070.html', 'Test 0070');
 			 addOption (box, 'test_0071.html', 'Test 0071');
-			 addOption (box, 'test_0072.html', 'Test 0072');
-			 addOption (box, 'test_0073.html', 'Test 0073');
-			 addOption (box, 'test_0074.html', 'Test 0074');
-			 addOption (box, 'test_0075.html', 'Test 0075');
-			 addOption (box, 'test_0076.html', 'Test 0076');
-			 addOption (box, 'test_0077.html', 'Test 0077');
-			 addOption (box, 'test_0078.html', 'Test 0078');
-			 addOption (box, 'test_0079.html', 'Test 0079');
-			 addOption (box, 'test_0080.html', 'Test 0080');
-			 addOption (box, 'test_0081.html', 'Test 0081');
-			 addOption (box, 'test_0082.html', 'Test 0082');
-			 addOption (box, 'test_0083.html', 'Test 0083');
-			 addOption (box, 'test_0084.html', 'Test 0084');
-			 addOption (box, 'test_0085.html', 'Test 0085');
-			 addOption (box, 'test_0086.html', 'Test 0086');
-			 addOption (box, 'test_0087.html', 'Test 0087');
-			 addOption (box, 'test_0088.html', 'Test 0088');
-			 addOption (box, 'test_0089.html', 'Test 0089');
-			 addOption (box, 'test_0090.html', 'Test 0090');
-			 addOption (box, 'test_0091.html', 'Test 0091');
-			 addOption (box, 'test_0092.html', 'Test 0092');
-			 addOption (box, 'test_0093.html', 'Test 0093');
-			 addOption (box, 'test_0094.html', 'Test 0094');
-			 addOption (box, 'test_0095.html', 'Test 0095');
-			 addOption (box, 'test_0096.html', 'Test 0096');
-			 addOption (box, 'test_0097.html', 'Test 0097');
-			 addOption (box, 'test_0098.html', 'Test 0098');
-			 addOption (box, 'test_0099.html', 'Test 0099');
-			 addOption (box, 'test_0100.html', 'Test 0100');
 }
 
 
@@ -151,6 +122,35 @@ function renderTestSelectorBloque(bloque){
 
 	var box = document.getElementById('test_navigation');
 
+	if (bloque == 'A1'){
+			 addOption (box, 'test_bloque_A1_0001.html', 'Test 0001');
+			 addOption (box, 'test_bloque_A1_0002.html', 'Test 0002');
+			 addOption (box, 'test_bloque_A1_0003.html', 'Test 0003');
+			 addOption (box, 'test_bloque_A1_0004.html', 'Test 0004');
+	}
+	if (bloque == 'A2'){
+			 addOption (box, 'test_bloque_A2_0001.html', 'Test 0001');
+			 addOption (box, 'test_bloque_A2_0002.html', 'Test 0002');
+			 addOption (box, 'test_bloque_A2_0003.html', 'Test 0003');
+	}
+	if (bloque == 'A3'){
+			 addOption (box, 'test_bloque_A3_0001.html', 'Test 0001');
+	}
+	if (bloque == 'A4'){
+			 addOption (box, 'test_bloque_A4_0001.html', 'Test 0001');
+	}
+	if (bloque == 'B1'){
+			 addOption (box, 'test_bloque_B1_0001.html', 'Test 0001');
+	}
+	if (bloque == 'B2'){
+			 addOption (box, 'test_bloque_B2_0001.html', 'Test 0001');
+	}
+	if (bloque == 'B3'){
+			 addOption (box, 'test_bloque_B3_0001.html', 'Test 0001');
+	}
+	if (bloque == 'B4'){
+			 addOption (box, '', '-- No hay test --');
+	}
 
 }
 
@@ -175,6 +175,131 @@ function renderTestSelectorTematica(){
 function renderTemas() {
 		var box = document.getElementById('tema_navigation');
 
+			 addOption (box, 1, 'La Constitución española de 1978 (I).');
+			 addOption (box, 2, 'La constitución española de 1978 (II).');
+			 addOption (box, 3, 'La constitución española de 1978 (III).');
+			 addOption (box, 4, 'La constitución española de 1978 (IV).');
+			 addOption (box, 5, 'La Unión Europea: antecedentes, evolución y objetivos.');
+			 addOption (box, 6, 'Las Instituciones de la Unión Europea.');
+			 addOption (box, 7, 'Procedimiento administrativo presencial y telemático.');
+			 addOption (box, 8, 'La revisión de los actos en vía administrativa.');
+			 addOption (box, 9, 'La responsabilidad patrimonial de las Administraciones Públicas.');
+			 addOption (box, 10, 'Los contratos de las Administraciones Públicas.');
+			 addOption (box, 11, 'Los presupuestos generales del Estado.');
+			 addOption (box, 12, 'El modelo económico español.');
+			 addOption (box, 13, 'Los sectores de la economía.');
+			 addOption (box, 14, 'Estructura social y políticas de igualdad.');
+			 addOption (box, 15, 'El mercado de trabajo.');
+			 addOption (box, 16, 'TIC y sociedad.');
+			 addOption (box, 17, 'TIC y mercado de trabajo.');
+			 addOption (box, 18, 'La función gerencial de las AAPP.');
+			 addOption (box, 19, 'La calidad en los servicios públicos.');
+			 addOption (box, 20, 'Modelo burocrático, management y gobernanza.');
+			 addOption (box, 21, 'Gestión del conocimiento.');
+			 addOption (box, 22, 'Ética pública y transparencia.');
+			 addOption (box, 23, 'Emprendimiento y unidad de mercado.');
+			 addOption (box, 24, 'Conceptos de sistemas de información.');
+			 addOption (box, 25, 'La información en las organizaciones.');
+			 addOption (box, 26, 'Gobernanza TIC.');
+			 addOption (box, 27, 'Reutilización de la información del sector público.');
+			 addOption (box, 28, 'Directivo TIC.');
+			 addOption (box, 29, 'Herramientas para el directivo TIC.');
+			 addOption (box, 30, 'Centro de sistemas de información.');
+			 addOption (box, 31, 'Dirección y gestión de proyectos TIC.');
+			 addOption (box, 32, 'Gestión de equipos.');
+			 addOption (box, 33, 'Metodologías predictivas para la gestión de proyectos.');
+			 addOption (box, 34, 'Metodologías lean.');
+			 addOption (box, 35, 'LOPD');
+			 addOption (box, 36, 'Auditoría informática.');
+			 addOption (box, 37, 'Ley de contratos.');
+			 addOption (box, 38, 'Adquisición de sistemas.');
+			 addOption (box, 39, 'Alternativas de decisión.');
+			 addOption (box, 40, 'Rentabilidad de las inversiones.');
+			 addOption (box, 41, 'Protección jurídica del software.');
+			 addOption (box, 42, 'Accesibilidad y usabilidad.');
+			 addOption (box, 43, 'ENI');
+			 addOption (box, 44, 'NTI');
+			 addOption (box, 45, 'Análisis y gestión de riesgos.');
+			 addOption (box, 46, 'ENS.');
+			 addOption (box, 47, 'Infraestructuras y servicios comunes.');
+			 addOption (box, 48, 'Organizaciónes de normalización.');
+			 addOption (box, 49, 'Sistemas de altas prestaciones.');
+			 addOption (box, 50, 'Equipos departamentales y servidores.');
+			 addOption (box, 51, 'Dispositivos personales y móviles.');
+			 addOption (box, 52, 'Cloud computing.');
+			 addOption (box, 53, 'Sistemas de almacenamiento.');
+			 addOption (box, 54, 'Sistemas de información multiusuario.');
+			 addOption (box, 55, 'Arquitectura SOA.');
+			 addOption (box, 56, 'Sistemas Operativos.');
+			 addOption (box, 57, 'UNIX-LINUX.');
+			 addOption (box, 58, 'Microsoft.');
+			 addOption (box, 59, 'Sistemas Operativos para móviles.');
+			 addOption (box, 60, 'Sistemas de gestión de bases de datos.');
+			 addOption (box, 61, 'El modelo relacional.');
+			 addOption (box, 62, 'Arquitectura de desarrollo en la web.');
+			 addOption (box, 63, 'Entorno de desarrollo Microsoft.NET.');
+			 addOption (box, 64, 'Entorno de desarrollo JAVA.');
+			 addOption (box, 65, 'Entorno de desarrollo PHP.');
+			 addOption (box, 66, 'Software de código abierto y libre.');
+			 addOption (box, 67, 'Inteligencia artificial.');
+			 addOption (box, 68, 'Gestión del conocimiento.');
+			 addOption (box, 69, 'Sistemas CRM y ERP.');
+			 addOption (box, 70, 'E-learning.');
+			 addOption (box, 71, 'Los sistemas GIS.');
+			 addOption (box, 72, 'Datawarehouse y minería de datos.');
+			 addOption (box, 73, 'Big Data.');
+			 addOption (box, 74, 'Lenguajes de marcado.');
+			 addOption (box, 75, 'Comercio electrónico.');
+			 addOption (box, 76, 'El cifrado.');
+			 addOption (box, 77, 'Identificación y firma electrónica I.');
+			 addOption (box, 78, 'Identificación y firma electrónica II.');
+			 addOption (box, 79, 'Adaptación LOPD.');
+			 addOption (box, 80, 'El tratamiento de imágenes.');
+			 addOption (box, 81, 'Reconocimiento óptico de caracteres.');
+			 addOption (box, 82, 'Modelos de ciclo de vida.');
+			 addOption (box, 83, 'Plan de sistemas de información.');
+			 addOption (box, 84, 'Análisis de sistemas y metodologías ágiles.');
+			 addOption (box, 85, 'Análisis del dominio de los sistemas.');
+			 addOption (box, 86, 'Análisis dinámico de sistemas.');
+			 addOption (box, 87, 'Análisis de aspectos no funcionales.');
+			 addOption (box, 88, 'Diseño arquitectónico de sistemas.');
+			 addOption (box, 89, 'Técnicas de diseño de software.');
+			 addOption (box, 90, 'Prototipos en el desarrollo de sistemas.');
+			 addOption (box, 91, 'Metrica');
+			 addOption (box, 92, 'Pruebas de software.');
+			 addOption (box, 93, 'Evaluación de la calidad del software.');
+			 addOption (box, 94, 'Estimación de recursos.');
+			 addOption (box, 95, 'Migración de aplicaciones y ajuste dimensional.');
+			 addOption (box, 96, 'Mantenimiento de sistemas.');
+			 addOption (box, 97, 'Reingeniería de sistemas.');
+			 addOption (box, 98, 'Calidad de los servicios.');
+			 addOption (box, 99, 'Gestión documental.');
+			 addOption (box, 100, 'Sistemas de recuperación de la información.');
+			 addOption (box, 101, 'ITIL y COBIT.');
+			 addOption (box, 102, 'Redes de telecomunicaciones.');
+			 addOption (box, 103, 'Internet.');
+			 addOption (box, 104, 'Cableado.');
+			 addOption (box, 105, 'Modelo OSI.');
+			 addOption (box, 106, 'Tecnologías de acceso.');
+			 addOption (box, 107, 'Redes de transporte.');
+			 addOption (box, 108, 'Redes inalámbricas.');
+			 addOption (box, 109, 'Redes IP.');
+			 addOption (box, 110, 'Redes de nueva generación.');
+			 addOption (box, 111, 'Transformación digital.');
+			 addOption (box, 112, 'Redes de área local.');
+			 addOption (box, 113, 'Intranet y extranet.');
+			 addOption (box, 114, 'Redes públicas.');
+			 addOption (box, 115, 'CATV.');
+			 addOption (box, 116, 'Correo electrónico.');
+			 addOption (box, 117, 'Comunicaciones móviles.');
+			 addOption (box, 118, 'Aplicaciones móviles.');
+			 addOption (box, 119, 'Seguridad en redes.');
+			 addOption (box, 120, 'Seguridad en el nivel de aplicación.');
+			 addOption (box, 121, 'Regulación de las telecomunicaciones.');
+			 addOption (box, 122, 'Videoconferencia.');
+			 addOption (box, 123, 'Single sign-on.');
+			 addOption (box, 124, 'Virtualización de sistemas.');
+			 addOption (box, 125, 'Trabajo colaborativo y redes sociales.');
 
 }
 
@@ -182,6 +307,25 @@ function renderTestSelectorAnhos(anho){
 
 	var box = document.getElementById('test_navigation');
 
+	if (anho == '2016'){
+			 addOption (box, 'test_anho_2016_0001.html', 'Test 0001');
+			 addOption (box, 'test_anho_2016_0002.html', 'Test 0002');
+			 addOption (box, 'test_anho_2016_0003.html', 'Test 0003');
+			 addOption (box, 'test_anho_2016_0004.html', 'Test 0004');
+			 addOption (box, 'test_anho_2016_0005.html', 'Test 0005');
+			 addOption (box, 'test_anho_2016_0006.html', 'Test 0006');
+			 addOption (box, 'test_anho_2016_0007.html', 'Test 0007');
+			 addOption (box, 'test_anho_2016_0008.html', 'Test 0008');
+			 addOption (box, 'test_anho_2016_0009.html', 'Test 0009');
+			 addOption (box, 'test_anho_2016_0010.html', 'Test 0010');
+			 addOption (box, 'test_anho_2016_0011.html', 'Test 0011');
+	}
+	if (anho == '2015'){
+			 addOption (box, '', '-- No hay test --');
+	}
+	if (anho == '2014'){
+			 addOption (box, '', '-- No hay test --');
+	}
 
 }
 
@@ -208,6 +352,17 @@ function renderMenuTest (tipoTest,id){
 	var list = document.getElementById('menuTest');
 
 
+			 addElement (list, 'Test Preguntas 2016', 'test_anho_2016_0001.html', tipoTest=='anho' && id=='2016');
+			 addElement (list, 'Test por temas', 'test_tema_T1_0001.html', tipoTest=='tema' );
+			 addElement (list, 'Test bloqueB3', 'test_bloque_B3_0001.html', tipoTest=='bloque' && id=='B3');
+			 addElement (list, 'Test bloqueB2', 'test_bloque_B2_0001.html', tipoTest=='bloque' && id=='B2');
+			 addElement (list, 'Test bloqueB1', 'test_bloque_B1_0001.html', tipoTest=='bloque' && id=='B1');
+			 addElement (list, 'Test bloqueA4', 'test_bloque_A4_0001.html', tipoTest=='bloque' && id=='A4');
+			 addElement (list, 'Test bloqueA3', 'test_bloque_A3_0001.html', tipoTest=='bloque' && id=='A3');
+			 addElement (list, 'Test bloqueA2', 'test_bloque_A2_0001.html', tipoTest=='bloque' && id=='A2');
+			 addElement (list, 'Test bloqueA1', 'test_bloque_A1_0001.html', tipoTest=='bloque' && id=='A1');
+			 addElement (list, 'Test de examen', 'test_0000.html', tipoTest=='aleatorio' );
+			 addElement (list, 'Inicio', '../index.html', 0);
 
 }
 
@@ -216,5 +371,16 @@ function renderMenuIndex (tipoTest,id){
 	var list = document.getElementById('menuTest');
 
 
+			 addElement (list, 'Test Preguntas 2016', 'pages/test_anho_2016_0001.html', tipoTest=='anho' && id=='2016');
+			 addElement (list, 'Test por temas', 'pages/test_tema_T1_0001.html', tipoTest=='tema' );
+			 addElement (list, 'Test bloqueB3', 'pages/test_bloque_B3_0001.html', tipoTest=='bloque' && id=='B3');
+			 addElement (list, 'Test bloqueB2', 'pages/test_bloque_B2_0001.html', tipoTest=='bloque' && id=='B2');
+			 addElement (list, 'Test bloqueB1', 'pages/test_bloque_B1_0001.html', tipoTest=='bloque' && id=='B1');
+			 addElement (list, 'Test bloqueA4', 'pages/test_bloque_A4_0001.html', tipoTest=='bloque' && id=='A4');
+			 addElement (list, 'Test bloqueA3', 'pages/test_bloque_A3_0001.html', tipoTest=='bloque' && id=='A3');
+			 addElement (list, 'Test bloqueA2', 'pages/test_bloque_A2_0001.html', tipoTest=='bloque' && id=='A2');
+			 addElement (list, 'Test bloqueA1', 'pages/test_bloque_A1_0001.html', tipoTest=='bloque' && id=='A1');
+			 addElement (list, 'Test de examen', 'pages/test_0000.html', 0);
+			 addElement (list, 'Inicio', '../index.html', tipoTest=='aleatorio' );
 
 }

@@ -37,6 +37,9 @@ import com.preparatic.entidades.PreguntaTest.Campo;
 import com.preparatic.entidades.Test;
 import com.preparatic.entidades.Test.eTipoTest;
 
+import org.antlr.stringtemplate.*;
+import org.antlr.stringtemplate.language.*;
+
 public class HtmlGenerator {
 
 	public static final String pathResources = ConfigProperties
@@ -64,6 +67,48 @@ public class HtmlGenerator {
 		if (test != null)
 			this.tipoTest = test.getTipoTest();
 
+	}
+	
+	public static class Link {
+	    String url;
+	    String title;
+	    public Link(String url, String title) {
+	        this.url = url;
+	        this.title = title;
+	    }
+	    public String getUrl() { return url; }
+	    public String getTitle()  { return title; }
+	}
+	
+	public static void generarStringTemplatePrueba()
+	{
+		
+		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
+		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate");
+		StringTemplate helloAgain = group.getInstanceOf(testTemplateName);
+		 
+		helloAgain.setAttribute("titulo", "Test 001");
+		helloAgain.setAttribute("titulocompleto", "Test 001. Test global");
+		helloAgain.setAttribute("javascriptdata", "../js/data/test_0001.js");
+
+		System.out.println(helloAgain.toString());
+
+		// Creamos la salida
+		PrintStream salida = FactoriaArchivo.archivoHtmlTest(eTipoTest.aleatorio, "global", 9999);
+		salida.print(helloAgain.toString());
+		salida.close();
+		
+		Link[] links = new Link[] {
+			    new Link("test_0000.html", "Test 0000"),
+			    new Link("test_0001.html", "Test 0001"),
+			    new Link("test_0002.html", "Test 0002"),
+			    new Link("test_0003.html", "Test 0003")
+			};
+		 
+		StringTemplate testNav = group.getInstanceOf("testNavTemplate");
+		testNav.setAttribute("hreflist", links);
+
+		System.out.println(testNav.toString());
 	}
 
 	/**
@@ -681,7 +726,9 @@ class OptionToNumber {
 class BloqueToString {
 
 	public static String ToDescripcion(String idBloque) {
-		String s = idBloque;
+		String s = "Test bloque" + idBloque;
+		return s;
+		/*
 		if (s.equals("B1"))
 			return "Test bloque 1";
 		if (s.equals("B2"))
@@ -693,6 +740,7 @@ class BloqueToString {
 
 		assert false : " BloqueTo String. To Descripcion . No deberia llegar aqui";
 		return "";
+		*/
 	}
 
 	public static boolean Equals(String idBloque1, String idBloque2) {

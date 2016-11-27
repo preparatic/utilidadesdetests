@@ -40,7 +40,12 @@ import com.preparatic.archivos.PdfGenerator;
 public class Test {
 
 	public enum eTipoTest {
-		aleatorio, bloque, tematica, anho, ultimoAnho
+		aleatorio, 
+		bloque, 
+		tema, 
+		tematica, 
+		anho, 
+		ultimoAnho
 	};
 
 	private eTipoTest tipoTest;
@@ -211,6 +216,8 @@ public class Test {
 			logger.info("Generando Test. Bloque " + idBloqueTematicaAnho + " Test " + idTest);
 		else if (tipoTest == eTipoTest.aleatorio)
 			logger.info("Generando Test. Test " + idTest);
+		else if (tipoTest == eTipoTest.tema)
+			logger.info("Generando Test. Tema " + idTest);
 		else if (tipoTest == eTipoTest.anho)
 			logger.info("Generando Test Anho " + idBloqueTematicaAnho + " Test " + idTest);
 		else {

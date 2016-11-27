@@ -145,7 +145,7 @@ public class FachadaArchivos {
 				public boolean accept(File dir, String name) {
 					return name.startsWith("test_")
 							&& !name.contains("bloque_")
-							&& !name.contains("temas_")
+							&& !name.contains("tema_")
 							&& !name.contains("anho_")
 							&& name.endsWith(".html");
 				}
@@ -175,7 +175,16 @@ public class FachadaArchivos {
 				}
 			};
 			break;
+		case tema:
+			filter = new FilenameFilter() {
+				public boolean accept(File dir, String name) {
+					if (idBloqueTematicaAnhoDefinido)
+						return name.contains("tema_" + idBloqueTematica + "_") && name.endsWith(".html");
 
+					return name.contains("tema_") && name.endsWith(".html");
+				}
+			};
+			break;
 		case anho:
 			filter = new FilenameFilter() {
 				public boolean accept(File dir, String name) {

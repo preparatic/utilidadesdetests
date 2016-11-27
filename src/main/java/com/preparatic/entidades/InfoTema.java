@@ -41,12 +41,16 @@ public class InfoTema {
 	// Si cambia el orden o la cantidad de columnas del excel, solo habrá que
 	// modificar este atributo.
 	private enum Campo {
-		NUMERO(0), // C
+		NUMERO(0), // A
 		BLOQUEID(1), // B
-		TITULOCORTO(2), // D
-		TITULOLARGO(3), // E
+		PESOBLOQUE(2), // C
+		PESOTEMA(3), // D
+		PESONORMALIZADO(4), // E
+		PESOFINAL(5), // F
+		TITULOCORTO(6), // G
+		TITULOLARGO(7), // H
 		
-		NUM_COLUMNAS(4); // Número total de columnas en el excel.
+		NUM_COLUMNAS(8); // Número total de columnas en el excel.
 		
 		public int index; // Número de columna del excel 
 		
@@ -60,6 +64,11 @@ public class InfoTema {
 	private String bloqueId;
 	private String tituloCorto;
 	private String tituloLargo;
+	
+	private float pesoBloque;
+	private float pesoTema;
+	private float pesoNormalizado;
+	private float pesoFinal;
 	
 	public InfoTema() {
 	}
@@ -82,7 +91,12 @@ public class InfoTema {
 		this.setBloqueID(celdas.get(Campo.BLOQUEID.index));
 		this.setTituloCorto(celdas.get(Campo.TITULOCORTO.index));
 		this.setTituloLargo(celdas.get(Campo.TITULOLARGO.index));
-		
+	
+		this.setPesoBloque(Float.parseFloat(celdas.get(Campo.PESOBLOQUE.index).replace(',', '.')));
+		this.setPesoTema(Float.parseFloat(celdas.get(Campo.PESOTEMA.index).replace(',', '.')));
+		this.setPesoNormalizado(Float.parseFloat(celdas.get(Campo.PESONORMALIZADO.index).replace(',', '.')));
+		this.setPesoFinal(Float.parseFloat(celdas.get(Campo.PESOFINAL.index).replace(',', '.')));
+
 	}
 	
 	/**
@@ -137,7 +151,38 @@ public class InfoTema {
 	public void setTituloLargo(String tituloLargo) {
 		this.tituloLargo = tituloLargo;
 	}
+	public float getPesoBloque() {
+		return pesoBloque;
+	}
 
+	public void setPesoBloque(float pesoBloque) {
+		this.pesoBloque = pesoBloque;
+	}
+
+	public float getPesoTema() {
+		return pesoTema;
+	}
+
+	public void setPesoTema(float pesoTema) {
+		this.pesoTema = pesoTema;
+	}
+
+	public float getPesoNormalizado() {
+		return pesoNormalizado;
+	}
+
+	public void setPesoNormalizado(float pesoNormalizado) {
+		this.pesoNormalizado = pesoNormalizado;
+	}
+
+	public float getPesoFinal() {
+		return pesoFinal;
+	}
+
+	public void setPesoFinal(float pesoFinal) {
+		this.pesoFinal = pesoFinal;
+	}
+	
 	/*
 	 * (non-Javadoc)
 	 * 
