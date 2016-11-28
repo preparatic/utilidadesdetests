@@ -36,6 +36,7 @@ import com.preparatic.entidades.GestorInfoTema;
 import com.preparatic.entidades.GestorTematica;
 import com.preparatic.entidades.PreguntaTest;
 import com.preparatic.entidades.GestorTematica.tematica;
+import com.preparatic.entidades.GestorTests;
 import com.preparatic.entidades.PreguntaTest.Campo;
 import com.preparatic.entidades.Test;
 import com.preparatic.entidades.Test.eTipoTest;
@@ -72,22 +73,6 @@ public class HtmlGenerator {
 
 	}
 	
-
-	public static void generarMetaInfo()
-	{
-		
-		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
-		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate");
-
-		StringTemplate infotestTemplate = group.getInstanceOf("info_tests");
-		infotestTemplate.setAttribute("listabloques", GestorInfoBloque.getInstance().getBloques());
-		infotestTemplate.setAttribute("listatemas", GestorInfoTema.getInstance().getTemas());
-
-		//System.out.println(infotestTemplate.toString());
-		PrintStream file = FactoriaArchivo.filenameToPrintStream("testsV2/data/info_tests.js");
-		file.println(infotestTemplate.toString());
-		file.close();
-	}
 
 	/**
 	 * Genera todos los ficheros de test.
@@ -170,26 +155,6 @@ public class HtmlGenerator {
 		}
 	}
 
-	private void generarHtmlV2() {
-		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
-		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate");
-		StringTemplate htmlTemplate = group.getInstanceOf(testTemplateName);
-		
-		String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
-				test.getIdBloqueTematicaAnho(), test.getIdTest());
-		htmlTemplate.setAttribute("titulo",  test.getTitulo());
-		htmlTemplate.setAttribute("titulocompleto", test.getTitulo());
-		htmlTemplate.setAttribute("javascriptdata", "../data/" +  filename + ".js ");
-
-		//System.out.println(htmlTemplate.toString());
-
-		// Creamos la salida
-		filename = "testsV2/tests/" +  filename + ".html";
-		PrintStream salida = FactoriaArchivo.filenameToPrintStream(filename);
-		salida.print(htmlTemplate.toString());
-		salida.close();
-	}
-	
 	/**
 	 * Genera el fichero con las preguntas y respuestas dentro de un JavaScript.
 	 * 
@@ -267,6 +232,59 @@ public class HtmlGenerator {
 
 		return true;
 	}
+	
+	
+	/***********************************************************
+	 * 
+	 * Estos metodos son nuevos para la generacion del nuevo
+	 * diseno.
+	 * 
+	 ************************************************************/
+	public String getHtmlFilenameV2()
+	{
+		String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
+				test.getIdBloqueTematicaAnho(), test.getIdTest());
+		return "tests/" +  filename + ".html";
+	}
+	private void generarHtmlV2() {
+		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
+		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate");
+		StringTemplate htmlTemplate = group.getInstanceOf(testTemplateName);
+		
+		String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
+				test.getIdBloqueTematicaAnho(), test.getIdTest());
+		htmlTemplate.setAttribute("titulo",  test.getTitulo());
+		htmlTemplate.setAttribute("titulocompleto", test.getTitulo());
+		htmlTemplate.setAttribute("javascriptdata", "../data/" +  filename + ".js ");
+		
+		switch (tipoTest) {
+		case bloque:
+			htmlTemplate.setAttribute("testsSet", "blockTestsSet");
+			break;
+		case anho:
+			htmlTemplate.setAttribute("testsSet", "annosTestsSet");
+			break;
+		case tema:
+			htmlTemplate.setAttribute("testsSet", "themeTestsSet");
+			break;
+		default:
+			htmlTemplate.setAttribute("testsSet", "randomTestsSet");
+			break;
+		}
+		//System.out.println(htmlTemplate.toString());
+
+		// Creamos la salida
+		filename = "testsV2/tests/" +  filename + ".html";
+		PrintStream salida = FactoriaArchivo.filenameToPrintStream(filename);
+		salida.print(htmlTemplate.toString());
+		salida.close();
+	}
+	public String getJsFilenameV2()
+	{
+		String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
+				test.getIdBloqueTematicaAnho(), test.getIdTest());
+		return "data/" +  filename + ".js";
+	}
 	private boolean generarJSQuestionV2(List<PreguntaTest> listapreguntas) {
 
 		if (listapreguntas == null || listapreguntas.isEmpty())
@@ -299,6 +317,40 @@ public class HtmlGenerator {
 		}
 
 		return true;
+	}
+	
+
+	public static void generarMetaInfoV2()
+	{
+		
+		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
+		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplateTODO");
+
+		StringTemplate infotestTemplate = group.getInstanceOf("info_tests");
+		infotestTemplate.setAttribute("listabloques", GestorInfoBloque.getInstance().getBloques());
+		infotestTemplate.setAttribute("listatemas", GestorInfoTema.getInstance().getTemas());
+
+		//System.out.println(infotestTemplate.toString());
+		PrintStream file = FactoriaArchivo.filenameToPrintStream("testsV2/data/info_tests.js");
+		file.println(infotestTemplate.toString());
+		file.close();
+	}
+
+	protected static void generarJSMenuInfoV2()
+	{
+		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
+		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplateTODO");
+
+		StringTemplate infotestTemplate = group.getInstanceOf("list_tests");
+		infotestTemplate.setAttribute("listaTestsGlobales", GestorTests.getInstance().getTestsGlobales());
+		infotestTemplate.setAttribute("listaTestsBloques", GestorTests.getInstance().getTestPorBloque());
+		infotestTemplate.setAttribute("listaTestsTemas", GestorTests.getInstance().getTestPorTema());
+		infotestTemplate.setAttribute("listaTestsAnnos", GestorTests.getInstance().getTestPorAnno());
+
+		//System.out.println(infotestTemplate.toString());
+		PrintStream file = FactoriaArchivo.filenameToPrintStream("testsV2/data/list_tests.js");
+		file.println(infotestTemplate.toString());
+		file.close();
 	}
 	
 	/**

@@ -18,6 +18,9 @@ package com.preparatic.entidades;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
+import com.preparatic.entidades.Test.eTipoTest;
 
 public class GestorTests {
 	private List<Test> infoTests = new ArrayList<Test>();
@@ -33,12 +36,41 @@ public class GestorTests {
 		}
 		return instance;
 	}
-
-	public List<Test> getTests() {
-		return infoTests;
-	}
-
+	
 	public void addTest(Test t) {
 		 infoTests.add(t);
 	}
+	
+	public List<Test> getTests() {
+		return infoTests;
+	}
+	
+	public List<Test> getTestsGlobales() {
+		List<Test> filteredTests = infoTests.stream()
+				.filter(t -> t.getTipoTest() == eTipoTest.aleatorio)
+				.collect(Collectors.toList());
+		return filteredTests;
+	}
+	
+	public List<Test> getTestPorBloque() {
+		List<Test> filteredTests = infoTests.stream()
+				.filter(t -> t.getTipoTest() == eTipoTest.bloque)
+				.collect(Collectors.toList());
+		return filteredTests;
+	}
+	
+	public List<Test> getTestPorTema() {
+		List<Test> filteredTests = infoTests.stream()
+				.filter(t -> t.getTipoTest() == eTipoTest.tema)
+				.collect(Collectors.toList());
+		return filteredTests;
+	}
+	
+	public List<Test> getTestPorAnno() {
+		List<Test> filteredTests = infoTests.stream()
+				.filter(t -> t.getTipoTest() == eTipoTest.anho)
+				.collect(Collectors.toList());
+		return filteredTests;
+	}
+
 }

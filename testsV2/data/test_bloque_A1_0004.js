@@ -21,160 +21,160 @@ var response = new Array();
 var units = new Array();
 var comments = new Array();
 
-//  Id pregunta: 265 Año de creación de pregunta: 2016
- questions[0]= "1)  &iquest;Qui&eacute;n debe refrendar el nombramiento del Presidente del Consejo General del Poder Judicial?:";
+//  Id pregunta: 229 Año de creación de pregunta: 2016
+ questions[0]= "1)  De acuerdo con lo previsto en la Constituci&oacute;n Espa&ntilde;ola, el Gobierno y la administraci&oacute;n aut&oacute;noma de las provincias estar&aacute;n encomendados:";
  choices[0]= new Array();
- choices[0][0] = "El Presidente del Senado";
- choices[0][1] = "No es un acto Real, por tanto no conlleva refrendo";
- choices[0][2] = "El Presidente del Gobierno";
- choices[0][3] = "El Presidente de las Cortes Generales";
- answers[0] = choices[0][2];
+ choices[0][0] = "A Diputaciones u otras Corporaciones de car&aacute;cter representativo.";
+ choices[0][1] = "A los Subdelegados del Gobierno y a los Directores Insulares.";
+ choices[0][2] = "A las Diputaciones y a las Mancomunidades de Municipios.";
+ choices[0][3] = "A las Diputaciones y a las Comarcas.";
+ answers[0] = choices[0][3];
  units[0] = "1";
- comments[0] = "Id Pregunta: 265. CONSTITUCION1978";
+ comments[0] = "Id Pregunta: 229. CONSTITUCION1978";
 
 
-//  Id pregunta: 790 Año de creación de pregunta: 2016
- questions[1]= "2)  En la organizaci&oacute;n territorial de la Administraci&oacute;n General del Estado los Subdelegados del Gobierno en las provincias los cuales tendr&aacute;n nivel de:";
+//  Id pregunta: 811 Año de creación de pregunta: 2016
+ questions[1]= "2)  Los Subdirectores generales:";
  choices[1]= new Array();
- choices[1][0] = "Subsecretario";
- choices[1][1] = "Subdirector general";
- choices[1][2] = "Secretario de Estado";
- choices[1][3] = "ninguna es correcta";
+ choices[1][0] = "son los responsables inmediatos, bajo la supervisi&oacute;n del Secretario general o del titular del &oacute;rgano del que dependan, de la ejecuci&oacute;n de aquellos proyectos, objetivos o actividades que les sean asignados, as&iacute; como de la gesti&oacute;n ordinaria de los asuntos de la competencia de la Subdirecci&oacute;n General";
+ choices[1][1] = "ser&aacute;n nombrados, respetando los principios de igualdad, m&eacute;rito y capacidad, y cesados por el Ministro, Secretario de Estado o Subsecretario del que dependan";
+ choices[1][2] = "sus nombramientos habr&aacute;n de efectuarse entre funcionarios de carrera del Estado, o de otras Administraciones, cuando as&iacute; lo prevean las normas de aplicaci&oacute;n, pertenecientes al Subgrupo A2";
+ choices[1][3] = "todas son correctas";
  answers[1] = choices[1][1];
  units[1] = "4, 7, 8, 9";
- comments[1] = "Id Pregunta: 790. Ley 40/2015";
+ comments[1] = "Id Pregunta: 811. Ley 40/2015";
 
 
-//  Id pregunta: 796 Año de creación de pregunta: 2016
- questions[2]= "3)  Sin perjuicio de lo previsto en la Ley 3/2015, de 30 de marzo, reguladora del ejercicio del alto cargo de la Administraci&oacute;n General del Estado, los titulares de los &oacute;rganos superiores y directivos son nombrados, atendiendo a criterios de competencia profesional y experiencia, en la forma establecida en esta Ley, siendo de aplicaci&oacute;n al desempe&ntilde;o de sus funciones:";
+//  Id pregunta: 185 Año de creación de pregunta: 2016
+ questions[2]= "3)  Se&ntilde;ale cu&aacute;l de las siguientes funciones NO est&aacute; atribuida constitucionalmente al Rey:";
  choices[2]= new Array();
- choices[2][0] = "la responsabilidad profesional, personal y directa por la gesti&oacute;n desarrollada";
- choices[2][1] = "la sujeci&oacute;n al control y evaluaci&oacute;n de la gesti&oacute;n por el &oacute;rgano superior o directivo competente, sin perjuicio del control establecido por la Ley General Presupuestaria";
- choices[2][2] = "a y b son correctas";
- choices[2][3] = "a y b son incorrectas";
- answers[2] = choices[2][2];
- units[2] = "4, 7, 8, 9";
- comments[2] = "Id Pregunta: 796. Ley 40/2015";
+ choices[2][0] = "El mando supremo de las Fuerzas Armadas.";
+ choices[2][1] = "Autorizar indultos generales.";
+ choices[2][2] = "Sancionar las leyes.";
+ choices[2][3] = "Promulgar las leyes.";
+ answers[2] = choices[2][1];
+ units[2] = "1";
+ comments[2] = "Id Pregunta: 185. CONSTITUCION1978";
 
 
-//  Id pregunta: 377 Año de creación de pregunta: 2016
- questions[3]= "4)  Es un elemento caracter&iacute;stico de la naturaleza jur&iacute;dica de la Uni&oacute;n Europea:";
+//  Id pregunta: 262 Año de creación de pregunta: 2016
+ questions[3]= "4)  &iquest;Cu&aacute;l de las siguientes no es una jurisdicci&oacute;n especial?:";
  choices[3]= new Array();
- choices[3][0] = "Tener una estructura institucional.";
- choices[3][1] = "El establecimiento de un Ordenamiento jur&iacute;dico propio.";
- choices[3][2] = "La transferencia de competencias a las instituciones comunitarias.";
- choices[3][3] = "Todas las respuestas son correctas.";
- answers[3] = choices[3][3];
- units[3] = "5";
- comments[3] = "Id Pregunta: 377. UNION EUROPEA";
+ choices[3][0] = "Constitucional.";
+ choices[3][1] = "Penal.";
+ choices[3][2] = "Militar.";
+ choices[3][3] = "Tribunales consuetudinarios.";
+ answers[3] = choices[3][0];
+ units[3] = "1";
+ comments[3] = "Id Pregunta: 262. CONSTITUCION1978";
 
 
-//  Id pregunta: 360 Año de creación de pregunta: 2016
- questions[4]= "5)  El Parlamento Europeo est&aacute; compuesto actualmente por:";
+//  Id pregunta: 231 Año de creación de pregunta: 2016
+ questions[4]= "5)  La convocatoria a refer&eacute;ndum en los casos previstos en la Constituci&oacute;n corresponde a:";
  choices[4]= new Array();
- choices[4][0] = "786 Diputados como m&aacute;ximo.";
- choices[4][1] = "600 Diputados como m&aacute;ximo.";
- choices[4][2] = "650 Diputados como m&aacute;ximo.";
- choices[4][3] = "732 Diputados como m&aacute;ximo.";
+ choices[4][0] = "El Presidente del Congreso de los Diputados.";
+ choices[4][1] = "El Presidente del Gobierno.";
+ choices[4][2] = "El Rey.";
+ choices[4][3] = "El Consejo de Ministros.";
  answers[4] = choices[4][0];
- units[4] = "5";
- comments[4] = "Id Pregunta: 360. UNION EUROPEA";
+ units[4] = "1";
+ comments[4] = "Id Pregunta: 231. CONSTITUCION1978";
 
 
-//  Id pregunta: 334 Año de creación de pregunta: 2016
- questions[5]= "6)  En el &aacute;mbito de la Uni&oacute;n Europea, las recomendaciones son:";
+//  Id pregunta: 834 Año de creación de pregunta: 2016
+ questions[5]= "6)  Ley 40/2015, de 1 de octubre, de R&eacute;gimen Jur&iacute;dico del Sector P&uacute;blico. La creaci&oacute;n de cualquier &oacute;rgano administrativo exigir&aacute;, al menos, el cumplimiento de los siguientes requisitos:";
  choices[5]= new Array();
- choices[5][0] = "Sugerencias de las Instituciones comunitarias a los Estados miembros para que act&uacute;en en un determinado sentido en relaci&oacute;n con materias concretas.";
- choices[5][1] = "Ninguna de las respuestas es correcta.";
- choices[5][2] = "Sugerencias de los Estados miembros a las Instituciones comunitarias para que act&uacute;en en un determinado sentido en relaci&oacute;n con materias concretas.";
- choices[5][3] = "Sugerencias de las Instituciones comunitarias a los Estados miembros para que act&uacute;en en un determinado sentido en relaci&oacute;n con materia econ&oacute;mica, exclusivamente.";
- answers[5] = choices[5][0];
- units[5] = "5";
- comments[5] = "Id Pregunta: 334. UNION EUROPEA";
+ choices[5][0] = "Determinaci&oacute;n de su forma de integraci&oacute;n en la Administraci&oacute;n P&uacute;blica de que se trate y su dependencia org&aacute;nica.";
+ choices[5][1] = "Delimitaci&oacute;n de su naturaleza, funciones y competencias.";
+ choices[5][2] = "Dotaci&oacute;n de los cr&eacute;ditos necesarios para su puesta en marcha y funcionamiento.";
+ choices[5][3] = "Todas son correctas.";
+ answers[5] = choices[5][3];
+ units[5] = "4, 7, 8, 9";
+ comments[5] = "Id Pregunta: 834. Ley 40/2015";
 
 
-//  Id pregunta: 817 Año de creación de pregunta: 2016
- questions[6]= "7)  Los servicios territoriales de la Administraci&oacute;n General del Estado en la Comunidad Aut&oacute;noma se organizar&aacute;n atendiendo al mejor cumplimiento de sus fines, en:";
+//  Id pregunta: 825 Año de creación de pregunta: 2016
+ questions[6]= "7)  Debe abstenerse el funcionario que tiene relaci&oacute;n de servicio con interesado en el asunto o le ha prestado servicios profesionales en los ...";
  choices[6]= new Array();
- choices[6][0] = "servicios integrados en las Delegaciones del Gobierno";
- choices[6][1] = "servicios no integrados en las Delegaciones del Gobierno";
- choices[6][2] = "servicios integrados y no integrados en las Delegaciones del Gobierno";
- choices[6][3] = "ninguna es correcta";
- answers[6] = choices[6][2];
+ choices[6][0] = "Tres &uacute;ltimos a&ntilde;os";
+ choices[6][1] = "Cinco &uacute;ltimos a&ntilde;os";
+ choices[6][2] = "Cuatro &uacute;ltimos a&ntilde;os";
+ choices[6][3] = "Dos &uacute;ltimos a&ntilde;os";
+ answers[6] = choices[6][1];
  units[6] = "4, 7, 8, 9";
- comments[6] = "Id Pregunta: 817. Ley 40/2015";
+ comments[6] = "Id Pregunta: 825. Ley 40/2015";
 
 
-//  Id pregunta: 788 Año de creación de pregunta: 2016
- questions[7]= "8)  En la organizaci&oacute;n territorial de la Administraci&oacute;n General del Estado son &oacute;rganos directivos:";
+//  Id pregunta: 807 Año de creación de pregunta: 2016
+ questions[7]= "8)  Son los titulares de los &oacute;rganos directivos encargados de la gesti&oacute;n de una o varias &aacute;reas funcionalmente homog&eacute;neas del Ministerio:";
  choices[7]= new Array();
- choices[7][0] = "los Delegados del Gobierno en las Comunidades Aut&oacute;nomas";
- choices[7][1] = "los Subdelegados del Gobierno en las provincias";
- choices[7][2] = "los Subdelegados del Gobierno en las entidades locales";
- choices[7][3] = "a y b son correctas";
- answers[7] = choices[7][3];
+ choices[7][0] = "los Secretarios generales t&eacute;cnicos";
+ choices[7][1] = "los Directores generales";
+ choices[7][2] = "los Secretarios generales";
+ choices[7][3] = "los Subsecretarios";
+ answers[7] = choices[7][1];
  units[7] = "4, 7, 8, 9";
- comments[7] = "Id Pregunta: 788. Ley 40/2015";
+ comments[7] = "Id Pregunta: 807. Ley 40/2015";
 
 
-//  Id pregunta: 792 Año de creación de pregunta: 2016
- questions[8]= "9)  Tienen la condici&oacute;n de alto cargo:";
+//  Id pregunta: 839 Año de creación de pregunta: 2016
+ questions[8]= "9)  Ley 40/2015, de 1 de octubre, de R&eacute;gimen Jur&iacute;dico del Sector P&uacute;blico. La formalizaci&oacute;n de las encomiendas de gesti&oacute;n se ajustar&aacute; a las siguientes reglas:";
  choices[8]= new Array();
- choices[8][0] = "los &oacute;rganos superiores";
- choices[8][1] = "los &oacute;rganos superiores y directivos";
- choices[8][2] = "los &oacute;rganos superiores y directivos, excepto los Subdirectores generales y asimilados";
- choices[8][3] = "los &oacute;rganos superiores y directivos, excepto los Secretarios generales y asimilados";
- answers[8] = choices[8][2];
+ choices[8][0] = "Cuando la encomienda de gesti&oacute;n se realice entre &oacute;rganos administrativos o Entidades de Derecho P&uacute;blico pertenecientes a la misma Administraci&oacute;n deber&aacute; formalizarse en los t&eacute;rminos que establezca su normativa propia y, en su defecto, por acuerdo expreso de los &oacute;rganos o Entidades de Derecho P&uacute;blico intervinientes. En todo caso, el instrumento de formalizaci&oacute;n de la encomienda de gesti&oacute;n y su resoluci&oacute;n deber&aacute; ser publicada, para su eficacia, en el Bolet&iacute;n Oficial del Estado, en el Bolet&iacute;n oficial de la Comunidad Aut&oacute;noma o en el de la Provincia, seg&uacute;n la Administraci&oacute;n a que pertenezca el &oacute;rgano encomendante.";
+ choices[8][1] = "Cada Administraci&oacute;n podr&aacute; regular los requisitos necesarios para la validez de tales acuerdos que incluir&aacute;n, al menos, expresa menci&oacute;n de la actividad o actividades a las que afecten, el plazo de vigencia y la naturaleza y alcance de la gesti&oacute;n encomendada.";
+ choices[8][2] = "Cuando la encomienda de gesti&oacute;n se realice entre &oacute;rganos y Entidades de Derecho P&uacute;blico de distintas Administraciones se formalizar&aacute; mediante firma del correspondiente convenio entre ellas, que deber&aacute; ser publicado en el &laquo;Bolet&iacute;n Oficial del Estado&raquo;, en el Bolet&iacute;n oficial de la Comunidad Aut&oacute;noma o en el de la Provincia, seg&uacute;n la Administraci&oacute;n a que pertenezca el &oacute;rgano encomendante, salvo en el supuesto de la gesti&oacute;n ordinaria de los servicios de las Comunidades Aut&oacute;nomas por las Diputaciones Provinciales o en su caso Cabildos o Consejos insulares, que se regir&aacute; por la legislaci&oacute;n de R&eacute;gimen Local.";
+ choices[8][3] = "Todas son correctas.";
+ answers[8] = choices[8][3];
  units[8] = "4, 7, 8, 9";
- comments[8] = "Id Pregunta: 792. Ley 40/2015";
+ comments[8] = "Id Pregunta: 839. Ley 40/2015";
 
 
-//  Id pregunta: 205 Año de creación de pregunta: 2016
- questions[9]= "10)  De acuerdo con la regulaci&oacute;n de la Constitucional de las Comunidades Aut&oacute;nomas, se&ntilde;ale la afirmaci&oacute;n correcta:";
+//  Id pregunta: 260 Año de creación de pregunta: 2016
+ questions[9]= "10)  &iquest;En qu&eacute; art&iacute;culo de la Constituci&oacute;n se recoge el principio de unidad jurisdiccional?:";
  choices[9]= new Array();
- choices[9][0] = "La federaci&oacute;n de Comunidades Aut&oacute;nomas exige aprobaci&oacute;n mediante ley org&aacute;nica.";
- choices[9][1] = "Los Estatutos de Autonom&iacute;a deben contener la delimitaci&oacute;n del territorio de la Comunidad Aut&oacute;noma.";
- choices[9][2] = "La reforma de los Estatutos se aprobar&aacute; por las Cortes Generales mediante ley ordinaria.";
- choices[9][3] = "El Estado tiene competencia exclusiva sobre agricultura y ganader&iacute;a.";
- answers[9] = choices[9][1];
+ choices[9][0] = "117.5";
+ choices[9][1] = "117.1";
+ choices[9][2] = "116";
+ choices[9][3] = "15";
+ answers[9] = choices[9][0];
  units[9] = "1";
- comments[9] = "Id Pregunta: 205. CONSTITUCION1978";
+ comments[9] = "Id Pregunta: 260. CONSTITUCION1978";
 
 
-//  Id pregunta: 357 Año de creación de pregunta: 2016
- questions[10]= "11)  &iquest;Qu&eacute; instituciones comparten las tareas legislativas en la Comunidad Europea?:";
+//  Id pregunta: 813 Año de creación de pregunta: 2016
+ questions[10]= "11)  Las Delegaciones del Gobierno tendr&aacute;n su sede en:";
  choices[10]= new Array();
- choices[10][0] = "El Parlamento y el Consejo.";
- choices[10][1] = "El Parlamento, la Comisi&oacute;n y el Consejo.";
- choices[10][2] = "El Parlamento y la Comisi&oacute;n.";
- choices[10][3] = "La Comisi&oacute;n y el Consejo.";
- answers[10] = choices[10][1];
- units[10] = "5";
- comments[10] = "Id Pregunta: 357. UNION EUROPEA";
+ choices[10][0] = "la localidad elegida por el Consejo de Gobierno de la Comunidad Aut&oacute;noma, salvo que el Consejo de Ministros acuerde ubicarla en otra distinta y sin perjuicio de lo que disponga expresamente el Estatuto de Autonom&iacute;a";
+ choices[10][1] = "la localidad donde radique el Consejo de Gobierno de la Comunidad Aut&oacute;noma, salvo que el Ministerio de Hacienda y Administraciones P&uacute;blicas acuerde ubicarla en otra distinta y sin perjuicio de lo que disponga expresamente el Estatuto de Autonom&iacute;a";
+ choices[10][2] = "la localidad donde radique el Consejo de Gobierno de la Comunidad Aut&oacute;noma, salvo que el Consejo de Ministros acuerde ubicarla en otra distinta y sin perjuicio de lo que disponga expresamente el Estatuto de Autonom&iacute;a";
+ choices[10][3] = "la localidad donde elegida por el Consejo de Gobierno de la Comunidad Aut&oacute;noma, salvo que el Ministerio de Hacienda y Administraciones P&uacute;blicas acuerde ubicarla en otra distinta y sin perjuicio de lo que disponga expresamente el Estatuto de Autonom&iacute;a";
+ answers[10] = choices[10][2];
+ units[10] = "4, 7, 8, 9";
+ comments[10] = "Id Pregunta: 813. Ley 40/2015";
 
 
-//  Id pregunta: 176 Año de creación de pregunta: 2016
- questions[11]= "12)  Seg&uacute;n el Art&iacute;culo 115 de la Constituci&oacute;n Espa&ntilde;ola, el Presidente del Gobierno, previa deliberaci&oacute;n del Consejo de Ministros, y bajo su responsabilidad, podr&aacute; proponer la disoluci&oacute;n de:";
+//  Id pregunta: 772 Año de creación de pregunta: 2016
+ questions[11]= "12)  Las Administraciones P&uacute;blicas:";
  choices[11]= new Array();
- choices[11][0] = "El Congreso, el senado o las Cortes Generales.";
- choices[11][1] = "Solamente el Congreso.";
- choices[11][2] = "El Congreso, pero s&oacute;lo mediante la tramitaci&oacute;n de una moci&oacute;n de censura.";
- choices[11][3] = "El Congreso y el Senado, mediante Refer&eacute;ndum.";
- answers[11] = choices[11][0];
- units[11] = "1";
- comments[11] = "Id Pregunta: 176. CONSTITUCION1978";
+ choices[11][0] = "se relacionar&aacute;n entre s&iacute; y con sus &oacute;rganos, organismos p&uacute;blicos y entidades vinculados o dependientes a trav&eacute;s de medios no electr&oacute;nicos, que aseguren la interoperabilidad y seguridad de los sistemas y soluciones adoptadas por cada una de ellas";
+ choices[11][1] = "garantizar&aacute;n la protecci&oacute;n de los datos de car&aacute;cter personal";
+ choices[11][2] = "facilitar&aacute;n preferentemente la prestaci&oacute;n disociada de servicios a los interesados";
+ choices[11][3] = "todas son correctas";
+ answers[11] = choices[11][1];
+ units[11] = "4, 7, 8, 9";
+ comments[11] = "Id Pregunta: 772. Ley 40/2015";
 
 
-//  Id pregunta: 212 Año de creación de pregunta: 2016
- questions[12]= "13)  Se&ntilde;ale la afirmaci&oacute;n correcta en relaci&oacute;n con la regulaci&oacute;n constitucional de la composici&oacute;n del Senado:";
+//  Id pregunta: 339 Año de creación de pregunta: 2016
+ questions[12]= "13)  La presidencia del Consejo se ejerce de forma rotatoria cada:";
  choices[12]= new Array();
- choices[12][0] = "La poblaci&oacute;n de Melilla elegir&aacute; dos Senadores.";
- choices[12][1] = "En cada provincia se elegir&aacute;n tres senadores.";
- choices[12][2] = "Las Asambleas de las Comunidades Aut&oacute;nomas elegir&aacute;n un senador cuando su poblaci&oacute;n supere el mill&oacute;n de habitantes.";
- choices[12][3] = "El Senado se compone de 350 senadores.";
- answers[12] = choices[12][0];
- units[12] = "1";
- comments[12] = "Id Pregunta: 212. CONSTITUCION1978";
+ choices[12][0] = "4 meses seg&uacute;n un orden fijado por unanimidad del Consejo.";
+ choices[12][1] = "6 meses seg&uacute;n un orden fijado por unanimidad del Consejo.";
+ choices[12][2] = "4 meses seg&uacute;n un orden fijado por mayor&iacute;a cualificada del Consejo.";
+ choices[12][3] = "6 meses seg&uacute;n un orden fijado por mayor&iacute;a cualificada del Consejo.";
+ answers[12] = choices[12][1];
+ units[12] = "5";
+ comments[12] = "Id Pregunta: 339. UNION EUROPEA";
 
 
 //  Id pregunta: 232 Año de creación de pregunta: 2016
@@ -189,555 +189,555 @@ var comments = new Array();
  comments[13] = "Id Pregunta: 232. CONSTITUCION1978";
 
 
-//  Id pregunta: 306 Año de creación de pregunta: 2016
- questions[14]= "15)  Componen la Comisi&oacute;n Europea:";
+//  Id pregunta: 782 Año de creación de pregunta: 2016
+ questions[14]= "15)  Sin perjuicio de la responsabilidad disciplinaria en que se pueda incurrir, el incumplimiento de las instrucciones u &oacute;rdenes de servicio:";
  choices[14]= new Array();
- choices[14][0] = "Un Comisario por cada Estado miembro.";
- choices[14][1] = "Uno o dos Comisarios por cada Estado miembro, dependiendo de las caracter&iacute;sticas del Estado.";
- choices[14][2] = "Dos Comisarios por cada Estado miembro.";
- choices[14][3] = "Los Ministros de Asuntos Exteriores de cada Estado miembro.";
+ choices[14][0] = "no afecta por s&iacute; solo a la validez de los actos dictados por los &oacute;rganos administrativos";
+ choices[14][1] = "supone la invalidez de los actos dictados por los &oacute;rganos administrativos";
+ choices[14][2] = "supone la nulidad de los actos dictados por los &oacute;rganos administrativos";
+ choices[14][3] = "supone la anulabilidad de los actos dictados por los &oacute;rganos administrativos";
  answers[14] = choices[14][0];
- units[14] = "5";
- comments[14] = "Id Pregunta: 306. UNION EUROPEA";
+ units[14] = "4, 7, 8, 9";
+ comments[14] = "Id Pregunta: 782. Ley 40/2015";
 
 
-//  Id pregunta: 821 Año de creación de pregunta: 2016
- questions[15]= "16)  En las Comunidades Aut&oacute;nomas uniprovinciales en las que no exista Subdelegado la suplencia corresponder&aacute; a:";
+//  Id pregunta: 347 Año de creación de pregunta: 2016
+ questions[15]= "16)  La Comisi&oacute;n Europea est&aacute; integrada por:";
  choices[15]= new Array();
- choices[15][0] = "el Secretario General";
- choices[15][1] = "el Subdirector General";
- choices[15][2] = "el Secretario de Estado";
- choices[15][3] = "ninguna es correcta";
- answers[15] = choices[15][0];
- units[15] = "4, 7, 8, 9";
- comments[15] = "Id Pregunta: 821. Ley 40/2015";
+ choices[15][0] = "18 miembros.";
+ choices[15][1] = "Ninguna es correcta.";
+ choices[15][2] = "22 miembros.";
+ choices[15][3] = "21 miembros.";
+ answers[15] = choices[15][1];
+ units[15] = "5";
+ comments[15] = "Id Pregunta: 347. UNION EUROPEA";
 
 
-//  Id pregunta: 221 Año de creación de pregunta: 2016
- questions[16]= "17)  &iquest;C&oacute;mo se denomina el T&iacute;tulo I de la Constituci&oacute;n Espa&ntilde;ola?:";
+//  Id pregunta: 335 Año de creación de pregunta: 2016
+ questions[16]= "17)  Un diputado del Parlamento Europeo, de nacionalidad espa&ntilde;ola, &iquest;puede ser tambi&eacute;n Diputado en el Congreso espa&ntilde;ol?:";
  choices[16]= new Array();
- choices[16][0] = "De los derechos y deberes fundamentales.";
- choices[16][1] = "De los espa&ntilde;oles y los extranjeros.";
- choices[16][2] = "Derechos y libertades.";
- choices[16][3] = "De la Corona.";
- answers[16] = choices[16][0];
- units[16] = "1";
- comments[16] = "Id Pregunta: 221. CONSTITUCION1978";
+ choices[16][0] = "Son compatibles, lo que no puede compatibilizar es ser funcionario de cualquiera de las Instituciones Europeas.";
+ choices[16][1] = "Son compatibles, lo que no puede compatibilizar es ser miembro del Tribunal de Justicia de Luxemburgo.";
+ choices[16][2] = "Son incompatibles ambas actas de diputado.";
+ choices[16][3] = "Son perfectamente compatibles ambas actas de diputado.";
+ answers[16] = choices[16][2];
+ units[16] = "5";
+ comments[16] = "Id Pregunta: 335. UNION EUROPEA";
 
 
-//  Id pregunta: 251 Año de creación de pregunta: 2016
- questions[17]= "18)  La Justicia, en Espa&ntilde;a, emana del/de la:";
+//  Id pregunta: 786 Año de creación de pregunta: 2016
+ questions[17]= "18)  Salvo las excepciones previstas por esta Ley, la organizaci&oacute;n de la Administraci&oacute;n General del Estado responde a los principios de:";
  choices[17]= new Array();
- choices[17][0] = "Rey.";
- choices[17][1] = "&Oacute;rgano jurisdiccional que act&uacute;a en cada caso.";
- choices[17][2] = "Constituci&oacute;n.";
- choices[17][3] = "Pueblo.";
- answers[17] = choices[17][2];
- units[17] = "1";
- comments[17] = "Id Pregunta: 251. CONSTITUCION1978";
+ choices[17][0] = "divisi&oacute;n funcional en Departamentos ministeriales y de gesti&oacute;n territorial integrada en Delegaciones del Gobierno en las Comunidades Aut&oacute;nomas";
+ choices[17][1] = "gesti&oacute;n territorial integrada en Departamentos ministeriales y de divisi&oacute;n funcional en Delegaciones del Gobierno en las Comunidades Aut&oacute;nomas";
+ choices[17][2] = "divisi&oacute;n funcional en Delegaciones del Gobierno y de gesti&oacute;n territorial integrada en Departamentos ministeriales en las Comunidades Aut&oacute;nomas";
+ choices[17][3] = "gesti&oacute;n territorial integrada en Delegaciones del Gobierno y de divisi&oacute;n funcional en Departamentos ministeriales en las Comunidades Aut&oacute;nomas";
+ answers[17] = choices[17][0];
+ units[17] = "4, 7, 8, 9";
+ comments[17] = "Id Pregunta: 786. Ley 40/2015";
 
 
-//  Id pregunta: 362 Año de creación de pregunta: 2016
- questions[18]= "19)  En el marco de la Uni&oacute;n Europea, las decisiones:";
+//  Id pregunta: 198 Año de creación de pregunta: 2016
+ questions[18]= "19)  La Constituci&oacute;n Espa&ntilde;ola de 1978, estructura las Cortes Generales en:";
  choices[18]= new Array();
- choices[18][0] = "Son actos normativos.";
- choices[18][1] = "Poseen alcance general.";
- choices[18][2] = "No son obligatorias.";
- choices[18][3] = "Son actos individuales no normativos.";
+ choices[18][0] = "Dos c&aacute;maras: Congreso de los Diputados (C&aacute;mara Alta) y Senado (C&aacute;mara Baja).";
+ choices[18][1] = "Consejo de Ministros y dos C&aacute;maras: Congreso de los Diputados (C&aacute;mara Alta) y Senado (C&aacute;mara Baja).";
+ choices[18][2] = "Gobierno de la Naci&oacute;n y dos C&aacute;maras: Congreso de los Diputados (C&aacute;mara Alta) y Senado (C&aacute;mara Baja).";
+ choices[18][3] = "Dos C&aacute;maras: Congreso de los Diputados (C&aacute;mara Baja) y Senado (C&aacute;mara Alta).";
  answers[18] = choices[18][3];
- units[18] = "5";
- comments[18] = "Id Pregunta: 362. UNION EUROPEA";
+ units[18] = "1";
+ comments[18] = "Id Pregunta: 198. CONSTITUCION1978";
 
 
-//  Id pregunta: 763 Año de creación de pregunta: 2016
- questions[19]= "20)  La presente Ley se aplica al sector p&uacute;blico que comprende (se&ntilde;ala la incorrecta):";
+//  Id pregunta: 343 Año de creación de pregunta: 2016
+ questions[19]= "20)  &iquest;Cu&aacute;l es el n&uacute;mero m&iacute;nimo de parlamentarios de cinco Estados miembros para constituir un grupo pol&iacute;tico?:";
  choices[19]= new Array();
- choices[19][0] = "la Administraci&oacute;n General del Estado";
- choices[19][1] = "las Administraciones de las Comunidades Aut&oacute;nomas";
- choices[19][2] = "las Entidades que integran la Administraci&oacute;n Local";
- choices[19][3] = "el sector p&uacute;blico y privado institucional";
- answers[19] = choices[19][3];
- units[19] = "4, 7, 8, 9";
- comments[19] = "Id Pregunta: 763. Ley 40/2015";
+ choices[19][0] = "23";
+ choices[19][1] = "20";
+ choices[19][2] = "14";
+ choices[19][3] = "18";
+ answers[19] = choices[19][1];
+ units[19] = "5";
+ comments[19] = "Id Pregunta: 343. UNION EUROPEA";
 
 
-//  Id pregunta: 193 Año de creación de pregunta: 2016
- questions[20]= "21)  El defensor del pueblo ser&aacute; elegido por las Cortes Generales para un per&iacute;odo de:";
+//  Id pregunta: 230 Año de creación de pregunta: 2016
+ questions[20]= "21)  Seg&uacute;n el Art&iacute;culo 22 de la Constituci&oacute;n Espa&ntilde;ola, las asociaciones s&oacute;lo podr&aacute;n ser disueltas o suspendidas en sus actividades:";
  choices[20]= new Array();
- choices[20][0] = "3 a&ntilde;os.";
- choices[20][1] = "5 a&ntilde;os.";
- choices[20][2] = "4 a&ntilde;os.";
- choices[20][3] = "6 a&ntilde;os.";
- answers[20] = choices[20][1];
+ choices[20][0] = "Por Real Decreto.";
+ choices[20][1] = "Por Orden del Ministerio del Interior.";
+ choices[20][2] = "Por resoluci&oacute;n judicial motivada.";
+ choices[20][3] = "Por resoluci&oacute;n del Delegado del Gobierno de la Comunidad Aut&oacute;noma donde tenga establecido su domicilio la asociaci&oacute;n.";
+ answers[20] = choices[20][2];
  units[20] = "1";
- comments[20] = "Id Pregunta: 193. CONSTITUCION1978";
+ comments[20] = "Id Pregunta: 230. CONSTITUCION1978";
 
 
-//  Id pregunta: 783 Año de creación de pregunta: 2016
- questions[21]= "22)  Las competencias en materia de organizaci&oacute;n administrativa, r&eacute;gimen de personal, procedimientos e inspecci&oacute;n de servicios, no atribuidas espec&iacute;ficamente conforme a una Ley a ning&uacute;n otro &oacute;rgano de la Administraci&oacute;n General del Estado, ni al Gobierno, corresponder&aacute;n a:";
+//  Id pregunta: 790 Año de creación de pregunta: 2016
+ questions[21]= "22)  En la organizaci&oacute;n territorial de la Administraci&oacute;n General del Estado son &oacute;rganos directivos:";
  choices[21]= new Array();
- choices[21][0] = "el Ministerio de Hacienda y Administraciones P&uacute;blicas";
- choices[21][1] = "el Consejo de Estado";
- choices[21][2] = "el Congreso";
- choices[21][3] = "las Cortes Generales";
- answers[21] = choices[21][0];
+ choices[21][0] = "los Delegados del Gobierno en las Comunidades Aut&oacute;nomas";
+ choices[21][1] = "los Subdelegados del Gobierno en las provincias";
+ choices[21][2] = "los Subdelegados del Gobierno en las entidades locales";
+ choices[21][3] = "a y b son correctas";
+ answers[21] = choices[21][3];
  units[21] = "4, 7, 8, 9";
- comments[21] = "Id Pregunta: 783. Ley 40/2015";
+ comments[21] = "Id Pregunta: 790. Ley 40/2015";
 
 
-//  Id pregunta: 779 Año de creación de pregunta: 2016
- questions[22]= "23)  Las instrucciones y &oacute;rdenes de servicio se publicar&aacute;n en el bolet&iacute;n oficial que corresponda, sin perjuicio de su difusi&oacute;n de acuerdo con lo previsto en la Ley 19/2013, de 9 de diciembre, de transparencia, acceso a la informaci&oacute;n p&uacute;blica y buen gobierno cuando:";
+//  Id pregunta: 774 Año de creación de pregunta: 2016
+ questions[22]= "23)  Las Administraciones P&uacute;blicas act&uacute;an para el cumplimiento de sus fines con:";
  choices[22]= new Array();
- choices[22][0] = "una disposici&oacute;n espec&iacute;fica as&iacute; lo establezca";
- choices[22][1] = "se estime conveniente por raz&oacute;n de los destinatarios";
- choices[22][2] = "se estime conveniente por raz&oacute;n de los efectos que puedan producirse";
- choices[22][3] = "todas son correctas";
- answers[22] = choices[22][3];
+ choices[22][0] = "personalidad jur&iacute;dica propia";
+ choices[22][1] = "personalidad jur&iacute;dica &uacute;nica";
+ choices[22][2] = "personalidad jur&iacute;dica plena";
+ choices[22][3] = "personalidad jur&iacute;dica f&iacute;sica";
+ answers[22] = choices[22][1];
  units[22] = "4, 7, 8, 9";
- comments[22] = "Id Pregunta: 779. Ley 40/2015";
+ comments[22] = "Id Pregunta: 774. Ley 40/2015";
 
 
-//  Id pregunta: 847 Año de creación de pregunta: 2016
- questions[23]= "24)  &iquest;Cu&aacute;l de los siguientes es un sistema de firma para la actuaci&oacute;n administrativa automatizada?";
+//  Id pregunta: 311 Año de creación de pregunta: 2016
+ questions[23]= "24)  Se&ntilde;ale la afirmaci&oacute;n correcta en relaci&oacute;n a la Comisi&oacute;n Europea:";
  choices[23]= new Array();
- choices[23][0] = "Sello electr&oacute;nico de Administraci&oacute;n P&uacute;blica, &oacute;rgano, organismo p&uacute;blico o entidad de derecho p&uacute;blico, basado en certificado electr&oacute;nico reconocido o cualificado que re&uacute;na los requisitos exigidos por la legislaci&oacute;n de firma electr&oacute;nica.";
- choices[23][1] = "Sello electr&oacute;nico de Administraci&oacute;n P&uacute;blica, &oacute;rgano, organismo p&uacute;blico o entidad de derecho p&uacute;blico, basado en certificado electr&oacute;nico avanzado o reconocido que re&uacute;na los requisitos exigidos por la legislaci&oacute;n de firma electr&oacute;nica.";
- choices[23][2] = "C&oacute;digo seguro de verificaci&oacute;n vinculado a la Administraci&oacute;n P&uacute;blica, &oacute;rgano, organismo p&uacute;blico o entidad de Derecho P&uacute;blico, en los t&eacute;rminos y condiciones establecidos, permiti&eacute;ndose en todo caso la comprobaci&oacute;n de la integridad del documento mediante el acceso al portal correspondiente.";
- choices[23][3] = "Firma electr&oacute;nica del titular del &oacute;rgano o empleado p&uacute;blico.";
- answers[23] = choices[23][0];
- units[23] = "4, 7, 8, 9";
- comments[23] = "Id Pregunta: 847. Ley 40/2015";
+ choices[23][0] = "A partir del 1 de Noviembre de 2014, la Comisi&oacute;n estar&aacute; compuesta por un n&uacute;mero de miembros correspondiente a los tres quintos del n&uacute;mero de Estados miembros.";
+ choices[23][1] = "A partir del 1 de Noviembre de 2014, la Comisi&oacute;n estar&aacute; compuesta por un n&uacute;mero de miembros correspondiente a las tres cuartas partes del n&uacute;mero de Estados miembros.";
+ choices[23][2] = "A partir del 1 de Noviembre de 2014, la Comisi&oacute;n estar&aacute; compuesta por un n&uacute;mero de miembros correspondiente a los dos tercios del n&uacute;mero de Estados miembros.";
+ choices[23][3] = "A partir del 1 de Noviembre de 2014, la Comisi&oacute;n estar&aacute; compuesta por un n&uacute;mero de miembros correspondiente a un nacional por cada Estado miembro.";
+ answers[23] = choices[23][2];
+ units[23] = "5";
+ comments[23] = "Id Pregunta: 311. UNION EUROPEA";
 
 
-//  Id pregunta: 823 Año de creación de pregunta: 2016
- questions[24]= "25)  Debe abstenerse el funcionario que tiene relaci&oacute;n de servicio con interesado en el asunto o le ha prestado servicios profesionales en los ...";
+//  Id pregunta: 842 Año de creación de pregunta: 2016
+ questions[24]= "25)  Ley 40/2015, de 1 de octubre, de R&eacute;gimen Jur&iacute;dico del Sector P&uacute;blico. Indique la respuesta correcta.";
  choices[24]= new Array();
- choices[24][0] = "Tres &uacute;ltimos a&ntilde;os";
- choices[24][1] = "Cinco &uacute;ltimos a&ntilde;os";
- choices[24][2] = "Cuatro &uacute;ltimos a&ntilde;os";
- choices[24][3] = "Dos &uacute;ltimos a&ntilde;os";
+ choices[24][0] = "Para la v&aacute;lida constituci&oacute;n del &oacute;rgano, a efectos de la celebraci&oacute;n de sesiones, deliberaciones y toma de acuerdos, se requerir&aacute; la asistencia, presencial o a distancia, del Presidente y Secretario o en su caso, de quienes les suplan, y la de la mitad de sus miembros.";
+ choices[24][1] = "Cuando se trate de los &oacute;rganos colegiados a que se refiere el art&iacute;culo 15.2, el Presidente podr&aacute; considerar v&aacute;lidamente constituido el &oacute;rgano, a efectos de celebraci&oacute;n de sesi&oacute;n, si asisten los representantes de las Administraciones P&uacute;blicas y de las organizaciones representativas de intereses sociales miembros del &oacute;rgano a los que se haya atribuido la condici&oacute;n de portavoces.";
+ choices[24][2] = "Cuando estuvieran reunidos, de manera presencial o a distancia, el Secretario y todos los miembros del &oacute;rgano colegiado, o en su caso las personas que les suplan, &eacute;stos podr&aacute;n constituirse v&aacute;lidamente como &oacute;rgano colegiado para la celebraci&oacute;n de sesiones, deliberaciones y adopci&oacute;n de acuerdos sin necesidad de convocatoria previa cuando as&iacute; lo decida el Presidente.";
+ choices[24][3] = "Todas son correctas.";
  answers[24] = choices[24][1];
  units[24] = "4, 7, 8, 9";
- comments[24] = "Id Pregunta: 823. Ley 40/2015";
+ comments[24] = "Id Pregunta: 842. Ley 40/2015";
 
 
-//  Id pregunta: 793 Año de creación de pregunta: 2016
- questions[25]= "26)  Todos los &oacute;rganos de la Administraci&oacute;n General del Estado que no sean &oacute;rgano superior o directivo se encuentran bajo la dependencia o direcci&oacute;n de:";
+//  Id pregunta: 806 Año de creación de pregunta: 2016
+ questions[25]= "26)  Los nombramientos de los Secretarios generales t&eacute;cnicos habr&aacute;n de efectuarse entre funcionarios de carrera del Estado, de las Comunidades Aut&oacute;nomas o de las Entidades locales, pertenecientes al:";
  choices[25]= new Array();
- choices[25][0] = "un &oacute;rgano superior";
- choices[25][1] = "un &oacute;rgano directivo";
- choices[25][2] = "un &oacute;rgano superior o directivo";
- choices[25][3] = "ninguna es correcta";
- answers[25] = choices[25][2];
+ choices[25][0] = "Subgrupo A1";
+ choices[25][1] = "Subgrupo A2";
+ choices[25][2] = "Subgrupo B";
+ choices[25][3] = "Subgrupo C1";
+ answers[25] = choices[25][0];
  units[25] = "4, 7, 8, 9";
- comments[25] = "Id Pregunta: 793. Ley 40/2015";
+ comments[25] = "Id Pregunta: 806. Ley 40/2015";
 
 
-//  Id pregunta: 257 Año de creación de pregunta: 2016
- questions[26]= "27)  El Art&iacute;culo 98 de la Constituci&oacute;n Espa&ntilde;ola se&ntilde;ala que el Gobierno Espa&ntilde;ol se compone de:";
+//  Id pregunta: 281 Año de creación de pregunta: 2016
+ questions[26]= "27)  Se&ntilde;ale la respuesta falsa:";
  choices[26]= new Array();
- choices[26][0] = "El Presidente y su gabinete.";
- choices[26][1] = "El Presidente y sus Ministros.";
- choices[26][2] = "El Rey y el Presidente.";
- choices[26][3] = "El Presidente, de los Vicepresidentes en su caso, de los Ministros y dem&aacute;s miembros que establezca la ley.";
- answers[26] = choices[26][2];
- units[26] = "1";
- comments[26] = "Id Pregunta: 257. CONSTITUCION1978";
+ choices[26][0] = "El Semestre Europeo es un ciclo de coordinaci&oacute;n de las pol&iacute;ticas econ&oacute;micas y presupuestarias dentro de la UE.";
+ choices[26][1] = "Se centra en los primeros seis meses de cada a&ntilde;o, de ah&iacute; que se denomine &quot;Semestre&quot;.";
+ choices[26][2] = "Durante el Semestre Europeo los Estados miembros ajustan sus pol&iacute;ticas presupuestarias y econ&oacute;micas a los objetivos y normas acordados a escala de la UE.";
+ choices[26][3] = "Incluye reformas estructurales, dedicadas a promover el crecimiento y el empleo de conformidad con la Estrategia de Lisboa.";
+ answers[26] = choices[26][3];
+ units[26] = "5";
+ comments[26] = "Id Pregunta: 281. UNION EUROPEA";
 
 
-//  Id pregunta: 765 Año de creación de pregunta: 2016
- questions[27]= "28)  Las entidades de derecho privado vinculadas o dependientes de las Administraciones P&uacute;blicas:";
+//  Id pregunta: 338 Año de creación de pregunta: 2016
+ questions[27]= "28)  En el Consejo de Europa cada Estado miembro tiene una delegaci&oacute;n nacional en Bruselas conocida como &oacute;rgano de apoyo, denominado:";
  choices[27]= new Array();
- choices[27][0] = "no quedar&aacute;n sujetas a lo dispuesto en las normas de esta Ley, salvo, cuando ejerzan potestades administrativas";
- choices[27][1] = "no quedar&aacute;n sujetas a lo dispuesto en las normas de esta Ley, ni siquiera, cuando ejerzan potestades administrativas";
- choices[27][2] = "quedar&aacute;n sujetas a lo dispuesto en las normas de esta Ley que espec&iacute;ficamente se refieran a las mismas, y en todo caso, cuando ejerzan potestades administrativas";
- choices[27][3] = "quedar&aacute;n sujetas a lo dispuesto en las normas de esta Ley que espec&iacute;ficamente se refieran a las mismas, excepto, cuando ejerzan potestades administrativas";
+ choices[27][0] = "CO.PER.";
+ choices[27][1] = "COMPER.";
+ choices[27][2] = "CO.RE.PER.";
+ choices[27][3] = "CO.PE.RRE.";
  answers[27] = choices[27][2];
- units[27] = "4, 7, 8, 9";
- comments[27] = "Id Pregunta: 765. Ley 40/2015";
+ units[27] = "5";
+ comments[27] = "Id Pregunta: 338. UNION EUROPEA";
 
 
-//  Id pregunta: 328 Año de creación de pregunta: 2016
- questions[28]= "29)  El principal &oacute;rgano decisorio de la Comunidad Europea es:";
+//  Id pregunta: 234 Año de creación de pregunta: 2016
+ questions[28]= "29)  De conformidad con el Art&iacute;culo 97 de la Constituci&oacute;n Espa&ntilde;ola, corresponde dirigir la pol&iacute;tica interior y exterior, la Administraci&oacute;n civil y militar y la defensa del Estado:";
  choices[28]= new Array();
- choices[28][0] = "El Presidente del Consejo Europeo.";
- choices[28][1] = "La Comisi&oacute;n.";
- choices[28][2] = "El Consejo.";
- choices[28][3] = "El Parlamento Europeo.";
- answers[28] = choices[28][2];
- units[28] = "5";
- comments[28] = "Id Pregunta: 328. UNION EUROPEA";
+ choices[28][0] = "Al Jefe del Estado, por corresponderle el mando supremo de las Fuerzas Armadas.";
+ choices[28][1] = "A las Cortes Generales, como representaci&oacute;n del pueblo espa&ntilde;ol.";
+ choices[28][2] = "Al Congreso de los Diputados.";
+ choices[28][3] = "Al Gobierno.";
+ answers[28] = choices[28][0];
+ units[28] = "1";
+ comments[28] = "Id Pregunta: 234. CONSTITUCION1978";
 
 
-//  Id pregunta: 248 Año de creación de pregunta: 2016
- questions[29]= "30)  El T&iacute;tulo II de la Constituci&oacute;n finaliza en el Art&iacute;culo:";
+//  Id pregunta: 213 Año de creación de pregunta: 2016
+ questions[29]= "30)  Seg&uacute;n el Art&iacute;culo 59 de la Constituci&oacute;n espa&ntilde;ola, ser&aacute; v&aacute;lida la Regencia nombrada por las Cortes Generales que se componga del siguiente n&uacute;mero de personas:";
  choices[29]= new Array();
- choices[29][0] = "61";
- choices[29][1] = "53";
- choices[29][2] = "65";
- choices[29][3] = "67";
- answers[29] = choices[29][1];
+ choices[29][0] = "Cinco.";
+ choices[29][1] = "Dos.";
+ choices[29][2] = "Cuatro.";
+ choices[29][3] = "Siete.";
+ answers[29] = choices[29][0];
  units[29] = "1";
- comments[29] = "Id Pregunta: 248. CONSTITUCION1978";
-
-
-//  Id pregunta: 218 Año de creación de pregunta: 2016
- questions[30]= "31)  Seg&uacute;n el T&iacute;tulo III &quot;De las Cortes Generales&quot; de la Constituci&oacute;n Espa&ntilde;ola, las C&aacute;maras podr&aacute;n:";
- choices[30]= new Array();
- choices[30][0] = "Recibir peticiones individuales y colectivas, siempre por escrito, quedando prohibida la presentaci&oacute;n directa por manifestaciones ciudadanas.";
- choices[30][1] = "Delegar en las Comisiones Legislativas Permanentes la aprobaci&oacute;n de proyectos o proposiciones de ley relativas a cuestiones internacionales.";
- choices[30][2] = "Reunirse en sesi&oacute;n extraordinaria a petici&oacute;n de la mayor&iacute;a simple de los miembros de cualquiera de las C&aacute;maras.";
- choices[30][3] = "Nombrar conjuntamente Comisiones de Investigaci&oacute;n sobre asuntos de inter&eacute;s p&uacute;blico. Sus conclusiones ser&aacute;n vinculantes para los Tribunales.";
- answers[30] = choices[30][0];
- units[30] = "1";
- comments[30] = "Id Pregunta: 218. CONSTITUCION1978";
-
-
-//  Id pregunta: 322 Año de creación de pregunta: 2016
- questions[31]= "32)  El Tribunal de Justicia est&aacute; formado por:";
- choices[31]= new Array();
- choices[31][0] = "Un Juez de cada Estado miembro.";
- choices[31][1] = "Por dos Jueces de cada Estado miembro.";
- choices[31][2] = "Por veinte Jueces.";
- choices[31][3] = "Por ocho Jueces.";
- answers[31] = choices[31][0];
- units[31] = "5";
- comments[31] = "Id Pregunta: 322. UNION EUROPEA";
-
-
-//  Id pregunta: 172 Año de creación de pregunta: 2016
- questions[32]= "33)  La Constituci&oacute;n Espa&ntilde;ola reconoce el derecho de reuni&oacute;n:";
- choices[32]= new Array();
- choices[32][0] = "Pac&iacute;fica y sin armas pero con necesidad de autorizaci&oacute;n previa.";
- choices[32][1] = "En lugares de tr&aacute;nsito p&uacute;blico previa autorizaci&oacute;n de la autoridad.";
- choices[32][2] = "En los casos de reuniones en lugares de tr&aacute;nsito p&uacute;blico y manifestaciones se dar&aacute; comunicaci&oacute;n previa a la autoridad.";
- choices[32][3] = "No es preciso realizar ninguna actuaci&oacute;n.";
- answers[32] = choices[32][2];
- units[32] = "1";
- comments[32] = "Id Pregunta: 172. CONSTITUCION1978";
-
-
-//  Id pregunta: 339 Año de creación de pregunta: 2016
- questions[33]= "34)  La presidencia del Consejo se ejerce de forma rotatoria cada:";
- choices[33]= new Array();
- choices[33][0] = "4 meses seg&uacute;n un orden fijado por unanimidad del Consejo.";
- choices[33][1] = "6 meses seg&uacute;n un orden fijado por unanimidad del Consejo.";
- choices[33][2] = "4 meses seg&uacute;n un orden fijado por mayor&iacute;a cualificada del Consejo.";
- choices[33][3] = "6 meses seg&uacute;n un orden fijado por mayor&iacute;a cualificada del Consejo.";
- answers[33] = choices[33][1];
- units[33] = "5";
- comments[33] = "Id Pregunta: 339. UNION EUROPEA";
-
-
-//  Id pregunta: 833 Año de creación de pregunta: 2016
- questions[34]= "35)  Ley 40/2015, de 1 de octubre, de R&eacute;gimen Jur&iacute;dico del Sector P&uacute;blico. Elija la respuesta correcta.";
- choices[34]= new Array();
- choices[34][0] = "La competencia es irrenunciable y se ejercer&aacute; por los &oacute;rganos administrativos que la tengan atribuida como propia, salvo los casos de delegaci&oacute;n o avocaci&oacute;n, cuando se efect&uacute;en en los t&eacute;rminos previstos en &eacute;sta u otras leyes.";
- choices[34][1] = "La competencia es imprescriptible y se ejercer&aacute; por los &oacute;rganos administrativos que la tengan atribuida como propia, salvo los casos de delegaci&oacute;n o avocaci&oacute;n, cuando se efect&uacute;en en los t&eacute;rminos previstos en &eacute;sta u otras leyes.";
- choices[34][2] = "La competencia es inviolable y se ejercer&aacute; por los &oacute;rganos administrativos que la tengan atribuida como propia, salvo los casos de delegaci&oacute;n o avocaci&oacute;n, cuando se efect&uacute;en en los t&eacute;rminos previstos en &eacute;sta u otras leyes.";
- choices[34][3] = "Todas son correctas.";
- answers[34] = choices[34][0];
- units[34] = "4, 7, 8, 9";
- comments[34] = "Id Pregunta: 833. Ley 40/2015";
-
-
-//  Id pregunta: 208 Año de creación de pregunta: 2016
- questions[35]= "36)  La direcci&oacute;n de la pol&iacute;tica interior y exterior, la Administraci&oacute;n civil y militar y la defensa del Estado corresponde a:";
- choices[35]= new Array();
- choices[35][0] = "El Rey.";
- choices[35][1] = "El Jefe del Estado.";
- choices[35][2] = "El Gobierno.";
- choices[35][3] = "El Presidente del Gobierno.";
- answers[35] = choices[35][2];
- units[35] = "1";
- comments[35] = "Id Pregunta: 208. CONSTITUCION1978";
-
-
-//  Id pregunta: 826 Año de creación de pregunta: 2016
- questions[36]= "37)  La recusaci&oacute;n pueden promoverla...";
- choices[36]= new Array();
- choices[36][0] = "Cualquier &oacute;rgano";
- choices[36][1] = "El interesado";
- choices[36][2] = "El interesado y el superior jer&aacute;rquico del &oacute;rgano de que se trate";
- choices[36][3] = "El interesado, el superior jer&aacute;rquico del &oacute;rgano de que se trate y el propio &oacute;rgano";
- answers[36] = choices[36][0];
- units[36] = "4, 7, 8, 9";
- comments[36] = "Id Pregunta: 826. Ley 40/2015";
-
-
-//  Id pregunta: 772 Año de creación de pregunta: 2016
- questions[37]= "38)  Las Administraciones P&uacute;blicas act&uacute;an para el cumplimiento de sus fines con:";
- choices[37]= new Array();
- choices[37][0] = "personalidad jur&iacute;dica propia";
- choices[37][1] = "personalidad jur&iacute;dica &uacute;nica";
- choices[37][2] = "personalidad jur&iacute;dica plena";
- choices[37][3] = "personalidad jur&iacute;dica f&iacute;sica";
- answers[37] = choices[37][1];
- units[37] = "4, 7, 8, 9";
- comments[37] = "Id Pregunta: 772. Ley 40/2015";
-
-
-//  Id pregunta: 814 Año de creación de pregunta: 2016
- questions[38]= "39)  Podr&aacute;n crearse por Real Decreto Subdelegaciones del Gobierno en las Comunidades Aut&oacute;nomas uniprovinciales, cuando lo justifiquen circunstancias como:";
- choices[38]= new Array();
- choices[38][0] = "la poblaci&oacute;n del territorio";
- choices[38][1] = "el volumen de gesti&oacute;n";
- choices[38][2] = "sus singularidades geogr&aacute;ficas, sociales o econ&oacute;micas";
- choices[38][3] = "todas son correctas";
- answers[38] = choices[38][3];
- units[38] = "4, 7, 8, 9";
- comments[38] = "Id Pregunta: 814. Ley 40/2015";
-
-
-//  Id pregunta: 768 Año de creación de pregunta: 2016
- questions[39]= "40)  Las Administraciones P&uacute;blicas sirven con objetividad los intereses generales, con sometimiento pleno a la Constituci&oacute;n, a la Ley y al Derecho y act&uacute;an de acuerdo con los principios de:";
- choices[39]= new Array();
- choices[39][0] = "eficacia, legalidad, descentralizaci&oacute;n, desconcentraci&oacute;n y coordinaci&oacute;n";
- choices[39][1] = "eficiencia, legalidad, descentralizaci&oacute;n, desconcentraci&oacute;n y cooperaci&oacute;n";
- choices[39][2] = "eficacia, jerarqu&iacute;a, descentralizaci&oacute;n, desconcentraci&oacute;n y coordinaci&oacute;n";
- choices[39][3] = "eficiencia, jerarqu&iacute;a, descentralizaci&oacute;n, desconcentraci&oacute;n y cooperaci&oacute;n";
- answers[39] = choices[39][2];
- units[39] = "4, 7, 8, 9";
- comments[39] = "Id Pregunta: 768. Ley 40/2015";
-
-
-//  Id pregunta: 247 Año de creación de pregunta: 2016
- questions[40]= "41)  Seg&uacute;n la Constituci&oacute;n Espa&ntilde;ola, la Regencia se ejercer&aacute;:";
- choices[40]= new Array();
- choices[40][0] = "Por mandato constitucional y siempre en nombre del Rey.";
- choices[40][1] = "Por Orden Ministerial.";
- choices[40][2] = "Por mandato constitucional y siempre en nombre del pueblo espa&ntilde;ol.";
- choices[40][3] = "Por mandato de las Cortes Generales y siempre en nombre del pueblo espa&ntilde;ol.";
- answers[40] = choices[40][0];
- units[40] = "1";
- comments[40] = "Id Pregunta: 247. CONSTITUCION1978";
-
-
-//  Id pregunta: 301 Año de creación de pregunta: 2016
- questions[41]= "42)  El Presidente del Tribunal de Cuentas es elegido por:";
- choices[41]= new Array();
- choices[41][0] = "Los propios miembros del Tribunal.";
- choices[41][1] = "El Consejo de Europa.";
- choices[41][2] = "El Consejo Europeo.";
- choices[41][3] = "El Consejo de la Uni&oacute;n Europea.";
- answers[41] = choices[41][0];
- units[41] = "5";
- comments[41] = "Id Pregunta: 301. UNION EUROPEA";
-
-
-//  Id pregunta: 319 Año de creación de pregunta: 2016
- questions[42]= "43)  Se&ntilde;ale la afirmaci&oacute;n correcta en relaci&oacute;n a la Comisi&oacute;n Europea:";
- choices[42]= new Array();
- choices[42][0] = "El Presidente de la Comisi&oacute;n, con la aprobaci&oacute;n de la Comisi&oacute;n, puede exigir la dimisi&oacute;n de un Comisario.";
- choices[42][1] = "La Comisi&oacute;n por mayor&iacute;a de dos tercios de sus miembros puede exigir la dimisi&oacute;n de un Comisario.";
- choices[42][2] = "El Presidente, sin necesidad de contar con la Comisi&oacute;n, puede exigir la dimisi&oacute;n de un Comisario.";
- choices[42][3] = "&Uacute;nicamente el Presidente del Consejo puede exigir la dimisi&oacute;n de un Comisario.";
- answers[42] = choices[42][0];
- units[42] = "5";
- comments[42] = "Id Pregunta: 319. UNION EUROPEA";
-
-
-//  Id pregunta: 769 Año de creación de pregunta: 2016
- questions[43]= "44)  Las Administraciones P&uacute;blicas deber&aacute;n respetar en su actuaci&oacute;n y relaciones los siguientes principios:";
- choices[43]= new Array();
- choices[43][0] = "simplicidad, claridad y proximidad a los ciudadanos";
- choices[43][1] = "participaci&oacute;n, objetividad y transparencia de la actuaci&oacute;n administrativa";
- choices[43][2] = "responsabilidad por la gesti&oacute;n p&uacute;blica";
- choices[43][3] = "todas son correctas";
- answers[43] = choices[43][3];
- units[43] = "4, 7, 8, 9";
- comments[43] = "Id Pregunta: 769. Ley 40/2015";
-
-
-//  Id pregunta: 173 Año de creación de pregunta: 2016
- questions[44]= "45)  Seg&uacute;n la Constituci&oacute;n Espa&ntilde;ola, la cuesti&oacute;n de confianza planteada por el Presidente del Gobierno, se entender&aacute; otorgada cuando vote a su favor la mayor&iacute;a:";
- choices[44]= new Array();
- choices[44][0] = "absoluta de las Cortes Generales.";
- choices[44][1] = "absoluta del Congreso de los Diputados.";
- choices[44][2] = "simple de las Cortes Generales.";
- choices[44][3] = "simple del Congreso de los Diputados.";
- answers[44] = choices[44][3];
- units[44] = "1";
- comments[44] = "Id Pregunta: 173. CONSTITUCION1978";
-
-
-//  Id pregunta: 316 Año de creación de pregunta: 2016
- questions[45]= "46)  El Consejo de la Uni&oacute;n Europea de reunir&aacute; por:";
- choices[45]= new Array();
- choices[45][0] = "Convocatoria de su Presidente, a iniciativa de &eacute;ste, de dos de sus miembros o de la Comisi&oacute;n.";
- choices[45][1] = "Convocatoria de su Presidente, a iniciativa de &eacute;ste, de uno de sus miembros o de la Comisi&oacute;n.";
- choices[45][2] = "Convocatoria de su Presidente, a iniciativa de &eacute;ste, de tres de sus miembros o de la Comisi&oacute;n.";
- choices[45][3] = "Convocatoria de su Presidente, a iniciativa de &eacute;ste, de uno de sus miembros o de la Comisi&oacute;n o el Parlamento.";
- answers[45] = choices[45][1];
- units[45] = "5";
- comments[45] = "Id Pregunta: 316. UNION EUROPEA";
+ comments[29] = "Id Pregunta: 213. CONSTITUCION1978";
 
 
 //  Id pregunta: 309 Año de creación de pregunta: 2016
- questions[46]= "47)  Se&ntilde;ale la afirmaci&oacute;n correcta en relaci&oacute;n a los Cuestores:";
+ questions[30]= "31)  Se&ntilde;ale la afirmaci&oacute;n correcta en relaci&oacute;n a los Cuestores:";
+ choices[30]= new Array();
+ choices[30][0] = "Son miembros de la Mesa del Parlamento Europeo con voz pero sin voto.";
+ choices[30][1] = "No son miembros de la Mesa del Parlamento Europeo.";
+ choices[30][2] = "Son miembros de la Mesa del Parlamento Europeo con voz y voto.";
+ choices[30][3] = "Los Cuestores forman parte de la Mesa del Parlamento Europeo en un n&uacute;mero igual a tres.";
+ answers[30] = choices[30][0];
+ units[30] = "5";
+ comments[30] = "Id Pregunta: 309. UNION EUROPEA";
+
+
+//  Id pregunta: 804 Año de creación de pregunta: 2016
+ questions[31]= "32)  Los Secretarios generales t&eacute;cnicos:";
+ choices[31]= new Array();
+ choices[31][0] = "se encuentran bajo la inmediata dependencia del Subsecretario";
+ choices[31][1] = "tendr&aacute;n las competencias sobre servicios comunes que les atribuya el Real Decreto de estructura del Departamento";
+ choices[31][2] = "tendr&aacute;n las competencias relativas a producci&oacute;n normativa, asistencia jur&iacute;dica y publicaciones";
+ choices[31][3] = "todas son correctas";
+ answers[31] = choices[31][3];
+ units[31] = "4, 7, 8, 9";
+ comments[31] = "Id Pregunta: 804. Ley 40/2015";
+
+
+//  Id pregunta: 364 Año de creación de pregunta: 2016
+ questions[32]= "33)  &iquest;En qu&eacute; fecha entr&oacute; en vigor el Tratado de Amsterdam?:";
+ choices[32]= new Array();
+ choices[32][0] = "El 1 de junio de 1999.";
+ choices[32][1] = "El 1 de mayo de 1999.";
+ choices[32][2] = "El 1 de abril de 1999.";
+ choices[32][3] = "El 1 de marzo de 1999.";
+ answers[32] = choices[32][1];
+ units[32] = "5";
+ comments[32] = "Id Pregunta: 364. UNION EUROPEA";
+
+
+//  Id pregunta: 808 Año de creación de pregunta: 2016
+ questions[33]= "34)  A los Directores generales les corresponde (se&ntilde;ala la incorrecta):";
+ choices[33]= new Array();
+ choices[33][0] = "proponer los proyectos de su Direcci&oacute;n general para alcanzar los objetivos establecidos por el Ministro, dirigir su ejecuci&oacute;n y controlar su adecuado cumplimiento";
+ choices[33][1] = "solicitar del Ministerio de Hacienda y Administraciones P&uacute;blicas la afectaci&oacute;n o el arrendamiento de los inmuebles necesarios para el cumplimiento de los fines de los servicios a cargo del Departamento";
+ choices[33][2] = "ejercer las competencias atribuidas a la Direcci&oacute;n general y las que le sean desconcentradas o delegadas";
+ choices[33][3] = "impulsar y supervisar las actividades que forman parte de la gesti&oacute;n ordinaria del &oacute;rgano directivo y velar por el buen funcionamiento de los &oacute;rganos y unidades dependientes y del personal integrado en los mismos";
+ answers[33] = choices[33][1];
+ units[33] = "4, 7, 8, 9";
+ comments[33] = "Id Pregunta: 808. Ley 40/2015";
+
+
+//  Id pregunta: 323 Año de creación de pregunta: 2016
+ questions[34]= "35)  Los Jueces y Abogados Generales del Tribunal de Justicia de la Uni&oacute;n Europea son nombrados para un per&iacute;odo de:";
+ choices[34]= new Array();
+ choices[34][0] = "Tres a&ntilde;os.";
+ choices[34][1] = "Cuatro a&ntilde;os.";
+ choices[34][2] = "Cinco a&ntilde;os.";
+ choices[34][3] = "Seis a&ntilde;os.";
+ answers[34] = choices[34][3];
+ units[34] = "5";
+ comments[34] = "Id Pregunta: 323. UNION EUROPEA";
+
+
+//  Id pregunta: 361 Año de creación de pregunta: 2016
+ questions[35]= "36)  &iquest;Qu&eacute; instituci&oacute;n encarna por excelencia los intereses comunitarios?:";
+ choices[35]= new Array();
+ choices[35][0] = "El Consejo Europeo.";
+ choices[35][1] = "El Parlamento Europeo.";
+ choices[35][2] = "El Consejo.";
+ choices[35][3] = "La Comisi&oacute;n.";
+ answers[35] = choices[35][3];
+ units[35] = "5";
+ comments[35] = "Id Pregunta: 361. UNION EUROPEA";
+
+
+//  Id pregunta: 354 Año de creación de pregunta: 2016
+ questions[36]= "37)  El Tribunal de Justicia Europeo est&aacute; compuesto por:";
+ choices[36]= new Array();
+ choices[36][0] = "Veinticinco Jueces y nueve Abogados Generales.";
+ choices[36][1] = "Veintisiete Jueces y veintisiete Abogados Generales.";
+ choices[36][2] = "Veintisiete Jueces y ocho Abogados Generales.";
+ choices[36][3] = "Veinticinco Jueces y siete Abogados Generales.";
+ answers[36] = choices[36][2];
+ units[36] = "5";
+ comments[36] = "Id Pregunta: 354. UNION EUROPEA";
+
+
+//  Id pregunta: 249 Año de creación de pregunta: 2016
+ questions[37]= "38)  &iquest;En qu&eacute; art&iacute;culo de la Constituci&oacute;n se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen?.";
+ choices[37]= new Array();
+ choices[37][0] = "Art&iacute;culo 16.2.";
+ choices[37][1] = "Art&iacute;culo 17.1.";
+ choices[37][2] = "Art&iacute;culo 18.1.";
+ choices[37][3] = "Art&iacute;culo 18.2.";
+ answers[37] = choices[37][0];
+ units[37] = "1";
+ comments[37] = "Id Pregunta: 249. CONSTITUCION1978";
+
+
+//  Id pregunta: 224 Año de creación de pregunta: 2016
+ questions[38]= "39)  &iquest;En qu&eacute; art&iacute;culo de la Constituci&oacute;n se garantiza el derecho al honor, a la intimidad personal y familiar y a la propia imagen?.";
+ choices[38]= new Array();
+ choices[38][0] = "Art&iacute;culo 16.2.";
+ choices[38][1] = "Art&iacute;culo 17.1.";
+ choices[38][2] = "Art&iacute;culo 18.1.";
+ choices[38][3] = "Art&iacute;culo 18.2.";
+ answers[38] = choices[38][2];
+ units[38] = "1";
+ comments[38] = "Id Pregunta: 224. CONSTITUCION1978";
+
+
+//  Id pregunta: 255 Año de creación de pregunta: 2016
+ questions[39]= "40)  La soberan&iacute;a nacional reside en:";
+ choices[39]= new Array();
+ choices[39][0] = "el Parlamento nacional.";
+ choices[39][1] = "el Parlamento auton&oacute;mico o Asamblea.";
+ choices[39][2] = "el pueblo espa&ntilde;ol.";
+ choices[39][3] = "el Congreso y el Senado.";
+ answers[39] = choices[39][3];
+ units[39] = "1";
+ comments[39] = "Id Pregunta: 255. CONSTITUCION1978";
+
+
+//  Id pregunta: 324 Año de creación de pregunta: 2016
+ questions[40]= "41)  El Presidente del Tribunal de Justicia de la Uni&oacute;n Europea es nombrado para un per&iacute;odo de:";
+ choices[40]= new Array();
+ choices[40][0] = "Tres a&ntilde;os.";
+ choices[40][1] = "Cuatro a&ntilde;os.";
+ choices[40][2] = "Cinco a&ntilde;os.";
+ choices[40][3] = "Seis a&ntilde;os.";
+ answers[40] = choices[40][0];
+ units[40] = "5";
+ comments[40] = "Id Pregunta: 324. UNION EUROPEA";
+
+
+//  Id pregunta: 321 Año de creación de pregunta: 2016
+ questions[41]= "42)  Indique el n&uacute;mero de Diputados del Parlamento Europeo que actualmente le corresponden a Espa&ntilde;a:";
+ choices[41]= new Array();
+ choices[41][0] = "Cincuenta y cuatro.";
+ choices[41][1] = "Cincuenta.";
+ choices[41][2] = "Cincuenta y cinco.";
+ choices[41][3] = "Cincuenta y dos.";
+ answers[41] = choices[41][1];
+ units[41] = "5";
+ comments[41] = "Id Pregunta: 321. UNION EUROPEA";
+
+
+//  Id pregunta: 821 Año de creación de pregunta: 2016
+ questions[42]= "43)  Los Delegados del Gobierno (se&ntilde;ala la incorrecta):";
+ choices[42]= new Array();
+ choices[42][0] = "representan al Gobierno de la Naci&oacute;n en el territorio de la respectiva Comunidad Aut&oacute;noma";
+ choices[42][1] = "dirigir&aacute;n y supervisar&aacute;n la Administraci&oacute;n General del Estado en el territorio de las respectivas Comunidades Aut&oacute;nomas";
+ choices[42][2] = "son &oacute;rganos directivos con rango de Director general";
+ choices[42][3] = "ser&aacute;n nombrados y separados por Real Decreto del Consejo de Ministros, a propuesta del Presidente del Gobierno";
+ answers[42] = choices[42][2];
+ units[42] = "4, 7, 8, 9";
+ comments[42] = "Id Pregunta: 821. Ley 40/2015";
+
+
+//  Id pregunta: 209 Año de creación de pregunta: 2016
+ questions[43]= "44)  Corresponde aprobar el proyecto de Ley de Presupuestos Generales del Estado a:";
+ choices[43]= new Array();
+ choices[43][0] = "El Ministerio de Econom&iacute;a y Hacienda.";
+ choices[43][1] = "El Congreso de los Diputados.";
+ choices[43][2] = "Las Cortes Generales.";
+ choices[43][3] = "El Consejo de Ministros";
+ answers[43] = choices[43][3];
+ units[43] = "1";
+ comments[43] = "Id Pregunta: 209. CONSTITUCION1978";
+
+
+//  Id pregunta: 771 Año de creación de pregunta: 2016
+ questions[44]= "45)  Las Administraciones P&uacute;blicas deber&aacute;n respetar en su actuaci&oacute;n y relaciones los siguientes principios:";
+ choices[44]= new Array();
+ choices[44][0] = "simplicidad, claridad y proximidad a los ciudadanos";
+ choices[44][1] = "participaci&oacute;n, objetividad y transparencia de la actuaci&oacute;n administrativa";
+ choices[44][2] = "responsabilidad por la gesti&oacute;n p&uacute;blica";
+ choices[44][3] = "todas son correctas";
+ answers[44] = choices[44][3];
+ units[44] = "4, 7, 8, 9";
+ comments[44] = "Id Pregunta: 771. Ley 40/2015";
+
+
+//  Id pregunta: 340 Año de creación de pregunta: 2016
+ questions[45]= "46)  En el &aacute;mbito de las relaciones internacionales de la Comunidad Europea con terceros pa&iacute;ses:";
+ choices[45]= new Array();
+ choices[45][0] = "El Consejo negocia los tratados internacionales y la Comisi&oacute;n los aprueba.";
+ choices[45][1] = "La Comisi&oacute;n negocia los tratados internacionales y el Parlamento Europeo los sanciona.";
+ choices[45][2] = "La Comisi&oacute;n negocia los tratados internacionales y el Consejo los aprueba.";
+ choices[45][3] = "Un n&uacute;mero indeterminado de diputados europeos negocia ios tratados internacionales y la Comisi&oacute;n los aprueba.";
+ answers[45] = choices[45][2];
+ units[45] = "5";
+ comments[45] = "Id Pregunta: 340. UNION EUROPEA";
+
+
+//  Id pregunta: 371 Año de creación de pregunta: 2016
+ questions[46]= "47)  &iquest;En qu&eacute; a&ntilde;o se adhiri&oacute; Espa&ntilde;a a la Comunidad Europea?:";
  choices[46]= new Array();
- choices[46][0] = "Son miembros de la Mesa del Parlamento Europeo con voz pero sin voto.";
- choices[46][1] = "No son miembros de la Mesa del Parlamento Europeo.";
- choices[46][2] = "Son miembros de la Mesa del Parlamento Europeo con voz y voto.";
- choices[46][3] = "Los Cuestores forman parte de la Mesa del Parlamento Europeo en un n&uacute;mero igual a tres.";
- answers[46] = choices[46][0];
+ choices[46][0] = "En 1988.";
+ choices[46][1] = "En 1981.";
+ choices[46][2] = "En 1982.";
+ choices[46][3] = "En 1986.";
+ answers[46] = choices[46][3];
  units[46] = "5";
- comments[46] = "Id Pregunta: 309. UNION EUROPEA";
+ comments[46] = "Id Pregunta: 371. UNION EUROPEA";
 
 
-//  Id pregunta: 296 Año de creación de pregunta: 2016
- questions[47]= "48)  Indique a qui&eacute;n corresponde la funci&oacute;n de adoptar las iniciativas de la programaci&oacute;n anual y plurianual de la Uni&oacute;n Europea con el fin de alcanzar acuerdos interinstitucionales:";
+//  Id pregunta: 199 Año de creación de pregunta: 2016
+ questions[47]= "48)  &iquest;Cu&aacute;l es la composici&oacute;n del Pleno del Tribunal de Cuentas?";
  choices[47]= new Array();
- choices[47][0] = "Al Consejo Europeo.";
- choices[47][1] = "Al Consejo de la Uni&oacute;n Europea.";
- choices[47][2] = "A la Comisi&oacute;n Europea.";
- choices[47][3] = "Al Parlamento Europeo.";
- answers[47] = choices[47][2];
- units[47] = "5";
- comments[47] = "Id Pregunta: 296. UNION EUROPEA";
+ choices[47][0] = "El Pleno de Tribunal de Cuentas est&aacute; integrado por doce Consejeros de Cuentas, uno de los cuales ser&aacute; el Presidente y el Fiscal.";
+ choices[47][1] = "El Pleno de Tribunal de Cuentas est&aacute; integrado por diez Consejeros de Cuentas, m&aacute;s el Presidente.";
+ choices[47][2] = "El Pleno de Tribunal de Cuentas est&aacute; integrado por diez Consejeros de Cuentas.";
+ choices[47][3] = "El Pleno de Tribunal de Cuentas est&aacute; integrado por doce Consejeros de Cuentas, m&aacute;s el Presidente.";
+ answers[47] = choices[47][0];
+ units[47] = "1";
+ comments[47] = "Id Pregunta: 199. CONSTITUCION1978";
 
 
-//  Id pregunta: 300 Año de creación de pregunta: 2016
- questions[48]= "49)  La designaci&oacute;n para formar parte del Tribunal de Cuentas la efect&uacute;a:";
+//  Id pregunta: 336 Año de creación de pregunta: 2016
+ questions[48]= "49)  El Tribunal de Justicia Europeo funcion&oacute; como instancia &uacute;nica hasta:";
  choices[48]= new Array();
- choices[48][0] = "La Comisi&oacute;n.";
- choices[48][1] = "El Consejo de Europa.";
- choices[48][2] = "El Consejo Europeo.";
- choices[48][3] = "El Consejo de la Uni&oacute;n Europea.";
- answers[48] = choices[48][3];
+ choices[48][0] = "Diciembre de 1987.";
+ choices[48][1] = "Septiembre de 1989.";
+ choices[48][2] = "Octubre de 1990.";
+ choices[48][3] = "Noviembre de 1980.";
+ answers[48] = choices[48][1];
  units[48] = "5";
- comments[48] = "Id Pregunta: 300. UNION EUROPEA";
+ comments[48] = "Id Pregunta: 336. UNION EUROPEA";
 
 
-//  Id pregunta: 843 Año de creación de pregunta: 2016
- questions[49]= "50)  Respecto a la reutilizaci&oacute;n de sistemas y aplicaciones de propiedad de la Administraci&oacute;n:";
+//  Id pregunta: 800 Año de creación de pregunta: 2016
+ questions[49]= "50)  Las unidades administrativas comprenden puestos de trabajo o dotaciones de plantilla:";
  choices[49]= new Array();
- choices[49][0] = "Las Administraciones pondr&aacute;n siempre a disposici&oacute;n de cualquiera de ellas que lo solicite las aplicaciones, desarrolladas por sus servicios o que hayan sido objeto de contrataci&oacute;n y de cuyos derechos de propiedad intelectual sean titulares.";
- choices[49][1] = "Las aplicaciones a las que se refiere el apartado anterior podr&aacute;n ser declaradas como de fuentes abiertas, cuando de ello se derive una mayor transparencia en el funcionamiento de la Administraci&oacute;n P&uacute;blica o se fomente con ello la incorporaci&oacute;n de los ciudadanos a la Sociedad de la informaci&oacute;n.";
- choices[49][2] = "Las Administraciones P&uacute;blicas, con car&aacute;cter posterior a la adquisici&oacute;n, desarrollo o al mantenimiento a lo largo de todo el ciclo de vida de una aplicaci&oacute;n, tanto si se realiza con medios propios o por la contrataci&oacute;n de los servicios correspondientes, deber&aacute;n consultar en el directorio general de aplicaciones.";
- choices[49][3] = "En el directorio general de aplicaciones constar&aacute;n las aplicaciones disponibles de la Administraci&oacute;n General del Estado.";
- answers[49] = choices[49][1];
+ choices[49][0] = "vinculados funcionalmente por raz&oacute;n de sus cometidos y org&aacute;nicamente por una jefatura com&uacute;n";
+ choices[49][1] = "vinculados org&aacute;nicamente por raz&oacute;n de sus cometidos y funcionalmente por una jefatura com&uacute;n";
+ choices[49][2] = "vinculados funcionalmente por raz&oacute;n de su territorio y org&aacute;nicamente por una jefatura com&uacute;n";
+ choices[49][3] = "vinculados org&aacute;nicamente por raz&oacute;n de su territorio y funcionalmente por una jefatura com&uacute;n";
+ answers[49] = choices[49][0];
  units[49] = "4, 7, 8, 9";
- comments[49] = "Id Pregunta: 843. Ley 40/2015";
+ comments[49] = "Id Pregunta: 800. Ley 40/2015";
 
 
-//  Id pregunta: 200 Año de creación de pregunta: 2016
- questions[50]= "51)  Se&ntilde;ale la afirmaci&oacute;n correcta. Corresponde al Rey:";
+//  Id pregunta: 226 Año de creación de pregunta: 2016
+ questions[50]= "51)  Extinguidas todas las l&iacute;neas llamadas en Derecho para la sucesi&oacute;n en el trono:";
  choices[50]= new Array();
- choices[50][0] = "Nombrar a los miembros del Gobierno a propuesta de las Cortes Generales.";
- choices[50][1] = "Nombrar y separar a los miembros del Gobierno a propuesta de las Cortes Generales.";
- choices[50][2] = "Nombrar y separar a los miembros del Gobierno previa consulta al Presidente del Gobierno.";
- choices[50][3] = "Nombrar y separar a los miembros del Gobierno, a propuesta de su Presidente.";
- answers[50] = choices[50][3];
+ choices[50][0] = "Las Cortes Generales proveer&aacute;n a la sucesi&oacute;n en la forma que m&aacute;s convenga a los intereses de Espa&ntilde;a.";
+ choices[50][1] = "Las Cortes Generales proveer&aacute;n a la sucesi&oacute;n atendiendo exclusivamente a los imperativos geneal&oacute;gicos conocidos.";
+ choices[50][2] = "El Congreso de los Diputados proveer&aacute; a la sucesi&oacute;n de conformidad con los usos y costumbres existentes.";
+ choices[50][3] = "El Congreso de los Diputados proveer&aacute; a la sucesi&oacute;n conforme a lo que decidan dos grupos parlamentarios o una quinta parte de los Diputados.";
+ answers[50] = choices[50][0];
  units[50] = "1";
- comments[50] = "Id Pregunta: 200. CONSTITUCION1978";
+ comments[50] = "Id Pregunta: 226. CONSTITUCION1978";
 
 
-//  Id pregunta: 375 Año de creación de pregunta: 2016
- questions[51]= "52)  Las relaciones entre el Derecho Comunitario y el Derecho nacional se caracterizan por:";
+//  Id pregunta: 264 Año de creación de pregunta: 2016
+ questions[51]= "52)  &iquest;Cu&aacute;ntos vocales componen el Consejo General del Poder Judicial?";
  choices[51]= new Array();
- choices[51][0] = "Complementariedad, por tratarse de un ordenamiento para los Estados miembros.";
- choices[51][1] = "Primac&iacute;a del Derecho Comunitario, puesto que se impone a los Estados miembros.";
- choices[51][2] = "Autonom&iacute;a del Derecho Comunitario frente al nacional.";
- choices[51][3] = "Todas las respuestas son correctas.";
- answers[51] = choices[51][3];
- units[51] = "5";
- comments[51] = "Id Pregunta: 375. UNION EUROPEA";
-
-
-//  Id pregunta: 369 Año de creación de pregunta: 2016
- questions[52]= "53)  En el marco de la Uni&oacute;n Europea, las decisiones:";
- choices[52]= new Array();
- choices[52][0] = "Son actos individuales no normativos.";
- choices[52][1] = "Poseen alcance general.";
- choices[52][2] = "Son actos normativos.";
- choices[52][3] = "No son obligatorias.";
- answers[52] = choices[52][0];
- units[52] = "5";
- comments[52] = "Id Pregunta: 369. UNION EUROPEA";
+ choices[51][0] = "Veinte.";
+ choices[51][1] = "Quince.";
+ choices[51][2] = "Diez.";
+ choices[51][3] = "Doce.";
+ answers[51] = choices[51][1];
+ units[51] = "1";
+ comments[51] = "Id Pregunta: 264. CONSTITUCION1978";
 
 
 //  Id pregunta: 840 Año de creación de pregunta: 2016
- questions[53]= "54)  Ley 40/2015, de 1 de octubre, de R&eacute;gimen Jur&iacute;dico del Sector P&uacute;blico. Indique la respuesta correcta.";
+ questions[52]= "53)  Ley 40/2015, de 1 de octubre, de R&eacute;gimen Jur&iacute;dico del Sector P&uacute;blico. Se&ntilde;ale la respuesta correcta.";
+ choices[52]= new Array();
+ choices[52][0] = "En la forma que disponga cada Administraci&oacute;n P&uacute;blica, los titulares de los &oacute;rganos administrativos podr&aacute;n ser suplidos provisionalmente en los supuestos de vacante, ausencia o enfermedad, as&iacute; como en los casos en que haya sido declarada su abstenci&oacute;n o recusaci&oacute;n. Si no se designa suplente, la competencia del &oacute;rgano administrativo se ejercer&aacute; por quien designe el &oacute;rgano administrativo inmediato superior de quien dependa.";
+ choices[52][1] = "En la forma que disponga cada Administraci&oacute;n P&uacute;blica, los titulares de los &oacute;rganos administrativos podr&aacute;n ser suplidos temporalmente en los supuestos de vacante, ausencia o enfermedad, as&iacute; como en los casos en que haya sido declarada su abstenci&oacute;n o recusaci&oacute;n. Si no se designa suplente, la competencia del &oacute;rgano administrativo se ejercer&aacute; por quien designe el &oacute;rgano administrativo inmediato superior de quien dependa.";
+ choices[52][2] = "En la forma que disponga cada Administraci&oacute;n P&uacute;blica, los titulares de los &oacute;rganos administrativos podr&aacute;n ser suplidos eventualmente en los supuestos de vacante, ausencia o enfermedad, as&iacute; como en los casos en que haya sido declarada su abstenci&oacute;n o recusaci&oacute;n. Si no se designa suplente, la competencia del &oacute;rgano administrativo se ejercer&aacute; por quien designe el &oacute;rgano administrativo inmediato superior de quien dependa.";
+ choices[52][3] = "En la forma que disponga cada Administraci&oacute;n P&uacute;blica, los titulares de los &oacute;rganos administrativos podr&aacute;n ser suplidos circunstancialmente en los supuestos de vacante, ausencia o enfermedad, as&iacute; como en los casos en que haya sido declarada su abstenci&oacute;n o recusaci&oacute;n. Si no se designa suplente, la competencia del &oacute;rgano administrativo se ejercer&aacute; por quien designe el &oacute;rgano administrativo inmediato superior de quien dependa.";
+ answers[52] = choices[52][1];
+ units[52] = "4, 7, 8, 9";
+ comments[52] = "Id Pregunta: 840. Ley 40/2015";
+
+
+//  Id pregunta: 787 Año de creación de pregunta: 2016
+ questions[53]= "54)  La Administraci&oacute;n General del Estado comprende (se&ntilde;ala la incorrecta):";
  choices[53]= new Array();
- choices[53][0] = "Para la v&aacute;lida constituci&oacute;n del &oacute;rgano, a efectos de la celebraci&oacute;n de sesiones, deliberaciones y toma de acuerdos, se requerir&aacute; la asistencia, presencial o a distancia, del Presidente y Secretario o en su caso, de quienes les suplan, y la de la mitad de sus miembros.";
- choices[53][1] = "Cuando se trate de los &oacute;rganos colegiados a que se refiere el art&iacute;culo 15.2, el Presidente podr&aacute; considerar v&aacute;lidamente constituido el &oacute;rgano, a efectos de celebraci&oacute;n de sesi&oacute;n, si asisten los representantes de las Administraciones P&uacute;blicas y de las organizaciones representativas de intereses sociales miembros del &oacute;rgano a los que se haya atribuido la condici&oacute;n de portavoces.";
- choices[53][2] = "Cuando estuvieran reunidos, de manera presencial o a distancia, el Secretario y todos los miembros del &oacute;rgano colegiado, o en su caso las personas que les suplan, &eacute;stos podr&aacute;n constituirse v&aacute;lidamente como &oacute;rgano colegiado para la celebraci&oacute;n de sesiones, deliberaciones y adopci&oacute;n de acuerdos sin necesidad de convocatoria previa cuando as&iacute; lo decida el Presidente.";
- choices[53][3] = "Todas son correctas.";
- answers[53] = choices[53][1];
+ choices[53][0] = "la Organizaci&oacute;n Central, que integra los Ministerios y los servicios comunes";
+ choices[53][1] = "la Organizaci&oacute;n Territorial";
+ choices[53][2] = "la Organizaci&oacute;n sectorial";
+ choices[53][3] = "la Administraci&oacute;n General del Estado en el exterior";
+ answers[53] = choices[53][2];
  units[53] = "4, 7, 8, 9";
- comments[53] = "Id Pregunta: 840. Ley 40/2015";
+ comments[53] = "Id Pregunta: 787. Ley 40/2015";
 
 
-//  Id pregunta: 845 Año de creación de pregunta: 2016
- questions[54]= "55)  Se&ntilde;ale la respuesta falsa:";
+//  Id pregunta: 373 Año de creación de pregunta: 2016
+ questions[54]= "55)  &iquest;Cu&aacute;ntos Abogados Generales asisten al Tribunal Superior de Justicia?:";
  choices[54]= new Array();
- choices[54][0] = "Cada Administraci&oacute;n deber&aacute; facilitar el acceso de las restantes Administraciones P&uacute;blicas a los datos relativos a los interesados que obren en su poder, especificando las condiciones, protocolos y criterios funcionales o t&eacute;cnicos necesarios para acceder a dichos datos con las m&aacute;ximas garant&iacute;as de seguridad, integridad y disponibilidad.";
- choices[54][1] = "La disponibilidad de tales datos estar&aacute; limitada estrictamente a aquellos que son requeridos a los interesados por las restantes Administraciones para la tramitaci&oacute;n y resoluci&oacute;n de los procedimientos y actuaciones de su competencia, de acuerdo con la normativa reguladora de los mismos.";
- choices[54][2] = "De conformidad con lo dispuesto en la Ley Org&aacute;nica 15/1999, de 13 de diciembre, de Protecci&oacute;n de Datos de Car&aacute;cter Personal y su normativa de desarrollo, cada Administraci&oacute;n deber&aacute; facilitar el acceso de las restantes Administraciones P&uacute;blicas a los datos relativos a los interesados que obren en su poder, siendo preceptiva la firma del convenio correspondiente.";
- choices[54][3] = "La Administraci&oacute;n General del Estado, las Administraciones Auton&oacute;micas y las Entidades Locales, adoptar&aacute;n las medidas necesarias e incorporar&aacute;n en sus respectivos &aacute;mbitos las tecnolog&iacute;as precisas para posibilitar la interconexi&oacute;n de sus redes";
- answers[54] = choices[54][2];
- units[54] = "4, 7, 8, 9";
- comments[54] = "Id Pregunta: 845. Ley 40/2015";
+ choices[54][0] = "Nueve.";
+ choices[54][1] = "Diez.";
+ choices[54][2] = "Siete.";
+ choices[54][3] = "Ocho.";
+ answers[54] = choices[54][3];
+ units[54] = "5";
+ comments[54] = "Id Pregunta: 373. UNION EUROPEA";
 
 
-//  Id pregunta: 781 Año de creación de pregunta: 2016
- questions[55]= "56)  La Administraci&oacute;n consultiva podr&aacute; articularse:";
+//  Id pregunta: 353 Año de creación de pregunta: 2016
+ questions[55]= "56)  El buen funcionamiento de la Uni&oacute;n Europea recae, entre otras instituciones, en:";
  choices[55]= new Array();
- choices[55][0] = "mediante &oacute;rganos espec&iacute;ficos dotados de autonom&iacute;a org&aacute;nica y funcional con respecto a la Administraci&oacute;n activa";
- choices[55][1] = "a trav&eacute;s de los servicios de la Administraci&oacute;n activa que prestan asistencia jur&iacute;dica";
- choices[55][2] = "a y b son correctas";
- choices[55][3] = "a y b son incorrectas";
- answers[55] = choices[55][2];
- units[55] = "4, 7, 8, 9";
- comments[55] = "Id Pregunta: 781. Ley 40/2015";
+ choices[55][0] = "El Parlamento Europeo.";
+ choices[55][1] = "Todas las respuestas son correctas.";
+ choices[55][2] = "La Comisi&oacute;n Europea.";
+ choices[55][3] = "El Consejo de la Uni&oacute;n Europea.";
+ answers[55] = choices[55][1];
+ units[55] = "5";
+ comments[55] = "Id Pregunta: 353. UNION EUROPEA";
 
 
-//  Id pregunta: 244 Año de creación de pregunta: 2016
- questions[56]= "57)  La Constituci&oacute;n Espa&ntilde;ola, en el art&iacute;culo 9 del T&iacute;tulo Preliminar, garantiza el principio de:";
+//  Id pregunta: 792 Año de creación de pregunta: 2016
+ questions[56]= "57)  En la organizaci&oacute;n territorial de la Administraci&oacute;n General del Estado los Subdelegados del Gobierno en las provincias los cuales tendr&aacute;n nivel de:";
  choices[56]= new Array();
- choices[56][0] = "Retroactividad de las disposiciones sancionadoras no favorables de derechos individuales.";
- choices[56][1] = "Publicidad de las normas.";
- choices[56][2] = "Defensa jur&iacute;dica ante los tribunales.";
- choices[56][3] = "Coordinaci&oacute;n normativa.";
- answers[56] = choices[56][2];
- units[56] = "1";
- comments[56] = "Id Pregunta: 244. CONSTITUCION1978";
+ choices[56][0] = "Subsecretario";
+ choices[56][1] = "Subdirector general";
+ choices[56][2] = "Secretario de Estado";
+ choices[56][3] = "ninguna es correcta";
+ answers[56] = choices[56][1];
+ units[56] = "4, 7, 8, 9";
+ comments[56] = "Id Pregunta: 792. Ley 40/2015";
 
 
-//  Id pregunta: 259 Año de creación de pregunta: 2016
- questions[57]= "58)  La iniciativa legislativa corresponde:";
+//  Id pregunta: 810 Año de creación de pregunta: 2016
+ questions[57]= "58)  Ostentan la representaci&oacute;n ordinaria del Ministerio:";
  choices[57]= new Array();
- choices[57][0] = "Al Congreso y al Senado, &uacute;nicamente.";
- choices[57][1] = "Al rey y al Gobierno.";
- choices[57][2] = "Al Congreso, al Senado y al Rey.";
- choices[57][3] = "Al Gobierno, al Congreso y al Senado.";
- answers[57] = choices[57][3];
- units[57] = "1";
- comments[57] = "Id Pregunta: 259. CONSTITUCION1978";
+ choices[57][0] = "los Secretarios de Estado";
+ choices[57][1] = "los Ministros";
+ choices[57][2] = "los Subsecretarios";
+ choices[57][3] = "los Secretarios generales";
+ answers[57] = choices[57][2];
+ units[57] = "4, 7, 8, 9";
+ comments[57] = "Id Pregunta: 810. Ley 40/2015";
 
 
-//  Id pregunta: 216 Año de creación de pregunta: 2016
- questions[58]= "59)  Seg&uacute;n la Constituci&oacute;n Espa&ntilde;ola de 1978, est&aacute;n legitimados para interponer el recurso de inconstitucionalidad:";
+//  Id pregunta: 270 Año de creación de pregunta: 2016
+ questions[58]= "59)  La tutela de los derechos fundamentales y libertades p&uacute;blicas reconocidos en la secci&oacute;n primera del cap&iacute;tulo II del T&iacute;tulo I de la Constituci&oacute;n espa&ntilde;ola podr&aacute; recabarse por cualquier ciudadano:";
  choices[58]= new Array();
- choices[58][0] = "El Presidente del Gobierno.";
- choices[58][1] = "El Consejo de Ministros.";
- choices[58][2] = "40 Diputados.";
- choices[58][3] = "El Ministerio Fiscal.";
+ choices[58][0] = "S&oacute;lo ante el Tribunal Constitucional de acuerdo con lo previsto en el Art&iacute;culo 161.1.a), referente al recurso de Inconstitucionalidad.";
+ choices[58][1] = "S&oacute;lo ante los tribunales ordinarios por un procedimiento basado en los principios de preferencia y sumariedad.";
+ choices[58][2] = "Ante los tribunales ordinarios por un procedimiento basado en los principios de preferencia y sumariedad y, en su caso, ante el Tribunal Constitucional a trav&eacute;s del recurso de inconstitucionalidad.";
+ choices[58][3] = "Ante los tribunales ordinarios por un procedimiento basado en los principios de preferencia y sumariedad y, en su caso, a trav&eacute;s del recurso de amparo ante el Tribunal Constitucional.";
  answers[58] = choices[58][0];
  units[58] = "1";
- comments[58] = "Id Pregunta: 216. CONSTITUCION1978";
+ comments[58] = "Id Pregunta: 270. CONSTITUCION1978";
 
 
-//  Id pregunta: 250 Año de creación de pregunta: 2016
- questions[59]= "60)  La Constituci&oacute;n Espa&ntilde;ola propugna como valores superiores de su ordenamiento jur&iacute;dico:";
+//  Id pregunta: 836 Año de creación de pregunta: 2016
+ questions[59]= "60)  Ley 40/2015, de 1 de octubre, de R&eacute;gimen Jur&iacute;dico del Sector P&uacute;blico. Elija la respuesta correcta.";
  choices[59]= new Array();
- choices[59][0] = "La Libertad, la Democracia, la Igualdad y la Justicia.";
- choices[59][1] = "La Libertad, la Justicia, la Seguridad y promover el bien de cuantos la integran.";
- choices[59][2] = "La Soberan&iacute;a, el Sufragio Universal, la Unidad de la Naci&oacute;n espa&ntilde;ola y el derecho a la autonom&iacute;a de las nacionalidades y regiones que la integran.";
- choices[59][3] = "La Justicia, el Pluralismo Pol&iacute;tico, la Igualdad, y la Libertad.";
- answers[59] = choices[59][2];
- units[59] = "1";
- comments[59] = "Id Pregunta: 250. CONSTITUCION1978";
+ choices[59][0] = "Los &oacute;rganos de las diferentes Administraciones P&uacute;blicas podr&aacute;n delegar el ejercicio de las competencias que tengan atribuidas en otros &oacute;rganos de la misma Administraci&oacute;n, aun cuando no sean jer&aacute;rquicamente dependientes, o en los Organismos p&uacute;blicos o Entidades de Derecho P&uacute;blico vinculados o dependientes de aqu&eacute;llas.";
+ choices[59][1] = "En el &aacute;mbito de la Administraci&oacute;n General del Estado, la delegaci&oacute;n de competencias deber&aacute; ser aprobada previamente por el &oacute;rgano ministerial de quien dependa el &oacute;rgano delegante y en el caso de los Organismos p&uacute;blicos o Entidades vinculados o dependientes, por el &oacute;rgano m&aacute;ximo de direcci&oacute;n, de acuerdo con sus normas de creaci&oacute;n. Cuando se trate de &oacute;rganos no relacionados jer&aacute;rquicamente ser&aacute; necesaria la aprobaci&oacute;n previa del superior com&uacute;n si ambos pertenecen al mismo Ministerio, o del &oacute;rgano superior de quien dependa el &oacute;rgano delegado, si el delegante y el delegado pertenecen a diferentes Ministerios.";
+ choices[59][2] = "Asimismo, los &oacute;rganos de la Administraci&oacute;n General del Estado podr&aacute;n delegar el ejercicio de sus competencias propias en sus Organismos p&uacute;blicos y Entidades vinculados o dependientes, cuando resulte conveniente para alcanzar los fines que tengan asignados y mejorar la eficacia de su gesti&oacute;n. La delegaci&oacute;n deber&aacute; ser previamente aprobada por los &oacute;rganos de los que dependan el &oacute;rgano delegante y el &oacute;rgano delegado, o aceptada por este &uacute;ltimo cuando sea el &oacute;rgano m&aacute;ximo de direcci&oacute;n del Organismo p&uacute;blico o Entidad vinculado o dependiente.";
+ choices[59][3] = "Todas son correctas.";
+ answers[59] = choices[59][3];
+ units[59] = "4, 7, 8, 9";
+ comments[59] = "Id Pregunta: 836. Ley 40/2015";
 
 

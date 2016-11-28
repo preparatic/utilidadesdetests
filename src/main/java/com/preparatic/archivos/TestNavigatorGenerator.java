@@ -42,6 +42,8 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 	 * navegación en función de los test que se hayan generado.
 	 */
 	public static void generarTestNavigation() {
+		generarJSMenuInfoV2();
+		
 		try {
 
 			// Creamos la salida
@@ -65,7 +67,7 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 					escribirRenderTestBloque(salida);
 					break;
 				case 3: // Render Selector Tematica
-//TODO PENDING					escribirRenderTestSelectorTematica(salida);
+//NOT SUPPORTED					escribirRenderTestSelectorTematica(salida);
 					break;
 				case 4: // Render Temas
 					escribirRenderTemas(salida);
@@ -271,8 +273,6 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 						"tipoTest=='" + Test.eTipoTest.anho + "' && id=='" + idAnho + "'");
 		}
 
-		
-		
 		// Entrada para los temas
 		GestorInfoTema gt =   GestorInfoTema.getInstance();
 		InfoTema t = gt.getTemas().get(0);

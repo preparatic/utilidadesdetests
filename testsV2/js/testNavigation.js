@@ -219,7 +219,7 @@ function renderMenuIndex (tipoTest,id){
 
 }
 function renderTestSelector2() {
-    document.writeln('<ul class="dropdown-menu">');
+    document.writeln('<ul class="dropdown-menu" >');
 
     document.writeln('<li><a href="test_0000.html">Test 0000</a></li>');
     document.writeln('<li><a href="test_0000.html">Test 0001</a></li>');
@@ -229,5 +229,17 @@ function renderTestSelector2() {
     document.writeln('<li><a href="test_0000.html">Test 0005</a></li>');
     document.writeln('<li><a href="test_0000.html">Test 0006</a></li>');
     document.writeln('<li><a href="test_0000.html">Test 0007</a></li>');
+    document.writeln('</ul>');
+}
+
+function renderTestSelector3(tests) {
+    //var option = '';
+
+    document.writeln('<ul class="dropdown-menu" >');
+    for (var i = 0; i < randomTestsSet.length; i++) {
+        //option += '<option value="' + numbers[i] + '">' + numbers[i] + '</option>';
+        document.writeln('<li><a href="../' + tests[i][2] + '">' + tests[i][1] + '</a></li>');
+    }
+    // $('#items').append(option);
     document.writeln('</ul>');
 }

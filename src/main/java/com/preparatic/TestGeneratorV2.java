@@ -71,8 +71,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			
 			// Obtenemos todas los temas del excel
 			GestorInfoTema.getInstance().leerTemas(ficheroExcel);
-			HtmlGenerator.generarMetaInfo();		
-			
+					
 			// Obtenemos todas las preguntas del excel
 			GestorPreguntaTest.getInstance().leerPreguntas(ficheroExcel);
 			GestorPreguntaTest.getInstance().reasignaIdentificadores();
@@ -101,6 +100,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		generarTestTemas(listaPreguntas);
 		generarTestAnhos(listaPreguntas);
 
+		HtmlGenerator.generarMetaInfoV2();
 		TestNavigatorGenerator.generarTestNavigation();
 	}
 	

@@ -276,8 +276,8 @@ public class Test {
 			HtmlGenerator htmlGenerator = new HtmlGenerator(this);
 			htmlGenerator.generarTestHtml(filteredList);
 			
-			htmlFilename = htmlGenerator.getHtmlFilename();
-			jsFilename = htmlGenerator.getJsFilename();
+			htmlFilename = htmlGenerator.getHtmlFilenameV2();
+			jsFilename = htmlGenerator.getJsFilenameV2();
 			
 		} catch (Exception e) {
 			logger.error("Error al generar los tests" + e.getMessage());
@@ -295,6 +295,17 @@ public class Test {
 		return formatter.format(idTest);
 	}
 	
+	public String getKeyIdTestStr() {
+		if (tipoTest == eTipoTest.bloque)
+			return "Bloque_" + idBloqueTematicaAnho + "_" + getIdTestStr();
+		else if (tipoTest == eTipoTest.aleatorio)
+			return "Global_" + getIdTestStr();
+		else if (tipoTest == eTipoTest.anho)
+			return "A&ntildeo_" + idBloqueTematicaAnho + "_" + getIdTestStr();
+		else if (tipoTest == eTipoTest.tema) {
+			return "Tema_" + idBloqueTematicaAnho + "_" + getIdTestStr();
+		} else
+			return "Test " + getIdTestStr();	}
 	public eTipoTest getTipoTest() {
 		return tipoTest;
 	}
