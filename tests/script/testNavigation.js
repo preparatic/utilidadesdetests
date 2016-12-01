@@ -319,6 +319,7 @@ function renderTestSelectorAnhos(anho){
 			 addOption (box, 'test_anho_2016_0009.html', 'Test 0009');
 			 addOption (box, 'test_anho_2016_0010.html', 'Test 0010');
 			 addOption (box, 'test_anho_2016_0011.html', 'Test 0011');
+			 addOption (box, 'test_anho_2016_0012.html', 'Test 0012');
 	}
 	if (anho == '2015'){
 			 addOption (box, '', '-- No hay test --');

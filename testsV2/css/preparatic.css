@@ -1,6 +1,14 @@
 .jumbotron {
-    background-color:rgba(218, 234, 243, 0.31) !important; 
-    color: #635f5f ! important;
+    background-color: rgba(218, 234, 243, 0.31) !important;
+    color: #635f5f !important;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 20px;
 }
 
 .navbar-brand {

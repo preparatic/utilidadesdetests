@@ -239,14 +239,15 @@
                 bProcessing: true,
                 data: blockTestsSet,
                 aoColumns: [
-                          null, // first column (Numero de Test)
-                          null, // 2 column (Titulo)
+                          { responsivePriority: 6, }, // first column (Numero de Test)
+                          { responsivePriority: 3, }, // 2 column (Titulo
                            {
                                "targets": [2],
                                "visible": false,
                                "searchable": false
                            }, // 3 column (url)
                            {
+                               responsivePriority: 4,
                                "targets": [3],
                                // The `data` parameter refers to the data for the cell (defined by the
                                // `data` option, which defaults to the column being worked with, in
@@ -256,7 +257,8 @@
                                }
                            },  // 4 column (Bloque ID)
                            {     // 5 column (view/do link)
-                              "sName": "Hacer",
+                               responsivePriority: 1,
+                               "sName": "Hacer",
                               "bSearchable": false,
                               "bSortable": false,
                               "mRender": function (data, type, full) {

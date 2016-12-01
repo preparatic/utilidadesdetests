@@ -136,4 +136,5 @@ var annosTestsSet = [
     ["A&ntildeo_2016_0009", "Test convocatoria 2016, Id: 0009", "tests/test_anho_2016_0009.html", "2016", ""],
     ["A&ntildeo_2016_0010", "Test convocatoria 2016, Id: 0010", "tests/test_anho_2016_0010.html", "2016", ""],
     ["A&ntildeo_2016_0011", "Test convocatoria 2016, Id: 0011", "tests/test_anho_2016_0011.html", "2016", ""],
+    ["A&ntildeo_2016_0012", "Test convocatoria 2016, Id: 0012", "tests/test_anho_2016_0012.html", "2016", ""],
 ];

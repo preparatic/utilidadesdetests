@@ -13,14 +13,17 @@
     <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
     <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- Custom Theme Style -->
+    <!-- Pomodoro Timer -->
+    <link href="../vendors/pomodoro/css/pomodoro-timer.css" rel="stylesheet">
+	<!-- Custom Theme Style -->
     <link href="../css/custom.min.css" rel="stylesheet">
 
     <!-- Preparatic Style -->
     <link href="../css/preparatic.css" rel="stylesheet">
+    <script src="../js/IndexedDB.js"></script>
     <script src="../js/quiz_functions.js"></script>
     <script src="../data/list_tests.js "></script>
-	<script src="../js/testNavigation.js"></script>
+    <script src="../js/testNavigation.js"></script>
 
     <script src="../data/test_0034.js "></script>
 </head>
@@ -56,13 +59,15 @@
                                         <li><a href="../tests_annos.html">Por A&ntilde;os</a></li>
                                     </ul>
                                 </li>
-                                <!--<li>
-                                <a><i class="fa fa-bar-chart-o"></i> Mis estad&iacute;sticas <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="chartjs.html">Estad&iacute;sticas</a></li>
-                                </ul>
-                            </li>-->
-                                <li> <a href="javascript:void(0)"><i class="fa fa-windows"></i> Extras <span class="label label-success pull-right">Coming Soon</span></a></li>
+                                <li>
+                                    <a><i class="fa fa-bar-chart-o"></i> Mi Progreso <span class="label label-success pull-right">En Beta!</span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="../listado_tests.html">Test Realizados</a></li>
+                                        <li><a href="../misestadisticas.html">Estad&iacute;sticas</a></li>
+                                        <li><a href="../faq.html">F.A.Q.</a></li>
+                                    </ul>
+                                </li>
+                                <!--<li> <a href="javascript:void(0)"><i class="fa fa-windows"></i> Extras <span class="label label-success pull-right">Coming Soon</span></a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -103,6 +108,30 @@
                         </div>
                     </div>
                     <div class="clearfix"></div>
+					<div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <div class="timer-time timer-container">
+                                <div class="timer-time-set timer-box" id="currentTime">
+                                    <span id="hoursValue">00</span><span>:</span><span id="minutesValue">00</span><span>:</span><span id="secondsValue">00</span>
+                                </div>
+                                <div class="timer-time-set timer-box" id="nextTime">
+                                    <span id="hoursNext">00</span><span>:</span><span id="minutesNext">00</span><span>:</span><span id="secondsNext">00</span>
+                                </div>
+                            </div>
+                            <div>
+                                <button id="restartButton" class="btn btn-warning btn-lg" type="submit" onclick="onResetTimer()">
+                                    <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Reset
+                                </button>
+                                <button id="startButton" class="btn btn-primary btn-lg" type="submit" onclick="onStartTimer()">
+                                    <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start
+                                </button>
+                                <button id="stopButton" class="btn btn-danger btn-lg" type="submit" onclick="onStopTimer()">
+                                    <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="x_panel">
@@ -152,7 +181,7 @@
 
 
                                                 <p style="text-align: center;">
-                                                    <input type="submit" class="btn btn-primary" value="Corregir" onclick="correctQuiz()" /> <input type="submit" class="btn btn-danger" value="Reset" onclick="resetQuiz(true)" />
+                                                    <input type="submit" class="btn btn-primary" value="Corregir" onclick="correctQuiz('test_0034')" /> <input type="submit" class="btn btn-danger" value="Reset" onclick="resetQuiz(true)" />
                                                 </p>
                                             </div>
                                              <script>
@@ -182,7 +211,6 @@
                 <div class="clearfix"></div>
             </footer>
             <!-- /footer content -->
-        </div>
     </div>
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
@@ -192,8 +220,17 @@
     <script src="../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
     <script src="../vendors/nprogress/nprogress.js"></script>
+	<!-- Pomodoro -->
+    <script src="../vendors/pomodoro/js/pomodoro-timer.js"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="../js/custom.min.js"></script>
+
+	<script>
+        window.onload = function () {
+            if (typeof db == 'undefined')
+                openDb(function () { }, function () { });
+        }
+    </script>
 </body>
 </html>

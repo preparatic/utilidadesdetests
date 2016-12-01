@@ -1,0 +1,29 @@
+.timer-time {
+    line-height:1em;
+    font-size: 6em;
+}
+
+.timer-container {
+  height: 1em;
+  overflow: hidden;
+  position: relative;
+}
+
+.timer-box {
+  height: 1em;
+  margin: auto;
+  position: relative;
+}
+
+.timer-box > span {
+  position: relative;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+}
+
+.footer .container {
+
+}

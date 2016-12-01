@@ -20,6 +20,7 @@ var answers = new Array();
 var response = new Array();
 var units = new Array();
 var comments = new Array();
+var preguntaids = new Array();
 
 //  Id pregunta: 0 Año de creación de pregunta: 2016
  questions[0]= "1)  &iquest;Cu&aacute;l de los siguientes NO es un objetivo del Plan de Transformaci&oacute;n Digital de la AGE?";
@@ -31,6 +32,7 @@ var comments = new Array();
  answers[0] = choices[0][0];
  units[0] = "26";
  comments[0] = "Id Pregunta: 0. AGE A1 2015";
+ preguntaids[0] = 0
 
 
 //  Id pregunta: 1 Año de creación de pregunta: 2016
@@ -43,6 +45,7 @@ var comments = new Array();
  answers[1] = choices[1][2];
  units[1] = "26";
  comments[1] = "Id Pregunta: 1. AGE A1 2015: En la pregunta del examen original, se hablaba de la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaci&oacute;n, actualmente asume sus funciones la Secretar&iacute;a General de Administraci&oacute;n Digital seg&uacute;n Real Decreto 424/2016";
+ preguntaids[1] = 1
 
 
 //  Id pregunta: 2 Año de creación de pregunta: 2016
@@ -55,6 +58,7 @@ var comments = new Array();
  answers[2] = choices[2][0];
  units[2] = "31";
  comments[2] = "Id Pregunta: 2. AGE A1 2015";
+ preguntaids[2] = 2
 
 
 //  Id pregunta: 3 Año de creación de pregunta: 2016
@@ -67,6 +71,7 @@ var comments = new Array();
  answers[3] = choices[3][2];
  units[3] = "89";
  comments[3] = "Id Pregunta: 3. AGE A1 2015";
+ preguntaids[3] = 3
 
 
 //  Id pregunta: 4 Año de creación de pregunta: 2016
@@ -79,6 +84,7 @@ var comments = new Array();
  answers[4] = choices[4][3];
  units[4] = "62";
  comments[4] = "Id Pregunta: 4. AGE A1 2015";
+ preguntaids[4] = 4
 
 
 //  Id pregunta: 5 Año de creación de pregunta: 2016
@@ -91,6 +97,7 @@ var comments = new Array();
  answers[5] = choices[5][1];
  units[5] = "101";
  comments[5] = "Id Pregunta: 5. AGE A1 2015";
+ preguntaids[5] = 5
 
 
 //  Id pregunta: 6 Año de creación de pregunta: 2016
@@ -103,6 +110,7 @@ var comments = new Array();
  answers[6] = choices[6][0];
  units[6] = "91";
  comments[6] = "Id Pregunta: 6. AGE A1 2015";
+ preguntaids[6] = 6
 
 
 //  Id pregunta: 7 Año de creación de pregunta: 2016
@@ -115,6 +123,7 @@ var comments = new Array();
  answers[7] = choices[7][2];
  units[7] = "105";
  comments[7] = "Id Pregunta: 7. AGE A1 2015";
+ preguntaids[7] = 7
 
 
 //  Id pregunta: 8 Año de creación de pregunta: 2016
@@ -127,6 +136,7 @@ var comments = new Array();
  answers[8] = choices[8][2];
  units[8] = "26";
  comments[8] = "Id Pregunta: 8. AGE A1 2015: En la pregunta del examen original, se hablaba de la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaci&oacute;n, actualmente asume sus funciones la Secretar&iacute;a General de Administraci&oacute;n Digital seg&uacute;n Real Decreto 424/2016";
+ preguntaids[8] = 8
 
 
 //  Id pregunta: 9 Año de creación de pregunta: 2016
@@ -139,6 +149,7 @@ var comments = new Array();
  answers[9] = choices[9][1];
  units[9] = "95";
  comments[9] = "Id Pregunta: 9. AGE A1 2015";
+ preguntaids[9] = 9
 
 
 //  Id pregunta: 10 Año de creación de pregunta: 2016
@@ -151,6 +162,7 @@ var comments = new Array();
  answers[10] = choices[10][0];
  units[10] = "117";
  comments[10] = "Id Pregunta: 10. AGE A1 2015";
+ preguntaids[10] = 10
 
 
 //  Id pregunta: 11 Año de creación de pregunta: 2016
@@ -163,6 +175,7 @@ var comments = new Array();
  answers[11] = choices[11][1];
  units[11] = "64";
  comments[11] = "Id Pregunta: 11. AGE A1 2015";
+ preguntaids[11] = 11
 
 
 //  Id pregunta: 12 Año de creación de pregunta: 2016
@@ -175,6 +188,7 @@ var comments = new Array();
  answers[12] = choices[12][0];
  units[12] = "62";
  comments[12] = "Id Pregunta: 12. AGE A1 2015";
+ preguntaids[12] = 12
 
 
 //  Id pregunta: 13 Año de creación de pregunta: 2016
@@ -187,6 +201,7 @@ var comments = new Array();
  answers[13] = choices[13][2];
  units[13] = "64";
  comments[13] = "Id Pregunta: 13. AGE A1 2015";
+ preguntaids[13] = 13
 
 
 //  Id pregunta: 14 Año de creación de pregunta: 2016
@@ -199,6 +214,7 @@ var comments = new Array();
  answers[14] = choices[14][1];
  units[14] = "98";
  comments[14] = "Id Pregunta: 14. AGE A1 2015";
+ preguntaids[14] = 14
 
 
 //  Id pregunta: 15 Año de creación de pregunta: 2016
@@ -211,6 +227,7 @@ var comments = new Array();
  answers[15] = choices[15][1];
  units[15] = "64";
  comments[15] = "Id Pregunta: 15. AGE A1 2015";
+ preguntaids[15] = 15
 
 
 //  Id pregunta: 16 Año de creación de pregunta: 2016
@@ -223,6 +240,7 @@ var comments = new Array();
  answers[16] = choices[16][3];
  units[16] = "19";
  comments[16] = "Id Pregunta: 16. AGE A1 2015";
+ preguntaids[16] = 16
 
 
 //  Id pregunta: 17 Año de creación de pregunta: 2016
@@ -235,6 +253,7 @@ var comments = new Array();
  answers[17] = choices[17][3];
  units[17] = "44";
  comments[17] = "Id Pregunta: 17. AGE A1 2015";
+ preguntaids[17] = 17
 
 
 //  Id pregunta: 18 Año de creación de pregunta: 2016
@@ -247,6 +266,7 @@ var comments = new Array();
  answers[18] = choices[18][2];
  units[18] = "105";
  comments[18] = "Id Pregunta: 18. AGE A1 2015";
+ preguntaids[18] = 18
 
 
 //  Id pregunta: 19 Año de creación de pregunta: 2016
@@ -259,6 +279,7 @@ var comments = new Array();
  answers[19] = choices[19][2];
  units[19] = "47";
  comments[19] = "Id Pregunta: 19. AGE A1 2015: En la pregunta del examen original, se hablaba de la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaci&oacute;n, actualmente asume sus funciones la Secretar&iacute;a General de Administraci&oacute;n Digital seg&uacute;n Real Decreto 424/2016";
+ preguntaids[19] = 19
 
 
 //  Id pregunta: 20 Año de creación de pregunta: 2016
@@ -271,6 +292,7 @@ var comments = new Array();
  answers[20] = choices[20][2];
  units[20] = "27";
  comments[20] = "Id Pregunta: 20. AGE A1 2015";
+ preguntaids[20] = 20
 
 
 //  Id pregunta: 21 Año de creación de pregunta: 2016
@@ -283,6 +305,7 @@ var comments = new Array();
  answers[21] = choices[21][0];
  units[21] = "101";
  comments[21] = "Id Pregunta: 21. AGE A1 2015";
+ preguntaids[21] = 21
 
 
 //  Id pregunta: 22 Año de creación de pregunta: 2016
@@ -295,6 +318,7 @@ var comments = new Array();
  answers[22] = choices[22][1];
  units[22] = "26";
  comments[22] = "Id Pregunta: 22. AGE A1 2015";
+ preguntaids[22] = 22
 
 
 //  Id pregunta: 23 Año de creación de pregunta: 2016
@@ -307,6 +331,7 @@ var comments = new Array();
  answers[23] = choices[23][0];
  units[23] = "74";
  comments[23] = "Id Pregunta: 23. AGE A1 2015";
+ preguntaids[23] = 23
 
 
 //  Id pregunta: 24 Año de creación de pregunta: 2016
@@ -319,6 +344,7 @@ var comments = new Array();
  answers[24] = choices[24][3];
  units[24] = "121";
  comments[24] = "Id Pregunta: 24. AGE A1 2015";
+ preguntaids[24] = 24
 
 
 //  Id pregunta: 25 Año de creación de pregunta: 2016
@@ -331,6 +357,7 @@ var comments = new Array();
  answers[25] = choices[25][2];
  units[25] = "64";
  comments[25] = "Id Pregunta: 25. AGE A1 2015";
+ preguntaids[25] = 25
 
 
 //  Id pregunta: 26 Año de creación de pregunta: 2016
@@ -343,6 +370,7 @@ var comments = new Array();
  answers[26] = choices[26][2];
  units[26] = "7";
  comments[26] = "Id Pregunta: 26. AGE A1 2015";
+ preguntaids[26] = 26
 
 
 //  Id pregunta: 27 Año de creación de pregunta: 2016
@@ -355,6 +383,7 @@ var comments = new Array();
  answers[27] = choices[27][3];
  units[27] = "7";
  comments[27] = "Id Pregunta: 27. AGE A1 2015";
+ preguntaids[27] = 27
 
 
 //  Id pregunta: 28 Año de creación de pregunta: 2016
@@ -367,6 +396,7 @@ var comments = new Array();
  answers[28] = choices[28][2];
  units[28] = "57";
  comments[28] = "Id Pregunta: 28. AGE A1 2015";
+ preguntaids[28] = 28
 
 
 //  Id pregunta: 29 Año de creación de pregunta: 2016
@@ -379,6 +409,7 @@ var comments = new Array();
  answers[29] = choices[29][2];
  units[29] = "121";
  comments[29] = "Id Pregunta: 29. AGE A1 2015";
+ preguntaids[29] = 29
 
 
 //  Id pregunta: 30 Año de creación de pregunta: 2016
@@ -391,6 +422,7 @@ var comments = new Array();
  answers[30] = choices[30][0];
  units[30] = "59";
  comments[30] = "Id Pregunta: 30. AGE A1 2015";
+ preguntaids[30] = 30
 
 
 //  Id pregunta: 31 Año de creación de pregunta: 2016
@@ -403,6 +435,7 @@ var comments = new Array();
  answers[31] = choices[31][1];
  units[31] = "73";
  comments[31] = "Id Pregunta: 31. AGE A1 2015";
+ preguntaids[31] = 31
 
 
 //  Id pregunta: 32 Año de creación de pregunta: 2016
@@ -415,6 +448,7 @@ var comments = new Array();
  answers[32] = choices[32][1];
  units[32] = "43";
  comments[32] = "Id Pregunta: 32. AGE A1 2015";
+ preguntaids[32] = 32
 
 
 //  Id pregunta: 33 Año de creación de pregunta: 2016
@@ -427,6 +461,7 @@ var comments = new Array();
  answers[33] = choices[33][1];
  units[33] = "63";
  comments[33] = "Id Pregunta: 33. AGE A1 2015";
+ preguntaids[33] = 33
 
 
 //  Id pregunta: 34 Año de creación de pregunta: 2016
@@ -439,6 +474,7 @@ var comments = new Array();
  answers[34] = choices[34][0];
  units[34] = "65";
  comments[34] = "Id Pregunta: 34. AGE A1 2015";
+ preguntaids[34] = 34
 
 
 //  Id pregunta: 35 Año de creación de pregunta: 2016
@@ -451,6 +487,7 @@ var comments = new Array();
  answers[35] = choices[35][3];
  units[35] = "64";
  comments[35] = "Id Pregunta: 35. AGE A1 2015";
+ preguntaids[35] = 35
 
 
 //  Id pregunta: 36 Año de creación de pregunta: 2016
@@ -463,6 +500,7 @@ var comments = new Array();
  answers[36] = choices[36][1];
  units[36] = "64";
  comments[36] = "Id Pregunta: 36. AGE A1 2015";
+ preguntaids[36] = 36
 
 
 //  Id pregunta: 37 Año de creación de pregunta: 2016
@@ -475,6 +513,7 @@ var comments = new Array();
  answers[37] = choices[37][3];
  units[37] = "66";
  comments[37] = "Id Pregunta: 37. AGE A1 2015";
+ preguntaids[37] = 37
 
 
 //  Id pregunta: 38 Año de creación de pregunta: 2016
@@ -487,6 +526,7 @@ var comments = new Array();
  answers[38] = choices[38][3];
  units[38] = "62";
  comments[38] = "Id Pregunta: 38. AGE A1 2015";
+ preguntaids[38] = 38
 
 
 //  Id pregunta: 39 Año de creación de pregunta: 2016
@@ -499,6 +539,7 @@ var comments = new Array();
  answers[39] = choices[39][2];
  units[39] = "71";
  comments[39] = "Id Pregunta: 39. AGE A1 2015";
+ preguntaids[39] = 39
 
 
 //  Id pregunta: 40 Año de creación de pregunta: 2016
@@ -511,6 +552,7 @@ var comments = new Array();
  answers[40] = choices[40][1];
  units[40] = "99";
  comments[40] = "Id Pregunta: 40. AGE A1 2015";
+ preguntaids[40] = 40
 
 
 //  Id pregunta: 41 Año de creación de pregunta: 2016
@@ -523,6 +565,7 @@ var comments = new Array();
  answers[41] = choices[41][1];
  units[41] = "83";
  comments[41] = "Id Pregunta: 41. AGE A1 2015";
+ preguntaids[41] = 41
 
 
 //  Id pregunta: 42 Año de creación de pregunta: 2016
@@ -535,6 +578,7 @@ var comments = new Array();
  answers[42] = choices[42][3];
  units[42] = "86";
  comments[42] = "Id Pregunta: 42. AGE A1 2015";
+ preguntaids[42] = 42
 
 
 //  Id pregunta: 43 Año de creación de pregunta: 2016
@@ -547,6 +591,7 @@ var comments = new Array();
  answers[43] = choices[43][2];
  units[43] = "34";
  comments[43] = "Id Pregunta: 43. AGE A1 2015";
+ preguntaids[43] = 43
 
 
 //  Id pregunta: 44 Año de creación de pregunta: 2016
@@ -559,6 +604,7 @@ var comments = new Array();
  answers[44] = choices[44][1];
  units[44] = "60";
  comments[44] = "Id Pregunta: 44. AGE A1 2015";
+ preguntaids[44] = 44
 
 
 //  Id pregunta: 45 Año de creación de pregunta: 2016
@@ -571,6 +617,7 @@ var comments = new Array();
  answers[45] = choices[45][1];
  units[45] = "74";
  comments[45] = "Id Pregunta: 45. AGE A1 2015";
+ preguntaids[45] = 45
 
 
 //  Id pregunta: 46 Año de creación de pregunta: 2016
@@ -583,6 +630,7 @@ var comments = new Array();
  answers[46] = choices[46][1];
  units[46] = "76";
  comments[46] = "Id Pregunta: 46. AGE A1 2015";
+ preguntaids[46] = 46
 
 
 //  Id pregunta: 47 Año de creación de pregunta: 2016
@@ -595,6 +643,7 @@ var comments = new Array();
  answers[47] = choices[47][3];
  units[47] = "78";
  comments[47] = "Id Pregunta: 47. AGE A1 2015";
+ preguntaids[47] = 47
 
 
 //  Id pregunta: 48 Año de creación de pregunta: 2016
@@ -607,6 +656,7 @@ var comments = new Array();
  answers[48] = choices[48][3];
  units[48] = "77";
  comments[48] = "Id Pregunta: 48. AGE A1 2015";
+ preguntaids[48] = 48
 
 
 //  Id pregunta: 49 Año de creación de pregunta: 2016
@@ -619,6 +669,7 @@ var comments = new Array();
  answers[49] = choices[49][0];
  units[49] = "62";
  comments[49] = "Id Pregunta: 49. AGE A1 2015";
+ preguntaids[49] = 49
 
 
 //  Id pregunta: 50 Año de creación de pregunta: 2016
@@ -631,6 +682,7 @@ var comments = new Array();
  answers[50] = choices[50][1];
  units[50] = "78";
  comments[50] = "Id Pregunta: 50. AGE A1 2015";
+ preguntaids[50] = 50
 
 
 //  Id pregunta: 51 Año de creación de pregunta: 2016
@@ -643,6 +695,7 @@ var comments = new Array();
  answers[51] = choices[51][1];
  units[51] = "35";
  comments[51] = "Id Pregunta: 51. AGE A1 2015. Pregunta anulada en el examen real, ya que la opci&oacute;n B dec&iacute;a &quot;bianual&quot; en lugar de &quot;bienal&quot;";
+ preguntaids[51] = 51
 
 
 //  Id pregunta: 52 Año de creación de pregunta: 2016
@@ -655,6 +708,7 @@ var comments = new Array();
  answers[52] = choices[52][0];
  units[52] = "93";
  comments[52] = "Id Pregunta: 52. AGE A1 2015";
+ preguntaids[52] = 52
 
 
 //  Id pregunta: 53 Año de creación de pregunta: 2016
@@ -667,6 +721,7 @@ var comments = new Array();
  answers[53] = choices[53][1];
  units[53] = "84";
  comments[53] = "Id Pregunta: 53. AGE A1 2015";
+ preguntaids[53] = 53
 
 
 //  Id pregunta: 54 Año de creación de pregunta: 2016
@@ -679,6 +734,7 @@ var comments = new Array();
  answers[54] = choices[54][3];
  units[54] = "119";
  comments[54] = "Id Pregunta: 54. AGE A1 2015";
+ preguntaids[54] = 54
 
 
 //  Id pregunta: 55 Año de creación de pregunta: 2016
@@ -691,6 +747,7 @@ var comments = new Array();
  answers[55] = choices[55][1];
  units[55] = "119";
  comments[55] = "Id Pregunta: 55. AGE A1 2015";
+ preguntaids[55] = 55
 
 
 //  Id pregunta: 56 Año de creación de pregunta: 2016
@@ -703,6 +760,7 @@ var comments = new Array();
  answers[56] = choices[56][2];
  units[56] = "83";
  comments[56] = "Id Pregunta: 56. AGE A1 2015";
+ preguntaids[56] = 56
 
 
 //  Id pregunta: 57 Año de creación de pregunta: 2016
@@ -715,6 +773,7 @@ var comments = new Array();
  answers[57] = choices[57][3];
  units[57] = "101";
  comments[57] = "Id Pregunta: 57. AGE A1 2015";
+ preguntaids[57] = 57
 
 
 //  Id pregunta: 58 Año de creación de pregunta: 2016
@@ -727,6 +786,7 @@ var comments = new Array();
  answers[58] = choices[58][1];
  units[58] = "26";
  comments[58] = "Id Pregunta: 58. AGE A1 2015";
+ preguntaids[58] = 58
 
 
 //  Id pregunta: 59 Año de creación de pregunta: 2016
@@ -739,6 +799,7 @@ var comments = new Array();
  answers[59] = choices[59][3];
  units[59] = "101";
  comments[59] = "Id Pregunta: 59. AGE A1 2015";
+ preguntaids[59] = 59
 
 
 //  Id pregunta: 60 Año de creación de pregunta: 2016
@@ -751,6 +812,7 @@ var comments = new Array();
  answers[60] = choices[60][2];
  units[60] = "101";
  comments[60] = "Id Pregunta: 60. AGE A1 2015";
+ preguntaids[60] = 60
 
 
 //  Id pregunta: 61 Año de creación de pregunta: 2016
@@ -763,6 +825,7 @@ var comments = new Array();
  answers[61] = choices[61][2];
  units[61] = "59";
  comments[61] = "Id Pregunta: 61. AGE A1 2015";
+ preguntaids[61] = 61
 
 
 //  Id pregunta: 62 Año de creación de pregunta: 2016
@@ -775,6 +838,7 @@ var comments = new Array();
  answers[62] = choices[62][2];
  units[62] = "35";
  comments[62] = "Id Pregunta: 62. AGE A1 2015";
+ preguntaids[62] = 62
 
 
 //  Id pregunta: 63 Año de creación de pregunta: 2016
@@ -787,6 +851,7 @@ var comments = new Array();
  answers[63] = choices[63][1];
  units[63] = "52";
  comments[63] = "Id Pregunta: 63. AGE A1 2015";
+ preguntaids[63] = 63
 
 
 //  Id pregunta: 64 Año de creación de pregunta: 2016
@@ -799,6 +864,7 @@ var comments = new Array();
  answers[64] = choices[64][3];
  units[64] = "59";
  comments[64] = "Id Pregunta: 64. AGE A1 2015";
+ preguntaids[64] = 64
 
 
 //  Id pregunta: 65 Año de creación de pregunta: 2016
@@ -811,6 +877,7 @@ var comments = new Array();
  answers[65] = choices[65][2];
  units[65] = "53";
  comments[65] = "Id Pregunta: 65. AGE A1 2015";
+ preguntaids[65] = 65
 
 
 //  Id pregunta: 66 Año de creación de pregunta: 2016
@@ -823,6 +890,7 @@ var comments = new Array();
  answers[66] = choices[66][0];
  units[66] = "53";
  comments[66] = "Id Pregunta: 66. AGE A1 2015. Pregunta anulada en el examen real. La opci&oacute;n A dec&iacute;a &quot;Diferencial, incremental, completa&quot;, por lo que ninguna respuesta pod&iacute;a considerarse correcta";
+ preguntaids[66] = 66
 
 
 //  Id pregunta: 67 Año de creación de pregunta: 2016
@@ -835,6 +903,7 @@ var comments = new Array();
  answers[67] = choices[67][0];
  units[67] = "103";
  comments[67] = "Id Pregunta: 67. AGE A1 2015";
+ preguntaids[67] = 67
 
 
 //  Id pregunta: 68 Año de creación de pregunta: 2016
@@ -847,6 +916,7 @@ var comments = new Array();
  answers[68] = choices[68][1];
  units[68] = "72";
  comments[68] = "Id Pregunta: 68. AGE A1 2015";
+ preguntaids[68] = 68
 
 
 //  Id pregunta: 69 Año de creación de pregunta: 2016
@@ -859,6 +929,7 @@ var comments = new Array();
  answers[69] = choices[69][3];
  units[69] = "37";
  comments[69] = "Id Pregunta: 69. AGE A1 2015";
+ preguntaids[69] = 69
 
 
 //  Id pregunta: 70 Año de creación de pregunta: 2016
@@ -871,6 +942,7 @@ var comments = new Array();
  answers[70] = choices[70][0];
  units[70] = "75";
  comments[70] = "Id Pregunta: 70. AGE A1 2015: En la pregunta del examen original, se hablaba de la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaci&oacute;n, actualmente asume sus funciones la Secretar&iacute;a General de Administraci&oacute;n Digital seg&uacute;n Real Decreto 424/2016";
+ preguntaids[70] = 70
 
 
 //  Id pregunta: 71 Año de creación de pregunta: 2016
@@ -883,6 +955,7 @@ var comments = new Array();
  answers[71] = choices[71][0];
  units[71] = "86";
  comments[71] = "Id Pregunta: 71. AGE A1 2015";
+ preguntaids[71] = 71
 
 
 //  Id pregunta: 72 Año de creación de pregunta: 2016
@@ -895,6 +968,7 @@ var comments = new Array();
  answers[72] = choices[72][1];
  units[72] = "86";
  comments[72] = "Id Pregunta: 72. AGE A1 2015";
+ preguntaids[72] = 72
 
 
 //  Id pregunta: 73 Año de creación de pregunta: 2016
@@ -907,6 +981,7 @@ var comments = new Array();
  answers[73] = choices[73][1];
  units[73] = "44";
  comments[73] = "Id Pregunta: 73. AGE A1 2015";
+ preguntaids[73] = 73
 
 
 //  Id pregunta: 74 Año de creación de pregunta: 2016
@@ -919,6 +994,7 @@ var comments = new Array();
  answers[74] = choices[74][3];
  units[74] = "106";
  comments[74] = "Id Pregunta: 74. AGE A1 2015";
+ preguntaids[74] = 74
 
 
 //  Id pregunta: 75 Año de creación de pregunta: 2016
@@ -931,6 +1007,7 @@ var comments = new Array();
  answers[75] = choices[75][0];
  units[75] = "35";
  comments[75] = "Id Pregunta: 75. AGE A1 2015";
+ preguntaids[75] = 75
 
 
 //  Id pregunta: 76 Año de creación de pregunta: 2016
@@ -943,6 +1020,7 @@ var comments = new Array();
  answers[76] = choices[76][0];
  units[76] = "36";
  comments[76] = "Id Pregunta: 76. AGE A1 2015";
+ preguntaids[76] = 76
 
 
 //  Id pregunta: 77 Año de creación de pregunta: 2016
@@ -955,6 +1033,7 @@ var comments = new Array();
  answers[77] = choices[77][2];
  units[77] = "47";
  comments[77] = "Id Pregunta: 77. AGE A1 2015";
+ preguntaids[77] = 77
 
 
 //  Id pregunta: 78 Año de creación de pregunta: 2016
@@ -967,6 +1046,7 @@ var comments = new Array();
  answers[78] = choices[78][1];
  units[78] = "35";
  comments[78] = "Id Pregunta: 78. AGE A1 2015";
+ preguntaids[78] = 78
 
 
 //  Id pregunta: 79 Año de creación de pregunta: 2016
@@ -979,6 +1059,7 @@ var comments = new Array();
  answers[79] = choices[79][1];
  units[79] = "75";
  comments[79] = "Id Pregunta: 79. AGE A1 2015: En la pregunta del examen original, se hablaba de la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaci&oacute;n, actualmente asume sus funciones la Secretar&iacute;a General de Administraci&oacute;n Digital seg&uacute;n Real Decreto 424/2016";
+ preguntaids[79] = 79
 
 
 //  Id pregunta: 80 Año de creación de pregunta: 2016
@@ -991,6 +1072,7 @@ var comments = new Array();
  answers[80] = choices[80][3];
  units[80] = "46";
  comments[80] = "Id Pregunta: 80. AGE A1 2015";
+ preguntaids[80] = 80
 
 
 //  Id pregunta: 81 Año de creación de pregunta: 2016
@@ -1003,6 +1085,7 @@ var comments = new Array();
  answers[81] = choices[81][3];
  units[81] = "73";
  comments[81] = "Id Pregunta: 81. AGE A1 2015";
+ preguntaids[81] = 81
 
 
 //  Id pregunta: 82 Año de creación de pregunta: 2016
@@ -1015,6 +1098,7 @@ var comments = new Array();
  answers[82] = choices[82][3];
  units[82] = "41";
  comments[82] = "Id Pregunta: 82. AGE A1 2015";
+ preguntaids[82] = 82
 
 
 //  Id pregunta: 83 Año de creación de pregunta: 2016
@@ -1027,6 +1111,7 @@ var comments = new Array();
  answers[83] = choices[83][2];
  units[83] = "42";
  comments[83] = "Id Pregunta: 83. AGE A1 2015";
+ preguntaids[83] = 83
 
 
 //  Id pregunta: 84 Año de creación de pregunta: 2016
@@ -1039,6 +1124,7 @@ var comments = new Array();
  answers[84] = choices[84][1];
  units[84] = "43";
  comments[84] = "Id Pregunta: 84. AGE A1 2015";
+ preguntaids[84] = 84
 
 
 //  Id pregunta: 85 Año de creación de pregunta: 2016
@@ -1051,6 +1137,7 @@ var comments = new Array();
  answers[85] = choices[85][3];
  units[85] = "45";
  comments[85] = "Id Pregunta: 85. AGE A1 2015";
+ preguntaids[85] = 85
 
 
 //  Id pregunta: 86 Año de creación de pregunta: 2016
@@ -1063,6 +1150,7 @@ var comments = new Array();
  answers[86] = choices[86][2];
  units[86] = "37";
  comments[86] = "Id Pregunta: 86. AGE A1 2015";
+ preguntaids[86] = 86
 
 
 //  Id pregunta: 87 Año de creación de pregunta: 2016
@@ -1075,6 +1163,7 @@ var comments = new Array();
  answers[87] = choices[87][2];
  units[87] = "48";
  comments[87] = "Id Pregunta: 87. AGE A1 2015";
+ preguntaids[87] = 87
 
 
 //  Id pregunta: 88 Año de creación de pregunta: 2016
@@ -1087,6 +1176,7 @@ var comments = new Array();
  answers[88] = choices[88][0];
  units[88] = "91";
  comments[88] = "Id Pregunta: 88. AGE A1 2015";
+ preguntaids[88] = 88
 
 
 //  Id pregunta: 89 Año de creación de pregunta: 2016
@@ -1099,6 +1189,7 @@ var comments = new Array();
  answers[89] = choices[89][1];
  units[89] = "37";
  comments[89] = "Id Pregunta: 89. AGE A1 2015";
+ preguntaids[89] = 89
 
 
 //  Id pregunta: 90 Año de creación de pregunta: 2016
@@ -1111,6 +1202,7 @@ var comments = new Array();
  answers[90] = choices[90][2];
  units[90] = "46";
  comments[90] = "Id Pregunta: 90. AGE A1 2015";
+ preguntaids[90] = 90
 
 
 //  Id pregunta: 91 Año de creación de pregunta: 2016
@@ -1123,6 +1215,7 @@ var comments = new Array();
  answers[91] = choices[91][2];
  units[91] = "92";
  comments[91] = "Id Pregunta: 91. AGE A1 2015";
+ preguntaids[91] = 91
 
 
 //  Id pregunta: 92 Año de creación de pregunta: 2016
@@ -1135,6 +1228,7 @@ var comments = new Array();
  answers[92] = choices[92][0];
  units[92] = "48";
  comments[92] = "Id Pregunta: 92. AGE A1 2015";
+ preguntaids[92] = 92
 
 
 //  Id pregunta: 93 Año de creación de pregunta: 2016
@@ -1147,6 +1241,7 @@ var comments = new Array();
  answers[93] = choices[93][2];
  units[93] = "73";
  comments[93] = "Id Pregunta: 93. AGE A1 2015";
+ preguntaids[93] = 93
 
 
 //  Id pregunta: 94 Año de creación de pregunta: 2016
@@ -1159,6 +1254,7 @@ var comments = new Array();
  answers[94] = choices[94][1];
  units[94] = "73";
  comments[94] = "Id Pregunta: 94. AGE A1 2015";
+ preguntaids[94] = 94
 
 
 //  Id pregunta: 95 Año de creación de pregunta: 2016
@@ -1171,6 +1267,7 @@ var comments = new Array();
  answers[95] = choices[95][3];
  units[95] = "89";
  comments[95] = "Id Pregunta: 95. AGE A1 2015";
+ preguntaids[95] = 95
 
 
 //  Id pregunta: 96 Año de creación de pregunta: 2016
@@ -1183,6 +1280,7 @@ var comments = new Array();
  answers[96] = choices[96][2];
  units[96] = "54";
  comments[96] = "Id Pregunta: 96. AGE A1 2015";
+ preguntaids[96] = 96
 
 
 //  Id pregunta: 97 Año de creación de pregunta: 2016
@@ -1195,6 +1293,7 @@ var comments = new Array();
  answers[97] = choices[97][2];
  units[97] = "22";
  comments[97] = "Id Pregunta: 97. AGE A1 2015";
+ preguntaids[97] = 97
 
 
 //  Id pregunta: 98 Año de creación de pregunta: 2016
@@ -1207,6 +1306,7 @@ var comments = new Array();
  answers[98] = choices[98][2];
  units[98] = "124";
  comments[98] = "Id Pregunta: 98. AGE A1 2015";
+ preguntaids[98] = 98
 
 
 //  Id pregunta: 99 Año de creación de pregunta: 2016
@@ -1219,6 +1319,7 @@ var comments = new Array();
  answers[99] = choices[99][2];
  units[99] = "26";
  comments[99] = "Id Pregunta: 99. AGE A1 2015: actualmente la Secretar&iacute;a General de Administraci&oacute;n Digital asume las funciones de la Direcci&oacute;n de Tecnolog&iacute;as de la Informaci&oacute;n y Comunicaci&oacute;n, seg&uacute;n Real Decreto 424/2016";
+ preguntaids[99] = 99
 
 
 //  Id pregunta: 100 Año de creación de pregunta: 2016
@@ -1231,6 +1332,7 @@ var comments = new Array();
  answers[100] = choices[100][0];
  units[100] = "73";
  comments[100] = "Id Pregunta: 100. ";
+ preguntaids[100] = 100
 
 
 //  Id pregunta: 101 Año de creación de pregunta: 2016
@@ -1243,6 +1345,7 @@ var comments = new Array();
  answers[101] = choices[101][1];
  units[101] = "73";
  comments[101] = "Id Pregunta: 101. ";
+ preguntaids[101] = 101
 
 
 //  Id pregunta: 102 Año de creación de pregunta: 2016
@@ -1255,6 +1358,7 @@ var comments = new Array();
  answers[102] = choices[102][2];
  units[102] = "73";
  comments[102] = "Id Pregunta: 102. ";
+ preguntaids[102] = 102
 
 
 //  Id pregunta: 103 Año de creación de pregunta: 2016
@@ -1267,6 +1371,7 @@ var comments = new Array();
  answers[103] = choices[103][3];
  units[103] = "73";
  comments[103] = "Id Pregunta: 103. ";
+ preguntaids[103] = 103
 
 
 //  Id pregunta: 104 Año de creación de pregunta: 2016
@@ -1279,6 +1384,7 @@ var comments = new Array();
  answers[104] = choices[104][1];
  units[104] = "73";
  comments[104] = "Id Pregunta: 104. ";
+ preguntaids[104] = 104
 
 
 //  Id pregunta: 105 Año de creación de pregunta: 2016
@@ -1291,6 +1397,7 @@ var comments = new Array();
  answers[105] = choices[105][3];
  units[105] = "73";
  comments[105] = "Id Pregunta: 105. ";
+ preguntaids[105] = 105
 
 
 //  Id pregunta: 106 Año de creación de pregunta: 2016
@@ -1303,6 +1410,7 @@ var comments = new Array();
  answers[106] = choices[106][2];
  units[106] = "73";
  comments[106] = "Id Pregunta: 106. ";
+ preguntaids[106] = 106
 
 
 //  Id pregunta: 107 Año de creación de pregunta: 2016
@@ -1315,6 +1423,7 @@ var comments = new Array();
  answers[107] = choices[107][2];
  units[107] = "73";
  comments[107] = "Id Pregunta: 107. ";
+ preguntaids[107] = 107
 
 
 //  Id pregunta: 108 Año de creación de pregunta: 2016
@@ -1327,6 +1436,7 @@ var comments = new Array();
  answers[108] = choices[108][2];
  units[108] = "73";
  comments[108] = "Id Pregunta: 108. ";
+ preguntaids[108] = 108
 
 
 //  Id pregunta: 109 Año de creación de pregunta: 2016
@@ -1339,6 +1449,7 @@ var comments = new Array();
  answers[109] = choices[109][3];
  units[109] = "73";
  comments[109] = "Id Pregunta: 109. ";
+ preguntaids[109] = 109
 
 
 //  Id pregunta: 110 Año de creación de pregunta: 2016
@@ -1351,6 +1462,7 @@ var comments = new Array();
  answers[110] = choices[110][2];
  units[110] = "15";
  comments[110] = "Id Pregunta: 110. ";
+ preguntaids[110] = 110
 
 
 //  Id pregunta: 111 Año de creación de pregunta: 2016
@@ -1363,6 +1475,7 @@ var comments = new Array();
  answers[111] = choices[111][0];
  units[111] = "15";
  comments[111] = "Id Pregunta: 111. ";
+ preguntaids[111] = 111
 
 
 //  Id pregunta: 112 Año de creación de pregunta: 2016
@@ -1375,6 +1488,7 @@ var comments = new Array();
  answers[112] = choices[112][1];
  units[112] = "15";
  comments[112] = "Id Pregunta: 112. ";
+ preguntaids[112] = 112
 
 
 //  Id pregunta: 113 Año de creación de pregunta: 2016
@@ -1387,6 +1501,7 @@ var comments = new Array();
  answers[113] = choices[113][3];
  units[113] = "15";
  comments[113] = "Id Pregunta: 113. ";
+ preguntaids[113] = 113
 
 
 //  Id pregunta: 114 Año de creación de pregunta: 2016
@@ -1399,6 +1514,7 @@ var comments = new Array();
  answers[114] = choices[114][0];
  units[114] = "15";
  comments[114] = "Id Pregunta: 114. ";
+ preguntaids[114] = 114
 
 
 //  Id pregunta: 115 Año de creación de pregunta: 2016
@@ -1411,6 +1527,7 @@ var comments = new Array();
  answers[115] = choices[115][1];
  units[115] = "15";
  comments[115] = "Id Pregunta: 115. ";
+ preguntaids[115] = 115
 
 
 //  Id pregunta: 116 Año de creación de pregunta: 2016
@@ -1423,6 +1540,7 @@ var comments = new Array();
  answers[116] = choices[116][3];
  units[116] = "15";
  comments[116] = "Id Pregunta: 116. ";
+ preguntaids[116] = 116
 
 
 //  Id pregunta: 117 Año de creación de pregunta: 2016
@@ -1435,6 +1553,7 @@ var comments = new Array();
  answers[117] = choices[117][0];
  units[117] = "15";
  comments[117] = "Id Pregunta: 117. ";
+ preguntaids[117] = 117
 
 
 //  Id pregunta: 118 Año de creación de pregunta: 2016
@@ -1447,6 +1566,7 @@ var comments = new Array();
  answers[118] = choices[118][2];
  units[118] = "15";
  comments[118] = "Id Pregunta: 118. ";
+ preguntaids[118] = 118
 
 
 //  Id pregunta: 119 Año de creación de pregunta: 2016
@@ -1459,6 +1579,7 @@ var comments = new Array();
  answers[119] = choices[119][3];
  units[119] = "15";
  comments[119] = "Id Pregunta: 119. ";
+ preguntaids[119] = 119
 
 
 //  Id pregunta: 120 Año de creación de pregunta: 2016
@@ -1471,6 +1592,7 @@ var comments = new Array();
  answers[120] = choices[120][3];
  units[120] = "22";
  comments[120] = "Id Pregunta: 120. ";
+ preguntaids[120] = 120
 
 
 //  Id pregunta: 121 Año de creación de pregunta: 2016
@@ -1483,6 +1605,7 @@ var comments = new Array();
  answers[121] = choices[121][2];
  units[121] = "22";
  comments[121] = "Id Pregunta: 121. ";
+ preguntaids[121] = 121
 
 
 //  Id pregunta: 122 Año de creación de pregunta: 2016
@@ -1495,6 +1618,7 @@ var comments = new Array();
  answers[122] = choices[122][1];
  units[122] = "22";
  comments[122] = "Id Pregunta: 122. ";
+ preguntaids[122] = 122
 
 
 //  Id pregunta: 123 Año de creación de pregunta: 2016
@@ -1507,6 +1631,7 @@ var comments = new Array();
  answers[123] = choices[123][0];
  units[123] = "22";
  comments[123] = "Id Pregunta: 123. ";
+ preguntaids[123] = 123
 
 
 //  Id pregunta: 124 Año de creación de pregunta: 2016
@@ -1519,6 +1644,7 @@ var comments = new Array();
  answers[124] = choices[124][0];
  units[124] = "22";
  comments[124] = "Id Pregunta: 124. ";
+ preguntaids[124] = 124
 
 
 //  Id pregunta: 125 Año de creación de pregunta: 2016
@@ -1531,6 +1657,7 @@ var comments = new Array();
  answers[125] = choices[125][0];
  units[125] = "22";
  comments[125] = "Id Pregunta: 125. ";
+ preguntaids[125] = 125
 
 
 //  Id pregunta: 126 Año de creación de pregunta: 2016
@@ -1543,6 +1670,7 @@ var comments = new Array();
  answers[126] = choices[126][3];
  units[126] = "22";
  comments[126] = "Id Pregunta: 126. ";
+ preguntaids[126] = 126
 
 
 //  Id pregunta: 127 Año de creación de pregunta: 2016
@@ -1555,6 +1683,7 @@ var comments = new Array();
  answers[127] = choices[127][1];
  units[127] = "22";
  comments[127] = "Id Pregunta: 127. ";
+ preguntaids[127] = 127
 
 
 //  Id pregunta: 128 Año de creación de pregunta: 2016
@@ -1567,6 +1696,7 @@ var comments = new Array();
  answers[128] = choices[128][2];
  units[128] = "22";
  comments[128] = "Id Pregunta: 128. ";
+ preguntaids[128] = 128
 
 
 //  Id pregunta: 129 Año de creación de pregunta: 2016
@@ -1579,6 +1709,7 @@ var comments = new Array();
  answers[129] = choices[129][2];
  units[129] = "22";
  comments[129] = "Id Pregunta: 129. ";
+ preguntaids[129] = 129
 
 
 //  Id pregunta: 130 Año de creación de pregunta: 2016
@@ -1591,6 +1722,7 @@ var comments = new Array();
  answers[130] = choices[130][3];
  units[130] = "12";
  comments[130] = "Id Pregunta: 130. Leyes modelo econ&oacute;mico";
+ preguntaids[130] = 130
 
 
 //  Id pregunta: 131 Año de creación de pregunta: 2016
@@ -1603,6 +1735,7 @@ var comments = new Array();
  answers[131] = choices[131][0];
  units[131] = "12";
  comments[131] = "Id Pregunta: 131. Leyes modelo econ&oacute;mico";
+ preguntaids[131] = 131
 
 
 //  Id pregunta: 132 Año de creación de pregunta: 2016
@@ -1615,6 +1748,7 @@ var comments = new Array();
  answers[132] = choices[132][3];
  units[132] = "12";
  comments[132] = "Id Pregunta: 132. Leyes modelo econ&oacute;mico";
+ preguntaids[132] = 132
 
 
 //  Id pregunta: 133 Año de creación de pregunta: 2016
@@ -1627,6 +1761,7 @@ var comments = new Array();
  answers[133] = choices[133][1];
  units[133] = "12";
  comments[133] = "Id Pregunta: 133. Leyes modelo econ&oacute;mico";
+ preguntaids[133] = 133
 
 
 //  Id pregunta: 134 Año de creación de pregunta: 2016
@@ -1639,6 +1774,7 @@ var comments = new Array();
  answers[134] = choices[134][2];
  units[134] = "12";
  comments[134] = "Id Pregunta: 134. Leyes modelo econ&oacute;mico";
+ preguntaids[134] = 134
 
 
 //  Id pregunta: 135 Año de creación de pregunta: 2016
@@ -1651,6 +1787,7 @@ var comments = new Array();
  answers[135] = choices[135][0];
  units[135] = "12";
  comments[135] = "Id Pregunta: 135. Leyes modelo econ&oacute;mico";
+ preguntaids[135] = 135
 
 
 //  Id pregunta: 136 Año de creación de pregunta: 2016
@@ -1663,6 +1800,7 @@ var comments = new Array();
  answers[136] = choices[136][2];
  units[136] = "12";
  comments[136] = "Id Pregunta: 136. Leyes modelo econ&oacute;mico";
+ preguntaids[136] = 136
 
 
 //  Id pregunta: 137 Año de creación de pregunta: 2016
@@ -1675,6 +1813,7 @@ var comments = new Array();
  answers[137] = choices[137][3];
  units[137] = "12";
  comments[137] = "Id Pregunta: 137. Leyes modelo econ&oacute;mico";
+ preguntaids[137] = 137
 
 
 //  Id pregunta: 138 Año de creación de pregunta: 2016
@@ -1687,6 +1826,7 @@ var comments = new Array();
  answers[138] = choices[138][1];
  units[138] = "12";
  comments[138] = "Id Pregunta: 138. Leyes modelo econ&oacute;mico";
+ preguntaids[138] = 138
 
 
 //  Id pregunta: 139 Año de creación de pregunta: 2016
@@ -1699,6 +1839,7 @@ var comments = new Array();
  answers[139] = choices[139][0];
  units[139] = "12";
  comments[139] = "Id Pregunta: 139. Leyes modelo econ&oacute;mico";
+ preguntaids[139] = 139
 
 
 //  Id pregunta: 140 Año de creación de pregunta: 2016
@@ -1711,6 +1852,7 @@ var comments = new Array();
  answers[140] = choices[140][2];
  units[140] = "8";
  comments[140] = "Id Pregunta: 140. Ley 39/2015, Art&iacute;culo 116";
+ preguntaids[140] = 140
 
 
 //  Id pregunta: 141 Año de creación de pregunta: 2016
@@ -1723,6 +1865,7 @@ var comments = new Array();
  answers[141] = choices[141][1];
  units[141] = "8";
  comments[141] = "Id Pregunta: 141. Ley 39/2015, Art&iacute;culo 121";
+ preguntaids[141] = 141
 
 
 //  Id pregunta: 142 Año de creación de pregunta: 2016
@@ -1735,6 +1878,7 @@ var comments = new Array();
  answers[142] = choices[142][1];
  units[142] = "8";
  comments[142] = "Id Pregunta: 142. Ley 39/2015, Art&iacute;culo 122";
+ preguntaids[142] = 142
 
 
 //  Id pregunta: 143 Año de creación de pregunta: 2016
@@ -1747,6 +1891,7 @@ var comments = new Array();
  answers[143] = choices[143][2];
  units[143] = "8";
  comments[143] = "Id Pregunta: 143. Ley 39/2015, Art&iacute;culo 122";
+ preguntaids[143] = 143
 
 
 //  Id pregunta: 144 Año de creación de pregunta: 2016
@@ -1759,6 +1904,7 @@ var comments = new Array();
  answers[144] = choices[144][0];
  units[144] = "8";
  comments[144] = "Id Pregunta: 144. Ley 39/2015, Art&iacute;culo 123";
+ preguntaids[144] = 144
 
 
 //  Id pregunta: 145 Año de creación de pregunta: 2016
@@ -1771,6 +1917,7 @@ var comments = new Array();
  answers[145] = choices[145][3];
  units[145] = "8";
  comments[145] = "Id Pregunta: 145. Ley 39/2015, Art&iacute;culo 125";
+ preguntaids[145] = 145
 
 
 //  Id pregunta: 146 Año de creación de pregunta: 2016
@@ -1783,6 +1930,7 @@ var comments = new Array();
  answers[146] = choices[146][0];
  units[146] = "8";
  comments[146] = "Id Pregunta: 146. Ley 39/2015, Art&iacute;culo 107";
+ preguntaids[146] = 146
 
 
 //  Id pregunta: 147 Año de creación de pregunta: 2016
@@ -1795,6 +1943,7 @@ var comments = new Array();
  answers[147] = choices[147][3];
  units[147] = "7";
  comments[147] = "Id Pregunta: 147. Ley 39/2015, Art&iacute;culo 128";
+ preguntaids[147] = 147
 
 
 //  Id pregunta: 148 Año de creación de pregunta: 2016
@@ -1807,6 +1956,7 @@ var comments = new Array();
  answers[148] = choices[148][2];
  units[148] = "7";
  comments[148] = "Id Pregunta: 148. Ley 39/2015, Art&iacute;culo 131";
+ preguntaids[148] = 148
 
 
 //  Id pregunta: 149 Año de creación de pregunta: 2016
@@ -1819,6 +1969,7 @@ var comments = new Array();
  answers[149] = choices[149][2];
  units[149] = "7";
  comments[149] = "Id Pregunta: 149. Ley 39/2015, Art&iacute;culo 132";
+ preguntaids[149] = 149
 
 
 //  Id pregunta: 150 Año de creación de pregunta: 2016
@@ -1831,6 +1982,7 @@ var comments = new Array();
  answers[150] = choices[150][2];
  units[150] = "7";
  comments[150] = "Id Pregunta: 150. Ley 39/2015, Art&iacute;culo 14";
+ preguntaids[150] = 150
 
 
 //  Id pregunta: 151 Año de creación de pregunta: 2016
@@ -1843,6 +1995,7 @@ var comments = new Array();
  answers[151] = choices[151][1];
  units[151] = "7";
  comments[151] = "Id Pregunta: 151. Ley 39/2015, Art&iacute;culo 14";
+ preguntaids[151] = 151
 
 
 //  Id pregunta: 152 Año de creación de pregunta: 2016
@@ -1855,6 +2008,7 @@ var comments = new Array();
  answers[152] = choices[152][0];
  units[152] = "7";
  comments[152] = "Id Pregunta: 152. Ley 39/2015, Art&iacute;culo 17";
+ preguntaids[152] = 152
 
 
 //  Id pregunta: 153 Año de creación de pregunta: 2016
@@ -1867,6 +2021,7 @@ var comments = new Array();
  answers[153] = choices[153][0];
  units[153] = "7";
  comments[153] = "Id Pregunta: 153. Ley 39/2015, Art&iacute;culo 26";
+ preguntaids[153] = 153
 
 
 //  Id pregunta: 154 Año de creación de pregunta: 2016
@@ -1879,6 +2034,7 @@ var comments = new Array();
  answers[154] = choices[154][3];
  units[154] = "7";
  comments[154] = "Id Pregunta: 154. Ley 39/2015, Art&iacute;culo 29";
+ preguntaids[154] = 154
 
 
 //  Id pregunta: 155 Año de creación de pregunta: 2016
@@ -1891,6 +2047,7 @@ var comments = new Array();
  answers[155] = choices[155][2];
  units[155] = "7";
  comments[155] = "Id Pregunta: 155. Ley 39/2015, Art&iacute;culo 31";
+ preguntaids[155] = 155
 
 
 //  Id pregunta: 156 Año de creación de pregunta: 2016
@@ -1903,6 +2060,7 @@ var comments = new Array();
  answers[156] = choices[156][1];
  units[156] = "7";
  comments[156] = "Id Pregunta: 156. Ley 39/2015, Art&iacute;culo 40";
+ preguntaids[156] = 156
 
 
 //  Id pregunta: 157 Año de creación de pregunta: 2016
@@ -1915,6 +2073,7 @@ var comments = new Array();
  answers[157] = choices[157][0];
  units[157] = "7";
  comments[157] = "Id Pregunta: 157. Ley 39/2015, Art&iacute;culo 45";
+ preguntaids[157] = 157
 
 
 //  Id pregunta: 158 Año de creación de pregunta: 2016
@@ -1927,6 +2086,7 @@ var comments = new Array();
  answers[158] = choices[158][1];
  units[158] = "7";
  comments[158] = "Id Pregunta: 158. Ley 39/2015, Art&iacute;culo 43";
+ preguntaids[158] = 158
 
 
 //  Id pregunta: 159 Año de creación de pregunta: 2016
@@ -1939,6 +2099,7 @@ var comments = new Array();
  answers[159] = choices[159][2];
  units[159] = "7";
  comments[159] = "Id Pregunta: 159. Ley 39/2015, Art&iacute;culo 36";
+ preguntaids[159] = 159
 
 
 //  Id pregunta: 160 Año de creación de pregunta: 2016
@@ -1951,6 +2112,7 @@ var comments = new Array();
  answers[160] = choices[160][1];
  units[160] = "19";
  comments[160] = "Id Pregunta: 160. https://administracionelectronica.gob.es/pae_Home/pae_Actualidad/pae_Noticias/Anio2015/Mayo/Noticia-2015-05-07-estrategia-mercado-unico-digital-europeo.html#.WCjr0mrhDIU";
+ preguntaids[160] = 160
 
 
 //  Id pregunta: 161 Año de creación de pregunta: 2016
@@ -1963,6 +2125,7 @@ var comments = new Array();
  answers[161] = choices[161][3];
  units[161] = "19";
  comments[161] = "Id Pregunta: 161. https://administracionelectronica.gob.es/pae_Home/pae_Actualidad/pae_Noticias/Anio2016/Junio/Noticia-2016-06-02-Plan-accion-administracion-electronica-2016-2020.html#.WCjvuWrhDIU";
+ preguntaids[161] = 161
 
 
 //  Id pregunta: 162 Año de creación de pregunta: 2016
@@ -1975,6 +2138,7 @@ var comments = new Array();
  answers[162] = choices[162][0];
  units[162] = "19";
  comments[162] = "Id Pregunta: 162. La respuesta B es la antigua redacci&oacute;n";
+ preguntaids[162] = 162
 
 
 //  Id pregunta: 163 Año de creación de pregunta: 2016
@@ -1987,6 +2151,7 @@ var comments = new Array();
  answers[163] = choices[163][0];
  units[163] = "19";
  comments[163] = "Id Pregunta: 163. B y C: son &quot;Muy grave&quot;; D: para que fuera verdadera deber&iacute;a ser &quot;inferior&quot;";
+ preguntaids[163] = 163
 
 
 //  Id pregunta: 164 Año de creación de pregunta: 2016
@@ -1999,6 +2164,7 @@ var comments = new Array();
  answers[164] = choices[164][1];
  units[164] = "19";
  comments[164] = "Id Pregunta: 164. http://www.consilium.europa.eu/es/policies/digital-single-market-strategy/ A: &quot;mejora de la paqueter&iacute;a transfronteriza&quot;; C: &quot;Reducci&oacute;n de la burocracia relacionada con el IVA&quot;; D: &quot;Construir una econom&iacute;a de los datos&quot;";
+ preguntaids[164] = 164
 
 
 //  Id pregunta: 165 Año de creación de pregunta: 2016
@@ -2011,6 +2177,7 @@ var comments = new Array();
  answers[165] = choices[165][0];
  units[165] = "19";
  comments[165] = "Id Pregunta: 165. http://www.consilium.europa.eu/es/policies/digital-single-market-strategy/";
+ preguntaids[165] = 165
 
 
 //  Id pregunta: 166 Año de creación de pregunta: 2016
@@ -2023,6 +2190,7 @@ var comments = new Array();
  answers[166] = choices[166][2];
  units[166] = "19";
  comments[166] = "Id Pregunta: 166. https://ec.europa.eu/digital-single-market/en/desi Conectividad, Capital humano, Uso de internet, Integraci&oacute;n de tecnolog&iacute;a digital, Servicios p&uacute;blicos digitales";
+ preguntaids[166] = 166
 
 
 //  Id pregunta: 167 Año de creación de pregunta: 2016
@@ -2035,6 +2203,7 @@ var comments = new Array();
  answers[167] = choices[167][1];
  units[167] = "19";
  comments[167] = "Id Pregunta: 167. https://ec.europa.eu/digital-single-market/en/digital-inclusion-better-eu-society";
+ preguntaids[167] = 167
 
 
 //  Id pregunta: 168 Año de creación de pregunta: 2016
@@ -2047,6 +2216,7 @@ var comments = new Array();
  answers[168] = choices[168][2];
  units[168] = "19";
  comments[168] = "Id Pregunta: 168. https://ec.europa.eu/digital-single-market/en/roaming";
+ preguntaids[168] = 168
 
 
 //  Id pregunta: 169 Año de creación de pregunta: 2016
@@ -2059,6 +2229,7 @@ var comments = new Array();
  answers[169] = choices[169][1];
  units[169] = "19";
  comments[169] = "Id Pregunta: 169. https://ec.europa.eu/digital-single-market/en/5g-europe-action-plan";
+ preguntaids[169] = 169
 
 
 //  Id pregunta: 170 Año de creación de pregunta: 2016
@@ -2071,6 +2242,7 @@ var comments = new Array();
  answers[170] = choices[170][2];
  units[170] = "19";
  comments[170] = "Id Pregunta: 170. https://administracionelectronica.gob.es/pae_Home/pae_Actualidad/pae_Noticias/Anio2016/Mayo/Noticia-2016-05-09-Nuevo-Reglamento-LOPD.html#.WCnlfmrhDIU";
+ preguntaids[170] = 170
 
 
 //  Id pregunta: 171 Año de creación de pregunta: 2016
@@ -2083,6 +2255,7 @@ var comments = new Array();
  answers[171] = choices[171][3];
  units[171] = "19";
  comments[171] = "Id Pregunta: 171. https://administracionelectronica.gob.es/pae_Home/pae_Actualidad/pae_Noticias/Anio2015/Diciembre/Noticia-2015-12-09-Publicada-la-Decision-ISA2-continuidad-al-esfuerzo-asegurar-interoperabilidad-entre-AAPP-europeas.html#.WCnm1WrhDIU";
+ preguntaids[171] = 171
 
 
 //  Id pregunta: 172 Año de creación de pregunta: 2016
@@ -2095,6 +2268,7 @@ var comments = new Array();
  answers[172] = choices[172][2];
  units[172] = "1";
  comments[172] = "Id Pregunta: 172. CONSTITUCION1978";
+ preguntaids[172] = 172
 
 
 //  Id pregunta: 173 Año de creación de pregunta: 2016
@@ -2107,6 +2281,7 @@ var comments = new Array();
  answers[173] = choices[173][3];
  units[173] = "1";
  comments[173] = "Id Pregunta: 173. CONSTITUCION1978";
+ preguntaids[173] = 173
 
 
 //  Id pregunta: 174 Año de creación de pregunta: 2016
@@ -2119,6 +2294,7 @@ var comments = new Array();
  answers[174] = choices[174][1];
  units[174] = "1";
  comments[174] = "Id Pregunta: 174. CONSTITUCION1978";
+ preguntaids[174] = 174
 
 
 //  Id pregunta: 175 Año de creación de pregunta: 2016
@@ -2131,6 +2307,7 @@ var comments = new Array();
  answers[175] = choices[175][1];
  units[175] = "1";
  comments[175] = "Id Pregunta: 175. CONSTITUCION1978";
+ preguntaids[175] = 175
 
 
 //  Id pregunta: 176 Año de creación de pregunta: 2016
@@ -2143,6 +2320,7 @@ var comments = new Array();
  answers[176] = choices[176][0];
  units[176] = "1";
  comments[176] = "Id Pregunta: 176. CONSTITUCION1978";
+ preguntaids[176] = 176
 
 
 //  Id pregunta: 177 Año de creación de pregunta: 2016
@@ -2155,6 +2333,7 @@ var comments = new Array();
  answers[177] = choices[177][2];
  units[177] = "1";
  comments[177] = "Id Pregunta: 177. CONSTITUCION1978";
+ preguntaids[177] = 177
 
 
 //  Id pregunta: 178 Año de creación de pregunta: 2016
@@ -2167,6 +2346,7 @@ var comments = new Array();
  answers[178] = choices[178][0];
  units[178] = "1";
  comments[178] = "Id Pregunta: 178. CONSTITUCION1978";
+ preguntaids[178] = 178
 
 
 //  Id pregunta: 179 Año de creación de pregunta: 2016
@@ -2179,6 +2359,7 @@ var comments = new Array();
  answers[179] = choices[179][1];
  units[179] = "1";
  comments[179] = "Id Pregunta: 179. CONSTITUCION1978";
+ preguntaids[179] = 179
 
 
 //  Id pregunta: 180 Año de creación de pregunta: 2016
@@ -2191,6 +2372,7 @@ var comments = new Array();
  answers[180] = choices[180][0];
  units[180] = "1";
  comments[180] = "Id Pregunta: 180. CONSTITUCION1978";
+ preguntaids[180] = 180
 
 
 //  Id pregunta: 181 Año de creación de pregunta: 2016
@@ -2203,6 +2385,7 @@ var comments = new Array();
  answers[181] = choices[181][3];
  units[181] = "1";
  comments[181] = "Id Pregunta: 181. CONSTITUCION1978";
+ preguntaids[181] = 181
 
 
 //  Id pregunta: 182 Año de creación de pregunta: 2016
@@ -2215,6 +2398,7 @@ var comments = new Array();
  answers[182] = choices[182][1];
  units[182] = "1";
  comments[182] = "Id Pregunta: 182. CONSTITUCION1978";
+ preguntaids[182] = 182
 
 
 //  Id pregunta: 183 Año de creación de pregunta: 2016
@@ -2227,6 +2411,7 @@ var comments = new Array();
  answers[183] = choices[183][1];
  units[183] = "1";
  comments[183] = "Id Pregunta: 183. CONSTITUCION1978";
+ preguntaids[183] = 183
 
 
 //  Id pregunta: 184 Año de creación de pregunta: 2016
@@ -2239,6 +2424,7 @@ var comments = new Array();
  answers[184] = choices[184][2];
  units[184] = "1";
  comments[184] = "Id Pregunta: 184. CONSTITUCION1978";
+ preguntaids[184] = 184
 
 
 //  Id pregunta: 185 Año de creación de pregunta: 2016
@@ -2251,6 +2437,7 @@ var comments = new Array();
  answers[185] = choices[185][1];
  units[185] = "1";
  comments[185] = "Id Pregunta: 185. CONSTITUCION1978";
+ preguntaids[185] = 185
 
 
 //  Id pregunta: 186 Año de creación de pregunta: 2016
@@ -2263,6 +2450,7 @@ var comments = new Array();
  answers[186] = choices[186][2];
  units[186] = "1";
  comments[186] = "Id Pregunta: 186. CONSTITUCION1978";
+ preguntaids[186] = 186
 
 
 //  Id pregunta: 187 Año de creación de pregunta: 2016
@@ -2275,6 +2463,7 @@ var comments = new Array();
  answers[187] = choices[187][0];
  units[187] = "1";
  comments[187] = "Id Pregunta: 187. CONSTITUCION1978";
+ preguntaids[187] = 187
 
 
 //  Id pregunta: 188 Año de creación de pregunta: 2016
@@ -2287,6 +2476,7 @@ var comments = new Array();
  answers[188] = choices[188][3];
  units[188] = "1";
  comments[188] = "Id Pregunta: 188. CONSTITUCION1978";
+ preguntaids[188] = 188
 
 
 //  Id pregunta: 189 Año de creación de pregunta: 2016
@@ -2299,6 +2489,7 @@ var comments = new Array();
  answers[189] = choices[189][1];
  units[189] = "1";
  comments[189] = "Id Pregunta: 189. CONSTITUCION1978";
+ preguntaids[189] = 189
 
 
 //  Id pregunta: 190 Año de creación de pregunta: 2016
@@ -2311,6 +2502,7 @@ var comments = new Array();
  answers[190] = choices[190][2];
  units[190] = "1";
  comments[190] = "Id Pregunta: 190. CONSTITUCION1978";
+ preguntaids[190] = 190
 
 
 //  Id pregunta: 191 Año de creación de pregunta: 2016
@@ -2323,6 +2515,7 @@ var comments = new Array();
  answers[191] = choices[191][2];
  units[191] = "1";
  comments[191] = "Id Pregunta: 191. CONSTITUCION1978";
+ preguntaids[191] = 191
 
 
 //  Id pregunta: 192 Año de creación de pregunta: 2016
@@ -2335,6 +2528,7 @@ var comments = new Array();
  answers[192] = choices[192][2];
  units[192] = "1";
  comments[192] = "Id Pregunta: 192. CONSTITUCION1978";
+ preguntaids[192] = 192
 
 
 //  Id pregunta: 193 Año de creación de pregunta: 2016
@@ -2347,6 +2541,7 @@ var comments = new Array();
  answers[193] = choices[193][1];
  units[193] = "1";
  comments[193] = "Id Pregunta: 193. CONSTITUCION1978";
+ preguntaids[193] = 193
 
 
 //  Id pregunta: 194 Año de creación de pregunta: 2016
@@ -2359,6 +2554,7 @@ var comments = new Array();
  answers[194] = choices[194][1];
  units[194] = "1";
  comments[194] = "Id Pregunta: 194. CONSTITUCION1978";
+ preguntaids[194] = 194
 
 
 //  Id pregunta: 195 Año de creación de pregunta: 2016
@@ -2371,6 +2567,7 @@ var comments = new Array();
  answers[195] = choices[195][0];
  units[195] = "1";
  comments[195] = "Id Pregunta: 195. CONSTITUCION1978";
+ preguntaids[195] = 195
 
 
 //  Id pregunta: 196 Año de creación de pregunta: 2016
@@ -2383,6 +2580,7 @@ var comments = new Array();
  answers[196] = choices[196][3];
  units[196] = "1";
  comments[196] = "Id Pregunta: 196. CONSTITUCION1978";
+ preguntaids[196] = 196
 
 
 //  Id pregunta: 197 Año de creación de pregunta: 2016
@@ -2395,6 +2593,7 @@ var comments = new Array();
  answers[197] = choices[197][0];
  units[197] = "1";
  comments[197] = "Id Pregunta: 197. CONSTITUCION1978";
+ preguntaids[197] = 197
 
 
 //  Id pregunta: 198 Año de creación de pregunta: 2016
@@ -2407,6 +2606,7 @@ var comments = new Array();
  answers[198] = choices[198][3];
  units[198] = "1";
  comments[198] = "Id Pregunta: 198. CONSTITUCION1978";
+ preguntaids[198] = 198
 
 
 //  Id pregunta: 199 Año de creación de pregunta: 2016
@@ -2419,6 +2619,7 @@ var comments = new Array();
  answers[199] = choices[199][0];
  units[199] = "1";
  comments[199] = "Id Pregunta: 199. CONSTITUCION1978";
+ preguntaids[199] = 199
 
 
 //  Id pregunta: 200 Año de creación de pregunta: 2016
@@ -2431,6 +2632,7 @@ var comments = new Array();
  answers[200] = choices[200][3];
  units[200] = "1";
  comments[200] = "Id Pregunta: 200. CONSTITUCION1978";
+ preguntaids[200] = 200
 
 
 //  Id pregunta: 201 Año de creación de pregunta: 2016
@@ -2443,6 +2645,7 @@ var comments = new Array();
  answers[201] = choices[201][2];
  units[201] = "1";
  comments[201] = "Id Pregunta: 201. CONSTITUCION1978";
+ preguntaids[201] = 201
 
 
 //  Id pregunta: 202 Año de creación de pregunta: 2016
@@ -2455,6 +2658,7 @@ var comments = new Array();
  answers[202] = choices[202][0];
  units[202] = "1";
  comments[202] = "Id Pregunta: 202. CONSTITUCION1978";
+ preguntaids[202] = 202
 
 
 //  Id pregunta: 203 Año de creación de pregunta: 2016
@@ -2467,6 +2671,7 @@ var comments = new Array();
  answers[203] = choices[203][2];
  units[203] = "1";
  comments[203] = "Id Pregunta: 203. CONSTITUCION1978";
+ preguntaids[203] = 203
 
 
 //  Id pregunta: 204 Año de creación de pregunta: 2016
@@ -2479,6 +2684,7 @@ var comments = new Array();
  answers[204] = choices[204][0];
  units[204] = "1";
  comments[204] = "Id Pregunta: 204. CONSTITUCION1978";
+ preguntaids[204] = 204
 
 
 //  Id pregunta: 205 Año de creación de pregunta: 2016
@@ -2491,6 +2697,7 @@ var comments = new Array();
  answers[205] = choices[205][1];
  units[205] = "1";
  comments[205] = "Id Pregunta: 205. CONSTITUCION1978";
+ preguntaids[205] = 205
 
 
 //  Id pregunta: 206 Año de creación de pregunta: 2016
@@ -2503,6 +2710,7 @@ var comments = new Array();
  answers[206] = choices[206][2];
  units[206] = "1";
  comments[206] = "Id Pregunta: 206. CONSTITUCION1978";
+ preguntaids[206] = 206
 
 
 //  Id pregunta: 207 Año de creación de pregunta: 2016
@@ -2515,6 +2723,7 @@ var comments = new Array();
  answers[207] = choices[207][2];
  units[207] = "1";
  comments[207] = "Id Pregunta: 207. CONSTITUCION1978";
+ preguntaids[207] = 207
 
 
 //  Id pregunta: 208 Año de creación de pregunta: 2016
@@ -2527,6 +2736,7 @@ var comments = new Array();
  answers[208] = choices[208][2];
  units[208] = "1";
  comments[208] = "Id Pregunta: 208. CONSTITUCION1978";
+ preguntaids[208] = 208
 
 
 //  Id pregunta: 209 Año de creación de pregunta: 2016
@@ -2539,6 +2749,7 @@ var comments = new Array();
  answers[209] = choices[209][3];
  units[209] = "1";
  comments[209] = "Id Pregunta: 209. CONSTITUCION1978";
+ preguntaids[209] = 209
 
 
 //  Id pregunta: 210 Año de creación de pregunta: 2016
@@ -2551,6 +2762,7 @@ var comments = new Array();
  answers[210] = choices[210][1];
  units[210] = "1";
  comments[210] = "Id Pregunta: 210. CONSTITUCION1978";
+ preguntaids[210] = 210
 
 
 //  Id pregunta: 211 Año de creación de pregunta: 2016
@@ -2563,6 +2775,7 @@ var comments = new Array();
  answers[211] = choices[211][2];
  units[211] = "1";
  comments[211] = "Id Pregunta: 211. CONSTITUCION1978";
+ preguntaids[211] = 211
 
 
 //  Id pregunta: 212 Año de creación de pregunta: 2016
@@ -2575,6 +2788,7 @@ var comments = new Array();
  answers[212] = choices[212][0];
  units[212] = "1";
  comments[212] = "Id Pregunta: 212. CONSTITUCION1978";
+ preguntaids[212] = 212
 
 
 //  Id pregunta: 213 Año de creación de pregunta: 2016
@@ -2587,6 +2801,7 @@ var comments = new Array();
  answers[213] = choices[213][0];
  units[213] = "1";
  comments[213] = "Id Pregunta: 213. CONSTITUCION1978";
+ preguntaids[213] = 213
 
 
 //  Id pregunta: 214 Año de creación de pregunta: 2016
@@ -2599,6 +2814,7 @@ var comments = new Array();
  answers[214] = choices[214][0];
  units[214] = "1";
  comments[214] = "Id Pregunta: 214. CONSTITUCION1978";
+ preguntaids[214] = 214
 
 
 //  Id pregunta: 215 Año de creación de pregunta: 2016
@@ -2611,6 +2827,7 @@ var comments = new Array();
  answers[215] = choices[215][0];
  units[215] = "1";
  comments[215] = "Id Pregunta: 215. CONSTITUCION1978";
+ preguntaids[215] = 215
 
 
 //  Id pregunta: 216 Año de creación de pregunta: 2016
@@ -2623,6 +2840,7 @@ var comments = new Array();
  answers[216] = choices[216][0];
  units[216] = "1";
  comments[216] = "Id Pregunta: 216. CONSTITUCION1978";
+ preguntaids[216] = 216
 
 
 //  Id pregunta: 217 Año de creación de pregunta: 2016
@@ -2635,6 +2853,7 @@ var comments = new Array();
  answers[217] = choices[217][0];
  units[217] = "1";
  comments[217] = "Id Pregunta: 217. CONSTITUCION1978";
+ preguntaids[217] = 217
 
 
 //  Id pregunta: 218 Año de creación de pregunta: 2016
@@ -2647,6 +2866,7 @@ var comments = new Array();
  answers[218] = choices[218][0];
  units[218] = "1";
  comments[218] = "Id Pregunta: 218. CONSTITUCION1978";
+ preguntaids[218] = 218
 
 
 //  Id pregunta: 219 Año de creación de pregunta: 2016
@@ -2659,6 +2879,7 @@ var comments = new Array();
  answers[219] = choices[219][1];
  units[219] = "1";
  comments[219] = "Id Pregunta: 219. CONSTITUCION1978";
+ preguntaids[219] = 219
 
 
 //  Id pregunta: 220 Año de creación de pregunta: 2016
@@ -2671,6 +2892,7 @@ var comments = new Array();
  answers[220] = choices[220][0];
  units[220] = "1";
  comments[220] = "Id Pregunta: 220. CONSTITUCION1978";
+ preguntaids[220] = 220
 
 
 //  Id pregunta: 221 Año de creación de pregunta: 2016
@@ -2683,6 +2905,7 @@ var comments = new Array();
  answers[221] = choices[221][0];
  units[221] = "1";
  comments[221] = "Id Pregunta: 221. CONSTITUCION1978";
+ preguntaids[221] = 221
 
 
 //  Id pregunta: 222 Año de creación de pregunta: 2016
@@ -2695,6 +2918,7 @@ var comments = new Array();
  answers[222] = choices[222][1];
  units[222] = "1";
  comments[222] = "Id Pregunta: 222. CONSTITUCION1978";
+ preguntaids[222] = 222
 
 
 //  Id pregunta: 223 Año de creación de pregunta: 2016
@@ -2707,6 +2931,7 @@ var comments = new Array();
  answers[223] = choices[223][0];
  units[223] = "1";
  comments[223] = "Id Pregunta: 223. CONSTITUCION1978";
+ preguntaids[223] = 223
 
 
 //  Id pregunta: 224 Año de creación de pregunta: 2016
@@ -2719,6 +2944,7 @@ var comments = new Array();
  answers[224] = choices[224][2];
  units[224] = "1";
  comments[224] = "Id Pregunta: 224. CONSTITUCION1978";
+ preguntaids[224] = 224
 
 
 //  Id pregunta: 225 Año de creación de pregunta: 2016
@@ -2731,6 +2957,7 @@ var comments = new Array();
  answers[225] = choices[225][1];
  units[225] = "1";
  comments[225] = "Id Pregunta: 225. CONSTITUCION1978";
+ preguntaids[225] = 225
 
 
 //  Id pregunta: 226 Año de creación de pregunta: 2016
@@ -2743,6 +2970,7 @@ var comments = new Array();
  answers[226] = choices[226][0];
  units[226] = "1";
  comments[226] = "Id Pregunta: 226. CONSTITUCION1978";
+ preguntaids[226] = 226
 
 
 //  Id pregunta: 227 Año de creación de pregunta: 2016
@@ -2755,6 +2983,7 @@ var comments = new Array();
  answers[227] = choices[227][3];
  units[227] = "1";
  comments[227] = "Id Pregunta: 227. CONSTITUCION1978";
+ preguntaids[227] = 227
 
 
 //  Id pregunta: 228 Año de creación de pregunta: 2016
@@ -2767,6 +2996,7 @@ var comments = new Array();
  answers[228] = choices[228][2];
  units[228] = "1";
  comments[228] = "Id Pregunta: 228. CONSTITUCION1978";
+ preguntaids[228] = 228
 
 
 //  Id pregunta: 229 Año de creación de pregunta: 2016
@@ -2779,6 +3009,7 @@ var comments = new Array();
  answers[229] = choices[229][3];
  units[229] = "1";
  comments[229] = "Id Pregunta: 229. CONSTITUCION1978";
+ preguntaids[229] = 229
 
 
 //  Id pregunta: 230 Año de creación de pregunta: 2016
@@ -2791,6 +3022,7 @@ var comments = new Array();
  answers[230] = choices[230][2];
  units[230] = "1";
  comments[230] = "Id Pregunta: 230. CONSTITUCION1978";
+ preguntaids[230] = 230
 
 
 //  Id pregunta: 231 Año de creación de pregunta: 2016
@@ -2803,6 +3035,7 @@ var comments = new Array();
  answers[231] = choices[231][0];
  units[231] = "1";
  comments[231] = "Id Pregunta: 231. CONSTITUCION1978";
+ preguntaids[231] = 231
 
 
 //  Id pregunta: 232 Año de creación de pregunta: 2016
@@ -2815,6 +3048,7 @@ var comments = new Array();
  answers[232] = choices[232][2];
  units[232] = "1";
  comments[232] = "Id Pregunta: 232. CONSTITUCION1978";
+ preguntaids[232] = 232
 
 
 //  Id pregunta: 233 Año de creación de pregunta: 2016
@@ -2827,6 +3061,7 @@ var comments = new Array();
  answers[233] = choices[233][2];
  units[233] = "1";
  comments[233] = "Id Pregunta: 233. CONSTITUCION1978";
+ preguntaids[233] = 233
 
 
 //  Id pregunta: 234 Año de creación de pregunta: 2016
@@ -2839,6 +3074,7 @@ var comments = new Array();
  answers[234] = choices[234][0];
  units[234] = "1";
  comments[234] = "Id Pregunta: 234. CONSTITUCION1978";
+ preguntaids[234] = 234
 
 
 //  Id pregunta: 235 Año de creación de pregunta: 2016
@@ -2851,6 +3087,7 @@ var comments = new Array();
  answers[235] = choices[235][0];
  units[235] = "1";
  comments[235] = "Id Pregunta: 235. CONSTITUCION1978";
+ preguntaids[235] = 235
 
 
 //  Id pregunta: 236 Año de creación de pregunta: 2016
@@ -2863,6 +3100,7 @@ var comments = new Array();
  answers[236] = choices[236][3];
  units[236] = "1";
  comments[236] = "Id Pregunta: 236. CONSTITUCION1978";
+ preguntaids[236] = 236
 
 
 //  Id pregunta: 237 Año de creación de pregunta: 2016
@@ -2875,6 +3113,7 @@ var comments = new Array();
  answers[237] = choices[237][2];
  units[237] = "1";
  comments[237] = "Id Pregunta: 237. CONSTITUCION1978";
+ preguntaids[237] = 237
 
 
 //  Id pregunta: 238 Año de creación de pregunta: 2016
@@ -2887,6 +3126,7 @@ var comments = new Array();
  answers[238] = choices[238][1];
  units[238] = "1";
  comments[238] = "Id Pregunta: 238. CONSTITUCION1978";
+ preguntaids[238] = 238
 
 
 //  Id pregunta: 239 Año de creación de pregunta: 2016
@@ -2899,6 +3139,7 @@ var comments = new Array();
  answers[239] = choices[239][0];
  units[239] = "1";
  comments[239] = "Id Pregunta: 239. CONSTITUCION1978";
+ preguntaids[239] = 239
 
 
 //  Id pregunta: 240 Año de creación de pregunta: 2016
@@ -2911,6 +3152,7 @@ var comments = new Array();
  answers[240] = choices[240][0];
  units[240] = "1";
  comments[240] = "Id Pregunta: 240. CONSTITUCION1978";
+ preguntaids[240] = 240
 
 
 //  Id pregunta: 241 Año de creación de pregunta: 2016
@@ -2923,6 +3165,7 @@ var comments = new Array();
  answers[241] = choices[241][0];
  units[241] = "1";
  comments[241] = "Id Pregunta: 241. CONSTITUCION1978";
+ preguntaids[241] = 241
 
 
 //  Id pregunta: 242 Año de creación de pregunta: 2016
@@ -2935,6 +3178,7 @@ var comments = new Array();
  answers[242] = choices[242][2];
  units[242] = "1";
  comments[242] = "Id Pregunta: 242. CONSTITUCION1978";
+ preguntaids[242] = 242
 
 
 //  Id pregunta: 243 Año de creación de pregunta: 2016
@@ -2947,6 +3191,7 @@ var comments = new Array();
  answers[243] = choices[243][2];
  units[243] = "1";
  comments[243] = "Id Pregunta: 243. CONSTITUCION1978";
+ preguntaids[243] = 243
 
 
 //  Id pregunta: 244 Año de creación de pregunta: 2016
@@ -2959,6 +3204,7 @@ var comments = new Array();
  answers[244] = choices[244][2];
  units[244] = "1";
  comments[244] = "Id Pregunta: 244. CONSTITUCION1978";
+ preguntaids[244] = 244
 
 
 //  Id pregunta: 245 Año de creación de pregunta: 2016
@@ -2971,6 +3217,7 @@ var comments = new Array();
  answers[245] = choices[245][1];
  units[245] = "1";
  comments[245] = "Id Pregunta: 245. CONSTITUCION1978";
+ preguntaids[245] = 245
 
 
 //  Id pregunta: 246 Año de creación de pregunta: 2016
@@ -2983,6 +3230,7 @@ var comments = new Array();
  answers[246] = choices[246][1];
  units[246] = "1";
  comments[246] = "Id Pregunta: 246. CONSTITUCION1978";
+ preguntaids[246] = 246
 
 
 //  Id pregunta: 247 Año de creación de pregunta: 2016
@@ -2995,6 +3243,7 @@ var comments = new Array();
  answers[247] = choices[247][0];
  units[247] = "1";
  comments[247] = "Id Pregunta: 247. CONSTITUCION1978";
+ preguntaids[247] = 247
 
 
 //  Id pregunta: 248 Año de creación de pregunta: 2016
@@ -3007,6 +3256,7 @@ var comments = new Array();
  answers[248] = choices[248][1];
  units[248] = "1";
  comments[248] = "Id Pregunta: 248. CONSTITUCION1978";
+ preguntaids[248] = 248
 
 
 //  Id pregunta: 249 Año de creación de pregunta: 2016
@@ -3019,6 +3269,7 @@ var comments = new Array();
  answers[249] = choices[249][0];
  units[249] = "1";
  comments[249] = "Id Pregunta: 249. CONSTITUCION1978";
+ preguntaids[249] = 249
 
 
 //  Id pregunta: 250 Año de creación de pregunta: 2016
@@ -3031,6 +3282,7 @@ var comments = new Array();
  answers[250] = choices[250][2];
  units[250] = "1";
  comments[250] = "Id Pregunta: 250. CONSTITUCION1978";
+ preguntaids[250] = 250
 
 
 //  Id pregunta: 251 Año de creación de pregunta: 2016
@@ -3043,6 +3295,7 @@ var comments = new Array();
  answers[251] = choices[251][2];
  units[251] = "1";
  comments[251] = "Id Pregunta: 251. CONSTITUCION1978";
+ preguntaids[251] = 251
 
 
 //  Id pregunta: 252 Año de creación de pregunta: 2016
@@ -3055,6 +3308,7 @@ var comments = new Array();
  answers[252] = choices[252][3];
  units[252] = "1";
  comments[252] = "Id Pregunta: 252. CONSTITUCION1978";
+ preguntaids[252] = 252
 
 
 //  Id pregunta: 253 Año de creación de pregunta: 2016
@@ -3067,6 +3321,7 @@ var comments = new Array();
  answers[253] = choices[253][3];
  units[253] = "1";
  comments[253] = "Id Pregunta: 253. CONSTITUCION1978";
+ preguntaids[253] = 253
 
 
 //  Id pregunta: 254 Año de creación de pregunta: 2016
@@ -3079,6 +3334,7 @@ var comments = new Array();
  answers[254] = choices[254][3];
  units[254] = "1";
  comments[254] = "Id Pregunta: 254. CONSTITUCION1978";
+ preguntaids[254] = 254
 
 
 //  Id pregunta: 255 Año de creación de pregunta: 2016
@@ -3091,6 +3347,7 @@ var comments = new Array();
  answers[255] = choices[255][3];
  units[255] = "1";
  comments[255] = "Id Pregunta: 255. CONSTITUCION1978";
+ preguntaids[255] = 255
 
 
 //  Id pregunta: 256 Año de creación de pregunta: 2016
@@ -3103,6 +3360,7 @@ var comments = new Array();
  answers[256] = choices[256][0];
  units[256] = "1";
  comments[256] = "Id Pregunta: 256. CONSTITUCION1978";
+ preguntaids[256] = 256
 
 
 //  Id pregunta: 257 Año de creación de pregunta: 2016
@@ -3115,6 +3373,7 @@ var comments = new Array();
  answers[257] = choices[257][2];
  units[257] = "1";
  comments[257] = "Id Pregunta: 257. CONSTITUCION1978";
+ preguntaids[257] = 257
 
 
 //  Id pregunta: 258 Año de creación de pregunta: 2016
@@ -3127,6 +3386,7 @@ var comments = new Array();
  answers[258] = choices[258][2];
  units[258] = "1";
  comments[258] = "Id Pregunta: 258. CONSTITUCION1978";
+ preguntaids[258] = 258
 
 
 //  Id pregunta: 259 Año de creación de pregunta: 2016
@@ -3139,6 +3399,7 @@ var comments = new Array();
  answers[259] = choices[259][3];
  units[259] = "1";
  comments[259] = "Id Pregunta: 259. CONSTITUCION1978";
+ preguntaids[259] = 259
 
 
 //  Id pregunta: 260 Año de creación de pregunta: 2016
@@ -3151,6 +3412,7 @@ var comments = new Array();
  answers[260] = choices[260][0];
  units[260] = "1";
  comments[260] = "Id Pregunta: 260. CONSTITUCION1978";
+ preguntaids[260] = 260
 
 
 //  Id pregunta: 261 Año de creación de pregunta: 2016
@@ -3163,6 +3425,7 @@ var comments = new Array();
  answers[261] = choices[261][3];
  units[261] = "1";
  comments[261] = "Id Pregunta: 261. CONSTITUCION1978";
+ preguntaids[261] = 261
 
 
 //  Id pregunta: 262 Año de creación de pregunta: 2016
@@ -3175,6 +3438,7 @@ var comments = new Array();
  answers[262] = choices[262][0];
  units[262] = "1";
  comments[262] = "Id Pregunta: 262. CONSTITUCION1978";
+ preguntaids[262] = 262
 
 
 //  Id pregunta: 263 Año de creación de pregunta: 2016
@@ -3187,6 +3451,7 @@ var comments = new Array();
  answers[263] = choices[263][1];
  units[263] = "1";
  comments[263] = "Id Pregunta: 263. CONSTITUCION1978";
+ preguntaids[263] = 263
 
 
 //  Id pregunta: 264 Año de creación de pregunta: 2016
@@ -3199,6 +3464,7 @@ var comments = new Array();
  answers[264] = choices[264][1];
  units[264] = "1";
  comments[264] = "Id Pregunta: 264. CONSTITUCION1978";
+ preguntaids[264] = 264
 
 
 //  Id pregunta: 265 Año de creación de pregunta: 2016
@@ -3211,6 +3477,7 @@ var comments = new Array();
  answers[265] = choices[265][2];
  units[265] = "1";
  comments[265] = "Id Pregunta: 265. CONSTITUCION1978";
+ preguntaids[265] = 265
 
 
 //  Id pregunta: 266 Año de creación de pregunta: 2016
@@ -3223,6 +3490,7 @@ var comments = new Array();
  answers[266] = choices[266][0];
  units[266] = "1";
  comments[266] = "Id Pregunta: 266. CONSTITUCION1978";
+ preguntaids[266] = 266
 
 
 //  Id pregunta: 267 Año de creación de pregunta: 2016
@@ -3235,6 +3503,7 @@ var comments = new Array();
  answers[267] = choices[267][2];
  units[267] = "1";
  comments[267] = "Id Pregunta: 267. CONSTITUCION1978";
+ preguntaids[267] = 267
 
 
 //  Id pregunta: 268 Año de creación de pregunta: 2016
@@ -3247,6 +3516,7 @@ var comments = new Array();
  answers[268] = choices[268][2];
  units[268] = "1";
  comments[268] = "Id Pregunta: 268. CONSTITUCION1978";
+ preguntaids[268] = 268
 
 
 //  Id pregunta: 269 Año de creación de pregunta: 2016
@@ -3259,6 +3529,7 @@ var comments = new Array();
  answers[269] = choices[269][0];
  units[269] = "1";
  comments[269] = "Id Pregunta: 269. CONSTITUCION1978";
+ preguntaids[269] = 269
 
 
 //  Id pregunta: 270 Año de creación de pregunta: 2016
@@ -3271,6 +3542,7 @@ var comments = new Array();
  answers[270] = choices[270][0];
  units[270] = "1";
  comments[270] = "Id Pregunta: 270. CONSTITUCION1978";
+ preguntaids[270] = 270
 
 
 //  Id pregunta: 271 Año de creación de pregunta: 2016
@@ -3283,6 +3555,7 @@ var comments = new Array();
  answers[271] = choices[271][0];
  units[271] = "1";
  comments[271] = "Id Pregunta: 271. CONSTITUCION1978";
+ preguntaids[271] = 271
 
 
 //  Id pregunta: 272 Año de creación de pregunta: 2016
@@ -3295,6 +3568,7 @@ var comments = new Array();
  answers[272] = choices[272][2];
  units[272] = "92";
  comments[272] = "Id Pregunta: 272. INTEGRACION CONTINUA";
+ preguntaids[272] = 272
 
 
 //  Id pregunta: 273 Año de creación de pregunta: 2016
@@ -3307,6 +3581,7 @@ var comments = new Array();
  answers[273] = choices[273][1];
  units[273] = "92";
  comments[273] = "Id Pregunta: 273. INTEGRACION CONTINUA";
+ preguntaids[273] = 273
 
 
 //  Id pregunta: 274 Año de creación de pregunta: 2016
@@ -3319,6 +3594,7 @@ var comments = new Array();
  answers[274] = choices[274][3];
  units[274] = "22";
  comments[274] = "Id Pregunta: 274. LEY DE TRANSPARENCIA";
+ preguntaids[274] = 274
 
 
 //  Id pregunta: 275 Año de creación de pregunta: 2016
@@ -3331,6 +3607,7 @@ var comments = new Array();
  answers[275] = choices[275][2];
  units[275] = "22";
  comments[275] = "Id Pregunta: 275. LEY DE TRANSPARENCIA";
+ preguntaids[275] = 275
 
 
 //  Id pregunta: 276 Año de creación de pregunta: 2016
@@ -3343,6 +3620,7 @@ var comments = new Array();
  answers[276] = choices[276][3];
  units[276] = "22";
  comments[276] = "Id Pregunta: 276. LEY DE TRANSPARENCIA";
+ preguntaids[276] = 276
 
 
 //  Id pregunta: 277 Año de creación de pregunta: 2016
@@ -3355,6 +3633,7 @@ var comments = new Array();
  answers[277] = choices[277][2];
  units[277] = "22";
  comments[277] = "Id Pregunta: 277. LEY DE TRANSPARENCIA";
+ preguntaids[277] = 277
 
 
 //  Id pregunta: 278 Año de creación de pregunta: 2016
@@ -3367,6 +3646,7 @@ var comments = new Array();
  answers[278] = choices[278][1];
  units[278] = "22";
  comments[278] = "Id Pregunta: 278. LEY DE TRANSPARENCIA";
+ preguntaids[278] = 278
 
 
 //  Id pregunta: 279 Año de creación de pregunta: 2016
@@ -3379,6 +3659,7 @@ var comments = new Array();
  answers[279] = choices[279][2];
  units[279] = "5";
  comments[279] = "Id Pregunta: 279. UNION EUROPEA";
+ preguntaids[279] = 279
 
 
 //  Id pregunta: 280 Año de creación de pregunta: 2016
@@ -3391,6 +3672,7 @@ var comments = new Array();
  answers[280] = choices[280][0];
  units[280] = "5";
  comments[280] = "Id Pregunta: 280. UNION EUROPEA";
+ preguntaids[280] = 280
 
 
 //  Id pregunta: 281 Año de creación de pregunta: 2016
@@ -3403,6 +3685,7 @@ var comments = new Array();
  answers[281] = choices[281][3];
  units[281] = "5";
  comments[281] = "Id Pregunta: 281. UNION EUROPEA";
+ preguntaids[281] = 281
 
 
 //  Id pregunta: 282 Año de creación de pregunta: 2016
@@ -3415,6 +3698,7 @@ var comments = new Array();
  answers[282] = choices[282][1];
  units[282] = "5";
  comments[282] = "Id Pregunta: 282. UNION EUROPEA";
+ preguntaids[282] = 282
 
 
 //  Id pregunta: 283 Año de creación de pregunta: 2016
@@ -3427,6 +3711,7 @@ var comments = new Array();
  answers[283] = choices[283][1];
  units[283] = "5";
  comments[283] = "Id Pregunta: 283. UNION EUROPEA";
+ preguntaids[283] = 283
 
 
 //  Id pregunta: 284 Año de creación de pregunta: 2016
@@ -3439,6 +3724,7 @@ var comments = new Array();
  answers[284] = choices[284][2];
  units[284] = "5";
  comments[284] = "Id Pregunta: 284. UNION EUROPEA";
+ preguntaids[284] = 284
 
 
 //  Id pregunta: 285 Año de creación de pregunta: 2016
@@ -3451,6 +3737,7 @@ var comments = new Array();
  answers[285] = choices[285][1];
  units[285] = "5";
  comments[285] = "Id Pregunta: 285. UNION EUROPEA";
+ preguntaids[285] = 285
 
 
 //  Id pregunta: 286 Año de creación de pregunta: 2016
@@ -3463,6 +3750,7 @@ var comments = new Array();
  answers[286] = choices[286][2];
  units[286] = "5";
  comments[286] = "Id Pregunta: 286. UNION EUROPEA";
+ preguntaids[286] = 286
 
 
 //  Id pregunta: 287 Año de creación de pregunta: 2016
@@ -3475,6 +3763,7 @@ var comments = new Array();
  answers[287] = choices[287][0];
  units[287] = "5";
  comments[287] = "Id Pregunta: 287. UNION EUROPEA";
+ preguntaids[287] = 287
 
 
 //  Id pregunta: 288 Año de creación de pregunta: 2016
@@ -3487,6 +3776,7 @@ var comments = new Array();
  answers[288] = choices[288][2];
  units[288] = "5";
  comments[288] = "Id Pregunta: 288. UNION EUROPEA";
+ preguntaids[288] = 288
 
 
 //  Id pregunta: 289 Año de creación de pregunta: 2016
@@ -3499,6 +3789,7 @@ var comments = new Array();
  answers[289] = choices[289][2];
  units[289] = "5";
  comments[289] = "Id Pregunta: 289. UNION EUROPEA";
+ preguntaids[289] = 289
 
 
 //  Id pregunta: 290 Año de creación de pregunta: 2016
@@ -3511,6 +3802,7 @@ var comments = new Array();
  answers[290] = choices[290][0];
  units[290] = "5";
  comments[290] = "Id Pregunta: 290. UNION EUROPEA";
+ preguntaids[290] = 290
 
 
 //  Id pregunta: 291 Año de creación de pregunta: 2016
@@ -3523,6 +3815,7 @@ var comments = new Array();
  answers[291] = choices[291][3];
  units[291] = "5";
  comments[291] = "Id Pregunta: 291. UNION EUROPEA";
+ preguntaids[291] = 291
 
 
 //  Id pregunta: 292 Año de creación de pregunta: 2016
@@ -3535,6 +3828,7 @@ var comments = new Array();
  answers[292] = choices[292][1];
  units[292] = "5";
  comments[292] = "Id Pregunta: 292. UNION EUROPEA";
+ preguntaids[292] = 292
 
 
 //  Id pregunta: 293 Año de creación de pregunta: 2016
@@ -3547,6 +3841,7 @@ var comments = new Array();
  answers[293] = choices[293][0];
  units[293] = "5";
  comments[293] = "Id Pregunta: 293. UNION EUROPEA";
+ preguntaids[293] = 293
 
 
 //  Id pregunta: 294 Año de creación de pregunta: 2016
@@ -3559,6 +3854,7 @@ var comments = new Array();
  answers[294] = choices[294][2];
  units[294] = "5";
  comments[294] = "Id Pregunta: 294. UNION EUROPEA";
+ preguntaids[294] = 294
 
 
 //  Id pregunta: 295 Año de creación de pregunta: 2016
@@ -3571,6 +3867,7 @@ var comments = new Array();
  answers[295] = choices[295][2];
  units[295] = "5";
  comments[295] = "Id Pregunta: 295. UNION EUROPEA";
+ preguntaids[295] = 295
 
 
 //  Id pregunta: 296 Año de creación de pregunta: 2016
@@ -3583,6 +3880,7 @@ var comments = new Array();
  answers[296] = choices[296][2];
  units[296] = "5";
  comments[296] = "Id Pregunta: 296. UNION EUROPEA";
+ preguntaids[296] = 296
 
 
 //  Id pregunta: 297 Año de creación de pregunta: 2016
@@ -3595,6 +3893,7 @@ var comments = new Array();
  answers[297] = choices[297][1];
  units[297] = "5";
  comments[297] = "Id Pregunta: 297. UNION EUROPEA";
+ preguntaids[297] = 297
 
 
 //  Id pregunta: 298 Año de creación de pregunta: 2016
@@ -3607,6 +3906,7 @@ var comments = new Array();
  answers[298] = choices[298][1];
  units[298] = "5";
  comments[298] = "Id Pregunta: 298. UNION EUROPEA";
+ preguntaids[298] = 298
 
 
 //  Id pregunta: 299 Año de creación de pregunta: 2016
@@ -3619,6 +3919,7 @@ var comments = new Array();
  answers[299] = choices[299][1];
  units[299] = "5";
  comments[299] = "Id Pregunta: 299. UNION EUROPEA";
+ preguntaids[299] = 299
 
 
 //  Id pregunta: 300 Año de creación de pregunta: 2016
@@ -3631,6 +3932,7 @@ var comments = new Array();
  answers[300] = choices[300][3];
  units[300] = "5";
  comments[300] = "Id Pregunta: 300. UNION EUROPEA";
+ preguntaids[300] = 300
 
 
 //  Id pregunta: 301 Año de creación de pregunta: 2016
@@ -3643,6 +3945,7 @@ var comments = new Array();
  answers[301] = choices[301][0];
  units[301] = "5";
  comments[301] = "Id Pregunta: 301. UNION EUROPEA";
+ preguntaids[301] = 301
 
 
 //  Id pregunta: 302 Año de creación de pregunta: 2016
@@ -3655,6 +3958,7 @@ var comments = new Array();
  answers[302] = choices[302][2];
  units[302] = "5";
  comments[302] = "Id Pregunta: 302. UNION EUROPEA";
+ preguntaids[302] = 302
 
 
 //  Id pregunta: 303 Año de creación de pregunta: 2016
@@ -3667,6 +3971,7 @@ var comments = new Array();
  answers[303] = choices[303][1];
  units[303] = "5";
  comments[303] = "Id Pregunta: 303. UNION EUROPEA";
+ preguntaids[303] = 303
 
 
 //  Id pregunta: 304 Año de creación de pregunta: 2016
@@ -3679,6 +3984,7 @@ var comments = new Array();
  answers[304] = choices[304][0];
  units[304] = "5";
  comments[304] = "Id Pregunta: 304. UNION EUROPEA";
+ preguntaids[304] = 304
 
 
 //  Id pregunta: 305 Año de creación de pregunta: 2016
@@ -3691,6 +3997,7 @@ var comments = new Array();
  answers[305] = choices[305][1];
  units[305] = "5";
  comments[305] = "Id Pregunta: 305. UNION EUROPEA";
+ preguntaids[305] = 305
 
 
 //  Id pregunta: 306 Año de creación de pregunta: 2016
@@ -3703,6 +4010,7 @@ var comments = new Array();
  answers[306] = choices[306][0];
  units[306] = "5";
  comments[306] = "Id Pregunta: 306. UNION EUROPEA";
+ preguntaids[306] = 306
 
 
 //  Id pregunta: 307 Año de creación de pregunta: 2016
@@ -3715,6 +4023,7 @@ var comments = new Array();
  answers[307] = choices[307][1];
  units[307] = "5";
  comments[307] = "Id Pregunta: 307. UNION EUROPEA";
+ preguntaids[307] = 307
 
 
 //  Id pregunta: 308 Año de creación de pregunta: 2016
@@ -3727,6 +4036,7 @@ var comments = new Array();
  answers[308] = choices[308][0];
  units[308] = "5";
  comments[308] = "Id Pregunta: 308. UNION EUROPEA";
+ preguntaids[308] = 308
 
 
 //  Id pregunta: 309 Año de creación de pregunta: 2016
@@ -3739,6 +4049,7 @@ var comments = new Array();
  answers[309] = choices[309][0];
  units[309] = "5";
  comments[309] = "Id Pregunta: 309. UNION EUROPEA";
+ preguntaids[309] = 309
 
 
 //  Id pregunta: 310 Año de creación de pregunta: 2016
@@ -3751,6 +4062,7 @@ var comments = new Array();
  answers[310] = choices[310][0];
  units[310] = "5";
  comments[310] = "Id Pregunta: 310. UNION EUROPEA";
+ preguntaids[310] = 310
 
 
 //  Id pregunta: 311 Año de creación de pregunta: 2016
@@ -3763,6 +4075,7 @@ var comments = new Array();
  answers[311] = choices[311][2];
  units[311] = "5";
  comments[311] = "Id Pregunta: 311. UNION EUROPEA";
+ preguntaids[311] = 311
 
 
 //  Id pregunta: 312 Año de creación de pregunta: 2016
@@ -3775,6 +4088,7 @@ var comments = new Array();
  answers[312] = choices[312][3];
  units[312] = "5";
  comments[312] = "Id Pregunta: 312. UNION EUROPEA";
+ preguntaids[312] = 312
 
 
 //  Id pregunta: 313 Año de creación de pregunta: 2016
@@ -3787,6 +4101,7 @@ var comments = new Array();
  answers[313] = choices[313][0];
  units[313] = "5";
  comments[313] = "Id Pregunta: 313. UNION EUROPEA";
+ preguntaids[313] = 313
 
 
 //  Id pregunta: 314 Año de creación de pregunta: 2016
@@ -3799,6 +4114,7 @@ var comments = new Array();
  answers[314] = choices[314][2];
  units[314] = "5";
  comments[314] = "Id Pregunta: 314. UNION EUROPEA";
+ preguntaids[314] = 314
 
 
 //  Id pregunta: 315 Año de creación de pregunta: 2016
@@ -3811,6 +4127,7 @@ var comments = new Array();
  answers[315] = choices[315][0];
  units[315] = "5";
  comments[315] = "Id Pregunta: 315. UNION EUROPEA";
+ preguntaids[315] = 315
 
 
 //  Id pregunta: 316 Año de creación de pregunta: 2016
@@ -3823,6 +4140,7 @@ var comments = new Array();
  answers[316] = choices[316][1];
  units[316] = "5";
  comments[316] = "Id Pregunta: 316. UNION EUROPEA";
+ preguntaids[316] = 316
 
 
 //  Id pregunta: 317 Año de creación de pregunta: 2016
@@ -3835,6 +4153,7 @@ var comments = new Array();
  answers[317] = choices[317][3];
  units[317] = "5";
  comments[317] = "Id Pregunta: 317. UNION EUROPEA";
+ preguntaids[317] = 317
 
 
 //  Id pregunta: 318 Año de creación de pregunta: 2016
@@ -3847,6 +4166,7 @@ var comments = new Array();
  answers[318] = choices[318][2];
  units[318] = "5";
  comments[318] = "Id Pregunta: 318. UNION EUROPEA";
+ preguntaids[318] = 318
 
 
 //  Id pregunta: 319 Año de creación de pregunta: 2016
@@ -3859,6 +4179,7 @@ var comments = new Array();
  answers[319] = choices[319][0];
  units[319] = "5";
  comments[319] = "Id Pregunta: 319. UNION EUROPEA";
+ preguntaids[319] = 319
 
 
 //  Id pregunta: 320 Año de creación de pregunta: 2016
@@ -3871,6 +4192,7 @@ var comments = new Array();
  answers[320] = choices[320][2];
  units[320] = "5";
  comments[320] = "Id Pregunta: 320. UNION EUROPEA";
+ preguntaids[320] = 320
 
 
 //  Id pregunta: 321 Año de creación de pregunta: 2016
@@ -3883,6 +4205,7 @@ var comments = new Array();
  answers[321] = choices[321][1];
  units[321] = "5";
  comments[321] = "Id Pregunta: 321. UNION EUROPEA";
+ preguntaids[321] = 321
 
 
 //  Id pregunta: 322 Año de creación de pregunta: 2016
@@ -3895,6 +4218,7 @@ var comments = new Array();
  answers[322] = choices[322][0];
  units[322] = "5";
  comments[322] = "Id Pregunta: 322. UNION EUROPEA";
+ preguntaids[322] = 322
 
 
 //  Id pregunta: 323 Año de creación de pregunta: 2016
@@ -3907,6 +4231,7 @@ var comments = new Array();
  answers[323] = choices[323][3];
  units[323] = "5";
  comments[323] = "Id Pregunta: 323. UNION EUROPEA";
+ preguntaids[323] = 323
 
 
 //  Id pregunta: 324 Año de creación de pregunta: 2016
@@ -3919,6 +4244,7 @@ var comments = new Array();
  answers[324] = choices[324][0];
  units[324] = "5";
  comments[324] = "Id Pregunta: 324. UNION EUROPEA";
+ preguntaids[324] = 324
 
 
 //  Id pregunta: 325 Año de creación de pregunta: 2016
@@ -3931,6 +4257,7 @@ var comments = new Array();
  answers[325] = choices[325][0];
  units[325] = "5";
  comments[325] = "Id Pregunta: 325. UNION EUROPEA";
+ preguntaids[325] = 325
 
 
 //  Id pregunta: 326 Año de creación de pregunta: 2016
@@ -3943,6 +4270,7 @@ var comments = new Array();
  answers[326] = choices[326][3];
  units[326] = "5";
  comments[326] = "Id Pregunta: 326. UNION EUROPEA";
+ preguntaids[326] = 326
 
 
 //  Id pregunta: 327 Año de creación de pregunta: 2016
@@ -3955,6 +4283,7 @@ var comments = new Array();
  answers[327] = choices[327][1];
  units[327] = "5";
  comments[327] = "Id Pregunta: 327. UNION EUROPEA";
+ preguntaids[327] = 327
 
 
 //  Id pregunta: 328 Año de creación de pregunta: 2016
@@ -3967,6 +4296,7 @@ var comments = new Array();
  answers[328] = choices[328][2];
  units[328] = "5";
  comments[328] = "Id Pregunta: 328. UNION EUROPEA";
+ preguntaids[328] = 328
 
 
 //  Id pregunta: 329 Año de creación de pregunta: 2016
@@ -3979,6 +4309,7 @@ var comments = new Array();
  answers[329] = choices[329][3];
  units[329] = "5";
  comments[329] = "Id Pregunta: 329. UNION EUROPEA";
+ preguntaids[329] = 329
 
 
 //  Id pregunta: 330 Año de creación de pregunta: 2016
@@ -3991,6 +4322,7 @@ var comments = new Array();
  answers[330] = choices[330][2];
  units[330] = "5";
  comments[330] = "Id Pregunta: 330. UNION EUROPEA";
+ preguntaids[330] = 330
 
 
 //  Id pregunta: 331 Año de creación de pregunta: 2016
@@ -4003,6 +4335,7 @@ var comments = new Array();
  answers[331] = choices[331][1];
  units[331] = "5";
  comments[331] = "Id Pregunta: 331. UNION EUROPEA";
+ preguntaids[331] = 331
 
 
 //  Id pregunta: 332 Año de creación de pregunta: 2016
@@ -4015,6 +4348,7 @@ var comments = new Array();
  answers[332] = choices[332][3];
  units[332] = "5";
  comments[332] = "Id Pregunta: 332. UNION EUROPEA";
+ preguntaids[332] = 332
 
 
 //  Id pregunta: 333 Año de creación de pregunta: 2016
@@ -4027,6 +4361,7 @@ var comments = new Array();
  answers[333] = choices[333][1];
  units[333] = "5";
  comments[333] = "Id Pregunta: 333. UNION EUROPEA";
+ preguntaids[333] = 333
 
 
 //  Id pregunta: 334 Año de creación de pregunta: 2016
@@ -4039,6 +4374,7 @@ var comments = new Array();
  answers[334] = choices[334][0];
  units[334] = "5";
  comments[334] = "Id Pregunta: 334. UNION EUROPEA";
+ preguntaids[334] = 334
 
 
 //  Id pregunta: 335 Año de creación de pregunta: 2016
@@ -4051,6 +4387,7 @@ var comments = new Array();
  answers[335] = choices[335][2];
  units[335] = "5";
  comments[335] = "Id Pregunta: 335. UNION EUROPEA";
+ preguntaids[335] = 335
 
 
 //  Id pregunta: 336 Año de creación de pregunta: 2016
@@ -4063,6 +4400,7 @@ var comments = new Array();
  answers[336] = choices[336][1];
  units[336] = "5";
  comments[336] = "Id Pregunta: 336. UNION EUROPEA";
+ preguntaids[336] = 336
 
 
 //  Id pregunta: 337 Año de creación de pregunta: 2016
@@ -4075,6 +4413,7 @@ var comments = new Array();
  answers[337] = choices[337][2];
  units[337] = "5";
  comments[337] = "Id Pregunta: 337. UNION EUROPEA";
+ preguntaids[337] = 337
 
 
 //  Id pregunta: 338 Año de creación de pregunta: 2016
@@ -4087,6 +4426,7 @@ var comments = new Array();
  answers[338] = choices[338][2];
  units[338] = "5";
  comments[338] = "Id Pregunta: 338. UNION EUROPEA";
+ preguntaids[338] = 338
 
 
 //  Id pregunta: 339 Año de creación de pregunta: 2016
@@ -4099,6 +4439,7 @@ var comments = new Array();
  answers[339] = choices[339][1];
  units[339] = "5";
  comments[339] = "Id Pregunta: 339. UNION EUROPEA";
+ preguntaids[339] = 339
 
 
 //  Id pregunta: 340 Año de creación de pregunta: 2016
@@ -4111,6 +4452,7 @@ var comments = new Array();
  answers[340] = choices[340][2];
  units[340] = "5";
  comments[340] = "Id Pregunta: 340. UNION EUROPEA";
+ preguntaids[340] = 340
 
 
 //  Id pregunta: 341 Año de creación de pregunta: 2016
@@ -4123,6 +4465,7 @@ var comments = new Array();
  answers[341] = choices[341][2];
  units[341] = "5";
  comments[341] = "Id Pregunta: 341. UNION EUROPEA";
+ preguntaids[341] = 341
 
 
 //  Id pregunta: 342 Año de creación de pregunta: 2016
@@ -4135,6 +4478,7 @@ var comments = new Array();
  answers[342] = choices[342][3];
  units[342] = "5";
  comments[342] = "Id Pregunta: 342. UNION EUROPEA";
+ preguntaids[342] = 342
 
 
 //  Id pregunta: 343 Año de creación de pregunta: 2016
@@ -4147,6 +4491,7 @@ var comments = new Array();
  answers[343] = choices[343][1];
  units[343] = "5";
  comments[343] = "Id Pregunta: 343. UNION EUROPEA";
+ preguntaids[343] = 343
 
 
 //  Id pregunta: 344 Año de creación de pregunta: 2016
@@ -4159,6 +4504,7 @@ var comments = new Array();
  answers[344] = choices[344][1];
  units[344] = "5";
  comments[344] = "Id Pregunta: 344. UNION EUROPEA";
+ preguntaids[344] = 344
 
 
 //  Id pregunta: 345 Año de creación de pregunta: 2016
@@ -4171,6 +4517,7 @@ var comments = new Array();
  answers[345] = choices[345][3];
  units[345] = "5";
  comments[345] = "Id Pregunta: 345. UNION EUROPEA";
+ preguntaids[345] = 345
 
 
 //  Id pregunta: 346 Año de creación de pregunta: 2016
@@ -4183,6 +4530,7 @@ var comments = new Array();
  answers[346] = choices[346][2];
  units[346] = "5";
  comments[346] = "Id Pregunta: 346. UNION EUROPEA";
+ preguntaids[346] = 346
 
 
 //  Id pregunta: 347 Año de creación de pregunta: 2016
@@ -4195,6 +4543,7 @@ var comments = new Array();
  answers[347] = choices[347][1];
  units[347] = "5";
  comments[347] = "Id Pregunta: 347. UNION EUROPEA";
+ preguntaids[347] = 347
 
 
 //  Id pregunta: 348 Año de creación de pregunta: 2016
@@ -4207,6 +4556,7 @@ var comments = new Array();
  answers[348] = choices[348][3];
  units[348] = "5";
  comments[348] = "Id Pregunta: 348. UNION EUROPEA";
+ preguntaids[348] = 348
 
 
 //  Id pregunta: 349 Año de creación de pregunta: 2016
@@ -4219,6 +4569,7 @@ var comments = new Array();
  answers[349] = choices[349][0];
  units[349] = "5";
  comments[349] = "Id Pregunta: 349. UNION EUROPEA";
+ preguntaids[349] = 349
 
 
 //  Id pregunta: 350 Año de creación de pregunta: 2016
@@ -4231,6 +4582,7 @@ var comments = new Array();
  answers[350] = choices[350][3];
  units[350] = "5";
  comments[350] = "Id Pregunta: 350. UNION EUROPEA";
+ preguntaids[350] = 350
 
 
 //  Id pregunta: 351 Año de creación de pregunta: 2016
@@ -4243,6 +4595,7 @@ var comments = new Array();
  answers[351] = choices[351][1];
  units[351] = "5";
  comments[351] = "Id Pregunta: 351. UNION EUROPEA";
+ preguntaids[351] = 351
 
 
 //  Id pregunta: 352 Año de creación de pregunta: 2016
@@ -4255,6 +4608,7 @@ var comments = new Array();
  answers[352] = choices[352][0];
  units[352] = "5";
  comments[352] = "Id Pregunta: 352. UNION EUROPEA";
+ preguntaids[352] = 352
 
 
 //  Id pregunta: 353 Año de creación de pregunta: 2016
@@ -4267,6 +4621,7 @@ var comments = new Array();
  answers[353] = choices[353][1];
  units[353] = "5";
  comments[353] = "Id Pregunta: 353. UNION EUROPEA";
+ preguntaids[353] = 353
 
 
 //  Id pregunta: 354 Año de creación de pregunta: 2016
@@ -4279,6 +4634,7 @@ var comments = new Array();
  answers[354] = choices[354][2];
  units[354] = "5";
  comments[354] = "Id Pregunta: 354. UNION EUROPEA";
+ preguntaids[354] = 354
 
 
 //  Id pregunta: 355 Año de creación de pregunta: 2016
@@ -4291,6 +4647,7 @@ var comments = new Array();
  answers[355] = choices[355][1];
  units[355] = "5";
  comments[355] = "Id Pregunta: 355. UNION EUROPEA";
+ preguntaids[355] = 355
 
 
 //  Id pregunta: 356 Año de creación de pregunta: 2016
@@ -4303,6 +4660,7 @@ var comments = new Array();
  answers[356] = choices[356][0];
  units[356] = "5";
  comments[356] = "Id Pregunta: 356. UNION EUROPEA";
+ preguntaids[356] = 356
 
 
 //  Id pregunta: 357 Año de creación de pregunta: 2016
@@ -4315,6 +4673,7 @@ var comments = new Array();
  answers[357] = choices[357][1];
  units[357] = "5";
  comments[357] = "Id Pregunta: 357. UNION EUROPEA";
+ preguntaids[357] = 357
 
 
 //  Id pregunta: 358 Año de creación de pregunta: 2016
@@ -4327,6 +4686,7 @@ var comments = new Array();
  answers[358] = choices[358][1];
  units[358] = "5";
  comments[358] = "Id Pregunta: 358. UNION EUROPEA";
+ preguntaids[358] = 358
 
 
 //  Id pregunta: 359 Año de creación de pregunta: 2016
@@ -4339,6 +4699,7 @@ var comments = new Array();
  answers[359] = choices[359][3];
  units[359] = "5";
  comments[359] = "Id Pregunta: 359. UNION EUROPEA";
+ preguntaids[359] = 359
 
 
 //  Id pregunta: 360 Año de creación de pregunta: 2016
@@ -4351,6 +4712,7 @@ var comments = new Array();
  answers[360] = choices[360][0];
  units[360] = "5";
  comments[360] = "Id Pregunta: 360. UNION EUROPEA";
+ preguntaids[360] = 360
 
 
 //  Id pregunta: 361 Año de creación de pregunta: 2016
@@ -4363,6 +4725,7 @@ var comments = new Array();
  answers[361] = choices[361][3];
  units[361] = "5";
  comments[361] = "Id Pregunta: 361. UNION EUROPEA";
+ preguntaids[361] = 361
 
 
 //  Id pregunta: 362 Año de creación de pregunta: 2016
@@ -4375,6 +4738,7 @@ var comments = new Array();
  answers[362] = choices[362][3];
  units[362] = "5";
  comments[362] = "Id Pregunta: 362. UNION EUROPEA";
+ preguntaids[362] = 362
 
 
 //  Id pregunta: 363 Año de creación de pregunta: 2016
@@ -4387,6 +4751,7 @@ var comments = new Array();
  answers[363] = choices[363][0];
  units[363] = "5";
  comments[363] = "Id Pregunta: 363. UNION EUROPEA";
+ preguntaids[363] = 363
 
 
 //  Id pregunta: 364 Año de creación de pregunta: 2016
@@ -4399,6 +4764,7 @@ var comments = new Array();
  answers[364] = choices[364][1];
  units[364] = "5";
  comments[364] = "Id Pregunta: 364. UNION EUROPEA";
+ preguntaids[364] = 364
 
 
 //  Id pregunta: 365 Año de creación de pregunta: 2016
@@ -4411,6 +4777,7 @@ var comments = new Array();
  answers[365] = choices[365][3];
  units[365] = "5";
  comments[365] = "Id Pregunta: 365. UNION EUROPEA";
+ preguntaids[365] = 365
 
 
 //  Id pregunta: 366 Año de creación de pregunta: 2016
@@ -4423,6 +4790,7 @@ var comments = new Array();
  answers[366] = choices[366][0];
  units[366] = "5";
  comments[366] = "Id Pregunta: 366. UNION EUROPEA";
+ preguntaids[366] = 366
 
 
 //  Id pregunta: 367 Año de creación de pregunta: 2016
@@ -4435,6 +4803,7 @@ var comments = new Array();
  answers[367] = choices[367][1];
  units[367] = "5";
  comments[367] = "Id Pregunta: 367. UNION EUROPEA";
+ preguntaids[367] = 367
 
 
 //  Id pregunta: 368 Año de creación de pregunta: 2016
@@ -4447,6 +4816,7 @@ var comments = new Array();
  answers[368] = choices[368][2];
  units[368] = "5";
  comments[368] = "Id Pregunta: 368. UNION EUROPEA";
+ preguntaids[368] = 368
 
 
 //  Id pregunta: 369 Año de creación de pregunta: 2016
@@ -4459,6 +4829,7 @@ var comments = new Array();
  answers[369] = choices[369][0];
  units[369] = "5";
  comments[369] = "Id Pregunta: 369. UNION EUROPEA";
+ preguntaids[369] = 369
 
 
 //  Id pregunta: 370 Año de creación de pregunta: 2016
@@ -4471,6 +4842,7 @@ var comments = new Array();
  answers[370] = choices[370][2];
  units[370] = "5";
  comments[370] = "Id Pregunta: 370. UNION EUROPEA";
+ preguntaids[370] = 370
 
 
 //  Id pregunta: 371 Año de creación de pregunta: 2016
@@ -4483,6 +4855,7 @@ var comments = new Array();
  answers[371] = choices[371][3];
  units[371] = "5";
  comments[371] = "Id Pregunta: 371. UNION EUROPEA";
+ preguntaids[371] = 371
 
 
 //  Id pregunta: 372 Año de creación de pregunta: 2016
@@ -4495,6 +4868,7 @@ var comments = new Array();
  answers[372] = choices[372][2];
  units[372] = "5";
  comments[372] = "Id Pregunta: 372. UNION EUROPEA";
+ preguntaids[372] = 372
 
 
 //  Id pregunta: 373 Año de creación de pregunta: 2016
@@ -4507,6 +4881,7 @@ var comments = new Array();
  answers[373] = choices[373][3];
  units[373] = "5";
  comments[373] = "Id Pregunta: 373. UNION EUROPEA";
+ preguntaids[373] = 373
 
 
 //  Id pregunta: 374 Año de creación de pregunta: 2016
@@ -4519,6 +4894,7 @@ var comments = new Array();
  answers[374] = choices[374][3];
  units[374] = "5";
  comments[374] = "Id Pregunta: 374. UNION EUROPEA";
+ preguntaids[374] = 374
 
 
 //  Id pregunta: 375 Año de creación de pregunta: 2016
@@ -4531,6 +4907,7 @@ var comments = new Array();
  answers[375] = choices[375][3];
  units[375] = "5";
  comments[375] = "Id Pregunta: 375. UNION EUROPEA";
+ preguntaids[375] = 375
 
 
 //  Id pregunta: 376 Año de creación de pregunta: 2016
@@ -4543,6 +4920,7 @@ var comments = new Array();
  answers[376] = choices[376][3];
  units[376] = "5";
  comments[376] = "Id Pregunta: 376. UNION EUROPEA";
+ preguntaids[376] = 376
 
 
 //  Id pregunta: 377 Año de creación de pregunta: 2016
@@ -4555,6 +4933,7 @@ var comments = new Array();
  answers[377] = choices[377][3];
  units[377] = "5";
  comments[377] = "Id Pregunta: 377. UNION EUROPEA";
+ preguntaids[377] = 377
 
 
 //  Id pregunta: 378 Año de creación de pregunta: 2016
@@ -4567,6 +4946,7 @@ var comments = new Array();
  answers[378] = choices[378][1];
  units[378] = "14";
  comments[378] = "Id Pregunta: 378. UNION EUROPEA";
+ preguntaids[378] = 378
 
 
 //  Id pregunta: 379 Año de creación de pregunta: 2016
@@ -4579,6 +4959,7 @@ var comments = new Array();
  answers[379] = choices[379][2];
  units[379] = "14";
  comments[379] = "Id Pregunta: 379. POLITICAS DE IGUALDAD";
+ preguntaids[379] = 379
 
 
 //  Id pregunta: 380 Año de creación de pregunta: 2016
@@ -4591,6 +4972,7 @@ var comments = new Array();
  answers[380] = choices[380][3];
  units[380] = "14";
  comments[380] = "Id Pregunta: 380. POLITICAS DE IGUALDAD";
+ preguntaids[380] = 380
 
 
 //  Id pregunta: 381 Año de creación de pregunta: 2016
@@ -4603,6 +4985,7 @@ var comments = new Array();
  answers[381] = choices[381][0];
  units[381] = "14";
  comments[381] = "Id Pregunta: 381. POLITICAS DE IGUALDAD";
+ preguntaids[381] = 381
 
 
 //  Id pregunta: 382 Año de creación de pregunta: 2016
@@ -4615,6 +4998,7 @@ var comments = new Array();
  answers[382] = choices[382][0];
  units[382] = "14";
  comments[382] = "Id Pregunta: 382. POLITICAS DE IGUALDAD";
+ preguntaids[382] = 382
 
 
 //  Id pregunta: 383 Año de creación de pregunta: 2016
@@ -4627,6 +5011,7 @@ var comments = new Array();
  answers[383] = choices[383][3];
  units[383] = "14";
  comments[383] = "Id Pregunta: 383. POLITICAS DE IGUALDAD";
+ preguntaids[383] = 383
 
 
 //  Id pregunta: 384 Año de creación de pregunta: 2016
@@ -4639,6 +5024,7 @@ var comments = new Array();
  answers[384] = choices[384][2];
  units[384] = "14";
  comments[384] = "Id Pregunta: 384. POLITICAS DE IGUALDAD";
+ preguntaids[384] = 384
 
 
 //  Id pregunta: 385 Año de creación de pregunta: 2016
@@ -4651,6 +5037,7 @@ var comments = new Array();
  answers[385] = choices[385][0];
  units[385] = "14";
  comments[385] = "Id Pregunta: 385. POLITICAS DE IGUALDAD";
+ preguntaids[385] = 385
 
 
 //  Id pregunta: 386 Año de creación de pregunta: 2016
@@ -4663,6 +5050,7 @@ var comments = new Array();
  answers[386] = choices[386][0];
  units[386] = "14";
  comments[386] = "Id Pregunta: 386. POLITICAS DE IGUALDAD";
+ preguntaids[386] = 386
 
 
 //  Id pregunta: 387 Año de creación de pregunta: 2016
@@ -4675,6 +5063,7 @@ var comments = new Array();
  answers[387] = choices[387][3];
  units[387] = "14";
  comments[387] = "Id Pregunta: 387. POLITICAS DE IGUALDAD";
+ preguntaids[387] = 387
 
 
 //  Id pregunta: 388 Año de creación de pregunta: 2016
@@ -4687,6 +5076,7 @@ var comments = new Array();
  answers[388] = choices[388][1];
  units[388] = "14";
  comments[388] = "Id Pregunta: 388. POLITICAS DE IGUALDAD";
+ preguntaids[388] = 388
 
 
 //  Id pregunta: 389 Año de creación de pregunta: 2016
@@ -4699,6 +5089,7 @@ var comments = new Array();
  answers[389] = choices[389][0];
  units[389] = "14";
  comments[389] = "Id Pregunta: 389. POLITICAS DE IGUALDAD";
+ preguntaids[389] = 389
 
 
 //  Id pregunta: 390 Año de creación de pregunta: 2016
@@ -4711,6 +5102,7 @@ var comments = new Array();
  answers[390] = choices[390][3];
  units[390] = "14";
  comments[390] = "Id Pregunta: 390. POLITICAS DE IGUALDAD";
+ preguntaids[390] = 390
 
 
 //  Id pregunta: 391 Año de creación de pregunta: 2016
@@ -4723,6 +5115,7 @@ var comments = new Array();
  answers[391] = choices[391][2];
  units[391] = "14";
  comments[391] = "Id Pregunta: 391. POLITICAS DE IGUALDAD";
+ preguntaids[391] = 391
 
 
 //  Id pregunta: 392 Año de creación de pregunta: 2016
@@ -4735,6 +5128,7 @@ var comments = new Array();
  answers[392] = choices[392][1];
  units[392] = "14";
  comments[392] = "Id Pregunta: 392. POLITICAS DE IGUALDAD";
+ preguntaids[392] = 392
 
 
 //  Id pregunta: 393 Año de creación de pregunta: 2016
@@ -4747,6 +5141,7 @@ var comments = new Array();
  answers[393] = choices[393][0];
  units[393] = "14";
  comments[393] = "Id Pregunta: 393. POLITICAS DE IGUALDAD";
+ preguntaids[393] = 393
 
 
 //  Id pregunta: 394 Año de creación de pregunta: 2016
@@ -4759,6 +5154,7 @@ var comments = new Array();
  answers[394] = choices[394][0];
  units[394] = "14";
  comments[394] = "Id Pregunta: 394. POLITICAS DE IGUALDAD";
+ preguntaids[394] = 394
 
 
 //  Id pregunta: 395 Año de creación de pregunta: 2016
@@ -4771,6 +5167,7 @@ var comments = new Array();
  answers[395] = choices[395][1];
  units[395] = "14";
  comments[395] = "Id Pregunta: 395. POLITICAS DE IGUALDAD";
+ preguntaids[395] = 395
 
 
 //  Id pregunta: 396 Año de creación de pregunta: 2016
@@ -4783,6 +5180,7 @@ var comments = new Array();
  answers[396] = choices[396][0];
  units[396] = "14";
  comments[396] = "Id Pregunta: 396. POLITICAS DE IGUALDAD";
+ preguntaids[396] = 396
 
 
 //  Id pregunta: 397 Año de creación de pregunta: 2016
@@ -4795,6 +5193,7 @@ var comments = new Array();
  answers[397] = choices[397][1];
  units[397] = "14";
  comments[397] = "Id Pregunta: 397. POLITICAS DE IGUALDAD";
+ preguntaids[397] = 397
 
 
 //  Id pregunta: 398 Año de creación de pregunta: 2016
@@ -4807,6 +5206,7 @@ var comments = new Array();
  answers[398] = choices[398][2];
  units[398] = "14";
  comments[398] = "Id Pregunta: 398. POLITICAS DE IGUALDAD";
+ preguntaids[398] = 398
 
 
 //  Id pregunta: 399 Año de creación de pregunta: 2016
@@ -4819,6 +5219,7 @@ var comments = new Array();
  answers[399] = choices[399][1];
  units[399] = "14";
  comments[399] = "Id Pregunta: 399. POLITICAS DE IGUALDAD";
+ preguntaids[399] = 399
 
 
 //  Id pregunta: 400 Año de creación de pregunta: 2016
@@ -4831,6 +5232,7 @@ var comments = new Array();
  answers[400] = choices[400][1];
  units[400] = "14";
  comments[400] = "Id Pregunta: 400. POLITICAS DE IGUALDAD";
+ preguntaids[400] = 400
 
 
 //  Id pregunta: 401 Año de creación de pregunta: 2016
@@ -4843,6 +5245,7 @@ var comments = new Array();
  answers[401] = choices[401][2];
  units[401] = "14";
  comments[401] = "Id Pregunta: 401. POLITICAS DE IGUALDAD";
+ preguntaids[401] = 401
 
 
 //  Id pregunta: 402 Año de creación de pregunta: 2016
@@ -4855,6 +5258,7 @@ var comments = new Array();
  answers[402] = choices[402][2];
  units[402] = "14";
  comments[402] = "Id Pregunta: 402. POLITICAS DE IGUALDAD";
+ preguntaids[402] = 402
 
 
 //  Id pregunta: 403 Año de creación de pregunta: 2016
@@ -4867,6 +5271,7 @@ var comments = new Array();
  answers[403] = choices[403][2];
  units[403] = "14";
  comments[403] = "Id Pregunta: 403. POLITICAS DE IGUALDAD";
+ preguntaids[403] = 403
 
 
 //  Id pregunta: 404 Año de creación de pregunta: 2016
@@ -4879,6 +5284,7 @@ var comments = new Array();
  answers[404] = choices[404][2];
  units[404] = "14";
  comments[404] = "Id Pregunta: 404. POLITICAS DE IGUALDAD";
+ preguntaids[404] = 404
 
 
 //  Id pregunta: 405 Año de creación de pregunta: 2016
@@ -4891,6 +5297,7 @@ var comments = new Array();
  answers[405] = choices[405][2];
  units[405] = "14";
  comments[405] = "Id Pregunta: 405. POLITICAS DE IGUALDAD";
+ preguntaids[405] = 405
 
 
 //  Id pregunta: 406 Año de creación de pregunta: 2016
@@ -4903,6 +5310,7 @@ var comments = new Array();
  answers[406] = choices[406][2];
  units[406] = "14";
  comments[406] = "Id Pregunta: 406. POLITICAS DE IGUALDAD";
+ preguntaids[406] = 406
 
 
 //  Id pregunta: 407 Año de creación de pregunta: 2016
@@ -4915,6 +5323,7 @@ var comments = new Array();
  answers[407] = choices[407][2];
  units[407] = "14";
  comments[407] = "Id Pregunta: 407. POLITICAS DE IGUALDAD";
+ preguntaids[407] = 407
 
 
 //  Id pregunta: 408 Año de creación de pregunta: 2016
@@ -4927,6 +5336,7 @@ var comments = new Array();
  answers[408] = choices[408][1];
  units[408] = "14";
  comments[408] = "Id Pregunta: 408. POLITICAS DE IGUALDAD";
+ preguntaids[408] = 408
 
 
 //  Id pregunta: 409 Año de creación de pregunta: 2016
@@ -4939,6 +5349,7 @@ var comments = new Array();
  answers[409] = choices[409][2];
  units[409] = "14";
  comments[409] = "Id Pregunta: 409. POLITICAS DE IGUALDAD";
+ preguntaids[409] = 409
 
 
 //  Id pregunta: 410 Año de creación de pregunta: 2016
@@ -4951,6 +5362,7 @@ var comments = new Array();
  answers[410] = choices[410][0];
  units[410] = "14";
  comments[410] = "Id Pregunta: 410. POLITICAS DE IGUALDAD";
+ preguntaids[410] = 410
 
 
 //  Id pregunta: 411 Año de creación de pregunta: 2016
@@ -4963,6 +5375,7 @@ var comments = new Array();
  answers[411] = choices[411][1];
  units[411] = "14";
  comments[411] = "Id Pregunta: 411. POLITICAS DE IGUALDAD";
+ preguntaids[411] = 411
 
 
 //  Id pregunta: 412 Año de creación de pregunta: 2016
@@ -4975,6 +5388,7 @@ var comments = new Array();
  answers[412] = choices[412][1];
  units[412] = "14";
  comments[412] = "Id Pregunta: 412. POLITICAS DE IGUALDAD";
+ preguntaids[412] = 412
 
 
 //  Id pregunta: 413 Año de creación de pregunta: 2016
@@ -4987,6 +5401,7 @@ var comments = new Array();
  answers[413] = choices[413][2];
  units[413] = "14";
  comments[413] = "Id Pregunta: 413. POLITICAS DE IGUALDAD";
+ preguntaids[413] = 413
 
 
 //  Id pregunta: 414 Año de creación de pregunta: 2016
@@ -4999,6 +5414,7 @@ var comments = new Array();
  answers[414] = choices[414][0];
  units[414] = "14";
  comments[414] = "Id Pregunta: 414. POLITICAS DE IGUALDAD";
+ preguntaids[414] = 414
 
 
 //  Id pregunta: 415 Año de creación de pregunta: 2016
@@ -5011,6 +5427,7 @@ var comments = new Array();
  answers[415] = choices[415][1];
  units[415] = "14";
  comments[415] = "Id Pregunta: 415. POLITICAS DE IGUALDAD";
+ preguntaids[415] = 415
 
 
 //  Id pregunta: 416 Año de creación de pregunta: 2016
@@ -5023,6 +5440,7 @@ var comments = new Array();
  answers[416] = choices[416][0];
  units[416] = "14";
  comments[416] = "Id Pregunta: 416. POLITICAS DE IGUALDAD";
+ preguntaids[416] = 416
 
 
 //  Id pregunta: 417 Año de creación de pregunta: 2016
@@ -5035,6 +5453,7 @@ var comments = new Array();
  answers[417] = choices[417][2];
  units[417] = "14";
  comments[417] = "Id Pregunta: 417. POLITICAS DE IGUALDAD";
+ preguntaids[417] = 417
 
 
 //  Id pregunta: 418 Año de creación de pregunta: 2016
@@ -5047,6 +5466,7 @@ var comments = new Array();
  answers[418] = choices[418][2];
  units[418] = "14";
  comments[418] = "Id Pregunta: 418. POLITICAS DE IGUALDAD";
+ preguntaids[418] = 418
 
 
 //  Id pregunta: 419 Año de creación de pregunta: 2016
@@ -5059,6 +5479,7 @@ var comments = new Array();
  answers[419] = choices[419][0];
  units[419] = "14";
  comments[419] = "Id Pregunta: 419. POLITICAS DE IGUALDAD";
+ preguntaids[419] = 419
 
 
 //  Id pregunta: 420 Año de creación de pregunta: 2016
@@ -5071,6 +5492,7 @@ var comments = new Array();
  answers[420] = choices[420][2];
  units[420] = "14";
  comments[420] = "Id Pregunta: 420. POLITICAS DE IGUALDAD";
+ preguntaids[420] = 420
 
 
 //  Id pregunta: 421 Año de creación de pregunta: 2016
@@ -5083,6 +5505,7 @@ var comments = new Array();
  answers[421] = choices[421][2];
  units[421] = "14";
  comments[421] = "Id Pregunta: 421. POLITICAS DE IGUALDAD";
+ preguntaids[421] = 421
 
 
 //  Id pregunta: 422 Año de creación de pregunta: 2016
@@ -5095,6 +5518,7 @@ var comments = new Array();
  answers[422] = choices[422][1];
  units[422] = "14";
  comments[422] = "Id Pregunta: 422. POLITICAS DE IGUALDAD";
+ preguntaids[422] = 422
 
 
 //  Id pregunta: 423 Año de creación de pregunta: 2016
@@ -5107,6 +5531,7 @@ var comments = new Array();
  answers[423] = choices[423][2];
  units[423] = "14";
  comments[423] = "Id Pregunta: 423. POLITICAS DE IGUALDAD";
+ preguntaids[423] = 423
 
 
 //  Id pregunta: 424 Año de creación de pregunta: 2016
@@ -5119,6 +5544,7 @@ var comments = new Array();
  answers[424] = choices[424][0];
  units[424] = "14";
  comments[424] = "Id Pregunta: 424. POLITICAS DE IGUALDAD";
+ preguntaids[424] = 424
 
 
 //  Id pregunta: 425 Año de creación de pregunta: 2016
@@ -5131,6 +5557,7 @@ var comments = new Array();
  answers[425] = choices[425][0];
  units[425] = "14";
  comments[425] = "Id Pregunta: 425. POLITICAS DE IGUALDAD";
+ preguntaids[425] = 425
 
 
 //  Id pregunta: 426 Año de creación de pregunta: 2016
@@ -5143,6 +5570,7 @@ var comments = new Array();
  answers[426] = choices[426][1];
  units[426] = "14";
  comments[426] = "Id Pregunta: 426. POLITICAS DE IGUALDAD";
+ preguntaids[426] = 426
 
 
 //  Id pregunta: 427 Año de creación de pregunta: 2016
@@ -5155,6 +5583,7 @@ var comments = new Array();
  answers[427] = choices[427][0];
  units[427] = "14";
  comments[427] = "Id Pregunta: 427. POLITICAS DE IGUALDAD";
+ preguntaids[427] = 427
 
 
 //  Id pregunta: 428 Año de creación de pregunta: 2016
@@ -5167,6 +5596,7 @@ var comments = new Array();
  answers[428] = choices[428][2];
  units[428] = "14";
  comments[428] = "Id Pregunta: 428. POLITICAS DE IGUALDAD";
+ preguntaids[428] = 428
 
 
 //  Id pregunta: 429 Año de creación de pregunta: 2016
@@ -5179,6 +5609,7 @@ var comments = new Array();
  answers[429] = choices[429][0];
  units[429] = "14";
  comments[429] = "Id Pregunta: 429. POLITICAS DE IGUALDAD";
+ preguntaids[429] = 429
 
 
 //  Id pregunta: 430 Año de creación de pregunta: 2016
@@ -5191,6 +5622,7 @@ var comments = new Array();
  answers[430] = choices[430][1];
  units[430] = "14";
  comments[430] = "Id Pregunta: 430. POLITICAS DE IGUALDAD";
+ preguntaids[430] = 430
 
 
 //  Id pregunta: 431 Año de creación de pregunta: 2016
@@ -5203,6 +5635,7 @@ var comments = new Array();
  answers[431] = choices[431][2];
  units[431] = "14";
  comments[431] = "Id Pregunta: 431. POLITICAS DE IGUALDAD";
+ preguntaids[431] = 431
 
 
 //  Id pregunta: 432 Año de creación de pregunta: 2016
@@ -5215,6 +5648,7 @@ var comments = new Array();
  answers[432] = choices[432][0];
  units[432] = "14";
  comments[432] = "Id Pregunta: 432. POLITICAS DE IGUALDAD";
+ preguntaids[432] = 432
 
 
 //  Id pregunta: 433 Año de creación de pregunta: 2016
@@ -5227,6 +5661,7 @@ var comments = new Array();
  answers[433] = choices[433][1];
  units[433] = "14";
  comments[433] = "Id Pregunta: 433. POLITICAS DE IGUALDAD";
+ preguntaids[433] = 433
 
 
 //  Id pregunta: 434 Año de creación de pregunta: 2016
@@ -5239,6 +5674,7 @@ var comments = new Array();
  answers[434] = choices[434][0];
  units[434] = "43";
  comments[434] = "Id Pregunta: 434. SERVICIOS COMUNES";
+ preguntaids[434] = 434
 
 
 //  Id pregunta: 435 Año de creación de pregunta: 2016
@@ -5251,6 +5687,7 @@ var comments = new Array();
  answers[435] = choices[435][2];
  units[435] = "43";
  comments[435] = "Id Pregunta: 435. SERVICIOS COMUNES";
+ preguntaids[435] = 435
 
 
 //  Id pregunta: 436 Año de creación de pregunta: 2016
@@ -5263,6 +5700,7 @@ var comments = new Array();
  answers[436] = choices[436][2];
  units[436] = "43";
  comments[436] = "Id Pregunta: 436. SERVICIOS COMUNES";
+ preguntaids[436] = 436
 
 
 //  Id pregunta: 437 Año de creación de pregunta: 2016
@@ -5275,6 +5713,7 @@ var comments = new Array();
  answers[437] = choices[437][0];
  units[437] = "43";
  comments[437] = "Id Pregunta: 437. SERVICIOS COMUNES";
+ preguntaids[437] = 437
 
 
 //  Id pregunta: 438 Año de creación de pregunta: 2016
@@ -5287,6 +5726,7 @@ var comments = new Array();
  answers[438] = choices[438][3];
  units[438] = "43";
  comments[438] = "Id Pregunta: 438. SERVICIOS COMUNES";
+ preguntaids[438] = 438
 
 
 //  Id pregunta: 439 Año de creación de pregunta: 2016
@@ -5299,6 +5739,7 @@ var comments = new Array();
  answers[439] = choices[439][1];
  units[439] = "43";
  comments[439] = "Id Pregunta: 439. SERVICIOS COMUNES";
+ preguntaids[439] = 439
 
 
 //  Id pregunta: 440 Año de creación de pregunta: 2016
@@ -5311,6 +5752,7 @@ var comments = new Array();
  answers[440] = choices[440][2];
  units[440] = "43";
  comments[440] = "Id Pregunta: 440. SERVICIOS COMUNES";
+ preguntaids[440] = 440
 
 
 //  Id pregunta: 441 Año de creación de pregunta: 2016
@@ -5323,6 +5765,7 @@ var comments = new Array();
  answers[441] = choices[441][1];
  units[441] = "43";
  comments[441] = "Id Pregunta: 441. SERVICIOS COMUNES";
+ preguntaids[441] = 441
 
 
 //  Id pregunta: 442 Año de creación de pregunta: 2016
@@ -5335,6 +5778,7 @@ var comments = new Array();
  answers[442] = choices[442][3];
  units[442] = "43";
  comments[442] = "Id Pregunta: 442. SERVICIOS COMUNES";
+ preguntaids[442] = 442
 
 
 //  Id pregunta: 443 Año de creación de pregunta: 2016
@@ -5347,6 +5791,7 @@ var comments = new Array();
  answers[443] = choices[443][1];
  units[443] = "43";
  comments[443] = "Id Pregunta: 443. SERVICIOS COMUNES";
+ preguntaids[443] = 443
 
 
 //  Id pregunta: 444 Año de creación de pregunta: 2016
@@ -5359,6 +5804,7 @@ var comments = new Array();
  answers[444] = choices[444][1];
  units[444] = "43";
  comments[444] = "Id Pregunta: 444. SERVICIOS COMUNES";
+ preguntaids[444] = 444
 
 
 //  Id pregunta: 445 Año de creación de pregunta: 2016
@@ -5371,6 +5817,7 @@ var comments = new Array();
  answers[445] = choices[445][2];
  units[445] = "43";
  comments[445] = "Id Pregunta: 445. SERVICIOS COMUNES";
+ preguntaids[445] = 445
 
 
 //  Id pregunta: 446 Año de creación de pregunta: 2016
@@ -5383,6 +5830,7 @@ var comments = new Array();
  answers[446] = choices[446][1];
  units[446] = "43";
  comments[446] = "Id Pregunta: 446. SERVICIOS COMUNES";
+ preguntaids[446] = 446
 
 
 //  Id pregunta: 447 Año de creación de pregunta: 2016
@@ -5395,6 +5843,7 @@ var comments = new Array();
  answers[447] = choices[447][1];
  units[447] = "43";
  comments[447] = "Id Pregunta: 447. SERVICIOS COMUNES";
+ preguntaids[447] = 447
 
 
 //  Id pregunta: 448 Año de creación de pregunta: 2016
@@ -5407,6 +5856,7 @@ var comments = new Array();
  answers[448] = choices[448][2];
  units[448] = "10";
  comments[448] = "Id Pregunta: 448. PRESUPUESTOS GENERALES";
+ preguntaids[448] = 448
 
 
 //  Id pregunta: 449 Año de creación de pregunta: 2016
@@ -5419,6 +5869,7 @@ var comments = new Array();
  answers[449] = choices[449][1];
  units[449] = "10";
  comments[449] = "Id Pregunta: 449. PRESUPUESTOS GENERALES";
+ preguntaids[449] = 449
 
 
 //  Id pregunta: 450 Año de creación de pregunta: 2016
@@ -5431,6 +5882,7 @@ var comments = new Array();
  answers[450] = choices[450][3];
  units[450] = "10";
  comments[450] = "Id Pregunta: 450. PRESUPUESTOS GENERALES";
+ preguntaids[450] = 450
 
 
 //  Id pregunta: 451 Año de creación de pregunta: 2016
@@ -5443,6 +5895,7 @@ var comments = new Array();
  answers[451] = choices[451][2];
  units[451] = "10";
  comments[451] = "Id Pregunta: 451. PRESUPUESTOS GENERALES";
+ preguntaids[451] = 451
 
 
 //  Id pregunta: 452 Año de creación de pregunta: 2016
@@ -5455,6 +5908,7 @@ var comments = new Array();
  answers[452] = choices[452][3];
  units[452] = "10";
  comments[452] = "Id Pregunta: 452. PRESUPUESTOS GENERALES";
+ preguntaids[452] = 452
 
 
 //  Id pregunta: 453 Año de creación de pregunta: 2016
@@ -5467,6 +5921,7 @@ var comments = new Array();
  answers[453] = choices[453][2];
  units[453] = "10";
  comments[453] = "Id Pregunta: 453. PRESUPUESTOS GENERALES";
+ preguntaids[453] = 453
 
 
 //  Id pregunta: 454 Año de creación de pregunta: 2016
@@ -5479,6 +5934,7 @@ var comments = new Array();
  answers[454] = choices[454][3];
  units[454] = "10";
  comments[454] = "Id Pregunta: 454. PRESUPUESTOS GENERALES";
+ preguntaids[454] = 454
 
 
 //  Id pregunta: 455 Año de creación de pregunta: 2016
@@ -5491,6 +5947,7 @@ var comments = new Array();
  answers[455] = choices[455][0];
  units[455] = "10";
  comments[455] = "Id Pregunta: 455. PRESUPUESTOS GENERALES";
+ preguntaids[455] = 455
 
 
 //  Id pregunta: 456 Año de creación de pregunta: 2016
@@ -5503,6 +5960,7 @@ var comments = new Array();
  answers[456] = choices[456][2];
  units[456] = "10";
  comments[456] = "Id Pregunta: 456. PRESUPUESTOS GENERALES";
+ preguntaids[456] = 456
 
 
 //  Id pregunta: 457 Año de creación de pregunta: 2016
@@ -5515,6 +5973,7 @@ var comments = new Array();
  answers[457] = choices[457][0];
  units[457] = "10";
  comments[457] = "Id Pregunta: 457. PRESUPUESTOS GENERALES";
+ preguntaids[457] = 457
 
 
 //  Id pregunta: 458 Año de creación de pregunta: 2016
@@ -5527,6 +5986,7 @@ var comments = new Array();
  answers[458] = choices[458][3];
  units[458] = "10";
  comments[458] = "Id Pregunta: 458. PRESUPUESTOS GENERALES";
+ preguntaids[458] = 458
 
 
 //  Id pregunta: 459 Año de creación de pregunta: 2016
@@ -5539,6 +5999,7 @@ var comments = new Array();
  answers[459] = choices[459][3];
  units[459] = "10";
  comments[459] = "Id Pregunta: 459. PRESUPUESTOS GENERALES";
+ preguntaids[459] = 459
 
 
 //  Id pregunta: 460 Año de creación de pregunta: 2016
@@ -5551,6 +6012,7 @@ var comments = new Array();
  answers[460] = choices[460][3];
  units[460] = "10";
  comments[460] = "Id Pregunta: 460. PRESUPUESTOS GENERALES";
+ preguntaids[460] = 460
 
 
 //  Id pregunta: 461 Año de creación de pregunta: 2016
@@ -5563,6 +6025,7 @@ var comments = new Array();
  answers[461] = choices[461][2];
  units[461] = "10";
  comments[461] = "Id Pregunta: 461. PRESUPUESTOS GENERALES";
+ preguntaids[461] = 461
 
 
 //  Id pregunta: 462 Año de creación de pregunta: 2016
@@ -5575,6 +6038,7 @@ var comments = new Array();
  answers[462] = choices[462][2];
  units[462] = "10";
  comments[462] = "Id Pregunta: 462. PRESUPUESTOS GENERALES";
+ preguntaids[462] = 462
 
 
 //  Id pregunta: 463 Año de creación de pregunta: 2016
@@ -5587,6 +6051,7 @@ var comments = new Array();
  answers[463] = choices[463][1];
  units[463] = "10";
  comments[463] = "Id Pregunta: 463. PRESUPUESTOS GENERALES";
+ preguntaids[463] = 463
 
 
 //  Id pregunta: 464 Año de creación de pregunta: 2016
@@ -5599,6 +6064,7 @@ var comments = new Array();
  answers[464] = choices[464][2];
  units[464] = "10";
  comments[464] = "Id Pregunta: 464. PRESUPUESTOS GENERALES";
+ preguntaids[464] = 464
 
 
 //  Id pregunta: 465 Año de creación de pregunta: 2016
@@ -5611,6 +6077,7 @@ var comments = new Array();
  answers[465] = choices[465][3];
  units[465] = "10";
  comments[465] = "Id Pregunta: 465. PRESUPUESTOS GENERALES";
+ preguntaids[465] = 465
 
 
 //  Id pregunta: 466 Año de creación de pregunta: 2016
@@ -5623,6 +6090,7 @@ var comments = new Array();
  answers[466] = choices[466][2];
  units[466] = "10";
  comments[466] = "Id Pregunta: 466. PRESUPUESTOS GENERALES";
+ preguntaids[466] = 466
 
 
 //  Id pregunta: 467 Año de creación de pregunta: 2016
@@ -5635,6 +6103,7 @@ var comments = new Array();
  answers[467] = choices[467][0];
  units[467] = "10";
  comments[467] = "Id Pregunta: 467. PRESUPUESTOS GENERALES";
+ preguntaids[467] = 467
 
 
 //  Id pregunta: 468 Año de creación de pregunta: 2016
@@ -5647,6 +6116,7 @@ var comments = new Array();
  answers[468] = choices[468][2];
  units[468] = "10";
  comments[468] = "Id Pregunta: 468. PRESUPUESTOS GENERALES";
+ preguntaids[468] = 468
 
 
 //  Id pregunta: 469 Año de creación de pregunta: 2016
@@ -5659,6 +6129,7 @@ var comments = new Array();
  answers[469] = choices[469][0];
  units[469] = "10";
  comments[469] = "Id Pregunta: 469. PRESUPUESTOS GENERALES";
+ preguntaids[469] = 469
 
 
 //  Id pregunta: 470 Año de creación de pregunta: 2016
@@ -5671,6 +6142,7 @@ var comments = new Array();
  answers[470] = choices[470][2];
  units[470] = "10";
  comments[470] = "Id Pregunta: 470. PRESUPUESTOS GENERALES";
+ preguntaids[470] = 470
 
 
 //  Id pregunta: 471 Año de creación de pregunta: 2016
@@ -5683,6 +6155,7 @@ var comments = new Array();
  answers[471] = choices[471][3];
  units[471] = "10";
  comments[471] = "Id Pregunta: 471. PRESUPUESTOS GENERALES";
+ preguntaids[471] = 471
 
 
 //  Id pregunta: 472 Año de creación de pregunta: 2016
@@ -5695,6 +6168,7 @@ var comments = new Array();
  answers[472] = choices[472][1];
  units[472] = "10";
  comments[472] = "Id Pregunta: 472. PRESUPUESTOS GENERALES";
+ preguntaids[472] = 472
 
 
 //  Id pregunta: 473 Año de creación de pregunta: 2016
@@ -5707,6 +6181,7 @@ var comments = new Array();
  answers[473] = choices[473][2];
  units[473] = "10";
  comments[473] = "Id Pregunta: 473. PRESUPUESTOS GENERALES";
+ preguntaids[473] = 473
 
 
 //  Id pregunta: 474 Año de creación de pregunta: 2016
@@ -5719,6 +6194,7 @@ var comments = new Array();
  answers[474] = choices[474][2];
  units[474] = "10";
  comments[474] = "Id Pregunta: 474. PRESUPUESTOS GENERALES";
+ preguntaids[474] = 474
 
 
 //  Id pregunta: 475 Año de creación de pregunta: 2016
@@ -5731,6 +6207,7 @@ var comments = new Array();
  answers[475] = choices[475][1];
  units[475] = "10";
  comments[475] = "Id Pregunta: 475. PRESUPUESTOS GENERALES";
+ preguntaids[475] = 475
 
 
 //  Id pregunta: 476 Año de creación de pregunta: 2016
@@ -5743,6 +6220,7 @@ var comments = new Array();
  answers[476] = choices[476][1];
  units[476] = "10";
  comments[476] = "Id Pregunta: 476. PRESUPUESTOS GENERALES";
+ preguntaids[476] = 476
 
 
 //  Id pregunta: 477 Año de creación de pregunta: 2016
@@ -5755,6 +6233,7 @@ var comments = new Array();
  answers[477] = choices[477][0];
  units[477] = "10";
  comments[477] = "Id Pregunta: 477. PRESUPUESTOS GENERALES";
+ preguntaids[477] = 477
 
 
 //  Id pregunta: 478 Año de creación de pregunta: 2016
@@ -5767,6 +6246,7 @@ var comments = new Array();
  answers[478] = choices[478][2];
  units[478] = "10";
  comments[478] = "Id Pregunta: 478. PRESUPUESTOS GENERALES";
+ preguntaids[478] = 478
 
 
 //  Id pregunta: 479 Año de creación de pregunta: 2016
@@ -5779,6 +6259,7 @@ var comments = new Array();
  answers[479] = choices[479][2];
  units[479] = "10";
  comments[479] = "Id Pregunta: 479. PRESUPUESTOS GENERALES";
+ preguntaids[479] = 479
 
 
 //  Id pregunta: 480 Año de creación de pregunta: 2016
@@ -5791,6 +6272,7 @@ var comments = new Array();
  answers[480] = choices[480][1];
  units[480] = "10";
  comments[480] = "Id Pregunta: 480. PRESUPUESTOS GENERALES";
+ preguntaids[480] = 480
 
 
 //  Id pregunta: 481 Año de creación de pregunta: 2016
@@ -5803,6 +6285,7 @@ var comments = new Array();
  answers[481] = choices[481][2];
  units[481] = "10";
  comments[481] = "Id Pregunta: 481. PRESUPUESTOS GENERALES";
+ preguntaids[481] = 481
 
 
 //  Id pregunta: 482 Año de creación de pregunta: 2016
@@ -5815,6 +6298,7 @@ var comments = new Array();
  answers[482] = choices[482][3];
  units[482] = "10";
  comments[482] = "Id Pregunta: 482. PRESUPUESTOS GENERALES";
+ preguntaids[482] = 482
 
 
 //  Id pregunta: 483 Año de creación de pregunta: 2016
@@ -5827,6 +6311,7 @@ var comments = new Array();
  answers[483] = choices[483][1];
  units[483] = "10";
  comments[483] = "Id Pregunta: 483. PRESUPUESTOS GENERALES";
+ preguntaids[483] = 483
 
 
 //  Id pregunta: 484 Año de creación de pregunta: 2016
@@ -5839,6 +6324,7 @@ var comments = new Array();
  answers[484] = choices[484][0];
  units[484] = "10";
  comments[484] = "Id Pregunta: 484. PRESUPUESTOS GENERALES";
+ preguntaids[484] = 484
 
 
 //  Id pregunta: 485 Año de creación de pregunta: 2016
@@ -5851,6 +6337,7 @@ var comments = new Array();
  answers[485] = choices[485][1];
  units[485] = "10";
  comments[485] = "Id Pregunta: 485. PRESUPUESTOS GENERALES";
+ preguntaids[485] = 485
 
 
 //  Id pregunta: 486 Año de creación de pregunta: 2016
@@ -5863,6 +6350,7 @@ var comments = new Array();
  answers[486] = choices[486][2];
  units[486] = "10";
  comments[486] = "Id Pregunta: 486. PRESUPUESTOS GENERALES";
+ preguntaids[486] = 486
 
 
 //  Id pregunta: 487 Año de creación de pregunta: 2016
@@ -5875,6 +6363,7 @@ var comments = new Array();
  answers[487] = choices[487][3];
  units[487] = "10";
  comments[487] = "Id Pregunta: 487. PRESUPUESTOS GENERALES";
+ preguntaids[487] = 487
 
 
 //  Id pregunta: 488 Año de creación de pregunta: 2016
@@ -5887,6 +6376,7 @@ var comments = new Array();
  answers[488] = choices[488][0];
  units[488] = "10";
  comments[488] = "Id Pregunta: 488. PRESUPUESTOS GENERALES";
+ preguntaids[488] = 488
 
 
 //  Id pregunta: 489 Año de creación de pregunta: 2016
@@ -5899,6 +6389,7 @@ var comments = new Array();
  answers[489] = choices[489][0];
  units[489] = "10";
  comments[489] = "Id Pregunta: 489. PRESUPUESTOS GENERALES";
+ preguntaids[489] = 489
 
 
 //  Id pregunta: 490 Año de creación de pregunta: 2016
@@ -5911,6 +6402,7 @@ var comments = new Array();
  answers[490] = choices[490][1];
  units[490] = "10";
  comments[490] = "Id Pregunta: 490. PRESUPUESTOS GENERALES";
+ preguntaids[490] = 490
 
 
 //  Id pregunta: 491 Año de creación de pregunta: 2016
@@ -5923,6 +6415,7 @@ var comments = new Array();
  answers[491] = choices[491][1];
  units[491] = "10";
  comments[491] = "Id Pregunta: 491. PRESUPUESTOS GENERALES";
+ preguntaids[491] = 491
 
 
 //  Id pregunta: 492 Año de creación de pregunta: 2016
@@ -5935,6 +6428,7 @@ var comments = new Array();
  answers[492] = choices[492][0];
  units[492] = "10";
  comments[492] = "Id Pregunta: 492. PRESUPUESTOS GENERALES";
+ preguntaids[492] = 492
 
 
 //  Id pregunta: 493 Año de creación de pregunta: 2016
@@ -5947,6 +6441,7 @@ var comments = new Array();
  answers[493] = choices[493][0];
  units[493] = "10";
  comments[493] = "Id Pregunta: 493. PRESUPUESTOS GENERALES";
+ preguntaids[493] = 493
 
 
 //  Id pregunta: 494 Año de creación de pregunta: 2016
@@ -5959,6 +6454,7 @@ var comments = new Array();
  answers[494] = choices[494][2];
  units[494] = "10";
  comments[494] = "Id Pregunta: 494. PRESUPUESTOS GENERALES";
+ preguntaids[494] = 494
 
 
 //  Id pregunta: 495 Año de creación de pregunta: 2016
@@ -5971,6 +6467,7 @@ var comments = new Array();
  answers[495] = choices[495][2];
  units[495] = "10";
  comments[495] = "Id Pregunta: 495. PRESUPUESTOS GENERALES";
+ preguntaids[495] = 495
 
 
 //  Id pregunta: 496 Año de creación de pregunta: 2016
@@ -5983,6 +6480,7 @@ var comments = new Array();
  answers[496] = choices[496][2];
  units[496] = "10";
  comments[496] = "Id Pregunta: 496. PRESUPUESTOS GENERALES";
+ preguntaids[496] = 496
 
 
 //  Id pregunta: 497 Año de creación de pregunta: 2016
@@ -5995,6 +6493,7 @@ var comments = new Array();
  answers[497] = choices[497][2];
  units[497] = "10";
  comments[497] = "Id Pregunta: 497. PRESUPUESTOS GENERALES";
+ preguntaids[497] = 497
 
 
 //  Id pregunta: 498 Año de creación de pregunta: 2016
@@ -6007,6 +6506,7 @@ var comments = new Array();
  answers[498] = choices[498][0];
  units[498] = "10";
  comments[498] = "Id Pregunta: 498. PRESUPUESTOS GENERALES";
+ preguntaids[498] = 498
 
 
 //  Id pregunta: 499 Año de creación de pregunta: 2016
@@ -6019,6 +6519,7 @@ var comments = new Array();
  answers[499] = choices[499][3];
  units[499] = "10";
  comments[499] = "Id Pregunta: 499. PRESUPUESTOS GENERALES";
+ preguntaids[499] = 499
 
 
 //  Id pregunta: 500 Año de creación de pregunta: 2016
@@ -6031,6 +6532,7 @@ var comments = new Array();
  answers[500] = choices[500][1];
  units[500] = "10";
  comments[500] = "Id Pregunta: 500. PRESUPUESTOS GENERALES";
+ preguntaids[500] = 500
 
 
 //  Id pregunta: 501 Año de creación de pregunta: 2016
@@ -6043,6 +6545,7 @@ var comments = new Array();
  answers[501] = choices[501][0];
  units[501] = "10";
  comments[501] = "Id Pregunta: 501. PRESUPUESTOS GENERALES";
+ preguntaids[501] = 501
 
 
 //  Id pregunta: 502 Año de creación de pregunta: 2016
@@ -6055,6 +6558,7 @@ var comments = new Array();
  answers[502] = choices[502][3];
  units[502] = "10";
  comments[502] = "Id Pregunta: 502. PRESUPUESTOS GENERALES";
+ preguntaids[502] = 502
 
 
 //  Id pregunta: 503 Año de creación de pregunta: 2016
@@ -6067,6 +6571,7 @@ var comments = new Array();
  answers[503] = choices[503][2];
  units[503] = "10";
  comments[503] = "Id Pregunta: 503. PRESUPUESTOS GENERALES";
+ preguntaids[503] = 503
 
 
 //  Id pregunta: 504 Año de creación de pregunta: 2016
@@ -6079,6 +6584,7 @@ var comments = new Array();
  answers[504] = choices[504][1];
  units[504] = "10";
  comments[504] = "Id Pregunta: 504. PRESUPUESTOS GENERALES";
+ preguntaids[504] = 504
 
 
 //  Id pregunta: 505 Año de creación de pregunta: 2016
@@ -6091,6 +6597,7 @@ var comments = new Array();
  answers[505] = choices[505][3];
  units[505] = "10";
  comments[505] = "Id Pregunta: 505. PRESUPUESTOS GENERALES";
+ preguntaids[505] = 505
 
 
 //  Id pregunta: 506 Año de creación de pregunta: 2016
@@ -6103,6 +6610,7 @@ var comments = new Array();
  answers[506] = choices[506][2];
  units[506] = "10";
  comments[506] = "Id Pregunta: 506. PRESUPUESTOS GENERALES";
+ preguntaids[506] = 506
 
 
 //  Id pregunta: 507 Año de creación de pregunta: 2016
@@ -6115,6 +6623,7 @@ var comments = new Array();
  answers[507] = choices[507][3];
  units[507] = "10";
  comments[507] = "Id Pregunta: 507. PRESUPUESTOS GENERALES";
+ preguntaids[507] = 507
 
 
 //  Id pregunta: 508 Año de creación de pregunta: 2016
@@ -6127,6 +6636,7 @@ var comments = new Array();
  answers[508] = choices[508][3];
  units[508] = "10";
  comments[508] = "Id Pregunta: 508. PRESUPUESTOS GENERALES";
+ preguntaids[508] = 508
 
 
 //  Id pregunta: 509 Año de creación de pregunta: 2016
@@ -6139,6 +6649,7 @@ var comments = new Array();
  answers[509] = choices[509][2];
  units[509] = "10";
  comments[509] = "Id Pregunta: 509. PRESUPUESTOS GENERALES";
+ preguntaids[509] = 509
 
 
 //  Id pregunta: 510 Año de creación de pregunta: 2016
@@ -6151,6 +6662,7 @@ var comments = new Array();
  answers[510] = choices[510][3];
  units[510] = "10";
  comments[510] = "Id Pregunta: 510. PRESUPUESTOS GENERALES";
+ preguntaids[510] = 510
 
 
 //  Id pregunta: 511 Año de creación de pregunta: 2016
@@ -6163,6 +6675,7 @@ var comments = new Array();
  answers[511] = choices[511][2];
  units[511] = "10";
  comments[511] = "Id Pregunta: 511. PRESUPUESTOS GENERALES";
+ preguntaids[511] = 511
 
 
 //  Id pregunta: 512 Año de creación de pregunta: 2016
@@ -6175,6 +6688,7 @@ var comments = new Array();
  answers[512] = choices[512][2];
  units[512] = "7";
  comments[512] = "Id Pregunta: 512. LEY 39/2015";
+ preguntaids[512] = 512
 
 
 //  Id pregunta: 513 Año de creación de pregunta: 2016
@@ -6187,6 +6701,7 @@ var comments = new Array();
  answers[513] = choices[513][0];
  units[513] = "7";
  comments[513] = "Id Pregunta: 513. LEY 39/2015";
+ preguntaids[513] = 513
 
 
 //  Id pregunta: 514 Año de creación de pregunta: 2016
@@ -6199,6 +6714,7 @@ var comments = new Array();
  answers[514] = choices[514][1];
  units[514] = "7";
  comments[514] = "Id Pregunta: 514. LEY 39/2015";
+ preguntaids[514] = 514
 
 
 //  Id pregunta: 515 Año de creación de pregunta: 2016
@@ -6211,6 +6727,7 @@ var comments = new Array();
  answers[515] = choices[515][3];
  units[515] = "7";
  comments[515] = "Id Pregunta: 515. LEY 39/2015";
+ preguntaids[515] = 515
 
 
 //  Id pregunta: 516 Año de creación de pregunta: 2016
@@ -6223,6 +6740,7 @@ var comments = new Array();
  answers[516] = choices[516][3];
  units[516] = "7";
  comments[516] = "Id Pregunta: 516. LEY 39/2015";
+ preguntaids[516] = 516
 
 
 //  Id pregunta: 517 Año de creación de pregunta: 2016
@@ -6235,6 +6753,7 @@ var comments = new Array();
  answers[517] = choices[517][1];
  units[517] = "7";
  comments[517] = "Id Pregunta: 517. LEY 39/2015";
+ preguntaids[517] = 517
 
 
 //  Id pregunta: 518 Año de creación de pregunta: 2016
@@ -6247,6 +6766,7 @@ var comments = new Array();
  answers[518] = choices[518][1];
  units[518] = "7";
  comments[518] = "Id Pregunta: 518. LEY 39/2015";
+ preguntaids[518] = 518
 
 
 //  Id pregunta: 519 Año de creación de pregunta: 2016
@@ -6259,6 +6779,7 @@ var comments = new Array();
  answers[519] = choices[519][3];
  units[519] = "7";
  comments[519] = "Id Pregunta: 519. LEY 39/2015";
+ preguntaids[519] = 519
 
 
 //  Id pregunta: 520 Año de creación de pregunta: 2016
@@ -6271,6 +6792,7 @@ var comments = new Array();
  answers[520] = choices[520][0];
  units[520] = "7";
  comments[520] = "Id Pregunta: 520. LEY 39/2015";
+ preguntaids[520] = 520
 
 
 //  Id pregunta: 521 Año de creación de pregunta: 2016
@@ -6283,6 +6805,7 @@ var comments = new Array();
  answers[521] = choices[521][1];
  units[521] = "7";
  comments[521] = "Id Pregunta: 521. LEY 39/2015";
+ preguntaids[521] = 521
 
 
 //  Id pregunta: 522 Año de creación de pregunta: 2016
@@ -6295,6 +6818,7 @@ var comments = new Array();
  answers[522] = choices[522][2];
  units[522] = "7";
  comments[522] = "Id Pregunta: 522. LEY 39/2015";
+ preguntaids[522] = 522
 
 
 //  Id pregunta: 523 Año de creación de pregunta: 2016
@@ -6307,6 +6831,7 @@ var comments = new Array();
  answers[523] = choices[523][1];
  units[523] = "7";
  comments[523] = "Id Pregunta: 523. LEY 39/2015";
+ preguntaids[523] = 523
 
 
 //  Id pregunta: 524 Año de creación de pregunta: 2016
@@ -6319,6 +6844,7 @@ var comments = new Array();
  answers[524] = choices[524][1];
  units[524] = "7";
  comments[524] = "Id Pregunta: 524. LEY 39/2015";
+ preguntaids[524] = 524
 
 
 //  Id pregunta: 525 Año de creación de pregunta: 2016
@@ -6331,6 +6857,7 @@ var comments = new Array();
  answers[525] = choices[525][0];
  units[525] = "7";
  comments[525] = "Id Pregunta: 525. LEY 39/2015";
+ preguntaids[525] = 525
 
 
 //  Id pregunta: 526 Año de creación de pregunta: 2016
@@ -6343,6 +6870,7 @@ var comments = new Array();
  answers[526] = choices[526][3];
  units[526] = "7";
  comments[526] = "Id Pregunta: 526. LEY 39/2015";
+ preguntaids[526] = 526
 
 
 //  Id pregunta: 527 Año de creación de pregunta: 2016
@@ -6355,6 +6883,7 @@ var comments = new Array();
  answers[527] = choices[527][3];
  units[527] = "7";
  comments[527] = "Id Pregunta: 527. LEY 39/2015";
+ preguntaids[527] = 527
 
 
 //  Id pregunta: 528 Año de creación de pregunta: 2016
@@ -6367,6 +6896,7 @@ var comments = new Array();
  answers[528] = choices[528][2];
  units[528] = "7";
  comments[528] = "Id Pregunta: 528. LEY 39/2015";
+ preguntaids[528] = 528
 
 
 //  Id pregunta: 529 Año de creación de pregunta: 2016
@@ -6379,6 +6909,7 @@ var comments = new Array();
  answers[529] = choices[529][2];
  units[529] = "7";
  comments[529] = "Id Pregunta: 529. LEY 39/2015";
+ preguntaids[529] = 529
 
 
 //  Id pregunta: 530 Año de creación de pregunta: 2016
@@ -6391,6 +6922,7 @@ var comments = new Array();
  answers[530] = choices[530][3];
  units[530] = "7";
  comments[530] = "Id Pregunta: 530. LEY 39/2015";
+ preguntaids[530] = 530
 
 
 //  Id pregunta: 531 Año de creación de pregunta: 2016
@@ -6403,6 +6935,7 @@ var comments = new Array();
  answers[531] = choices[531][1];
  units[531] = "7";
  comments[531] = "Id Pregunta: 531. LEY 39/2015";
+ preguntaids[531] = 531
 
 
 //  Id pregunta: 532 Año de creación de pregunta: 2016
@@ -6415,6 +6948,7 @@ var comments = new Array();
  answers[532] = choices[532][3];
  units[532] = "7";
  comments[532] = "Id Pregunta: 532. LEY 39/2015";
+ preguntaids[532] = 532
 
 
 //  Id pregunta: 533 Año de creación de pregunta: 2016
@@ -6427,6 +6961,7 @@ var comments = new Array();
  answers[533] = choices[533][3];
  units[533] = "7";
  comments[533] = "Id Pregunta: 533. LEY 39/2015";
+ preguntaids[533] = 533
 
 
 //  Id pregunta: 534 Año de creación de pregunta: 2016
@@ -6439,6 +6974,7 @@ var comments = new Array();
  answers[534] = choices[534][2];
  units[534] = "7";
  comments[534] = "Id Pregunta: 534. LEY 39/2015";
+ preguntaids[534] = 534
 
 
 //  Id pregunta: 535 Año de creación de pregunta: 2016
@@ -6451,6 +6987,7 @@ var comments = new Array();
  answers[535] = choices[535][1];
  units[535] = "7";
  comments[535] = "Id Pregunta: 535. LEY 39/2015";
+ preguntaids[535] = 535
 
 
 //  Id pregunta: 536 Año de creación de pregunta: 2016
@@ -6463,6 +7000,7 @@ var comments = new Array();
  answers[536] = choices[536][2];
  units[536] = "7";
  comments[536] = "Id Pregunta: 536. LEY 39/2015";
+ preguntaids[536] = 536
 
 
 //  Id pregunta: 537 Año de creación de pregunta: 2016
@@ -6475,6 +7013,7 @@ var comments = new Array();
  answers[537] = choices[537][3];
  units[537] = "7";
  comments[537] = "Id Pregunta: 537. LEY 39/2015";
+ preguntaids[537] = 537
 
 
 //  Id pregunta: 538 Año de creación de pregunta: 2016
@@ -6487,6 +7026,7 @@ var comments = new Array();
  answers[538] = choices[538][3];
  units[538] = "7";
  comments[538] = "Id Pregunta: 538. LEY 39/2015";
+ preguntaids[538] = 538
 
 
 //  Id pregunta: 539 Año de creación de pregunta: 2016
@@ -6499,6 +7039,7 @@ var comments = new Array();
  answers[539] = choices[539][1];
  units[539] = "7";
  comments[539] = "Id Pregunta: 539. LEY 39/2015";
+ preguntaids[539] = 539
 
 
 //  Id pregunta: 540 Año de creación de pregunta: 2016
@@ -6511,6 +7052,7 @@ var comments = new Array();
  answers[540] = choices[540][3];
  units[540] = "7";
  comments[540] = "Id Pregunta: 540. LEY 39/2015";
+ preguntaids[540] = 540
 
 
 //  Id pregunta: 541 Año de creación de pregunta: 2016
@@ -6523,6 +7065,7 @@ var comments = new Array();
  answers[541] = choices[541][1];
  units[541] = "7";
  comments[541] = "Id Pregunta: 541. LEY 39/2015";
+ preguntaids[541] = 541
 
 
 //  Id pregunta: 542 Año de creación de pregunta: 2016
@@ -6535,6 +7078,7 @@ var comments = new Array();
  answers[542] = choices[542][3];
  units[542] = "7";
  comments[542] = "Id Pregunta: 542. LEY 39/2015";
+ preguntaids[542] = 542
 
 
 //  Id pregunta: 543 Año de creación de pregunta: 2016
@@ -6547,6 +7091,7 @@ var comments = new Array();
  answers[543] = choices[543][1];
  units[543] = "7";
  comments[543] = "Id Pregunta: 543. LEY 39/2015";
+ preguntaids[543] = 543
 
 
 //  Id pregunta: 544 Año de creación de pregunta: 2016
@@ -6559,6 +7104,7 @@ var comments = new Array();
  answers[544] = choices[544][0];
  units[544] = "26";
  comments[544] = "Id Pregunta: 544. Gobernanza TIC";
+ preguntaids[544] = 544
 
 
 //  Id pregunta: 545 Año de creación de pregunta: 2016
@@ -6571,6 +7117,7 @@ var comments = new Array();
  answers[545] = choices[545][2];
  units[545] = "26";
  comments[545] = "Id Pregunta: 545. Gobernanza TIC";
+ preguntaids[545] = 545
 
 
 //  Id pregunta: 546 Año de creación de pregunta: 2016
@@ -6583,6 +7130,7 @@ var comments = new Array();
  answers[546] = choices[546][3];
  units[546] = "26";
  comments[546] = "Id Pregunta: 546. Gobernanza TIC";
+ preguntaids[546] = 546
 
 
 //  Id pregunta: 547 Año de creación de pregunta: 2016
@@ -6595,6 +7143,7 @@ var comments = new Array();
  answers[547] = choices[547][1];
  units[547] = "26";
  comments[547] = "Id Pregunta: 547. Gobernanza TIC";
+ preguntaids[547] = 547
 
 
 //  Id pregunta: 548 Año de creación de pregunta: 2016
@@ -6607,6 +7156,7 @@ var comments = new Array();
  answers[548] = choices[548][0];
  units[548] = "26";
  comments[548] = "Id Pregunta: 548. Gobernanza TIC";
+ preguntaids[548] = 548
 
 
 //  Id pregunta: 549 Año de creación de pregunta: 2016
@@ -6619,6 +7169,7 @@ var comments = new Array();
  answers[549] = choices[549][3];
  units[549] = "26";
  comments[549] = "Id Pregunta: 549. Gobernanza TIC";
+ preguntaids[549] = 549
 
 
 //  Id pregunta: 550 Año de creación de pregunta: 2016
@@ -6631,6 +7182,7 @@ var comments = new Array();
  answers[550] = choices[550][1];
  units[550] = "26";
  comments[550] = "Id Pregunta: 550. Gobernanza TIC";
+ preguntaids[550] = 550
 
 
 //  Id pregunta: 551 Año de creación de pregunta: 2016
@@ -6643,6 +7195,7 @@ var comments = new Array();
  answers[551] = choices[551][1];
  units[551] = "26";
  comments[551] = "Id Pregunta: 551. Gobernanza TIC";
+ preguntaids[551] = 551
 
 
 //  Id pregunta: 552 Año de creación de pregunta: 2016
@@ -6655,6 +7208,7 @@ var comments = new Array();
  answers[552] = choices[552][3];
  units[552] = "26";
  comments[552] = "Id Pregunta: 552. Gobernanza TIC";
+ preguntaids[552] = 552
 
 
 //  Id pregunta: 553 Año de creación de pregunta: 2016
@@ -6667,6 +7221,7 @@ var comments = new Array();
  answers[553] = choices[553][2];
  units[553] = "26";
  comments[553] = "Id Pregunta: 553. Gobernanza TIC";
+ preguntaids[553] = 553
 
 
 //  Id pregunta: 554 Año de creación de pregunta: 2016
@@ -6679,6 +7234,7 @@ var comments = new Array();
  answers[554] = choices[554][0];
  units[554] = "17";
  comments[554] = "Id Pregunta: 554. Mercado &Uacute;nico Digital";
+ preguntaids[554] = 554
 
 
 //  Id pregunta: 555 Año de creación de pregunta: 2016
@@ -6691,6 +7247,7 @@ var comments = new Array();
  answers[555] = choices[555][0];
  units[555] = "17";
  comments[555] = "Id Pregunta: 555. Mercado &Uacute;nico Digital";
+ preguntaids[555] = 555
 
 
 //  Id pregunta: 556 Año de creación de pregunta: 2016
@@ -6703,6 +7260,7 @@ var comments = new Array();
  answers[556] = choices[556][3];
  units[556] = "17";
  comments[556] = "Id Pregunta: 556. Mercado &Uacute;nico Digital";
+ preguntaids[556] = 556
 
 
 //  Id pregunta: 557 Año de creación de pregunta: 2016
@@ -6715,6 +7273,7 @@ var comments = new Array();
  answers[557] = choices[557][3];
  units[557] = "17";
  comments[557] = "Id Pregunta: 557. Mercado &Uacute;nico Digital";
+ preguntaids[557] = 557
 
 
 //  Id pregunta: 558 Año de creación de pregunta: 2016
@@ -6727,6 +7286,7 @@ var comments = new Array();
  answers[558] = choices[558][2];
  units[558] = "17";
  comments[558] = "Id Pregunta: 558. Mercado &Uacute;nico Digital";
+ preguntaids[558] = 558
 
 
 //  Id pregunta: 559 Año de creación de pregunta: 2016
@@ -6739,6 +7299,7 @@ var comments = new Array();
  answers[559] = choices[559][0];
  units[559] = "19";
  comments[559] = "Id Pregunta: 559. Agenda Digital";
+ preguntaids[559] = 559
 
 
 //  Id pregunta: 560 Año de creación de pregunta: 2016
@@ -6751,6 +7312,7 @@ var comments = new Array();
  answers[560] = choices[560][1];
  units[560] = "19";
  comments[560] = "Id Pregunta: 560. Agenda Digital";
+ preguntaids[560] = 560
 
 
 //  Id pregunta: 561 Año de creación de pregunta: 2016
@@ -6763,6 +7325,7 @@ var comments = new Array();
  answers[561] = choices[561][3];
  units[561] = "19";
  comments[561] = "Id Pregunta: 561. Agenda Digital";
+ preguntaids[561] = 561
 
 
 //  Id pregunta: 562 Año de creación de pregunta: 2016
@@ -6775,6 +7338,7 @@ var comments = new Array();
  answers[562] = choices[562][1];
  units[562] = "19";
  comments[562] = "Id Pregunta: 562. Agenda Digital";
+ preguntaids[562] = 562
 
 
 //  Id pregunta: 563 Año de creación de pregunta: 2016
@@ -6787,6 +7351,7 @@ var comments = new Array();
  answers[563] = choices[563][1];
  units[563] = "19";
  comments[563] = "Id Pregunta: 563. Ciudades Inteligentes";
+ preguntaids[563] = 563
 
 
 //  Id pregunta: 564 Año de creación de pregunta: 2016
@@ -6799,6 +7364,7 @@ var comments = new Array();
  answers[564] = choices[564][2];
  units[564] = "12";
  comments[564] = "Id Pregunta: 564. Modelo econ&oacute;mico";
+ preguntaids[564] = 564
 
 
 //  Id pregunta: 565 Año de creación de pregunta: 2016
@@ -6811,6 +7377,7 @@ var comments = new Array();
  answers[565] = choices[565][1];
  units[565] = "12";
  comments[565] = "Id Pregunta: 565. Modelo econ&oacute;mico";
+ preguntaids[565] = 565
 
 
 //  Id pregunta: 566 Año de creación de pregunta: 2016
@@ -6823,6 +7390,7 @@ var comments = new Array();
  answers[566] = choices[566][0];
  units[566] = "12";
  comments[566] = "Id Pregunta: 566. Modelo econ&oacute;mico";
+ preguntaids[566] = 566
 
 
 //  Id pregunta: 567 Año de creación de pregunta: 2016
@@ -6835,6 +7403,7 @@ var comments = new Array();
  answers[567] = choices[567][3];
  units[567] = "12";
  comments[567] = "Id Pregunta: 567. Modelo econ&oacute;mico";
+ preguntaids[567] = 567
 
 
 //  Id pregunta: 568 Año de creación de pregunta: 2016
@@ -6847,6 +7416,7 @@ var comments = new Array();
  answers[568] = choices[568][0];
  units[568] = "12";
  comments[568] = "Id Pregunta: 568. Modelo econ&oacute;mico";
+ preguntaids[568] = 568
 
 
 //  Id pregunta: 569 Año de creación de pregunta: 2016
@@ -6859,6 +7429,7 @@ var comments = new Array();
  answers[569] = choices[569][3];
  units[569] = "12";
  comments[569] = "Id Pregunta: 569. Modelo econ&oacute;mico";
+ preguntaids[569] = 569
 
 
 //  Id pregunta: 570 Año de creación de pregunta: 2016
@@ -6871,6 +7442,7 @@ var comments = new Array();
  answers[570] = choices[570][1];
  units[570] = "12";
  comments[570] = "Id Pregunta: 570. Modelo econ&oacute;mico";
+ preguntaids[570] = 570
 
 
 //  Id pregunta: 571 Año de creación de pregunta: 2016
@@ -6883,6 +7455,7 @@ var comments = new Array();
  answers[571] = choices[571][2];
  units[571] = "12";
  comments[571] = "Id Pregunta: 571. Modelo econ&oacute;mico";
+ preguntaids[571] = 571
 
 
 //  Id pregunta: 572 Año de creación de pregunta: 2016
@@ -6895,6 +7468,7 @@ var comments = new Array();
  answers[572] = choices[572][2];
  units[572] = "12";
  comments[572] = "Id Pregunta: 572. Modelo econ&oacute;mico";
+ preguntaids[572] = 572
 
 
 //  Id pregunta: 573 Año de creación de pregunta: 2016
@@ -6907,6 +7481,7 @@ var comments = new Array();
  answers[573] = choices[573][3];
  units[573] = "12";
  comments[573] = "Id Pregunta: 573. Modelo econ&oacute;mico";
+ preguntaids[573] = 573
 
 
 //  Id pregunta: 574 Año de creación de pregunta: 2016
@@ -6919,6 +7494,7 @@ var comments = new Array();
  answers[574] = choices[574][1];
  units[574] = "112";
  comments[574] = "Id Pregunta: 574. Tema 112. TAI 2016.";
+ preguntaids[574] = 574
 
 
 //  Id pregunta: 575 Año de creación de pregunta: 2016
@@ -6931,6 +7507,7 @@ var comments = new Array();
  answers[575] = choices[575][1];
  units[575] = "106";
  comments[575] = "Id Pregunta: 575. Tema 106. TAI 2016.";
+ preguntaids[575] = 575
 
 
 //  Id pregunta: 576 Año de creación de pregunta: 2016
@@ -6943,6 +7520,7 @@ var comments = new Array();
  answers[576] = choices[576][0];
  units[576] = "92";
  comments[576] = "Id Pregunta: 576. Tema 92. TAI 2016.";
+ preguntaids[576] = 576
 
 
 //  Id pregunta: 577 Año de creación de pregunta: 2016
@@ -6955,6 +7533,7 @@ var comments = new Array();
  answers[577] = choices[577][2];
  units[577] = "61";
  comments[577] = "Id Pregunta: 577. Tema 61. TAI 2016.";
+ preguntaids[577] = 577
 
 
 //  Id pregunta: 578 Año de creación de pregunta: 2016
@@ -6967,6 +7546,7 @@ var comments = new Array();
  answers[578] = choices[578][0];
  units[578] = "61";
  comments[578] = "Id Pregunta: 578. Tema 61. TAI 2016.";
+ preguntaids[578] = 578
 
 
 //  Id pregunta: 579 Año de creación de pregunta: 2016
@@ -6979,6 +7559,7 @@ var comments = new Array();
  answers[579] = choices[579][0];
  units[579] = "19";
  comments[579] = "Id Pregunta: 579. Estrategia TIC";
+ preguntaids[579] = 579
 
 
 //  Id pregunta: 580 Año de creación de pregunta: 2016
@@ -6991,6 +7572,7 @@ var comments = new Array();
  answers[580] = choices[580][1];
  units[580] = "19";
  comments[580] = "Id Pregunta: 580. Estrategia TIC";
+ preguntaids[580] = 580
 
 
 //  Id pregunta: 581 Año de creación de pregunta: 2016
@@ -7003,6 +7585,7 @@ var comments = new Array();
  answers[581] = choices[581][1];
  units[581] = "19";
  comments[581] = "Id Pregunta: 581. Estrategia TIC";
+ preguntaids[581] = 581
 
 
 //  Id pregunta: 582 Año de creación de pregunta: 2016
@@ -7015,6 +7598,7 @@ var comments = new Array();
  answers[582] = choices[582][3];
  units[582] = "19";
  comments[582] = "Id Pregunta: 582. Estrategia TIC";
+ preguntaids[582] = 582
 
 
 //  Id pregunta: 583 Año de creación de pregunta: 2016
@@ -7027,6 +7611,7 @@ var comments = new Array();
  answers[583] = choices[583][3];
  units[583] = "19";
  comments[583] = "Id Pregunta: 583. Estrategia TIC. Car&aacute;cter obligatorio y sustitutivo, aunque se podr&aacute;n acordar excepciones";
+ preguntaids[583] = 583
 
 
 //  Id pregunta: 584 Año de creación de pregunta: 2016
@@ -7039,6 +7624,7 @@ var comments = new Array();
  answers[584] = choices[584][2];
  units[584] = "19";
  comments[584] = "Id Pregunta: 584. Estrategia TIC";
+ preguntaids[584] = 584
 
 
 //  Id pregunta: 585 Año de creación de pregunta: 2016
@@ -7051,6 +7637,7 @@ var comments = new Array();
  answers[585] = choices[585][3];
  units[585] = "19";
  comments[585] = "Id Pregunta: 585. Estrategia TIC";
+ preguntaids[585] = 585
 
 
 //  Id pregunta: 586 Año de creación de pregunta: 2016
@@ -7063,6 +7650,7 @@ var comments = new Array();
  answers[586] = choices[586][1];
  units[586] = "19";
  comments[586] = "Id Pregunta: 586. Estrategia TIC";
+ preguntaids[586] = 586
 
 
 //  Id pregunta: 587 Año de creación de pregunta: 2016
@@ -7075,6 +7663,7 @@ var comments = new Array();
  answers[587] = choices[587][1];
  units[587] = "19";
  comments[587] = "Id Pregunta: 587. Estrategia TIC";
+ preguntaids[587] = 587
 
 
 //  Id pregunta: 588 Año de creación de pregunta: 2016
@@ -7087,6 +7676,7 @@ var comments = new Array();
  answers[588] = choices[588][1];
  units[588] = "19";
  comments[588] = "Id Pregunta: 588. Estrategia TIC";
+ preguntaids[588] = 588
 
 
 //  Id pregunta: 589 Año de creación de pregunta: 2016
@@ -7099,6 +7689,7 @@ var comments = new Array();
  answers[589] = choices[589][0];
  units[589] = "19";
  comments[589] = "Id Pregunta: 589. Estrategia TIC";
+ preguntaids[589] = 589
 
 
 //  Id pregunta: 590 Año de creación de pregunta: 2016
@@ -7111,6 +7702,7 @@ var comments = new Array();
  answers[590] = choices[590][0];
  units[590] = "19";
  comments[590] = "Id Pregunta: 590. Estrategia TIC";
+ preguntaids[590] = 590
 
 
 //  Id pregunta: 591 Año de creación de pregunta: 2016
@@ -7123,6 +7715,7 @@ var comments = new Array();
  answers[591] = choices[591][3];
  units[591] = "19";
  comments[591] = "Id Pregunta: 591. Estrategia TIC";
+ preguntaids[591] = 591
 
 
 //  Id pregunta: 592 Año de creación de pregunta: 2016
@@ -7135,6 +7728,7 @@ var comments = new Array();
  answers[592] = choices[592][3];
  units[592] = "19";
  comments[592] = "Id Pregunta: 592. Estrategia TIC";
+ preguntaids[592] = 592
 
 
 //  Id pregunta: 593 Año de creación de pregunta: 2016
@@ -7147,6 +7741,7 @@ var comments = new Array();
  answers[593] = choices[593][0];
  units[593] = "19";
  comments[593] = "Id Pregunta: 593. Estrategia TIC";
+ preguntaids[593] = 593
 
 
 //  Id pregunta: 594 Año de creación de pregunta: 2016
@@ -7159,6 +7754,7 @@ var comments = new Array();
  answers[594] = choices[594][1];
  units[594] = "19";
  comments[594] = "Id Pregunta: 594. Estrategia TIC. Se indica en la l&iacute;nea de acci&oacute;n 6";
+ preguntaids[594] = 594
 
 
 //  Id pregunta: 595 Año de creación de pregunta: 2016
@@ -7171,6 +7767,7 @@ var comments = new Array();
  answers[595] = choices[595][0];
  units[595] = "19";
  comments[595] = "Id Pregunta: 595. Estrategia TIC";
+ preguntaids[595] = 595
 
 
 //  Id pregunta: 596 Año de creación de pregunta: 2016
@@ -7183,6 +7780,7 @@ var comments = new Array();
  answers[596] = choices[596][3];
  units[596] = "19";
  comments[596] = "Id Pregunta: 596. Estrategia TIC";
+ preguntaids[596] = 596
 
 
 //  Id pregunta: 597 Año de creación de pregunta: 2016
@@ -7195,6 +7793,7 @@ var comments = new Array();
  answers[597] = choices[597][1];
  units[597] = "19";
  comments[597] = "Id Pregunta: 597. Estrategia TIC";
+ preguntaids[597] = 597
 
 
 //  Id pregunta: 598 Año de creación de pregunta: 2016
@@ -7207,6 +7806,7 @@ var comments = new Array();
  answers[598] = choices[598][2];
  units[598] = "19";
  comments[598] = "Id Pregunta: 598. Estrategia TIC";
+ preguntaids[598] = 598
 
 
 //  Id pregunta: 599 Año de creación de pregunta: 2016
@@ -7219,6 +7819,7 @@ var comments = new Array();
  answers[599] = choices[599][0];
  units[599] = "45";
  comments[599] = "Id Pregunta: 599. Junta de Extremadura A1 2015";
+ preguntaids[599] = 599
 
 
 //  Id pregunta: 600 Año de creación de pregunta: 2016
@@ -7231,6 +7832,7 @@ var comments = new Array();
  answers[600] = choices[600][0];
  units[600] = "45";
  comments[600] = "Id Pregunta: 600. Junta de Extremadura A1 2015";
+ preguntaids[600] = 600
 
 
 //  Id pregunta: 601 Año de creación de pregunta: 2016
@@ -7243,6 +7845,7 @@ var comments = new Array();
  answers[601] = choices[601][2];
  units[601] = "45";
  comments[601] = "Id Pregunta: 601. Junta de Extremadura A1 2015";
+ preguntaids[601] = 601
 
 
 //  Id pregunta: 602 Año de creación de pregunta: 2016
@@ -7255,6 +7858,7 @@ var comments = new Array();
  answers[602] = choices[602][2];
  units[602] = "108";
  comments[602] = "Id Pregunta: 602. Junta de Extremadura A1 2015";
+ preguntaids[602] = 602
 
 
 //  Id pregunta: 603 Año de creación de pregunta: 2016
@@ -7267,6 +7871,7 @@ var comments = new Array();
  answers[603] = choices[603][3];
  units[603] = "76";
  comments[603] = "Id Pregunta: 603. Junta de Extremadura A1 2015";
+ preguntaids[603] = 603
 
 
 //  Id pregunta: 604 Año de creación de pregunta: 2016
@@ -7279,6 +7884,7 @@ var comments = new Array();
  answers[604] = choices[604][2];
  units[604] = "76";
  comments[604] = "Id Pregunta: 604. Junta de Extremadura A1 2015";
+ preguntaids[604] = 604
 
 
 //  Id pregunta: 605 Año de creación de pregunta: 2016
@@ -7291,6 +7897,7 @@ var comments = new Array();
  answers[605] = choices[605][3];
  units[605] = "101";
  comments[605] = "Id Pregunta: 605. Junta de Extremadura A1 2015";
+ preguntaids[605] = 605
 
 
 //  Id pregunta: 606 Año de creación de pregunta: 2016
@@ -7303,6 +7910,7 @@ var comments = new Array();
  answers[606] = choices[606][0];
  units[606] = "101";
  comments[606] = "Id Pregunta: 606. Junta de Extremadura A1 2015";
+ preguntaids[606] = 606
 
 
 //  Id pregunta: 607 Año de creación de pregunta: 2016
@@ -7315,6 +7923,7 @@ var comments = new Array();
  answers[607] = choices[607][2];
  units[607] = "101";
  comments[607] = "Id Pregunta: 607. Junta de Extremadura A1 2015";
+ preguntaids[607] = 607
 
 
 //  Id pregunta: 608 Año de creación de pregunta: 2016
@@ -7327,6 +7936,7 @@ var comments = new Array();
  answers[608] = choices[608][1];
  units[608] = "101";
  comments[608] = "Id Pregunta: 608. Junta de Extremadura A1 2015";
+ preguntaids[608] = 608
 
 
 //  Id pregunta: 609 Año de creación de pregunta: 2016
@@ -7339,6 +7949,7 @@ var comments = new Array();
  answers[609] = choices[609][0];
  units[609] = "45";
  comments[609] = "Id Pregunta: 609. Junta de Extremadura A1 2015";
+ preguntaids[609] = 609
 
 
 //  Id pregunta: 610 Año de creación de pregunta: 2016
@@ -7351,6 +7962,7 @@ var comments = new Array();
  answers[610] = choices[610][1];
  units[610] = "56";
  comments[610] = "Id Pregunta: 610. Junta de Extremadura A1 2015";
+ preguntaids[610] = 610
 
 
 //  Id pregunta: 611 Año de creación de pregunta: 2016
@@ -7363,6 +7975,7 @@ var comments = new Array();
  answers[611] = choices[611][3];
  units[611] = "56";
  comments[611] = "Id Pregunta: 611. Junta de Extremadura A1 2015";
+ preguntaids[611] = 611
 
 
 //  Id pregunta: 612 Año de creación de pregunta: 2016
@@ -7375,6 +7988,7 @@ var comments = new Array();
  answers[612] = choices[612][0];
  units[612] = "60";
  comments[612] = "Id Pregunta: 612. Junta de Extremadura A1 2015";
+ preguntaids[612] = 612
 
 
 //  Id pregunta: 613 Año de creación de pregunta: 2016
@@ -7387,6 +8001,7 @@ var comments = new Array();
  answers[613] = choices[613][1];
  units[613] = "63";
  comments[613] = "Id Pregunta: 613. Junta de Extremadura A1 2015";
+ preguntaids[613] = 613
 
 
 //  Id pregunta: 614 Año de creación de pregunta: 2016
@@ -7399,6 +8014,7 @@ var comments = new Array();
  answers[614] = choices[614][0];
  units[614] = "60";
  comments[614] = "Id Pregunta: 614. Junta de Extremadura A1 2015";
+ preguntaids[614] = 614
 
 
 //  Id pregunta: 615 Año de creación de pregunta: 2016
@@ -7411,6 +8027,7 @@ var comments = new Array();
  answers[615] = choices[615][1];
  units[615] = "48";
  comments[615] = "Id Pregunta: 615. Junta de Extremadura A1 2015";
+ preguntaids[615] = 615
 
 
 //  Id pregunta: 616 Año de creación de pregunta: 2016
@@ -7423,6 +8040,7 @@ var comments = new Array();
  answers[616] = choices[616][2];
  units[616] = "109";
  comments[616] = "Id Pregunta: 616. Junta de Extremadura A1 2015";
+ preguntaids[616] = 616
 
 
 //  Id pregunta: 617 Año de creación de pregunta: 2016
@@ -7435,6 +8053,7 @@ var comments = new Array();
  answers[617] = choices[617][0];
  units[617] = "109";
  comments[617] = "Id Pregunta: 617. Junta de Extremadura A1 2015";
+ preguntaids[617] = 617
 
 
 //  Id pregunta: 618 Año de creación de pregunta: 2016
@@ -7447,6 +8066,7 @@ var comments = new Array();
  answers[618] = choices[618][2];
  units[618] = "42";
  comments[618] = "Id Pregunta: 618. Junta de Extremadura A1 2015";
+ preguntaids[618] = 618
 
 
 //  Id pregunta: 619 Año de creación de pregunta: 2016
@@ -7459,6 +8079,7 @@ var comments = new Array();
  answers[619] = choices[619][0];
  units[619] = "84";
  comments[619] = "Id Pregunta: 619. Junta de Extremadura A1 2015";
+ preguntaids[619] = 619
 
 
 //  Id pregunta: 620 Año de creación de pregunta: 2016
@@ -7471,6 +8092,7 @@ var comments = new Array();
  answers[620] = choices[620][2];
  units[620] = "85";
  comments[620] = "Id Pregunta: 620. Junta de Extremadura A1 2015";
+ preguntaids[620] = 620
 
 
 //  Id pregunta: 621 Año de creación de pregunta: 2016
@@ -7483,6 +8105,7 @@ var comments = new Array();
  answers[621] = choices[621][1];
  units[621] = "89";
  comments[621] = "Id Pregunta: 621. Junta de Extremadura A1 2015";
+ preguntaids[621] = 621
 
 
 //  Id pregunta: 622 Año de creación de pregunta: 2016
@@ -7495,6 +8118,7 @@ var comments = new Array();
  answers[622] = choices[622][3];
  units[622] = "50";
  comments[622] = "Id Pregunta: 622. Junta de Extremadura A1 2015";
+ preguntaids[622] = 622
 
 
 //  Id pregunta: 623 Año de creación de pregunta: 2016
@@ -7507,6 +8131,7 @@ var comments = new Array();
  answers[623] = choices[623][0];
  units[623] = "89";
  comments[623] = "Id Pregunta: 623. Junta de Extremadura A1 2015";
+ preguntaids[623] = 623
 
 
 //  Id pregunta: 624 Año de creación de pregunta: 2016
@@ -7519,6 +8144,7 @@ var comments = new Array();
  answers[624] = choices[624][0];
  units[624] = "74";
  comments[624] = "Id Pregunta: 624. Junta de Extremadura A1 2015";
+ preguntaids[624] = 624
 
 
 //  Id pregunta: 625 Año de creación de pregunta: 2016
@@ -7531,6 +8157,7 @@ var comments = new Array();
  answers[625] = choices[625][0];
  units[625] = "65";
  comments[625] = "Id Pregunta: 625. Junta de Extremadura A1 2015";
+ preguntaids[625] = 625
 
 
 //  Id pregunta: 626 Año de creación de pregunta: 2016
@@ -7543,6 +8170,7 @@ var comments = new Array();
  answers[626] = choices[626][1];
  units[626] = "64";
  comments[626] = "Id Pregunta: 626. Junta de Extremadura A1 2015";
+ preguntaids[626] = 626
 
 
 //  Id pregunta: 627 Año de creación de pregunta: 2016
@@ -7555,6 +8183,7 @@ var comments = new Array();
  answers[627] = choices[627][2];
  units[627] = "89";
  comments[627] = "Id Pregunta: 627. Junta de Extremadura A1 2015";
+ preguntaids[627] = 627
 
 
 //  Id pregunta: 628 Año de creación de pregunta: 2016
@@ -7567,6 +8196,7 @@ var comments = new Array();
  answers[628] = choices[628][0];
  units[628] = "121";
  comments[628] = "Id Pregunta: 628. Junta de Extremadura A1 2015";
+ preguntaids[628] = 628
 
 
 //  Id pregunta: 629 Año de creación de pregunta: 2016
@@ -7579,6 +8209,7 @@ var comments = new Array();
  answers[629] = choices[629][0];
  units[629] = "46";
  comments[629] = "Id Pregunta: 629. Junta de Extremadura A1 2015";
+ preguntaids[629] = 629
 
 
 //  Id pregunta: 630 Año de creación de pregunta: 2016
@@ -7591,6 +8222,7 @@ var comments = new Array();
  answers[630] = choices[630][0];
  units[630] = "45";
  comments[630] = "Id Pregunta: 630. Junta de Extremadura A1 2015";
+ preguntaids[630] = 630
 
 
 //  Id pregunta: 631 Año de creación de pregunta: 2016
@@ -7603,6 +8235,7 @@ var comments = new Array();
  answers[631] = choices[631][3];
  units[631] = "35";
  comments[631] = "Id Pregunta: 631. Junta de Extremadura A1 2015";
+ preguntaids[631] = 631
 
 
 //  Id pregunta: 632 Año de creación de pregunta: 2016
@@ -7615,6 +8248,7 @@ var comments = new Array();
  answers[632] = choices[632][3];
  units[632] = "35";
  comments[632] = "Id Pregunta: 632. Junta de Extremadura A1 2015";
+ preguntaids[632] = 632
 
 
 //  Id pregunta: 633 Año de creación de pregunta: 2016
@@ -7627,6 +8261,7 @@ var comments = new Array();
  answers[633] = choices[633][2];
  units[633] = "50";
  comments[633] = "Id Pregunta: 633. Junta de Extremadura A1 2015";
+ preguntaids[633] = 633
 
 
 //  Id pregunta: 634 Año de creación de pregunta: 2016
@@ -7639,6 +8274,7 @@ var comments = new Array();
  answers[634] = choices[634][3];
  units[634] = "56";
  comments[634] = "Id Pregunta: 634. Junta de Extremadura A1 2015";
+ preguntaids[634] = 634
 
 
 //  Id pregunta: 635 Año de creación de pregunta: 2016
@@ -7651,6 +8287,7 @@ var comments = new Array();
  answers[635] = choices[635][3];
  units[635] = "56";
  comments[635] = "Id Pregunta: 635. Junta de Extremadura A1 2015";
+ preguntaids[635] = 635
 
 
 //  Id pregunta: 636 Año de creación de pregunta: 2016
@@ -7663,6 +8300,7 @@ var comments = new Array();
  answers[636] = choices[636][1];
  units[636] = "85";
  comments[636] = "Id Pregunta: 636. Junta de Extremadura A1 2015";
+ preguntaids[636] = 636
 
 
 //  Id pregunta: 637 Año de creación de pregunta: 2016
@@ -7675,6 +8313,7 @@ var comments = new Array();
  answers[637] = choices[637][3];
  units[637] = "60";
  comments[637] = "Id Pregunta: 637. Junta de Extremadura A1 2015";
+ preguntaids[637] = 637
 
 
 //  Id pregunta: 638 Año de creación de pregunta: 2016
@@ -7687,6 +8326,7 @@ var comments = new Array();
  answers[638] = choices[638][2];
  units[638] = "57";
  comments[638] = "Id Pregunta: 638. Junta de Extremadura A1 2015";
+ preguntaids[638] = 638
 
 
 //  Id pregunta: 639 Año de creación de pregunta: 2016
@@ -7699,6 +8339,7 @@ var comments = new Array();
  answers[639] = choices[639][0];
  units[639] = "57";
  comments[639] = "Id Pregunta: 639. Junta de Extremadura A1 2015";
+ preguntaids[639] = 639
 
 
 //  Id pregunta: 640 Año de creación de pregunta: 2016
@@ -7711,6 +8352,7 @@ var comments = new Array();
  answers[640] = choices[640][3];
  units[640] = "57";
  comments[640] = "Id Pregunta: 640. Junta de Extremadura A1 2015";
+ preguntaids[640] = 640
 
 
 //  Id pregunta: 641 Año de creación de pregunta: 2016
@@ -7723,6 +8365,7 @@ var comments = new Array();
  answers[641] = choices[641][2];
  units[641] = "57";
  comments[641] = "Id Pregunta: 641. Junta de Extremadura A1 2015";
+ preguntaids[641] = 641
 
 
 //  Id pregunta: 642 Año de creación de pregunta: 2016
@@ -7735,6 +8378,7 @@ var comments = new Array();
  answers[642] = choices[642][0];
  units[642] = "58";
  comments[642] = "Id Pregunta: 642. Junta de Extremadura A1 2015";
+ preguntaids[642] = 642
 
 
 //  Id pregunta: 643 Año de creación de pregunta: 2016
@@ -7747,6 +8391,7 @@ var comments = new Array();
  answers[643] = choices[643][1];
  units[643] = "58";
  comments[643] = "Id Pregunta: 643. Junta de Extremadura A1 2015";
+ preguntaids[643] = 643
 
 
 //  Id pregunta: 644 Año de creación de pregunta: 2016
@@ -7759,6 +8404,7 @@ var comments = new Array();
  answers[644] = choices[644][2];
  units[644] = "101";
  comments[644] = "Id Pregunta: 644. Junta de Extremadura A1 2015";
+ preguntaids[644] = 644
 
 
 //  Id pregunta: 645 Año de creación de pregunta: 2016
@@ -7771,6 +8417,7 @@ var comments = new Array();
  answers[645] = choices[645][2];
  units[645] = "85";
  comments[645] = "Id Pregunta: 645. Junta de Extremadura A1 2015";
+ preguntaids[645] = 645
 
 
 //  Id pregunta: 646 Año de creación de pregunta: 2016
@@ -7783,6 +8430,7 @@ var comments = new Array();
  answers[646] = choices[646][3];
  units[646] = "20";
  comments[646] = "Id Pregunta: 646. Junta de Extremadura A1 2015";
+ preguntaids[646] = 646
 
 
 //  Id pregunta: 647 Año de creación de pregunta: 2016
@@ -7795,6 +8443,7 @@ var comments = new Array();
  answers[647] = choices[647][3];
  units[647] = "14";
  comments[647] = "Id Pregunta: 647. Junta de Extremadura A1 2015";
+ preguntaids[647] = 647
 
 
 //  Id pregunta: 648 Año de creación de pregunta: 2016
@@ -7807,6 +8456,7 @@ var comments = new Array();
  answers[648] = choices[648][0];
  units[648] = "101";
  comments[648] = "Id Pregunta: 648. Junta de Extremadura A1 2015";
+ preguntaids[648] = 648
 
 
 //  Id pregunta: 649 Año de creación de pregunta: 2016
@@ -7819,6 +8469,7 @@ var comments = new Array();
  answers[649] = choices[649][0];
  units[649] = "101";
  comments[649] = "Id Pregunta: 649. Junta de Extremadura A1 2015";
+ preguntaids[649] = 649
 
 
 //  Id pregunta: 650 Año de creación de pregunta: 2016
@@ -7831,6 +8482,7 @@ var comments = new Array();
  answers[650] = choices[650][1];
  units[650] = "119";
  comments[650] = "Id Pregunta: 650. Junta de Extremadura A1 2015";
+ preguntaids[650] = 650
 
 
 //  Id pregunta: 651 Año de creación de pregunta: 2016
@@ -7843,6 +8495,7 @@ var comments = new Array();
  answers[651] = choices[651][0];
  units[651] = "60";
  comments[651] = "Id Pregunta: 651. Junta de Extremadura A1 2015";
+ preguntaids[651] = 651
 
 
 //  Id pregunta: 652 Año de creación de pregunta: 2016
@@ -7855,6 +8508,7 @@ var comments = new Array();
  answers[652] = choices[652][3];
  units[652] = "109";
  comments[652] = "Id Pregunta: 652. Junta de Extremadura A1 2015";
+ preguntaids[652] = 652
 
 
 //  Id pregunta: 653 Año de creación de pregunta: 2016
@@ -7867,6 +8521,7 @@ var comments = new Array();
  answers[653] = choices[653][3];
  units[653] = "120";
  comments[653] = "Id Pregunta: 653. Junta de Extremadura A1 2015";
+ preguntaids[653] = 653
 
 
 //  Id pregunta: 654 Año de creación de pregunta: 2016
@@ -7879,6 +8534,7 @@ var comments = new Array();
  answers[654] = choices[654][2];
  units[654] = "73";
  comments[654] = "Id Pregunta: 654. ";
+ preguntaids[654] = 654
 
 
 //  Id pregunta: 655 Año de creación de pregunta: 2016
@@ -7891,6 +8547,7 @@ var comments = new Array();
  answers[655] = choices[655][3];
  units[655] = "73";
  comments[655] = "Id Pregunta: 655. ";
+ preguntaids[655] = 655
 
 
 //  Id pregunta: 656 Año de creación de pregunta: 2016
@@ -7903,6 +8560,7 @@ var comments = new Array();
  answers[656] = choices[656][0];
  units[656] = "73";
  comments[656] = "Id Pregunta: 656. ";
+ preguntaids[656] = 656
 
 
 //  Id pregunta: 657 Año de creación de pregunta: 2016
@@ -7915,6 +8573,7 @@ var comments = new Array();
  answers[657] = choices[657][3];
  units[657] = "73";
  comments[657] = "Id Pregunta: 657. ";
+ preguntaids[657] = 657
 
 
 //  Id pregunta: 658 Año de creación de pregunta: 2016
@@ -7927,6 +8586,7 @@ var comments = new Array();
  answers[658] = choices[658][3];
  units[658] = "73";
  comments[658] = "Id Pregunta: 658. ";
+ preguntaids[658] = 658
 
 
 //  Id pregunta: 659 Año de creación de pregunta: 2016
@@ -7939,6 +8599,7 @@ var comments = new Array();
  answers[659] = choices[659][0];
  units[659] = "73";
  comments[659] = "Id Pregunta: 659. ";
+ preguntaids[659] = 659
 
 
 //  Id pregunta: 660 Año de creación de pregunta: 2016
@@ -7951,6 +8612,7 @@ var comments = new Array();
  answers[660] = choices[660][1];
  units[660] = "73";
  comments[660] = "Id Pregunta: 660. ";
+ preguntaids[660] = 660
 
 
 //  Id pregunta: 661 Año de creación de pregunta: 2016
@@ -7963,6 +8625,7 @@ var comments = new Array();
  answers[661] = choices[661][1];
  units[661] = "73";
  comments[661] = "Id Pregunta: 661. ";
+ preguntaids[661] = 661
 
 
 //  Id pregunta: 662 Año de creación de pregunta: 2016
@@ -7975,6 +8638,7 @@ var comments = new Array();
  answers[662] = choices[662][1];
  units[662] = "73";
  comments[662] = "Id Pregunta: 662. ";
+ preguntaids[662] = 662
 
 
 //  Id pregunta: 663 Año de creación de pregunta: 2016
@@ -7987,6 +8651,7 @@ var comments = new Array();
  answers[663] = choices[663][2];
  units[663] = "73";
  comments[663] = "Id Pregunta: 663. ";
+ preguntaids[663] = 663
 
 
 //  Id pregunta: 664 Año de creación de pregunta: 2016
@@ -7999,6 +8664,7 @@ var comments = new Array();
  answers[664] = choices[664][1];
  units[664] = "7";
  comments[664] = "Id Pregunta: 664. Art&iacute;culo 53 de la Ley 39/2015";
+ preguntaids[664] = 664
 
 
 //  Id pregunta: 665 Año de creación de pregunta: 2016
@@ -8011,6 +8677,7 @@ var comments = new Array();
  answers[665] = choices[665][2];
  units[665] = "7";
  comments[665] = "Id Pregunta: 665. Art&iacute;culo 54 de la Ley 39/2015";
+ preguntaids[665] = 665
 
 
 //  Id pregunta: 666 Año de creación de pregunta: 2016
@@ -8023,6 +8690,7 @@ var comments = new Array();
  answers[666] = choices[666][0];
  units[666] = "7";
  comments[666] = "Id Pregunta: 666. Art&iacute;culo 70 de la Ley 39/2015";
+ preguntaids[666] = 666
 
 
 //  Id pregunta: 667 Año de creación de pregunta: 2016
@@ -8035,6 +8703,7 @@ var comments = new Array();
  answers[667] = choices[667][2];
  units[667] = "7";
  comments[667] = "Id Pregunta: 667. Art&iacute;culo 70 de la Ley 39/2015";
+ preguntaids[667] = 667
 
 
 //  Id pregunta: 668 Año de creación de pregunta: 2016
@@ -8047,6 +8716,7 @@ var comments = new Array();
  answers[668] = choices[668][0];
  units[668] = "7";
  comments[668] = "Id Pregunta: 668. Art&iacute;culo 73 de la Ley 39/2015";
+ preguntaids[668] = 668
 
 
 //  Id pregunta: 669 Año de creación de pregunta: 2016
@@ -8059,6 +8729,7 @@ var comments = new Array();
  answers[669] = choices[669][2];
  units[669] = "7";
  comments[669] = "Id Pregunta: 669. Cap&iacute;tulo IV, T&iacute;tulo IV de la Ley 39/2015";
+ preguntaids[669] = 669
 
 
 //  Id pregunta: 670 Año de creación de pregunta: 2016
@@ -8071,6 +8742,7 @@ var comments = new Array();
  answers[670] = choices[670][3];
  units[670] = "7";
  comments[670] = "Id Pregunta: 670. Cap&iacute;tulo VI, T&iacute;tulo IV de la Ley 39/2015";
+ preguntaids[670] = 670
 
 
 //  Id pregunta: 671 Año de creación de pregunta: 2016
@@ -8083,6 +8755,7 @@ var comments = new Array();
  answers[671] = choices[671][3];
  units[671] = "7";
  comments[671] = "Id Pregunta: 671. Art&iacute;culo 84 de la Ley 39/2015";
+ preguntaids[671] = 671
 
 
 //  Id pregunta: 672 Año de creación de pregunta: 2016
@@ -8095,6 +8768,7 @@ var comments = new Array();
  answers[672] = choices[672][1];
  units[672] = "7";
  comments[672] = "Id Pregunta: 672. Cap&iacute;tulo VII, T&iacute;tulo IV de la Ley 39/2015";
+ preguntaids[672] = 672
 
 
 //  Id pregunta: 673 Año de creación de pregunta: 2016
@@ -8107,6 +8781,7 @@ var comments = new Array();
  answers[673] = choices[673][0];
  units[673] = "7";
  comments[673] = "Id Pregunta: 673. T&iacute;tulo IV de la Ley 39/2015";
+ preguntaids[673] = 673
 
 
 //  Id pregunta: 674 Año de creación de pregunta: 2016
@@ -8119,6 +8794,7 @@ var comments = new Array();
  answers[674] = choices[674][2];
  units[674] = "47";
  comments[674] = "Id Pregunta: 674. Historia Cl&iacute;nica Digital";
+ preguntaids[674] = 674
 
 
 //  Id pregunta: 675 Año de creación de pregunta: 2016
@@ -8131,6 +8807,7 @@ var comments = new Array();
  answers[675] = choices[675][0];
  units[675] = "14";
  comments[675] = "Id Pregunta: 675. Estructura social";
+ preguntaids[675] = 675
 
 
 //  Id pregunta: 676 Año de creación de pregunta: 2016
@@ -8143,6 +8820,7 @@ var comments = new Array();
  answers[676] = choices[676][3];
  units[676] = "47";
  comments[676] = "Id Pregunta: 676. Receta electr&oacute;nica";
+ preguntaids[676] = 676
 
 
 //  Id pregunta: 677 Año de creación de pregunta: 2016
@@ -8155,6 +8833,7 @@ var comments = new Array();
  answers[677] = choices[677][3];
  units[677] = "47";
  comments[677] = "Id Pregunta: 677. Inscripci&oacute;n autom&aacute;tica nacimientos";
+ preguntaids[677] = 677
 
 
 //  Id pregunta: 678 Año de creación de pregunta: 2016
@@ -8167,6 +8846,7 @@ var comments = new Array();
  answers[678] = choices[678][1];
  units[678] = "14";
  comments[678] = "Id Pregunta: 678. Dependencia";
+ preguntaids[678] = 678
 
 
 //  Id pregunta: 679 Año de creación de pregunta: 2016
@@ -8179,6 +8859,7 @@ var comments = new Array();
  answers[679] = choices[679][2];
  units[679] = "14";
  comments[679] = "Id Pregunta: 679. Dependencia";
+ preguntaids[679] = 679
 
 
 //  Id pregunta: 680 Año de creación de pregunta: 2016
@@ -8191,6 +8872,7 @@ var comments = new Array();
  answers[680] = choices[680][1];
  units[680] = "14";
  comments[680] = "Id Pregunta: 680. Dependencia";
+ preguntaids[680] = 680
 
 
 //  Id pregunta: 681 Año de creación de pregunta: 2016
@@ -8203,6 +8885,7 @@ var comments = new Array();
  answers[681] = choices[681][1];
  units[681] = "14";
  comments[681] = "Id Pregunta: 681. Pensiones";
+ preguntaids[681] = 681
 
 
 //  Id pregunta: 682 Año de creación de pregunta: 2016
@@ -8215,6 +8898,7 @@ var comments = new Array();
  answers[682] = choices[682][0];
  units[682] = "14";
  comments[682] = "Id Pregunta: 682. Pensiones";
+ preguntaids[682] = 682
 
 
 //  Id pregunta: 683 Año de creación de pregunta: 2016
@@ -8227,6 +8911,7 @@ var comments = new Array();
  answers[683] = choices[683][2];
  units[683] = "14";
  comments[683] = "Id Pregunta: 683. Pensiones";
+ preguntaids[683] = 683
 
 
 //  Id pregunta: 684 Año de creación de pregunta: 2016
@@ -8239,6 +8924,7 @@ var comments = new Array();
  answers[684] = choices[684][1];
  units[684] = "77";
  comments[684] = "Id Pregunta: 684. Art&iacute;culo 50 del Reglamento 910/2014";
+ preguntaids[684] = 684
 
 
 //  Id pregunta: 685 Año de creación de pregunta: 2016
@@ -8251,6 +8937,7 @@ var comments = new Array();
  answers[685] = choices[685][0];
  units[685] = "77";
  comments[685] = "Id Pregunta: 685. Art&iacute;culo 2 del Reglamento 910/2014";
+ preguntaids[685] = 685
 
 
 //  Id pregunta: 686 Año de creación de pregunta: 2016
@@ -8263,6 +8950,7 @@ var comments = new Array();
  answers[686] = choices[686][3];
  units[686] = "77";
  comments[686] = "Id Pregunta: 686. Art&iacute;culo 8 del Reglamento 910/2014";
+ preguntaids[686] = 686
 
 
 //  Id pregunta: 687 Año de creación de pregunta: 2016
@@ -8275,6 +8963,7 @@ var comments = new Array();
  answers[687] = choices[687][3];
  units[687] = "77";
  comments[687] = "Id Pregunta: 687. Art&iacute;culo 20 del Reglamento 910/2014";
+ preguntaids[687] = 687
 
 
 //  Id pregunta: 688 Año de creación de pregunta: 2016
@@ -8287,6 +8976,7 @@ var comments = new Array();
  answers[688] = choices[688][3];
  units[688] = "77";
  comments[688] = "Id Pregunta: 688. Art&iacute;culo 25 del Reglamento 910/2014";
+ preguntaids[688] = 688
 
 
 //  Id pregunta: 689 Año de creación de pregunta: 2016
@@ -8299,6 +8989,7 @@ var comments = new Array();
  answers[689] = choices[689][1];
  units[689] = "77";
  comments[689] = "Id Pregunta: 689. Art&iacute;culo 26 del Reglamento 910/2014";
+ preguntaids[689] = 689
 
 
 //  Id pregunta: 690 Año de creación de pregunta: 2016
@@ -8311,6 +9002,7 @@ var comments = new Array();
  answers[690] = choices[690][1];
  units[690] = "77";
  comments[690] = "Id Pregunta: 690. Art&iacute;culo 44 del Reglamento 910/2014";
+ preguntaids[690] = 690
 
 
 //  Id pregunta: 691 Año de creación de pregunta: 2016
@@ -8323,6 +9015,7 @@ var comments = new Array();
  answers[691] = choices[691][3];
  units[691] = "77";
  comments[691] = "Id Pregunta: 691. Art&iacute;culo 50 del Reglamento 910/2014";
+ preguntaids[691] = 691
 
 
 //  Id pregunta: 692 Año de creación de pregunta: 2016
@@ -8335,6 +9028,7 @@ var comments = new Array();
  answers[692] = choices[692][1];
  units[692] = "77";
  comments[692] = "Id Pregunta: 692. Art&iacute;culo 52 del Reglamento 910/2014";
+ preguntaids[692] = 692
 
 
 //  Id pregunta: 693 Año de creación de pregunta: 2016
@@ -8347,6 +9041,7 @@ var comments = new Array();
  answers[693] = choices[693][2];
  units[693] = "77";
  comments[693] = "Id Pregunta: 693. Anexo I del Reglamento 910/2014";
+ preguntaids[693] = 693
 
 
 //  Id pregunta: 694 Año de creación de pregunta: 2016
@@ -8359,6 +9054,7 @@ var comments = new Array();
  answers[694] = choices[694][1];
  units[694] = "77";
  comments[694] = "Id Pregunta: 694. http://www.minetad.gob.es/telecomunicaciones/es-ES/Servicios/FirmaElectronica/Documents/nota-web-certifs-pers-juridica.pdf";
+ preguntaids[694] = 694
 
 
 //  Id pregunta: 695 Año de creación de pregunta: 2016
@@ -8371,6 +9067,7 @@ var comments = new Array();
  answers[695] = choices[695][3];
  units[695] = "92";
  comments[695] = "Id Pregunta: 695. INTEGRACION CONTINUA";
+ preguntaids[695] = 695
 
 
 //  Id pregunta: 696 Año de creación de pregunta: 2016
@@ -8383,6 +9080,7 @@ var comments = new Array();
  answers[696] = choices[696][0];
  units[696] = "92";
  comments[696] = "Id Pregunta: 696. INTEGRACION CONTINUA";
+ preguntaids[696] = 696
 
 
 //  Id pregunta: 697 Año de creación de pregunta: 2016
@@ -8395,6 +9093,7 @@ var comments = new Array();
  answers[697] = choices[697][2];
  units[697] = "92";
  comments[697] = "Id Pregunta: 697. INTEGRACION CONTINUA";
+ preguntaids[697] = 697
 
 
 //  Id pregunta: 698 Año de creación de pregunta: 2016
@@ -8407,6 +9106,7 @@ var comments = new Array();
  answers[698] = choices[698][1];
  units[698] = "92";
  comments[698] = "Id Pregunta: 698. INTEGRACION CONTINUA";
+ preguntaids[698] = 698
 
 
 //  Id pregunta: 699 Año de creación de pregunta: 2016
@@ -8419,6 +9119,7 @@ var comments = new Array();
  answers[699] = choices[699][2];
  units[699] = "92";
  comments[699] = "Id Pregunta: 699. INTEGRACION CONTINUA";
+ preguntaids[699] = 699
 
 
 //  Id pregunta: 700 Año de creación de pregunta: 2016
@@ -8431,6 +9132,7 @@ var comments = new Array();
  answers[700] = choices[700][2];
  units[700] = "92";
  comments[700] = "Id Pregunta: 700. INTEGRACION CONTINUA";
+ preguntaids[700] = 700
 
 
 //  Id pregunta: 701 Año de creación de pregunta: 2016
@@ -8443,6 +9145,7 @@ var comments = new Array();
  answers[701] = choices[701][1];
  units[701] = "92";
  comments[701] = "Id Pregunta: 701. INTEGRACION CONTINUA";
+ preguntaids[701] = 701
 
 
 //  Id pregunta: 702 Año de creación de pregunta: 2016
@@ -8455,6 +9158,7 @@ var comments = new Array();
  answers[702] = choices[702][3];
  units[702] = "92";
  comments[702] = "Id Pregunta: 702. INTEGRACION CONTINUA";
+ preguntaids[702] = 702
 
 
 //  Id pregunta: 703 Año de creación de pregunta: 2016
@@ -8467,6 +9171,7 @@ var comments = new Array();
  answers[703] = choices[703][2];
  units[703] = "92";
  comments[703] = "Id Pregunta: 703. INTEGRACION CONTINUA";
+ preguntaids[703] = 703
 
 
 //  Id pregunta: 704 Año de creación de pregunta: 2016
@@ -8479,6 +9184,7 @@ var comments = new Array();
  answers[704] = choices[704][1];
  units[704] = "92";
  comments[704] = "Id Pregunta: 704. INTEGRACION CONTINUA";
+ preguntaids[704] = 704
 
 
 //  Id pregunta: 705 Año de creación de pregunta: 2016
@@ -8491,6 +9197,7 @@ var comments = new Array();
  answers[705] = choices[705][0];
  units[705] = "22";
  comments[705] = "Id Pregunta: 705. Ley de transparencia";
+ preguntaids[705] = 705
 
 
 //  Id pregunta: 706 Año de creación de pregunta: 2016
@@ -8503,6 +9210,7 @@ var comments = new Array();
  answers[706] = choices[706][2];
  units[706] = "22";
  comments[706] = "Id Pregunta: 706. Ley de transparencia";
+ preguntaids[706] = 706
 
 
 //  Id pregunta: 707 Año de creación de pregunta: 2016
@@ -8515,6 +9223,7 @@ var comments = new Array();
  answers[707] = choices[707][2];
  units[707] = "22";
  comments[707] = "Id Pregunta: 707. &Eacute;tica p&uacute;blica";
+ preguntaids[707] = 707
 
 
 //  Id pregunta: 708 Año de creación de pregunta: 2016
@@ -8527,6 +9236,7 @@ var comments = new Array();
  answers[708] = choices[708][2];
  units[708] = "22";
  comments[708] = "Id Pregunta: 708. Portal de Transparencia";
+ preguntaids[708] = 708
 
 
 //  Id pregunta: 709 Año de creación de pregunta: 2016
@@ -8539,6 +9249,7 @@ var comments = new Array();
  answers[709] = choices[709][3];
  units[709] = "22";
  comments[709] = "Id Pregunta: 709. Ley de transparencia";
+ preguntaids[709] = 709
 
 
 //  Id pregunta: 710 Año de creación de pregunta: 2016
@@ -8551,6 +9262,7 @@ var comments = new Array();
  answers[710] = choices[710][1];
  units[710] = "22";
  comments[710] = "Id Pregunta: 710. Ley de transparencia";
+ preguntaids[710] = 710
 
 
 //  Id pregunta: 711 Año de creación de pregunta: 2016
@@ -8563,6 +9275,7 @@ var comments = new Array();
  answers[711] = choices[711][0];
  units[711] = "22";
  comments[711] = "Id Pregunta: 711. &Eacute;tica P&uacute;blica y Transparencia";
+ preguntaids[711] = 711
 
 
 //  Id pregunta: 712 Año de creación de pregunta: 2016
@@ -8575,6 +9288,7 @@ var comments = new Array();
  answers[712] = choices[712][3];
  units[712] = "22";
  comments[712] = "Id Pregunta: 712. Ley de transparencia";
+ preguntaids[712] = 712
 
 
 //  Id pregunta: 713 Año de creación de pregunta: 2016
@@ -8587,6 +9301,7 @@ var comments = new Array();
  answers[713] = choices[713][1];
  units[713] = "22";
  comments[713] = "Id Pregunta: 713. Portal de Transparencia";
+ preguntaids[713] = 713
 
 
 //  Id pregunta: 714 Año de creación de pregunta: 2016
@@ -8599,6 +9314,7 @@ var comments = new Array();
  answers[714] = choices[714][3];
  units[714] = "22";
  comments[714] = "Id Pregunta: 714. Ley de transparencia";
+ preguntaids[714] = 714
 
 
 //  Id pregunta: 715 Año de creación de pregunta: 2016
@@ -8611,6 +9327,7 @@ var comments = new Array();
  answers[715] = choices[715][1];
  units[715] = "92";
  comments[715] = "Id Pregunta: 715. INTEGRACION CONTINUA";
+ preguntaids[715] = 715
 
 
 //  Id pregunta: 716 Año de creación de pregunta: 2016
@@ -8623,6 +9340,7 @@ var comments = new Array();
  answers[716] = choices[716][1];
  units[716] = "92";
  comments[716] = "Id Pregunta: 716. INTEGRACION CONTINUA";
+ preguntaids[716] = 716
 
 
 //  Id pregunta: 717 Año de creación de pregunta: 2016
@@ -8635,6 +9353,7 @@ var comments = new Array();
  answers[717] = choices[717][2];
  units[717] = "92";
  comments[717] = "Id Pregunta: 717. INTEGRACION CONTINUA";
+ preguntaids[717] = 717
 
 
 //  Id pregunta: 718 Año de creación de pregunta: 2016
@@ -8647,6 +9366,7 @@ var comments = new Array();
  answers[718] = choices[718][3];
  units[718] = "34";
  comments[718] = "Id Pregunta: 718. Metodologias Lean";
+ preguntaids[718] = 718
 
 
 //  Id pregunta: 719 Año de creación de pregunta: 2016
@@ -8659,6 +9379,7 @@ var comments = new Array();
  answers[719] = choices[719][2];
  units[719] = "34";
  comments[719] = "Id Pregunta: 719. Metodologias Lean";
+ preguntaids[719] = 719
 
 
 //  Id pregunta: 720 Año de creación de pregunta: 2016
@@ -8671,10 +9392,11 @@ var comments = new Array();
  answers[720] = choices[720][2];
  units[720] = "34";
  comments[720] = "Id Pregunta: 720. Metodologias Lean";
+ preguntaids[720] = 720
 
 
 //  Id pregunta: 721 Año de creación de pregunta: 2016
- questions[721]= "722)  &iquest;C&uacute;al de los siguientes puntos NO  es uno de los principios de las metodolog&iacute;as lean?";
+ questions[721]= "722)  &iquest;C&uacute;al de los siguientes puntos NO es uno de los principios de las metodolog&iacute;as lean?";
  choices[721]= new Array();
  choices[721][0] = "Flexibilidad para variar el servicio o producto";
  choices[721][1] = "Eliminar desperdicios";
@@ -8683,6 +9405,7 @@ var comments = new Array();
  answers[721] = choices[721][0];
  units[721] = "34";
  comments[721] = "Id Pregunta: 721. Metodologias Lean";
+ preguntaids[721] = 721
 
 
 //  Id pregunta: 722 Año de creación de pregunta: 2016
@@ -8695,18 +9418,20 @@ var comments = new Array();
  answers[722] = choices[722][2];
  units[722] = "34";
  comments[722] = "Id Pregunta: 722. Metodologias Lean";
+ preguntaids[722] = 722
 
 
 //  Id pregunta: 723 Año de creación de pregunta: 2016
  questions[723]= "724)  &iquest;C&uacute;al es la principal ventaja de sprints m&aacute;s cortos en Scrum?";
  choices[723]= new Array();
- choices[723][0] = "Permite reaccionar al equipo mejor ante imprevistos";
+ choices[723][0] = "Permite al equipo reaccionar mejor ante imprevistos";
  choices[723][1] = "Se obtiene feedback de los clientes con mayor brevedad";
  choices[723][2] = "Es m&aacute;s f&aacute;cil cumplir los objetivos marcados al final de cada sprint";
  choices[723][3] = "Ninguna de las anteriores";
  answers[723] = choices[723][1];
  units[723] = "34, 84";
  comments[723] = "Id Pregunta: 723. Metodologias &aacute;giles";
+ preguntaids[723] = 723
 
 
 //  Id pregunta: 724 Año de creación de pregunta: 2016
@@ -8719,6 +9444,7 @@ var comments = new Array();
  answers[724] = choices[724][3];
  units[724] = "34, 84";
  comments[724] = "Id Pregunta: 724. Metodologias &aacute;giles";
+ preguntaids[724] = 724
 
 
 //  Id pregunta: 725 Año de creación de pregunta: 2016
@@ -8731,54 +9457,59 @@ var comments = new Array();
  answers[725] = choices[725][3];
  units[725] = "34, 84";
  comments[725] = "Id Pregunta: 725. Metodologias &aacute;giles";
+ preguntaids[725] = 725
 
 
 //  Id pregunta: 726 Año de creación de pregunta: 2016
  questions[726]= "727)  &iquest;C&uacute;al es la afirmaci&oacute;n incorrecta?";
  choices[726]= new Array();
  choices[726][0] = "El sprint release es aquel que implementa las tareas necesarias para poner el sistema en producci&oacute;n";
- choices[726][1] = "El sprint rel&eacute;ase es el &uacute;ltimo sprint de la metodolog&iacute;a SCRUM.";
+ choices[726][1] = "El sprint release es el &uacute;ltimo sprint de la metodolog&iacute;a SCRUM";
  choices[726][2] = "En el sprint release se pueden llevan a cabo tareas relacionados con el despliegue y generaci&oacute;n de scripts de recuperaci&oacute;n del sistema";
- choices[726][3] = "En el sprint rel&eacute;ase se pueden llevar a cabo tareas relacionados con la documentaci&oacute;n, pruebas de carga, y tareas relacionadas con las bases de datos en producci&oacute;n.";
+ choices[726][3] = "En el sprint release se pueden llevar a cabo tareas relacionados con la documentaci&oacute;n, pruebas de carga, y tareas relacionadas con las bases de datos en producci&oacute;n.";
  answers[726] = choices[726][1];
  units[726] = "34, 84";
  comments[726] = "Id Pregunta: 726. Metodologias &aacute;giles";
+ preguntaids[726] = 726
 
 
 //  Id pregunta: 727 Año de creación de pregunta: 2016
  questions[727]= "728)  Sobre el Scrum Team, cual es la afirmaci&oacute;n falsa";
  choices[727]= new Array();
  choices[727][0] = "Cada miembro del equipo tiene que tener un rol especifico y no puede asumir tareas que no est&eacute;n dentro de su &aacute;rea de especializaci&oacute;n.";
- choices[727][1] = "Los miembros del equipo deben tener un perfil en &lsquo;T&rsquo;";
+ choices[727][1] = "Los miembros del equipo deben tener un perfil en &lsquo;T&rsquo; (manejo en una serie amplia de &aacute;reas, con conocimientos en profundidad en unas pocas)";
  choices[727][2] = "Cada miembro del equipo tiene que tener un conocimiento m&aacute;s amplio de un &aacute;rea";
- choices[727][3] = "Cada miembro del equipo puede asumir cualquier tipo de tarea.";
+ choices[727][3] = "Cada miembro del equipo puede asumir cualquier tipo de tarea";
  answers[727] = choices[727][0];
  units[727] = "34, 84";
  comments[727] = "Id Pregunta: 727. Metodologias &aacute;giles";
+ preguntaids[727] = 727
 
 
 //  Id pregunta: 728 Año de creación de pregunta: 2016
- questions[728]= "729)  &iquest; Cu&aacute;l es el n&uacute;mero de personas recomendados para cada team de Scrum?";
+ questions[728]= "729)  &iquest;Cu&aacute;l es el n&uacute;mero de personas generalmete recomendados para cada equipo de Scrum?";
  choices[728]= new Array();
- choices[728][0] = "De 1a  4 ";
+ choices[728][0] = "De 1 a  4 ";
  choices[728][1] = "De 3 a  7 ";
  choices[728][2] = "De 5 a  9";
  choices[728][3] = "De 7 a 11";
  answers[728] = choices[728][2];
  units[728] = "34, 84";
  comments[728] = "Id Pregunta: 728. Metodologias &aacute;giles";
+ preguntaids[728] = 728
 
 
 //  Id pregunta: 729 Año de creación de pregunta: 2016
  questions[729]= "730)  &iquest;C&uacute;al es el nombre de la reuni&oacute;n de SCRUM, donde se revisan los product backlog &iacute;tems?:";
  choices[729]= new Array();
  choices[729][0] = "Backlog refinement";
- choices[729][1] = "Backlog refinement";
- choices[729][2] = "A y b son correctas";
+ choices[729][1] = "Backlog grooming";
+ choices[729][2] = "a y b son correctas";
  choices[729][3] = "Ninguna de las anteriores";
  answers[729] = choices[729][2];
  units[729] = "34, 84";
  comments[729] = "Id Pregunta: 729. Metodologias &aacute;giles";
+ preguntaids[729] = 729
 
 
 //  Id pregunta: 730 Año de creación de pregunta: 2016
@@ -8791,6 +9522,7 @@ var comments = new Array();
  answers[730] = choices[730][0];
  units[730] = "34, 84";
  comments[730] = "Id Pregunta: 730. Metodologias &aacute;giles";
+ preguntaids[730] = 730
 
 
 //  Id pregunta: 731 Año de creación de pregunta: 2016
@@ -8803,10 +9535,11 @@ var comments = new Array();
  answers[731] = choices[731][1];
  units[731] = "34, 84";
  comments[731] = "Id Pregunta: 731. Metodologias &aacute;giles";
+ preguntaids[731] = 731
 
 
 //  Id pregunta: 732 Año de creación de pregunta: 2016
- questions[732]= "733)  Cu&aacute;l de las siguientes caracter&iacute;sticas es especifican de Kanban:";
+ questions[732]= "733)  &iquest;Cu&aacute;l de las siguientes caracter&iacute;sticas es especifican de Kanban?:";
  choices[732]= new Array();
  choices[732][0] = "Se definen iteraciones";
  choices[732][1] = "Se limitan las tareas que se pueden realizar por fase";
@@ -8815,18 +9548,20 @@ var comments = new Array();
  answers[732] = choices[732][1];
  units[732] = "34, 84";
  comments[732] = "Id Pregunta: 732. Metodologias &aacute;giles";
+ preguntaids[732] = 732
 
 
 //  Id pregunta: 733 Año de creación de pregunta: 2016
- questions[733]= "734)  Cu&aacute;l de las siguientes reglas se corresponde a las reglas de la metodolog&iacute;a Kanban:";
+ questions[733]= "734)  &iquest;Cu&aacute;l de las siguientes reglas se corresponde a las reglas de la metodolog&iacute;a Kanban?:";
  choices[733]= new Array();
- choices[733][0] = "Visualizar el trabajo o el flujo de trabajo. ";
+ choices[733][0] = "Visualizar el trabajo o el flujo de trabajo";
  choices[733][1] = "Determinar el l&iacute;mite de trabajo en curso (Work in progress)";
  choices[733][2] = "Medir el tiempo en completar una tarea (Lead time)";
  choices[733][3] = "Todas las anteriores son reglas correspondientes a la metodolog&iacute;a Kanban.";
  answers[733] = choices[733][3];
  units[733] = "34, 84";
  comments[733] = "Id Pregunta: 733. Metodologias &aacute;giles";
+ preguntaids[733] = 733
 
 
 //  Id pregunta: 734 Año de creación de pregunta: 2016
@@ -8839,6 +9574,7 @@ var comments = new Array();
  answers[734] = choices[734][1];
  units[734] = "28";
  comments[734] = "Id Pregunta: 734. Estrategia TIC";
+ preguntaids[734] = 734
 
 
 //  Id pregunta: 735 Año de creación de pregunta: 2016
@@ -8851,6 +9587,7 @@ var comments = new Array();
  answers[735] = choices[735][3];
  units[735] = "28";
  comments[735] = "Id Pregunta: 735. Estrategia TIC";
+ preguntaids[735] = 735
 
 
 //  Id pregunta: 736 Año de creación de pregunta: 2016
@@ -8863,30 +9600,33 @@ var comments = new Array();
  answers[736] = choices[736][2];
  units[736] = "28";
  comments[736] = "Id Pregunta: 736. Estrategia TIC";
+ preguntaids[736] = 736
 
 
 //  Id pregunta: 737 Año de creación de pregunta: 2016
  questions[737]= "738)  Son principios rectores del Plan de Transformaci&oacute;n Digital de la AGE y sus OOPP:";
  choices[737]= new Array();
- choices[737][0] = "Tranparencia, innovaci&oacute;n, Unidad y visi&oacute;n integral y Orientaci&oacute;n al usuario del servicio";
+ choices[737][0] = "Tranparencia, Innovaci&oacute;n, Unidad y visi&oacute;n integral y Orientaci&oacute;n al usuario del servicio";
  choices[737][1] = "Tranparencia, Colaboraci&oacute;n y alianzas, Orientaci&oacute;n al usuario del servicio y Reutilizaci&oacute;n";
  choices[737][2] = "Reutilizaci&oacute;n, Seguridad, Orientaci&oacute;n al usuario del servicio y Transparencia";
  choices[737][3] = "Ninguna de las anteriores";
  answers[737] = choices[737][0];
  units[737] = "28";
  comments[737] = "Id Pregunta: 737. Estrategia TIC";
+ preguntaids[737] = 737
 
 
 //  Id pregunta: 738 Año de creación de pregunta: 2016
- questions[738]= "739)  Las iniciativas que se lancen al amparo del Plan de Acci&oacute;n de la Administraci&oacute;n Electr&oacute;nica de la UE se ce&ntilde;ir&aacute;n a:";
+ questions[738]= "739)  Las iniciativas que se lancen al amparo del Plan de Acci&oacute;n de la Administraci&oacute;n Electr&oacute;nica de la UE se basar&aacute;n en:";
  choices[738]= new Array();
  choices[738][0] = "6 principios.";
  choices[738][1] = "7 principios.";
  choices[738][2] = "5 principios.";
  choices[738][3] = "6 directrices.";
- answers[738] = choices[738][1];
+ answers[738] = choices[738][2];
  units[738] = "28";
  comments[738] = "Id Pregunta: 738. Estrategia TIC";
+ preguntaids[738] = 738
 
 
 //  Id pregunta: 739 Año de creación de pregunta: 2016
@@ -8899,18 +9639,20 @@ var comments = new Array();
  answers[739] = choices[739][3];
  units[739] = "28";
  comments[739] = "Id Pregunta: 739. Estrategia TIC";
+ preguntaids[739] = 739
 
 
 //  Id pregunta: 740 Año de creación de pregunta: 2016
- questions[740]= "741)  LA estructura de la Estrategia TIC:";
+ questions[740]= "741)  La estructura de la Estrategia TIC:";
  choices[740]= new Array();
- choices[740][0] = "5 principios rectores, 7 principios estrat&eacute;gicos, 9 l&iacute;neas de acci&oacute;n";
- choices[740][1] = "5 principios rectores, 5 principios estrat&eacute;gicos, 7 l&iacute;neas de acci&oacute;n";
- choices[740][2] = "5 principios rectores, 5 principios estrat&eacute;gicos, 9 l&iacute;neas de acci&oacute;n";
- choices[740][3] = "5 principios rectores, 6 principios estrat&eacute;gicos, 8 l&iacute;neas de acci&oacute;n";
+ choices[740][0] = "5 principios rectores, 7 objetivos estrat&eacute;gicos, 9 l&iacute;neas de acci&oacute;n";
+ choices[740][1] = "5 principios rectores, 5 objetivos estrat&eacute;gicos, 7 l&iacute;neas de acci&oacute;n";
+ choices[740][2] = "5 principios rectores, 5 objetivos estrat&eacute;gicos, 9 l&iacute;neas de acci&oacute;n";
+ choices[740][3] = "5 principios rectores, 6 objetivos estrat&eacute;gicos, 8 l&iacute;neas de acci&oacute;n";
  answers[740] = choices[740][2];
  units[740] = "28";
  comments[740] = "Id Pregunta: 740. Estrategia TIC";
+ preguntaids[740] = 740
 
 
 //  Id pregunta: 741 Año de creación de pregunta: 2016
@@ -8923,6 +9665,7 @@ var comments = new Array();
  answers[741] = choices[741][0];
  units[741] = "28";
  comments[741] = "Id Pregunta: 741. Estrategia TIC";
+ preguntaids[741] = 741
 
 
 //  Id pregunta: 742 Año de creación de pregunta: 2016
@@ -8935,6 +9678,7 @@ var comments = new Array();
  answers[742] = choices[742][1];
  units[742] = "28";
  comments[742] = "Id Pregunta: 742. Estrategia TIC";
+ preguntaids[742] = 742
 
 
 //  Id pregunta: 743 Año de creación de pregunta: 2016
@@ -8947,6 +9691,7 @@ var comments = new Array();
  answers[743] = choices[743][3];
  units[743] = "28";
  comments[743] = "Id Pregunta: 743. Estrategia TIC";
+ preguntaids[743] = 743
 
 
 //  Id pregunta: 744 Año de creación de pregunta: 2016
@@ -8957,8 +9702,9 @@ var comments = new Array();
  choices[744][2] = "Aquellas personas, independientemente de su condici&oacute;n de persona f&iacute;sica o jur&iacute;dica, que van a desarrollar o est&aacute;n desarrollando una actividad econ&oacute;mica productiva.";
  choices[744][3] = "Ninguna de las anteriores";
  answers[744] = choices[744][2];
- units[744] = "18, 20";
+ units[744] = "23";
  comments[744] = "Id Pregunta: 744. Direcci&oacute;n p&uacute;blica";
+ preguntaids[744] = 744
 
 
 //  Id pregunta: 745 Año de creación de pregunta: 2016
@@ -8969,8 +9715,9 @@ var comments = new Array();
  choices[745][2] = "Sociedad de Responsabilidad Limitada y Emprendedor de responsabilidad Limitada";
  choices[745][3] = "Sociedad de Formaci&oacute;n sucesiva y emprendedor de responsabilidad limitada";
  answers[745] = choices[745][1];
- units[745] = "18, 20";
+ units[745] = "23";
  comments[745] = "Id Pregunta: 745. Direcci&oacute;n p&uacute;blica";
+ preguntaids[745] = 745
 
 
 //  Id pregunta: 746 Año de creación de pregunta: 2016
@@ -8981,8 +9728,9 @@ var comments = new Array();
  choices[746][2] = "Colaboraci&oacute;n";
  choices[746][3] = "Todos los anteriores son principios de la Ley de Garant&iacute;a de la Unidad de Mercado";
  answers[746] = choices[746][2];
- units[746] = "18, 20";
+ units[746] = "23";
  comments[746] = "Id Pregunta: 746. Direcci&oacute;n p&uacute;blica";
+ preguntaids[746] = 746
 
 
 //  Id pregunta: 747 Año de creación de pregunta: 2016
@@ -8993,8 +9741,9 @@ var comments = new Array();
  choices[747][2] = "Programa para la mejora continua de las organizaciones.";
  choices[747][3] = "Programa de evaluaci&oacute;n de la calidad de las organizaciones.";
  answers[747] = choices[747][2];
- units[747] = "18, 20";
+ units[747] = "19";
  comments[747] = "Id Pregunta: 747. Direcci&oacute;n p&uacute;blica";
+ preguntaids[747] = 747
 
 
 //  Id pregunta: 748 Año de creación de pregunta: 2016
@@ -9005,8 +9754,9 @@ var comments = new Array();
  choices[748][2] = "La fabricaci&oacute;n de bienes y la prestaci&oacute;n de servicios que incorporen tecnolog&iacute;a espec&iacute;ficamente desarrollada con el prop&oacute;sito de aportar soluciones m&aacute;s avanzadas y econ&oacute;micamente m&aacute;s ventajosas que las existentes en el mercado.";
  choices[748][3] = "Todas las anteriores pueden ser objeto de ese tipo de contratos.";
  answers[748] = choices[748][1];
- units[748] = "18, 20";
+ units[748] = "10";
  comments[748] = "Id Pregunta: 748. Direcci&oacute;n p&uacute;blica";
+ preguntaids[748] = 748
 
 
 //  Id pregunta: 749 Año de creación de pregunta: 2016
@@ -9017,8 +9767,9 @@ var comments = new Array();
  choices[749][2] = "Responsabilidad por la gesti&oacute;n p&uacute;blica.";
  choices[749][3] = "Servicio efectivo a los ciudadanos";
  answers[749] = choices[749][1];
- units[749] = "18, 20";
+ units[749] = "18";
  comments[749] = "Id Pregunta: 749. Direcci&oacute;n p&uacute;blica";
+ preguntaids[749] = 749
 
 
 //  Id pregunta: 750 Año de creación de pregunta: 2016
@@ -9029,8 +9780,9 @@ var comments = new Array();
  choices[750][2] = "La competencia t&eacute;cnica y la meritocracia";
  choices[750][3] = "a) y c) son rasgos fundamentales del sistema burocr&aacute;tico";
  answers[750] = choices[750][3];
- units[750] = "18, 20";
+ units[750] = "20";
  comments[750] = "Id Pregunta: 750. Direcci&oacute;n p&uacute;blica";
+ preguntaids[750] = 750
 
 
 //  Id pregunta: 751 Año de creación de pregunta: 2016
@@ -9041,8 +9793,9 @@ var comments = new Array();
  choices[751][2] = "Manuel Castells";
  choices[751][3] = "Gaebler";
  answers[751] = choices[751][1];
- units[751] = "18, 20";
+ units[751] = "20";
  comments[751] = "Id Pregunta: 751. Direcci&oacute;n p&uacute;blica";
+ preguntaids[751] = 751
 
 
 //  Id pregunta: 752 Año de creación de pregunta: 2016
@@ -9053,8 +9806,9 @@ var comments = new Array();
  choices[752][2] = "Es un rasgo de la Nueva Gesti&oacute;n P&uacute;blica la terciarizaci&oacute;n de las actividades auxiliares o de apoyo, que pasan a ser licitadas competitivamente en el mercado.";
  choices[752][3] = "Una de las desventajas del modelo de la gobernanza es las redes pueden obstaculizar los cambios e innovaciones pol&iacute;ticos al dar un peso excesivo a los diversos intereses implicados.";
  answers[752] = choices[752][1];
- units[752] = "18, 20";
+ units[752] = "20";
  comments[752] = "Id Pregunta: 752. Direcci&oacute;n p&uacute;blica";
+ preguntaids[752] = 752
 
 
 //  Id pregunta: 753 Año de creación de pregunta: 2016
@@ -9065,8 +9819,9 @@ var comments = new Array();
  choices[753][2] = "b) y d) son verdaderas";
  choices[753][3] = "Cuando as&iacute; se disponga reglamentariamente";
  answers[753] = choices[753][1];
- units[753] = "18, 20";
+ units[753] = "23";
  comments[753] = "Id Pregunta: 753. Direcci&oacute;n p&uacute;blica";
+ preguntaids[753] = 753
 
 
 //  Id pregunta: 754 Año de creación de pregunta: 2016
@@ -9079,6 +9834,7 @@ var comments = new Array();
  answers[754] = choices[754][0];
  units[754] = "19";
  comments[754] = "Id Pregunta: 754. Agenda Digital para Espa&ntilde;a";
+ preguntaids[754] = 754
 
 
 //  Id pregunta: 755 Año de creación de pregunta: 2016
@@ -9091,6 +9847,7 @@ var comments = new Array();
  answers[755] = choices[755][2];
  units[755] = "19";
  comments[755] = "Id Pregunta: 755. Agenda Digital para Espa&ntilde;a";
+ preguntaids[755] = 755
 
 
 //  Id pregunta: 756 Año de creación de pregunta: 2016
@@ -9103,6 +9860,7 @@ var comments = new Array();
  answers[756] = choices[756][3];
  units[756] = "19";
  comments[756] = "Id Pregunta: 756. Agenda Digital para Espa&ntilde;a";
+ preguntaids[756] = 756
 
 
 //  Id pregunta: 757 Año de creación de pregunta: 2016
@@ -9115,6 +9873,7 @@ var comments = new Array();
  answers[757] = choices[757][1];
  units[757] = "19";
  comments[757] = "Id Pregunta: 757. Agenda Digital para Espa&ntilde;a";
+ preguntaids[757] = 757
 
 
 //  Id pregunta: 758 Año de creación de pregunta: 2016
@@ -9127,6 +9886,7 @@ var comments = new Array();
  answers[758] = choices[758][1];
  units[758] = "19";
  comments[758] = "Id Pregunta: 758. Agenda Digital Europea";
+ preguntaids[758] = 758
 
 
 //  Id pregunta: 759 Año de creación de pregunta: 2016
@@ -9139,6 +9899,7 @@ var comments = new Array();
  answers[759] = choices[759][2];
  units[759] = "19";
  comments[759] = "Id Pregunta: 759. Europa 2020";
+ preguntaids[759] = 759
 
 
 //  Id pregunta: 760 Año de creación de pregunta: 2016
@@ -9151,6 +9912,7 @@ var comments = new Array();
  answers[760] = choices[760][3];
  units[760] = "19";
  comments[760] = "Id Pregunta: 760. Europa 2020";
+ preguntaids[760] = 760
 
 
 //  Id pregunta: 761 Año de creación de pregunta: 2016
@@ -9163,6 +9925,7 @@ var comments = new Array();
  answers[761] = choices[761][0];
  units[761] = "17";
  comments[761] = "Id Pregunta: 761. Mercado &Uacute;nico Digital";
+ preguntaids[761] = 761
 
 
 //  Id pregunta: 762 Año de creación de pregunta: 2016
@@ -9175,6 +9938,7 @@ var comments = new Array();
  answers[762] = choices[762][0];
  units[762] = "17";
  comments[762] = "Id Pregunta: 762. Mercado &Uacute;nico Digital";
+ preguntaids[762] = 762
 
 
 //  Id pregunta: 763 Año de creación de pregunta: 2016
@@ -9187,6 +9951,7 @@ var comments = new Array();
  answers[763] = choices[763][2];
  units[763] = "17";
  comments[763] = "Id Pregunta: 763. Mercado &Uacute;nico Digital";
+ preguntaids[763] = 763
 
 
 //  Id pregunta: 764 Año de creación de pregunta: 2016
@@ -9199,6 +9964,7 @@ var comments = new Array();
  answers[764] = choices[764][2];
  units[764] = "4, 7, 8, 9";
  comments[764] = "Id Pregunta: 764. Ley 40/2015";
+ preguntaids[764] = 764
 
 
 //  Id pregunta: 765 Año de creación de pregunta: 2016
@@ -9211,6 +9977,7 @@ var comments = new Array();
  answers[765] = choices[765][3];
  units[765] = "4, 7, 8, 9";
  comments[765] = "Id Pregunta: 765. Ley 40/2015";
+ preguntaids[765] = 765
 
 
 //  Id pregunta: 766 Año de creación de pregunta: 2016
@@ -9223,6 +9990,7 @@ var comments = new Array();
  answers[766] = choices[766][3];
  units[766] = "4, 7, 8, 9";
  comments[766] = "Id Pregunta: 766. Ley 40/2015";
+ preguntaids[766] = 766
 
 
 //  Id pregunta: 767 Año de creación de pregunta: 2016
@@ -9235,6 +10003,7 @@ var comments = new Array();
  answers[767] = choices[767][2];
  units[767] = "4, 7, 8, 9";
  comments[767] = "Id Pregunta: 767. Ley 40/2015";
+ preguntaids[767] = 767
 
 
 //  Id pregunta: 768 Año de creación de pregunta: 2016
@@ -9247,6 +10016,7 @@ var comments = new Array();
  answers[768] = choices[768][1];
  units[768] = "4, 7, 8, 9";
  comments[768] = "Id Pregunta: 768. Ley 40/2015";
+ preguntaids[768] = 768
 
 
 //  Id pregunta: 769 Año de creación de pregunta: 2016
@@ -9259,6 +10029,7 @@ var comments = new Array();
  answers[769] = choices[769][3];
  units[769] = "4, 7, 8, 9";
  comments[769] = "Id Pregunta: 769. Ley 40/2015";
+ preguntaids[769] = 769
 
 
 //  Id pregunta: 770 Año de creación de pregunta: 2016
@@ -9271,6 +10042,7 @@ var comments = new Array();
  answers[770] = choices[770][2];
  units[770] = "4, 7, 8, 9";
  comments[770] = "Id Pregunta: 770. Ley 40/2015";
+ preguntaids[770] = 770
 
 
 //  Id pregunta: 771 Año de creación de pregunta: 2016
@@ -9283,6 +10055,7 @@ var comments = new Array();
  answers[771] = choices[771][3];
  units[771] = "4, 7, 8, 9";
  comments[771] = "Id Pregunta: 771. Ley 40/2015";
+ preguntaids[771] = 771
 
 
 //  Id pregunta: 772 Año de creación de pregunta: 2016
@@ -9295,6 +10068,7 @@ var comments = new Array();
  answers[772] = choices[772][1];
  units[772] = "4, 7, 8, 9";
  comments[772] = "Id Pregunta: 772. Ley 40/2015";
+ preguntaids[772] = 772
 
 
 //  Id pregunta: 773 Año de creación de pregunta: 2016
@@ -9307,6 +10081,7 @@ var comments = new Array();
  answers[773] = choices[773][3];
  units[773] = "4, 7, 8, 9";
  comments[773] = "Id Pregunta: 773. Ley 40/2015";
+ preguntaids[773] = 773
 
 
 //  Id pregunta: 774 Año de creación de pregunta: 2016
@@ -9319,6 +10094,7 @@ var comments = new Array();
  answers[774] = choices[774][1];
  units[774] = "4, 7, 8, 9";
  comments[774] = "Id Pregunta: 774. Ley 40/2015";
+ preguntaids[774] = 774
 
 
 //  Id pregunta: 775 Año de creación de pregunta: 2016
@@ -9331,6 +10107,7 @@ var comments = new Array();
  answers[775] = choices[775][2];
  units[775] = "4, 7, 8, 9";
  comments[775] = "Id Pregunta: 775. Ley 40/2015";
+ preguntaids[775] = 775
 
 
 //  Id pregunta: 776 Año de creación de pregunta: 2016
@@ -9343,6 +10120,7 @@ var comments = new Array();
  answers[776] = choices[776][0];
  units[776] = "4, 7, 8, 9";
  comments[776] = "Id Pregunta: 776. Ley 40/2015";
+ preguntaids[776] = 776
 
 
 //  Id pregunta: 777 Año de creación de pregunta: 2016
@@ -9355,6 +10133,7 @@ var comments = new Array();
  answers[777] = choices[777][3];
  units[777] = "4, 7, 8, 9";
  comments[777] = "Id Pregunta: 777. Ley 40/2015";
+ preguntaids[777] = 777
 
 
 //  Id pregunta: 778 Año de creación de pregunta: 2016
@@ -9367,6 +10146,7 @@ var comments = new Array();
  answers[778] = choices[778][1];
  units[778] = "4, 7, 8, 9";
  comments[778] = "Id Pregunta: 778. Ley 40/2015";
+ preguntaids[778] = 778
 
 
 //  Id pregunta: 779 Año de creación de pregunta: 2016
@@ -9379,6 +10159,7 @@ var comments = new Array();
  answers[779] = choices[779][0];
  units[779] = "4, 7, 8, 9";
  comments[779] = "Id Pregunta: 779. Ley 40/2015";
+ preguntaids[779] = 779
 
 
 //  Id pregunta: 780 Año de creación de pregunta: 2016
@@ -9391,6 +10172,7 @@ var comments = new Array();
  answers[780] = choices[780][2];
  units[780] = "4, 7, 8, 9";
  comments[780] = "Id Pregunta: 780. Ley 40/2015";
+ preguntaids[780] = 780
 
 
 //  Id pregunta: 781 Año de creación de pregunta: 2016
@@ -9403,6 +10185,7 @@ var comments = new Array();
  answers[781] = choices[781][3];
  units[781] = "4, 7, 8, 9";
  comments[781] = "Id Pregunta: 781. Ley 40/2015";
+ preguntaids[781] = 781
 
 
 //  Id pregunta: 782 Año de creación de pregunta: 2016
@@ -9415,6 +10198,7 @@ var comments = new Array();
  answers[782] = choices[782][0];
  units[782] = "4, 7, 8, 9";
  comments[782] = "Id Pregunta: 782. Ley 40/2015";
+ preguntaids[782] = 782
 
 
 //  Id pregunta: 783 Año de creación de pregunta: 2016
@@ -9427,6 +10211,7 @@ var comments = new Array();
  answers[783] = choices[783][2];
  units[783] = "4, 7, 8, 9";
  comments[783] = "Id Pregunta: 783. Ley 40/2015";
+ preguntaids[783] = 783
 
 
 //  Id pregunta: 784 Año de creación de pregunta: 2016
@@ -9439,6 +10224,7 @@ var comments = new Array();
  answers[784] = choices[784][2];
  units[784] = "4, 7, 8, 9";
  comments[784] = "Id Pregunta: 784. Ley 40/2015";
+ preguntaids[784] = 784
 
 
 //  Id pregunta: 785 Año de creación de pregunta: 2016
@@ -9451,6 +10237,7 @@ var comments = new Array();
  answers[785] = choices[785][0];
  units[785] = "4, 7, 8, 9";
  comments[785] = "Id Pregunta: 785. Ley 40/2015";
+ preguntaids[785] = 785
 
 
 //  Id pregunta: 786 Año de creación de pregunta: 2016
@@ -9463,6 +10250,7 @@ var comments = new Array();
  answers[786] = choices[786][0];
  units[786] = "4, 7, 8, 9";
  comments[786] = "Id Pregunta: 786. Ley 40/2015";
+ preguntaids[786] = 786
 
 
 //  Id pregunta: 787 Año de creación de pregunta: 2016
@@ -9475,6 +10263,7 @@ var comments = new Array();
  answers[787] = choices[787][2];
  units[787] = "4, 7, 8, 9";
  comments[787] = "Id Pregunta: 787. Ley 40/2015";
+ preguntaids[787] = 787
 
 
 //  Id pregunta: 788 Año de creación de pregunta: 2016
@@ -9487,6 +10276,7 @@ var comments = new Array();
  answers[788] = choices[788][3];
  units[788] = "4, 7, 8, 9";
  comments[788] = "Id Pregunta: 788. Ley 40/2015";
+ preguntaids[788] = 788
 
 
 //  Id pregunta: 789 Año de creación de pregunta: 2016
@@ -9499,6 +10289,7 @@ var comments = new Array();
  answers[789] = choices[789][2];
  units[789] = "4, 7, 8, 9";
  comments[789] = "Id Pregunta: 789. Ley 40/2015";
+ preguntaids[789] = 789
 
 
 //  Id pregunta: 790 Año de creación de pregunta: 2016
@@ -9511,6 +10302,7 @@ var comments = new Array();
  answers[790] = choices[790][3];
  units[790] = "4, 7, 8, 9";
  comments[790] = "Id Pregunta: 790. Ley 40/2015";
+ preguntaids[790] = 790
 
 
 //  Id pregunta: 791 Año de creación de pregunta: 2016
@@ -9523,6 +10315,7 @@ var comments = new Array();
  answers[791] = choices[791][0];
  units[791] = "4, 7, 8, 9";
  comments[791] = "Id Pregunta: 791. Ley 40/2015";
+ preguntaids[791] = 791
 
 
 //  Id pregunta: 792 Año de creación de pregunta: 2016
@@ -9535,6 +10328,7 @@ var comments = new Array();
  answers[792] = choices[792][1];
  units[792] = "4, 7, 8, 9";
  comments[792] = "Id Pregunta: 792. Ley 40/2015";
+ preguntaids[792] = 792
 
 
 //  Id pregunta: 793 Año de creación de pregunta: 2016
@@ -9547,6 +10341,7 @@ var comments = new Array();
  answers[793] = choices[793][2];
  units[793] = "4, 7, 8, 9";
  comments[793] = "Id Pregunta: 793. Ley 40/2015";
+ preguntaids[793] = 793
 
 
 //  Id pregunta: 794 Año de creación de pregunta: 2016
@@ -9559,6 +10354,7 @@ var comments = new Array();
  answers[794] = choices[794][2];
  units[794] = "4, 7, 8, 9";
  comments[794] = "Id Pregunta: 794. Ley 40/2015";
+ preguntaids[794] = 794
 
 
 //  Id pregunta: 795 Año de creación de pregunta: 2016
@@ -9571,6 +10367,7 @@ var comments = new Array();
  answers[795] = choices[795][2];
  units[795] = "4, 7, 8, 9";
  comments[795] = "Id Pregunta: 795. Ley 40/2015";
+ preguntaids[795] = 795
 
 
 //  Id pregunta: 796 Año de creación de pregunta: 2016
@@ -9583,6 +10380,7 @@ var comments = new Array();
  answers[796] = choices[796][1];
  units[796] = "4, 7, 8, 9";
  comments[796] = "Id Pregunta: 796. Ley 40/2015";
+ preguntaids[796] = 796
 
 
 //  Id pregunta: 797 Año de creación de pregunta: 2016
@@ -9595,6 +10393,7 @@ var comments = new Array();
  answers[797] = choices[797][0];
  units[797] = "4, 7, 8, 9";
  comments[797] = "Id Pregunta: 797. Ley 40/2015";
+ preguntaids[797] = 797
 
 
 //  Id pregunta: 798 Año de creación de pregunta: 2016
@@ -9607,6 +10406,7 @@ var comments = new Array();
  answers[798] = choices[798][2];
  units[798] = "4, 7, 8, 9";
  comments[798] = "Id Pregunta: 798. Ley 40/2015";
+ preguntaids[798] = 798
 
 
 //  Id pregunta: 799 Año de creación de pregunta: 2016
@@ -9619,6 +10419,7 @@ var comments = new Array();
  answers[799] = choices[799][2];
  units[799] = "4, 7, 8, 9";
  comments[799] = "Id Pregunta: 799. Ley 40/2015";
+ preguntaids[799] = 799
 
 
 //  Id pregunta: 800 Año de creación de pregunta: 2016
@@ -9631,6 +10432,7 @@ var comments = new Array();
  answers[800] = choices[800][0];
  units[800] = "4, 7, 8, 9";
  comments[800] = "Id Pregunta: 800. Ley 40/2015";
+ preguntaids[800] = 800
 
 
 //  Id pregunta: 801 Año de creación de pregunta: 2016
@@ -9643,6 +10445,7 @@ var comments = new Array();
  answers[801] = choices[801][1];
  units[801] = "4, 7, 8, 9";
  comments[801] = "Id Pregunta: 801. Ley 40/2015";
+ preguntaids[801] = 801
 
 
 //  Id pregunta: 802 Año de creación de pregunta: 2016
@@ -9655,6 +10458,7 @@ var comments = new Array();
  answers[802] = choices[802][1];
  units[802] = "4, 7, 8, 9";
  comments[802] = "Id Pregunta: 802. Ley 40/2015";
+ preguntaids[802] = 802
 
 
 //  Id pregunta: 803 Año de creación de pregunta: 2016
@@ -9667,6 +10471,7 @@ var comments = new Array();
  answers[803] = choices[803][3];
  units[803] = "4, 7, 8, 9";
  comments[803] = "Id Pregunta: 803. Ley 40/2015";
+ preguntaids[803] = 803
 
 
 //  Id pregunta: 804 Año de creación de pregunta: 2016
@@ -9679,6 +10484,7 @@ var comments = new Array();
  answers[804] = choices[804][3];
  units[804] = "4, 7, 8, 9";
  comments[804] = "Id Pregunta: 804. Ley 40/2015";
+ preguntaids[804] = 804
 
 
 //  Id pregunta: 805 Año de creación de pregunta: 2016
@@ -9691,6 +10497,7 @@ var comments = new Array();
  answers[805] = choices[805][0];
  units[805] = "4, 7, 8, 9";
  comments[805] = "Id Pregunta: 805. Ley 40/2015";
+ preguntaids[805] = 805
 
 
 //  Id pregunta: 806 Año de creación de pregunta: 2016
@@ -9703,6 +10510,7 @@ var comments = new Array();
  answers[806] = choices[806][0];
  units[806] = "4, 7, 8, 9";
  comments[806] = "Id Pregunta: 806. Ley 40/2015";
+ preguntaids[806] = 806
 
 
 //  Id pregunta: 807 Año de creación de pregunta: 2016
@@ -9715,6 +10523,7 @@ var comments = new Array();
  answers[807] = choices[807][1];
  units[807] = "4, 7, 8, 9";
  comments[807] = "Id Pregunta: 807. Ley 40/2015";
+ preguntaids[807] = 807
 
 
 //  Id pregunta: 808 Año de creación de pregunta: 2016
@@ -9727,6 +10536,7 @@ var comments = new Array();
  answers[808] = choices[808][1];
  units[808] = "4, 7, 8, 9";
  comments[808] = "Id Pregunta: 808. Ley 40/2015";
+ preguntaids[808] = 808
 
 
 //  Id pregunta: 809 Año de creación de pregunta: 2016
@@ -9739,6 +10549,7 @@ var comments = new Array();
  answers[809] = choices[809][0];
  units[809] = "4, 7, 8, 9";
  comments[809] = "Id Pregunta: 809. Ley 40/2015";
+ preguntaids[809] = 809
 
 
 //  Id pregunta: 810 Año de creación de pregunta: 2016
@@ -9751,6 +10562,7 @@ var comments = new Array();
  answers[810] = choices[810][2];
  units[810] = "4, 7, 8, 9";
  comments[810] = "Id Pregunta: 810. Ley 40/2015";
+ preguntaids[810] = 810
 
 
 //  Id pregunta: 811 Año de creación de pregunta: 2016
@@ -9763,6 +10575,7 @@ var comments = new Array();
  answers[811] = choices[811][1];
  units[811] = "4, 7, 8, 9";
  comments[811] = "Id Pregunta: 811. Ley 40/2015";
+ preguntaids[811] = 811
 
 
 //  Id pregunta: 812 Año de creación de pregunta: 2016
@@ -9775,6 +10588,7 @@ var comments = new Array();
  answers[812] = choices[812][1];
  units[812] = "4, 7, 8, 9";
  comments[812] = "Id Pregunta: 812. Ley 40/2015";
+ preguntaids[812] = 812
 
 
 //  Id pregunta: 813 Año de creación de pregunta: 2016
@@ -9787,6 +10601,7 @@ var comments = new Array();
  answers[813] = choices[813][2];
  units[813] = "4, 7, 8, 9";
  comments[813] = "Id Pregunta: 813. Ley 40/2015";
+ preguntaids[813] = 813
 
 
 //  Id pregunta: 814 Año de creación de pregunta: 2016
@@ -9799,6 +10614,7 @@ var comments = new Array();
  answers[814] = choices[814][0];
  units[814] = "4, 7, 8, 9";
  comments[814] = "Id Pregunta: 814. Ley 40/2015";
+ preguntaids[814] = 814
 
 
 //  Id pregunta: 815 Año de creación de pregunta: 2016
@@ -9811,6 +10627,7 @@ var comments = new Array();
  answers[815] = choices[815][1];
  units[815] = "4, 7, 8, 9";
  comments[815] = "Id Pregunta: 815. Ley 40/2015";
+ preguntaids[815] = 815
 
 
 //  Id pregunta: 816 Año de creación de pregunta: 2016
@@ -9823,6 +10640,7 @@ var comments = new Array();
  answers[816] = choices[816][3];
  units[816] = "4, 7, 8, 9";
  comments[816] = "Id Pregunta: 816. Ley 40/2015";
+ preguntaids[816] = 816
 
 
 //  Id pregunta: 817 Año de creación de pregunta: 2016
@@ -9835,6 +10653,7 @@ var comments = new Array();
  answers[817] = choices[817][1];
  units[817] = "4, 7, 8, 9";
  comments[817] = "Id Pregunta: 817. Ley 40/2015";
+ preguntaids[817] = 817
 
 
 //  Id pregunta: 818 Año de creación de pregunta: 2016
@@ -9847,6 +10666,7 @@ var comments = new Array();
  answers[818] = choices[818][0];
  units[818] = "4, 7, 8, 9";
  comments[818] = "Id Pregunta: 818. Ley 40/2015";
+ preguntaids[818] = 818
 
 
 //  Id pregunta: 819 Año de creación de pregunta: 2016
@@ -9859,6 +10679,7 @@ var comments = new Array();
  answers[819] = choices[819][2];
  units[819] = "4, 7, 8, 9";
  comments[819] = "Id Pregunta: 819. Ley 40/2015";
+ preguntaids[819] = 819
 
 
 //  Id pregunta: 820 Año de creación de pregunta: 2016
@@ -9871,6 +10692,7 @@ var comments = new Array();
  answers[820] = choices[820][0];
  units[820] = "4, 7, 8, 9";
  comments[820] = "Id Pregunta: 820. Ley 40/2015";
+ preguntaids[820] = 820
 
 
 //  Id pregunta: 821 Año de creación de pregunta: 2016
@@ -9883,6 +10705,7 @@ var comments = new Array();
  answers[821] = choices[821][2];
  units[821] = "4, 7, 8, 9";
  comments[821] = "Id Pregunta: 821. Ley 40/2015";
+ preguntaids[821] = 821
 
 
 //  Id pregunta: 822 Año de creación de pregunta: 2016
@@ -9895,6 +10718,7 @@ var comments = new Array();
  answers[822] = choices[822][0];
  units[822] = "4, 7, 8, 9";
  comments[822] = "Id Pregunta: 822. Ley 40/2015";
+ preguntaids[822] = 822
 
 
 //  Id pregunta: 823 Año de creación de pregunta: 2016
@@ -9907,6 +10731,7 @@ var comments = new Array();
  answers[823] = choices[823][0];
  units[823] = "4, 7, 8, 9";
  comments[823] = "Id Pregunta: 823. Ley 40/2015";
+ preguntaids[823] = 823
 
 
 //  Id pregunta: 824 Año de creación de pregunta: 2016
@@ -9919,6 +10744,7 @@ var comments = new Array();
  answers[824] = choices[824][2];
  units[824] = "4, 7, 8, 9";
  comments[824] = "Id Pregunta: 824. Ley 40/2015";
+ preguntaids[824] = 824
 
 
 //  Id pregunta: 825 Año de creación de pregunta: 2016
@@ -9931,6 +10757,7 @@ var comments = new Array();
  answers[825] = choices[825][1];
  units[825] = "4, 7, 8, 9";
  comments[825] = "Id Pregunta: 825. Ley 40/2015";
+ preguntaids[825] = 825
 
 
 //  Id pregunta: 826 Año de creación de pregunta: 2016
@@ -9943,6 +10770,7 @@ var comments = new Array();
  answers[826] = choices[826][1];
  units[826] = "4, 7, 8, 9";
  comments[826] = "Id Pregunta: 826. Ley 40/2015";
+ preguntaids[826] = 826
 
 
 //  Id pregunta: 827 Año de creación de pregunta: 2016
@@ -9955,6 +10783,7 @@ var comments = new Array();
  answers[827] = choices[827][1];
  units[827] = "4, 7, 8, 9";
  comments[827] = "Id Pregunta: 827. Ley 40/2015";
+ preguntaids[827] = 827
 
 
 //  Id pregunta: 828 Año de creación de pregunta: 2016
@@ -9967,6 +10796,7 @@ var comments = new Array();
  answers[828] = choices[828][0];
  units[828] = "4, 7, 8, 9";
  comments[828] = "Id Pregunta: 828. Ley 40/2015";
+ preguntaids[828] = 828
 
 
 //  Id pregunta: 829 Año de creación de pregunta: 2016
@@ -9979,6 +10809,7 @@ var comments = new Array();
  answers[829] = choices[829][0];
  units[829] = "4, 7, 8, 9";
  comments[829] = "Id Pregunta: 829. Ley 40/2015";
+ preguntaids[829] = 829
 
 
 //  Id pregunta: 830 Año de creación de pregunta: 2016
@@ -9991,6 +10822,7 @@ var comments = new Array();
  answers[830] = choices[830][0];
  units[830] = "4, 7, 8, 9";
  comments[830] = "Id Pregunta: 830. Ley 40/2015";
+ preguntaids[830] = 830
 
 
 //  Id pregunta: 831 Año de creación de pregunta: 2016
@@ -10003,6 +10835,7 @@ var comments = new Array();
  answers[831] = choices[831][3];
  units[831] = "4, 7, 8, 9";
  comments[831] = "Id Pregunta: 831. Ley 40/2015";
+ preguntaids[831] = 831
 
 
 //  Id pregunta: 832 Año de creación de pregunta: 2016
@@ -10015,6 +10848,7 @@ var comments = new Array();
  answers[832] = choices[832][3];
  units[832] = "4, 7, 8, 9";
  comments[832] = "Id Pregunta: 832. Ley 40/2015";
+ preguntaids[832] = 832
 
 
 //  Id pregunta: 833 Año de creación de pregunta: 2016
@@ -10027,6 +10861,7 @@ var comments = new Array();
  answers[833] = choices[833][0];
  units[833] = "4, 7, 8, 9";
  comments[833] = "Id Pregunta: 833. Ley 40/2015";
+ preguntaids[833] = 833
 
 
 //  Id pregunta: 834 Año de creación de pregunta: 2016
@@ -10039,6 +10874,7 @@ var comments = new Array();
  answers[834] = choices[834][3];
  units[834] = "4, 7, 8, 9";
  comments[834] = "Id Pregunta: 834. Ley 40/2015";
+ preguntaids[834] = 834
 
 
 //  Id pregunta: 835 Año de creación de pregunta: 2016
@@ -10051,6 +10887,7 @@ var comments = new Array();
  answers[835] = choices[835][0];
  units[835] = "4, 7, 8, 9";
  comments[835] = "Id Pregunta: 835. Ley 40/2015";
+ preguntaids[835] = 835
 
 
 //  Id pregunta: 836 Año de creación de pregunta: 2016
@@ -10063,6 +10900,7 @@ var comments = new Array();
  answers[836] = choices[836][3];
  units[836] = "4, 7, 8, 9";
  comments[836] = "Id Pregunta: 836. Ley 40/2015";
+ preguntaids[836] = 836
 
 
 //  Id pregunta: 837 Año de creación de pregunta: 2016
@@ -10075,6 +10913,7 @@ var comments = new Array();
  answers[837] = choices[837][2];
  units[837] = "4, 7, 8, 9";
  comments[837] = "Id Pregunta: 837. Ley 40/2015";
+ preguntaids[837] = 837
 
 
 //  Id pregunta: 838 Año de creación de pregunta: 2016
@@ -10087,6 +10926,7 @@ var comments = new Array();
  answers[838] = choices[838][1];
  units[838] = "4, 7, 8, 9";
  comments[838] = "Id Pregunta: 838. Ley 40/2015";
+ preguntaids[838] = 838
 
 
 //  Id pregunta: 839 Año de creación de pregunta: 2016
@@ -10099,6 +10939,7 @@ var comments = new Array();
  answers[839] = choices[839][3];
  units[839] = "4, 7, 8, 9";
  comments[839] = "Id Pregunta: 839. Ley 40/2015";
+ preguntaids[839] = 839
 
 
 //  Id pregunta: 840 Año de creación de pregunta: 2016
@@ -10111,6 +10952,7 @@ var comments = new Array();
  answers[840] = choices[840][1];
  units[840] = "4, 7, 8, 9";
  comments[840] = "Id Pregunta: 840. Ley 40/2015";
+ preguntaids[840] = 840
 
 
 //  Id pregunta: 841 Año de creación de pregunta: 2016
@@ -10123,6 +10965,7 @@ var comments = new Array();
  answers[841] = choices[841][0];
  units[841] = "4, 7, 8, 9";
  comments[841] = "Id Pregunta: 841. Ley 40/2015";
+ preguntaids[841] = 841
 
 
 //  Id pregunta: 842 Año de creación de pregunta: 2016
@@ -10135,6 +10978,7 @@ var comments = new Array();
  answers[842] = choices[842][1];
  units[842] = "4, 7, 8, 9";
  comments[842] = "Id Pregunta: 842. Ley 40/2015";
+ preguntaids[842] = 842
 
 
 //  Id pregunta: 843 Año de creación de pregunta: 2016
@@ -10147,6 +10991,7 @@ var comments = new Array();
  answers[843] = choices[843][2];
  units[843] = "4, 7, 8, 9";
  comments[843] = "Id Pregunta: 843. Ley 40/2015";
+ preguntaids[843] = 843
 
 
 //  Id pregunta: 844 Año de creación de pregunta: 2016
@@ -10159,6 +11004,7 @@ var comments = new Array();
  answers[844] = choices[844][2];
  units[844] = "4, 7, 8, 9";
  comments[844] = "Id Pregunta: 844. Ley 40/2015";
+ preguntaids[844] = 844
 
 
 //  Id pregunta: 845 Año de creación de pregunta: 2016
@@ -10171,6 +11017,7 @@ var comments = new Array();
  answers[845] = choices[845][1];
  units[845] = "4, 7, 8, 9";
  comments[845] = "Id Pregunta: 845. Ley 40/2015";
+ preguntaids[845] = 845
 
 
 //  Id pregunta: 846 Año de creación de pregunta: 2016
@@ -10183,6 +11030,7 @@ var comments = new Array();
  answers[846] = choices[846][0];
  units[846] = "4, 7, 8, 9";
  comments[846] = "Id Pregunta: 846. Ley 40/2015";
+ preguntaids[846] = 846
 
 
 //  Id pregunta: 847 Año de creación de pregunta: 2016
@@ -10195,6 +11043,7 @@ var comments = new Array();
  answers[847] = choices[847][2];
  units[847] = "4, 7, 8, 9";
  comments[847] = "Id Pregunta: 847. Ley 40/2015";
+ preguntaids[847] = 847
 
 
 //  Id pregunta: 848 Año de creación de pregunta: 2016
@@ -10207,6 +11056,7 @@ var comments = new Array();
  answers[848] = choices[848][2];
  units[848] = "4, 7, 8, 9";
  comments[848] = "Id Pregunta: 848. Ley 40/2015";
+ preguntaids[848] = 848
 
 
 //  Id pregunta: 849 Año de creación de pregunta: 2016
@@ -10219,6 +11069,7 @@ var comments = new Array();
  answers[849] = choices[849][0];
  units[849] = "4, 7, 8, 9";
  comments[849] = "Id Pregunta: 849. Ley 40/2015";
+ preguntaids[849] = 849
 
 
 //  Id pregunta: 850 Año de creación de pregunta: 2016
@@ -10231,6 +11082,7 @@ var comments = new Array();
  answers[850] = choices[850][0];
  units[850] = "45";
  comments[850] = "Id Pregunta: 850. Xunta de Galicia 2015";
+ preguntaids[850] = 850
 
 
 //  Id pregunta: 851 Año de creación de pregunta: 2016
@@ -10243,6 +11095,7 @@ var comments = new Array();
  answers[851] = choices[851][3];
  units[851] = "53";
  comments[851] = "Id Pregunta: 851. Xunta de Galicia 2015";
+ preguntaids[851] = 851
 
 
 //  Id pregunta: 852 Año de creación de pregunta: 2016
@@ -10255,6 +11108,7 @@ var comments = new Array();
  answers[852] = choices[852][3];
  units[852] = "53";
  comments[852] = "Id Pregunta: 852. Xunta de Galicia 2015";
+ preguntaids[852] = 852
 
 
 //  Id pregunta: 853 Año de creación de pregunta: 2016
@@ -10267,6 +11121,7 @@ var comments = new Array();
  answers[853] = choices[853][3];
  units[853] = "53";
  comments[853] = "Id Pregunta: 853. Xunta de Galicia 2015";
+ preguntaids[853] = 853
 
 
 //  Id pregunta: 854 Año de creación de pregunta: 2016
@@ -10279,6 +11134,7 @@ var comments = new Array();
  answers[854] = choices[854][1];
  units[854] = "53";
  comments[854] = "Id Pregunta: 854. Xunta de Galicia 2015";
+ preguntaids[854] = 854
 
 
 //  Id pregunta: 855 Año de creación de pregunta: 2016
@@ -10291,5 +11147,136 @@ var comments = new Array();
  answers[855] = choices[855][0];
  units[855] = "76";
  comments[855] = "Id Pregunta: 855. Xunta de Galicia 2015";
+ preguntaids[855] = 855
+
+
+//  Id pregunta: 856 Año de creación de pregunta: 2016
+ questions[856]= "857)  Respecto a la Gu&iacute;a de Comunicaci&oacute;n Digital para la Administraci&oacute;n General del Estado, se&ntilde;ale la respuesta falsa:";
+ choices[856]= new Array();
+ choices[856][0] = "Proporciona un marco de criterios, recomendaciones y buenas pr&aacute;cticas a tener en cuenta por sus Departamentos y organismos al crear, generar contenidos o evolucionar los sitios y portales web, las sedes electr&oacute;nicas o los sitios relacionados con las nuevas tecnolog&iacute;as web2.0.";
+ choices[856][1] = "Se aprob&oacute; mediante la  Resoluci&oacute;n de 21 de marzo de 2013, de la Secretar&iacute;a de Estado de Administraciones P&uacute;blicas.";
+ choices[856][2] = "La Gu&iacute;a de Comunicaci&oacute;n Digital se divide en cuatro partes y cada una de ellas consta de una serie de fasc&iacute;culos que pueden ser utilizados de forma independiente de acuerdo con las necesidades de cada departamento, organismo, unidad promotora o responsable de un sitio web.";
+ choices[856][3] = "La Gu&iacute;a de Comunicaci&oacute;n Digital para la Administraci&oacute;n General del Estado puede ser utilizada libremente y no requiere autorizaci&oacute;n previa.";
+ answers[856] = choices[856][2];
+ units[856] = "125";
+ comments[856] = "Id Pregunta: 856. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[856] = 856
+
+
+//  Id pregunta: 857 Año de creación de pregunta: 2016
+ questions[857]= "858)  Sobre el multiling&uuml;ismo en los sitios web p&uacute;blicos, se&ntilde;ale la respuesta falsa:";
+ choices[857]= new Array();
+ choices[857][0] = "Los responsables de contenidos y responsables t&eacute;cnicos de portales de cualquier organismo de la Administraci&oacute;n General del Estado deben tener en cuenta que Espa&ntilde;a es un pa&iacute;s multiling&uuml;e y que deben velar para que el idioma no constituya una barrera al acceso a los contenidos de las webs p&uacute;blicas.";
+ choices[857][1] = "Cada Comunidad Aut&oacute;noma debe encargarse de la traducci&oacute;n de los contenidos de sus p&aacute;ginas web para facilitar y acercar los servicios prestados por la Administraci&oacute;n a los ciudadanos y empresas.";
+ choices[857][2] = "Como criterio general, todos los contenidos de los portales ser&aacute;n accesibles, adem&aacute;s de en castellano, lengua espa&ntilde;ola oficial del Estado, en las siguientes lenguas idiomas cooficiales de las respectivas Comunidades Aut&oacute;nomas de Espa&ntilde;a: catal&aacute;n, euskera, gallego y valenciano.";
+ choices[857][3] = "Para facilitar la traducci&oacute;n a las lenguas cooficiales y al ingl&eacute;s, se est&aacute; preparando una Plataforma de traducci&oacute;n autom&aacute;tica com&uacute;n de la AGE: PLATA que estar&aacute; disponible con gran calidad al catal&aacute;n, gallego y con necesidad de revisi&oacute;n asistida en el caso del euskera y el ingl&eacute;s.";
+ answers[857] = choices[857][1];
+ units[857] = "125";
+ comments[857] = "Id Pregunta: 857. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[857] = 857
+
+
+//  Id pregunta: 858 Año de creación de pregunta: 2016
+ questions[858]= "859)  Respecto de la imagen institucional de los sitios web p&uacute;blicos:";
+ choices[858]= new Array();
+ choices[858][0] = "La utilizaci&oacute;n de s&iacute;mbolos de imagen o logotipos propios ser&aacute; comunicada al Ministerio de Energ&iacute;a, Turismo y Agenda Digital  para facilitar el cumplimiento de la prohibici&oacute;n legal de registrar signos que los reproduzcan o imiten.";
+ choices[858][1] = "Los s&iacute;mbolos y logotipos propios podr&aacute;n ser registrados como marca en el caso de que vayan a ser utilizados en el tr&aacute;fico econ&oacute;mico.";
+ choices[858][2] = "Los documentos anexos alojados en p&aacute;ginas webs, que puedan ser susceptibles de ser considerados material de papeler&iacute;a, utilizar&aacute;n el logotipo propio.";
+ choices[858][3] = "De acuerdo con el Real Decreto 1565/1999, con car&aacute;cter excepcional, y siempre que se acrediten razones debidamente justificadas, el Ministro de Hacienda y Funci&oacute;n P&uacute;blica y el titular del correspondiente Ministerio de adscripci&oacute;n, vinculaci&oacute;n o dependencia podr&aacute;n autorizar la utilizaci&oacute;n por determinados &oacute;rganos, Organismos aut&oacute;nomos y Servicios Comunes o Entidades Gestoras de la Seguridad Social de s&iacute;mbolos de imagen o logotipos propios junto a los s&iacute;mbolos establecidos.";
+ answers[858] = choices[858][1];
+ units[858] = "125";
+ comments[858] = "Id Pregunta: 858. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[858] = 858
+
+
+//  Id pregunta: 859 Año de creación de pregunta: 2016
+ questions[859]= "860)  &iquest;Cu&aacute;ntos fasc&iacute;culos tiene la gu&iacute;a de comunicaci&oacute;n digital para la Administraci&oacute;n General del Estado?";
+ choices[859]= new Array();
+ choices[859][0] = "12";
+ choices[859][1] = "11";
+ choices[859][2] = "13";
+ choices[859][3] = "10";
+ answers[859] = choices[859][0];
+ units[859] = "125";
+ comments[859] = "Id Pregunta: 859. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[859] = 859
+
+
+//  Id pregunta: 860 Año de creación de pregunta: 2016
+ questions[860]= "861)  &iquest;Cu&aacute;l NO es un objetivo de la utilizaci&oacute;n por parte de la Administraci&oacute;n de la web 2.0?";
+ choices[860]= new Array();
+ choices[860][0] = "Permitir la generaci&oacute;n de comentarios acerca de la informaci&oacute;n ofrecida y recibir actualizaciones en vivo por parte de los usuarios.";
+ choices[860][1] = "Promover una mayor interacci&oacute;n con las principales redes sociales.";
+ choices[860][2] = "Conseguir un conocimiento abierto, en particular mediante blogs y wikis.";
+ choices[860][3] = "Conseguir que el usuario se sienta escuchado.";
+ answers[860] = choices[860][1];
+ units[860] = "125";
+ comments[860] = "Id Pregunta: 860. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[860] = 860
+
+
+//  Id pregunta: 861 Año de creación de pregunta: 2016
+ questions[861]= "862)  Para la generaci&oacute;n de contenidos de un sitio web p&uacute;blico se necesitan diversos perfiles. Indique cu&aacute;l NO es uno de ellos.";
+ choices[861]= new Array();
+ choices[861][0] = "Generador de contenidos";
+ choices[861][1] = "Publicador de contenidos";
+ choices[861][2] = "Administrador de contenidos";
+ choices[861][3] = "Aprobador de contenidos";
+ answers[861] = choices[861][3];
+ units[861] = "125";
+ comments[861] = "Id Pregunta: 861. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[861] = 861
+
+
+//  Id pregunta: 862 Año de creación de pregunta: 2016
+ questions[862]= "863)  Sobre las URL de los sitios web p&uacute;blicos, se&ntilde;ale cu&aacute;l NO es verdadera:";
+ choices[862]= new Array();
+ choices[862][0] = "Se recomienda utilizar la URL con dominio &lt;.gob.es&gt; en todos los niveles de la Administraci&oacute;n General del Estado, para todos los sitios web.";
+ choices[862][1] = "Si se trata de organismos muy conocidos por los ciudadanos y siempre que no coincida con la denominaci&oacute;n del portal, se puede utilizar la denominaci&oacute;n actual con .gob.es";
+ choices[862][2] = "Para una mayor normalizaci&oacute;n siempre se podr&iacute;a redireccionar autom&aacute;ticamente desde una URL a otra, para lo cual habr&aacute; que registrar los dos dominios: organismo.gob.es y sede.organismo.gob.es.";
+ choices[862][3] = "Se recomienda utilizar sede.aaaa.gob.es, donde aaaa se sustituir&aacute; por el nombre del Ministerio al que pertenece el organismo.";
+ answers[862] = choices[862][3];
+ units[862] = "125";
+ comments[862] = "Id Pregunta: 862. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[862] = 862
+
+
+//  Id pregunta: 863 Año de creación de pregunta: 2016
+ questions[863]= "864)  Se recomienda que todas aquellas campa&ntilde;as de los ministerios que cuenten con su propia p&aacute;gina web, cuenten adem&aacute;s con un subdominio o URL secundaria en la estructura general de la p&aacute;gina web del Ministerio. Indique la opci&oacute;n correcta.";
+ choices[863]= new Array();
+ choices[863][0] = "Se podr&aacute; utilizar de forma opcional descripciones sem&aacute;nticas en el nombramiento y titulaci&oacute;n de los subdominios.";
+ choices[863][1] = "RUN implementa una soluci&oacute;n sencilla de generaci&oacute;n de URL cortas  para una mejora en la eficiencia de la remisi&oacute;n de direcciones web mediante email, sms, twitter etc";
+ choices[863][2] = "El nombre del subdominio o URL secundaria debe ser distinto al que se utilice como URL independiente.";
+ choices[863][3] = "Con los subdominios o URL secundarias los robots de los buscadores requerir&aacute;n m&aacute;s tiempo en interpretar su dependencia contextual con el Ministerio u &Oacute;rgano de la Administraci&oacute;n.";
+ answers[863] = choices[863][1];
+ units[863] = "125";
+ comments[863] = "Id Pregunta: 863. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[863] = 863
+
+
+//  Id pregunta: 864 Año de creación de pregunta: 2016
+ questions[864]= "865)  &iquest;Qu&eacute; son las t&eacute;cnicas SEO? ";
+ choices[864]= new Array();
+ choices[864][0] = "SEO es el acr&oacute;nimo de search engine optimization.";
+ choices[864][1] = "Las t&eacute;cnicas SEO Onsite son en s&iacute; las que llevaremos a cabo dentro de nuestro sitio, tales como optimizaciones de c&oacute;digo, optimizaci&oacute;n de procesos del servidor, llamadas a la base de datos y sobre todo optimizaci&oacute;n de contenido. ";
+ choices[864][2] = "Las t&eacute;cnicas de SEO Offsite se refieren a todos los enlaces que no est&aacute;n en nuestro sitio web. Se trata del n&uacute;mero de veces que est&aacute; enlazado el sitio web, desde d&oacute;nde y con qu&eacute; t&eacute;rminos.";
+ choices[864][3] = "Todas las anteriores son verdaderas.";
+ answers[864] = choices[864][3];
+ units[864] = "125";
+ comments[864] = "Id Pregunta: 864. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[864] = 864
+
+
+//  Id pregunta: 865 Año de creación de pregunta: 2016
+ questions[865]= "866)  Respecto al concepto de Web m&oacute;vil, se&ntilde;ale la respuesta falsa:";
+ choices[865]= new Array();
+ choices[865][0] = "En general se deben desarrollar sitios web espec&iacute;ficos para dispositivos m&oacute;viles con informaci&oacute;n y con servicios y aplicaciones web espec&iacute;ficas.";
+ choices[865][1] = "El dise&ntilde;o de un sitio debe contemplar este tipo de plataformas para crear un sitio accesible y usable que se adapte din&aacute;micamente a las necesidades del usuario, a las capacidades del dispositivo y a las condiciones del entorno.";
+ choices[865][2] = "Para ello, es necesaria una infraestructura global basada en est&aacute;ndares que permitan la interoperabilidad y aprovechar las capacidades de la movilidad y de la web 2.0.&nbsp;&nbsp;";
+ choices[865][3] = "Poner a disposici&oacute;n la versi&oacute;n Web M&oacute;vil para los principales sistemas operativos y navegadores:Chrome y Safari.";
+ answers[865] = choices[865][3];
+ units[865] = "125";
+ comments[865] = "Id Pregunta: 865. Gu&iacute;a de comunicaci&oacute;n digital";
+ preguntaids[865] = 865
 
 

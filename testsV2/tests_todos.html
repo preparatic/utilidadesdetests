@@ -59,13 +59,15 @@
                                         <li><a href="tests_annos.html">Por A&ntilde;os</a></li>
                                     </ul>
                                 </li>
-                                <!--<li>
-                                    <a><i class="fa fa-bar-chart-o"></i> Mis estad&iacute;sticas <span class="fa fa-chevron-down"></span></a>
+                                <li>
+                                    <a><i class="fa fa-bar-chart-o"></i> Mi Progreso <span class="label label-success pull-right">En Beta!</span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="chartjs.html">Estad&iacute;sticas</a></li>
+                                        <li><a href="listado_tests.html">Test Realizados</a></li>
+                                        <li><a href="misestadisticas.html">Estad&iacute;sticas</a></li>
+                                        <li><a href="faq.html">F.A.Q.</a></li>
                                     </ul>
-                                </li>-->
-                                <li> <a href="javascript:void(0)"><i class="fa fa-windows"></i> Extras <span class="label label-success pull-right">Coming Soon</span></a></li>
+                                </li>
+                                <!--<li> <a href="javascript:void(0)"><i class="fa fa-windows"></i> Extras <span class="label label-success pull-right">Coming Soon</span></a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -239,6 +241,7 @@
                                             <tr>
                                                 <th>N&uacute;mero de Test</th>
                                                 <th>T&iacute;tulo</th>
+                                                <!--<th>T&iacute;tulo Largo</th>-->
                                                 <th>URL</th>
                                                 <th>Tema</th>
                                                 <th>Ver/Hacer</th>
@@ -257,17 +260,6 @@
                                         <li>
                                             <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                         </li>
-                                        <!--<li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li>
-                                                    <a href="#">Settings 1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>-->
                                         <li>
                                             <a class="close-link"><i class="fa fa-close"></i></a>
                                         </li>
@@ -368,15 +360,16 @@
                 bProcessing: true,
                 data: blockTestsSet,
                 aoColumns: [
-                          null, // first column (Numero de Test)
-                          null, // 2 column (Titulo)
+                          { responsivePriority: 6, }, // first column (Numero de Test)
+                          { responsivePriority: 3, }, // 2 column (Titulo
                            {
                                "targets": [2],
                                "visible": false,
                                "searchable": false
                            }, // 3 column (url)
                            {
-                               "targets": [3],
+                            responsivePriority: 4, 
+                            "targets": [3],
                                // The `data` parameter refers to the data for the cell (defined by the
                                // `data` option, which defaults to the column being worked with, in
                                // this case `data: 0`.
@@ -385,6 +378,7 @@
                                }
                            },  // 4 column (Bloque ID)
                            {     // 5 column (view/do link)
+                               responsivePriority: 1,
                                "sName": "Hacer",
                                "bSearchable": false,
                                "bSortable": false,
@@ -424,14 +418,15 @@
                 bProcessing: true,
                 data: randomTestsSet,
                 aoColumns: [
-                          null, // first column (Numero de Test)
-                          null, // 2 column (Titulo
+                          { responsivePriority: 6, }, // first column (Numero de Test)
+                          { responsivePriority: 3, }, // 2 column (Titulo
                            {
                                "targets": [2],
                                "visible": false,
                                "searchable": false
                            }, // 3 column (url
                           {     // 4 column (view/do link)
+                              responsivePriority: 1,
                               "sName": "Hacer",
                               "bSearchable": false,
                               "bSortable": false,
@@ -471,15 +466,15 @@
                 bProcessing: true,
                 data: themeTestsSet,
                 aoColumns: [
-                          null, // first column (Numero de Test)
-                          null, // 2 column (Titulo
+                          { responsivePriority: 6, }, // first column (Numero de Test)
+                          { responsivePriority: 3, }, // 2 column (Titulo
                            {
-                               "targets": [2],
                                "visible": false,
                                "searchable": false
                            }, // 3 column (url
                            {
-                               "targets": [3],
+                               responsivePriority: 4,
+                               "targets": [2],
                                // The `data` parameter refers to the data for the cell (defined by the
                                // `data` option, which defaults to the column being worked with, in
                                // this case `data: 0`.
@@ -487,7 +482,20 @@
                                    return infoTemas[data].titulo;
                                }
                            },  // 4 column (Tema ID)
-                           {     // 5 column (view/do link)
+                            //{
+                            //    responsivePriority: 100,
+                            //    "targets": [2],
+                            //    //"visible": false,
+                            //    "searchable": true,
+                            //    // The `data` parameter refers to the data for the cell (defined by the
+                            //    // `data` option, which defaults to the column being worked with, in
+                            //    // this case `data: 0`.
+                            //    "mRender": function (data, type, full) {
+                            //        return infoTemas[data].tituloLargo;
+                            //    }
+                            //},  // 4 column (Tema ID)
+                            {     // 5 column (view/do link)
+                               responsivePriority: 1,
                                "sName": "Hacer",
                                "bSearchable": false,
                                "bSortable": false,
@@ -527,15 +535,16 @@
                 bProcessing: true,
                 data: annosTestsSet,
                 aoColumns: [
-                          null, // first column (Numero de Test)
-                          null, // 2 column (Titulo
+                          { responsivePriority: 6, }, // first column (Numero de Test)
+                          { responsivePriority: 3, }, // 2 column (Titulo
                            {
                                "targets": [2],
                                "visible": false,
                                "searchable": false
                            }, // 3 column (url
-                            null,  // 4 column (convocatoria ID)
+                           { responsivePriority: 5, },  // 4 column (convocatoria ID)
                            {     // 5 column (view/do link)
+                               responsivePriority: 1,
                                "sName": "Hacer",
                                "bSearchable": false,
                                "bSortable": false,

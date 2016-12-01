@@ -59,13 +59,15 @@
                                         <li><a href="tests_annos.html">Por A&ntilde;os</a></li>
                                     </ul>
                                 </li>
-                                <!--<li>
-                                <a><i class="fa fa-bar-chart-o"></i> Mis estad&iacute;sticas <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="chartjs.html">Estad&iacute;sticas</a></li>
-                                </ul>
-                            </li>-->
-                                <li> <a href="javascript:void(0)"><i class="fa fa-windows"></i> Extras <span class="label label-success pull-right">Coming Soon</span></a></li>
+                                <li>
+                                    <a><i class="fa fa-bar-chart-o"></i> Mi Progreso <span class="label label-success pull-right">En Beta!</span></a>
+                                    <ul class="nav child_menu">
+                                        <li><a href="listado_tests.html">Test Realizados</a></li>
+                                        <li><a href="misestadisticas.html">Estad&iacute;sticas</a></li>
+                                        <li><a href="faq.html">F.A.Q.</a></li>
+                                    </ul>
+                                </li>
+                                <!--<li> <a href="javascript:void(0)"><i class="fa fa-windows"></i> Extras <span class="label label-success pull-right">Coming Soon</span></a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -238,14 +240,15 @@
                 bProcessing: true,
                 data: randomTestsSet,
                 aoColumns: [
-                          null, // first column (Numero de Test)
-                          null, // 2 column (Titulo
+                          { responsivePriority: 6, }, // first column (Numero de Test)
+                          { responsivePriority: 3, }, // 2 column (Titulo
                            {
                                "targets": [2],
                                "visible": false,
                                "searchable": false
                            }, // 3 column (url
                           {     // 4 column (view/do link)
+                              responsivePriority: 1,
                               "sName": "Hacer",
                               "bSearchable": false,
                               "bSortable": false,

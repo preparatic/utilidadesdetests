@@ -253,6 +253,7 @@ public class HtmlGenerator {
 		
 		String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
 				test.getIdBloqueTematicaAnho(), test.getIdTest());
+		htmlTemplate.setAttribute("idtest",  filename);
 		htmlTemplate.setAttribute("titulo",  test.getTitulo());
 		htmlTemplate.setAttribute("titulocompleto", test.getTitulo());
 		htmlTemplate.setAttribute("javascriptdata", "../data/" +  filename + ".js ");
@@ -499,11 +500,14 @@ public class HtmlGenerator {
 			salida.println(s);
 
 			// Comentarios
-			s = " comments[" + idCuestion + "] = \"" + "Id Pregunta: "
-					+ campoAHtml(pregunta, Campo.ID) + ". "
+			s = " comments[" + idCuestion + "] = \"" + "Id Pregunta: " + campoAHtml(pregunta, Campo.ID) + ". "
 					+ campoAHtml(pregunta, Campo.OBSERVACIONES) + "\";";
 			salida.println(s);
 
+			// List de Ids
+			s = " preguntaids[" + idCuestion + "] = " + campoAHtml(pregunta, Campo.ID);
+			salida.println(s);
+						
 			// Para separar entre preguntas.
 			salida.println("");
 			salida.println("");
