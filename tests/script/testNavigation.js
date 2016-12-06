@@ -149,7 +149,7 @@ function renderTestSelectorBloque(bloque){
 			 addOption (box, 'test_bloque_B3_0001.html', 'Test 0001');
 	}
 	if (bloque == 'B4'){
-			 addOption (box, '', '-- No hay test --');
+			 addOption (box, 'test_bloque_B4_0001.html', 'Test 0001');
 	}
 
 }
@@ -355,6 +355,7 @@ function renderMenuTest (tipoTest,id){
 
 			 addElement (list, 'Test Preguntas 2016', 'test_anho_2016_0001.html', tipoTest=='anho' && id=='2016');
 			 addElement (list, 'Test por temas', 'test_tema_T1_0001.html', tipoTest=='tema' );
+			 addElement (list, 'Test bloqueB4', 'test_bloque_B4_0001.html', tipoTest=='bloque' && id=='B4');
 			 addElement (list, 'Test bloqueB3', 'test_bloque_B3_0001.html', tipoTest=='bloque' && id=='B3');
 			 addElement (list, 'Test bloqueB2', 'test_bloque_B2_0001.html', tipoTest=='bloque' && id=='B2');
 			 addElement (list, 'Test bloqueB1', 'test_bloque_B1_0001.html', tipoTest=='bloque' && id=='B1');
@@ -374,6 +375,7 @@ function renderMenuIndex (tipoTest,id){
 
 			 addElement (list, 'Test Preguntas 2016', 'pages/test_anho_2016_0001.html', tipoTest=='anho' && id=='2016');
 			 addElement (list, 'Test por temas', 'pages/test_tema_T1_0001.html', tipoTest=='tema' );
+			 addElement (list, 'Test bloqueB4', 'pages/test_bloque_B4_0001.html', tipoTest=='bloque' && id=='B4');
 			 addElement (list, 'Test bloqueB3', 'pages/test_bloque_B3_0001.html', tipoTest=='bloque' && id=='B3');
 			 addElement (list, 'Test bloqueB2', 'pages/test_bloque_B2_0001.html', tipoTest=='bloque' && id=='B2');
 			 addElement (list, 'Test bloqueB1', 'pages/test_bloque_B1_0001.html', tipoTest=='bloque' && id=='B1');

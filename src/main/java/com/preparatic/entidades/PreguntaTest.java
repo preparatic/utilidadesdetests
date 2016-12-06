@@ -207,6 +207,10 @@ public class PreguntaTest {
 		String joined = String.join(", ", bloques);
 		return joined;
 	}
+	public String getBloquesStrWithQuotes() {
+		String joined = bloques.stream().map((s) -> "'" + s + "'").collect(Collectors.joining(", "));
+		return joined;
+	}
 	
 	public void calculaBloques(List<InfoBloque> listaBloques)
 	{
@@ -293,7 +297,10 @@ public class PreguntaTest {
 		String joined = temas.stream().map(Object::toString).collect(Collectors.joining(", "));
 		return joined;
 	}
-	
+	public String getTemasStrWithQuotes() {
+		String joined = temas.stream().map((s) -> "'" + s + "'").collect(Collectors.joining(", "));
+		return joined;
+	}
 	public void setTemas(String temas) {
 		String[] temasArr = temas.split(",");
 		for(String t : temasArr)

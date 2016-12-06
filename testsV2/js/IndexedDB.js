@@ -63,8 +63,6 @@ function openDb(clearDataList, refreshDataList) {
           DB_STORE_NAME, { keyPath: 'id', autoIncrement: true });
 
         //store.createIndex('testid', 'testid', { unique: false });
-        //store.createIndex('titulo', 'titulo', { unique: false });
-        //store.createIndex('url', 'url', { unique: false });
         //store.createIndex('fecha', 'fecha', { unique: false });
     };
 }
@@ -100,11 +98,6 @@ function displayTestList(store) {
     if (typeof store == 'undefined')
         store = getObjectStore(DB_STORE_NAME, 'readonly');
 
-    //var pub_msg = $('#test-msg');
-    //pub_msg.empty();
-    //var test_list = $('#test-list');
-    //test_list.empty();
-
     var req;
     req = store.count();
     // Requests are executed in the order in which they were made against the
@@ -112,8 +105,6 @@ function displayTestList(store) {
     // Thus the count text below will be displayed before the actual pub list
     // (not that it is algorithmically important in this case).
     req.onsuccess = function (evt) {
-        //pub_msg.append('<p>There are <strong>' + evt.target.result +
-        //               '</strong> record(s) in the object store.</p>');
         console.log("Record(s) in the object store: " + evt.target.result);
     };
     req.onerror = function (evt) {
@@ -134,20 +125,9 @@ function displayTestList(store) {
             req = store.get(cursor.key);
             req.onsuccess = function (evt) {
                 var value = evt.target.result;
-                //var list_item = $('<li>' +
-                //                  '[' + cursor.key + '] ' +
-                //                  '(testID: ' + value.testID + ') ' +
-                //                   ', ok:' + value.aciertos +
-                //                  ', fallos:' + value.fallos + ', N/C:' + value.nc +
-                //                  '</li>');
-                //if (value.fecha != null)
-                //    list_item.append(' - ' + value.fecha);
-
-                //test_list.append(list_item);
 
                 var obj = [cursor.key, value.testID, value.fecha, value.aciertos, value.fallos, value.nc];
                 refreshFunction(obj);
-                
             };
 
             // Move on to the next object in store
@@ -168,11 +148,27 @@ function displayTestList(store) {
  * @param {string} fallos.
  * @param {string} nc.
  */
-function addTestRealization(testID, fecha, aciertos, fallos, nc) {
+function addTestRealization(obj) {
     console.log("addTestRealization:", arguments);
 
-    var obj = { testID: testID, fecha: fecha, aciertos: aciertos.length, fallos: fallos.length, nc: nc.length, listaAciertos: aciertos, listaFallos: fallos, listaNC: nc };
-    console.log("addTestRealization, Inserrtando :", obj);
+    //var obj = {
+    //    testID: testID,
+    //    fecha: fecha,
+    //    aciertos: aciertos.length,
+    //    fallos: fallos.length,
+    //    nc: nc.length,
+    //    score: score,
+    //    listaAciertos: aciertos,
+    //    listaFallos: fallos,
+    //    listaNC: nc,
+    //    listaAciertosPorBloque: aciertosPorBloque,
+    //    listaFallosPorBloque: fallosPorBloque,
+    //    listaNCPorBloque: ncPorBloque,
+    //    listaAciertosPorTema: aciertosPorTema,
+    //    listaFallosPorTema: fallosPorTema,
+    //    listaNCPorTema: ncPorTema,
+    //};
+    console.log("addTestRealization, Insertando :", obj);
 
     var store = getObjectStore(DB_STORE_NAME, 'readwrite');
     var req;
@@ -194,25 +190,6 @@ function addTestRealization(testID, fecha, aciertos, fallos, nc) {
         displayActionFailure(this.error);
     };
 }
-
-/**
- * @param {string} biblioid
- */
-//function deleteTestFromDB(biblioid) {
-//    console.log("deletePublication:", arguments);
-//    var store = getObjectStore(DB_STORE_NAME, 'readwrite');
-//    var req = store.index('biblioid');
-//    req.get(biblioid).onsuccess = function (evt) {
-//        if (typeof evt.target.result == 'undefined') {
-//            displayActionFailure("No matching record found");
-//            return;
-//        }
-//        deletePublication(evt.target.result.id, store);
-//    };
-//    req.onerror = function (evt) {
-//        console.error("deletePublicationFromBib:", evt.target.errorCode);
-//    };
-//}
 
 /**
  * @param {number} key

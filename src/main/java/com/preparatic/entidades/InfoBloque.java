@@ -97,7 +97,7 @@ public class InfoBloque {
 	 * @return the nombreBloque
 	 */
 	public String getAreaBloque() {
-		return areaBloque;
+		return StringEscapeUtils.escapeHtml(areaBloque);
 	}
 
 	/**

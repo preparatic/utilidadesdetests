@@ -19,8 +19,23 @@ var infoBloques = {
 $it.nombreBloque$: { area: "$it.areaBloque$", titulo: "$it.titulo$", min: $it.minPregunta$, max: $it.maxPregunta$ },}$
 };
 
+function initBloquesMap()
+{ 
+    var theMap = {
+		$listabloques:{
+		$it.nombreBloque$: 0,}$
+    };
+    return theMap;
+};
+
 //  T1: {area: "A1", tituloCorto: "La Constitución española de 1978 (I).",  tituloLargo: "La Constitución española de 1978 (I). Los principios constitucionales. Los derechos fundamentales y sus garantías. La Corona. Cortes Generales. Congreso de los Diputados y Senado. El Gobierno. Los Órganos constitucionales de control del Gobierno: Tribunal"},
 var infoTemas = { 
     $listatemas:{
 T$it.numTema$: { area: "$it.bloqueID$", titulo: "$it.tituloCorto$", tituloLargo: "$it.tituloLargo$" },}$
+};
+
+function initTemasArray()
+{ 
+    var theArr = Array.apply(null, Array(Object.keys(infoTemas).length)).map(Number.prototype.valueOf, 0);
+    return theArr;
 };

@@ -21,8 +21,9 @@
     <!-- Preparatic Style -->
     <link href="../css/preparatic.css" rel="stylesheet">
     <script src="../js/IndexedDB.js"></script>
-    <script src="../js/quiz_functions.js"></script>
+    <script src="../data/info_tests.js "></script>
     <script src="../data/list_tests.js "></script>
+    <script src="../js/quiz_functions.js"></script>
     <script src="../js/testNavigation.js"></script>
 
     <script src="$javascriptdata$"></script>

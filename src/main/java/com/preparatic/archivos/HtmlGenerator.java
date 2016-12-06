@@ -495,8 +495,13 @@ public class HtmlGenerator {
 			salida.println(s);
 
 			// Temas
-			s = " units[" + idCuestion + "] = \""
-					+ campoAHtml(pregunta, Campo.TEMAS) + "\";";
+			s = " units[" + idCuestion + "] = ["
+					+ textoAHtml(pregunta.getTemasStrWithQuotes()) + "];";
+			salida.println(s);
+			
+			// bloques
+			s = " blocks[" + idCuestion + "] = ["
+					+ textoAHtml(pregunta.getBloquesStrWithQuotes()) + "];";
 			salida.println(s);
 
 			// Comentarios
