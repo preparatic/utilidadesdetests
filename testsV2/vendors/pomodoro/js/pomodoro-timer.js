@@ -17,8 +17,8 @@ function onPomodoroTimer(){
   stopTimer();
 
   gHours = 1;
-  gMinutes = 0;
-  gSeconds = 0;
+  gMinutes = 7;
+  gSeconds = 30;
 
   resetTimer();
 
