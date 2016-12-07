@@ -49,7 +49,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	private static Logger logger = LogManager.getLogger(TestGeneratorV2.class);
 
 	private static GestorTests gestorTest = GestorTests.getInstance();
-	
+
 	public static void main(String[] args) throws Exception {
 
 		logger.info("Generador de test. Promoción XXIV. Diciembre 2016");
@@ -68,10 +68,10 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 
 			// Obtenemos todos los bloques del excel
 			GestorInfoBloque.getInstance().leerBloques(ficheroExcel);
-			
+
 			// Obtenemos todas los temas del excel
 			GestorInfoTema.getInstance().leerTemas(ficheroExcel);
-					
+
 			// Obtenemos todas las preguntas del excel
 			GestorPreguntaTest.getInstance().leerPreguntas(ficheroExcel);
 			GestorPreguntaTest.getInstance().reasignaIdentificadores();
@@ -80,7 +80,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			List<PreguntaTest> listaPreguntas = GestorPreguntaTest.getInstance().getPreguntas();
 			listaPreguntas.forEach(pt -> logger.debug(pt.toString()));
 
-			 generarTest(listaPreguntas);
+			generarTest(listaPreguntas);
 
 		} catch (SQLException e) {
 			logger.error(e.getMessage());
@@ -103,7 +103,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		HtmlGenerator.generarMetaInfoV2();
 		TestNavigatorGenerator.generarTestNavigation();
 	}
-	
+
 	/**
 	 * Genera un test con todas las preguntas disponibles
 	 * 
@@ -125,15 +125,19 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		}
 		testcompleto.generarDocumentos(listaPreguntas, listaPreguntas.size());
 		gestorTest.addTest(testcompleto);
-		}
-	
+	}
+
 	/**
 	 * Distribuye las preguntas en tantos Test como haga falta.
 	 * 
 	 * @param listaPreguntas
 	 */
+
 	private static void generarTestAleatorios(List<PreguntaTest> listaPreguntas) {
 
+		List<PreguntaTest> preguntasBA = GestorPreguntaTest.filterBloqueA(listaPreguntas);
+		List<PreguntaTest> preguntasBB = GestorPreguntaTest.filterBloqueB(listaPreguntas);
+		
 		/*
 		 * Distribuimos las preguntas en tantos test como diga la configuración.
 		 */
@@ -142,23 +146,48 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 
 		for (int i = inicio_test; i <= inicio_test + numTestAleatorios; i++) {
 			Test test = new Test(i);
-			Collections.shuffle(listaPreguntas);
-			ListIterator<PreguntaTest> iterator = listaPreguntas.listIterator();
-			while ((!test.estaCompleto()) && (iterator.hasNext())) {
-				PreguntaTest t = iterator.next();
-				try {
-					int id = t.getNumId();
-					test.asignarIdPregunta(id);
-				} catch (Exception ex) {
-					logger.error("Error procesing id of question " + t);
+
+			if (preguntasBA.size() > 0) {
+				Collections.shuffle(preguntasBA);
+				ListIterator<PreguntaTest> iterator = preguntasBA.listIterator();
+				for (int cnt = 0; cnt < Test.NumPreguntasA; cnt++) {
+					if (!iterator.hasNext()) {
+						Collections.shuffle(preguntasBA);
+						iterator = preguntasBA.listIterator();
+					}
+					PreguntaTest t = iterator.next();
+					try {
+						int id = t.getNumId();
+						test.asignarIdPregunta(id);
+					} catch (Exception ex) {
+						logger.error("Error procesing id of question " + t);
+					}
 				}
 			}
+			if (preguntasBB.size() > 0) {
+				Collections.shuffle(preguntasBB);
+				ListIterator<PreguntaTest> iterator = preguntasBB.listIterator();
+				for (int cnt = 0; cnt < Test.NumPreguntasB && !test.estaCompleto(); cnt++) {
+					if (!iterator.hasNext()) {
+						Collections.shuffle(preguntasBB);
+						iterator = preguntasBB.listIterator();
+					}
+					PreguntaTest t = iterator.next();
+					try {
+						int id = t.getNumId();
+						test.asignarIdPregunta(id);
+					} catch (Exception ex) {
+						logger.error("Error procesing id of question " + t);
+					}
+				}
+			}
+			
 			test.generarDocumentos(listaPreguntas, inicio_test + numTestAleatorios);
 			gestorTest.addTest(test);
 		}
 
 	}
- 
+
 	/**
 	 * Generamos los test por bloques.
 	 * 
@@ -167,7 +196,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	 */
 	private static void generarTestBloques(List<PreguntaTest> listaPreguntas) {
 		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
-		
+
 		/*
 		 * Por cada bloque, usamos un tema al que le vamos a asignar todas las
 		 * preguntas.
@@ -177,13 +206,14 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			List<PreguntaTest> filteredList = listaPreguntas.stream()
 					.filter(question -> question.getBloques().contains(bloque.getNombreBloque()))
 					.collect(Collectors.toList());
-			int totalPreguntasBloque = filteredList.size();
-			int totalTestsBloque = Math.round(totalPreguntasBloque / num_preguntas_por_test);
+			float totalPreguntasBloque = filteredList.size();
+			int totalTestsBloque =  (int) Math.ceil(totalPreguntasBloque / num_preguntas_por_test);
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
 			for (int i = 1; i <= totalTestsBloque; i++) {
-				Test test = new Test(Test.eTipoTest.bloque, bloque.getNombreBloque() /* + ". " + bloque.getTitulo() */, i);
+				Test test = new Test(Test.eTipoTest.bloque, bloque
+						.getNombreBloque() /* + ". " + bloque.getTitulo() */, i);
 				while ((!test.estaCompleto()) && (iterator.hasNext())) {
 					PreguntaTest t = iterator.next();
 					try {
@@ -201,7 +231,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		}
 		return;
 	}
-	
+
 	/**
 	 * Generamos los test por temas.
 	 * 
@@ -210,7 +240,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	 */
 	private static void generarTestTemas(List<PreguntaTest> listaPreguntas) {
 		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
-		
+
 		/*
 		 * Por cada bloque, usamos un tema al que le vamos a asignar todas las
 		 * preguntas.
@@ -218,15 +248,15 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		List<InfoTema> listaTemas = GestorInfoTema.getInstance().getTemas();
 		for (InfoTema tema : listaTemas) {
 			List<PreguntaTest> filteredList = listaPreguntas.stream()
-					.filter(question -> question.getTemas().contains(tema.getNumTema()))
-					.collect(Collectors.toList());
-			int totalPreguntasTema = filteredList.size();
-			int totalTestsTema = Math.round(totalPreguntasTema / num_preguntas_por_test);
+					.filter(question -> question.getTemas().contains(tema.getNumTema())).collect(Collectors.toList());
+			float totalPreguntasTema = filteredList.size();
+			int totalTestsTema = (int) Math.ceil(totalPreguntasTema / num_preguntas_por_test);
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
 			for (int i = 1; i <= totalTestsTema; i++) {
-				Test test = new Test(Test.eTipoTest.tema, "T" + tema.getNumTema() /* + ". " + bloque.getTitulo() */, i);
+				Test test = new Test(Test.eTipoTest.tema, "T"
+						+  tema.getNumTema()  /* + ". " + bloque.getTitulo() */, i);
 				while ((!test.estaCompleto()) && (iterator.hasNext())) {
 					PreguntaTest t = iterator.next();
 					try {
@@ -240,11 +270,11 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 				gestorTest.addTest(test);
 			}
 
-			logger.info("Generado test bloque " + tema.getTituloCorto());
+			logger.info("Generado test tema " + tema.getTituloCorto());
 		}
 		return;
 	}
-	
+
 	/**
 	 * Generamos los test por anhos
 	 * 
@@ -253,7 +283,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	private static void generarTestAnhos(List<PreguntaTest> listaPreguntas) {
 		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
 		String[] annos = ConfigProperties.getProperty("tests.anhos").toString().split(",");
-		
+
 		/*
 		 * Por cada anho, usamos un tema al que le vamos a asignar todas las
 		 * preguntas.
@@ -262,8 +292,8 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			List<PreguntaTest> filteredList = listaPreguntas.stream()
 					.filter(question -> question.getAnno_creacion().equalsIgnoreCase(idAnho.trim()))
 					.collect(Collectors.toList());
-			int totalPreguntasBloque = filteredList.size();
-			int totalTestsAnho = Math.round(totalPreguntasBloque / num_preguntas_por_test);
+			float totalPreguntasBloque = filteredList.size();
+			int totalTestsAnho =  (int) Math.ceil(totalPreguntasBloque / num_preguntas_por_test);
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del anho

@@ -15,9 +15,7 @@
  *******************************************************************************/
 package com.preparatic.archivos;
 
-import java.io.FileOutputStream;
 import java.sql.ResultSet;
-import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
@@ -25,11 +23,16 @@ import org.apache.logging.log4j.Logger;
 
 import com.lowagie.text.Document;
 import com.lowagie.text.DocumentException;
+import com.lowagie.text.Element;
 import com.lowagie.text.Font;
 import com.lowagie.text.Image;
 import com.lowagie.text.ListItem;
 import com.lowagie.text.Paragraph;
+import com.lowagie.text.Phrase;
+import com.lowagie.text.pdf.ColumnText;
 import com.lowagie.text.pdf.MultiColumnText;
+import com.lowagie.text.pdf.PdfContentByte;
+import com.lowagie.text.pdf.PdfPageEventHelper;
 import com.lowagie.text.pdf.PdfWriter;
 import com.preparatic.ConfigProperties;
 import com.preparatic.entidades.PreguntaTest;
@@ -161,12 +164,16 @@ public class PdfGenerator {
 
 		String pregsFilename = FactoriaArchivo.pdfTestFilename(test.getTipoTest(), test.getIdBloqueTematicaAnho(),
 				test.getIdTest());
-		PdfWriter.getInstance(docpregs,
+		PdfWriter writerPregs =  PdfWriter.getInstance(docpregs,
 				FactoriaArchivo.pdfTest(test.getTipoTest(), test.getIdBloqueTematicaAnho(), test.getIdTest()));
+		TestFooter footerPregs = new TestFooter();
+		writerPregs.setPageEvent(footerPregs);
+		
 		PdfWriter.getInstance(docsols,
 				FactoriaArchivo.pdfSol(test.getTipoTest(), test.getIdBloqueTematicaAnho(), test.getIdTest()));
 
 		docpregs.open();
+
 		docsols.open();
 		if ((test.getTipoTest() == Test.eTipoTest.bloque) || (test.getTipoTest() == Test.eTipoTest.anho))
 			docsols.setMargins(120, 108, 72, 36);
@@ -250,4 +257,36 @@ public class PdfGenerator {
 		}
 
 	}
+}
+
+class TestFooter extends PdfPageEventHelper {
+    Font ffont = new Font(Font.UNDEFINED, Font.DEFAULTSIZE, Font.BOLD);
+    private int pageNumber;
+    
+    @Override
+    public void onChapter(PdfWriter writer, Document document, float paragraphPosition, Paragraph title)
+    {
+        pageNumber = 1;
+    }
+    
+    @Override
+    public void onStartPage(PdfWriter writer, Document document)
+    {
+        pageNumber++;
+    }
+    
+    @Override
+    public void onEndPage(PdfWriter writer, Document document) {
+        PdfContentByte cb = writer.getDirectContent();
+//        Phrase header = new Phrase("this is a header", ffont);
+//        ColumnText.showTextAligned(cb, Element.ALIGN_CENTER,
+//                header,
+//                (document.right() - document.left()) / 2 + document.leftMargin(),
+//                document.top() + 10, 0);
+        Phrase footer = new Phrase(String.format("página %d", pageNumber), ffont);
+        ColumnText.showTextAligned(cb, Element.ALIGN_CENTER,
+                footer,
+                (document.right() - document.left()) / 2 + document.leftMargin(),
+                document.bottom() - 10, 0);
+    }
 }

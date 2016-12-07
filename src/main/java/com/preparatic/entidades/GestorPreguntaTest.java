@@ -15,6 +15,8 @@
  *******************************************************************************/
 package com.preparatic.entidades;
 
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,6 +25,8 @@ import com.preparatic.csvreaders.IExcel;
 public class GestorPreguntaTest {
 
 	private List<PreguntaTest> listaPreguntas;
+	private static final List<String> listaBloqueA = Arrays.asList("A1","A2","A3","A4");
+	private static final List<String> listaBloqueB = Arrays.asList("B1","B2","B3","B4");
 	private static GestorPreguntaTest instance = null;
 
 	protected GestorPreguntaTest() {
@@ -61,5 +65,21 @@ public class GestorPreguntaTest {
 		for (PreguntaTest pt : this.listaPreguntas) {
 			pt.setId(Integer.toString(id++));
 		}
+	}
+	
+	public static List<PreguntaTest> filterBloqueA(List<PreguntaTest> preguntas) {
+		List<PreguntaTest> preguntasBA = preguntas.stream()
+				.filter(question -> !Collections.disjoint(question.getBloques(), listaBloqueA))
+				.collect(Collectors.toList());
+
+		return preguntasBA;
+	}
+
+	public static List<PreguntaTest> filterBloqueB(List<PreguntaTest> preguntas) {
+		List<PreguntaTest> preguntasBB = preguntas.stream()
+				.filter(question -> !Collections.disjoint(question.getBloques(), listaBloqueB))
+				.collect(Collectors.toList());
+
+		return preguntasBB;
 	}
 }

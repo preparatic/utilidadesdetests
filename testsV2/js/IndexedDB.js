@@ -41,7 +41,8 @@ function openDb(clearDataList, refreshDataList) {
 
     window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
     if (!window.indexedDB) {
-        window.alert("Your browser doesn't support a stable version of IndexedDB.")
+        console.log("Your browser doesn't support a stable version of IndexedDB.");
+        return;
     }
     var req = window.indexedDB.open(DB_NAME, DB_VERSION);
     req.onsuccess = function (evt) {
@@ -150,7 +151,11 @@ function displayTestList(store) {
  */
 function addTestRealization(obj) {
     console.log("addTestRealization:", arguments);
-
+    window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+    if (!window.indexedDB) {
+        console.log("Your browser doesn't support a stable version of IndexedDB.");
+        return;
+    }
     //var obj = {
     //    testID: testID,
     //    fecha: fecha,

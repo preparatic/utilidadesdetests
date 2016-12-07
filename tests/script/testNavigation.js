@@ -135,21 +135,28 @@ function renderTestSelectorBloque(bloque){
 	}
 	if (bloque == 'A3'){
 			 addOption (box, 'test_bloque_A3_0001.html', 'Test 0001');
+			 addOption (box, 'test_bloque_A3_0002.html', 'Test 0002');
 	}
 	if (bloque == 'A4'){
 			 addOption (box, 'test_bloque_A4_0001.html', 'Test 0001');
+			 addOption (box, 'test_bloque_A4_0002.html', 'Test 0002');
 	}
 	if (bloque == 'B1'){
 			 addOption (box, 'test_bloque_B1_0001.html', 'Test 0001');
+			 addOption (box, 'test_bloque_B1_0002.html', 'Test 0002');
 	}
 	if (bloque == 'B2'){
 			 addOption (box, 'test_bloque_B2_0001.html', 'Test 0001');
+			 addOption (box, 'test_bloque_B2_0002.html', 'Test 0002');
+			 addOption (box, 'test_bloque_B2_0003.html', 'Test 0003');
 	}
 	if (bloque == 'B3'){
 			 addOption (box, 'test_bloque_B3_0001.html', 'Test 0001');
+			 addOption (box, 'test_bloque_B3_0002.html', 'Test 0002');
 	}
 	if (bloque == 'B4'){
 			 addOption (box, 'test_bloque_B4_0001.html', 'Test 0001');
+			 addOption (box, 'test_bloque_B4_0002.html', 'Test 0002');
 	}
 
 }
@@ -320,6 +327,8 @@ function renderTestSelectorAnhos(anho){
 			 addOption (box, 'test_anho_2016_0010.html', 'Test 0010');
 			 addOption (box, 'test_anho_2016_0011.html', 'Test 0011');
 			 addOption (box, 'test_anho_2016_0012.html', 'Test 0012');
+			 addOption (box, 'test_anho_2016_0013.html', 'Test 0013');
+			 addOption (box, 'test_anho_2016_0014.html', 'Test 0014');
 	}
 	if (anho == '2015'){
 			 addOption (box, '', '-- No hay test --');

@@ -21,6 +21,7 @@ import java.sql.Statement;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -62,7 +63,11 @@ public class Test {
 	private List<Integer> ListaPreguntas;
 	private static Integer NumPreguntas = Integer
 			.parseInt(ConfigProperties.getProperty("tests.num_preguntas_por_test")); // Número
-	private final int MaxNumPreguntas;
+	public static Integer NumPreguntasA = Integer
+			.parseInt(ConfigProperties.getProperty("tests.num_preguntasA_por_test")); // Número
+	public static Integer NumPreguntasB = Integer
+			.parseInt(ConfigProperties.getProperty("tests.num_preguntasB_por_test")); // Número
+private final int MaxNumPreguntas;
 	
 	private String htmlFilename;
 	private String pdfFilename;
@@ -268,7 +273,9 @@ public class Test {
 		try {
 			List<PreguntaTest> filteredList = resultados.stream() 
 						.filter(question -> ListaPreguntas.contains(question.getNumId()))
-						.collect(Collectors.toList());;
+						.collect(Collectors.toList());
+			Collections.shuffle(filteredList);
+			
 			pdfGenerator.agregarPreguntas(filteredList);
 			pdfFilename = pdfGenerator.guardarPDF();
 			
