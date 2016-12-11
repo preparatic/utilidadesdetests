@@ -15,6 +15,9 @@
     <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- Pomodoro Timer -->
     <link href="../vendors/pomodoro/css/pomodoro-timer.css" rel="stylesheet">
+    <!-- Switchery -->
+    <link href="../vendors/switchery/dist/switchery.css" rel="stylesheet">
+
 	<!-- Custom Theme Style -->
     <link href="../css/custom.min.css" rel="stylesheet">
 
@@ -120,13 +123,13 @@
                                 </div>
                             </div>
                             <div>
-                                <button id="restartButton" class="btn btn-warning btn-lg" type="submit" onclick="onResetTimer()">
+                                <button id="restartButton" class="btn btn-warning btn-sm" type="submit" onclick="onResetTimer()">
                                     <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Reset
                                 </button>
-                                <button id="startButton" class="btn btn-primary btn-lg" type="submit" onclick="onStartTimer()">
+                                <button id="startButton" class="btn btn-primary btn-sm" type="submit" onclick="onStartTimer()">
                                     <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Start
                                 </button>
-                                <button id="stopButton" class="btn btn-danger btn-lg" type="submit" onclick="onStopTimer()">
+                                <button id="stopButton" class="btn btn-danger btn-sm" type="submit" onclick="onStopTimer()">
                                     <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
                                 </button>
                             </div>
@@ -181,10 +184,17 @@
                                                 <div id="preguntas_total">-</div>
 
 
-                                                <p style="text-align: center;">
-                                                    <input type="submit" class="btn btn-primary" value="Corregir" onclick="correctQuiz('$idtest$')" /> <input type="submit" class="btn btn-danger" value="Reset" onclick="resetQuiz(true)" />
-                                                </p>
-                                            </div>
+											   <p style="text-align: center;">
+													<input type="submit" class="btn btn-info" value="Ver" onclick="showSolutions()" />
+													<input type="submit" class="btn btn-primary" value="Corregir" onclick="correctQuiz('test_0001')" />
+													<input type="submit" class="btn btn-danger" value="Reset" onclick="resetQuiz(true)" />
+												</p>
+												<!-- Esta funcionalidad esta en beta. Por el momento la quito hasta que depure bien el quiz_function -->
+												<!--<div class="checkbox">
+													<label for="check-switch"> Me lo juego:</label>
+													<input type="checkbox" id="check-switch" class="js-switch" />
+												</div>-->     
+											 </div>
                                              <script>
                                                 renderQuiz();
                                             </script>
@@ -223,11 +233,37 @@
     <script src="../vendors/nprogress/nprogress.js"></script>
 	<!-- Pomodoro -->
     <script src="../vendors/pomodoro/js/pomodoro-timer.js"></script>
+	<!-- Switchery -->
+    <script src="../vendors/switchery/dist/switchery.js"></script>
 
     <!-- Custom Theme Scripts -->
     <script src="../js/custom.min.js"></script>
 
 	<script>
+	    var melajuego = document.querySelector('.js-switch');
+        if (typeof melajuego === "undefined") {
+            melajuego.onchange = function () {
+                //console.log(melajuego.checked);
+                var preguntas = \$("[name^='answer_']");
+                if (melajuego.checked) {
+                    var myType = "checkbox";
+                } else {
+                    var myType = "radio";
+                }
+                preguntas.replaceWith(function () {
+                    return \$("<input>", {
+                        type: myType,
+                        name: \$(this).attr('name'),
+                        value: \$(this).attr('value'),
+                        id: \$(this).attr('id'),
+                        class: \$(this).attr('class'),
+                        onclick: \$(this).attr('onclick'),
+                        checked: \$(this).prop('checked')
+                    });
+                });
+            };
+        };
+
         window.onload = function () {
             if (typeof db == 'undefined')
                 openDb(function () { }, function () { });

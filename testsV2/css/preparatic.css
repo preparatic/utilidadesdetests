@@ -11,6 +11,43 @@
     padding-left: 20px;
 }
 
+#header  {
+    background: none repeat scroll 0 0 #3a62f2;
+    min-height: 100px;
+    padding-top: 2em;
+    width: 100%;
+}
+
+#header img{
+	border: none;
+	padding-right: 60px;
+}
+
+
+/* Logo */
+
+
+#logo
+{
+/*position: absolute;
+bottom: 0.6em;*/
+}
+
+#logo h1
+{
+/*display: inline;*/
+color: #fff;
+font-size: 2.6em;
+}
+
+#logo h2
+{
+display: inline;
+padding-left: 0.5em;
+color: #DAEAF3;
+font-size: 1.3em;
+}
+
 .navbar-brand {
   margin-right: 2px;  
   margin-top: -10px;
