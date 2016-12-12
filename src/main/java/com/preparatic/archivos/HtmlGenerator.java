@@ -409,11 +409,9 @@ public class HtmlGenerator {
 			// Respuesta correcta
 			s = " answers["
 					+ idCuestion
-					+ "] = choices["
-					+ idCuestion
-					+ "]["
+					+ "] = "
 					+ OptionToNumber.toNumber(resultados
-							.getString("RESPUESTA_CORRECTA")) + "];";
+							.getString("RESPUESTA_CORRECTA")) + ";";
 			salida.println(s);
 
 			// Temas
@@ -488,10 +486,8 @@ public class HtmlGenerator {
 			// Respuesta correcta
 			s = " answers["
 					+ idCuestion
-					+ "] = choices["
-					+ idCuestion
-					+ "]["
-					+ OptionToNumber.toNumber(pregunta.getString(Campo.RESPUESTA_CORRECTA)) + "];";
+					+ "] = "
+ 					+ OptionToNumber.toNumber(pregunta.getString(Campo.RESPUESTA_CORRECTA)) + ";";
 			salida.println(s);
 
 			// Temas

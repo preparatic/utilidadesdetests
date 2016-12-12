@@ -47,10 +47,20 @@ public class GestorPreguntaTest {
 	public void leerPreguntas(IExcel reader) {
 		// Obtenemos todas las preguntas del excel
 		List<PreguntaTest> listaPreguntas = reader.getListaPreguntas();
-
+		
+		List<PreguntaTest> borradas = listaPreguntas.stream()
+				.filter(question -> question.getSentencia().equalsIgnoreCase("delete"))
+				/*
+				 * la idea es que aqui podria hacer filtros si fueran necesarios
+				 * por ejemplo, para filtrar por autor
+				 * .filter(question ->question.getAutor().equals("LGD"))
+				 */
+				// collect the output and convert streams to a List
+				.collect(Collectors.toList());
+		
 		// convert list to stream
 		this.listaPreguntas = listaPreguntas.stream()
-				.filter(question -> question.getTemas().size() >= 1 &&  question.getBloques().size() >= 1)
+				.filter(question -> question.getTemas().size() >= 1 && !question.getSentencia().equalsIgnoreCase("delete") &&  question.getBloques().size() >= 1)
 				/*
 				 * la idea es que aqui podria hacer filtros si fueran necesarios
 				 * por ejemplo, para filtrar por autor

@@ -115,6 +115,86 @@ function renderTestSelector(){
 			 addOption (box, 'test_0069.html', 'Test 0069');
 			 addOption (box, 'test_0070.html', 'Test 0070');
 			 addOption (box, 'test_0071.html', 'Test 0071');
+			 addOption (box, 'test_0072.html', 'Test 0072');
+			 addOption (box, 'test_0073.html', 'Test 0073');
+			 addOption (box, 'test_0074.html', 'Test 0074');
+			 addOption (box, 'test_0075.html', 'Test 0075');
+			 addOption (box, 'test_0076.html', 'Test 0076');
+			 addOption (box, 'test_0077.html', 'Test 0077');
+			 addOption (box, 'test_0078.html', 'Test 0078');
+			 addOption (box, 'test_0079.html', 'Test 0079');
+			 addOption (box, 'test_0080.html', 'Test 0080');
+			 addOption (box, 'test_0081.html', 'Test 0081');
+			 addOption (box, 'test_0082.html', 'Test 0082');
+			 addOption (box, 'test_0083.html', 'Test 0083');
+			 addOption (box, 'test_0084.html', 'Test 0084');
+			 addOption (box, 'test_0085.html', 'Test 0085');
+			 addOption (box, 'test_0086.html', 'Test 0086');
+			 addOption (box, 'test_0087.html', 'Test 0087');
+			 addOption (box, 'test_0088.html', 'Test 0088');
+			 addOption (box, 'test_0089.html', 'Test 0089');
+			 addOption (box, 'test_0090.html', 'Test 0090');
+			 addOption (box, 'test_0091.html', 'Test 0091');
+			 addOption (box, 'test_0092.html', 'Test 0092');
+			 addOption (box, 'test_0093.html', 'Test 0093');
+			 addOption (box, 'test_0094.html', 'Test 0094');
+			 addOption (box, 'test_0095.html', 'Test 0095');
+			 addOption (box, 'test_0096.html', 'Test 0096');
+			 addOption (box, 'test_0097.html', 'Test 0097');
+			 addOption (box, 'test_0098.html', 'Test 0098');
+			 addOption (box, 'test_0099.html', 'Test 0099');
+			 addOption (box, 'test_0100.html', 'Test 0100');
+			 addOption (box, 'test_0101.html', 'Test 0101');
+			 addOption (box, 'test_0102.html', 'Test 0102');
+			 addOption (box, 'test_0103.html', 'Test 0103');
+			 addOption (box, 'test_0104.html', 'Test 0104');
+			 addOption (box, 'test_0105.html', 'Test 0105');
+			 addOption (box, 'test_0106.html', 'Test 0106');
+			 addOption (box, 'test_0107.html', 'Test 0107');
+			 addOption (box, 'test_0108.html', 'Test 0108');
+			 addOption (box, 'test_0109.html', 'Test 0109');
+			 addOption (box, 'test_0110.html', 'Test 0110');
+			 addOption (box, 'test_0111.html', 'Test 0111');
+			 addOption (box, 'test_0112.html', 'Test 0112');
+			 addOption (box, 'test_0113.html', 'Test 0113');
+			 addOption (box, 'test_0114.html', 'Test 0114');
+			 addOption (box, 'test_0115.html', 'Test 0115');
+			 addOption (box, 'test_0116.html', 'Test 0116');
+			 addOption (box, 'test_0117.html', 'Test 0117');
+			 addOption (box, 'test_0118.html', 'Test 0118');
+			 addOption (box, 'test_0119.html', 'Test 0119');
+			 addOption (box, 'test_0120.html', 'Test 0120');
+			 addOption (box, 'test_0121.html', 'Test 0121');
+			 addOption (box, 'test_0122.html', 'Test 0122');
+			 addOption (box, 'test_0123.html', 'Test 0123');
+			 addOption (box, 'test_0124.html', 'Test 0124');
+			 addOption (box, 'test_0125.html', 'Test 0125');
+			 addOption (box, 'test_0126.html', 'Test 0126');
+			 addOption (box, 'test_0127.html', 'Test 0127');
+			 addOption (box, 'test_0128.html', 'Test 0128');
+			 addOption (box, 'test_0129.html', 'Test 0129');
+			 addOption (box, 'test_0130.html', 'Test 0130');
+			 addOption (box, 'test_0131.html', 'Test 0131');
+			 addOption (box, 'test_0132.html', 'Test 0132');
+			 addOption (box, 'test_0133.html', 'Test 0133');
+			 addOption (box, 'test_0134.html', 'Test 0134');
+			 addOption (box, 'test_0135.html', 'Test 0135');
+			 addOption (box, 'test_0136.html', 'Test 0136');
+			 addOption (box, 'test_0137.html', 'Test 0137');
+			 addOption (box, 'test_0138.html', 'Test 0138');
+			 addOption (box, 'test_0139.html', 'Test 0139');
+			 addOption (box, 'test_0140.html', 'Test 0140');
+			 addOption (box, 'test_0141.html', 'Test 0141');
+			 addOption (box, 'test_0142.html', 'Test 0142');
+			 addOption (box, 'test_0143.html', 'Test 0143');
+			 addOption (box, 'test_0144.html', 'Test 0144');
+			 addOption (box, 'test_0145.html', 'Test 0145');
+			 addOption (box, 'test_0146.html', 'Test 0146');
+			 addOption (box, 'test_0147.html', 'Test 0147');
+			 addOption (box, 'test_0148.html', 'Test 0148');
+			 addOption (box, 'test_0149.html', 'Test 0149');
+			 addOption (box, 'test_0150.html', 'Test 0150');
+			 addOption (box, 'test_0151.html', 'Test 0151');
 }
 
 
@@ -132,6 +212,8 @@ function renderTestSelectorBloque(bloque){
 			 addOption (box, 'test_bloque_A2_0001.html', 'Test 0001');
 			 addOption (box, 'test_bloque_A2_0002.html', 'Test 0002');
 			 addOption (box, 'test_bloque_A2_0003.html', 'Test 0003');
+			 addOption (box, 'test_bloque_A2_0004.html', 'Test 0004');
+			 addOption (box, 'test_bloque_A2_0005.html', 'Test 0005');
 	}
 	if (bloque == 'A3'){
 			 addOption (box, 'test_bloque_A3_0001.html', 'Test 0001');
@@ -140,23 +222,140 @@ function renderTestSelectorBloque(bloque){
 	if (bloque == 'A4'){
 			 addOption (box, 'test_bloque_A4_0001.html', 'Test 0001');
 			 addOption (box, 'test_bloque_A4_0002.html', 'Test 0002');
+			 addOption (box, 'test_bloque_A4_0003.html', 'Test 0003');
+			 addOption (box, 'test_bloque_A4_0004.html', 'Test 0004');
 	}
 	if (bloque == 'B1'){
 			 addOption (box, 'test_bloque_B1_0001.html', 'Test 0001');
 			 addOption (box, 'test_bloque_B1_0002.html', 'Test 0002');
+			 addOption (box, 'test_bloque_B1_0003.html', 'Test 0003');
+			 addOption (box, 'test_bloque_B1_0004.html', 'Test 0004');
+			 addOption (box, 'test_bloque_B1_0005.html', 'Test 0005');
+			 addOption (box, 'test_bloque_B1_0006.html', 'Test 0006');
+			 addOption (box, 'test_bloque_B1_0007.html', 'Test 0007');
+			 addOption (box, 'test_bloque_B1_0008.html', 'Test 0008');
+			 addOption (box, 'test_bloque_B1_0009.html', 'Test 0009');
+			 addOption (box, 'test_bloque_B1_0010.html', 'Test 0010');
+			 addOption (box, 'test_bloque_B1_0011.html', 'Test 0011');
+			 addOption (box, 'test_bloque_B1_0012.html', 'Test 0012');
+			 addOption (box, 'test_bloque_B1_0013.html', 'Test 0013');
+			 addOption (box, 'test_bloque_B1_0014.html', 'Test 0014');
+			 addOption (box, 'test_bloque_B1_0015.html', 'Test 0015');
+			 addOption (box, 'test_bloque_B1_0016.html', 'Test 0016');
+			 addOption (box, 'test_bloque_B1_0017.html', 'Test 0017');
+			 addOption (box, 'test_bloque_B1_0018.html', 'Test 0018');
+			 addOption (box, 'test_bloque_B1_0019.html', 'Test 0019');
+			 addOption (box, 'test_bloque_B1_0020.html', 'Test 0020');
+			 addOption (box, 'test_bloque_B1_0021.html', 'Test 0021');
+			 addOption (box, 'test_bloque_B1_0022.html', 'Test 0022');
+			 addOption (box, 'test_bloque_B1_0023.html', 'Test 0023');
 	}
 	if (bloque == 'B2'){
 			 addOption (box, 'test_bloque_B2_0001.html', 'Test 0001');
 			 addOption (box, 'test_bloque_B2_0002.html', 'Test 0002');
 			 addOption (box, 'test_bloque_B2_0003.html', 'Test 0003');
+			 addOption (box, 'test_bloque_B2_0004.html', 'Test 0004');
+			 addOption (box, 'test_bloque_B2_0005.html', 'Test 0005');
+			 addOption (box, 'test_bloque_B2_0006.html', 'Test 0006');
+			 addOption (box, 'test_bloque_B2_0007.html', 'Test 0007');
+			 addOption (box, 'test_bloque_B2_0008.html', 'Test 0008');
+			 addOption (box, 'test_bloque_B2_0009.html', 'Test 0009');
+			 addOption (box, 'test_bloque_B2_0010.html', 'Test 0010');
+			 addOption (box, 'test_bloque_B2_0011.html', 'Test 0011');
+			 addOption (box, 'test_bloque_B2_0012.html', 'Test 0012');
+			 addOption (box, 'test_bloque_B2_0013.html', 'Test 0013');
+			 addOption (box, 'test_bloque_B2_0014.html', 'Test 0014');
+			 addOption (box, 'test_bloque_B2_0015.html', 'Test 0015');
+			 addOption (box, 'test_bloque_B2_0016.html', 'Test 0016');
+			 addOption (box, 'test_bloque_B2_0017.html', 'Test 0017');
+			 addOption (box, 'test_bloque_B2_0018.html', 'Test 0018');
+			 addOption (box, 'test_bloque_B2_0019.html', 'Test 0019');
+			 addOption (box, 'test_bloque_B2_0020.html', 'Test 0020');
+			 addOption (box, 'test_bloque_B2_0021.html', 'Test 0021');
+			 addOption (box, 'test_bloque_B2_0022.html', 'Test 0022');
+			 addOption (box, 'test_bloque_B2_0023.html', 'Test 0023');
+			 addOption (box, 'test_bloque_B2_0024.html', 'Test 0024');
+			 addOption (box, 'test_bloque_B2_0025.html', 'Test 0025');
+			 addOption (box, 'test_bloque_B2_0026.html', 'Test 0026');
+			 addOption (box, 'test_bloque_B2_0027.html', 'Test 0027');
+			 addOption (box, 'test_bloque_B2_0028.html', 'Test 0028');
+			 addOption (box, 'test_bloque_B2_0029.html', 'Test 0029');
+			 addOption (box, 'test_bloque_B2_0030.html', 'Test 0030');
+			 addOption (box, 'test_bloque_B2_0031.html', 'Test 0031');
+			 addOption (box, 'test_bloque_B2_0032.html', 'Test 0032');
+			 addOption (box, 'test_bloque_B2_0033.html', 'Test 0033');
+			 addOption (box, 'test_bloque_B2_0034.html', 'Test 0034');
+			 addOption (box, 'test_bloque_B2_0035.html', 'Test 0035');
+			 addOption (box, 'test_bloque_B2_0036.html', 'Test 0036');
+			 addOption (box, 'test_bloque_B2_0037.html', 'Test 0037');
+			 addOption (box, 'test_bloque_B2_0038.html', 'Test 0038');
+			 addOption (box, 'test_bloque_B2_0039.html', 'Test 0039');
+			 addOption (box, 'test_bloque_B2_0040.html', 'Test 0040');
+			 addOption (box, 'test_bloque_B2_0041.html', 'Test 0041');
+			 addOption (box, 'test_bloque_B2_0042.html', 'Test 0042');
 	}
 	if (bloque == 'B3'){
 			 addOption (box, 'test_bloque_B3_0001.html', 'Test 0001');
 			 addOption (box, 'test_bloque_B3_0002.html', 'Test 0002');
+			 addOption (box, 'test_bloque_B3_0003.html', 'Test 0003');
+			 addOption (box, 'test_bloque_B3_0004.html', 'Test 0004');
+			 addOption (box, 'test_bloque_B3_0005.html', 'Test 0005');
+			 addOption (box, 'test_bloque_B3_0006.html', 'Test 0006');
+			 addOption (box, 'test_bloque_B3_0007.html', 'Test 0007');
+			 addOption (box, 'test_bloque_B3_0008.html', 'Test 0008');
+			 addOption (box, 'test_bloque_B3_0009.html', 'Test 0009');
+			 addOption (box, 'test_bloque_B3_0010.html', 'Test 0010');
+			 addOption (box, 'test_bloque_B3_0011.html', 'Test 0011');
+			 addOption (box, 'test_bloque_B3_0012.html', 'Test 0012');
+			 addOption (box, 'test_bloque_B3_0013.html', 'Test 0013');
+			 addOption (box, 'test_bloque_B3_0014.html', 'Test 0014');
+			 addOption (box, 'test_bloque_B3_0015.html', 'Test 0015');
+			 addOption (box, 'test_bloque_B3_0016.html', 'Test 0016');
+			 addOption (box, 'test_bloque_B3_0017.html', 'Test 0017');
+			 addOption (box, 'test_bloque_B3_0018.html', 'Test 0018');
+			 addOption (box, 'test_bloque_B3_0019.html', 'Test 0019');
+			 addOption (box, 'test_bloque_B3_0020.html', 'Test 0020');
+			 addOption (box, 'test_bloque_B3_0021.html', 'Test 0021');
+			 addOption (box, 'test_bloque_B3_0022.html', 'Test 0022');
+			 addOption (box, 'test_bloque_B3_0023.html', 'Test 0023');
+			 addOption (box, 'test_bloque_B3_0024.html', 'Test 0024');
+			 addOption (box, 'test_bloque_B3_0025.html', 'Test 0025');
+			 addOption (box, 'test_bloque_B3_0026.html', 'Test 0026');
 	}
 	if (bloque == 'B4'){
 			 addOption (box, 'test_bloque_B4_0001.html', 'Test 0001');
 			 addOption (box, 'test_bloque_B4_0002.html', 'Test 0002');
+			 addOption (box, 'test_bloque_B4_0003.html', 'Test 0003');
+			 addOption (box, 'test_bloque_B4_0004.html', 'Test 0004');
+			 addOption (box, 'test_bloque_B4_0005.html', 'Test 0005');
+			 addOption (box, 'test_bloque_B4_0006.html', 'Test 0006');
+			 addOption (box, 'test_bloque_B4_0007.html', 'Test 0007');
+			 addOption (box, 'test_bloque_B4_0008.html', 'Test 0008');
+			 addOption (box, 'test_bloque_B4_0009.html', 'Test 0009');
+			 addOption (box, 'test_bloque_B4_0010.html', 'Test 0010');
+			 addOption (box, 'test_bloque_B4_0011.html', 'Test 0011');
+			 addOption (box, 'test_bloque_B4_0012.html', 'Test 0012');
+			 addOption (box, 'test_bloque_B4_0013.html', 'Test 0013');
+			 addOption (box, 'test_bloque_B4_0014.html', 'Test 0014');
+			 addOption (box, 'test_bloque_B4_0015.html', 'Test 0015');
+			 addOption (box, 'test_bloque_B4_0016.html', 'Test 0016');
+			 addOption (box, 'test_bloque_B4_0017.html', 'Test 0017');
+			 addOption (box, 'test_bloque_B4_0018.html', 'Test 0018');
+			 addOption (box, 'test_bloque_B4_0019.html', 'Test 0019');
+			 addOption (box, 'test_bloque_B4_0020.html', 'Test 0020');
+			 addOption (box, 'test_bloque_B4_0021.html', 'Test 0021');
+			 addOption (box, 'test_bloque_B4_0022.html', 'Test 0022');
+			 addOption (box, 'test_bloque_B4_0023.html', 'Test 0023');
+			 addOption (box, 'test_bloque_B4_0024.html', 'Test 0024');
+			 addOption (box, 'test_bloque_B4_0025.html', 'Test 0025');
+			 addOption (box, 'test_bloque_B4_0026.html', 'Test 0026');
+			 addOption (box, 'test_bloque_B4_0027.html', 'Test 0027');
+			 addOption (box, 'test_bloque_B4_0028.html', 'Test 0028');
+			 addOption (box, 'test_bloque_B4_0029.html', 'Test 0029');
+			 addOption (box, 'test_bloque_B4_0030.html', 'Test 0030');
+			 addOption (box, 'test_bloque_B4_0031.html', 'Test 0031');
+			 addOption (box, 'test_bloque_B4_0032.html', 'Test 0032');
+			 addOption (box, 'test_bloque_B4_0033.html', 'Test 0033');
 	}
 
 }
@@ -331,10 +530,35 @@ function renderTestSelectorAnhos(anho){
 			 addOption (box, 'test_anho_2016_0014.html', 'Test 0014');
 	}
 	if (anho == '2015'){
-			 addOption (box, '', '-- No hay test --');
+			 addOption (box, 'test_anho_2015_0001.html', 'Test 0001');
+			 addOption (box, 'test_anho_2015_0002.html', 'Test 0002');
+			 addOption (box, 'test_anho_2015_0003.html', 'Test 0003');
+			 addOption (box, 'test_anho_2015_0004.html', 'Test 0004');
+			 addOption (box, 'test_anho_2015_0005.html', 'Test 0005');
+			 addOption (box, 'test_anho_2015_0006.html', 'Test 0006');
+			 addOption (box, 'test_anho_2015_0007.html', 'Test 0007');
+			 addOption (box, 'test_anho_2015_0008.html', 'Test 0008');
+			 addOption (box, 'test_anho_2015_0009.html', 'Test 0009');
+			 addOption (box, 'test_anho_2015_0010.html', 'Test 0010');
+			 addOption (box, 'test_anho_2015_0011.html', 'Test 0011');
+			 addOption (box, 'test_anho_2015_0012.html', 'Test 0012');
+			 addOption (box, 'test_anho_2015_0013.html', 'Test 0013');
+			 addOption (box, 'test_anho_2015_0014.html', 'Test 0014');
+			 addOption (box, 'test_anho_2015_0015.html', 'Test 0015');
+			 addOption (box, 'test_anho_2015_0016.html', 'Test 0016');
 	}
 	if (anho == '2014'){
-			 addOption (box, '', '-- No hay test --');
+			 addOption (box, 'test_anho_2014_0001.html', 'Test 0001');
+			 addOption (box, 'test_anho_2014_0002.html', 'Test 0002');
+			 addOption (box, 'test_anho_2014_0003.html', 'Test 0003');
+			 addOption (box, 'test_anho_2014_0004.html', 'Test 0004');
+			 addOption (box, 'test_anho_2014_0005.html', 'Test 0005');
+			 addOption (box, 'test_anho_2014_0006.html', 'Test 0006');
+			 addOption (box, 'test_anho_2014_0007.html', 'Test 0007');
+			 addOption (box, 'test_anho_2014_0008.html', 'Test 0008');
+			 addOption (box, 'test_anho_2014_0009.html', 'Test 0009');
+			 addOption (box, 'test_anho_2014_0010.html', 'Test 0010');
+			 addOption (box, 'test_anho_2014_0011.html', 'Test 0011');
 	}
 
 }
@@ -362,6 +586,8 @@ function renderMenuTest (tipoTest,id){
 	var list = document.getElementById('menuTest');
 
 
+			 addElement (list, 'Test Preguntas 2014', 'test_anho_2014_0001.html', tipoTest=='anho' && id=='2014');
+			 addElement (list, 'Test Preguntas 2015', 'test_anho_2015_0001.html', tipoTest=='anho' && id=='2015');
 			 addElement (list, 'Test Preguntas 2016', 'test_anho_2016_0001.html', tipoTest=='anho' && id=='2016');
 			 addElement (list, 'Test por temas', 'test_tema_T1_0001.html', tipoTest=='tema' );
 			 addElement (list, 'Test bloqueB4', 'test_bloque_B4_0001.html', tipoTest=='bloque' && id=='B4');
@@ -382,6 +608,8 @@ function renderMenuIndex (tipoTest,id){
 	var list = document.getElementById('menuTest');
 
 
+			 addElement (list, 'Test Preguntas 2014', 'pages/test_anho_2014_0001.html', tipoTest=='anho' && id=='2014');
+			 addElement (list, 'Test Preguntas 2015', 'pages/test_anho_2015_0001.html', tipoTest=='anho' && id=='2015');
 			 addElement (list, 'Test Preguntas 2016', 'pages/test_anho_2016_0001.html', tipoTest=='anho' && id=='2016');
 			 addElement (list, 'Test por temas', 'pages/test_tema_T1_0001.html', tipoTest=='tema' );
 			 addElement (list, 'Test bloqueB4', 'pages/test_bloque_B4_0001.html', tipoTest=='bloque' && id=='B4');

@@ -127,32 +127,36 @@ public class GoogleSheet implements IExcel {
 		this.listaPreguntas = new ArrayList<PreguntaTest>();
 		ValueRange response;
 		try {
-			response = service.spreadsheets().values().get(spreadsheetId, range).execute();
-			List<List<Object>> values = response.getValues();
-			if (values == null || values.size() == 0) {
-				logger.warn("No data found.");
-			} else {
-				int line = 0;
-				for (List row : values) {
-					line++;
-					if (row.isEmpty() || row.get(0).toString().isEmpty()) {
-						logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
-						continue;
+			String[] spreadsheets = spreadsheetId.split(" ");
+			String[] ranges = range.split(" ");
+			for (int i = 0; i < spreadsheets.length; i++){
+				response = service.spreadsheets().values().get(spreadsheets[i], ranges[i]).execute();
+				List<List<Object>> values = response.getValues();
+				if (values == null || values.size() == 0) {
+					logger.warn("No data found.");
+				} else {
+					int line = 0;
+					for (List row : values) {
+						line++;
+						if (row.isEmpty() || row.get(0).toString().isEmpty()) {
+							logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
+							continue;
+						}
+						// Print question and line number
+						//System.out.printf("Question number %d: %s\n", line, row.get(0));
+						ArrayList<String> celdasPregunta = new ArrayList<String>();
+						for (int columna = 0; columna < PreguntaTest.NUM_COLUMNAS; columna++) {
+							// If the cell is missing from the file, generate a
+							// blank one
+							if (row.size() <= columna || row.get(columna).toString().isEmpty())
+								celdasPregunta.add("");
+							else
+								celdasPregunta.add(row.get(columna).toString());
+						}
+						PreguntaTest pregunta = new PreguntaTest(celdasPregunta);
+						pregunta.calculaBloques(this.getListaBloques());
+						this.listaPreguntas.add(pregunta);
 					}
-					// Print question and line number
-					//System.out.printf("Question number %d: %s\n", line, row.get(0));
-					ArrayList<String> celdasPregunta = new ArrayList<String>();
-					for (int columna = 0; columna < PreguntaTest.NUM_COLUMNAS; columna++) {
-						// If the cell is missing from the file, generate a
-						// blank one
-						if (row.size() <= columna || row.get(columna).toString().isEmpty())
-							celdasPregunta.add("");
-						else
-							celdasPregunta.add(row.get(columna).toString());
-					}
-					PreguntaTest pregunta = new PreguntaTest(celdasPregunta);
-					pregunta.calculaBloques(this.getListaBloques());
-					this.listaPreguntas.add(pregunta);
 				}
 			}
 		} catch (IOException e) {

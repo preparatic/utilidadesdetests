@@ -135,17 +135,22 @@ padding: 0;
 	margin-bottom: 1.5em;
 	margin-top: 1em;
 	color: #585858 ! important;
-	width: 40%;
+	width: 60%;
 	
 }
 .desc
 {
 	font-weight: bold;
-	float:left; 
-	width:15%;
+    float:left; 
+	width:18%;
 
 }
-
+.vcenter {
+	font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 
 #exam_navigation{

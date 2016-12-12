@@ -170,30 +170,33 @@
                                                 </script>
                                             </div>-->
 
-                                                <div class="desc">
+											<div class="row">
+                                                <div class="col-xs-6 col-md-4 col-lg-2 vcenter">
+                                                    <div class="rstmelajuego" style="display: none;">Me la juego</div>
                                                     <div>Bien</div>
                                                     <div>Mal</div>
                                                     <div>N/C</div>
-                                                </div>
-                                                <div>
+                                                    <div class="desc">Total</div>
+                                                </div><!--
+                                                --><div class="col-xs-5 col-md-7 col-lg-9 vcenter">
+                                                    <div id="preguntas_mlj" class="rstmelajuego" style="display: none;">-</div>
                                                     <div id="preguntas_bien">-</div>
                                                     <div id="preguntas_mal">-</div>
                                                     <div id="preguntas_NC">-</div>
+                                                    <div id="preguntas_total">-</div>
                                                 </div>
-                                                <div class="desc">Total</div>
-                                                <div id="preguntas_total">-</div>
-
+                                            </div>
 
 											   <p style="text-align: center;">
-													<input type="submit" class="btn btn-info" value="Ver" onclick="showSolutions()" />
+													<input type="submit" class="btn btn-info" value="Ver" name="showhide" onclick="showHideSolutions()" />
 													<input type="submit" class="btn btn-primary" value="Corregir" onclick="correctQuiz('test_0001')" />
 													<input type="submit" class="btn btn-danger" value="Reset" onclick="resetQuiz(true)" />
 												</p>
-												<!-- Esta funcionalidad esta en beta. Por el momento la quito hasta que depure bien el quiz_function -->
-												<!--<div class="checkbox">
-													<label for="check-switch"> Me lo juego:</label>
+												<!-- Esta funcionalidad esta en beta. -->
+												<div class="checkbox">
+													<label for="check-switch"> Me la juego:</label>
 													<input type="checkbox" id="check-switch" class="js-switch" />
-												</div>-->     
+												</div>   
 											 </div>
                                              <script>
                                                 renderQuiz();
@@ -241,14 +244,17 @@
 
 	<script>
 	    var melajuego = document.querySelector('.js-switch');
-        if (typeof melajuego === "undefined") {
+        if (typeof melajuego != "undefined") {
             melajuego.onchange = function () {
                 //console.log(melajuego.checked);
                 var preguntas = \$("[name^='answer_']");
+                var divmlj = \$(".rstmelajuego");
                 if (melajuego.checked) {
                     var myType = "checkbox";
+                    divmlj.attr('style', 'display: inline-block;')
                 } else {
                     var myType = "radio";
+                    divmlj.attr('style', 'display: none;')
                 }
                 preguntas.replaceWith(function () {
                     return \$("<input>", {

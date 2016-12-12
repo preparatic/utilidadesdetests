@@ -102,12 +102,15 @@ public class PreguntaTest {
 		this.setNumeroTest(celdas.get(Campo.NUMERO_TEST.index));
 		this.setNumeroPregunta(celdas.get(Campo.NUMERO_PREGUNTA.index));
 		this.setId(celdas.get(Campo.ID.index));
-		this.setTemas(celdas.get(Campo.TEMAS.index));
+
 		this.setRevisada(celdas.get(Campo.REVISADA.index));
 		this.setEstado(celdas.get(Campo.ESTADO.index));
 		this.setRevisor(celdas.get(Campo.REVISOR.index));
 		this.setSentencia(celdas.get(Campo.SENTENCIA.index));
 		this.setNotas(celdas.get(Campo.NOTAS.index));
+		
+		// this should be the last thing to do.
+		this.setTemas(celdas.get(Campo.TEMAS.index));
 	}
 
 	@Override
@@ -156,7 +159,7 @@ public class PreguntaTest {
 	}
 
 	public void setPregunta(String pregunta) {
-		this.pregunta = pregunta;
+		this.pregunta = pregunta.trim();
 	}
 
 	public String getRespuesta_a() {
@@ -164,7 +167,7 @@ public class PreguntaTest {
 	}
 
 	public void setRespuesta_a(String respuesta_a) {
-		this.respuesta_a = respuesta_a;
+		this.respuesta_a = respuesta_a.trim();
 	}
 
 	public String getRespuesta_b() {
@@ -172,7 +175,7 @@ public class PreguntaTest {
 	}
 
 	public void setRespuesta_b(String respuesta_b) {
-		this.respuesta_b = respuesta_b;
+		this.respuesta_b = respuesta_b.trim();
 	}
 
 	public String getRespuesta_c() {
@@ -180,7 +183,7 @@ public class PreguntaTest {
 	}
 
 	public void setRespuesta_c(String respuesta_c) {
-		this.respuesta_c = respuesta_c;
+		this.respuesta_c = respuesta_c.trim();
 	}
 
 	public String getRespuesta_d() {
@@ -188,7 +191,7 @@ public class PreguntaTest {
 	}
 
 	public void setRespuesta_d(String respuesta_d) {
-		this.respuesta_d = respuesta_d;
+		this.respuesta_d = respuesta_d.trim();
 	}
 
 	public String getRespuesta_correcta() {
@@ -196,7 +199,7 @@ public class PreguntaTest {
 	}
 
 	public void setRespuesta_correcta(String respuesta_correcta) {
-		this.respuesta_correcta = respuesta_correcta;
+		this.respuesta_correcta = respuesta_correcta.trim();
 	}
 
 	public List<String> getBloques() {
@@ -234,7 +237,7 @@ public class PreguntaTest {
 	}
 
 	public void setAutor(String autor) {
-		this.autor = autor;
+		this.autor = autor.trim();
 	}
 
 	public String getPromocion() {
@@ -242,7 +245,7 @@ public class PreguntaTest {
 	}
 
 	public void setPromocion(String promocion) {
-		this.promocion = promocion;
+		this.promocion = promocion.trim();
 	}
 
 	public String getAnno_creacion() {
@@ -250,7 +253,7 @@ public class PreguntaTest {
 	}
 
 	public void setAnno_creacion(String anno_creacion) {
-		this.anno_creacion = anno_creacion;
+		this.anno_creacion = anno_creacion.trim();
 	}
 
 	public String getObservaciones() {
@@ -258,7 +261,7 @@ public class PreguntaTest {
 	}
 
 	public void setObservaciones(String observaciones) {
-		this.observaciones = observaciones;
+		this.observaciones = observaciones.trim();
 	}
 
 	public String getNumeroTest() {
@@ -266,7 +269,7 @@ public class PreguntaTest {
 	}
 
 	public void setNumeroTest(String numeroTest) {
-		this.numeroTest = numeroTest;
+		this.numeroTest = numeroTest.trim();
 	}
 
 	public String getNumeroPregunta() {
@@ -274,7 +277,7 @@ public class PreguntaTest {
 	}
 
 	public void setNumeroPregunta(String numeroPregunta) {
-		this.numeroPregunta = numeroPregunta;
+		this.numeroPregunta = numeroPregunta.trim();
 	}
 
 	public String getId() {
@@ -286,7 +289,7 @@ public class PreguntaTest {
 		return Integer.parseInt(id);
 	}
 	public void setId(String id) {
-		this.id = id;
+		this.id = id.trim();
 	}
 
 	public List<Integer> getTemas() {
@@ -302,14 +305,15 @@ public class PreguntaTest {
 		return joined;
 	}
 	public void setTemas(String temas) {
-		String[] temasArr = temas.split(",");
+		String[] temasArr = temas.trim().split("[.,y]");
 		for(String t : temasArr)
 		{
 			try {
 				int tema = Integer.parseInt(t.trim());
 				this.temas.add(tema);
 			} catch (Exception e) {
-				logger.error("Error al convertir temas " + temas + " a bloques en pregunta " + this.getPregunta());
+				if (!this.getSentencia().equalsIgnoreCase("delete"))
+					logger.warn("Error al convertir temas " + temas + " a bloques en pregunta " + this.getPregunta());
 			}
 		}
 	}
@@ -319,7 +323,7 @@ public class PreguntaTest {
 	}
 
 	public void setRevisada(String revisada) {
-		this.revisada = revisada;
+		this.revisada = revisada.trim();
 	}
 
 	public String getEstado() {
@@ -327,7 +331,7 @@ public class PreguntaTest {
 	}
 
 	public void setEstado(String estado) {
-		this.estado = estado;
+		this.estado = estado.trim();
 	}
 
 	public String getRevisor() {
@@ -335,7 +339,7 @@ public class PreguntaTest {
 	}
 
 	public void setRevisor(String revisor) {
-		this.revisor = revisor;
+		this.revisor = revisor.trim();
 	}
 
 	public String getSentencia() {
@@ -343,7 +347,7 @@ public class PreguntaTest {
 	}
 
 	public void setSentencia(String sentencia) {
-		this.sentencia = sentencia;
+		this.sentencia = sentencia.trim();
 	}
 
 
@@ -352,7 +356,7 @@ public class PreguntaTest {
 	}
 
 	public void setNotas(String notas) {
-		this.notas = notas;
+		this.notas = notas.trim();
 	}
 	
 	public String getString(Campo campo) {

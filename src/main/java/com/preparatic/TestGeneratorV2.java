@@ -93,7 +93,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	 * Se generan tanto los tests globales, como los test por bloques.
 	 */
 	private static void generarTest(List<PreguntaTest> listaPreguntas) {
-		generarTodosLosTest(listaPreguntas);
+		//generarTodosLosTest(listaPreguntas);
 
 		generarTestAleatorios(listaPreguntas);
 		generarTestBloques(listaPreguntas);
