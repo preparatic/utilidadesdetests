@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tests Preparatic  |Tests por Temas</title>
+    <title>Tests Preparatic  | Tests por Examen</title>
     <!-- Bootstrap -->
     <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -69,7 +69,8 @@
                                         <li><a href="misestadisticas.html">Estad&iacute;sticas</a></li>
                                     </ul>
                                 </li>
-                                <!--<li> <a href="javascript:void(0)"><i class="fa fa-windows"></i> Extras <span class="label label-success pull-right">Coming Soon</span></a></li>-->                            </ul>
+                                <!--<li> <a href="javascript:void(0)"><i class="fa fa-windows"></i> Extras <span class="label label-success pull-right">Coming Soon</span></a></li>-->
+                            </ul>
                         </div>
                     </div>
                     <!-- /sidebar menu -->
@@ -124,7 +125,7 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
-                                    <h2>Tests por Temas</h2>
+                                    <h2>Tests por A&ntilde;o</h2>
                                     <ul class="nav navbar-right panel_toolbox">
                                         <li>
                                             <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -148,15 +149,15 @@
                                 </div>
                                 <div class="x_content">
                                     <p class="text-muted font-13 m-b-30">
-                                        Le proponemos una lista de ejercicios con tests elegidos de cada tema.
+                                        Le proponemos una lista de ejercicios con preguntas extraidas por A&ntilde;o.
                                     </p>
-                                    <table id="datatable-temas" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                                    <table id="datatable-annos" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th>N&uacute;mero de Test</th>
                                                 <th>T&iacute;tulo</th>
                                                 <th>URL</th>
-                                                <th>Tema</th>
+                                                <th>Convocatoria</th>
                                                 <th>Ver/Hacer</th>
                                             </tr>
                                         </thead>
@@ -212,7 +213,7 @@
     <script src="./data/list_tests.js"></script>
     <script>
         $(document).ready(function () {
-            $('#datatable-temas').DataTable({
+            $('#datatable-annos').DataTable({
                 "iDisplayLength": 50,
                 "oLanguage": {
                     "sProcessing": "Procesando...",
@@ -239,7 +240,7 @@
                     },
                 },
                 bProcessing: true,
-                data: themeTestsSet,
+                data: annosTestsSet,
                 aoColumns: [
                           { responsivePriority: 6, }, // first column (Numero de Test)
                           { responsivePriority: 3, }, // 2 column (Titulo
@@ -248,16 +249,7 @@
                                "visible": false,
                                "searchable": false
                            }, // 3 column (url
-                           {
-                               responsivePriority: 4,
-                               "targets": [3],
-                               // The `data` parameter refers to the data for the cell (defined by the
-                               // `data` option, which defaults to the column being worked with, in
-                               // this case `data: 0`.
-                               "mRender": function (data, type, full) {
-                                   return infoTemas[data].titulo;
-                               }
-                           },  // 4 column (Tema ID)
+                            { responsivePriority: 5, },  // 4 column (convocatoria ID)
                            {     // 5 column (view/do link)
                                responsivePriority: 1,
                                "sName": "Hacer",

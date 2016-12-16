@@ -15,15 +15,15 @@
  *******************************************************************************/
 package com.preparatic.entidades;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
+//import java.sql.Connection;
+//import java.sql.ResultSet;
+//import java.sql.Statement;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
+//import java.util.Random;
 import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.LogManager;
@@ -146,7 +146,7 @@ private final int MaxNumPreguntas;
 		return this.ListaPreguntas.size() >= MaxNumPreguntas;
 	}
 
-	private String sentenciaSQL = "";
+//	private String sentenciaSQL = "";
 
 	/**
 	 * Devuelve la sentencia Select que extrae de la base de datos todos los
@@ -154,56 +154,56 @@ private final int MaxNumPreguntas;
 	 * 
 	 * @return
 	 */
-	private String SentenciaSelectSQL() {
-		if (sentenciaSQL != "")
-			return sentenciaSQL;
-
-		// Generamos al azar la sentencia para extraer cosas de la base de
-		// datos.
-
-		StringBuilder sSql = new StringBuilder(" SELECT *  FROM PREGUNTAS_TEST WHERE ");
-		boolean esPrimero = true;
-		Random rnd = new Random();
-
-		while (ListaPreguntas.size() != 0) {
-			if (!esPrimero) {
-				sSql.append(" OR ");
-			}
-			sSql.append("`ID` = ");
-			// Saco al azar los id de preguntas, para que no vayan en orden
-			// por tests.
-			int index = rnd.nextInt(ListaPreguntas.size());
-			int idPregunta = ListaPreguntas.get(index);
-			sSql.append(idPregunta);
-			// Borro la pregunta de la lista.
-			ListaPreguntas.remove((Object) idPregunta);
-			esPrimero = false;
-		}
-
-		// Los resultados se ordenan por el campo C, para meter algo más de
-		// aleatoriedad.
-		sSql.append(" ORDER BY 'RESPUESTA_C'  DESC ");
-		sentenciaSQL = new String(sSql.toString()); // Salvaguardo el resultado
-		// para la próxima llamada.
-		return sentenciaSQL;
-
-	}
-
-	private ResultSet ExtraerPreguntasBBDD(Connection conexion) {
-
-		String sSql = "";
-		try {
-			Statement sentencia = conexion.createStatement();
-			sSql = SentenciaSelectSQL();
-			ResultSet resultados = sentencia.executeQuery(sSql);
-			return resultados;
-
-		} catch (Exception e) {
-			logger.error("Error al extraer el contenido de las preguntas del test." + e.getMessage());
-			logger.error(sSql);
-		}
-		return null;
-	}
+//	private String SentenciaSelectSQL() {
+//		if (sentenciaSQL != "")
+//			return sentenciaSQL;
+//
+//		// Generamos al azar la sentencia para extraer cosas de la base de
+//		// datos.
+//
+//		StringBuilder sSql = new StringBuilder(" SELECT *  FROM PREGUNTAS_TEST WHERE ");
+//		boolean esPrimero = true;
+//		Random rnd = new Random();
+//
+//		while (ListaPreguntas.size() != 0) {
+//			if (!esPrimero) {
+//				sSql.append(" OR ");
+//			}
+//			sSql.append("`ID` = ");
+//			// Saco al azar los id de preguntas, para que no vayan en orden
+//			// por tests.
+//			int index = rnd.nextInt(ListaPreguntas.size());
+//			int idPregunta = ListaPreguntas.get(index);
+//			sSql.append(idPregunta);
+//			// Borro la pregunta de la lista.
+//			ListaPreguntas.remove((Object) idPregunta);
+//			esPrimero = false;
+//		}
+//
+//		// Los resultados se ordenan por el campo C, para meter algo más de
+//		// aleatoriedad.
+//		sSql.append(" ORDER BY 'RESPUESTA_C'  DESC ");
+//		sentenciaSQL = new String(sSql.toString()); // Salvaguardo el resultado
+//		// para la próxima llamada.
+//		return sentenciaSQL;
+//
+//	}
+//
+//	private ResultSet ExtraerPreguntasBBDD(Connection conexion) {
+//
+//		String sSql = "";
+//		try {
+//			Statement sentencia = conexion.createStatement();
+//			sSql = SentenciaSelectSQL();
+//			ResultSet resultados = sentencia.executeQuery(sSql);
+//			return resultados;
+//
+//		} catch (Exception e) {
+//			logger.error("Error al extraer el contenido de las preguntas del test." + e.getMessage());
+//			logger.error(sSql);
+//		}
+//		return null;
+//	}
 
 	/**
 	 * Genera el PDF y el html asociados a este TEST.
@@ -212,43 +212,43 @@ private final int MaxNumPreguntas;
 	 * @param Prefijo_Archivo
 	 *            : Es el prefijo que va a tener el nombre del archivo.
 	 */
-	public boolean generarDocumentos(Connection conexion, int TotalTestsBloque) {
-
-		ResultSet resultados = ExtraerPreguntasBBDD(conexion);
-		if (resultados == null)
-			return false;
-
-		// Genera el pdf
-		PdfGenerator pdfGenerator = new PdfGenerator(this);
-
-		// Para que no se aburran esperando, les ponemos un mensaje en la
-		// consola.
-		if (tipoTest == eTipoTest.bloque)
-			logger.info("Generando Test. Bloque " + idBloqueTematicaAnho + " Test " + idTest);
-		else if (tipoTest == eTipoTest.aleatorio)
-			logger.info("Generando Test. Test " + idTest);
-		else if (tipoTest == eTipoTest.tema)
-			logger.info("Generando Test. Tema " + idTest);
-		else if (tipoTest == eTipoTest.anho)
-			logger.info("Generando Test Anho " + idBloqueTematicaAnho + " Test " + idTest);
-		else {
-			logger.info("Generando Test por temática. Temática" + tituloTematica + " Test " + idTest);
-			pdfGenerator.setTituloTematica(tituloTematica);
-		}
-
-		try {
-			pdfGenerator.agregarPreguntas(resultados);
-			pdfGenerator.guardarPDF();
-		} catch (Exception e) {
-			logger.error("Error al generar pdf" + e.getMessage());
-		}
-
-		// Genera el html
-		HtmlGenerator htmlGenerator = new HtmlGenerator(this);
-		htmlGenerator.generarTestHtml(resultados);
-
-		return true;
-	}
+//	public boolean generarDocumentos(Connection conexion, int TotalTestsBloque) {
+//
+//		ResultSet resultados = ExtraerPreguntasBBDD(conexion);
+//		if (resultados == null)
+//			return false;
+//
+//		// Genera el pdf
+//		PdfGenerator pdfGenerator = new PdfGenerator(this);
+//
+//		// Para que no se aburran esperando, les ponemos un mensaje en la
+//		// consola.
+//		if (tipoTest == eTipoTest.bloque)
+//			logger.info("Generando Test. Bloque " + idBloqueTematicaAnho + " Test " + idTest);
+//		else if (tipoTest == eTipoTest.aleatorio)
+//			logger.info("Generando Test. Test " + idTest);
+//		else if (tipoTest == eTipoTest.tema)
+//			logger.info("Generando Test. Tema " + idTest);
+//		else if (tipoTest == eTipoTest.anho)
+//			logger.info("Generando Test Anho " + idBloqueTematicaAnho + " Test " + idTest);
+//		else {
+//			logger.info("Generando Test por temática. Temática" + tituloTematica + " Test " + idTest);
+//			pdfGenerator.setTituloTematica(tituloTematica);
+//		}
+//
+//		try {
+//			pdfGenerator.agregarPreguntas(resultados);
+//			pdfGenerator.guardarPDF();
+//		} catch (Exception e) {
+//			logger.error("Error al generar pdf" + e.getMessage());
+//		}
+//
+//		// Genera el html
+//		HtmlGenerator htmlGenerator = new HtmlGenerator(this);
+//		htmlGenerator.generarTestHtml(resultados);
+//
+//		return true;
+//	}
 
 	public boolean generarDocumentos(List<PreguntaTest> resultados, int TotalTestsBloque) {
 		if (resultados == null)

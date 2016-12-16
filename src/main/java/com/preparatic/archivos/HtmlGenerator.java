@@ -16,12 +16,12 @@
 package com.preparatic.archivos;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintStream;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+//import java.sql.ResultSet;
+//import java.sql.SQLException;
 import java.util.List;
 
 import org.apache.commons.lang.StringEscapeUtils;
@@ -79,10 +79,10 @@ public class HtmlGenerator {
 	 * 
 	 * @param num_test
 	 */
-	public void generarTestHtml(ResultSet resultados) {
-		generarHtml();
-		generarJSQuestion(resultados);
-	}
+//	public void generarTestHtml(ResultSet resultados) {
+//		generarHtml();
+//		generarJSQuestion(resultados);
+//	}
 	
 	/**
 	 * Genera todos los ficheros de test.
@@ -90,70 +90,71 @@ public class HtmlGenerator {
 	 * @param num_test
 	 */
 	public void generarTestHtml(List<PreguntaTest> listapreguntas) {
-		generarHtml();
-		generarJSQuestion(listapreguntas);
+//		generarHtml();
+//		generarJSQuestion(listapreguntas);
+		FactoriaArchivo.checkAndCreateDirectories();
 		
 		generarHtmlV2();
 		generarJSQuestionV2(listapreguntas);
 	}
 	
-	public String getHtmlFilename()
-	{
-		return FactoriaArchivo.htmlTestFilename(tipoTest,
-				test.getIdBloqueTematicaAnho(), test.getIdTest());
-	}
-	public String getJsFilename()
-	{
-		return FactoriaArchivo.NombreArchivoJavascriptPreguntas(tipoTest,
-				test.getIdBloqueTematicaAnho(), test.getIdTest());
-	}
+//	public String getHtmlFilename()
+//	{
+//		return FactoriaArchivo.htmlTestFilename(tipoTest,
+//				test.getIdBloqueTematicaAnho(), test.getIdTest());
+//	}
+//	public String getJsFilename()
+//	{
+//		return FactoriaArchivo.NombreArchivoJavascriptPreguntas(tipoTest,
+//				test.getIdBloqueTematicaAnho(), test.getIdTest());
+//	}
 	
 	/**
 	 * Genera el archivo test_???.html dentro de la carpeta pages.
 	 */
-	private void generarHtml() {
-
-		try {
-
-			// Creamos la salida
-			PrintStream salida = FactoriaArchivo.archivoHtmlTest(tipoTest,
-					test.getIdBloqueTematicaAnho(), test.getIdTest());
-
-			// Abrimos la entrada
-			BufferedReader entrada = new BufferedReader(new FileReader(
-					pathResources
-							+ ConfigProperties
-									.getProperty("files.templates.PageHtml")));
-
-			int nFlag = 1;
-			while (copiarHastaFlag(salida, entrada) == true) {
-				/* En cada interrupción, metemos lo que sea necesario. */
-				switch (nFlag) {
-				case 1:
-					// En la primera interrupción, se mete la importación de
-					// preguntas
-					importarJavascript(salida);
-					break;
-				case 2:
-					// Selector de test.
-					escribirTestNavigator(salida);
-					break;
-
-				case 3:
-					escribirTituloTest(salida);
-					break;
-				default:
-					break;
-				}
-				nFlag++;
-			}
-
-			salida.close();
-			entrada.close();
-		} catch (IOException e) {
-			System.err.println(e.getMessage());
-		}
-	}
+//	private void generarHtml() {
+//
+//		try {
+//
+//			// Creamos la salida
+//			PrintStream salida = FactoriaArchivo.archivoHtmlTest(tipoTest,
+//					test.getIdBloqueTematicaAnho(), test.getIdTest());
+//
+//			// Abrimos la entrada
+//			BufferedReader entrada = new BufferedReader(new FileReader(
+//					pathResources
+//							+ ConfigProperties
+//									.getProperty("files.templates.PageHtml")));
+//
+//			int nFlag = 1;
+//			while (copiarHastaFlag(salida, entrada) == true) {
+//				/* En cada interrupción, metemos lo que sea necesario. */
+//				switch (nFlag) {
+//				case 1:
+//					// En la primera interrupción, se mete la importación de
+//					// preguntas
+//					importarJavascript(salida);
+//					break;
+//				case 2:
+//					// Selector de test.
+//					escribirTestNavigator(salida);
+//					break;
+//
+//				case 3:
+//					escribirTituloTest(salida);
+//					break;
+//				default:
+//					break;
+//				}
+//				nFlag++;
+//			}
+//
+//			salida.close();
+//			entrada.close();
+//		} catch (IOException e) {
+//			System.err.println(e.getMessage());
+//		}
+//	}
 
 	/**
 	 * Genera el fichero con las preguntas y respuestas dentro de un JavaScript.
@@ -161,39 +162,39 @@ public class HtmlGenerator {
 	 * @param resultados
 	 * @return
 	 */
-	private boolean generarJSQuestion(ResultSet resultados) {
-
-		if (resultados == null)
-			return false;
-
-		try {
-			// Generamos el archivo de salida.
-			PrintStream salida = FactoriaArchivo.archivoJavascriptTest(
-					tipoTest, test.getIdBloqueTematicaAnho(), test.getIdTest());
-
-			// Copiamos la cabecera común a todos los ficheros de javascript.
-			BufferedReader entrada = new BufferedReader(new FileReader(
-					pathResources
-							+ ConfigProperties
-									.getProperty("files.templates.Javascript")));
-			while (copiarHastaFlag(salida, entrada) == true)
-				;
-
-			/* Cogemos las preguntas de test desde el principio */
-			resultados.first();
-			int n_pregunta = 0;
-			while (resultados.isAfterLast() == false) {
-				escribirPreguntaTest(salida, resultados, n_pregunta);
-				resultados.next();
-				n_pregunta++;
-			}
-			salida.close();
-		} catch (Exception e) {
-			logger.error("escribirJavascript " + e.getMessage());
-		}
-
-		return true;
-	}
+//	private boolean generarJSQuestion(ResultSet resultados) {
+//
+//		if (resultados == null)
+//			return false;
+//
+//		try {
+//			// Generamos el archivo de salida.
+//			PrintStream salida = FactoriaArchivo.archivoJavascriptTest(
+//					tipoTest, test.getIdBloqueTematicaAnho(), test.getIdTest());
+//
+//			// Copiamos la cabecera común a todos los ficheros de javascript.
+//			BufferedReader entrada = new BufferedReader(new FileReader(
+//					pathResources
+//							+ ConfigProperties
+//									.getProperty("files.templates.Javascript")));
+//			while (copiarHastaFlag(salida, entrada) == true)
+//				;
+//
+//			/* Cogemos las preguntas de test desde el principio */
+//			resultados.first();
+//			int n_pregunta = 0;
+//			while (resultados.isAfterLast() == false) {
+//				escribirPreguntaTest(salida, resultados, n_pregunta);
+//				resultados.next();
+//				n_pregunta++;
+//			}
+//			salida.close();
+//		} catch (Exception e) {
+//			logger.error("escribirJavascript " + e.getMessage());
+//		}
+//
+//		return true;
+//	}
 	
 	/**
 	 * Genera el fichero con las preguntas y respuestas dentro de un JavaScript.
@@ -201,37 +202,37 @@ public class HtmlGenerator {
 	 * @param resultados
 	 * @return
 	 */
-	private boolean generarJSQuestion(List<PreguntaTest> listapreguntas) {
-
-		if (listapreguntas == null || listapreguntas.isEmpty())
-			return false;
-
-		try {
-			// Generamos el archivo de salida.
-			PrintStream salida = FactoriaArchivo.archivoJavascriptTest(
-					tipoTest, test.getIdBloqueTematicaAnho(), test.getIdTest());
-
-			// Copiamos la cabecera común a todos los ficheros de javascript.
-			BufferedReader entrada = new BufferedReader(new FileReader(
-					pathResources
-							+ ConfigProperties
-									.getProperty("files.templates.Javascript")));
-			while (copiarHastaFlag(salida, entrada) == true)
-				;
-
-			/* Cogemos las preguntas de test desde el principio */
-			int n_pregunta = 0;
-			for (PreguntaTest pregunta : listapreguntas) {
-				escribirPreguntaTest(salida, pregunta, n_pregunta);
-				n_pregunta++;
-			}
-			salida.close();
-		} catch (Exception e) {
-			logger.error("escribirJavascript " + e.getMessage());
-		}
-
-		return true;
-	}
+//	private boolean generarJSQuestion(List<PreguntaTest> listapreguntas) {
+//
+//		if (listapreguntas == null || listapreguntas.isEmpty())
+//			return false;
+//
+//		try {
+//			// Generamos el archivo de salida.
+//			PrintStream salida = FactoriaArchivo.archivoJavascriptTest(
+//					tipoTest, test.getIdBloqueTematicaAnho(), test.getIdTest());
+//
+//			// Copiamos la cabecera común a todos los ficheros de javascript.
+//			BufferedReader entrada = new BufferedReader(new FileReader(
+//					pathResources
+//							+ ConfigProperties
+//									.getProperty("files.templates.Javascript")));
+//			while (copiarHastaFlag(salida, entrada) == true)
+//				;
+//
+//			/* Cogemos las preguntas de test desde el principio */
+//			int n_pregunta = 0;
+//			for (PreguntaTest pregunta : listapreguntas) {
+//				escribirPreguntaTest(salida, pregunta, n_pregunta);
+//				n_pregunta++;
+//			}
+//			salida.close();
+//		} catch (Exception e) {
+//			logger.error("escribirJavascript " + e.getMessage());
+//		}
+//
+//		return true;
+//	}
 	
 	
 	/***********************************************************
@@ -244,7 +245,7 @@ public class HtmlGenerator {
 	{
 		String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
 				test.getIdBloqueTematicaAnho(), test.getIdTest());
-		return "tests/" +  filename + ".html";
+		return ConfigProperties.getProperty("files.testsDir") +  filename + ".html";
 	}
 	private void generarHtmlV2() {
 		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
@@ -275,7 +276,7 @@ public class HtmlGenerator {
 		//System.out.println(htmlTemplate.toString());
 
 		// Creamos la salida
-		filename = "testsV2/tests/" +  filename + ".html";
+		filename = FactoriaArchivo.pathHtml +  filename + ".html";
 		PrintStream salida = FactoriaArchivo.filenameToPrintStream(filename);
 		salida.print(htmlTemplate.toString());
 		salida.close();
@@ -284,7 +285,7 @@ public class HtmlGenerator {
 	{
 		String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
 				test.getIdBloqueTematicaAnho(), test.getIdTest());
-		return "data/" +  filename + ".js";
+		return ConfigProperties.getProperty("files.javaScriptQuestionsDir") +  filename + ".js";
 	}
 	private boolean generarJSQuestionV2(List<PreguntaTest> listapreguntas) {
 
@@ -294,7 +295,7 @@ public class HtmlGenerator {
 		try {
 			String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
 					test.getIdBloqueTematicaAnho(), test.getIdTest());
-			filename = "testsV2/data/" +  filename + ".js";
+			filename = FactoriaArchivo.pathJsData +  filename + ".js";
 			// Generamos el archivo de salida.
 			PrintStream salida = FactoriaArchivo.filenameToPrintStream(filename);
 
@@ -325,14 +326,13 @@ public class HtmlGenerator {
 	{
 		
 		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
-		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplateTODO");
 
 		StringTemplate infotestTemplate = group.getInstanceOf("info_tests");
 		infotestTemplate.setAttribute("listabloques", GestorInfoBloque.getInstance().getBloques());
 		infotestTemplate.setAttribute("listatemas", GestorInfoTema.getInstance().getTemas());
 
 		//System.out.println(infotestTemplate.toString());
-		PrintStream file = FactoriaArchivo.filenameToPrintStream("testsV2/data/info_tests.js");
+		PrintStream file = FactoriaArchivo.filenameToPrintStream(FactoriaArchivo.pathJsData + "info_tests.js");
 		file.println(infotestTemplate.toString());
 		file.close();
 	}
@@ -340,7 +340,6 @@ public class HtmlGenerator {
 	protected static void generarJSMenuInfoV2()
 	{
 		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
-		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplateTODO");
 
 		StringTemplate infotestTemplate = group.getInstanceOf("list_tests");
 		infotestTemplate.setAttribute("listaTestsGlobales", GestorTests.getInstance().getTestsGlobales());
@@ -349,7 +348,7 @@ public class HtmlGenerator {
 		infotestTemplate.setAttribute("listaTestsAnnos", GestorTests.getInstance().getTestPorAnno());
 
 		//System.out.println(infotestTemplate.toString());
-		PrintStream file = FactoriaArchivo.filenameToPrintStream("testsV2/data/list_tests.js");
+		PrintStream file = FactoriaArchivo.filenameToPrintStream(FactoriaArchivo.pathJsData + "list_tests.js");
 		file.println(infotestTemplate.toString());
 		file.close();
 	}
@@ -361,82 +360,82 @@ public class HtmlGenerator {
 	 * @return
 	 */
 
-	private static boolean escribirPreguntaTest(PrintStream salida,
-			ResultSet resultados, int idCuestion) {
-
-		if (resultados == null)
-			return false;
-
-		String s = "";
-		try {
-
-			// Comentario con el ID de pregunta.
-			s = "//  Id pregunta: " + campoAHtml(resultados, "ID");
-			s += " Año de creación de pregunta: "
-					+ campoAHtml(resultados, "ANNO_CREACION");
-			salida.println(s);
-			
-			//DEBUG:
-//			int debug;
-//			if(campoAHtml(resultados, "ID").equals("9540"))
-//				debug = 1;
-
-			// Question
-			s = " questions[" + idCuestion + "]= \"" + (idCuestion + 1) + ")  "
-					+ campoAHtml(resultados, "PREGUNTA") + "\";";
-			salida.println(s);
-
-			// Choices
-			s = " choices[" + idCuestion + "]= new Array();";
-			salida.println(s);
-
-			s = " choices[" + idCuestion + "][0] = \""
-					+ campoAHtml(resultados, "RESPUESTA_A") + "\";";
-			salida.println(s);
-
-			s = " choices[" + idCuestion + "][1] = \""
-					+ campoAHtml(resultados, "RESPUESTA_B") + "\";";
-			salida.println(s);
-
-			s = " choices[" + idCuestion + "][2] = \""
-					+ campoAHtml(resultados, "RESPUESTA_C") + "\";";
-			salida.println(s);
-
-			s = " choices[" + idCuestion + "][3] = \""
-					+ campoAHtml(resultados, "RESPUESTA_D") + "\";";
-			salida.println(s);
-
-			// Respuesta correcta
-			s = " answers["
-					+ idCuestion
-					+ "] = "
-					+ OptionToNumber.toNumber(resultados
-							.getString("RESPUESTA_CORRECTA")) + ";";
-			salida.println(s);
-
-			// Temas
-			s = " units[" + idCuestion + "] = \""
-					+ campoAHtml(resultados, "TEMAS") + "\";";
-			salida.println(s);
-
-			// Comentarios
-			s = " comments[" + idCuestion + "] = \"" + "Id Pregunta: "
-					+ campoAHtml(resultados, "ID") + ". "
-					+ campoAHtml(resultados, "OBSERVACIONES") + "\";";
-			salida.println(s);
-
-			// Para separar entre preguntas.
-			salida.println("");
-			salida.println("");
-		} catch (Exception e) {
-			logger.error("escribirPreguntaTest " + e.getMessage());
-			logger.error("escribirPreguntaTest idPregunta "
-					+ campoAHtml(resultados, "ID"));
-			return false;
-		}
-
-		return true;
-	}
+//	private static boolean escribirPreguntaTest(PrintStream salida,
+//			ResultSet resultados, int idCuestion) {
+//
+//		if (resultados == null)
+//			return false;
+//
+//		String s = "";
+//		try {
+//
+//			// Comentario con el ID de pregunta.
+//			s = "//  Id pregunta: " + campoAHtml(resultados, "ID");
+//			s += " Año de creación de pregunta: "
+//					+ campoAHtml(resultados, "ANNO_CREACION");
+//			salida.println(s);
+//			
+//			//DEBUG:
+////			int debug;
+////			if(campoAHtml(resultados, "ID").equals("9540"))
+////				debug = 1;
+//
+//			// Question
+//			s = " questions[" + idCuestion + "]= \"" + (idCuestion + 1) + ")  "
+//					+ campoAHtml(resultados, "PREGUNTA") + "\";";
+//			salida.println(s);
+//
+//			// Choices
+//			s = " choices[" + idCuestion + "]= new Array();";
+//			salida.println(s);
+//
+//			s = " choices[" + idCuestion + "][0] = \""
+//					+ campoAHtml(resultados, "RESPUESTA_A") + "\";";
+//			salida.println(s);
+//
+//			s = " choices[" + idCuestion + "][1] = \""
+//					+ campoAHtml(resultados, "RESPUESTA_B") + "\";";
+//			salida.println(s);
+//
+//			s = " choices[" + idCuestion + "][2] = \""
+//					+ campoAHtml(resultados, "RESPUESTA_C") + "\";";
+//			salida.println(s);
+//
+//			s = " choices[" + idCuestion + "][3] = \""
+//					+ campoAHtml(resultados, "RESPUESTA_D") + "\";";
+//			salida.println(s);
+//
+//			// Respuesta correcta
+//			s = " answers["
+//					+ idCuestion
+//					+ "] = "
+//					+ OptionToNumber.toNumber(resultados
+//							.getString("RESPUESTA_CORRECTA")) + ";";
+//			salida.println(s);
+//
+//			// Temas
+//			s = " units[" + idCuestion + "] = \""
+//					+ campoAHtml(resultados, "TEMAS") + "\";";
+//			salida.println(s);
+//
+//			// Comentarios
+//			s = " comments[" + idCuestion + "] = \"" + "Id Pregunta: "
+//					+ campoAHtml(resultados, "ID") + ". "
+//					+ campoAHtml(resultados, "OBSERVACIONES") + "\";";
+//			salida.println(s);
+//
+//			// Para separar entre preguntas.
+//			salida.println("");
+//			salida.println("");
+//		} catch (Exception e) {
+//			logger.error("escribirPreguntaTest " + e.getMessage());
+//			logger.error("escribirPreguntaTest idPregunta "
+//					+ campoAHtml(resultados, "ID"));
+//			return false;
+//		}
+//
+//		return true;
+//	}
 
 	private static boolean escribirPreguntaTest(PrintStream salida,
 			PreguntaTest pregunta, int idCuestion) {
@@ -529,19 +528,19 @@ public class HtmlGenerator {
 	 * 
 	 * @return
 	 */
-	private static String campoAHtml(ResultSet resultados, String Campo) {
-
-		String s = "";
-		try {
-			s = resultados.getString(Campo);
-
-			s = textoAHtml(s);
-		} catch (SQLException e) {
-			logger.error("Campo a hmtl" + e.getMessage());
-			logger.error(s);
-		}
-		return s;
-	}
+//	private static String campoAHtml(ResultSet resultados, String Campo) {
+//
+//		String s = "";
+//		try {
+//			s = resultados.getString(Campo);
+//
+//			s = textoAHtml(s);
+//		} catch (SQLException e) {
+//			logger.error("Campo a hmtl" + e.getMessage());
+//			logger.error(s);
+//		}
+//		return s;
+//	}
 	
 	private static String campoAHtml(PreguntaTest pregunta, Campo campo) {
 
@@ -613,172 +612,172 @@ public class HtmlGenerator {
 		return false; // El fichero ha acabado.
 	}
 
-	/**
-	 * Crea el menu dinamico
-	 * 
-	 * @param salida
-	 * @return
-	 */
-	private boolean crearMenu(PrintStream salida) {
-
-		if (salida == null)
-			return false;
-
-		StringBuilder sb = new StringBuilder();
-		sb.append("<script type=\"text/javascript\" src=\"../../");
-		sb.append(FactoriaArchivo.NombreArchivoJavascriptPreguntas(tipoTest,
-				test.getIdBloqueTematicaAnho(), test.getIdTest()));
-		sb.append("\"></script>");
-
-		salida.println(sb.toString());
-		return true;
-	}
-
-	/**
-	 * Genera una lÃ­nea html para importar el script questions_X.js
-	 * 
-	 * @param salida
-	 * @return
-	 */
-	private boolean importarJavascript(PrintStream salida) {
-
-		if (salida == null)
-			return false;
-
-		StringBuilder sb = new StringBuilder();
-		sb.append("<script type=\"text/javascript\" src=\"../../");
-		sb.append(FactoriaArchivo.NombreArchivoJavascriptPreguntas(tipoTest,
-				test.getIdBloqueTematicaAnho(), test.getIdTest()));
-		sb.append("\"></script>");
-
-		salida.println(sb.toString());
-		return true;
-	}
-
-	/**
-	 * Genera los combos de navegación entre test.
-	 * 
-	 * @param salida
-	 * @return
-	 */
-	private boolean escribirTestNavigator(PrintStream salida) {
-
-		if (salida == null)
-			return false;
-
-		if (test.getTipoTest() == Test.eTipoTest.tematica) {
-			salida.println("		<select id=\"tema_navigation\" onchange=\"renderTestSelectorTematica()\"> </select>	");
-		}
-
-		// El combo de test_navigation siempre está, sea el tipo de test que sea.
-		salida.println("	  <select id=\"test_navigation\" onchange=\"go()\"> </select>	");
-
-		// Escribimos las llamadas al javascript para que rellenen los combos.
-		salida.println("	  <script type=\"text/javascript\">	");
-		switch (test.getTipoTest()) {
-		case tematica:
-			salida.println("\t\trenderTemas();");
-			salida.println("\t\trenderTestSelectorTematica();");
-			break;
-		case bloque:
-			salida.println("\t\trenderTestSelectorBloque('"
-					+ test.getIdBloqueTematicaAnho() + "');");
-			break;
-
-		case anho:
-			salida.println("\t\trenderTestSelectorAnhos('"
-					+ test.getIdBloqueTematicaAnho() + "');");
-			break;
-		default:
-			salida.println("\t\trenderTestSelector();");
-			break;
-		}
-
-		salida.println("\t\trenderMenuTest('" + test.getTipoTest().toString()
-				+ "','" + test.getIdBloqueTematicaAnho() + "');");
-
-		salida.println("	</script>");
-
-		if (test.getTipoTest() == eTipoTest.tematica) {
-			salida.println("<input type=\"button\" value=\"Ir a test\" onClick=\"go()\" />");
-		}
-		return true;
-
-	}
-
-	/**
-	 * Genera la lÃ­nea: <h1>Test X</h1>
-	 * 
-	 * @param salida
-	 * @return
-	 */
-	private boolean escribirTituloTest(PrintStream salida) {
-		StringBuilder sb = new StringBuilder();
-		sb.append("<h1> Test ");
-		sb.append(test.getIdTest());
-		switch (tipoTest) {
-		case bloque:
-			sb.append("<BR/> Bloque " + test.getIdBloqueTematicaAnho());
-			break;
-		case anho:
-			sb.append("<BR/> A&ntilde;o " + test.getIdBloqueTematicaAnho());
-			break;
-		case tematica:
-			sb.append("<BR/> Temas " + test.getTituloTematica());
-			break;
-		}
-		sb.append("</h1>");
-		salida.println(sb.toString());
-		return true;
-
-	}
-
-	/**
-	 * Escribe el menú horizontal, con una opción para navegar a cada tipo de
-	 * test.
-	 * 
-	 * @return
-	 */
-	private boolean escribirMenuTests(PrintStream salida) {
-
-		StringBuilder sb = new StringBuilder();
-
-		FachadaArchivos f = new FachadaArchivos(Test.eTipoTest.aleatorio);
-		escribirListItem(sb, f.getNombreArchivosTest(), "Tests de examen",
-				tipoTest == Test.eTipoTest.aleatorio);
-
-		// Entradas para los bloques
-		GestorBloque g = new GestorBloque();
-		for (String idBloque : g.getBloque()) {
-			f = new FachadaArchivos(eTipoTest.bloque, idBloque);
-			escribirListItem(sb, f.getNombreArchivosTest(),
-					BloqueToString.ToDescripcion(idBloque),
-					BloqueToString.Equals(test.getIdBloqueTematicaAnho(),
-							idBloque));
-		}
-
-		// Entrada para la temática
-		GestorTematica gt = new GestorTematica();
-		tematica t = gt.getTematicas().get(0);
-		f = new FachadaArchivos(eTipoTest.tematica, t.id.toString());
-		escribirListItem(sb, f.getNombreArchivosTest(), " Test por temas",
-				test.getTipoTest() == Test.eTipoTest.tematica);
-
-		// Entradas para los anhos
-		GestorAnho ga = new GestorAnho();
-		for (String idAnho : ga.getAnho()) {
-			f = new FachadaArchivos(eTipoTest.anho, idAnho);
-			escribirListItem(sb, f.getNombreArchivosTest(),
-					BloqueToString.ToDescripcion(idAnho),
-					BloqueToString.Equals(test.getIdBloqueTematicaAnho(),
-							idAnho));
-		}
-
-		if (salida == null)
-			return false;
-		salida.println(sb.toString());
-		return true;
-	}
+//	/**
+//	 * Crea el menu dinamico
+//	 * 
+//	 * @param salida
+//	 * @return
+//	 */
+//	private boolean crearMenu(PrintStream salida) {
+//
+//		if (salida == null)
+//			return false;
+//
+//		StringBuilder sb = new StringBuilder();
+//		sb.append("<script type=\"text/javascript\" src=\"../../");
+//		sb.append(FactoriaArchivo.NombreArchivoJavascriptPreguntas(tipoTest,
+//				test.getIdBloqueTematicaAnho(), test.getIdTest()));
+//		sb.append("\"></script>");
+//
+//		salida.println(sb.toString());
+//		return true;
+//	}
+//
+//	/**
+//	 * Genera una lÃ­nea html para importar el script questions_X.js
+//	 * 
+//	 * @param salida
+//	 * @return
+//	 */
+//	private boolean importarJavascript(PrintStream salida) {
+//
+//		if (salida == null)
+//			return false;
+//
+//		StringBuilder sb = new StringBuilder();
+//		sb.append("<script type=\"text/javascript\" src=\"../../");
+//		sb.append(FactoriaArchivo.NombreArchivoJavascriptPreguntas(tipoTest,
+//				test.getIdBloqueTematicaAnho(), test.getIdTest()));
+//		sb.append("\"></script>");
+//
+//		salida.println(sb.toString());
+//		return true;
+//	}
+//
+//	/**
+//	 * Genera los combos de navegación entre test.
+//	 * 
+//	 * @param salida
+//	 * @return
+//	 */
+//	private boolean escribirTestNavigator(PrintStream salida) {
+//
+//		if (salida == null)
+//			return false;
+//
+//		if (test.getTipoTest() == Test.eTipoTest.tematica) {
+//			salida.println("		<select id=\"tema_navigation\" onchange=\"renderTestSelectorTematica()\"> </select>	");
+//		}
+//
+//		// El combo de test_navigation siempre está, sea el tipo de test que sea.
+//		salida.println("	  <select id=\"test_navigation\" onchange=\"go()\"> </select>	");
+//
+//		// Escribimos las llamadas al javascript para que rellenen los combos.
+//		salida.println("	  <script type=\"text/javascript\">	");
+//		switch (test.getTipoTest()) {
+//		case tematica:
+//			salida.println("\t\trenderTemas();");
+//			salida.println("\t\trenderTestSelectorTematica();");
+//			break;
+//		case bloque:
+//			salida.println("\t\trenderTestSelectorBloque('"
+//					+ test.getIdBloqueTematicaAnho() + "');");
+//			break;
+//
+//		case anho:
+//			salida.println("\t\trenderTestSelectorAnhos('"
+//					+ test.getIdBloqueTematicaAnho() + "');");
+//			break;
+//		default:
+//			salida.println("\t\trenderTestSelector();");
+//			break;
+//		}
+//
+//		salida.println("\t\trenderMenuTest('" + test.getTipoTest().toString()
+//				+ "','" + test.getIdBloqueTematicaAnho() + "');");
+//
+//		salida.println("	</script>");
+//
+//		if (test.getTipoTest() == eTipoTest.tematica) {
+//			salida.println("<input type=\"button\" value=\"Ir a test\" onClick=\"go()\" />");
+//		}
+//		return true;
+//
+//	}
+//
+//	/**
+//	 * Genera la lÃ­nea: <h1>Test X</h1>
+//	 * 
+//	 * @param salida
+//	 * @return
+//	 */
+//	private boolean escribirTituloTest(PrintStream salida) {
+//		StringBuilder sb = new StringBuilder();
+//		sb.append("<h1> Test ");
+//		sb.append(test.getIdTest());
+//		switch (tipoTest) {
+//		case bloque:
+//			sb.append("<BR/> Bloque " + test.getIdBloqueTematicaAnho());
+//			break;
+//		case anho:
+//			sb.append("<BR/> A&ntilde;o " + test.getIdBloqueTematicaAnho());
+//			break;
+//		case tematica:
+//			sb.append("<BR/> Temas " + test.getTituloTematica());
+//			break;
+//		}
+//		sb.append("</h1>");
+//		salida.println(sb.toString());
+//		return true;
+//
+//	}
+//
+//	/**
+//	 * Escribe el menú horizontal, con una opción para navegar a cada tipo de
+//	 * test.
+//	 * 
+//	 * @return
+//	 */
+//	private boolean escribirMenuTests(PrintStream salida) {
+//
+//		StringBuilder sb = new StringBuilder();
+//
+//		FachadaArchivos f = new FachadaArchivos(Test.eTipoTest.aleatorio);
+//		escribirListItem(sb, f.getNombreArchivosTest(), "Tests de examen",
+//				tipoTest == Test.eTipoTest.aleatorio);
+//
+//		// Entradas para los bloques
+//		GestorBloque g = new GestorBloque();
+//		for (String idBloque : g.getBloque()) {
+//			f = new FachadaArchivos(eTipoTest.bloque, idBloque);
+//			escribirListItem(sb, f.getNombreArchivosTest(),
+//					BloqueToString.ToDescripcion(idBloque),
+//					BloqueToString.Equals(test.getIdBloqueTematicaAnho(),
+//							idBloque));
+//		}
+//
+//		// Entrada para la temática
+//		GestorTematica gt = new GestorTematica();
+//		tematica t = gt.getTematicas().get(0);
+//		f = new FachadaArchivos(eTipoTest.tematica, t.id.toString());
+//		escribirListItem(sb, f.getNombreArchivosTest(), " Test por temas",
+//				test.getTipoTest() == Test.eTipoTest.tematica);
+//
+//		// Entradas para los anhos
+//		GestorAnho ga = new GestorAnho();
+//		for (String idAnho : ga.getAnho()) {
+//			f = new FachadaArchivos(eTipoTest.anho, idAnho);
+//			escribirListItem(sb, f.getNombreArchivosTest(),
+//					BloqueToString.ToDescripcion(idAnho),
+//					BloqueToString.Equals(test.getIdBloqueTematicaAnho(),
+//							idAnho));
+//		}
+//
+//		if (salida == null)
+//			return false;
+//		salida.println(sb.toString());
+//		return true;
+//	}
 
 	/**
 	 * Genera un elemento del tipo: <li class="current_page_item"><a
@@ -789,17 +788,17 @@ public class HtmlGenerator {
 	 * @param Texto
 	 * @param Seleccionado
 	 */
-	private void escribirListItem(StringBuilder sb, String hipervinculo,
-			String Texto, boolean seleccionado) {
-		sb.append("<li ");
-		if (seleccionado)
-			sb.append("class=\"current_page_item\"");
-		sb.append(" ><a href=\"");
-		sb.append(hipervinculo);
-		sb.append("\">");
-		sb.append(Texto);
-		sb.append("</a></li>\n");
-	}
+//	private void escribirListItem(StringBuilder sb, String hipervinculo,
+//			String Texto, boolean seleccionado) {
+//		sb.append("<li ");
+//		if (seleccionado)
+//			sb.append("class=\"current_page_item\"");
+//		sb.append(" ><a href=\"");
+//		sb.append(hipervinculo);
+//		sb.append("\">");
+//		sb.append(Texto);
+//		sb.append("</a></li>\n");
+//	}
 
 }
 

@@ -12,6 +12,7 @@
 hs_err_pid*
 
 *.zip
+Preparatic.log
 
 testsV2/pdf/
 testsV2/tests/

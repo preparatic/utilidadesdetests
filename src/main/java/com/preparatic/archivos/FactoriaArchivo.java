@@ -44,19 +44,19 @@ public class FactoriaArchivo {
 		pdf, html
 	};
 
-	private static final String pathPdfs = ConfigProperties
+	public static final String pathPdfs = ConfigProperties
 			.getProperty("files.rootDir")
 			+ ConfigProperties.getProperty("files.pdfDir");
 
-	private static final String pathHtml = ConfigProperties
+	public static final String pathHtml = ConfigProperties
 			.getProperty("files.rootDir")
-			+ ConfigProperties.getProperty("files.pagesDir");
+			+ ConfigProperties.getProperty("files.testsDir");
 
-	private static final String pathJsScript = ConfigProperties
-			.getProperty("files.rootDir")
-			+ ConfigProperties.getProperty("files.javaScriptDir");
+//	public static final String pathJsScript = ConfigProperties
+//			.getProperty("files.rootDir")
+//			+ ConfigProperties.getProperty("files.javaScriptDir");
 
-	private static final String pathJsData = ConfigProperties
+	public static final String pathJsData = ConfigProperties
 			.getProperty("files.rootDir")
 			+ ConfigProperties.getProperty("files.javaScriptQuestionsDir");
 
@@ -106,7 +106,7 @@ public class FactoriaArchivo {
 	 */
 	public static PrintStream archivoHtmlTest(Test.eTipoTest tipoTest,
 			String idBloqueTematica, Integer idTest) {
-
+		checkAndCreateDir(pathHtml);
 		String filename = htmlTestFilename(tipoTest, idBloqueTematica, idTest);
 
 		return filenameToPrintStream(filename);
@@ -122,6 +122,14 @@ public class FactoriaArchivo {
 		return nombreArchivo.toString();
 	}
 	
+	public static void checkAndCreateDirectories()
+	{
+		checkAndCreateDir(pathHtml);
+		checkAndCreateDir(pathPdfs);
+//		checkAndCreateDir(pathJsScript);
+		checkAndCreateDir(pathJsData);
+	}
+	
 	private static void checkAndCreateDir (String dirPath)
 	{
 		File directory = new File(String.valueOf(dirPath));
@@ -135,14 +143,14 @@ public class FactoriaArchivo {
 	 * Crea el archivo javascript para las funciones de navegaci�n entre tests.
 	 * @return
 	 */
-	public static PrintStream javascriptTestNavigation() {
-		StringBuilder nombreArchivo = new StringBuilder(pathJsScript);
-		nombreArchivo.append(ConfigProperties
-				.getProperty("files.templates.Navigation"));
-
-		return filenameToPrintStream(nombreArchivo.toString());
-
-	}
+//	public static PrintStream javascriptTestNavigation() {
+//		StringBuilder nombreArchivo = new StringBuilder(pathJsScript);
+//		nombreArchivo.append(ConfigProperties
+//				.getProperty("files.templates.Navigation"));
+//
+//		return filenameToPrintStream(nombreArchivo.toString());
+//
+//	}
 
 	
 	/**

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tests Preparatic XXIV | Mis estad&iacute;sticas</title>
+    <title>Tests Preparatic  | Mis estad&iacute;sticas</title>
 
     <!-- Bootstrap -->
     <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +23,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><i class="fa fa-check-square-o"></i> <span>Preparatic XXIV</span></a>
+                        <a href="index.html" class="site_title"><i class="fa fa-check-square-o"></i> <span>Preparatic </span></a>
                     </div>
                     <div class="clearfix"></div>
                     <!-- sidebar menu -->
@@ -45,9 +45,11 @@
                                     <ul class="nav child_menu">
                                         <li><a href="tests_todos.html">Ver todos</a></li>
                                         <li><a href="tests_globales.html">Globales</a></li>
+                                        <li><a href="tests_relevancia.html">Por Relevancia</a></li>
                                         <li><a href="tests_bloques.html">Por Bloques</a></li>
                                         <li><a href="tests_temas.html">Por Temas</a></li>
-                                        <li><a href="tests_annos.html">Por A&ntilde;os</a></li>
+                                        <li><a href="tests_annos.html">Por A&ntilde;o</a></li>
+                                        <li><a href="tests_examen.html">Por Examen</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -76,11 +78,11 @@
                             <li class="">
                                 <!--<div class="container-fluid">-->
                                 <a class="navbar-brand" href="#">
-                                    <img alt="Preparatic XXIV" src="images/logo-alpha.png">
+                                    <img alt="Preparatic " src="images/logo-alpha.png">
                                 </a>
 
                                 <h2>
-                                    Preparaci&oacute;n XXIV: convocatoria de oposiciones TIC de la A.G.E
+                                    Cuerpo Superior de Sistemas y Tecnologías de la Información de la AGE
                                 </h2>
                                 <!--</div>-->
                             </li>
@@ -118,17 +120,6 @@
                                         <li>
                                             <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                         </li>
-                                        <!--<li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li>
-                                                    <a href="#">Settings 1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Settings 2</a>
-                                                </li>
-                                            </ul>
-                                        </li>-->
                                         <li>
                                             <a class="close-link"><i class="fa fa-close"></i></a>
                                         </li>
@@ -149,6 +140,23 @@
                                         <li>
                                             <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                                         </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li>
+                                                    <a href="#" id="settings-1">Mis 10 &uacute;ltimos tests</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" id="settings-2">Mis 25 &uacute;ltimos tests</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"  id="settings-3">Mis 50 &uacute;ltimos tests</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" id="settings-4">Todos mis tests</a>
+                                                </li>
+                                            </ul>
+                                        </li>
                                         <li>
                                             <a class="close-link"><i class="fa fa-close"></i></a>
                                         </li>
@@ -163,7 +171,7 @@
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
-                                    <h2>Temas m&aacute;s relevantes</h2>
+                                    <h2>Temas m&aacute;s Relevantes</h2>
                                     <ul class="nav navbar-right panel_toolbox">
                                         <li>
                                             <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
@@ -175,10 +183,11 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="x_content">
-                                    <div id="echart_bar_horizontal" style="height:370px;"></div>
+                                    <div id="echart_bar_masrelevantes" style="height:370px;"></div>
                                 </div>
                             </div>
                         </div>
+ 
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <div class="x_panel">
                                 <div class="x_title">
@@ -198,8 +207,44 @@
                                 </div>
                             </div>
                         </div>
-
-
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>Temas m&aacute;s trabajados</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li>
+                                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <div id="echart_bar_mastrabajados" style="height:370px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="x_panel">
+                                <div class="x_title">
+                                    <h2>Temas menos trabajados</h2>
+                                    <ul class="nav navbar-right panel_toolbox">
+                                        <li>
+                                            <a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="close-link"><i class="fa fa-close"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                    <div id="echart_bar_menostrabajados" style="height:370px;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal fade bs-nosupported-modal-sm" id="IndexedDBnotsupported" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog modal-sm">
@@ -228,7 +273,7 @@
             <!-- footer content -->
             <footer>
                 <div class="pull-right">
-                    Copyright &copy; 2016-2017 by Preparatic XXIV. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
+                    Copyright &copy; 2016-2017 by Preparatic . All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
                 </div>
                 <div class="clearfix"></div>
             </footer>
@@ -258,6 +303,31 @@
             if (!indexedDB) {
                 $('#IndexedDBnotsupported').modal('show');
             }
+        });
+
+        var limitesultimos = 25;
+
+        $("#settings-1").click(function (e) {
+            limitesultimos = 10;
+            computeStatistics();
+            e.preventDefault();
+        });
+
+        $("#settings-2").click(function (e) {
+            limitesultimos = 25;
+            computeStatistics();
+            e.preventDefault();
+        });
+
+        $("#settings-3").click(function (e) {
+            limitesultimos = 50;
+            computeStatistics();
+            e.preventDefault();
+        });
+        $("#settings-4").click(function (e) {
+            limitesultimos = 900000000;
+            computeStatistics();
+            e.preventDefault();
         });
 
         var listaTestsRealizados = [];
@@ -330,13 +400,13 @@
                         var tmp = totalPorTemas.map(function (obj, idx) { return obj.aciertos; });
                         var score = 0;
                         var numtests = 0
-                        for (i = Math.max(0, listaTestsRealizados.length - 25); i < listaTestsRealizados.length; i++) { 
+                        for (i = Math.max(0, listaTestsRealizados.length - limitesultimos) ; i < listaTestsRealizados.length; i++) {
                             var test = listaTestsRealizados[i];
                             score = score + test.score;
                             numtests = numtests + 1;
                         }
                         if (numtests> 0)
-                            score = Math.round(score/numtests * (100 / 75) * 100) / 100;
+                            score = Math.round(score/numtests * 100) / 100;
                         
                         var keys = Object.keys(aciertosPorBloque);
                         for (j = 0; j < keys.length; j++){
@@ -401,7 +471,7 @@
                                                     name: 'Rendimiento'
                                              }] }]
                        });
-                       echartBar2.setOption({
+                       echartBarMas.setOption({
                           yAxis: [{
                                 type: 'category',
                                 data: totalPorTemas.map(function (obj, idx) { return 'Tema ' + obj.tema; })
@@ -799,7 +869,7 @@
 
         echartGauge.setOption({
             tooltip: {
-                formatter: "{a} <br/>{b} : {c}%"
+                formatter: "{a} <br/>{b} : {c}"
             },
             toolbox: {
                 show: true,
@@ -829,8 +899,8 @@
                     lineStyle: {
                         color: [
                           [0.2, '#ff4500'],
-                          [0.6, 'orange'],
-                          [0.8, 'skyblue'],
+                          [0.35, 'orange'],
+                          [0.5, 'skyblue'],
                           [1, 'lightgreen'],
                         ],
                         width: 30
@@ -896,7 +966,7 @@
                     width: 100,
                     height: 40,
                     offsetCenter: ['-60%', 10],
-                    formatter: '{value}%',
+                    formatter: '{value}',
                     textStyle: {
                         color: 'auto',
                         fontSize: 30
@@ -909,11 +979,57 @@
             }]
         });
 
-        var echartBar2 = echarts.init(document.getElementById('echart_bar_horizontal'), theme);
+        var echartBarRelevantes = echarts.init(document.getElementById('echart_bar_masrelevantes'), theme);
 
-        echartBar2.setOption({
+        echartBarRelevantes.setOption({
             title: {
-                text: 'Temas Relevantes',
+                text: 'Temas más relevantes',
+                subtext: 'Los 10 Temas más relevantes'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                x: 300,
+                data: ['Aciertos', 'Fallos', 'N/C']
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: false,
+                        title: "Save Image"
+                    }
+                }
+            },
+            calculable: true,
+            xAxis: [{
+                type: 'value',
+                boundaryGap: [0, 0.01]
+            }],
+            yAxis: [{
+                type: 'category',
+                data: []
+            }],
+            series: [{
+                name: 'Aciertos',
+                type: 'bar',
+                data: []
+            }, {
+                name: 'Fallos',
+                type: 'bar',
+                data: []
+            }, {
+                name: 'N/C',
+                type: 'bar',
+                data: []
+            }]
+        });
+        var echartBarMas = echarts.init(document.getElementById('echart_bar_mastrabajados'), theme);
+
+        echartBarMas.setOption({
+            title: {
+                text: 'Temas más trabajados',
                 subtext: 'Los 10 Temas más trabajados'
             },
             tooltip: {
@@ -956,6 +1072,52 @@
             }]
         });
 
+        var echartBarMenos = echarts.init(document.getElementById('echart_bar_menostrabajados'), theme);
+
+        echartBarMenos.setOption({
+            title: {
+                text: 'Temas menos trabajados',
+                subtext: 'Los 10 Temas menos trabajados'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                x: 300,
+                data: ['Aciertos', 'Fallos', 'N/C']
+            },
+            toolbox: {
+                show: true,
+                feature: {
+                    saveAsImage: {
+                        show: false,
+                        title: "Save Image"
+                    }
+                }
+            },
+            calculable: true,
+            xAxis: [{
+                type: 'value',
+                boundaryGap: [0, 0.01]
+            }],
+            yAxis: [{
+                type: 'category',
+                data: []
+            }],
+            series: [{
+                name: 'Aciertos',
+                type: 'bar',
+                data: []
+            }, {
+                name: 'Fallos',
+                type: 'bar',
+                data: []
+            }, {
+                name: 'N/C',
+                type: 'bar',
+                data: []
+            }]
+        });
 
     </script>
 </body>

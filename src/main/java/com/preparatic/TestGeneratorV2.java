@@ -53,7 +53,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	public static void main(String[] args) throws Exception {
 
 		logger.info("Generador de test. Promoción XXIV. Diciembre 2016");
-		logger.info("Se generan los test en función de las estadísticas.");
+		logger.info("Se generan los test con las preguntas disponibles.");
 
 		/*
 		 * Crea una lista de preguntas y las procesa para generar los documentos
@@ -63,16 +63,16 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			IExcel ficheroExcel = CSVReaderFactory.GetCSVReader();
 			// GestorConsultas gestorConsultas = new GestorConsultas();
 
-			// Abrimos el excel
+			// Abrimos el excel/BD
 			ficheroExcel.abrirExcel();
 
-			// Obtenemos todos los bloques del excel
+			// Obtenemos todos los bloques del excel/BD
 			GestorInfoBloque.getInstance().leerBloques(ficheroExcel);
 
-			// Obtenemos todas los temas del excel
+			// Obtenemos todas los temas del excel/BD
 			GestorInfoTema.getInstance().leerTemas(ficheroExcel);
 
-			// Obtenemos todas las preguntas del excel
+			// Obtenemos todas las preguntas del excel/BD
 			GestorPreguntaTest.getInstance().leerPreguntas(ficheroExcel);
 			GestorPreguntaTest.getInstance().reasignaIdentificadores();
 
@@ -93,6 +93,9 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	 * Se generan tanto los tests globales, como los test por bloques.
 	 */
 	private static void generarTest(List<PreguntaTest> listaPreguntas) {
+		// Esta funcion genera un test llamado 0000 que tiene todas las preguntas
+		// solo lo uso para comprobaciones. Con todas las preguntas se convierte 
+		// en algo inviable
 		//generarTodosLosTest(listaPreguntas);
 
 		generarTestAleatorios(listaPreguntas);
@@ -123,6 +126,8 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 				logger.error("Error procesing id of question " + t);
 			}
 		}
+		
+		// Generamos los pdf y los html de cada test.
 		testcompleto.generarDocumentos(listaPreguntas, listaPreguntas.size());
 		gestorTest.addTest(testcompleto);
 	}
@@ -151,6 +156,11 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 				Collections.shuffle(preguntasBA);
 				ListIterator<PreguntaTest> iterator = preguntasBA.listIterator();
 				for (int cnt = 0; cnt < Test.NumPreguntasA; cnt++) {
+					/*
+					 * En este punto, ya se han usado todas las preguntas disponibles
+					 * para generar los test. Si, aún quedan test que no están
+					 * completos, se rellenan con preguntas repetidas.
+					 */
 					if (!iterator.hasNext()) {
 						Collections.shuffle(preguntasBA);
 						iterator = preguntasBA.listIterator();
@@ -168,6 +178,11 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 				Collections.shuffle(preguntasBB);
 				ListIterator<PreguntaTest> iterator = preguntasBB.listIterator();
 				for (int cnt = 0; cnt < Test.NumPreguntasB && !test.estaCompleto(); cnt++) {
+					/*
+					 * En este punto, ya se han usado todas las preguntas disponibles
+					 * para generar los test. Si, aún quedan test que no están
+					 * completos, se rellenan con preguntas repetidas.
+					 */
 					if (!iterator.hasNext()) {
 						Collections.shuffle(preguntasBB);
 						iterator = preguntasBB.listIterator();
@@ -182,6 +197,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 				}
 			}
 			
+			// Generamos los pdf y los html de cada test.
 			test.generarDocumentos(listaPreguntas, inicio_test + numTestAleatorios);
 			gestorTest.addTest(test);
 		}
@@ -223,6 +239,8 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 						logger.error("Error procesing id of question " + t);
 					}
 				}
+				
+				// Generamos los pdf y los html de cada test.
 				test.generarDocumentos(listaPreguntas, totalTestsBloque);
 				gestorTest.addTest(test);
 			}

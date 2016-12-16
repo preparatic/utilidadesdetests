@@ -44,53 +44,53 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 	public static void generarTestNavigation() {
 		generarJSMenuInfoV2();
 		
-		try {
-
-			// Creamos la salida
-			PrintStream salida = FactoriaArchivo.javascriptTestNavigation();
-
-			// Abrimos la entrada
-			BufferedReader entrada = new BufferedReader(new FileReader(
-					pathResources
-							+ ConfigProperties
-									.getProperty("files.templates.Navigation")));
-
-			int nFlag = 1;
-
-			while (copiarHastaFlag(salida, entrada) == true) {
-				/* En cada interrupción, metemos lo que sea necesario. */
-				switch (nFlag) {
-				case 1: // Aleatorios
-					escribirRenderTestSelector(salida);
-					break;
-				case 2: // Bloque
-					escribirRenderTestBloque(salida);
-					break;
-				case 3: // Render Selector Tematica
-//NOT SUPPORTED					escribirRenderTestSelectorTematica(salida);
-					break;
-				case 4: // Render Temas
-					escribirRenderTemas(salida);
-					break;
-				case 5: // Render Anhos
-					escribirRenderTestAnho(salida);
-					break;
-				case 6:
-					escribirRenderMenuTest(salida);
-					break;
-				case 7:
-					escribirRenderMenuIndex(salida);
-				default:
-					break;
-				}
-				nFlag++;
-			}
-
-			salida.close();
-			entrada.close();
-		} catch (IOException e) {
-			System.err.println(e.getMessage());
-		}
+//		try {
+//
+//			// Creamos la salida
+//			PrintStream salida = FactoriaArchivo.javascriptTestNavigation();
+//
+//			// Abrimos la entrada
+//			BufferedReader entrada = new BufferedReader(new FileReader(
+//					pathResources
+//							+ ConfigProperties
+//									.getProperty("files.templates.Navigation")));
+//
+//			int nFlag = 1;
+//
+//			while (copiarHastaFlag(salida, entrada) == true) {
+//				/* En cada interrupción, metemos lo que sea necesario. */
+//				switch (nFlag) {
+//				case 1: // Aleatorios
+//					escribirRenderTestSelector(salida);
+//					break;
+//				case 2: // Bloque
+//					escribirRenderTestBloque(salida);
+//					break;
+//				case 3: // Render Selector Tematica
+////NOT SUPPORTED					escribirRenderTestSelectorTematica(salida);
+//					break;
+//				case 4: // Render Temas
+//					escribirRenderTemas(salida);
+//					break;
+//				case 5: // Render Anhos
+//					escribirRenderTestAnho(salida);
+//					break;
+//				case 6:
+//					escribirRenderMenuTest(salida);
+//					break;
+//				case 7:
+//					escribirRenderMenuIndex(salida);
+//				default:
+//					break;
+//				}
+//				nFlag++;
+//			}
+//
+//			salida.close();
+//			entrada.close();
+//		} catch (IOException e) {
+//			System.err.println(e.getMessage());
+//		}
 	}
 
 	private static void escribirRenderTestSelector(PrintStream salida) {
