@@ -338,6 +338,14 @@
         var fallosPorTemas = initTemasArray();
         var ncPorTemas = initTemasArray();
 
+        function inArray(temas, temaid) {
+            var count = temas.length;
+            for (var i = 0; i < count; i++) {
+                if (temas[i].tema === temaid) { return true; }
+            }
+            return false;
+        }
+
         function computeStatistics() {
             var server;
             db.open({
@@ -363,6 +371,9 @@
                         aciertosPorTemas = initTemasArray();
                         fallosPorTemas = initTemasArray();
                         var totalPorTemas = initTemasArray();
+                        var totalPorTemasMas = initTemasArray();
+                        var totalPorTemasMenos = initTemasArray();
+                        var totalPorTemasRelevantes = initTemasArray();
                         ncPorTemas = initTemasArray();
                         
                         var porcentajeAciertosPorBloque = initBloquesMap();
@@ -391,13 +402,29 @@
                         for (j = 0; j < totalPorTemas.length; j++){
                                 totalPorTemas[j] = aciertosPorTemas[j] + fallosPorTemas[j] + ncPorTemas[j];
                         }
+
                         totalPorTemas = totalPorTemas.map(function (num, idx) {
                                               return {tema:idx,  total: num, aciertos: aciertosPorTemas[idx], fallos: fallosPorTemas[idx], nc: ncPorTemas[idx]};
-                                            }).sort(function sortNumber(a,b) {
-                                                return b.total - a.total;
                                             });
-                        totalPorTemas = totalPorTemas.slice(0, 9);
-                        var tmp = totalPorTemas.map(function (obj, idx) { return obj.aciertos; });
+                        totalPorTemasMas = totalPorTemas.sort(function sortNumber(a, b) {
+                            return b.total - a.total;
+                        }).slice(0, 9);
+                        totalPorTemasMenos = totalPorTemas.sort(function sortNumber(a, b) {
+                            return a.total - b.total;
+                        }).slice(0, 9);
+                        var temas = [];
+                        var cnt = 0;
+                        for (var d in infoTemas) {
+                            temas.push({ tema: cnt++, peso: infoTemas[d].peso });
+                        }
+                        var temasRelevantes = temas.sort(function sortNumber(a, b) {
+                                                return b.peso - a.peso;
+                                            }).slice(0, 9);
+                        totalPorTemasRelevantes = totalPorTemas.filter(function isRelevant(t) {
+                            return inArray(temasRelevantes, t.tema);
+                        });
+                        //var tmp = totalPorTemas.map(function (obj, idx) { return obj.aciertos; });
+
                         var score = 0;
                         var numtests = 0
                         for (i = Math.max(0, listaTestsRealizados.length - limitesultimos) ; i < listaTestsRealizados.length; i++) {
@@ -470,26 +497,67 @@
                                                     value: score,
                                                     name: 'Rendimiento'
                                              }] }]
-                       });
-                       echartBarMas.setOption({
-                          yAxis: [{
+                        });
+                        
+                        echartBarRelevantes.setOption({
+                            yAxis: [{
                                 type: 'category',
-                                data: totalPorTemas.map(function (obj, idx) { return 'Tema ' + obj.tema; })
+                                data: totalPorTemasRelevantes.map(function (obj, idx) { return 'Tema ' + obj.tema; })
                             }],
                             series: [{
                                 name: 'Aciertos',
                                 type: 'bar',
-                                data: totalPorTemas.map(function (obj, idx) { return obj.aciertos; })
+                                data: totalPorTemasRelevantes.map(function (obj, idx) { return obj.aciertos; })
                             }, {
                                 name: 'Fallos',
                                 type: 'bar',
-                                data: totalPorTemas.map(function (obj, idx) { return obj.fallos; })
+                                data: totalPorTemasRelevantes.map(function (obj, idx) { return obj.fallos; })
                             }, {
                                 name: 'N/C',
                                 type: 'bar',
-                                data: totalPorTemas.map(function (obj, idx) { return obj.nc; })
+                                data: totalPorTemasRelevantes.map(function (obj, idx) { return obj.nc; })
                             }]
-                         });
+                        });
+
+                       echartBarMas.setOption({
+                          yAxis: [{
+                                type: 'category',
+                                data: totalPorTemasMas.map(function (obj, idx) { return 'Tema ' + obj.tema; })
+                            }],
+                            series: [{
+                                name: 'Aciertos',
+                                type: 'bar',
+                                data: totalPorTemasMas.map(function (obj, idx) { return obj.aciertos; })
+                            }, {
+                                name: 'Fallos',
+                                type: 'bar',
+                                data: totalPorTemasMas.map(function (obj, idx) { return obj.fallos; })
+                            }, {
+                                name: 'N/C',
+                                type: 'bar',
+                                data: totalPorTemasMas.map(function (obj, idx) { return obj.nc; })
+                            }]
+                       });
+
+                       echartBarMenos.setOption({
+                           yAxis: [{
+                               type: 'category',
+                               data: totalPorTemasMenos.map(function (obj, idx) { return 'Tema ' + obj.tema; })
+                           }],
+                           series: [{
+                               name: 'Aciertos',
+                               type: 'bar',
+                               data: totalPorTemasMenos.map(function (obj, idx) { return obj.aciertos; })
+                           }, {
+                               name: 'Fallos',
+                               type: 'bar',
+                               data: totalPorTemasMenos.map(function (obj, idx) { return obj.fallos; })
+                           }, {
+                               name: 'N/C',
+                               type: 'bar',
+                               data: totalPorTemasMenos.map(function (obj, idx) { return obj.nc; })
+                           }]
+                       });
                         server.close();
                     });
             });
