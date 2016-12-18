@@ -17,6 +17,7 @@
 package com.preparatic.entidades;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.preparatic.csvreaders.IExcel;
 
@@ -42,5 +43,14 @@ public class GestorInfoTema {
 
 	public void leerTemas(IExcel reader) {
 		this.infoTemas = reader.getListaTemas();
+	}
+	
+	public double getPesoTemas(List<Integer> temas) {
+		double peso = 0;
+		for (int t : temas){
+			if (t <= infoTemas.size())
+				peso += infoTemas.get(t-1).getPesoFinal();
+		}
+		return peso;
 	}
 }

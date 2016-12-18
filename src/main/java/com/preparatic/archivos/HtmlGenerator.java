@@ -269,6 +269,12 @@ public class HtmlGenerator {
 		case tema:
 			htmlTemplate.setAttribute("testsSet", "themeTestsSet");
 			break;
+		case relevancia:
+			htmlTemplate.setAttribute("testsSet", "relevantesTestsSet");
+			break;
+		case examen:
+			htmlTemplate.setAttribute("testsSet", "examenesTestsSet");
+			break;
 		default:
 			htmlTemplate.setAttribute("testsSet", "randomTestsSet");
 			break;
@@ -346,7 +352,9 @@ public class HtmlGenerator {
 		infotestTemplate.setAttribute("listaTestsBloques", GestorTests.getInstance().getTestPorBloque());
 		infotestTemplate.setAttribute("listaTestsTemas", GestorTests.getInstance().getTestPorTema());
 		infotestTemplate.setAttribute("listaTestsAnnos", GestorTests.getInstance().getTestPorAnno());
-
+		infotestTemplate.setAttribute("listaTestsRelevantes", GestorTests.getInstance().getTestPorRelevancia());
+		infotestTemplate.setAttribute("listaTestsExamenes", GestorTests.getInstance().getTestPorExamenes());
+		
 		//System.out.println(infotestTemplate.toString());
 		PrintStream file = FactoriaArchivo.filenameToPrintStream(FactoriaArchivo.pathJsData + "list_tests.js");
 		file.println(infotestTemplate.toString());

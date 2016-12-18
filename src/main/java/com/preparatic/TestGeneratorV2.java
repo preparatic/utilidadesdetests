@@ -20,6 +20,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.NavigableMap;
+import java.util.Random;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 import org.apache.logging.log4j.LogManager;
@@ -43,6 +46,7 @@ import com.preparatic.gestorpreguntas.GestorPreguntas;
 import com.preparatic.gestorpreguntas.GestorPreguntasAnho;
 import com.preparatic.gestorpreguntas.GestorPreguntasBloque;
 import com.preparatic.gestorpreguntas.GestorPreguntasUsadas;
+import com.preparatic.utils.RandomCollection;
 
 public class TestGeneratorV2 extends GeneradorPreguntasTest {
 
@@ -98,11 +102,16 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		// en algo inviable
 		//generarTodosLosTest(listaPreguntas);
 
+		generarTestExamenes(listaPreguntas);
+		
+		generarTestPonderados(listaPreguntas);
+		
 		generarTestAleatorios(listaPreguntas);
+
 		generarTestBloques(listaPreguntas);
 		generarTestTemas(listaPreguntas);
 		generarTestAnhos(listaPreguntas);
-
+		
 		HtmlGenerator.generarMetaInfoV2();
 		TestNavigatorGenerator.generarTestNavigation();
 	}
@@ -201,7 +210,28 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			test.generarDocumentos(listaPreguntas, inicio_test + numTestAleatorios);
 			gestorTest.addTest(test);
 		}
+	}
+	
+	private static void generarTestPonderados(List<PreguntaTest> listaPreguntas) {
+		/*
+		 * Distribuimos las preguntas en tantos test como diga la configuración.
+		 */
+		int inicio_test = 1 + Integer.parseInt(ConfigProperties.getProperty("tests.por_frecuencia_y_fecha"));
+		int numTestPonderados = Integer.parseInt(ConfigProperties.getProperty("tests.ponderados"));
+		RandomCollection<PreguntaTest> randomPreguntas = new RandomCollection<PreguntaTest>();
+		listaPreguntas.forEach(q -> randomPreguntas.add(q.getPeso(), q));
 
+		for (int i = inicio_test; i <= inicio_test + numTestPonderados; i++) {
+			Test test = new Test(Test.eTipoTest.relevancia, "relevancia", i);
+			while (!test.estaCompleto()) {
+				while (!test.asignarIdPregunta(randomPreguntas.next().getNumId()))
+					;
+			}
+
+			// Generamos los pdf y los html de cada test.
+			test.generarDocumentos(listaPreguntas, inicio_test + numTestPonderados);
+			gestorTest.addTest(test);
+		}
 	}
 
 	/**
@@ -331,6 +361,40 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			}
 
 			logger.info("Generado test Anho " + idAnho);
+		}
+		return;
+	}
+	
+	private static void generarTestExamenes(List<PreguntaTest> listaPreguntas) {
+		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
+		// Create a list with the distinct elements using stream.
+		List<String> examenes = listaPreguntas.stream().filter(p -> !p.getExamen().isEmpty()).map(p -> p.getExamen().toUpperCase()).distinct().collect(Collectors.toList());
+		
+		/*
+		 * Por cada anho, usamos un tema al que le vamos a asignar todas las
+		 * preguntas.
+		 */
+		for (String examen : examenes) {
+			List<PreguntaTest> filteredList = listaPreguntas.stream()
+					.filter(question -> question.getExamen().equalsIgnoreCase(examen.trim()))
+					.collect(Collectors.toList());
+
+			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
+			// Repartimos las preguntas entre los test del anho
+			Test test = new Test(Test.eTipoTest.examen, examen, 1);
+			while (iterator.hasNext()) {
+				PreguntaTest t = iterator.next();
+				try {
+					int id = t.getNumId();
+					test.asignarIdPregunta(id);
+				} catch (Exception ex) {
+					logger.error("Error procesing id of question " + t);
+				}
+			}
+			test.generarDocumentos(listaPreguntas, 1);
+			gestorTest.addTest(test);
+
+			logger.info("Generado test Examen " + examen);
 		}
 		return;
 	}

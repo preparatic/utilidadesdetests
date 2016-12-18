@@ -43,6 +43,9 @@ public class FactoriaArchivo {
 	public enum eTipoArchivo {
 		pdf, html
 	};
+	
+	// Se van a formatear todos los test con un número de 4 cifras.
+	private static final NumberFormat formatter = new DecimalFormat("#0000");
 
 	public static final String pathPdfs = ConfigProperties
 			.getProperty("files.rootDir")
@@ -191,9 +194,6 @@ public class FactoriaArchivo {
 	public static String NombreArchivoTest(Test.eTipoTest tipoTest,
 			String bloqueTematica, Integer idTest) {
 		
-		// Se van a formatear todos los test con un número de 4 cifras.
-		
-		NumberFormat formatter = new DecimalFormat("#0000");
 		
 		StringBuilder nombreArchivo = new StringBuilder();
 
@@ -203,7 +203,13 @@ public class FactoriaArchivo {
 					.getProperty("files.prefixRandomTest"));
 			nombreArchivo.append(formatter.format(idTest));
 			break;
-
+			
+		case relevancia:
+			nombreArchivo.append(ConfigProperties
+					.getProperty("files.prefixWeightedTest"));
+			nombreArchivo.append(formatter.format(idTest));
+			break;
+			
 		case bloque:
 			nombreArchivo.append(ConfigProperties
 					.getProperty("files.prefixBlockTest"));
@@ -225,6 +231,13 @@ public class FactoriaArchivo {
 			nombreArchivo.append(formatter.format(idTest));
 			break;
 		
+		case examen:
+			nombreArchivo.append(ConfigProperties
+					.getProperty("files.prefixExamTest"));
+			nombreArchivo.append(bloqueTematica + "_");
+			nombreArchivo.append(formatter.format(idTest));
+			break;
+		
 		case tematica:
 			nombreArchivo.append(ConfigProperties
 					.getProperty("files.prefixThematicTest"));
@@ -234,7 +247,7 @@ public class FactoriaArchivo {
 		default:
 			break;
 		}
-		return nombreArchivo.toString();
+		return nombreArchivo.toString().replace(' ', '_');
 
 	}
 
@@ -246,35 +259,48 @@ public class FactoriaArchivo {
 		case aleatorio:
 			nombreArchivo.append(ConfigProperties
 					.getProperty("files.prefixRandomTestSol"));
-			nombreArchivo.append(idTest);
+			nombreArchivo.append(formatter.format(idTest));
+			break;
+			
+		case relevancia:
+			nombreArchivo.append(ConfigProperties
+					.getProperty("files.prefixWeightedSol"));
+			nombreArchivo.append(formatter.format(idTest));
 			break;
 
 		case bloque:
 			nombreArchivo.append(ConfigProperties
 					.getProperty("files.prefixBlockTestSol"));
 			nombreArchivo.append(idBloqueTematica + "_");
-			nombreArchivo.append(idTest);
+			nombreArchivo.append(formatter.format(idTest));
 			break;
 			
 		case tema:
 			nombreArchivo.append(ConfigProperties
 					.getProperty("files.prefixThemeTestSol"));
 			nombreArchivo.append(idBloqueTematica + "_");
-			nombreArchivo.append(idTest);
+			nombreArchivo.append(formatter.format(idTest));
 			break;
 			
 		case anho:
 			nombreArchivo.append(ConfigProperties
 					.getProperty("files.prefixYearTestSol"));
 			nombreArchivo.append(idBloqueTematica + "_");
-			nombreArchivo.append(idTest);
+			nombreArchivo.append(formatter.format(idTest));
+			break;
+			
+		case examen:
+			nombreArchivo.append(ConfigProperties
+					.getProperty("files.prefixExamSol"));
+			nombreArchivo.append(idBloqueTematica + "_");
+			nombreArchivo.append(formatter.format(idTest));
 			break;
 		
 		case tematica:
 			nombreArchivo.append(ConfigProperties
 					.getProperty("files.prefixThematicSol"));
 			nombreArchivo.append(idBloqueTematica + "_");
-			nombreArchivo.append(idTest);
+			nombreArchivo.append(formatter.format(idTest));
 			break;
 		default:
 			break;

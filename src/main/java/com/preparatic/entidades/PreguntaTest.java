@@ -49,7 +49,8 @@ public class PreguntaTest {
 		REVISOR(17),  // R
 		SENTENCIA(18), // S
 		NOTAS(19), // T
-		NUM_COLUMNAS(20); // Número total de columnas en el excel.
+		EXAMEN(20), // U
+		NUM_COLUMNAS(21); // Número total de columnas en el excel.
 
 		public int index; // Número de columna del excel que se corresponde con
 							// cada campo de una pregunta.
@@ -83,6 +84,7 @@ public class PreguntaTest {
 	private String revisor;
 	private String sentencia;
 	private String notas;
+	private String examen;
 	
 	public PreguntaTest() {
 	}
@@ -108,6 +110,7 @@ public class PreguntaTest {
 		this.setRevisor(celdas.get(Campo.REVISOR.index));
 		this.setSentencia(celdas.get(Campo.SENTENCIA.index));
 		this.setNotas(celdas.get(Campo.NOTAS.index));
+		this.setExamen(celdas.get(Campo.EXAMEN.index));
 		
 		// this should be the last thing to do.
 		this.setTemas(celdas.get(Campo.TEMAS.index));
@@ -137,6 +140,7 @@ public class PreguntaTest {
 		cadena = cadena + "Revisor: " + this.revisor + "\n";
 		cadena = cadena + "Sentencia: " + this.sentencia + "\n";
 		cadena = cadena + "Notas: " + this.notas + "\n";
+		cadena = cadena + "Examen: " + this.examen + "\n";
 		return cadena;
 	}
 
@@ -295,7 +299,9 @@ public class PreguntaTest {
 	public List<Integer> getTemas() {
 		return temas;
 	}
-	
+	public double getPeso() {
+		return GestorInfoTema.getInstance().getPesoTemas(temas);
+	}
 	public String getTemasStr() {
 		String joined = temas.stream().map(Object::toString).collect(Collectors.joining(", "));
 		return joined;
@@ -310,6 +316,8 @@ public class PreguntaTest {
 		{
 			try {
 				int tema = Integer.parseInt(t.trim());
+				if (tema > 125)
+					logger.warn("Encontrado un tema con valor alto: " + temas + " a bloques en pregunta " + this.getPregunta());
 				this.temas.add(tema);
 			} catch (Exception e) {
 				if (!this.getSentencia().equalsIgnoreCase("delete"))
@@ -358,6 +366,20 @@ public class PreguntaTest {
 	public void setNotas(String notas) {
 		this.notas = notas.trim();
 	}
+
+	/**
+	 * @return the examen
+	 */
+	public String getExamen() {
+		return examen;
+	}
+
+	/**
+	 * @param examen the examen to set
+	 */
+	public void setExamen(String examen) {
+		this.examen = examen.trim();
+	}
 	
 	public String getString(Campo campo) {
 		switch (campo)
@@ -402,8 +424,11 @@ public class PreguntaTest {
 				return this.getSentencia();
 			case NOTAS:
 				return this.getNotas();
+			case EXAMEN:
+				return this.getExamen();
 			default:
 				return null;
 		}
 	}
+
 }

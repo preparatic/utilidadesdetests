@@ -20,9 +20,15 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.preparatic.TestGeneratorV2;
 import com.preparatic.csvreaders.IExcel;
 
 public class GestorPreguntaTest {
+
+	private static Logger logger = LogManager.getLogger(TestGeneratorV2.class);
 
 	private List<PreguntaTest> listaPreguntas;
 	private static final List<String> listaBloqueA = Arrays.asList("A1","A2","A3","A4");
@@ -47,29 +53,33 @@ public class GestorPreguntaTest {
 	public void leerPreguntas(IExcel reader) {
 		// Obtenemos todas las preguntas del excel
 		List<PreguntaTest> listaPreguntas = reader.getListaPreguntas();
-		
+		logger.info("Total de preguntas leidas :" + listaPreguntas.size());
+
 		List<PreguntaTest> borradas = listaPreguntas.stream()
 				.filter(question -> question.getSentencia().equalsIgnoreCase("delete"))
 				/*
 				 * la idea es que aqui podria hacer filtros si fueran necesarios
-				 * por ejemplo, para filtrar por autor
-				 * .filter(question ->question.getAutor().equals("LGD"))
+				 * por ejemplo, para filtrar por autor .filter(question
+				 * ->question.getAutor().equals("LGD"))
 				 */
 				// collect the output and convert streams to a List
 				.collect(Collectors.toList());
-		
+		logger.info("Total de preguntas borradas :" + borradas.size());
+
 		// convert list to stream
 		this.listaPreguntas = listaPreguntas.stream()
-				.filter(question -> question.getTemas().size() >= 1 && !question.getSentencia().equalsIgnoreCase("delete") &&  question.getBloques().size() >= 1)
+				.filter(question -> question.getTemas().size() >= 1
+						&& !question.getSentencia().equalsIgnoreCase("delete") && question.getBloques().size() >= 1)
 				/*
 				 * la idea es que aqui podria hacer filtros si fueran necesarios
-				 * por ejemplo, para filtrar por autor
-				 * .filter(question ->question.getAutor().equals("LGD"))
+				 * por ejemplo, para filtrar por autor .filter(question
+				 * ->question.getAutor().equals("LGD"))
 				 */
 				// collect the output and convert streams to a List
 				.collect(Collectors.toList());
+		logger.info("Total de preguntas usables :" + listaPreguntas.size());
 	}
-	
+
 	public void reasignaIdentificadores() {
 		int id = 0;
 		for (PreguntaTest pt : this.listaPreguntas) {

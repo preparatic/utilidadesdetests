@@ -72,5 +72,18 @@ public class GestorTests {
 				.collect(Collectors.toList());
 		return filteredTests;
 	}
-
+	
+	public List<Test> getTestPorRelevancia() {
+		List<Test> filteredTests = infoTests.stream()
+				.filter(t -> t.getTipoTest() == eTipoTest.relevancia)
+				.collect(Collectors.toList());
+		return filteredTests;
+	}
+	
+	public List<Test> getTestPorExamenes() {
+		List<Test> filteredTests = infoTests.stream()
+				.filter(t -> t.getTipoTest() == eTipoTest.examen)
+				.collect(Collectors.toList());
+		return filteredTests;
+	}
 }

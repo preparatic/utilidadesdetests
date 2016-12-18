@@ -43,7 +43,8 @@ public class PdfGenerator {
 	private static Logger logger = LogManager.getLogger(PdfGenerator.class);
 
 	private static final float distanciaInterPregunta = 15;
-
+	private static final float distanciaTituloPregunta = 30;
+	
 	private Document docpregs;
 	private Document docsols;
 	private final com.lowagie.text.List listaPreguntas;
@@ -166,7 +167,7 @@ public class PdfGenerator {
 				test.getIdTest());
 		PdfWriter writerPregs =  PdfWriter.getInstance(docpregs,
 				FactoriaArchivo.pdfTest(test.getTipoTest(), test.getIdBloqueTematicaAnho(), test.getIdTest()));
-		TestFooter footerPregs = new TestFooter();
+		TestFooter footerPregs = new TestFooter(test.getTitulo());
 		writerPregs.setPageEvent(footerPregs);
 		
 		PdfWriter.getInstance(docsols,
@@ -175,12 +176,14 @@ public class PdfGenerator {
 		docpregs.open();
 
 		docsols.open();
-		if ((test.getTipoTest() == Test.eTipoTest.bloque) || (test.getTipoTest() == Test.eTipoTest.anho))
-			docsols.setMargins(120, 108, 72, 36);
+		//if ((test.getTipoTest() == Test.eTipoTest.bloque) || (test.getTipoTest() == Test.eTipoTest.anho))
+		docpregs.setMargins(80, 80, 72, 36);	
+		docsols.setMargins(80, 80, 72, 36);
 
 		// AÒdir logo
 		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo.png");
 		gif.setAlignment(Image.LEFT);
+		gif.scaleAbsolute(200, 82);
 		docpregs.add(gif);
 		docsols.add(gif);
 
@@ -194,7 +197,7 @@ public class PdfGenerator {
 		 * respuestas.
 		 */
 		MultiColumnText multiColumnTextSoluciones = new MultiColumnText();
-		multiColumnTextSoluciones.addRegularColumns(docsols.left(), docsols.right(), 10f,
+		multiColumnTextSoluciones.addRegularColumns(docsols.left(), docsols.right(), 20f,
 				Integer.parseInt(ConfigProperties.getProperty("tests.solucion.columnas")));
 		multiColumnTextSoluciones.addElement(listaSoluciones);
 		docsols.add(multiColumnTextSoluciones);
@@ -214,31 +217,38 @@ public class PdfGenerator {
 
 		// Titulos de los tests.
 		String tituloPregs, tituloSols, subtitulo = "";
-		tituloPregs = "Test " + test.getIdTest();
-		tituloSols = "Soluciones test " + test.getIdTest();
+		tituloPregs = "Test " + test.getIdTestStr();
+		tituloSols = "Soluciones test " + test.getIdTestStr();
 
 		try {
-			// Ponemos los t√≠tulos
+			// Ponemos los titulos
 			Paragraph parrafo = new Paragraph(tituloPregs, new Font(Font.UNDEFINED, Font.DEFAULTSIZE * 2, Font.BOLD));
 			parrafo.setAlignment(Paragraph.ALIGN_CENTER);
+			parrafo.setSpacingAfter(distanciaTituloPregunta);
 			docpregs.add(parrafo);
 
 			parrafo = new Paragraph(tituloSols, new Font(Font.UNDEFINED, Font.DEFAULTSIZE * 2, Font.BOLD));
 			parrafo.setAlignment(Paragraph.ALIGN_CENTER);
+			parrafo.setSpacingAfter(distanciaTituloPregunta);
 			docsols.add(parrafo);
 
 			switch (test.getTipoTest()) {
-			case aleatorio:
-				subtitulo = "";
-				break;
+
 			case bloque:
-				subtitulo = " Bloque " + test.getIdBloqueTematicaAnho();
+				subtitulo = "Bloque " + test.getIdBloqueTematicaAnho();
+				break;
+			case tema:
+				subtitulo = "Tema " + test.getIdBloqueTematicaAnho();
+				break;
+			case examen:
+				subtitulo = "Examen " + test.getIdBloqueTematicaAnho();
 				break;
 			case anho:
-				subtitulo = " AÒo " + test.getIdBloqueTematicaAnho();
+				subtitulo = "AÒo " + test.getIdBloqueTematicaAnho();
 				break;
-			case tematica:
-				subtitulo = " Temas " + tituloTematica;
+			case aleatorio:
+			case relevancia:
+				defaul: subtitulo = "";
 				break;
 			}
 
@@ -262,6 +272,11 @@ public class PdfGenerator {
 class TestFooter extends PdfPageEventHelper {
     Font ffont = new Font(Font.UNDEFINED, Font.DEFAULTSIZE, Font.BOLD);
     private int pageNumber;
+    private String title;
+    public TestFooter(String title)
+    {
+    	this.title = title;
+    }
     
     @Override
     public void onChapter(PdfWriter writer, Document document, float paragraphPosition, Paragraph title)
@@ -283,7 +298,7 @@ class TestFooter extends PdfPageEventHelper {
 //                header,
 //                (document.right() - document.left()) / 2 + document.leftMargin(),
 //                document.top() + 10, 0);
-        Phrase footer = new Phrase(String.format("p·gina %d", pageNumber), ffont);
+        Phrase footer = new Phrase(String.format(title + ", p·gina %d", pageNumber), ffont);
         ColumnText.showTextAligned(cb, Element.ALIGN_CENTER,
                 footer,
                 (document.right() - document.left()) / 2 + document.leftMargin(),

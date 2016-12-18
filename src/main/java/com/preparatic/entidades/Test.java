@@ -44,10 +44,12 @@ public class Test {
 
 	public enum eTipoTest {
 		aleatorio, 
+		relevancia, 
 		bloque, 
 		tema, 
 		tematica, 
 		anho, 
+		examen,
 		ultimoAnho
 	};
 
@@ -57,11 +59,11 @@ public class Test {
 	 * idBloqueTematica debe ser un string, porque cuando es un bloque, lleva
 	 * algo como "B1"
 	 */
-	private String idBloqueTematicaAnho = "";
+	private String IdLongName = "";
 	private int idTest;
 	private String tituloTematica;
 	private List<Integer> ListaPreguntas;
-	private static Integer NumPreguntas = Integer
+	public static Integer NumPreguntas = Integer
 			.parseInt(ConfigProperties.getProperty("tests.num_preguntas_por_test")); // Número
 	public static Integer NumPreguntasA = Integer
 			.parseInt(ConfigProperties.getProperty("tests.num_preguntasA_por_test")); // Número
@@ -104,7 +106,7 @@ private final int MaxNumPreguntas;
 	public Test(eTipoTest tipoTest, String idBloqueTematicaAnho, int idTest) {
 		super();
 		this.tipoTest = tipoTest;
-		this.idBloqueTematicaAnho = idBloqueTematicaAnho;
+		this.IdLongName = idBloqueTematicaAnho;
 		this.idTest = idTest;
 		MaxNumPreguntas = Test.NumPreguntas;
 		ListaPreguntas = new ArrayList<Integer>(MaxNumPreguntas);
@@ -259,16 +261,30 @@ private final int MaxNumPreguntas;
 
 		// Para que no se aburran esperando, les ponemos un mensaje en la
 		// consola.
-		if (tipoTest == eTipoTest.bloque)
-			logger.info("Generando Test. Bloque " + idBloqueTematicaAnho + " Test " + idTest);
-		else if (tipoTest == eTipoTest.aleatorio)
-			logger.info("Generando Test. Test " + idTest);
-		else if (tipoTest == eTipoTest.anho)
-			logger.info("Generando Test Anho " + idBloqueTematicaAnho + " Test " + idTest);
-		else {
+		switch (tipoTest) {
+		case bloque:
+			logger.info("Generando Test. Bloque " + IdLongName + " Test " + idTest);
+			break;
+		case aleatorio:
+			logger.info("Generando Test. Test Global " + idTest);
+			break;
+		case relevancia:
+			logger.info("Generando Test. Test Relevancia " + idTest);
+			break;
+		case anho:
+			logger.info("Generando Test Anho " + IdLongName + " Test " + idTest);
+			break;
+		case tema:
+			logger.info("Generando Test Tema " + IdLongName + " Test " + idTest);
+			break;
+		case examen:
+			logger.info("Generando Test Examen " + IdLongName + " Test " + idTest);
+			break;
+		default:
 			logger.info("Generando Test por temática. Temática" + tituloTematica + " Test " + idTest);
 			pdfGenerator.setTituloTematica(tituloTematica);
 		}
+		
 		
 		try {
 			List<PreguntaTest> filteredList = resultados.stream() 
@@ -303,22 +319,30 @@ private final int MaxNumPreguntas;
 	}
 	
 	public String getKeyIdTestStr() {
-		if (tipoTest == eTipoTest.bloque)
-			return "Bloque_" + idBloqueTematicaAnho + "_" + getIdTestStr();
-		else if (tipoTest == eTipoTest.aleatorio)
+		switch (tipoTest) {
+		case bloque:
+			return "Bloque_" + IdLongName + "_" + getIdTestStr();
+		case aleatorio:
 			return "Global_" + getIdTestStr();
-		else if (tipoTest == eTipoTest.anho)
-			return "A&ntildeo_" + idBloqueTematicaAnho + "_" + getIdTestStr();
-		else if (tipoTest == eTipoTest.tema) {
-			return "Tema_" + idBloqueTematicaAnho + "_" + getIdTestStr();
-		} else
-			return "Test " + getIdTestStr();	}
+		case relevancia:
+			return "Ponderado_" + IdLongName + "_" + getIdTestStr();
+		case tema:
+			return "Tema_" + IdLongName + "_" + getIdTestStr();
+		case anho:
+			return "A&ntildeo_" + IdLongName + "_" + getIdTestStr();
+		case examen:
+			return "Examen_" + IdLongName + "_" + getIdTestStr();
+		default:
+			return "Test " + getIdTestStr();
+		}
+	}
+	
 	public eTipoTest getTipoTest() {
 		return tipoTest;
 	}
 
 	public String getIdBloqueTematicaAnho() {
-		return idBloqueTematicaAnho;
+		return IdLongName;
 	}
 
 	public String getTituloTematica() {
@@ -332,16 +356,22 @@ private final int MaxNumPreguntas;
 	
 	public String getTitulo()
 	{
-		if (tipoTest == eTipoTest.bloque)
-			return "Test Bloque " + idBloqueTematicaAnho + ", Id: " + getIdTestStr();
-		else if (tipoTest == eTipoTest.aleatorio)
+		switch (tipoTest) {
+		case bloque:
+			return "Test Bloque " + IdLongName + ", Id: " + getIdTestStr();
+		case aleatorio:
 			return "Test Global, Id: " + getIdTestStr();
-		else if (tipoTest == eTipoTest.anho)
-			return "Test convocatoria " + idBloqueTematicaAnho + ", Id: " + getIdTestStr();
-		else if (tipoTest == eTipoTest.tema) {
-			return "Test Tema " + idBloqueTematicaAnho + ", Id: " + getIdTestStr();
-		} else
+		case relevancia:
+			return "Test Ponderado, Id: " + getIdTestStr();
+		case anho:
+			return "Test Fecha " + IdLongName + ", Id: " + getIdTestStr();
+		case examen:
+			return "Test Examen " + IdLongName + ", Id: " + getIdTestStr();
+		case tema:
+			return "Test Tema " + IdLongName + ", Id: " + getIdTestStr();
+		default:
 			return "Test " + getIdTestStr();
+		}
 	}
 	
 	/**
@@ -370,7 +400,7 @@ private final int MaxNumPreguntas;
 	 */
 	@Override
 	public String toString() {
-		return "Test [idBloqueTematicaAnho=" + idBloqueTematicaAnho + ", idTest=" + idTest + ", htmlFilename="
+		return "Test [idBloqueTematicaAnho=" + IdLongName + ", idTest=" + idTest + ", htmlFilename="
 				+ htmlFilename + ", pdfFilename=" + pdfFilename + ", jsFilename=" + jsFilename + "]";
 	}
 

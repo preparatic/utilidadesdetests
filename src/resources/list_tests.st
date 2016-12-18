@@ -36,3 +36,15 @@ var annosTestsSet = [
     $listaTestsAnnos:{
 ["$it.keyIdTestStr$", "$it.titulo$", "$it.htmlFilename$", "$it.idBloqueTematicaAnho$", ""],}$
 ];
+
+//    ["0001", "Test del 2013 - 0001", "tests/test_0001.html", "2013", ""],
+var examenesTestsSet = [
+    $listaTestsExamenes:{
+["$it.keyIdTestStr$", "$it.titulo$", "$it.htmlFilename$", "$it.idBloqueTematicaAnho$", ""],}$
+];
+
+//    ["0001", "Test del 2013 - 0001", "tests/test_0001.html", "2013", ""],
+var relevantesTestsSet = [
+    $listaTestsRelevantes:{
+["$it.keyIdTestStr$", "$it.titulo$", "$it.htmlFilename$", ""],}$
+];

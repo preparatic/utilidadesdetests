@@ -149,15 +149,15 @@
                                 </div>
                                 <div class="x_content">
                                     <p class="text-muted font-13 m-b-30">
-                                        Le proponemos una lista de ejercicios con preguntas extraidas por A&ntilde;o.
+                                        Le proponemos una lista de ejercicios con preguntas extraidas de ex&aacute;menes anteriores.
                                     </p>
-                                    <table id="datatable-annos" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                                    <table id="datatable-examenes" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
                                                 <th>N&uacute;mero de Test</th>
                                                 <th>T&iacute;tulo</th>
                                                 <th>URL</th>
-                                                <th>Convocatoria</th>
+                                                <th>Examen</th>
                                                 <th>Ver/Hacer</th>
                                             </tr>
                                         </thead>
@@ -213,7 +213,7 @@
     <script src="./data/list_tests.js"></script>
     <script>
         $(document).ready(function () {
-            $('#datatable-annos').DataTable({
+            $('#datatable-examenes').DataTable({
                 "iDisplayLength": 50,
                 "oLanguage": {
                     "sProcessing": "Procesando...",
@@ -240,7 +240,7 @@
                     },
                 },
                 bProcessing: true,
-                data: annosTestsSet,
+                data: examenesTestsSet,
                 aoColumns: [
                           { responsivePriority: 6, }, // first column (Numero de Test)
                           { responsivePriority: 3, }, // 2 column (Titulo

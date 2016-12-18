@@ -12,7 +12,7 @@
     <!-- Font Awesome -->
     <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!--<link href="../vendors/nprogress/nprogress.css" rel="stylesheet">-->
     <!-- Pomodoro Timer -->
     <link href="../vendors/pomodoro/css/pomodoro-timer.css" rel="stylesheet">
     <!-- Switchery -->
@@ -59,9 +59,11 @@
                                     <ul class="nav child_menu">
                                         <li><a href="../tests_todos.html">Ver todos</a></li>
                                         <li><a href="../tests_globales.html">Globales</a></li>
+                                        <li><a href="../tests_relevancia.html">Por Relevancia</a></li>
                                         <li><a href="../tests_bloques.html">Por Bloques</a></li>
                                         <li><a href="../tests_temas.html">Por Temas</a></li>
-                                        <li><a href="../tests_annos.html">Por A&ntilde;os</a></li>
+                                        <li><a href="../tests_annos.html">Por A&ntilde;o</a></li>
+                                        <li><a href="../tests_examen.html">Por Examen</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -94,7 +96,7 @@
                                 </a>
 
                                 <h2>
-                                    Preparaci&oacute;n XXIV: convocatoria de oposiciones TIC de la A.G.E
+                                    Cuerpo Superior de Sistemas y Tecnologías de la Información de la AGE
                                 </h2>
                                 <!--</div>-->
                             </li>
@@ -189,7 +191,7 @@
 
 											   <p style="text-align: center;">
 													<input type="submit" class="btn btn-info" value="Ver" name="showhide" onclick="showHideSolutions()" />
-													<input type="submit" class="btn btn-primary" value="Corregir" onclick="correctQuiz('test_0001')" />
+													<input type="submit" class="btn btn-primary" value="Corregir" onclick="onStopTimer(); correctQuiz('$idtest$')" />
 													<input type="submit" class="btn btn-danger" value="Reset" onclick="resetQuiz(true)" />
 												</p>
 												<!-- Esta funcionalidad esta en beta. -->
@@ -233,7 +235,7 @@
     <!-- FastClick -->
     <script src="../vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!--<script src="../vendors/nprogress/nprogress.js"></script>-->
 	<!-- Pomodoro -->
     <script src="../vendors/pomodoro/js/pomodoro-timer.js"></script>
 	<!-- Switchery -->
