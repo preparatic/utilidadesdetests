@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -373,7 +374,10 @@ public class PreguntaTest {
 	public String getExamen() {
 		return examen;
 	}
-
+	public String getExamenHtml() {
+		return StringEscapeUtils.escapeHtml3(examen);
+	}
+	
 	/**
 	 * @param examen the examen to set
 	 */

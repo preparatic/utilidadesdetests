@@ -24,7 +24,7 @@ import java.io.PrintStream;
 //import java.sql.SQLException;
 import java.util.List;
 
-import org.apache.commons.lang.StringEscapeUtils;
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -578,7 +578,7 @@ public class HtmlGenerator {
 				return "";
 			s = s.replaceAll("\r", "");
 			s = s.replaceAll("\n", "");
-			s = StringEscapeUtils.escapeHtml(s);
+			s = StringEscapeUtils.escapeHtml3(s);
 		} catch (Exception e) {
 			logger.error("texto A HTML " + e.getMessage());
 			logger.error(s);

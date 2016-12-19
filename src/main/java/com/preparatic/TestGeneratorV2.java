@@ -25,6 +25,7 @@ import java.util.Random;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -368,7 +369,11 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	private static void generarTestExamenes(List<PreguntaTest> listaPreguntas) {
 		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
 		// Create a list with the distinct elements using stream.
-		List<String> examenes = listaPreguntas.stream().filter(p -> !p.getExamen().isEmpty()).map(p -> p.getExamen().toUpperCase()).distinct().collect(Collectors.toList());
+		List<String> examenes = listaPreguntas.stream()
+				.filter(p -> !p.getExamen().isEmpty())
+				.map(p -> StringUtils.stripAccents(p.getExamen().toUpperCase()))
+				.distinct()
+				.collect(Collectors.toList());
 		
 		/*
 		 * Por cada anho, usamos un tema al que le vamos a asignar todas las
@@ -376,7 +381,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		 */
 		for (String examen : examenes) {
 			List<PreguntaTest> filteredList = listaPreguntas.stream()
-					.filter(question -> question.getExamen().equalsIgnoreCase(examen.trim()))
+					.filter(question -> StringUtils.stripAccents(question.getExamen()).equalsIgnoreCase(examen.trim()))
 					.collect(Collectors.toList());
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();

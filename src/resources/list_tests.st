@@ -16,35 +16,35 @@
 //   ["0000", "Test Completo", "tests/test_0000.html", ""],
 var randomTestsSet = [
     $listaTestsGlobales:{
-["$it.keyIdTestStr$", "$it.titulo$", "$it.htmlFilename$", ""],}$
+["$it.keyIdTestHtmlStr$", "$it.tituloHtml$", "$it.htmlFilename$", ""],}$
 ];
 
 //   ["0001", "Test del bloque A1 - 0001", "tests/test_0001.html", "A1", ""],
 var blockTestsSet = [
     $listaTestsBloques:{
-["$it.keyIdTestStr$", "$it.titulo$", "$it.htmlFilename$", "$it.idBloqueTematicaAnho$", ""],}$
+["$it.keyIdTestHtmlStr$", "$it.tituloHtml$", "$it.htmlFilename$", "$it.idBloqueTematicaAnhoHtml$", ""],}$
 ];
 
 //       ["0001", "Test del tema 1 - 0001", "tests/test_0001.html", "T1", ""],
 var themeTestsSet = [
     $listaTestsTemas:{
-["$it.keyIdTestStr$", "$it.titulo$", "$it.htmlFilename$", "$it.idBloqueTematicaAnho$", ""],}$
+["$it.keyIdTestHtmlStr$", "$it.tituloHtml$", "$it.htmlFilename$", "$it.idBloqueTematicaAnhoHtml$", ""],}$
 ];
 
 //    ["0001", "Test del 2013 - 0001", "tests/test_0001.html", "2013", ""],
 var annosTestsSet = [
     $listaTestsAnnos:{
-["$it.keyIdTestStr$", "$it.titulo$", "$it.htmlFilename$", "$it.idBloqueTematicaAnho$", ""],}$
+["$it.keyIdTestHtmlStr$", "$it.tituloHtml$", "$it.htmlFilename$", "$it.idBloqueTematicaAnhoHtml$", ""],}$
 ];
 
 //    ["0001", "Test del 2013 - 0001", "tests/test_0001.html", "2013", ""],
 var examenesTestsSet = [
     $listaTestsExamenes:{
-["$it.keyIdTestStr$", "$it.titulo$", "$it.htmlFilename$", "$it.idBloqueTematicaAnho$", ""],}$
+["$it.keyIdTestHtmlStr$", "$it.tituloHtml$", "$it.htmlFilename$", "$it.idBloqueTematicaAnhoHtml$", ""],}$
 ];
 
 //    ["0001", "Test del 2013 - 0001", "tests/test_0001.html", "2013", ""],
 var relevantesTestsSet = [
     $listaTestsRelevantes:{
-["$it.keyIdTestStr$", "$it.titulo$", "$it.htmlFilename$", ""],}$
+["$it.keyIdTestHtmlStr$", "$it.tituloHtml$", "$it.htmlFilename$", ""],}$
 ];

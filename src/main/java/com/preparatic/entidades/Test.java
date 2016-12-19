@@ -26,6 +26,8 @@ import java.util.List;
 //import java.util.Random;
 import java.util.stream.Collectors;
 
+import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -336,6 +338,33 @@ private final int MaxNumPreguntas;
 			return "Test " + getIdTestStr();
 		}
 	}
+	public String getKeyIdTestHtmlStr() {
+		String rst;
+		switch (tipoTest) {
+		case bloque:
+			rst = "Bloque_" + IdLongName + "_" + getIdTestStr();
+			break;
+		case aleatorio:
+			rst =  "Global_" + getIdTestStr();
+			break;
+		case relevancia:
+			rst =  "Ponderado_" + IdLongName + "_" + getIdTestStr();
+			break;
+		case tema:
+			rst =  "Tema_" + IdLongName + "_" + getIdTestStr();
+			break;
+		case anho:
+			rst =  "A&ntildeo_" + IdLongName + "_" + getIdTestStr();
+			break;
+		case examen:
+			rst =  "Examen_" + IdLongName + "_" + getIdTestStr();
+			break;
+		default:
+			rst =  "Test " + getIdTestStr();
+			break;
+		}
+		return StringEscapeUtils.escapeHtml3(rst);
+		}
 	
 	public eTipoTest getTipoTest() {
 		return tipoTest;
@@ -344,7 +373,9 @@ private final int MaxNumPreguntas;
 	public String getIdBloqueTematicaAnho() {
 		return IdLongName;
 	}
-
+	public String getIdBloqueTematicaAnhoHtml() {
+		return StringEscapeUtils.escapeHtml3(IdLongName);
+	}
 	public String getTituloTematica() {
 		return tituloTematica;
 	}
@@ -373,12 +404,39 @@ private final int MaxNumPreguntas;
 			return "Test " + getIdTestStr();
 		}
 	}
+	public String getTituloHtml()
+	{
+		String rst;
+		switch (tipoTest) {
+		case bloque:
+			rst = "Test Bloque " + IdLongName + ", Id: " + getIdTestStr();
+			break;
+		case aleatorio:
+			rst =  "Test Global, Id: " + getIdTestStr();
+			break;
+		case relevancia:
+			rst =  "Test Ponderado, Id: " + getIdTestStr();
+			break;
+		case anho:
+			rst =  "Test Fecha " + IdLongName + ", Id: " + getIdTestStr();
+			break;
+		case examen:
+			rst =  "Test Examen " + IdLongName + ", Id: " + getIdTestStr();
+			break;
+		case tema:
+			rst =  "Test Tema " + IdLongName + ", Id: " + getIdTestStr();
+			break;
+		default:
+			rst =  "Test " + getIdTestStr();
+		}
+		return StringEscapeUtils.escapeHtml3(rst);
+	}
 	
 	/**
 	 * @return the htmlFilename
 	 */
 	public String getHtmlFilename() {
-		return htmlFilename;
+		return StringUtils.stripAccents(htmlFilename);
 	}
 
 	/**

@@ -18,7 +18,7 @@ package com.preparatic.entidades;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.lang.StringEscapeUtils;
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -97,7 +97,7 @@ public class InfoBloque {
 	 * @return the nombreBloque
 	 */
 	public String getAreaBloque() {
-		return StringEscapeUtils.escapeHtml(areaBloque);
+		return StringEscapeUtils.escapeHtml3(areaBloque);
 	}
 
 	/**
@@ -127,7 +127,7 @@ public class InfoBloque {
 	 * @return the titulo
 	 */
 	public String getTitulo() {
-		return StringEscapeUtils.escapeHtml(titulo);
+		return StringEscapeUtils.escapeHtml3(titulo);
 	}
 
 	/**
