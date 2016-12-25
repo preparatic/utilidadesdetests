@@ -578,7 +578,7 @@ public class HtmlGenerator {
 				return "";
 			s = s.replaceAll("\r", "");
 			s = s.replaceAll("\n", "");
-			s = StringEscapeUtils.escapeHtml3(s);
+			s = StringEscapeUtils.escapeHtml4(s);
 		} catch (Exception e) {
 			logger.error("texto A HTML " + e.getMessage());
 			logger.error(s);

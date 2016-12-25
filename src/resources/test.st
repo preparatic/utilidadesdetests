@@ -37,7 +37,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><i class="fa fa-check-square-o"></i> <span>Preparatic XXIV</span></a>
+                        <a href="index.html" class="site_title"><i class="fa fa-check-square-o"></i> <span>Preparatic</span></a>
                     </div>
                     <div class="clearfix"></div>
                     <!-- sidebar menu -->
@@ -96,7 +96,7 @@
                                 </a>
 
                                 <h2>
-                                    Cuerpo Superior de Sistemas y Tecnologías de la Información de la AGE
+                                    Cuerpo Superior de Sistemas y Tecnolog&iacute;as de la Informaci&oacute;n de la Administraci&oacute;n del Estado
                                 </h2>
                                 <!--</div>-->
                             </li>
@@ -222,7 +222,7 @@
             <!-- footer content -->
             <footer>
                 <div class="pull-right">
-                    Copyright &copy; 2016-2017 by Preparatic XXIV. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
+                    Copyright &copy; 2016-2017 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
                 </div>
                 <div class="clearfix"></div>
             </footer>
@@ -245,7 +245,11 @@
     <script src="../js/custom.min.js"></script>
 
 	<script>
-	    var melajuego = document.querySelector('.js-switch');
+	    \$(document).ready(function () {
+            onTimer(questions.length);
+        });
+		
+		var melajuego = document.querySelector('.js-switch');
         if (typeof melajuego != "undefined") {
             melajuego.onchange = function () {
                 //console.log(melajuego.checked);

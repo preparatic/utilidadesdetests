@@ -363,7 +363,7 @@ private final int MaxNumPreguntas;
 			rst =  "Test " + getIdTestStr();
 			break;
 		}
-		return StringEscapeUtils.escapeHtml3(rst);
+		return StringEscapeUtils.escapeHtml4(rst);
 		}
 	
 	public eTipoTest getTipoTest() {
@@ -374,7 +374,7 @@ private final int MaxNumPreguntas;
 		return IdLongName;
 	}
 	public String getIdBloqueTematicaAnhoHtml() {
-		return StringEscapeUtils.escapeHtml3(IdLongName);
+		return StringEscapeUtils.escapeHtml4(IdLongName);
 	}
 	public String getTituloTematica() {
 		return tituloTematica;
@@ -429,7 +429,7 @@ private final int MaxNumPreguntas;
 		default:
 			rst =  "Test " + getIdTestStr();
 		}
-		return StringEscapeUtils.escapeHtml3(rst);
+		return StringEscapeUtils.escapeHtml4(rst);
 	}
 	
 	/**

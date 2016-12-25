@@ -82,7 +82,7 @@
                                 </a>
 
                                 <h2>
-                                    Cuerpo Superior de Sistemas y Tecnologías de la Información de la AGE
+                                    Cuerpo Superior de Sistemas y Tecnolog&iacute;as de la Información de la Administraci&oacute;n del Estado
                                 </h2>
                                 <!--</div>-->
                             </li>
@@ -346,6 +346,13 @@
             return false;
         }
 
+        function getValues(arr)
+        {
+            return Object.keys(arr).map(function (key) {
+                return arr[key];
+            });
+        }
+
         function computeStatistics() {
             var server;
             db.open({
@@ -448,7 +455,7 @@
                         echartBar1.setOption({series: [{
                                 name: 'Aciertos',
                                 type: 'bar',
-                                data: Object.values(aciertosPorBloque),
+                                data: getValues(aciertosPorBloque),
                                 markLine: {
                                     data: [{
                                         type: 'average',
@@ -458,7 +465,7 @@
                                 }, {
                                     name: 'Fallos',
                                     type: 'bar',
-                                    data: Object.values(fallosPorBloque),
+                                    data: getValues(fallosPorBloque),
                                     markLine: {
                                         data: [{
                                             type: 'average',
@@ -468,7 +475,7 @@
                                 }, {
                                     name: 'N/C',
                                     type: 'bar',
-                                    data: Object.values(ncPorBloque),
+                                    data: getValues(ncPorBloque),
                                     markLine: {
                                         data: [{
                                             type: 'average',
@@ -482,13 +489,13 @@
                                             name: 'Aciertos vs Fallos',
                                             type: 'radar',
                                             data: [{
-                                                value: Object.values(porcentajeAciertosPorBloque),
+                                                value: getValues(porcentajeAciertosPorBloque),
                                                 name: 'Aciertos'
                                             }, {
-                                                value: Object.values(porcentajefallosPorBloque),
+                                                value: getValues(porcentajefallosPorBloque),
                                                 name: 'Fallos'
                                             }, {
-                                                value: Object.values(porcentajencPorBloque),
+                                                value: getValues(porcentajencPorBloque),
                                                 name: 'N/C'
                                             }]
                                    }]

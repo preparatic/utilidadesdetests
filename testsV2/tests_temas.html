@@ -91,7 +91,7 @@
                                 </a>
 
                                 <h2>
-                                    Cuerpo Superior de Sistemas y Tecnologías de la Información de la AGE
+                                    Cuerpo Superior de Sistemas y Tecnolog&iacute;as de la Informaci&oacute;n de la Administraci&oacute;n del Estado
                                 </h2>
                                 <!--</div>-->
                             </li>
@@ -150,14 +150,13 @@
                                     <p class="text-muted font-13 m-b-30">
                                         Le proponemos una lista de ejercicios con tests elegidos de cada tema.
                                     </p>
-                                    <table id="datatable-temas" class="table table-striped table-bordered dt-responsive nowrap" cellspacing="0" width="100%">
+                                    <table id="datatable-temas" class="table table-striped table-bordered dt-responsive" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th>N&uacute;mero de Test</th>
-                                                <th>T&iacute;tulo</th>
                                                 <th>URL</th>
+                                                 <th>T&iacute;tulo</th>
                                                 <th>Tema</th>
-                                                <th>Ver/Hacer</th>
+                                                <th>Hacer</th>
                                             </tr>
                                         </thead>
                                         <tbody></tbody>
@@ -218,7 +217,7 @@
                     "sProcessing": "Procesando...",
                     "sLengthMenu": "Mostrar _MENU_ registros",
                     "sZeroRecords": "No se encontraron resultados",
-                    "sEmptyTable": "Ningún dato disponible en esta tabla",
+                    "sEmptyTable": "Ning&uacute;n dato disponible en esta tabla",
                     "sInfo": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
                     "sInfoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
                     "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
@@ -229,7 +228,7 @@
                     "sLoadingRecords": "Cargando...",
                     "oPaginate": {
                         "sFirst": "Primero",
-                        "sLast": "Último",
+                        "sLast": "&uacute;ltimo",
                         "sNext": "Siguiente",
                         "sPrevious": "Anterior"
                     },
@@ -241,33 +240,38 @@
                 bProcessing: true,
                 data: themeTestsSet,
                 aoColumns: [
-                          { responsivePriority: 6, "visible": false, }, // first column (Numero de Test)
-                          { responsivePriority: 3, }, // 2 column (Titulo
-                           {
-                               "targets": [2],
-                               "visible": false,
-                               "searchable": false
-                           }, // 3 column (url
-                           {
-                               responsivePriority: 4,
-                               "targets": [3],
-                               // The `data` parameter refers to the data for the cell (defined by the
-                               // `data` option, which defaults to the column being worked with, in
-                               // this case `data: 0`.
-                               "mRender": function (data, type, full) {
-                                   return infoTemas[data].titulo;
+                               {
+                                   responsivePriority: 6,// first column (URL)
+                                   "visible": false,
+                                   "searchable": false
+                               }, // column (url)
+                              {
+                                  responsivePriority: 1,
+                                  "mRender": function (data, type, full) {
+                                      var id = full[0]; // URL in the first column
+                                      return "<a href=" + id + ">" + data + "</a>";
+                                  }
+                              }, // 2 column (Titulo
+                               {
+                                   responsivePriority: 4,
+                                   // The `data` parameter refers to the data for the cell (defined by the
+                                   // `data` option, which defaults to the column being worked with, in
+                                   // this case `data: 0`.
+                                   "mRender": function (data, type, full) {
+                                       var id = full[0]; // URL in the first column
+                                       return "<a href=" + id + ">" + infoTemas[data].titulo + "</a>";
+                                   }
+                               },  // 4 column (Bloque ID)
+                               {     // 5 column (view/do link)
+                                   responsivePriority: 2,
+                                   "sName": "Hacer",
+                                   "bSearchable": false,
+                                   "bSortable": false,
+                                   "mRender": function (data, type, full) {
+                                       var id = full[0]; //row id in the first column
+                                       return '<a href="' + id + '"><i class="fa fa-pencil-square-o" aria-hidden="true" title="Ver/Hacer"></i></a>';
+                                   }
                                }
-                           },  // 4 column (Tema ID)
-                           {     // 5 column (view/do link)
-                               responsivePriority: 1,
-                               "sName": "Hacer",
-                               "bSearchable": false,
-                               "bSortable": false,
-                               "mRender": function (data, type, full) {
-                                   var id = full[2]; //row id in the first column
-                                   return "<a href=" + id + ">Ver/Hacer</a>";
-                               }
-                           }
                 ]
             });
         });

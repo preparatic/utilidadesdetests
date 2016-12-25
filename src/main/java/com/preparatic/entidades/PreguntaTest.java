@@ -375,7 +375,7 @@ public class PreguntaTest {
 		return examen;
 	}
 	public String getExamenHtml() {
-		return StringEscapeUtils.escapeHtml3(examen);
+		return StringEscapeUtils.escapeHtml4(examen);
 	}
 	
 	/**

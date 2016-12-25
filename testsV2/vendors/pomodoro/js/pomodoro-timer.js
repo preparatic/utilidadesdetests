@@ -8,9 +8,26 @@ var countdownHandle;
 
 var audio = new Audio('../vendors/pomodoro/sounds/beep.mp3');
 
-$(document).ready(function() {
-  onPomodoroTimer();
-});
+var secondsPerQuestions = 54;
+
+function onTimer(numquestions) {
+    var sg = Math.floor(numquestions * secondsPerQuestions);
+    var hours =  Math.floor(sg/3600);
+    var minutes = Math.floor((sg - hours * 3600) / 60);
+    var seconds = sg - (hours * 3600 + minutes * 60);
+
+    stopTimer();
+
+    gHours = hours;
+    gMinutes = minutes;
+    gSeconds = seconds;
+
+    resetTimer();
+
+    $('#shortButton').removeClass('btn-success');
+    $('#longButton').removeClass('btn-success');
+    $('#pomodoroButton').addClass('btn-success');
+}
 
 function onPomodoroTimer(){
 

@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-/* Esta función rellena el combo para seleccionar un test. Se genera de forma automática durante la construcción de los test. Se genera
+/* Esta funci&oacute;n rellena el combo para seleccionar un test. Se genera de forma autom&aacute;tica durante la construcci&oacute;n de los test. Se genera
 con enlaces a los test que se han generado.
 
-* Una vez generados todos los tests, se generan las funciones de navegación, poniendo enlaces a todos los 
-* los test que se hayan generado en el árbol de directorios.
+* Una vez generados todos los tests, se generan las funciones de navegaci&oacute;n, poniendo enlaces a todos los 
+* los test que se hayan generado en el &aacute;rbol de directorios.
 */
 
 
@@ -168,7 +168,7 @@ function renderTestSelectorTematica(){
 	    }
 
 
-	// Cargamos los valores de cada temática
+	// Cargamos los valores de cada tem&aacute;tica
 
 }
 
@@ -185,7 +185,7 @@ function renderTestSelectorAnhos(anho){
 
 }
 
-//////// Menú de navegación.
+//////// Men&uacute; de navegaci&oacute;n.
 
 function addElement(theList, theText, theHref, selected){
 
@@ -226,7 +226,7 @@ function renderTestSelector3(tests) {
     document.writeln('<ul class="dropdown-menu" >');
     for (var i = 0; i < tests.length; i++) {
         //option += '<option value="' + numbers[i] + '">' + numbers[i] + '</option>';
-        document.writeln('<li><a href="../' + tests[i][2] + '">' + tests[i][1] + '</a></li>');
+        document.writeln('<li><a href="../' + tests[i][0] + '">' + tests[i][1] + '</a></li>');
     }
     // $('#items').append(option);
     document.writeln('</ul>');

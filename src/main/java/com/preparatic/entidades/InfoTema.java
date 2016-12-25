@@ -134,7 +134,7 @@ public class InfoTema {
 	 * @return the titulo
 	 */
 	public String getTituloCorto() {
-		return StringEscapeUtils.escapeHtml3(tituloCorto);
+		return StringEscapeUtils.escapeHtml4(tituloCorto);
 	}
 
 	/**
@@ -146,7 +146,7 @@ public class InfoTema {
 	}
 
 	public String getTituloLargo() {
-		return StringEscapeUtils.escapeHtml3(tituloLargo);
+		return StringEscapeUtils.escapeHtml4(tituloLargo);
 	}
 
 	public void setTituloLargo(String tituloLargo) {
