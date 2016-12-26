@@ -411,7 +411,7 @@
                         }
 
                         totalPorTemas = totalPorTemas.map(function (num, idx) {
-                                              return {tema:idx,  total: num, aciertos: aciertosPorTemas[idx], fallos: fallosPorTemas[idx], nc: ncPorTemas[idx]};
+                                              return {tema:idx+1,  total: num, aciertos: aciertosPorTemas[idx], fallos: fallosPorTemas[idx], nc: ncPorTemas[idx]};
                                             });
                         totalPorTemasMas = totalPorTemas.sort(function sortNumber(a, b) {
                             return b.total - a.total;
@@ -422,7 +422,7 @@
                         var temas = [];
                         var cnt = 0;
                         for (var d in infoTemas) {
-                            temas.push({ tema: cnt++, peso: infoTemas[d].peso });
+                            temas.push({ tema: infoTemas[d].tema, peso: infoTemas[d].peso });
                         }
                         var temasRelevantes = temas.sort(function sortNumber(a, b) {
                                                 return b.peso - a.peso;
@@ -509,7 +509,7 @@
                         echartBarRelevantes.setOption({
                             yAxis: [{
                                 type: 'category',
-                                data: totalPorTemasRelevantes.map(function (obj, idx) { return 'Tema ' + obj.tema; })
+                                data: totalPorTemasRelevantes.map(function (obj, idx) { return 'T. ' + obj.tema; })
                             }],
                             series: [{
                                 name: 'Aciertos',
@@ -529,7 +529,7 @@
                        echartBarMas.setOption({
                           yAxis: [{
                                 type: 'category',
-                                data: totalPorTemasMas.map(function (obj, idx) { return 'Tema ' + obj.tema; })
+                                data: totalPorTemasMas.map(function (obj, idx) { return 'T. ' + obj.tema; })
                             }],
                             series: [{
                                 name: 'Aciertos',
@@ -549,7 +549,7 @@
                        echartBarMenos.setOption({
                            yAxis: [{
                                type: 'category',
-                               data: totalPorTemasMenos.map(function (obj, idx) { return 'Tema ' + obj.tema; })
+                               data: totalPorTemasMenos.map(function (obj, idx) { return 'T. ' + obj.tema; })
                            }],
                            series: [{
                                name: 'Aciertos',

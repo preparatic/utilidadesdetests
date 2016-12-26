@@ -31,7 +31,7 @@ function initBloquesMap()
 //  T1: {area: "A1", tituloCorto: "La Constitución española de 1978 (I).",  tituloLargo: "La Constitución española de 1978 (I). Los principios constitucionales. Los derechos fundamentales y sus garantías. La Corona. Cortes Generales. Congreso de los Diputados y Senado. El Gobierno. Los Órganos constitucionales de control del Gobierno: Tribunal"},
 var infoTemas = { 
     $listatemas:{
-T$it.numTema$: { area: "$it.bloqueID$", titulo: "$it.tituloCorto$", tituloLargo: "$it.tituloLargo$", peso: $it.pesoFinal$ },}$
+T$it.numTema$: { area: "$it.bloqueID$", titulo: "$it.tituloCorto$", tituloLargo: "$it.tituloLargo$", peso: $it.pesoFinal$, tema: $it.numTema$ },}$
 };
 
 function initTemasArray()
