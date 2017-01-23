@@ -257,7 +257,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <h4>Atenci&oacute;n!</h4>
-                                    <p>Su navegador no soporta IndexedDB. Podr&aacute; realizar ensayos de los tests, pero los resultados no podr&aacute;n ser almacenados. </p>
+                                    Su navegador no soporta los requisitos requeridos. Podr&aacute; realizar ensayos de los tests, pero los resultados no podr&aacute;n ser almacenados o analizados. 
                                     <p>Las funcionalidades relacionadas con su progreso no tendr&aacute;n efecto.</p>
                                     <p>Le recomendamos que utilice versiones recientes de los navegadores Chrome, Microsoft Edge o Mozilla Firefox.</p>
                                 </div>
@@ -298,9 +298,13 @@
     <script src="./js/IndexedDB.js"></script>
     <script src="./data/info_tests.js"></script>
     <script src="./vendors/aaronpowell-db.js/db.js"></script>
+    <script src="./vendors/promise-polyfill/promise.js"></script>
     <script>
         $(document).ready(function () {
             if (!indexedDB) {
+                $('#IndexedDBnotsupported').modal('show');
+            }
+            if (typeof window.Promise == "undefined") {
                 $('#IndexedDBnotsupported').modal('show');
             }
         });

@@ -312,17 +312,19 @@ public class PreguntaTest {
 		return joined;
 	}
 	public void setTemas(String temas) {
+		if (this.getSentencia().equalsIgnoreCase("delete"))
+			return;
 		String[] temasArr = temas.trim().split("[.,y]");
 		for(String t : temasArr)
 		{
 			try {
 				int tema = Integer.parseInt(t.trim());
-				if (tema > 125)
-					logger.warn("Encontrado un tema con valor alto: " + temas + " a bloques en pregunta " + this.getPregunta());
-				this.temas.add(tema);
+				if (tema < 1 || tema > 125)
+					logger.warn("Encontrado un tema con valor erroneo: " + temas + " en pregunta " + this.getPregunta());
+				else
+					this.temas.add(tema);
 			} catch (Exception e) {
-				if (!this.getSentencia().equalsIgnoreCase("delete"))
-					logger.warn("Error al convertir temas " + temas + " a bloques en pregunta " + this.getPregunta());
+					logger.warn("Error al procesar temas " + temas + " en pregunta " + this.getPregunta());
 			}
 		}
 	}

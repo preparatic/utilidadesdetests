@@ -1,0 +1,9 @@
+AREA,BLOQUEID,BLOQUE,MIN,MAX
+A.Temas generales. ,A1,I. Marco constitucional español y Unión Europea ,1,6
+A.Temas generales. ,A2,II. Actuación administrativa y gestión financiera. ,7,11
+A.Temas generales. ,A3,III. Estructura social y económica de España ,12,16
+A.Temas generales. ,A4,IV. Dirección pública,17,23
+B.Temas específicos. ,B1,I.Organización y gestión de los sistemas de información,24,48
+B.Temas específicos. ,B2,II. Tecnología básica,49,81
+B.Temas específicos. ,B3,III. Ingeniería de los Sistemas de Información,82,101
+B.Temas específicos. ,B4,"IV. Redes, Comunicaciones e Internet",102,125

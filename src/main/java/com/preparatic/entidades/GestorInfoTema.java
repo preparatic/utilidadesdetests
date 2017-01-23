@@ -19,9 +19,14 @@ package com.preparatic.entidades;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.mysql.cj.api.log.Log;
 import com.preparatic.csvreaders.IExcel;
 
 public class GestorInfoTema {
+	private static Logger logger = LogManager.getLogger(PreguntaTest.class);
 
 	private List<InfoTema> infoTemas;
 	private static GestorInfoTema instance = null;
@@ -48,8 +53,10 @@ public class GestorInfoTema {
 	public double getPesoTemas(List<Integer> temas) {
 		double peso = 0;
 		for (int t : temas){
-			if (t <= infoTemas.size())
+			if (t <= infoTemas.size() && t >= 1)
 				peso += infoTemas.get(t-1).getPesoFinal();
+			else
+				logger.warn("Hay una pregunta con un tema fuera de rango");
 		}
 		return peso;
 	}

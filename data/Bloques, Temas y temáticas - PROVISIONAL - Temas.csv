@@ -1,0 +1,130 @@
+,,this.setPesoBloque(Float.parseFloat(celdas.get(Campo.PESOBLOQUE.index)));,PESO TEMA,PESO NORMALIZADO,"PESO FINAL EN EL EXAMEN
+ (PREGUNTAS)",TITULO_CORTO,TITULO_LARGO
+1,A1,25,1,"0,043478261","1,086956522",La Constitución española de 1978 (I).,"La Constitución española de 1978 (I). Los principios constitucionales. Los derechos fundamentales y sus garantías. La Corona. Cortes Generales. Congreso de los Diputados y Senado. El Gobierno. Los Órganos constitucionales de control del Gobierno: Tribunal de Cuentas, Defensor del Pueblo. La función consultiva: El Consejo de Estado."
+2,A1,25,1,"0,043478261","1,086956522",La constitución española de 1978 (II).,"La Constitución española de 1978 (II). El Poder Judicial. La justicia en la Constitución. El Consejo General del Poder Judicial. El Ministerio Fiscal. El Tribunal Constitucional. Naturaleza, organización y atribuciones."
+3,A1,25,1,"0,043478261","1,086956522",La constitución española de 1978 (III).,La Constitución española de 1978 (III). Las Comunidades Autónomas: organización política y administrativa. La Administración Local: Regulación constitucional y entidades que la integran.
+4,A1,25,1,"0,043478261","1,086956522",La constitución española de 1978 (IV).,La Constitución española de 1978 (IV). La Administración Pública: Principios constitucionales. La Administración General del Estado. Sus órganos centrales.
+5,A1,25,1,"0,043478261","1,086956522","La Unión Europea: antecedentes, evolución y objetivos.","La Unión Europea: antecedentes, evolución y objetivos. Los tratados originarios y modificativos. El Derecho de la Unión Europea. Fuentes. Relación entre el Derecho de la Unión Europea y el ordenamiento jurídico de los Estados miembros. La participación del Estados miembros en el proceso decisorio."
+6,A1,25,1,"0,043478261","1,086956522",Las Instituciones de la Unión Europea.,"Las Instituciones de la Unión Europea: el Consejo Europeo, el Consejo, la Comisión Europea, el Parlamento Europeo el Tribunal de Justicia de la Unión Europea, el Tribunal de Cuentas y el Banco Central Europeo."
+7,A2,25,1,"0,043478261","1,086956522",Procedimiento administrativo presencial y telemático.,El régimen jurídico de las Administraciones Públicas. El procedimiento administrativo y la relación de los ciudadanos con las Administraciones Públicas. La colaboración entre Administraciones mediante acuerdos y convenios. La colaboración público-privada.
+8,A2,25,1,"0,043478261","1,086956522",La revisión de los actos en vía administrativa.,La revisión de los actos en vía administrativa. Los recursos administrativos. El recurso contencioso-administrativo.
+9,A2,25,1,"0,043478261","1,086956522",La responsabilidad patrimonial de las Administraciones Públicas.,La responsabilidad patrimonial de las Administraciones Públicas. Procedimiento de responsabilidad patrimonial. La acción de responsabilidad.
+10,A2,25,1,"0,043478261","1,086956522",Los contratos de las Administraciones Públicas.,Los contratos de las Administraciones Públicas. Principios comunes. La Ley de Contratos del Sector Público. Requisitos necesarios para la celebración de los contratos. Procedimientos de contratación y formas de adjudicación. Tipos de contratos y características generales. La facturación en el Sector Público.
+11,A2,25,1,"0,043478261","1,086956522",Los presupuestos generales del Estado.,Los presupuestos generales del Estado. Estructura del presupuesto: Clasificación de los gastos. Las modificaciones presupuestarias. La ejecución del gasto y su control. El control interno: La Intervención General de la Administración del Estado. El control externo: El Tribunal de Cuentas y las Cortes Generales.
+12,A3,25,1,"0,043478261","1,086956522",El modelo económico español.,El modelo económico español en el marco de la economía mundial. El crecimiento sostenible y las políticas ambientales. Líneas generales de la política económica actual.
+13,A3,25,1,"0,043478261","1,086956522",Los sectores de la economía.,"El sector primario. El sector industrial. El sector servicios. Los subsectores de comercio, transportes y comunicaciones. El turismo."
+14,A3,25,1,"0,043478261","1,086956522",Estructura social y políticas de igualdad.,La estructura social. Tendencias demográficas. Políticas de igualdad de género. Discapacidad y dependencia. Políticas contra la violencia de género.
+15,A3,25,1,"0,043478261","1,086956522",El mercado de trabajo.,El mercado de trabajo: Evolución y características actuales. Principales magnitudes. Políticas públicas de empleo.
+16,A3,25,1,"0,043478261","1,086956522",TIC y sociedad.,El impacto de las tecnologías de la información y las comunicaciones en la sociedad. La brecha digital. Nuevos hábitos de relación y de consumo de la información.
+17,A3,25,1,"0,043478261","1,086956522",TIC y mercado de trabajo.,El impacto de las tecnologías de la información y las comunicaciones en la economía y en el mercado de trabajo. Principales magnitudes.
+18,A4,25,1,"0,043478261","1,086956522",La función gerencial de las AAPP.,La función gerencial en las Administraciones Públicas. Particularidades de la gestión pública.
+19,A4,25,1,"0,043478261","1,086956522",La calidad en los servicios públicos.,La calidad en los servicios públicos y el papel de las TIC en su modernización. La legislación en materia de sociedad de la información y administración electrónica en España y Europa.
+20,A4,25,1,"0,043478261","1,086956522","Modelo burocrático, management y gobernanza.",La crisis de la burocracia como sistema de gestión. La adecuación de técnicas del sector privado. El «management» público y la gobernanza. Hacia la excelencia en las instituciones públicas.
+21,A4,25,1,"0,043478261","1,086956522",Gestión del conocimiento.,La gestión del conocimiento y el capital intelectual en las organizaciones.
+22,A4,25,1,"0,043478261","1,086956522",Ética pública y transparencia.,"Ética Pública, transparencia, acceso a la información pública y buen gobierno. La ley 79/2013, de transparencia, acceso a la información pública y buen gobierno. El Consejo de Transparencia y Buen Gobierno: Real Decreto 979/2OI4, por el que se aprueba su estatuto. Funciones. La Oficina de Transparencia y Acceso a la Información (OTAI): Funciones. El Portal de Transparencia. Las Unidades de Información y Transparencia (UITS): Funciones, La transparencia y el acceso a la información en las Comunidades Autónomas y Entidades Locales."
+23,A4,25,1,"0,043478261","1,086956522",Emprendimiento y unidad de mercado.,La dinamización y el apoyo a la actividad económica y al emprendimiento. La garantía de la unidad de mercado.
+24,B1,50,1,"0,003378378","0,168918919",Conceptos de sistemas de información.,"Definición, estructura, y dimensionamiento eficiente de los Sistemas de Información."
+25,B1,50,1,"0,003378378","0,168918919",La información en las organizaciones.,La información en las organizaciones. Las organizaciones basadas en la información. La Administración como caso específico de este tipo de organización.
+26,B1,50,10,"0,033783784","1,689189189",Gobernanza TIC.,Modelos de Gobernanza TIC. Organización e instrumentos operativos de las tecnologías de la información y las comunicaciones en la Administración General del Estado y sus Organismos Públicos. La Transformación Digital de la Administración General del Estado.
+27,B1,50,4,"0,013513514","0,675675676",Reutilización de la información del sector público.,Reutilización de la Información en el Sector Público en Europa y España. Papel de las TIC en la implantación de políticas de datos abiertos y transparencia.
+28,B1,50,3,"0,010135135","0,506756757",Directivo TIC.,"Estrategia, objetivos y funciones del directivo de Sistemas y Tecnologías de la Información en la Administración."
+29,B1,50,2,"0,006756757","0,337837838",Herramientas para el directivo TIC.,Herramientas de planificación y control de gestión de la función del directivo de Sistemas y Tecnologías de la Información en la Administración. El cuadro de mando.
+30,B1,50,2,"0,006756757","0,337837838",Centro de sistemas de información.,"Organización y funcionamiento de un Centro de Sistemas de Información. Funciones de: desarrollo, mantenimiento, sistemas, bases de datos, comunicaciones, seguridad, calidad, microinformática y atención a usuarios."
+31,B1,50,2,"0,006756757","0,337837838",Dirección y gestión de proyectos TIC.,"Dirección y gestión de proyectos de tecnologías de la información. Planificación estratégica, gestión de recursos, seguimiento de proyectos, toma de decisiones."
+32,B1,50,1,"0,003378378","0,168918919",Gestión de equipos.,Liderazgo. Gestión de competencias y personas. Gestión de conflictos e inteligencia emocional en el puesto de trabajo. Técnicas de negociación y gestión comercial.
+33,B1,50,3,"0,010135135","0,506756757",Metodologías predictivas para la gestión de proyectos.,"Metodologías predictivas para la gestión de proyectos: GANTT, PERT."
+34,B1,50,5,"0,016891892","0,844594595",Metodologías lean.,Metodologías ágiles para la gestión de proyectos. Metodologías lean.
+35,B1,50,11,"0,037162162","1,858108108",LOPD,La política de protección de datos de carácter personal. Normativa. La Agencia Española de Protección de Datos.
+36,B1,50,2,"0,006756757","0,337837838",Auditoría informática.,"Auditoría Informática. Concepto y contenidos. Administración, planeamiento, organización, infraestructura técnica y prácticas operativas."
+37,B1,50,5,"0,016891892","0,844594595",Ley de contratos.,La gestión de la compra pública de tecnologías de la información.
+38,B1,50,1,"0,003378378","0,168918919",Adquisición de sistemas.,"Adquisición de sistemas: Estudio de alternativas, evaluación de la viabilidad y toma de decisión."
+39,B1,50,2,"0,006756757","0,337837838",Alternativas de decisión.,Alternativas básicas de decisión en el campo del equipamiento hardware y software.
+40,B1,50,2,"0,006756757","0,337837838",Rentabilidad de las inversiones.,La rentabilidad de las inversiones en los proyectos de Tecnologías de la Información.
+41,B1,50,3,"0,010135135","0,506756757",Protección jurídica del software.,La protección jurídica de los programas de ordenador. Los medios de comprobación de la legalidad y control del software.
+42,B1,50,2,"0,006756757","0,337837838",Accesibilidad y usabilidad.,Accesibilidad y usabilidad. W3C. Diseño universal. Diseño web adaptativo.
+43,B1,50,3,"0,010135135","0,506756757",ENI,Interoperabilidad de sistemas (1). El Esquema Nacional de Interoperabilidad. Dimensiones de la interoperabilidad.
+44,B1,50,2,"0,006756757","0,337837838",NTI,Interoperabilidad de sistemas (2). Las Normas Técnicas de Interoperabilidad. Interoperabilidad de los documentos y expedientes electrónicos y normas para el intercambio de datos entre Administraciones Públicas.
+45,B1,50,2,"0,006756757","0,337837838",Análisis y gestión de riesgos.,Seguridad de sistemas (1). Análisis y gestión de riesgos. Herramientas.
+46,B1,50,3,"0,010135135","0,506756757",ENS.,Seguridad de sistemas (2). El Esquema Nacional de Seguridad. Adecuación al Esquema Nacional de Seguridad. Estrategia Nacional de Seguridad. CCN-STIC.
+47,B1,50,15,"0,050675676","2,533783784",Infraestructuras y servicios comunes.,"Infraestructuras, servicios comunes y compartidos para la interoperabilidad entre AAPPs. Cl@ve, la Carpeta Ciudadana, el Sistema de Interconexión de Registros, la Plataforma de Intermediación de Datos, y otros servicios."
+48,B1,50,2,"0,006756757","0,337837838",Organizaciónes de normalización.,Organizaciones internacionales y nacionales de normalización. Pruebas de conformidad y certificación. El establecimiento de servicios de pruebas de conformidad.
+49,B2,50,2,"0,006756757","0,337837838",Sistemas de altas prestaciones.,Sistemas de altas prestaciones. Grid Computing. Mainframe.
+50,B2,50,1,"0,003378378","0,168918919",Equipos departamentales y servidores.,"Equipos departamentales. Servidores. Medidas de seguridad para equipos departamentales y servidores. Centros de proceso de datos: diseño, implantación y gestión."
+51,B2,50,1,"0,003378378","0,168918919",Dispositivos personales y móviles.,Dispositivos personales de PC y dispositivos móviles. La conectividad de los dispositivos personales. Medidas de seguridad y gestión para equipos personales y dispositivos móviles.
+52,B2,50,1,"0,003378378","0,168918919",Cloud computing.,"Cloud Computing. IaaS, PaaS, SaaS. Nubes privadas, públicas e híbridas."
+53,B2,50,1,"0,003378378","0,168918919",Sistemas de almacenamiento.,Sistemas de almacenamiento para sistemas grandes y departamentales. Dispositivos para tratamiento de información multimedia. Virtualización del almacenamiento. Copias de seguridad.
+54,B2,50,1,"0,003378378","0,168918919",Sistemas de información multiusuario.,"Tipos de sistemas de información multiusuario. Sistemas grandes, medios y pequeños. Servidores de datos y de aplicaciones. Virtualización de servidores."
+55,B2,50,1,"0,003378378","0,168918919",Arquitectura SOA.,El procesamiento cooperativo y la arquitectura cliente-servidor. Arquitectura SOA.
+56,B2,50,1,"0,003378378","0,168918919",Sistemas Operativos.,Conceptos y fundamentos de sistemas operativos. Evolución y tendencias.
+57,B2,50,2,"0,006756757","0,337837838",UNIX-LINUX.,"Sistemas operativos UNIX-LINUX. Fundamentos, administración, instalación, gestión."
+58,B2,50,1,"0,003378378","0,168918919",Microsoft.,"Sistemas operativos Microsoft. Fundamentos, administración, instalación, gestión."
+59,B2,50,3,"0,010135135","0,506756757",Sistemas Operativos para móviles.,"Conceptos básicos de otros sistemas operativos: OS X, iOS, Android, z/OS. Sistemas operativos para dispositivos móviles."
+60,B2,50,3,"0,010135135","0,506756757",Sistemas de gestión de bases de datos.,Los sistemas de gestión de bases de datos SGBD. El modelo de referencia de ANSI.
+61,B2,50,4,"0,013513514","0,675675676",El modelo relacional.,El modelo relacional. El lenguaje SQL. Normas y estándares para la interoperabilidad entre gestores de bases de datos relacionales.
+62,B2,50,3,"0,010135135","0,506756757",Arquitectura de desarrollo en la web.,"Arquitectura de desarrollo en la web. Desarrollo web front-end. Scripts de cliente. Frameworks. UX. Desarrollo web en servidor, conexión a bases de datos e interconexión con sistemas y servicios."
+63,B2,50,5,"0,016891892","0,844594595",Entorno de desarrollo Microsoft.NET.,Entorno de desarrollo Microsoft.NET.
+64,B2,50,5,"0,016891892","0,844594595",Entorno de desarrollo JAVA.,Entorno de desarrollo JAVA.
+65,B2,50,2,"0,006756757","0,337837838",Entorno de desarrollo PHP.,Entorno de desarrollo PHP.
+66,B2,50,3,"0,010135135","0,506756757",Software de código abierto y libre.,Software de código abierto. Software libre. Conceptos base. Aplicaciones en entorno ofimático y servidores Web.
+67,B2,50,1,"0,003378378","0,168918919",Inteligencia artificial.,"Inteligencia artificial: la orientación heurística, inteligencia artificial distribuida, agentes inteligentes."
+68,B2,50,1,"0,003378378","0,168918919",Gestión del conocimiento.,Gestión del conocimiento: representación del conocimiento. Sistemas expertos. Herramientas.
+69,B2,50,1,"0,003378378","0,168918919",Sistemas CRM y ERP.,Sistemas CRM (Customer Relationship Management) y ERP (Enterprise Resource Planning). Generación de informes a la Dirección.
+70,B2,50,2,"0,006756757","0,337837838",E-learning.,"E-learning: Conceptos, herramientas, sistemas de implantación y normalización."
+71,B2,50,3,"0,010135135","0,506756757",Los sistemas GIS.,Los sistemas de información geográfica. Conceptos y funcionalidad básicos.
+72,B2,50,5,"0,016891892","0,844594595",Datawarehouse y minería de datos.,Gestión de los datos corporativos. Almacén de datos (Data-Warehouse). Arquitectura OLAP. Minería de datos.
+73,B2,50,5,"0,016891892","0,844594595",Big Data.,"Big Data. Captura, análisis, transformación, almacenamiento y explotación de conjuntos masivos de datos. Entornos Hadoop o similares. Bases de datos NoSQL."
+74,B2,50,4,"0,013513514","0,675675676",Lenguajes de marcado.,"Lenguajes y herramientas para la utilización de redes globales. HTML, CSS y XML. Navegadores web y compatibilidad con estándares."
+75,B2,50,3,"0,010135135","0,506756757",Comercio electrónico.,Comercio electrónico. Mecanismos de pago. Gestión del negocio. Factura electrónica. Pasarelas de pago.
+76,B2,50,3,"0,010135135","0,506756757",El cifrado.,El cifrado. Algoritmos de cifrado simétricos y asimétricos. La función hash. El notariado.
+77,B2,50,3,"0,010135135","0,506756757",Identificación y firma electrónica I.,"Identificación y firma electrónica (1) Marco europeo y nacional. Certificados digitales. Claves privadas, públicas y concertadas. Formatos de firma electrónica. Protocolos de directorio basados en LDAP y X.500. Otros servicios."
+78,B2,50,3,"0,010135135","0,506756757",Identificación y firma electrónica II.,"Identificación y firma electrónica (2) Prestación de servicios públicos y privados. Infraestructura de clave pública (PKI). Mecanismos de identificación y firma: «Smart Cards», DNI electrónico, mecanismos biométricos."
+79,B2,50,1,"0,003378378","0,168918919",Adaptación LOPD.,Adaptación de aplicaciones y entornos a los requisitos de la normativa de protección de datos según los niveles de seguridad. Herramientas de cifrado y auditoría.
+80,B2,50,1,"0,003378378","0,168918919",El tratamiento de imágenes.,El tratamiento de imágenes. Tecnologías de digitalización y de impresión. Impresión 3D.
+81,B2,50,1,"0,003378378","0,168918919",Reconocimiento óptico de caracteres.,"Reconocimiento óptico de caracteres (OCR, ICR). Reconocimiento biométrico."
+82,B3,50,3,"0,010135135","0,506756757",Modelos de ciclo de vida.,El ciclo de vida de los sistemas de información. Modelos del ciclo de vida.
+83,B3,50,1,"0,003378378","0,168918919",Plan de sistemas de información.,Planificación estratégica de sistemas de información y de comunicaciones. El plan de sistemas de información.
+84,B3,50,4,"0,013513514","0,675675676",Análisis de sistemas y metodologías ágiles.,"Análisis funcional de sistemas, casos de uso e historias de usuario. Metodologías de desarrollo de sistemas. Metodologías ágiles: Scrum y Kanban."
+85,B3,50,2,"0,006756757","0,337837838",Análisis del dominio de los sistemas.,"Análisis del dominio de los sistemas: Modelado de dominio, modelo entidad relación y modelos de clases."
+86,B3,50,2,"0,006756757","0,337837838",Análisis dinámico de sistemas.,"Análisis dinámico de sistemas: Modelado de procesos, modelado dinámico y BPMN (Business Process Model and Notation)."
+87,B3,50,1,"0,003378378","0,168918919",Análisis de aspectos no funcionales.,"Análisis de aspectos no funcionales: Rendimiento, seguridad, privacidad."
+88,B3,50,2,"0,006756757","0,337837838",Diseño arquitectónico de sistemas.,Diseño arquitectónico de sistemas. Diagramas de despliegue.
+89,B3,50,1,"0,003378378","0,168918919",Técnicas de diseño de software.,Técnicas de diseño de software. Diseño por capas y patrones de diseño.
+90,B3,50,1,"0,003378378","0,168918919",Prototipos en el desarrollo de sistemas.,La elaboración de prototipos en el desarrollo de sistemas. Diseño de interfaces de aplicaciones.
+91,B3,50,7,"0,023648649","1,182432432",Metrica,La metodología de planificación y desarrollo de Sistemas de Información Métrica.
+92,B3,50,4,"0,013513514","0,675675676",Pruebas de software.,"Procesos de pruebas y garantía de calidad en el desarrollo de software. Planificación, estrategia de pruebas y estándares. Niveles, técnicas y herramientas de pruebas de software. Criterios de aceptación de software."
+93,B3,50,3,"0,010135135","0,506756757",Evaluación de la calidad del software.,Métricas y evaluación de la calidad del software. La implantación de la función de calidad.
+94,B3,50,3,"0,010135135","0,506756757",Estimación de recursos.,La estimación de recursos y esfuerzo en el desarrollo de sistemas de información.
+95,B3,50,2,"0,006756757","0,337837838",Migración de aplicaciones y ajuste dimensional.,La migración de aplicaciones en el marco de procesos de ajuste dimensional y por obsolescencia técnica. Gestión de la configuración y de versiones. Gestión de entornos.
+96,B3,50,2,"0,006756757","0,337837838",Mantenimiento de sistemas.,"Mantenimiento de sistemas. Mantenimiento predictivo, adaptativo y correctivo. Planificación y gestión del mantenimiento."
+97,B3,50,2,"0,006756757","0,337837838",Reingeniería de sistemas.,Reingeniería de sistemas de información e ingeniería inversa.
+98,B3,50,3,"0,010135135","0,506756757",Calidad de los servicios.,La calidad en los servicios de información. El Modelo EFQM y la Guía para los servicios ISO 9004.
+99,B3,50,1,"0,003378378","0,168918919",Gestión documental.,Gestión documental. Gestión de contenidos. Tecnologías CMS y DMS de alta implantación.
+100,B3,50,1,"0,003378378","0,168918919",Sistemas de recuperación de la información.,"Sistemas de recuperación de la información. Políticas, procedimientos y métodos para la conservación de la información."
+101,B3,50,8,"0,027027027","1,351351351",ITIL y COBIT.,"Planificación y control de las TIC: Gestión de servicios e infraestructuras TIC, gestión del valor de las TIC. Acuerdos de Nivel de Servicio. Gestión de incidencias. Bases conceptuales de ITIL (IT Infrastructure Library), y CoBIT (Control Objetives for Information and Related Technology), objetivos de control y métricas."
+102,B4,50,1,"0,003378378","0,168918919",Redes de telecomunicaciones.,Redes de telecomunicaciones. Conceptos. Medios de transmisión. Conmutación de circuitos y paquetes. Protocolos de encaminamiento. Infraestructuras de acceso. Interconexión de redes. Calidad de servicio.
+103,B4,50,1,"0,003378378","0,168918919",Internet.,La red Internet y los servicios básicos.
+104,B4,50,2,"0,006756757","0,337837838",Cableado.,Sistemas de cableado y equipos de interconexión de redes.
+105,B4,50,3,"0,010135135","0,506756757",Modelo OSI.,"El modelo de referencia de interconexión de sistemas abiertos (OSI) de ISO: arquitectura, capas, interfaces, protocolos, direccionamiento y encaminamiento."
+106,B4,50,2,"0,006756757","0,337837838",Tecnologías de acceso.,"Tecnologías de acceso: Fibra (GPON, FTTH), Móviles (LTE), Inalámbrica."
+107,B4,50,4,"0,013513514","0,675675676",Redes de transporte.,"Redes de transporte: JDSxWDM, MPLS. Redes de agregación: ATM, Carrier Ethernet - VPLS (H-VPLS)."
+108,B4,50,5,"0,016891892","0,844594595",Redes inalámbricas.,"Redes inalámbricas: El estándar IEEE 802.11.Características funcionales y técnicas. Sistemas de expansión del espectro. Sistemas de acceso. Autenticación. Modos de operación. Bluetooth. Seguridad, normativa reguladora."
+109,B4,50,2,"0,006756757","0,337837838",Redes IP.,"Redes IP: Arquitectura de redes, encaminamiento y calidad de servicio. Transición y convivencia IPv4 - IPv6. Funcionalidades específicas de IPv6."
+110,B4,50,2,"0,006756757","0,337837838",Redes de nueva generación.,"Redes de nueva generación y servicios convergentes (NGN/IMS). VoIP, ToIP y Comunicaciones Unificadas."
+111,B4,50,4,"0,013513514","0,675675676",Transformación digital.,La Transformación Digital e Industria 4.0: Ciudades inteligentes. Internet de las Cosas (IoT).
+112,B4,50,4,"0,013513514","0,675675676",Redes de área local.,Redes de área local. Arquitectura. Tipología. Medios de transmisión. Métodos de acceso. Dispositivos de interconexión. Gestión de dispositivos. Administración de redes LAN. Gestión de usuarios en redes locales. Monitorización y control de tráfico. Gestión SNMP. Configuración y gestión de redes virtuales (VLAN). Redes de área extensa.
+113,B4,50,2,"0,006756757","0,337837838",Intranet y extranet.,"Arquitectura de las redes Intranet y Extranet. Concepto, estructura y características. Su implantación en las organizaciones. Modelo de capas: Servidores de aplicaciones, servidores de datos, granjas de servidores."
+114,B4,50,2,"0,006756757","0,337837838",Redes públicas.,Las redes públicas de transmisión de datos. La red SARA. La red sTESTA. Planificación y gestión de redes.
+115,B4,50,1,"0,003378378","0,168918919",CATV.,Telecomunicaciones por cable (CATV). Estructura de la red de cable. Operadores del mercado. Servicios de red.
+116,B4,50,2,"0,006756757","0,337837838",Correo electrónico.,El correo electrónico. Servicios de mensajería. Servicios de directorio.
+117,B4,50,3,"0,010135135","0,506756757",Comunicaciones móviles.,Las comunicaciones móviles. Generaciones de tecnologías de telefonía móvil.
+118,B4,50,2,"0,006756757","0,337837838",Aplicaciones móviles.,"Aplicaciones móviles. Características, tecnologías, distribución y tendencias."
+119,B4,50,8,"0,027027027","1,351351351",Seguridad en redes.,"La seguridad en redes. Tipos de ataques y herramientas para su prevención: cortafuegos, control de accesos e intrusiones, técnicas criptográficas, etc. Medidas específicas para las comunicaciones móviles."
+120,B4,50,10,"0,033783784","1,689189189",Seguridad en el nivel de aplicación.,"La seguridad en el nivel de aplicación. Tipos de ataques y protección de servicios web, bases de datos e interfaces de usuario."
+121,B4,50,10,"0,033783784","1,689189189",Regulación de las telecomunicaciones.,"Normas reguladoras de las telecomunicaciones. La Comisión Nacional de los Mercados y la Competencia (CNMC): Organización, funciones y competencia en el ámbito de las telecomunicaciones."
+122,B4,50,2,"0,006756757","0,337837838",Videoconferencia.,Sistemas de videoconferencia. Herramientas de trabajo en grupo. Dimensionamiento y calidad de servicio en las comunicaciones y acondicionamiento de salas y equipos. Streaming de video.
+123,B4,50,1,"0,003378378","0,168918919",Single sign-on.,"Acceso remoto a sistemas corporativos: gestión de identidades, single sign-on y teletrabajo."
+124,B4,50,3,"0,010135135","0,506756757",Virtualización de sistemas.,Virtualización de sistemas y de centros de datos. Virtualización de puestos de trabajo. Maquetas de terminales Windows y de servidores Linux.
+125,B4,50,1,"0,003378378","0,168918919",Trabajo colaborativo y redes sociales.,Herramientas de trabajo colaborativo y Redes sociales. La Guía de comunicación digital de la Administración del Estado.
+,,SUMA DE PESOS,296,BLOQUE A,25,,
+,,,,BLOQUE B,50,,
+,,,,TOTAL PREGUNTAS,75,,
