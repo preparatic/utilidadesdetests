@@ -12,6 +12,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>TestsUtilsPreparatic</name>
 	<description>Preparatic Tests generator and utils</description>
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>cp1252</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>cp1252</project.reporting.outputEncoding>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
