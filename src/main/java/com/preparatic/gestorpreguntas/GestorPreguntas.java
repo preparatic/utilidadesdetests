@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -82,7 +82,7 @@ public class GestorPreguntas {
 			Integer IdPregunta = ListaPregunta.get(Index);
 			// Se borra la pregunta de la lista, para no volverla a sacar.
 			ListaPregunta.remove((Object) IdPregunta);
-			// Si el gestor dice que no est· usada, se devuelve.
+			// Si el gestor dice que no est√° usada, se devuelve.
 			if (darUsadas)
 				return IdPregunta;
 			else if (GestorPreguntasUsadas.UsarPregunta(IdPregunta))
@@ -94,7 +94,7 @@ public class GestorPreguntas {
 	}
 
 	/**
-	 * Se aÒde esta pregunta al tema, para que luego sea elegible.
+	 * Se a√±ade esta pregunta al tema, para que luego sea elegible.
 	 * 
 	 * @param pregunta
 	 */

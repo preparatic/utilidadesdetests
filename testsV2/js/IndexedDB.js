@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *******************************************************************************/
-/* Esta función rellena el combo para seleccionar un test. Se genera de forma automática durante la construcción de los test. Se genera
+/* Esta funciï¿½n rellena el combo para seleccionar un test. Se genera de forma automï¿½tica durante la construcciï¿½n de los test. Se genera
 con enlaces a los test que se han generado.
 
-* Una vez generados todos los tests, se generan las funciones de navegación, poniendo enlaces a todos los 
-* los test que se hayan generado en el árbol de directorios.
+* Una vez generados todos los tests, se generan las funciones de navegaciÃ³n, poniendo enlaces a todos los 
+* los test que se hayan generado en el ï¿½rbol de directorios.
 */
 
 

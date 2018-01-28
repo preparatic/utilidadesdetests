@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -44,7 +44,7 @@ public class FachadaArchivos {
 	boolean idBloqueTematicaAnhoDefinido = false;
 	/**
 	 * Si es un bloque, entonces contiene cadenas del tipo "B1". Si es una
-	 * tem·tica, contiene cadenas del tipo "2"
+	 * tem√°tica, contiene cadenas del tipo "2"
 	 */
 	String idBloqueTematica;
 
@@ -88,7 +88,7 @@ public class FachadaArchivos {
 	}
 
 	/**
-	 * Dado un nombre de archivo, devuelve la categoria: bloque o tem·tica.
+	 * Dado un nombre de archivo, devuelve la categoria: bloque o tem√°tica.
 	 * 
 	 * @param FileName
 	 * @return
@@ -140,7 +140,7 @@ public class FachadaArchivos {
 		};
 
 		switch (tipoTest) {
-		case aleatorio:
+		case ALEATORIO:
 			filter = new FilenameFilter() {
 				public boolean accept(File dir, String name) {
 					return name.startsWith("test_")
@@ -151,7 +151,7 @@ public class FachadaArchivos {
 				}
 			};
 			break;
-		case bloque:
+		case BLOQUE:
 			filter = new FilenameFilter() {
 				public boolean accept(File dir, String name) {
 					if (idBloqueTematicaAnhoDefinido)
@@ -164,7 +164,7 @@ public class FachadaArchivos {
 			};
 
 			break;
-		case tematica:
+		case TEMATICA:
 			filter = new FilenameFilter() {
 				public boolean accept(File dir, String name) {
 					if (idBloqueTematicaAnhoDefinido)
@@ -175,7 +175,7 @@ public class FachadaArchivos {
 				}
 			};
 			break;
-		case tema:
+		case TEMA:
 			filter = new FilenameFilter() {
 				public boolean accept(File dir, String name) {
 					if (idBloqueTematicaAnhoDefinido)
@@ -185,7 +185,7 @@ public class FachadaArchivos {
 				}
 			};
 			break;
-		case anho:
+		case A√ëO:
 			filter = new FilenameFilter() {
 				public boolean accept(File dir, String name) {
 					if (idBloqueTematicaAnhoDefinido)
@@ -197,6 +197,8 @@ public class FachadaArchivos {
 				}
 			};
 
+			break;
+		default:
 			break;
 
 		}

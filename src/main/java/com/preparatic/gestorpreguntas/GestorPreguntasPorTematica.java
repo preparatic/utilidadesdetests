@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@ import org.apache.logging.log4j.Logger;
 import com.preparatic.entidades.GestorConexionBD;
 
 /**
- * Genera las preguntas de una tem�tica en concreto
+ * Genera las preguntas de una Temática en concreto
  */
 public class GestorPreguntasPorTematica extends GestorPreguntas {
 	private static Logger logger = LogManager.getLogger(GestorPreguntasPorTematica.class);
@@ -43,7 +43,7 @@ public class GestorPreguntasPorTematica extends GestorPreguntas {
 	}
 
 	/**
-	 * Genera un gestor con todas las preguntas de la tem�tica.
+	 * Genera un gestor con todas las preguntas de la Temática.
 	 * 
 	 * @param conexion
 	 * @param idTematica
@@ -62,7 +62,7 @@ public class GestorPreguntasPorTematica extends GestorPreguntas {
 
 			Statement sentencia = conexion.createStatement();
 
-			// Recuperamos los temas asociados a la tem�tica en bbdd
+			// Recuperamos los temas asociados a la Temática en bbdd
 			String sSql = " SELECT `ID` , `TEMATICA` , `TEMA`  FROM `TEMATICAS` WHERE `ID` ="
 					+ idTematica;
 			ResultSet resultados = sentencia.executeQuery(sSql);
@@ -81,7 +81,7 @@ public class GestorPreguntasPorTematica extends GestorPreguntas {
 			resultados.close();
 			sentencia.close();
 		} catch (SQLException e) {
-			logger.error("Error cargando preguntas de tem�tica " + idTematica
+			logger.error("Error cargando preguntas de Temática " + idTematica
 					+ " Título" + tituloTematica);
 			logger.error(e.getMessage());
 		}

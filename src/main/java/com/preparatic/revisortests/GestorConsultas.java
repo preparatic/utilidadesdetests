@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -81,7 +81,7 @@ public class GestorConsultas {
 	}
 
 	public void ejecutarSentencias(ArrayList<PreguntaTest> listaPreguntas) {
-		// Iteramos la lista de preguntas y las vamos tratando según su campo
+		// Iteramos la lista de preguntas y las vamos tratando segÃºn su campo
 		// SENTENCIA.
 		Iterator<PreguntaTest> it = listaPreguntas.iterator();
 
@@ -101,7 +101,7 @@ public class GestorConsultas {
 
 		try {
 			conexion.commit(); // Hacemos commit manualmente y finalizamos la
-								// transacción
+								// transacciÃ³n
 		} catch (SQLException e) {
 			logger.error(e.getMessage());
 		}

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -47,42 +47,42 @@ public class GestorTests {
 	
 	public List<Test> getTestsGlobales() {
 		List<Test> filteredTests = infoTests.stream()
-				.filter(t -> t.getTipoTest() == eTipoTest.aleatorio)
+				.filter(t -> t.getTipoTest() == eTipoTest.ALEATORIO)
 				.collect(Collectors.toList());
 		return filteredTests;
 	}
 	
 	public List<Test> getTestPorBloque() {
 		List<Test> filteredTests = infoTests.stream()
-				.filter(t -> t.getTipoTest() == eTipoTest.bloque)
+				.filter(t -> t.getTipoTest() == eTipoTest.BLOQUE)
 				.collect(Collectors.toList());
 		return filteredTests;
 	}
 	
 	public List<Test> getTestPorTema() {
 		List<Test> filteredTests = infoTests.stream()
-				.filter(t -> t.getTipoTest() == eTipoTest.tema)
+				.filter(t -> t.getTipoTest() == eTipoTest.TEMA)
 				.collect(Collectors.toList());
 		return filteredTests;
 	}
 	
 	public List<Test> getTestPorAnno() {
 		List<Test> filteredTests = infoTests.stream()
-				.filter(t -> t.getTipoTest() == eTipoTest.anho)
+				.filter(t -> t.getTipoTest() == eTipoTest.AÑO)
 				.collect(Collectors.toList());
 		return filteredTests;
 	}
 	
 	public List<Test> getTestPorRelevancia() {
 		List<Test> filteredTests = infoTests.stream()
-				.filter(t -> t.getTipoTest() == eTipoTest.relevancia)
+				.filter(t -> t.getTipoTest() == eTipoTest.RELEVANCIA)
 				.collect(Collectors.toList());
 		return filteredTests;
 	}
 	
 	public List<Test> getTestPorExamenes() {
 		List<Test> filteredTests = infoTests.stream()
-				.filter(t -> t.getTipoTest() == eTipoTest.examen)
+				.filter(t -> t.getTipoTest() == eTipoTest.EXAMEN)
 				.collect(Collectors.toList());
 		return filteredTests;
 	}

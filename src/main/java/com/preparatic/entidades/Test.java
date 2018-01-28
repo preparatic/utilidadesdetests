@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -45,13 +45,13 @@ import com.preparatic.archivos.PdfGenerator;
 public class Test {
 
 	public enum eTipoTest {
-		aleatorio, 
-		relevancia, 
-		bloque, 
-		tema, 
-		tematica, 
-		anho, 
-		examen,
+		ALEATORIO, 
+		RELEVANCIA, 
+		BLOQUE, 
+		TEMA, 
+		TEMATICA, 
+		AÃ‘O, 
+		EXAMEN,
 		ultimoAnho
 	};
 
@@ -66,11 +66,11 @@ public class Test {
 	private String tituloTematica;
 	private List<Integer> ListaPreguntas;
 	public static Integer NumPreguntas = Integer
-			.parseInt(ConfigProperties.getProperty("tests.num_preguntas_por_test")); // Número
+			.parseInt(ConfigProperties.getProperty("tests.num_preguntas_por_test")); // NÃºmero
 	public static Integer NumPreguntasA = Integer
-			.parseInt(ConfigProperties.getProperty("tests.num_preguntasA_por_test")); // Número
+			.parseInt(ConfigProperties.getProperty("tests.num_preguntasA_por_test")); // NÃºmero
 	public static Integer NumPreguntasB = Integer
-			.parseInt(ConfigProperties.getProperty("tests.num_preguntasB_por_test")); // Número
+			.parseInt(ConfigProperties.getProperty("tests.num_preguntasB_por_test")); // NÃºmero
 private final int MaxNumPreguntas;
 	
 	private String htmlFilename;
@@ -82,11 +82,11 @@ private final int MaxNumPreguntas;
 	private static Logger logger = LogManager.getLogger(Test.class);
 
 	/**
-	 * Generación de test aleatorios
+	 * GeneraciÃ³n de test aleatorios
 	 */
 	public Test(int idTest) {
 		super();
-		this.tipoTest = eTipoTest.aleatorio;
+		this.tipoTest = eTipoTest.ALEATORIO;
 		this.idTest = idTest;
 		MaxNumPreguntas = Test.NumPreguntas;
 		ListaPreguntas = new ArrayList<Integer>(MaxNumPreguntas);
@@ -95,14 +95,14 @@ private final int MaxNumPreguntas;
 	
 	public Test(int idTest, int max) {
 		super();
-		this.tipoTest = eTipoTest.aleatorio;
+		this.tipoTest = eTipoTest.ALEATORIO;
 		this.idTest = idTest;
 		MaxNumPreguntas = max;
 		ListaPreguntas = new ArrayList<Integer>(MaxNumPreguntas);
 
 	}
 	/**
-	 * Generación de test por bloques o temáticas
+	 * GeneraciÃ³n de test por bloques o TemÃ¡ticas
 	 * 
 	 */
 	public Test(eTipoTest tipoTest, String idBloqueTematicaAnho, int idTest) {
@@ -127,12 +127,12 @@ private final int MaxNumPreguntas;
 			return false;
 		}
 
-		// Si el test está completo, se sale
+		// Si el test estÃ¡ completo, se sale
 		if (this.estaCompleto()) {
 			return false;
 		}
 
-		// Si ya está la pregunta en el test, se sale.
+		// Si ya estÃ¡ la pregunta en el test, se sale.
 		if (ListaPreguntas.contains(idPregunta)) {
 			return false;
 		}
@@ -142,7 +142,7 @@ private final int MaxNumPreguntas;
 	}
 
 	/**
-	 * Devuelve si se ha alcanzado el número máximo de preguntas.
+	 * Devuelve si se ha alcanzado el nÃºmero mÃ¡ximo de preguntas.
 	 * 
 	 * @return
 	 */
@@ -184,11 +184,11 @@ private final int MaxNumPreguntas;
 //			esPrimero = false;
 //		}
 //
-//		// Los resultados se ordenan por el campo C, para meter algo más de
+//		// Los resultados se ordenan por el campo C, para meter algo mÃ¡s de
 //		// aleatoriedad.
 //		sSql.append(" ORDER BY 'RESPUESTA_C'  DESC ");
 //		sentenciaSQL = new String(sSql.toString()); // Salvaguardo el resultado
-//		// para la próxima llamada.
+//		// para la prÃ³xima llamada.
 //		return sentenciaSQL;
 //
 //	}
@@ -236,7 +236,7 @@ private final int MaxNumPreguntas;
 //		else if (tipoTest == eTipoTest.anho)
 //			logger.info("Generando Test Anho " + idBloqueTematicaAnho + " Test " + idTest);
 //		else {
-//			logger.info("Generando Test por temática. Temática" + tituloTematica + " Test " + idTest);
+//			logger.info("Generando Test por temÃ¡tica. TemÃ¡tica" + tituloTematica + " Test " + idTest);
 //			pdfGenerator.setTituloTematica(tituloTematica);
 //		}
 //
@@ -264,26 +264,26 @@ private final int MaxNumPreguntas;
 		// Para que no se aburran esperando, les ponemos un mensaje en la
 		// consola.
 		switch (tipoTest) {
-		case bloque:
+		case BLOQUE:
 			logger.info("Generando Test. Bloque " + IdLongName + " Test " + idTest);
 			break;
-		case aleatorio:
+		case ALEATORIO:
 			logger.info("Generando Test. Test Global " + idTest);
 			break;
-		case relevancia:
+		case RELEVANCIA:
 			logger.info("Generando Test. Test Relevancia " + idTest);
 			break;
-		case anho:
+		case AÃ‘O:
 			logger.info("Generando Test Anho " + IdLongName + " Test " + idTest);
 			break;
-		case tema:
+		case TEMA:
 			logger.info("Generando Test Tema " + IdLongName + " Test " + idTest);
 			break;
-		case examen:
+		case EXAMEN:
 			logger.info("Generando Test Examen " + IdLongName + " Test " + idTest);
 			break;
 		default:
-			logger.info("Generando Test por temática. Temática" + tituloTematica + " Test " + idTest);
+			logger.info("Generando Test por temÃ¡tica. TemÃ¡tica" + tituloTematica + " Test " + idTest);
 			pdfGenerator.setTituloTematica(tituloTematica);
 		}
 		
@@ -322,17 +322,17 @@ private final int MaxNumPreguntas;
 	
 	public String getKeyIdTestStr() {
 		switch (tipoTest) {
-		case bloque:
+		case BLOQUE:
 			return "Bloque_" + IdLongName + "_" + getIdTestStr();
-		case aleatorio:
+		case ALEATORIO:
 			return "Global_" + getIdTestStr();
-		case relevancia:
+		case RELEVANCIA:
 			return "Ponderado_" + IdLongName + "_" + getIdTestStr();
-		case tema:
+		case TEMA:
 			return "Tema_" + IdLongName + "_" + getIdTestStr();
-		case anho:
+		case AÃ‘O:
 			return "A&ntildeo_" + IdLongName + "_" + getIdTestStr();
-		case examen:
+		case EXAMEN:
 			return "Examen_" + IdLongName + "_" + getIdTestStr();
 		default:
 			return "Test " + getIdTestStr();
@@ -341,22 +341,22 @@ private final int MaxNumPreguntas;
 	public String getKeyIdTestHtmlStr() {
 		String rst;
 		switch (tipoTest) {
-		case bloque:
+		case BLOQUE:
 			rst = "Bloque_" + IdLongName + "_" + getIdTestStr();
 			break;
-		case aleatorio:
+		case ALEATORIO:
 			rst =  "Global_" + getIdTestStr();
 			break;
-		case relevancia:
+		case RELEVANCIA:
 			rst =  "Ponderado_" + IdLongName + "_" + getIdTestStr();
 			break;
-		case tema:
+		case TEMA:
 			rst =  "Tema_" + IdLongName + "_" + getIdTestStr();
 			break;
-		case anho:
+		case AÃ‘O:
 			rst =  "A&ntildeo_" + IdLongName + "_" + getIdTestStr();
 			break;
-		case examen:
+		case EXAMEN:
 			rst =  "Examen_" + IdLongName + "_" + getIdTestStr();
 			break;
 		default:
@@ -388,17 +388,17 @@ private final int MaxNumPreguntas;
 	public String getTitulo()
 	{
 		switch (tipoTest) {
-		case bloque:
+		case BLOQUE:
 			return "Test Bloque " + IdLongName + ", Id: " + getIdTestStr();
-		case aleatorio:
+		case ALEATORIO:
 			return "Test Global, Id: " + getIdTestStr();
-		case relevancia:
+		case RELEVANCIA:
 			return "Test Ponderado, Id: " + getIdTestStr();
-		case anho:
+		case AÃ‘O:
 			return "Test Fecha " + IdLongName + ", Id: " + getIdTestStr();
-		case examen:
+		case EXAMEN:
 			return "Test Examen " + IdLongName + ", Id: " + getIdTestStr();
-		case tema:
+		case TEMA:
 			return "Test Tema " + IdLongName + ", Id: " + getIdTestStr();
 		default:
 			return "Test " + getIdTestStr();
@@ -408,22 +408,22 @@ private final int MaxNumPreguntas;
 	{
 		String rst;
 		switch (tipoTest) {
-		case bloque:
+		case BLOQUE:
 			rst = "Test Bloque " + IdLongName + ", Id: " + getIdTestStr();
 			break;
-		case aleatorio:
+		case ALEATORIO:
 			rst =  "Test Global, Id: " + getIdTestStr();
 			break;
-		case relevancia:
+		case RELEVANCIA:
 			rst =  "Test Ponderado, Id: " + getIdTestStr();
 			break;
-		case anho:
+		case AÃ‘O:
 			rst =  "Test Fecha " + IdLongName + ", Id: " + getIdTestStr();
 			break;
-		case examen:
+		case EXAMEN:
 			rst =  "Test Examen " + IdLongName + ", Id: " + getIdTestStr();
 			break;
-		case tema:
+		case TEMA:
 			rst =  "Test Tema " + IdLongName + ", Id: " + getIdTestStr();
 			break;
 		default:

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -68,7 +68,7 @@ public class GestorPreguntasPorFechas extends GestorPreguntas {
 
 			/*
 			 * Hay que distinguir en el campo "temas" que verdaderamente sea
-			 * nuestro número de tema.
+			 * nuestro nÃºmero de tema.
 			 * 
 			 * Por ejemplo, no es lo mismo el tema 21, a que ponga en el campo
 			 * temas "221".
@@ -99,7 +99,7 @@ public class GestorPreguntasPorFechas extends GestorPreguntas {
 		if (ListaPreguntasPorAnno == null)
 			ListaPreguntasPorAnno = new HashMap<Integer, GestorPreguntas>();
 
-		// Si no existe el año, se genera.
+		// Si no existe el aÃ±o, se genera.
 		if (!ListaPreguntasPorAnno.containsKey(anno))
 			ListaPreguntasPorAnno.put(anno, new GestorPreguntas());
 
@@ -119,7 +119,7 @@ public class GestorPreguntasPorFechas extends GestorPreguntas {
 		}
 
 		/*
-		 * Selecciono el año más moderno que aún tenga preguntas sin usar, y le
+		 * Selecciono el aÃ±o mÃ¡s moderno que aÃºn tenga preguntas sin usar, y le
 		 * pido una pregunta aleatoria.
 		 */
 
@@ -136,7 +136,7 @@ public class GestorPreguntasPorFechas extends GestorPreguntas {
 			}
 
 		}
-		// Si ya no quedan preguntas en ningún año:
+		// Si ya no quedan preguntas en ningÃºn aÃ±o:
 		return null;
 	}
 
@@ -147,13 +147,13 @@ public class GestorPreguntasPorFechas extends GestorPreguntas {
 		if (ListaPreguntasPorAnno.isEmpty())
 			return null;
 
-		// Si aún existe el último año, con preguntas, es el que devolvemos.
+		// Si aÃºn existe el Ãºltimo aÃ±o, con preguntas, es el que devolvemos.
 		if (ListaPreguntasPorAnno.containsKey(ultimoAnno))
 			return ultimoAnno;
 
 		/*
 		 * Si no vale el que devolvimos en la llamada anterior, volvemos a
-		 * calcular cuál es el último año.
+		 * calcular cuÃ¡l es el Ãºltimo aÃ±o.
 		 */
 		ultimoAnno = 0;
 		Iterator<Integer> itr = ListaPreguntasPorAnno.keySet().iterator();

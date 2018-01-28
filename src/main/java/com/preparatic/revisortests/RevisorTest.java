@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,10 +16,7 @@
 package com.preparatic.revisortests;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Iterator;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -33,7 +30,7 @@ class RevisorTest {
 	
 	public static void main(String[] args) throws IOException {
 		
-		logger.info("Corrección de tests en excel y su exportación a MySQL.");
+		logger.info("CorrecciÃ³n de tests en excel y su exportaciÃ³n a MySQL.");
 		
 		IExcel ficheroExcel = new FicheroExcel();
 		GestorConsultas gestorConsultas = new GestorConsultas();

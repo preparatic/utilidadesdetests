@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ public class GestorPreguntasBloque extends GestorPreguntas {
 	/**
 	 * Genera el test para un NUMERO_TEST en concreto.
 	 * 
-	 * @param IdTest Es el número de test que voy a generar.
+	 * @param IdTest Es el nÃºmero de test que voy a generar.
 	 */
 	public GestorPreguntasBloque(String idBloque) {
 		super();

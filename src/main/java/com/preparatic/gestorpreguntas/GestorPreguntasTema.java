@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ public class GestorPreguntasTema extends GestorPreguntas {
 	 * 
 	 * @param idTema
 	 * @param frecuenciaAparicionTest
-	 *            Número de preguntas que tiene este tema en los test.
+	 *            nÃºmero de preguntas que tiene este tema en los test.
 	 */
 	public GestorPreguntasTema(Integer idTema, Integer numPreguntasEnTest) {
 		super();
@@ -74,7 +74,7 @@ public class GestorPreguntasTema extends GestorPreguntas {
 
 			/*
 			 * Hay que distinguir en el campo "temas" que verdaderamente sea
-			 * nuestro número de tema.
+			 * nuestro nÃºmero de tema.
 			 * 
 			 * Por ejemplo, no es lo mismo el tema 21, a que ponga en el campo
 			 * temas "221".

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -139,11 +139,11 @@ public class GoogleSheet implements IExcel {
 					for (List row : values) {
 						line++;
 						if (row.isEmpty() || row.get(0).toString().isEmpty()) {
-							logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
+							logger.warn(String.format("Empty row at position %d, row= %s%n", line, row));
 							continue;
 						}
 						// Print question and line number
-						//System.out.printf("Question number %d: %s\n", line, row.get(0));
+						//System.out.printf("Question number %d: %s%n", line, row.get(0));
 						ArrayList<String> celdasPregunta = new ArrayList<String>();
 						for (int columna = 0; columna < PreguntaTest.NUM_COLUMNAS; columna++) {
 							// If the cell is missing from the file, generate a
@@ -180,11 +180,11 @@ public class GoogleSheet implements IExcel {
 				for (List row : values) {
 					line++;
 					if (row.isEmpty() || row.get(0).toString().isEmpty()) {
-						logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
+						logger.warn(String.format("Empty row at position %d, row= %s%n", line, row));
 						continue;
 					}
 					// Print info and line number
-					//System.out.printf("Question number %d: %s\n", line, row.get(0));
+					//System.out.printf("Question number %d: %s%n", line, row.get(0));
 					ArrayList<String> celdas = new ArrayList<String>();
 					for (int columna = 0; columna < InfoBloque.NUM_COLUMNAS; columna++) {
 						// If the cell is missing from the file, generate a
@@ -213,11 +213,11 @@ public class GoogleSheet implements IExcel {
 				for (List row : values) {
 					line++;
 					if (row.isEmpty() || row.get(0).toString().isEmpty()) {
-						logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
+						logger.warn(String.format("Empty row at position %d, row= %s%n", line, row));
 						continue;
 					}
 					// Print info and line number
-					//System.out.printf("Question number %d: %s\n", line, row.get(0));
+					//System.out.printf("Question number %d: %s%n", line, row.get(0));
 					ArrayList<String> celdas = new ArrayList<String>();
 					for (int columna = 0; columna < InfoTema.NUM_COLUMNAS; columna++) {
 						// If the cell is missing from the file, generate a
@@ -246,11 +246,11 @@ public class GoogleSheet implements IExcel {
 				for (List row : values) {
 					line++;
 					if (row.isEmpty() || row.get(0).toString().isEmpty()) {
-						logger.warn(String.format("Empty row at position %d, row= %s\n", line, row));
+						logger.warn(String.format("Empty row at position %d, row= %s%n", line, row));
 						continue;
 					}
 					// Print info and line number
-					//System.out.printf("Question number %d: %s\n", line, row.get(0));
+					//System.out.printf("Question number %d: %s%n", line, row.get(0));
 					ArrayList<String> celdas = new ArrayList<String>();
 					for (int columna = 0; columna < InfoTematica.NUM_COLUMNAS; columna++) {
 						// If the cell is missing from the file, generate a

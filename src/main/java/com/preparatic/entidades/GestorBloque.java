@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,7 +60,7 @@ public class GestorBloque {
 			java.sql.Connection conexion = GestorConexionBD.getConnection();
 
 			Statement sentencia = conexion.createStatement();
-			// Pedimos todas las tem·ticas que haya en la base de datos.
+			// Pedimos todas las Tem√°ticas que haya en la base de datos.
 			String sSql = "SELECT `BLOQUE` FROM `BLOQUES`";
 			ResultSet resultados = sentencia.executeQuery(sSql);
 

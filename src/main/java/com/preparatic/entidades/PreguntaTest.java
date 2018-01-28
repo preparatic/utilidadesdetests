@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ import org.apache.logging.log4j.Logger;
 public class PreguntaTest {
 	private static Logger logger = LogManager.getLogger(PreguntaTest.class);
 
-	// Si cambia el orden o la cantidad de columnas del excel, solo habrá que
+	// Si cambia el orden o la cantidad de columnas del excel, solo habrÃ¡ que
 	// modificar este atributo.
 	public enum Campo {
 		PREGUNTA(0),  // A
@@ -51,9 +51,9 @@ public class PreguntaTest {
 		SENTENCIA(18), // S
 		NOTAS(19), // T
 		EXAMEN(20), // U
-		NUM_COLUMNAS(21); // Número total de columnas en el excel.
+		NUM_COLUMNAS(21); // NÃºmero total de columnas en el excel.
 
-		public int index; // Número de columna del excel que se corresponde con
+		public int index; // NÃºmero de columna del excel que se corresponde con
 							// cada campo de una pregunta.
 
 		Campo(int indice) {
@@ -65,7 +65,7 @@ public class PreguntaTest {
 	private Campo campo;
 
 	private String pregunta;
-	// La columna B está en blanco, pero hay que tenerla en cuenta en el índice.
+	// La columna B estÃ¡ en blanco, pero hay que tenerla en cuenta en el Ã­ndice.
 	private String respuesta_a;
 	private String respuesta_b;
 	private String respuesta_c;
@@ -119,29 +119,29 @@ public class PreguntaTest {
 
 	@Override
 	public String toString() {
-		String cadena = "*" + "\n";
-		cadena = this.pregunta + "\n";
-		cadena = cadena + "A) " + this.respuesta_a + "\n";
-		cadena = cadena + "B) " + this.respuesta_b + "\n";
-		cadena = cadena + "C) " + this.respuesta_c + "\n";
-		cadena = cadena + "D) " + this.respuesta_d + "\n";
-		cadena = cadena + "Correcta: " + this.respuesta_correcta + "\n";
-		cadena = cadena + "Bloques: " + this.bloques + "\n";
-		cadena = cadena + "Autor: " + this.autor + "\n";
-		cadena = cadena + "Promoción: " + this.promocion + "\n";
-		cadena = cadena + "Año: " + this.anno_creacion + "\n";
-		cadena = cadena + "Observaciones: " + this.observaciones + "\n";
-		cadena = cadena + "Número test: " + this.numeroTest + "\n";
-		cadena = cadena + "Número pregunta: " + this.numeroPregunta + "\n";
-		cadena = cadena + "ID: " + this.id + "\n";
-		cadena = cadena + "Temas: " + this.temas + "\n";
-		cadena = cadena + "Revisada: " + this.revisada + "\n";
+		String cadena = "*" + "%n";
+		cadena = this.pregunta + "%n";
+		cadena = cadena + "A) " + this.respuesta_a + "%n";
+		cadena = cadena + "B) " + this.respuesta_b + "%n";
+		cadena = cadena + "C) " + this.respuesta_c + "%n";
+		cadena = cadena + "D) " + this.respuesta_d + "%n";
+		cadena = cadena + "Correcta: " + this.respuesta_correcta + "%n";
+		cadena = cadena + "Bloques: " + this.bloques + "%n";
+		cadena = cadena + "Autor: " + this.autor + "%n";
+		cadena = cadena + "PromociÃ³n: " + this.promocion + "%n";
+		cadena = cadena + "AÃ±o: " + this.anno_creacion + "%n";
+		cadena = cadena + "Observaciones: " + this.observaciones + "%n";
+		cadena = cadena + "NÃºmero test: " + this.numeroTest + "%n";
+		cadena = cadena + "NÃºmero pregunta: " + this.numeroPregunta + "%n";
+		cadena = cadena + "ID: " + this.id + "%n";
+		cadena = cadena + "Temas: " + this.temas + "%n";
+		cadena = cadena + "Revisada: " + this.revisada + "%n";
 
-		cadena = cadena + "Estado: " + this.estado + "\n";
-		cadena = cadena + "Revisor: " + this.revisor + "\n";
-		cadena = cadena + "Sentencia: " + this.sentencia + "\n";
-		cadena = cadena + "Notas: " + this.notas + "\n";
-		cadena = cadena + "Examen: " + this.examen + "\n";
+		cadena = cadena + "Estado: " + this.estado + "%n";
+		cadena = cadena + "Revisor: " + this.revisor + "%n";
+		cadena = cadena + "Sentencia: " + this.sentencia + "%n";
+		cadena = cadena + "Notas: " + this.notas + "%n";
+		cadena = cadena + "Examen: " + this.examen + "%n";
 		return cadena;
 	}
 

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -56,7 +56,7 @@ public class FicheroExcel implements IExcel {
 		this.listaPreguntas = new ArrayList<PreguntaTest>();
 
 		/*
-		 * Obtenemos la primera pesta� que se quiera procesar indicando el
+		 * Obtenemos la primera pestaña que se quiera procesar indicando el
 		 * índice. Una vez obtenida la hoja excel con las filas que se quieren
 		 * leer obtenemos el iterator que nos permite recorrer cada una de las
 		 * filas que contiene.

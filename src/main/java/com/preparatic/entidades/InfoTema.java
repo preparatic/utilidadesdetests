@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,15 +31,15 @@ public class InfoTema {
 	public static List<InfoTema> TemasPorDefecto = new ArrayList<InfoTema>();
 
 	static {
-		TemasPorDefecto.add(new InfoTema(1, "A1", "La Constitución española de 1978 (I).", "La Constitución española de 1978 (I). Los principios constitucionales. Los derechos fundamentales y sus garantías. La Corona. Cortes Generales. Congreso de los Diputados y Senado. El Gobierno. Los Órganos constitucionales de control del Gobierno: Tribunal"));
-		TemasPorDefecto.add(new InfoTema(2, "A1", "La Constitución española de 1978 (II).", "La constitución española de 1978 (II). El Poder Judicial. La justicia en la Constitución. El Consejo General del Poder Judicial. El Ministerio Fiscal. El Tribunal Constitucional. Naturaleza, organización y atribuciones."));
-		TemasPorDefecto.add(new InfoTema(3, "A1", "La Constitución española de 1978 (III).", "La constitución española de 1978 (III). Las Comunidades Autónomas: organización política y administrativa. La Administración Local: regulación constitucional y entidades que la integran."));
-		TemasPorDefecto.add(new InfoTema(4, "A1", "La Constitución española de 1978 (IV).", "La constitución española de 1978 (IV). La administración pública: Principios constitucionales. La administración general del Estado. Sus órganos centrales."));
-		TemasPorDefecto.add(new InfoTema(5, "A1", "La Unión Europea: antecedentes, evolución y objetivos.", "La Unión Europea: antecedentes, evolución y objetivos. Los tratados originarios y modificativos. El derecho comunitario. Fuentes. Relación entre el Derecho comunitario y el ordenamiento jurídico de los Estados miembros. La participación del Estados miembros."));
-		TemasPorDefecto.add(new InfoTema(6, "A1", "Las Instituciones de la Unión Europea.", "Las Instituciones de la Unión Europea: el Consejo de la Unión Europea, la Comisión, el Parlamento, el Tribunal de Justicia y el Tribunal de Cuentas. El Consejo Europeo. El Banco Central Europeo."));
+		TemasPorDefecto.add(new InfoTema(1, "A1", "La ConstituciÃ³n espaÃ±ola de 1978 (I).", "La ConstituciÃ³n espaÃ±ola de 1978 (I). Los principios constitucionales. Los derechos fundamentales y sus garantÃ­as. La Corona. Cortes Generales. Congreso de los Diputados y Senado. El Gobierno. Los Ã³rganos constitucionales de control del Gobierno: Tribunal"));
+		TemasPorDefecto.add(new InfoTema(2, "A1", "La ConstituciÃ³n espaÃ±ola de 1978 (II).", "La ConstituciÃ³n espaÃ±ola de 1978 (II). El Poder Judicial. La justicia en la ConstituciÃ³n. El Consejo General del Poder Judicial. El Ministerio Fiscal. El Tribunal Constitucional. Naturaleza, organizaciÃ³n y atribuciones."));
+		TemasPorDefecto.add(new InfoTema(3, "A1", "La ConstituciÃ³n espaÃ±ola de 1978 (III).", "La ConstituciÃ³n espaÃ±ola de 1978 (III). Las Comunidades AutÃ³nomas: organizaciÃ³n polÃ­tica y administrativa. La AdministraciÃ³n Local: regulaciÃ³n constitucional y entidades que la integran."));
+		TemasPorDefecto.add(new InfoTema(4, "A1", "La ConstituciÃ³n espaÃ±ola de 1978 (IV).", "La ConstituciÃ³n espaÃ±ola de 1978 (IV). La administraciÃ³n pÃºblica: Principios constitucionales. La administraciÃ³n general del Estado. Sus Ã³rganos centrales."));
+		TemasPorDefecto.add(new InfoTema(5, "A1", "La UniÃ³n Europea: antecedentes, evoluciÃ³n y objetivos.", "La UniÃ³n Europea: antecedentes, evoluciÃ³n y objetivos. Los tratados originarios y modificativos. El derecho comunitario. Fuentes. RelaciÃ³n entre el Derecho comunitario y el ordenamiento jurÃ­dico de los Estados miembros. La participaciÃ³n del Estados miembros."));
+		TemasPorDefecto.add(new InfoTema(6, "A1", "Las Instituciones de la UniÃ³n Europea.", "Las Instituciones de la UniÃ³n Europea: el Consejo de la UniÃ³n Europea, la ComisiÃ³n, el Parlamento, el Tribunal de Justicia y el Tribunal de Cuentas. El Consejo Europeo. El Banco Central Europeo."));
 	}
 	
-	// Si cambia el orden o la cantidad de columnas del excel, solo habrá que
+	// Si cambia el orden o la cantidad de columnas del excel, solo habrÃ¡ que
 	// modificar este atributo.
 	private enum Campo {
 		NUMERO(0), // A
@@ -51,9 +51,9 @@ public class InfoTema {
 		TITULOCORTO(6), // G
 		TITULOLARGO(7), // H
 		
-		NUM_COLUMNAS(8); // Número total de columnas en el excel.
+		NUM_COLUMNAS(8); // NÃºmero total de columnas en el excel.
 		
-		public int index; // Número de columna del excel 
+		public int index; // NÃºmero de columna del excel 
 		
 		Campo(int indice) {
 			index = indice;
@@ -191,7 +191,7 @@ public class InfoTema {
 	 */
 	@Override
 	public String toString() {
-		return "Tema [Número=" + numTema + ", Bloque=" + bloqueId + ", Título=" + tituloCorto + "]";
+		return "Tema [NÃºmero=" + numTema + ", Bloque=" + bloqueId + ", TÃ­tulo=" + tituloCorto + "]";
 	}
 
 }

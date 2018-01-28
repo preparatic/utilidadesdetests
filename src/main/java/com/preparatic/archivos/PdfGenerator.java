@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -74,7 +74,7 @@ public class PdfGenerator {
 	}
 
 	/**
-	 * Añde al test una colección de preguntas.
+	 * AÃ±de al test una colecciÃ³n de preguntas.
 	 * 
 	 * @param resultados
 	 */
@@ -94,7 +94,7 @@ public class PdfGenerator {
 	}
 
 	/**
-	 * Añde una pregunta al test.
+	 * AÃ±de una pregunta al test.
 	 * 
 	 * @param resultados
 	 * @throws Exception
@@ -108,7 +108,7 @@ public class PdfGenerator {
 		listaRespuestas.add(new ListItem(pregunta.getRespuesta_c(), miFuentePregs));
 		listaRespuestas.add(new ListItem(pregunta.getRespuesta_d(), miFuentePregs));
 
-		// Incorporamos la lista de respuestas en un único Párrafo
+		// Incorporamos la lista de respuestas en un Ãºnico PÃ¡rrafo
 		Paragraph parrafoPregunta = new Paragraph(pregunta.getPregunta(), miFuentePregs);
 		parrafoPregunta.setKeepTogether(true);
 		parrafoPregunta.add(listaRespuestas);
@@ -135,7 +135,7 @@ public class PdfGenerator {
 		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_C"), miFuentePregs));
 		listaRespuestas.add(new ListItem(resultados.getString("RESPUESTA_D"), miFuentePregs));
 
-		// Incorporamos la lista de respuestas en un único Párrafo
+		// Incorporamos la lista de respuestas en un Ãºnico PÃ¡rrafo
 		Paragraph parrafoPregunta = new Paragraph(resultados.getString("PREGUNTA"), miFuentePregs);
 		parrafoPregunta.setKeepTogether(true);
 		parrafoPregunta.add(listaRespuestas);
@@ -176,11 +176,10 @@ public class PdfGenerator {
 		docpregs.open();
 
 		docsols.open();
-		//if ((test.getTipoTest() == Test.eTipoTest.bloque) || (test.getTipoTest() == Test.eTipoTest.anho))
 		docpregs.setMargins(80, 80, 72, 36);	
 		docsols.setMargins(80, 80, 72, 36);
 
-		// Añdir logo
+		// AÃ±adir logo
 		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo.png");
 		gif.setAlignment(Image.LEFT);
 		gif.scaleAbsolute(200, 82);
@@ -189,11 +188,11 @@ public class PdfGenerator {
 
 		ponerTitulo(docpregs, docsols);
 
-		// Añdimos las preguntas al documento de preguntas
+		// AÃ±dimos las preguntas al documento de preguntas
 		docpregs.add(listaPreguntas);
 
 		/*
-		 * Añdimos las respuestas, en varias columnas al documento de
+		 * AÃ±adimos las respuestas, en varias columnas al documento de
 		 * respuestas.
 		 */
 		MultiColumnText multiColumnTextSoluciones = new MultiColumnText();
@@ -234,22 +233,23 @@ public class PdfGenerator {
 
 			switch (test.getTipoTest()) {
 
-			case bloque:
+			case BLOQUE:
 				subtitulo = "Bloque " + test.getIdBloqueTematicaAnho();
 				break;
-			case tema:
+			case TEMA:
 				subtitulo = "Tema " + test.getIdBloqueTematicaAnho();
 				break;
-			case examen:
+			case EXAMEN:
 				subtitulo = "Examen " + test.getIdBloqueTematicaAnho();
 				break;
-			case anho:
-				subtitulo = "Año " + test.getIdBloqueTematicaAnho();
+			case AÃ‘O:
+				subtitulo = "AÃ±o " + test.getIdBloqueTematicaAnho();
 				break;
-			case aleatorio:
-			case relevancia:
-				defaul: subtitulo = "";
+			case ALEATORIO:
+			case RELEVANCIA:
+			default: subtitulo = "";
 				break;
+			
 			}
 
 			// SubTÃ­tulo
@@ -262,7 +262,7 @@ public class PdfGenerator {
 			}
 
 		} catch (DocumentException e) {
-			logger.error("Crear PDF. Poner título.");
+			logger.error("Crear PDF. Poner tÃ­tulo.");
 			logger.error(e.getMessage());
 		}
 
@@ -298,7 +298,7 @@ class TestFooter extends PdfPageEventHelper {
 //                header,
 //                (document.right() - document.left()) / 2 + document.leftMargin(),
 //                document.top() + 10, 0);
-        Phrase footer = new Phrase(String.format(title + ", página %d", pageNumber), ffont);
+        Phrase footer = new Phrase(String.format(title + ", pÃ¡gina %d", pageNumber), ffont);
         ColumnText.showTextAligned(cb, Element.ALIGN_CENTER,
                 footer,
                 (document.right() - document.left()) / 2 + document.leftMargin(),

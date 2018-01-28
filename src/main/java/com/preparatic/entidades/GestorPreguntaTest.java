@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,12 +23,12 @@ import java.util.stream.Collectors;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.preparatic.TestGeneratorV2;
+import com.preparatic.TestGenerator;
 import com.preparatic.csvreaders.IExcel;
 
 public class GestorPreguntaTest {
 
-	private static Logger logger = LogManager.getLogger(TestGeneratorV2.class);
+	private static Logger logger = LogManager.getLogger(TestGenerator.class);
 
 	private List<PreguntaTest> listaPreguntas;
 	private static final List<String> listaBloqueA = Arrays.asList("A1","A2","A3","A4");

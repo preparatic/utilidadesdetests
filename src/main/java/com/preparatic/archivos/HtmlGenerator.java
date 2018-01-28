@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,18 +29,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.preparatic.ConfigProperties;
-import com.preparatic.entidades.GestorAnho;
-import com.preparatic.entidades.GestorBloque;
 import com.preparatic.entidades.GestorInfoBloque;
 import com.preparatic.entidades.GestorInfoTema;
-import com.preparatic.entidades.GestorTematica;
 import com.preparatic.entidades.PreguntaTest;
-import com.preparatic.entidades.GestorTematica.tematica;
 import com.preparatic.entidades.GestorTests;
 import com.preparatic.entidades.PreguntaTest.Campo;
 import com.preparatic.entidades.Test;
-import com.preparatic.entidades.Test.eTipoTest;
-
 import org.antlr.stringtemplate.*;
 import org.antlr.stringtemplate.language.*;
 
@@ -58,11 +52,11 @@ public class HtmlGenerator {
 
 	/**
 	 * 
-	 * La generación de test en html se basa en la generación de 2 archivos por
+	 * La generaciÃ³n de test en html se basa en la generaciÃ³n de 2 archivos por
 	 * test: - Test_X.html - questions_X.js: que contiene los datos de las
 	 * preguntas del test.
 	 * 
-	 * En función del tipo de Test, se piden unos parámetros u otros.
+	 * En funciÃ³n del tipo de Test, se piden unos parÃ¡metros u otros.
 	 */
 	public HtmlGenerator(Test test) {
 
@@ -128,10 +122,10 @@ public class HtmlGenerator {
 //
 //			int nFlag = 1;
 //			while (copiarHastaFlag(salida, entrada) == true) {
-//				/* En cada interrupción, metemos lo que sea necesario. */
+//				/* En cada interrupciÃ³n, metemos lo que sea necesario. */
 //				switch (nFlag) {
 //				case 1:
-//					// En la primera interrupción, se mete la importación de
+//					// En la primera interrupciÃ³n, se mete la importaciÃ³n de
 //					// preguntas
 //					importarJavascript(salida);
 //					break;
@@ -172,7 +166,7 @@ public class HtmlGenerator {
 //			PrintStream salida = FactoriaArchivo.archivoJavascriptTest(
 //					tipoTest, test.getIdBloqueTematicaAnho(), test.getIdTest());
 //
-//			// Copiamos la cabecera común a todos los ficheros de javascript.
+//			// Copiamos la cabecera comÃºn a todos los ficheros de javascript.
 //			BufferedReader entrada = new BufferedReader(new FileReader(
 //					pathResources
 //							+ ConfigProperties
@@ -212,7 +206,7 @@ public class HtmlGenerator {
 //			PrintStream salida = FactoriaArchivo.archivoJavascriptTest(
 //					tipoTest, test.getIdBloqueTematicaAnho(), test.getIdTest());
 //
-//			// Copiamos la cabecera común a todos los ficheros de javascript.
+//			// Copiamos la cabecera comÃºn a todos los ficheros de javascript.
 //			BufferedReader entrada = new BufferedReader(new FileReader(
 //					pathResources
 //							+ ConfigProperties
@@ -260,19 +254,19 @@ public class HtmlGenerator {
 		htmlTemplate.setAttribute("javascriptdata", "../data/" +  filename + ".js ");
 		
 		switch (tipoTest) {
-		case bloque:
+		case BLOQUE:
 			htmlTemplate.setAttribute("testsSet", "blockTestsSet");
 			break;
-		case anho:
+		case AÃ‘O:
 			htmlTemplate.setAttribute("testsSet", "annosTestsSet");
 			break;
-		case tema:
+		case TEMA:
 			htmlTemplate.setAttribute("testsSet", "themeTestsSet");
 			break;
-		case relevancia:
+		case RELEVANCIA:
 			htmlTemplate.setAttribute("testsSet", "relevantesTestsSet");
 			break;
-		case examen:
+		case EXAMEN:
 			htmlTemplate.setAttribute("testsSet", "examenesTestsSet");
 			break;
 		default:
@@ -305,7 +299,7 @@ public class HtmlGenerator {
 			// Generamos el archivo de salida.
 			PrintStream salida = FactoriaArchivo.filenameToPrintStream(filename);
 
-			// Copiamos la cabecera común a todos los ficheros de javascript.
+			// Copiamos la cabecera comÃºn a todos los ficheros de javascript.
 			BufferedReader entrada = new BufferedReader(new FileReader(
 					pathResources
 							+ ConfigProperties
@@ -379,7 +373,7 @@ public class HtmlGenerator {
 //
 //			// Comentario con el ID de pregunta.
 //			s = "//  Id pregunta: " + campoAHtml(resultados, "ID");
-//			s += " Año de creación de pregunta: "
+//			s += " AÃ±o de creaciÃ³n de pregunta: "
 //					+ campoAHtml(resultados, "ANNO_CREACION");
 //			salida.println(s);
 //			
@@ -456,7 +450,7 @@ public class HtmlGenerator {
 
 			// Comentario con el ID de pregunta.
 			s = "//  Id pregunta: " + campoAHtml(pregunta, Campo.ID);
-			s += " Año de creación de pregunta: "
+			s += " AÃ±o de creaciÃ³n de pregunta: "
 					+ campoAHtml(pregunta, Campo.ANNO_CREACION);
 			salida.println(s);
 			
@@ -532,7 +526,7 @@ public class HtmlGenerator {
 	/**
 	 * Convierte un campo de lo que venga en resultados, y le quita todo tipo de
 	 * caracteres raros. Quita \n. Convierte secuencias de escape como comillas,
-	 * mayor y menor, en códigos html.
+	 * mayor y menor, en cÃ³digos html.
 	 * 
 	 * @return
 	 */
@@ -566,7 +560,7 @@ public class HtmlGenerator {
 
 	/**
 	 * Quita todo tipo de caracteres raros. Quita \n. Convierte secuencias de
-	 * escape como comillas, mayor y menor, en códigos html.
+	 * escape como comillas, mayor y menor, en cÃ³digos html.
 	 * 
 	 * @return
 	 */
@@ -620,172 +614,7 @@ public class HtmlGenerator {
 		return false; // El fichero ha acabado.
 	}
 
-//	/**
-//	 * Crea el menu dinamico
-//	 * 
-//	 * @param salida
-//	 * @return
-//	 */
-//	private boolean crearMenu(PrintStream salida) {
-//
-//		if (salida == null)
-//			return false;
-//
-//		StringBuilder sb = new StringBuilder();
-//		sb.append("<script type=\"text/javascript\" src=\"../../");
-//		sb.append(FactoriaArchivo.NombreArchivoJavascriptPreguntas(tipoTest,
-//				test.getIdBloqueTematicaAnho(), test.getIdTest()));
-//		sb.append("\"></script>");
-//
-//		salida.println(sb.toString());
-//		return true;
-//	}
-//
-//	/**
-//	 * Genera una lÃ­nea html para importar el script questions_X.js
-//	 * 
-//	 * @param salida
-//	 * @return
-//	 */
-//	private boolean importarJavascript(PrintStream salida) {
-//
-//		if (salida == null)
-//			return false;
-//
-//		StringBuilder sb = new StringBuilder();
-//		sb.append("<script type=\"text/javascript\" src=\"../../");
-//		sb.append(FactoriaArchivo.NombreArchivoJavascriptPreguntas(tipoTest,
-//				test.getIdBloqueTematicaAnho(), test.getIdTest()));
-//		sb.append("\"></script>");
-//
-//		salida.println(sb.toString());
-//		return true;
-//	}
-//
-//	/**
-//	 * Genera los combos de navegación entre test.
-//	 * 
-//	 * @param salida
-//	 * @return
-//	 */
-//	private boolean escribirTestNavigator(PrintStream salida) {
-//
-//		if (salida == null)
-//			return false;
-//
-//		if (test.getTipoTest() == Test.eTipoTest.tematica) {
-//			salida.println("		<select id=\"tema_navigation\" onchange=\"renderTestSelectorTematica()\"> </select>	");
-//		}
-//
-//		// El combo de test_navigation siempre está, sea el tipo de test que sea.
-//		salida.println("	  <select id=\"test_navigation\" onchange=\"go()\"> </select>	");
-//
-//		// Escribimos las llamadas al javascript para que rellenen los combos.
-//		salida.println("	  <script type=\"text/javascript\">	");
-//		switch (test.getTipoTest()) {
-//		case tematica:
-//			salida.println("\t\trenderTemas();");
-//			salida.println("\t\trenderTestSelectorTematica();");
-//			break;
-//		case bloque:
-//			salida.println("\t\trenderTestSelectorBloque('"
-//					+ test.getIdBloqueTematicaAnho() + "');");
-//			break;
-//
-//		case anho:
-//			salida.println("\t\trenderTestSelectorAnhos('"
-//					+ test.getIdBloqueTematicaAnho() + "');");
-//			break;
-//		default:
-//			salida.println("\t\trenderTestSelector();");
-//			break;
-//		}
-//
-//		salida.println("\t\trenderMenuTest('" + test.getTipoTest().toString()
-//				+ "','" + test.getIdBloqueTematicaAnho() + "');");
-//
-//		salida.println("	</script>");
-//
-//		if (test.getTipoTest() == eTipoTest.tematica) {
-//			salida.println("<input type=\"button\" value=\"Ir a test\" onClick=\"go()\" />");
-//		}
-//		return true;
-//
-//	}
-//
-//	/**
-//	 * Genera la lÃ­nea: <h1>Test X</h1>
-//	 * 
-//	 * @param salida
-//	 * @return
-//	 */
-//	private boolean escribirTituloTest(PrintStream salida) {
-//		StringBuilder sb = new StringBuilder();
-//		sb.append("<h1> Test ");
-//		sb.append(test.getIdTest());
-//		switch (tipoTest) {
-//		case bloque:
-//			sb.append("<BR/> Bloque " + test.getIdBloqueTematicaAnho());
-//			break;
-//		case anho:
-//			sb.append("<BR/> A&ntilde;o " + test.getIdBloqueTematicaAnho());
-//			break;
-//		case tematica:
-//			sb.append("<BR/> Temas " + test.getTituloTematica());
-//			break;
-//		}
-//		sb.append("</h1>");
-//		salida.println(sb.toString());
-//		return true;
-//
-//	}
-//
-//	/**
-//	 * Escribe el menú horizontal, con una opción para navegar a cada tipo de
-//	 * test.
-//	 * 
-//	 * @return
-//	 */
-//	private boolean escribirMenuTests(PrintStream salida) {
-//
-//		StringBuilder sb = new StringBuilder();
-//
-//		FachadaArchivos f = new FachadaArchivos(Test.eTipoTest.aleatorio);
-//		escribirListItem(sb, f.getNombreArchivosTest(), "Tests de examen",
-//				tipoTest == Test.eTipoTest.aleatorio);
-//
-//		// Entradas para los bloques
-//		GestorBloque g = new GestorBloque();
-//		for (String idBloque : g.getBloque()) {
-//			f = new FachadaArchivos(eTipoTest.bloque, idBloque);
-//			escribirListItem(sb, f.getNombreArchivosTest(),
-//					BloqueToString.ToDescripcion(idBloque),
-//					BloqueToString.Equals(test.getIdBloqueTematicaAnho(),
-//							idBloque));
-//		}
-//
-//		// Entrada para la temática
-//		GestorTematica gt = new GestorTematica();
-//		tematica t = gt.getTematicas().get(0);
-//		f = new FachadaArchivos(eTipoTest.tematica, t.id.toString());
-//		escribirListItem(sb, f.getNombreArchivosTest(), " Test por temas",
-//				test.getTipoTest() == Test.eTipoTest.tematica);
-//
-//		// Entradas para los anhos
-//		GestorAnho ga = new GestorAnho();
-//		for (String idAnho : ga.getAnho()) {
-//			f = new FachadaArchivos(eTipoTest.anho, idAnho);
-//			escribirListItem(sb, f.getNombreArchivosTest(),
-//					BloqueToString.ToDescripcion(idAnho),
-//					BloqueToString.Equals(test.getIdBloqueTematicaAnho(),
-//							idAnho));
-//		}
-//
-//		if (salida == null)
-//			return false;
-//		salida.println(sb.toString());
-//		return true;
-//	}
+
 
 	/**
 	 * Genera un elemento del tipo: <li class="current_page_item"><a
@@ -838,19 +667,7 @@ class BloqueToString {
 	public static String ToDescripcion(String idBloque) {
 		String s = "Test bloque" + idBloque;
 		return s;
-		/*
-		if (s.equals("B1"))
-			return "Test bloque 1";
-		if (s.equals("B2"))
-			return "Test bloque 2";
-		if (s.equals("B3"))
-			return "Test bloque 3";
-		if (s.equals("B4"))
-			return "Test bloque 4";
-
-		assert false : " BloqueTo String. To Descripcion . No deberia llegar aqui";
-		return "";
-		*/
+		
 	}
 
 	public static boolean Equals(String idBloque1, String idBloque2) {

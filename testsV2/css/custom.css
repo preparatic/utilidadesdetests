@@ -24,7 +24,9 @@
   margin-right: 2%; }
 .daterangepicker td.in-range {
   background: #E4E7EA;
-  color: #73879C; }
+  color: #73879C; }/home/acaso/Imágenes/logo-preparatic.png
+/home/acaso/Imágenes/logo-preparatic-small.png
+/home/acaso/Imágenes/LogoPreparatic-trans.png
 .daterangepicker td.active, .daterangepicker td.active:hover {
   background-color: #536A7F;
   color: #fff; }
@@ -269,7 +271,7 @@
 
 .nav_menu {
   float: left;
-  background: #EDEDED;
+  background: #000000;
   border-bottom: 1px solid #D9DEE4;
   margin-bottom: 10px;
   width: 100%;

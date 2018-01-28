@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,7 +30,7 @@ public class GestorPreguntasUsadas {
 	private static List<Integer> ListaPreguntasUsadas;
 
 	/**
-	 * Apunta la pregunta a la lista de preguntas usadas. Si ya est· usada,
+	 * Apunta la pregunta a la lista de preguntas usadas. Si ya est√° usada,
 	 * devuelve false.
 	 * 
 	 * @param idPregunta

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,17 +33,17 @@ public class InfoBloque {
 	public static List<InfoBloque> BloquesPorDefecto = new ArrayList<InfoBloque>();
 
 	static {
-		BloquesPorDefecto.add(new InfoBloque("A.Temas generales.", "A1", "Marco constitucional español y Unión Europea", 1, 6));
-		BloquesPorDefecto.add(new InfoBloque("A.Temas generales.", "A2", "Actuación administrativa y gestión financiera", 7, 11));
-		BloquesPorDefecto.add(new InfoBloque("A.Temas generales.", "A3", "Estructura social y económica de España", 12, 17));
-		BloquesPorDefecto.add(new InfoBloque("A.Temas generales.", "A4", "Dirección pública", 18, 23));
-		BloquesPorDefecto.add(new InfoBloque("B.Temas específicos.", "B1", "Organización y gestión de los sistemas de información", 24, 48));
-		BloquesPorDefecto.add(new InfoBloque("B.Temas específicos.", "B2", "Tecnología Básica", 49, 81));
-		BloquesPorDefecto.add(new InfoBloque("B.Temas específicos.", "B3", "Ingeniería de los Sistemas de Información", 82, 102));
-		BloquesPorDefecto.add(new InfoBloque("B.Temas específicos.", "B4", "Redes, Comunicaciones e Internet", 103, 126));
+		BloquesPorDefecto.add(new InfoBloque("A.Temas generales.", "A1", "Marco constitucional espaÃ±ol y UniÃ³n Europea", 1, 6));
+		BloquesPorDefecto.add(new InfoBloque("A.Temas generales.", "A2", "ActuaciÃ³n administrativa y gestiÃ³n financiera", 7, 11));
+		BloquesPorDefecto.add(new InfoBloque("A.Temas generales.", "A3", "Estructura social y econÃ³mica de EspaÃ±a", 12, 17));
+		BloquesPorDefecto.add(new InfoBloque("A.Temas generales.", "A4", "DirecciÃ³n pÃºblica", 18, 23));
+		BloquesPorDefecto.add(new InfoBloque("B.Temas especÃ­ficos.", "B1", "OrganizaciÃ³n y gestiÃ³n de los sistemas de informaciÃ³n", 24, 48));
+		BloquesPorDefecto.add(new InfoBloque("B.Temas especÃ­ficos.", "B2", "TecnologÃ­a BÃ¡sica", 49, 81));
+		BloquesPorDefecto.add(new InfoBloque("B.Temas especÃ­ficos.", "B3", "IngenierÃ­a de los Sistemas de InformaciÃ³n", 82, 102));
+		BloquesPorDefecto.add(new InfoBloque("B.Temas especÃ­ficos.", "B4", "Redes, Comunicaciones e Internet", 103, 126));
 	}
 	
-	// Si cambia el orden o la cantidad de columnas del excel, solo habrá que
+	// Si cambia el orden o la cantidad de columnas del excel, solo habrÃ¡ que
 	// modificar este atributo.
 	private enum Campo {
 		AREA(0),  // A
@@ -52,9 +52,9 @@ public class InfoBloque {
 		MIN(3), // D
 		MAX(4), // E
 		
-		NUM_COLUMNAS(5); // Número total de columnas en el excel.
+		NUM_COLUMNAS(5); // NÃºmero total de columnas en el excel.
 		
-		public int index; // Número de columna del excel 
+		public int index; // NÃºmero de columna del excel 
 		
 		Campo(int indice) {
 			index = indice;
@@ -175,7 +175,7 @@ public class InfoBloque {
 	 */
 	@Override
 	public String toString() {
-		return "Bloque [Area=" + areaBloque + ", Bloque=" + nombreBloque + ", Título=" + titulo + ", MinPregunta=" + minPregunta
+		return "Bloque [Area=" + areaBloque + ", Bloque=" + nombreBloque + ", TÃ­tulo=" + titulo + ", MinPregunta=" + minPregunta
 				+ ", MaxPregunta=" + maxPregunta + "]";
 	}
 

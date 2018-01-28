@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ import org.apache.logging.log4j.Logger;
 import com.preparatic.ConfigProperties;
 
 /**
- * Esta clase se encarga de mantener la conexi髇 con la base de datos.
+ * Esta clase se encarga de mantener la conexi贸n con la base de datos.
  * 
  * @author ester
  * 
@@ -46,7 +46,7 @@ public class GestorConexionBD {
 
 	public static Connection getConnection() {
 
-		// Abrir la conexi髇
+		// Abrir la conexi贸n
 		try {
 
 			// Si ya la hemos abierto, devolvemos la que tenemos.
@@ -61,7 +61,7 @@ public class GestorConexionBD {
 			connection = DriverManager.getConnection(BBDD);
 
 		} catch (Exception e) {
-			logger.warn("Fallo en la conexi髇 con base de datos. \n" + e.getMessage());
+			logger.warn("Fallo en la conexi贸n con base de datos. %n" + e.getMessage());
 
 		}
 
@@ -71,13 +71,13 @@ public class GestorConexionBD {
 
 	public static void openTransaction() {
 		try {
-			connection.setAutoCommit(false); // Usaremos una transacci髇, para
+			connection.setAutoCommit(false); // Usaremos una transacci贸n, para
 												// ello hay que desactivar el
-												// commit autom醫ico de cada
+												// commit autom谩tico de cada
 												// sentencia.
 			savepoint = connection.setSavepoint("INICIO_EXPORTACION");
 		} catch (SQLException e) {
-			logger.warn("Error en el ROLLBACK realizado. \n" + e.getMessage());
+			logger.warn("Error en el ROLLBACK realizado. %n" + e.getMessage());
 		}
 	}
 
@@ -85,7 +85,7 @@ public class GestorConexionBD {
 		try {
 			connection.rollback(savepoint);
 		} catch (SQLException e) {
-			logger.warn("Error en el ROLLBACK realizado. \n" + e.getMessage());
+			logger.warn("Error en el ROLLBACK realizado. %n" + e.getMessage());
 		}
 	}
 
@@ -98,9 +98,9 @@ public class GestorConexionBD {
 				return;
 
 			connection.close();
-			logger.debug("Conexi髇 cerrada.");
+			logger.debug("Conexi贸n cerrada.");
 		} catch (Exception e) {
-			logger.warn("Error al cerrar las conexiones. \n" + e.getMessage());
+			logger.warn("Error al cerrar las conexiones. %n" + e.getMessage());
 
 		}
 		return;

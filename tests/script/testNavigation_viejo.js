@@ -400,7 +400,7 @@ function renderTemas() {
 }
 
 
-//////// Men� de navegaci�n.
+//////// menú de navegación.
 
 function addElement(theList, theText, theHref, selected){
 

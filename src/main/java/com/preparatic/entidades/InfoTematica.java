@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,20 +31,20 @@ public class InfoTematica {
 	public static List<InfoTematica> TematicasPorDefecto = new ArrayList<InfoTematica>();
 
 	static {
-		TematicasPorDefecto.add(new InfoTematica("Auditoría", Arrays.asList(31, 32, 33)));
+		TematicasPorDefecto.add(new InfoTematica("AuditorÃ­a", Arrays.asList(31, 32, 33)));
 		TematicasPorDefecto.add(new InfoTematica("Calidad", Arrays.asList(87, 88, 89, 90, 91, 92)));
-		TematicasPorDefecto.add(new InfoTematica("Compra Pública", Arrays.asList(34, 35, 38, 41)));
+		TematicasPorDefecto.add(new InfoTematica("Compra PÃºblica", Arrays.asList(34, 35, 38, 41)));
 	}
 	
-	// Si cambia el orden o la cantidad de columnas del excel, solo habrá que
+	// Si cambia el orden o la cantidad de columnas del excel, solo habrÃ¡ que
 	// modificar este atributo.
 	private enum Campo {
 		TITULO(0), // C
 		TEMA(1), // B
 		
-		NUM_COLUMNAS(2); // Número total de columnas en el excel.
+		NUM_COLUMNAS(2); // NÃºmero total de columnas en el excel.
 		
-		public int index; // Número de columna del excel 
+		public int index; // NÃºmero de columna del excel 
 		
 		Campo(int indice) {
 			index = indice;
@@ -113,7 +113,7 @@ public class InfoTematica {
 	 */
 	@Override
 	public String toString() {
-		return "Temática [título=" + titulo + ", Preguntas=" + numPreguntas + "]";
+		return "TemÃ¡tica [tÃ­tulo=" + titulo + ", Preguntas=" + numPreguntas + "]";
 	}
 
 }

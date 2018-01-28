@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Prepartic and others.
+ * Copyright (c) 2013, 2016 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,16 +16,11 @@
 package com.preparatic;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.NavigableMap;
-import java.util.Random;
-import java.util.TreeMap;
 import java.util.stream.Collectors;
 
-import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -34,8 +29,6 @@ import com.preparatic.archivos.HtmlGenerator;
 import com.preparatic.archivos.TestNavigatorGenerator;
 import com.preparatic.csvreaders.CSVReaderFactory;
 import com.preparatic.csvreaders.IExcel;
-import com.preparatic.entidades.GestorAnho;
-import com.preparatic.entidades.GestorBloque;
 import com.preparatic.entidades.GestorInfoBloque;
 import com.preparatic.entidades.GestorInfoTema;
 import com.preparatic.entidades.GestorPreguntaTest;
@@ -44,21 +37,17 @@ import com.preparatic.entidades.InfoBloque;
 import com.preparatic.entidades.InfoTema;
 import com.preparatic.entidades.PreguntaTest;
 import com.preparatic.entidades.Test;
-import com.preparatic.gestorpreguntas.GestorPreguntas;
-import com.preparatic.gestorpreguntas.GestorPreguntasAnho;
-import com.preparatic.gestorpreguntas.GestorPreguntasBloque;
-import com.preparatic.gestorpreguntas.GestorPreguntasUsadas;
 import com.preparatic.utils.RandomCollection;
 
-public class TestGeneratorV2 extends GeneradorPreguntasTest {
+public class TestGenerator  {
 
-	private static Logger logger = LogManager.getLogger(TestGeneratorV2.class);
+	private static Logger logger = LogManager.getLogger(TestGenerator.class);
 
 	private static GestorTests gestorTest = GestorTests.getInstance();
 
 	public static void main(String[] args) throws Exception {
 
-		logger.info("Generador de test. Promoción XXIV. Diciembre 2016");
+		logger.info("Generador de test. PromociÃ³n XXIV. Diciembre 2016");
 		logger.info("Se generan los test con las preguntas disponibles.");
 
 		/*
@@ -92,7 +81,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			logger.error(e.getMessage());
 		}
 
-		logger.info("Preparatic XXIV. Generación de test terminada.");
+		logger.info("Preparatic XXIV. GeneraciÃ³n de test terminada.");
 	}
 
 	/**
@@ -155,7 +144,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		List<PreguntaTest> preguntasBB = GestorPreguntaTest.filterBloqueB(listaPreguntas);
 		
 		/*
-		 * Distribuimos las preguntas en tantos test como diga la configuración.
+		 * Distribuimos las preguntas en tantos test como diga la CorrecciÃ³n.
 		 */
 		int inicio_test = 1 + Integer.parseInt(ConfigProperties.getProperty("tests.por_frecuencia_y_fecha"));
 		int numTestAleatorios = Integer.parseInt(ConfigProperties.getProperty("tests.aleatorios"));
@@ -169,7 +158,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 				for (int cnt = 0; cnt < Test.NumPreguntasA; cnt++) {
 					/*
 					 * En este punto, ya se han usado todas las preguntas disponibles
-					 * para generar los test. Si, aún quedan test que no están
+					 * para generar los test. Si, aÃºn quedan test que no estÃ¡n
 					 * completos, se rellenan con preguntas repetidas.
 					 */
 					if (!iterator.hasNext()) {
@@ -191,7 +180,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 				for (int cnt = 0; cnt < Test.NumPreguntasB && !test.estaCompleto(); cnt++) {
 					/*
 					 * En este punto, ya se han usado todas las preguntas disponibles
-					 * para generar los test. Si, aún quedan test que no están
+					 * para generar los test. Si, aÃºn quedan test que no estÃ¡n
 					 * completos, se rellenan con preguntas repetidas.
 					 */
 					if (!iterator.hasNext()) {
@@ -216,7 +205,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 	
 	private static void generarTestPonderados(List<PreguntaTest> listaPreguntas) {
 		/*
-		 * Distribuimos las preguntas en tantos test como diga la configuración.
+		 * Distribuimos las preguntas en tantos test como diga la CorrecciÃ³n.
 		 */
 		int inicio_test = 1 + Integer.parseInt(ConfigProperties.getProperty("tests.por_frecuencia_y_fecha"));
 		int numTestPonderados = Integer.parseInt(ConfigProperties.getProperty("tests.ponderados"));
@@ -224,7 +213,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		listaPreguntas.forEach(q -> randomPreguntas.add(q.getPeso(), q));
 
 		for (int i = inicio_test; i <= inicio_test + numTestPonderados; i++) {
-			Test test = new Test(Test.eTipoTest.relevancia, "relevancia", i);
+			Test test = new Test(Test.eTipoTest.RELEVANCIA, "relevancia", i);
 			while (!test.estaCompleto()) {
 				while (!test.asignarIdPregunta(randomPreguntas.next().getNumId()))
 					;
@@ -260,7 +249,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
 			for (int i = 1; i <= totalTestsBloque; i++) {
-				Test test = new Test(Test.eTipoTest.bloque, bloque
+				Test test = new Test(Test.eTipoTest.BLOQUE, bloque
 						.getNombreBloque() /* + ". " + bloque.getTitulo() */, i);
 				while ((!test.estaCompleto()) && (iterator.hasNext())) {
 					PreguntaTest t = iterator.next();
@@ -305,7 +294,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
 			for (int i = 1; i <= totalTestsTema; i++) {
-				Test test = new Test(Test.eTipoTest.tema, "T"
+				Test test = new Test(Test.eTipoTest.TEMA, "T"
 						+  tema.getNumTema()  /* + ". " + bloque.getTitulo() */, i);
 				while ((!test.estaCompleto()) && (iterator.hasNext())) {
 					PreguntaTest t = iterator.next();
@@ -338,9 +327,9 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 		 * Por cada anho, usamos un tema al que le vamos a asignar todas las
 		 * preguntas.
 		 */
-		for (String idAnho : annos) {
+		for (String idAÃ±o : annos) {
 			List<PreguntaTest> filteredList = listaPreguntas.stream()
-					.filter(question -> question.getAnno_creacion().equalsIgnoreCase(idAnho.trim()))
+					.filter(question -> question.getAnno_creacion().equalsIgnoreCase(idAÃ±o.trim()))
 					.collect(Collectors.toList());
 			float totalPreguntasBloque = filteredList.size();
 			int totalTestsAnho =  (int) Math.ceil(totalPreguntasBloque / num_preguntas_por_test);
@@ -348,7 +337,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del anho
 			for (int i = 1; i <= totalTestsAnho; i++) {
-				Test test = new Test(Test.eTipoTest.anho, idAnho, i);
+				Test test = new Test(Test.eTipoTest.AÃ‘O, idAÃ±o, i);
 				while ((!test.estaCompleto()) && (iterator.hasNext())) {
 					PreguntaTest t = iterator.next();
 					try {
@@ -362,7 +351,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 				gestorTest.addTest(test);
 			}
 
-			logger.info("Generado test Anho " + idAnho);
+			logger.info("Generado test Anho " + idAÃ±o);
 		}
 		return;
 	}
@@ -387,7 +376,7 @@ public class TestGeneratorV2 extends GeneradorPreguntasTest {
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del anho
-			Test test = new Test(Test.eTipoTest.examen, examen, 1);
+			Test test = new Test(Test.eTipoTest.EXAMEN, examen, 1);
 			while (iterator.hasNext()) {
 				PreguntaTest t = iterator.next();
 				try {
