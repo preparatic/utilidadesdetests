@@ -81,7 +81,7 @@ public class TestGenerator  {
 			logger.error(e.getMessage());
 		}
 
-		logger.info("Preparatic XXIV. Generación de test terminada.");
+		logger.info("Preparatic XXV. Generación de test terminada.");
 	}
 
 	/**
