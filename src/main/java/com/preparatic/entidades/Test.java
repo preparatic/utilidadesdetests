@@ -289,10 +289,13 @@ private final int MaxNumPreguntas;
 		
 		
 		try {
-			List<PreguntaTest> filteredList = resultados.stream() 
-						.filter(question -> ListaPreguntas.contains(question.getNumId()))
-						.collect(Collectors.toList());
-			Collections.shuffle(filteredList);
+			//ACL: Iteramos la lista de preguntas seleccionadas en el mismo orden para mantener las 30 primeras
+			//     asociadas al bloque A y las 100 siguientes al bloque B
+			List<PreguntaTest> filteredList = new ArrayList<PreguntaTest>();
+			for (int question_id: ListaPreguntas) {
+				filteredList.add(resultados.get(question_id));
+				
+			}
 			
 			pdfGenerator.agregarPreguntas(filteredList);
 			pdfFilename = pdfGenerator.guardarPDF();
