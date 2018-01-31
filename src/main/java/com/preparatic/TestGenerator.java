@@ -232,7 +232,7 @@ public class TestGenerator  {
 	 * @param numTest
 	 */
 	private static void generarTestBloques(List<PreguntaTest> listaPreguntas) {
-		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
+		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
 
 		/*
 		 * Por cada bloque, usamos un tema al que le vamos a asignar todas las
@@ -278,7 +278,7 @@ public class TestGenerator  {
 	 * @param numTest
 	 */
 	private static void generarTestTemas(List<PreguntaTest> listaPreguntas) {
-		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
+		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
 
 		/*
 		 * Por cada bloque, usamos un tema al que le vamos a asignar todas las
@@ -320,7 +320,7 @@ public class TestGenerator  {
 	 */
 
 	private static void generarTestAnhos(List<PreguntaTest> listaPreguntas) {
-		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
+		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.anhos.num_preguntas_por_test"));
 		String[] annos = ConfigProperties.getProperty("tests.anhos").toString().split(",");
 
 		/*
@@ -357,7 +357,7 @@ public class TestGenerator  {
 	}
 	
 	private static void generarTestExamenes(List<PreguntaTest> listaPreguntas) {
-		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.num_preguntas_por_test"));
+		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.examenes.num_preguntas_por_test"));
 		// Create a list with the distinct elements using stream.
 		List<String> examenes = listaPreguntas.stream()
 				.filter(p -> !p.getExamen().isEmpty())
