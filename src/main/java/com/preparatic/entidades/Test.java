@@ -66,11 +66,11 @@ public class Test {
 	private String tituloTematica;
 	private List<Integer> ListaPreguntas;
 	public static Integer NumPreguntas = Integer
-			.parseInt(ConfigProperties.getProperty("tests.num_preguntas_por_test")); // Número
+			.parseInt(ConfigProperties.getProperty("tests.globales.num_preguntas_por_test")); // Número
 	public static Integer NumPreguntasA = Integer
-			.parseInt(ConfigProperties.getProperty("tests.num_preguntasA_por_test")); // Número
+			.parseInt(ConfigProperties.getProperty("tests.globales.num_preguntasA_por_test")); // Número
 	public static Integer NumPreguntasB = Integer
-			.parseInt(ConfigProperties.getProperty("tests.num_preguntasB_por_test")); // Número
+			.parseInt(ConfigProperties.getProperty("tests.globales.num_preguntasB_por_test")); // Número
 private final int MaxNumPreguntas;
 	
 	private String htmlFilename;
