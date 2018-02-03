@@ -8,11 +8,13 @@ var countdownHandle;
 
 var audio = new Audio('../vendors/pomodoro/sounds/beep.mp3');
 
-var secondsPerQuestions = 54;
+var secondsPerQuestions = 55.38;
+
 
 function onTimer(numquestions) {
     var sg = Math.floor(numquestions * secondsPerQuestions);
-    var hours =  Math.floor(sg/3600);
+    
+	var hours =  Math.floor(sg/3600);
     var minutes = Math.floor((sg - hours * 3600) / 60);
     var seconds = sg - (hours * 3600 + minutes * 60);
 

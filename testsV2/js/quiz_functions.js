@@ -393,5 +393,5 @@ function go() {
 
 function computeScore(right, wrong, nc)
 {
-   return (right - floor(wrong / 3));
+   return (right - (wrong / 3));
 }
