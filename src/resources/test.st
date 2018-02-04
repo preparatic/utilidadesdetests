@@ -114,7 +114,33 @@
                         </div>
                     </div>
                     <div class="clearfix"></div>
-					<div class="panel panel-default">
+                    
+					<div class="panel panel-default">					                        
+                        <div class="panel-body text-center">
+                        	<div>                    
+                            <p><b>$app_version$</b></p>
+                        	</div>                        	
+						</div>                    
+					</div>                        	
+
+					<div class="panel panel-default">					                        
+                        <div class="panel-body text-left">
+                        	<div>
+                        	
+                        	<p>
+                        	Si detecta algún error en alguna pregunta de test, por favor
+                        	haga click <a href="$test_foro_link$" target="_blank"><u>aquí</u></a>
+                        	y publique un mensaje en el foro indicando:<br> 
+                        	(i) el texto completo de la pregunta y de las respuestas,<br>
+                        	(ii) el motivo por el que cree que puede existir un error.<br>
+                        	Se hará lo posible por corregir los errores rápido.
+                        	</p> 
+                        	
+                        	</div>                        	
+						</div>                    
+					</div>
+					                                        
+					<div class="panel panel-default">					                        
                         <div class="panel-body text-center">
                             <div class="timer-time timer-container">
                                 <div class="timer-time-set timer-box" id="currentTime">
@@ -123,7 +149,7 @@
                                 <div class="timer-time-set timer-box" id="nextTime">
                                     <span id="hoursNext">00</span><span>:</span><span id="minutesNext">00</span><span>:</span><span id="secondsNext">00</span>
                                 </div>
-                            </div>
+                            </div>                            
                             <div>
                                 <button id="restartButton" class="btn btn-warning btn-sm" type="submit" onclick="onResetTimer()">
                                     <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Reset
@@ -134,9 +160,10 @@
                                 <button id="stopButton" class="btn btn-danger btn-sm" type="submit" onclick="onStopTimer()">
                                     <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Stop
                                 </button>
-                            </div>
-                        </div>
-                    </div>
+                            </div>                                                        
+                        </div>                        
+                    </div> <!-- END div class="panel panel-default" -->                    
+                   
                 </div>
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
@@ -222,7 +249,7 @@
             <!-- footer content -->
             <footer>
                 <div class="pull-right">
-                    Copyright &copy; 2016-2017 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
+                    Copyright &copy; 2017-2018 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
                 </div>
                 <div class="clearfix"></div>
             </footer>

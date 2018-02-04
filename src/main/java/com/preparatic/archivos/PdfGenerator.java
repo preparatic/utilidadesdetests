@@ -42,8 +42,11 @@ public class PdfGenerator {
 
 	private static Logger logger = LogManager.getLogger(PdfGenerator.class);
 
-	private static final float distanciaInterPregunta = 15;
-	private static final float distanciaTituloPregunta = 30;
+	//mod_AZE_2018-02-04 (para que entren las 130 respuestas en una sola hoja)
+	//private static final float distanciaInterPregunta = 15; //mod_AZE_2018-02-04
+	//private static final float distanciaTituloPregunta = 30; //mod_AZE_2018-02-04
+	private static final float distanciaInterPregunta = 10; //mod_AZE_2018-02-04
+	private static final float distanciaTituloPregunta = 25; //mod_AZE_2018-02-04
 	
 	private Document docpregs;
 	private Document docsols;
@@ -176,13 +179,14 @@ public class PdfGenerator {
 		docpregs.open();
 
 		docsols.open();
-		docpregs.setMargins(80, 80, 72, 36);	
+		docpregs.setMargins(80, 80, 72, 36); 			
 		docsols.setMargins(80, 80, 72, 36);
-
+		
 		// Añadir logo
-		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo.png");
+		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo-alpha.png"); //mod_AZE_2018-02-04 (logo con fondo blanco)
 		gif.setAlignment(Image.LEFT);
-		gif.scaleAbsolute(200, 82);
+		gif.scaleAbsolute(148, 46); //mod_AZE_2018-02-04 (para que entre bien el logo nuevo)
+		//gif.scaleAbsolute(200, 82); //mod_AZE_2018-02-04 (para que entre bien el logo nuevo)
 		docpregs.add(gif);
 		docsols.add(gif);
 
@@ -200,7 +204,7 @@ public class PdfGenerator {
 				Integer.parseInt(ConfigProperties.getProperty("tests.solucion.columnas")));
 		multiColumnTextSoluciones.addElement(listaSoluciones);
 		docsols.add(multiColumnTextSoluciones);
-
+			
 		// Cerramos los documentos
 		docpregs.close();
 		docsols.close();
@@ -213,7 +217,7 @@ public class PdfGenerator {
 	}
 
 	private void ponerTitulo(Document docpregs, Document docsols) {
-
+		
 		// Titulos de los tests.
 		String tituloPregs, tituloSols, subtitulo = "";
 		tituloPregs = "Test " + test.getIdTestStr();
@@ -261,6 +265,32 @@ public class PdfGenerator {
 				docsols.add(parrafo);
 			}
 
+			//mod_AZE_2018-02-04 START
+			// Añadir en el pié de página
+			// - la versión actual de la aplicación y 
+			// - el link al foro de preguntas 
+			String app_version = ConfigProperties.getProperty("app.version");
+			String test_foro_link = ConfigProperties.getProperty("tests.foro.link");
+			
+			if (app_version != "") {			
+				parrafo = new Paragraph(app_version, new Font(Font.UNDEFINED, Font.DEFAULTSIZE - 2, Font.NORMAL));
+				parrafo.setSpacingAfter(distanciaInterPregunta);
+				parrafo.setAlignment(Paragraph.ALIGN_CENTER);
+				docpregs.add(parrafo);
+				docsols.add(parrafo);				
+			}
+			
+			if (test_foro_link != "") {
+				String temp = "Para comunicar errores en las preguntas: " + test_foro_link;
+				
+				parrafo = new Paragraph(temp, new Font(Font.UNDEFINED, Font.DEFAULTSIZE - 2, Font.ITALIC));
+				parrafo.setSpacingAfter(distanciaInterPregunta);
+				parrafo.setAlignment(Paragraph.ALIGN_CENTER);
+				docpregs.add(parrafo);
+				docsols.add(parrafo);								
+			}			
+			//mod_AZE_2018-02-04 END
+			
 		} catch (DocumentException e) {
 			logger.error("Crear PDF. Poner título.");
 			logger.error(e.getMessage());
@@ -270,7 +300,7 @@ public class PdfGenerator {
 }
 
 class TestFooter extends PdfPageEventHelper {
-    Font ffont = new Font(Font.UNDEFINED, Font.DEFAULTSIZE, Font.BOLD);
+    Font ffont = new Font(Font.UNDEFINED, Font.DEFAULTSIZE - 2, Font.NORMAL);
     private int pageNumber;
     private String title;
     public TestFooter(String title)
@@ -297,7 +327,7 @@ class TestFooter extends PdfPageEventHelper {
 //        ColumnText.showTextAligned(cb, Element.ALIGN_CENTER,
 //                header,
 //                (document.right() - document.left()) / 2 + document.leftMargin(),
-//                document.top() + 10, 0);
+//                document.top() + 10, 0);        
         Phrase footer = new Phrase(String.format(title + ", página %d", pageNumber), ffont);
         ColumnText.showTextAligned(cb, Element.ALIGN_CENTER,
                 footer,

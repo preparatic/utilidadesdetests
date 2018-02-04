@@ -293,8 +293,7 @@ private final int MaxNumPreguntas;
 			//     asociadas al bloque A y las 100 siguientes al bloque B
 			List<PreguntaTest> filteredList = new ArrayList<PreguntaTest>();
 			for (int question_id: ListaPreguntas) {
-				filteredList.add(resultados.get(question_id));
-				
+				filteredList.add(resultados.get(question_id));				
 			}
 			
 			pdfGenerator.agregarPreguntas(filteredList);
