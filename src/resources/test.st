@@ -128,12 +128,11 @@
                         	<div>
                         	
                         	<p>
-                        	Si detecta algún error en alguna pregunta de test, por favor
+                        	Si detecta algún error las preguntas de test, por favor
                         	haga click <a href="$test_foro_link$" target="_blank"><u>aquí</u></a>
-                        	y publique un mensaje en el foro indicando:<br> 
+                        	y publique un mensaje en este foro indicando:<br> 
                         	(i) el texto completo de la pregunta y de las respuestas,<br>
                         	(ii) el motivo por el que cree que puede existir un error.<br>
-                        	Se hará lo posible por corregir los errores rápido.
                         	</p> 
                         	
                         	</div>                        	
