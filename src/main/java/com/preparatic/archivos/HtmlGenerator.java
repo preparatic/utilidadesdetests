@@ -252,6 +252,13 @@ public class HtmlGenerator {
 		htmlTemplate.setAttribute("titulo",  test.getTitulo());
 		htmlTemplate.setAttribute("titulocompleto", test.getTitulo());
 		htmlTemplate.setAttribute("javascriptdata", "../data/" +  filename + ".js ");
+
+		//mod_AZE_2018-02-04 (introducción de fecha de actualización + link foro)		
+		String app_version = ConfigProperties.getProperty("app.version");
+		htmlTemplate.setAttribute("app_version", app_version);
+		
+		String test_foro_link = ConfigProperties.getProperty("tests.foro.link");
+		htmlTemplate.setAttribute("test_foro_link", test_foro_link);		
 		
 		switch (tipoTest) {
 		case BLOQUE:
