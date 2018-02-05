@@ -221,6 +221,7 @@
             <!-- /page content -->
             <!-- footer content -->
             <footer>
+                <p>Si tienes dudas o crees que alguna pregunta requiere corrección, accede al <a href="http://www.preparatic.org/foro/viewforum.php?f=216">foro de preparatic </a></p>
                 <div class="pull-right">
                     Copyright &copy; 2016-2017 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
                 </div>

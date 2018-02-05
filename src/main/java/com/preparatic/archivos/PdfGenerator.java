@@ -167,7 +167,7 @@ public class PdfGenerator {
 				test.getIdTest());
 		PdfWriter writerPregs =  PdfWriter.getInstance(docpregs,
 				FactoriaArchivo.pdfTest(test.getTipoTest(), test.getIdBloqueTematicaAnho(), test.getIdTest()));
-		TestFooter footerPregs = new TestFooter(test.getTitulo());
+		TestFooter footerPregs = new TestFooter(test.getTitulo() + " reporta errores o dudas en el foro preparatic: http://www.preparatic.org/foro/viewforum.php?f=216");
 		writerPregs.setPageEvent(footerPregs);
 		
 		PdfWriter.getInstance(docsols,
@@ -180,9 +180,10 @@ public class PdfGenerator {
 		docsols.setMargins(80, 80, 72, 36);
 
 		// Añadir logo
-		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo.png");
+		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo_pdf.png");
 		gif.setAlignment(Image.LEFT);
-		gif.scaleAbsolute(200, 82);
+		gif.scaleToFit(4.5f,2.5f );
+		//gif.scaleAbsolute(200, 82);
 		docpregs.add(gif);
 		docsols.add(gif);
 
@@ -221,12 +222,12 @@ public class PdfGenerator {
 
 		try {
 			// Ponemos los titulos
-			Paragraph parrafo = new Paragraph(tituloPregs, new Font(Font.UNDEFINED, Font.DEFAULTSIZE * 2, Font.BOLD));
+			Paragraph parrafo = new Paragraph(tituloPregs, new Font(Font.UNDEFINED, Font.DEFAULTSIZE, Font.BOLD));
 			parrafo.setAlignment(Paragraph.ALIGN_CENTER);
 			parrafo.setSpacingAfter(distanciaTituloPregunta);
 			docpregs.add(parrafo);
 
-			parrafo = new Paragraph(tituloSols, new Font(Font.UNDEFINED, Font.DEFAULTSIZE * 2, Font.BOLD));
+			parrafo = new Paragraph(tituloSols, new Font(Font.UNDEFINED, Font.DEFAULTSIZE , Font.BOLD));
 			parrafo.setAlignment(Paragraph.ALIGN_CENTER);
 			parrafo.setSpacingAfter(distanciaTituloPregunta);
 			docsols.add(parrafo);
@@ -270,7 +271,7 @@ public class PdfGenerator {
 }
 
 class TestFooter extends PdfPageEventHelper {
-    Font ffont = new Font(Font.UNDEFINED, Font.DEFAULTSIZE, Font.BOLD);
+    Font ffont = new Font(Font.HELVETICA, 8 , Font.BOLD);
     private int pageNumber;
     private String title;
     public TestFooter(String title)
