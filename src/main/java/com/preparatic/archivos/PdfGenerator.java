@@ -182,8 +182,8 @@ public class PdfGenerator {
 		// Añadir logo
 		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo_pdf.png");
 		gif.setAlignment(Image.LEFT);
-		gif.scaleToFit(4.5f,2.5f );
-		//gif.scaleAbsolute(200, 82);
+		//gif.scaleToFit(4.5f,2.5f );
+		gif.scaleAbsolute(200, 82);
 		docpregs.add(gif);
 		docsols.add(gif);
 
