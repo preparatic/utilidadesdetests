@@ -307,7 +307,7 @@ private final int MaxNumPreguntas;
 			jsFilename = htmlGenerator.getJsFilenameV2();
 			
 		} catch (Exception e) {
-			logger.error("Error al generar los tests" + e.getMessage());
+			logger.error("Error al generar los tests: " + e.getMessage());
 		}
 
 		return true;
