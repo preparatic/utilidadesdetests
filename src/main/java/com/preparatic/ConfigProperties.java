@@ -17,6 +17,8 @@
 package com.preparatic;
 
 import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
 import java.util.Properties;
 
 public class ConfigProperties {
@@ -24,7 +26,8 @@ public class ConfigProperties {
 
 	static {
 		try {
-			properties.load(new FileInputStream("./config/config.properties"));
+			FileInputStream file = new FileInputStream("./config/config.properties");
+			properties.load(new InputStreamReader(file , Charset.forName("UTF-8")));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
