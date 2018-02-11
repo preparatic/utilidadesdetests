@@ -243,7 +243,45 @@ public class HtmlGenerator {
 	}
 	private void generarHtmlV2() {
 		StringTemplateGroup group =  new StringTemplateGroup("Preparatic", pathResources, DefaultTemplateLexer.class);
-		String testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate");
+		// Default template name
+		String testTemplateName; 
+		switch (tipoTest) {
+		case ALEATORIO:
+			testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate.Global");
+			break;
+		case AÑO:
+			testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate.Anyo");
+			break;
+		case BLOQUE:
+			testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate.Bloque");
+			break;
+		case EXAMEN:
+			testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate.Examen");
+			break;
+		case RELEVANCIA:
+			testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate.Relevancia");
+			break;
+		case TEMA:
+			testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate.Tema");
+			break;
+		case TEMATICA:
+			testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate.Tematica");
+			break;
+		case ultimoAnho:
+			testTemplateName =  ConfigProperties.getProperty("files.templates.TestTemplate.UltimoAnyo");
+			break;
+		default:
+			testTemplateName = ConfigProperties.getProperty("files.templates.TestTemplate");
+			break;
+		}
+
+		if (testTemplateName == null)
+		{
+			logger.warn("No se ha encontrado la entrada en el fichero de configuración para la plantilla de tipo de test: " +
+			tipoTest.toString());
+			logger.warn("Utilizando la plantilla por defecto 'test.st'");
+			testTemplateName="test";
+		}
 		StringTemplate htmlTemplate = group.getInstanceOf(testTemplateName);
 		
 		String filename =  FactoriaArchivo.NombreArchivoTest(tipoTest,
@@ -259,7 +297,6 @@ public class HtmlGenerator {
 		
 		String test_foro_link = ConfigProperties.getProperty("tests.foro.link");
 		htmlTemplate.setAttribute("test_foro_link", test_foro_link);		
-		
 		switch (tipoTest) {
 		case BLOQUE:
 			htmlTemplate.setAttribute("testsSet", "blockTestsSet");
@@ -280,6 +317,7 @@ public class HtmlGenerator {
 			htmlTemplate.setAttribute("testsSet", "randomTestsSet");
 			break;
 		}
+		
 		//System.out.println(htmlTemplate.toString());
 
 		// Creamos la salida
