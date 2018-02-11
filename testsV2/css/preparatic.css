@@ -161,3 +161,12 @@ padding: 0;
 	color: #0099AA;
 }
 
+table.tabla-puntuacion td {
+	padding: 3px;
+	text-align: center;
+	
+}
+
+table.tabla-puntuacion thead tr {
+	font-weight: bold;	
+}
