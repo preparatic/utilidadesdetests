@@ -26,6 +26,16 @@ var rightanswersPerUnit = initTemasArray();
 var wronganswersPerUnit = initTemasArray();
 var dkanswersPerUnit = initTemasArray();
 
+// Respuestas correctas, equivocadas y sin contestar por parte del examen
+// Parte 1: bloques A1-A2 (30 primeras preguntas)
+// Parte 2: bloques B1 a B4 (100 últimas preguntas)
+var rightanswersPerPart = []
+var wronganswersPerPart = []
+var dkanswersPerPart = []
+
+
+
+
 //Señala en qué pregunta se ha destapado la respuesta
 var revealed = new Array();
 
@@ -81,6 +91,16 @@ function clearVariables()
     rightanswersPerUnit = initTemasArray();
     wronganswersPerUnit = initTemasArray();
     dkanswersPerUnit = initTemasArray();
+
+    rightanswersPerPart["A"] = 0;
+    rightanswersPerPart["B"] = 0;
+
+    wronganswersPerPart["A"] = 0;
+    wronganswersPerPart["B"] = 0;
+
+    dkanswersPerPart["A"] = 0;
+    dkanswersPerPart["B"] = 0;
+
 }
 
 function renderQuiz() {
@@ -200,7 +220,7 @@ function correctQuestion(questionNumber) {
             }
         }
     }
-
+    //No contestada
     if (useranswers[questionNumber].length == 0) {
         document.getElementById('result_' + questionNumber).innerHTML = '[N/C]';
         dkanswers.push(preguntaids[questionNumber]);
@@ -212,8 +232,17 @@ function correctQuestion(questionNumber) {
             var b = blocks[questionNumber][u];
             dkanswersPerBlock[b] = dkanswersPerBlock[b] + 1;
         }
+        // TODO: obtener de la configuración para hacer variable la cantidad de preguntas del 1er bloque
+        if (questionNumber < 30){
+        	dkanswersPerPart["A"] = dkanswersPerPart["A"] + 1;
+        }else{
+        	dkanswersPerPart["B"] = dkanswersPerPart["B"] + 1;
+        }
+        	
     }
+    // Contestada
     else
+    	// Correctamente
         if (useranswers[questionNumber].includes(answers[questionNumber])) {
             document.getElementById('result_' + questionNumber).innerHTML = '[BIEN]';
             rightanswers.push(preguntaids[questionNumber]);
@@ -225,9 +254,17 @@ function correctQuestion(questionNumber) {
                 var b = blocks[questionNumber][u];
                 rightanswersPerBlock[b] = rightanswersPerBlock[b] + 1;
             }
+            // TODO: obtener de la configuración para hacer variable la cantidad de preguntas del 1er bloque
+            if (questionNumber < 30){
+            	rightanswersPerPart["A"] = rightanswersPerPart["A"] + 1;
+            }else{
+            	rightanswersPerPart["B"] = rightanswersPerPart["B"] + 1;
+            }
 
         }
-        else {
+        else 
+        // Incorrectamente
+        {
             document.getElementById('result_' + questionNumber).innerHTML = '[MAL]';
             wronganswers.push(preguntaids[questionNumber]);
             for (u = 0; u < units[questionNumber].length; u++) {
@@ -238,6 +275,13 @@ function correctQuestion(questionNumber) {
                 var b = blocks[questionNumber][u];
                 wronganswersPerBlock[b] = wronganswersPerBlock[b] + 1;
             }
+            // TODO: obtner de la variable de configuración para hacer variable la cantidad de preguntas del 1er bloque
+            if (questionNumber < 30){
+            	wronganswersPerPart["A"] = wronganswersPerPart["A"] + 1;
+            }else{
+            	wronganswersPerPart["B"] = wronganswersPerPart["B"] + 1;
+            }
+
         }
     var info = '';
     if (units[questionNumber] != '')
@@ -309,7 +353,7 @@ function clearQuestion(questionId) {
     }
 }
 
-// Inicializa la pregunta, tanto stilo como respuestas y mensajes
+// Inicializa la pregunta, tanto estilo como respuestas y mensajes
 function resetQuestion(questionId) {
     var optionsCount = choices[questionId].length;
 
@@ -381,8 +425,20 @@ function showResult() {
     document.getElementById('preguntas_mlj').innerHTML = 'Bien : ' + mlgright + ' de ' + mlgtotal; //mlgwrong / mlgtotal;//'(' + mlgwrong + '-' + mlgright + ')/' + mlgtotal;
     document.getElementById('preguntas_bien').innerHTML = '' + correctCount;
     document.getElementById('preguntas_mal').innerHTML = '' + incorrectCount;
-    document.getElementById('preguntas_NC').innerHTML = '' + ncCount;
+    document.getElementById('preguntas_nc').innerHTML = '' + ncCount;
     document.getElementById('preguntas_total').innerHTML = '' + parseFloat(score).toFixed(2);
+
+    document.getElementById('preguntas_bien_A').innerHTML = rightanswersPerPart["A"];
+    document.getElementById('preguntas_bien_B').innerHTML = rightanswersPerPart["B"];
+    document.getElementById('preguntas_mal_A').innerHTML = wronganswersPerPart["A"];
+    document.getElementById('preguntas_mal_B').innerHTML = wronganswersPerPart["B"];
+    document.getElementById('preguntas_nc_A').innerHTML = dkanswersPerPart["A"];
+    document.getElementById('preguntas_nc_B').innerHTML = dkanswersPerPart["B"];
+    var score_part_A = rightanswersPerPart["A"] - (wronganswersPerPart["A"]/3);
+    document.getElementById('preguntas_total_A').innerHTML = parseFloat(score_part_A).toFixed(2);
+    var score_part_B =  rightanswersPerPart["B"] - (wronganswersPerPart["B"]/3);
+    document.getElementById('preguntas_total_B').innerHTML = parseFloat(score_part_B).toFixed(2);
+
 }
 
 function go() {
