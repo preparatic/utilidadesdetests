@@ -170,7 +170,7 @@ public class PdfGenerator {
 				test.getIdTest());
 		PdfWriter writerPregs =  PdfWriter.getInstance(docpregs,
 				FactoriaArchivo.pdfTest(test.getTipoTest(), test.getIdBloqueTematicaAnho(), test.getIdTest()));
-		TestFooter footerPregs = new TestFooter(test.getTitulo() + " reporta errores o dudas en el foro preparatic: http://www.preparatic.org/foro/viewforum.php?f=216");
+		TestFooter footerPregs = new TestFooter(test.getTitulo()); //mod_AZ_2018-02-04
 		writerPregs.setPageEvent(footerPregs);
 		
 		PdfWriter.getInstance(docsols,
@@ -179,15 +179,14 @@ public class PdfGenerator {
 		docpregs.open();
 
 		docsols.open();
-		docpregs.setMargins(80, 80, 72, 36); 			
-		docsols.setMargins(80, 80, 72, 36);
+		docpregs.setMargins(80, 80, 72, 36);
+		docsols.setMargins(80, 80, 36, 36);
 		
 		// Añadir logo
 		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo-alpha.png"); //mod_AZE_2018-02-04 (logo con fondo blanco)
 
 		gif.setAlignment(Image.LEFT);
 		gif.scaleAbsolute(148, 46); //mod_AZE_2018-02-04 (para que entre bien el logo nuevo)
-		//gif.scaleAbsolute(200, 82); //mod_AZE_2018-02-04 (para que entre bien el logo nuevo)
 		docpregs.add(gif);
 		docsols.add(gif);
 
@@ -222,7 +221,7 @@ public class PdfGenerator {
 		// Titulos de los tests.
 		String tituloPregs, tituloSols, subtitulo = "";
 		tituloPregs = "Test " + test.getIdTestStr();
-		tituloSols = "Soluciones test " + test.getIdTestStr();
+		tituloSols = "Soluciones de test " + test.getIdTestStr();
 
 		try {
 			// Ponemos los titulos
@@ -278,17 +277,17 @@ public class PdfGenerator {
 				parrafo.setSpacingAfter(distanciaInterPregunta);
 				parrafo.setAlignment(Paragraph.ALIGN_CENTER);
 				docpregs.add(parrafo);
-				docsols.add(parrafo);				
+				//docsols.add(parrafo);	//No lo agregamos en el documento de soluciones para que se imprima correctamente			
 			}
 			
 			if (test_foro_link != "") {
-				String temp = "Para comunicar errores en las preguntas: " + test_foro_link;
+				String temp = "Foro para comunicar errores o dudas en las preguntas de test: " + test_foro_link;
 				
 				parrafo = new Paragraph(temp, new Font(Font.UNDEFINED, Font.DEFAULTSIZE - 2, Font.ITALIC));
 				parrafo.setSpacingAfter(distanciaInterPregunta);
 				parrafo.setAlignment(Paragraph.ALIGN_CENTER);
 				docpregs.add(parrafo);
-				docsols.add(parrafo);								
+				//docsols.add(parrafo);	//No lo agregamos en el documento de soluciones para que se imprima correctamente						
 			}			
 			//mod_AZE_2018-02-04 END
 			
