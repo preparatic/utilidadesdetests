@@ -425,19 +425,21 @@ function showResult() {
     document.getElementById('preguntas_mlj').innerHTML = 'Bien : ' + mlgright + ' de ' + mlgtotal; //mlgwrong / mlgtotal;//'(' + mlgwrong + '-' + mlgright + ')/' + mlgtotal;
     document.getElementById('preguntas_bien').innerHTML = '' + correctCount;
     document.getElementById('preguntas_mal').innerHTML = '' + incorrectCount;
-    document.getElementById('preguntas_nc').innerHTML = '' + ncCount;
+    document.getElementById('preguntas_NC').innerHTML = '' + ncCount;
     document.getElementById('preguntas_total').innerHTML = '' + parseFloat(score).toFixed(2);
 
-    document.getElementById('preguntas_bien_A').innerHTML = rightanswersPerPart["A"];
-    document.getElementById('preguntas_bien_B').innerHTML = rightanswersPerPart["B"];
-    document.getElementById('preguntas_mal_A').innerHTML = wronganswersPerPart["A"];
-    document.getElementById('preguntas_mal_B').innerHTML = wronganswersPerPart["B"];
-    document.getElementById('preguntas_nc_A').innerHTML = dkanswersPerPart["A"];
-    document.getElementById('preguntas_nc_B').innerHTML = dkanswersPerPart["B"];
-    var score_part_A = rightanswersPerPart["A"] - (wronganswersPerPart["A"]/3);
-    document.getElementById('preguntas_total_A').innerHTML = parseFloat(score_part_A).toFixed(2);
-    var score_part_B =  rightanswersPerPart["B"] - (wronganswersPerPart["B"]/3);
-    document.getElementById('preguntas_total_B').innerHTML = parseFloat(score_part_B).toFixed(2);
+    if (document.getElementById('preguntas_bien_A') != null){
+    		document.getElementById('preguntas_bien_A').innerHTML = rightanswersPerPart["A"];
+    		document.getElementById('preguntas_bien_B').innerHTML = rightanswersPerPart["B"];
+    		document.getElementById('preguntas_mal_A').innerHTML = wronganswersPerPart["A"];
+    		document.getElementById('preguntas_mal_B').innerHTML = wronganswersPerPart["B"];
+    		document.getElementById('preguntas_nc_A').innerHTML = dkanswersPerPart["A"];
+    		document.getElementById('preguntas_nc_B').innerHTML = dkanswersPerPart["B"];
+    		var score_part_A = rightanswersPerPart["A"] - (wronganswersPerPart["A"]/3);
+    		document.getElementById('preguntas_total_A').innerHTML = parseFloat(score_part_A).toFixed(2);
+    		var score_part_B =  rightanswersPerPart["B"] - (wronganswersPerPart["B"]/3);
+    		document.getElementById('preguntas_total_B').innerHTML = parseFloat(score_part_B).toFixed(2);
+    }
 
 }
 
