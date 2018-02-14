@@ -230,7 +230,7 @@
 													<td><div>N/C</div></td>
 													<td><div id="preguntas_nc_A">-</div></td>
 													<td><div id="preguntas_nc_B">-</div></td>
-													<td><div id="preguntas_nc">-</div></td>
+													<td><div id="preguntas_NC">-</div></td>
 												</tr>
 												<tr>
 													<td><div class="desc">Total</div></td>
