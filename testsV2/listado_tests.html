@@ -334,7 +334,7 @@
                                 responsivePriority: 4,
                                 "mRender": function (data, type, full) {
                                     // Aciertos - 0.5 fallos
-                                    return full[3] - full[4]*0.5;
+                                    return Math.round((full[3] - full[4]/3) * 100) / 100;;
                                 }
                             }, // 6 Score
                             {     // 7 column (Borrar link)
