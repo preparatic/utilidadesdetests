@@ -259,11 +259,16 @@ public class TestGenerator  {
 					} catch (Exception ex) {
 						logger.error("Error procesing id of question " + t);
 					}
-				}
-				
-				// Generamos los pdf y los html de cada test.
-				test.generarDocumentos(listaPreguntas, totalTestsBloque);
-				gestorTest.addTest(test);
+				}	
+
+				//mod_AZ 2018_03_11 para que no se generen tests vacíos
+	            if (test.estaCompleto()) 
+	            { 
+					// Generamos los pdf y los html de cada test.
+					test.generarDocumentos(listaPreguntas, totalTestsBloque);
+					gestorTest.addTest(test);
+	            } 
+	            //mod_AZ 2018_03_11 para que no se generen tests vacíos											
 			}
 
 			logger.info("Generado test bloque " + bloque.getTitulo());
@@ -305,8 +310,14 @@ public class TestGenerator  {
 						logger.error("Error procesing id of question " + t);
 					}
 				}
-				test.generarDocumentos(listaPreguntas, totalTestsTema);
-				gestorTest.addTest(test);
+				
+				//mod_AZ 2018_03_11 para que no se generen tests vacíos
+                if (test.estaCompleto()) 
+                { 
+    				test.generarDocumentos(listaPreguntas, totalTestsTema);
+    				gestorTest.addTest(test);                	
+                } 
+                //mod_AZ 2018_03_11 para que no se generen tests vacíos
 			}
 
 			logger.info("Generado test tema " + tema.getTituloCorto());
@@ -347,8 +358,14 @@ public class TestGenerator  {
 						logger.error("Error procesing id of question " + t);
 					}
 				}
-				test.generarDocumentos(listaPreguntas, totalTestsAnho);
-				gestorTest.addTest(test);
+				
+				//mod_AZ 2018_03_11 para que no se generen tests vacíos
+                if (test.estaCompleto()) 
+                { 
+    				test.generarDocumentos(listaPreguntas, totalTestsAnho);
+    				gestorTest.addTest(test);                	
+                } 
+                //mod_AZ 2018_03_11 para que no se generen tests vacíos				
 			}
 
 			logger.info("Generado test Anho " + idAño);
@@ -386,9 +403,9 @@ public class TestGenerator  {
 					logger.error("Error procesing id of question " + t);
 				}
 			}
+			
 			test.generarDocumentos(listaPreguntas, 1);
 			gestorTest.addTest(test);
-
 			logger.info("Generado test Examen " + examen);
 		}
 		return;

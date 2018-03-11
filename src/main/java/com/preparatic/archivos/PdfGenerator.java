@@ -180,7 +180,7 @@ public class PdfGenerator {
 
 		docsols.open();
 		docpregs.setMargins(80, 80, 72, 36);
-		docsols.setMargins(80, 80, 36, 36);
+		docsols.setMargins (80, 80, 36, 36);
 		
 		// Añadir logo
 		Image gif = Image.getInstance(ConfigProperties.getProperty("files.rootDir") + "/images/logo-alpha.png"); //mod_AZE_2018-02-04 (logo con fondo blanco)
