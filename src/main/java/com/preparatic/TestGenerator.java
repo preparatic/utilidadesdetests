@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2013, 2016 Preparatic and others.
+ * Copyright (c) 2013, 2018 Preparatic and others.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -226,13 +226,31 @@ public class TestGenerator  {
 	}
 
 	/**
+	 * Cálculo de división con dos enteros para determinar el número de test (y evitar que se generen tests vacíos)
+	 * divisionCeil = a/b
+	 * 
+	 * Justificación:
+	 * https://stackoverflow.com/questions/7139382/java-rounding-up-to-an-int-using-math-ceil		
+	 */
+	private static int divisionCeil(int a, int b) {
+		int output;
+		//output = (a - 1) / b + 1;
+		//output = (a + b - 1) / b;
+		//output = (int) Math.ceil((float) a / (float) b);
+		output = (int) Math.ceil((double) a / b);
+		logger.info("divisionCeil(int a=" + a + ", int b=" + b + ") => " + output);
+		return output;
+	}
+		
+	/**
 	 * Generamos los test por bloques.
 	 * 
 	 * @param numBloque
 	 * @param numTest
 	 */
 	private static void generarTestBloques(List<PreguntaTest> listaPreguntas) {
-		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
+		//float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
+		int num_preguntas_por_test = Integer.parseInt(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
 
 		/*
 		 * Por cada bloque, usamos un tema al que le vamos a asignar todas las
@@ -243,8 +261,12 @@ public class TestGenerator  {
 			List<PreguntaTest> filteredList = listaPreguntas.stream()
 					.filter(question -> question.getBloques().contains(bloque.getNombreBloque()))
 					.collect(Collectors.toList());
-			float totalPreguntasBloque = filteredList.size();
-			int totalTestsBloque =  (int) Math.ceil(totalPreguntasBloque / num_preguntas_por_test);
+			//mod_AZ 2018_03_11 START
+			//float totalPreguntasBloque = filteredList.size();
+			int totalPreguntasBloque = filteredList.size();
+			//int totalTestsBloque = (int) Math.ceil(totalPreguntasBloque / num_preguntas_por_test);
+			int totalTestsBloque = divisionCeil(totalPreguntasBloque, num_preguntas_por_test);
+			//mod_AZ 2018_03_11 END
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
@@ -262,12 +284,12 @@ public class TestGenerator  {
 				}	
 
 				//mod_AZ 2018_03_11 para que no se generen tests vacíos
-	            if (test.estaCompleto()) 
-	            { 
+	            //if (test.estaCompleto()) 
+	            //{ 
 					// Generamos los pdf y los html de cada test.
 					test.generarDocumentos(listaPreguntas, totalTestsBloque);
 					gestorTest.addTest(test);
-	            } 
+	            //} 
 	            //mod_AZ 2018_03_11 para que no se generen tests vacíos											
 			}
 
@@ -283,7 +305,8 @@ public class TestGenerator  {
 	 * @param numTest
 	 */
 	private static void generarTestTemas(List<PreguntaTest> listaPreguntas) {
-		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
+		//int num_preguntas_por_test = (int) Float.parseFloat(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
+		int num_preguntas_por_test = Integer.parseInt(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
 
 		/*
 		 * Por cada bloque, usamos un tema al que le vamos a asignar todas las
@@ -293,8 +316,12 @@ public class TestGenerator  {
 		for (InfoTema tema : listaTemas) {
 			List<PreguntaTest> filteredList = listaPreguntas.stream()
 					.filter(question -> question.getTemas().contains(tema.getNumTema())).collect(Collectors.toList());
-			float totalPreguntasTema = filteredList.size();
-			int totalTestsTema = (int) Math.ceil(totalPreguntasTema / num_preguntas_por_test);
+			//mod_AZ 2018_03_11 START
+			//float totalPreguntasTema = filteredList.size();			
+			int totalPreguntasTema = filteredList.size();
+			//int totalTestsTema = (int) Math.ceil(totalPreguntasTema / num_preguntas_por_test);
+			int totalTestsTema = divisionCeil(totalPreguntasTema, num_preguntas_por_test);
+			//mod_AZ 2018_03_11 END			
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
@@ -312,11 +339,11 @@ public class TestGenerator  {
 				}
 				
 				//mod_AZ 2018_03_11 para que no se generen tests vacíos
-                if (test.estaCompleto()) 
-                { 
+                //if (test.estaCompleto()) 
+                //{ 
     				test.generarDocumentos(listaPreguntas, totalTestsTema);
     				gestorTest.addTest(test);                	
-                } 
+                //} 
                 //mod_AZ 2018_03_11 para que no se generen tests vacíos
 			}
 
@@ -331,7 +358,8 @@ public class TestGenerator  {
 	 */
 
 	private static void generarTestAnhos(List<PreguntaTest> listaPreguntas) {
-		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.anhos.num_preguntas_por_test"));
+		//float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.anhos.num_preguntas_por_test"));
+		int num_preguntas_por_test = Integer.parseInt(ConfigProperties.getProperty("tests.anhos.num_preguntas_por_test"));
 		String[] annos = ConfigProperties.getProperty("tests.anhos").toString().split(",");
 
 		/*
@@ -342,8 +370,12 @@ public class TestGenerator  {
 			List<PreguntaTest> filteredList = listaPreguntas.stream()
 					.filter(question -> question.getAnno_creacion().equalsIgnoreCase(idAño.trim()))
 					.collect(Collectors.toList());
-			float totalPreguntasBloque = filteredList.size();
-			int totalTestsAnho =  (int) Math.ceil(totalPreguntasBloque / num_preguntas_por_test);
+			//mod_AZ 2018_03_11 START
+			//float totalPreguntasBloque = filteredList.size();
+			int totalPreguntasBloque = filteredList.size();
+			//int totalTestsAnho =  (int) Math.ceil(totalPreguntasBloque / num_preguntas_por_test);
+			int totalTestsAnho = divisionCeil(totalPreguntasBloque, num_preguntas_por_test);
+			//mod_AZ 2018_03_11 END
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del anho
@@ -360,11 +392,10 @@ public class TestGenerator  {
 				}
 				
 				//mod_AZ 2018_03_11 para que no se generen tests vacíos
-                if (test.estaCompleto()) 
-                { 
+                //if (test.estaCompleto()) { 
     				test.generarDocumentos(listaPreguntas, totalTestsAnho);
     				gestorTest.addTest(test);                	
-                } 
+                //} 
                 //mod_AZ 2018_03_11 para que no se generen tests vacíos				
 			}
 
@@ -374,7 +405,7 @@ public class TestGenerator  {
 	}
 	
 	private static void generarTestExamenes(List<PreguntaTest> listaPreguntas) {
-		float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.examenes.num_preguntas_por_test"));
+		//float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.examenes.num_preguntas_por_test"));
 		// Create a list with the distinct elements using stream.
 		List<String> examenes = listaPreguntas.stream()
 				.filter(p -> !p.getExamen().isEmpty())

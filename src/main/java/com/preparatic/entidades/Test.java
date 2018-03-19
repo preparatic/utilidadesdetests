@@ -65,13 +65,35 @@ public class Test {
 	private int idTest;
 	private String tituloTematica;
 	private List<Integer> ListaPreguntas;
+
 	public static Integer NumPreguntas = Integer
 			.parseInt(ConfigProperties.getProperty("tests.globales.num_preguntas_por_test")); // Número
 	public static Integer NumPreguntasA = Integer
 			.parseInt(ConfigProperties.getProperty("tests.globales.num_preguntasA_por_test")); // Número
 	public static Integer NumPreguntasB = Integer
 			.parseInt(ConfigProperties.getProperty("tests.globales.num_preguntasB_por_test")); // Número
-private final int MaxNumPreguntas;
+	
+	public static Integer NumPreguntasTestsBloques = Integer
+			.parseInt(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
+	public static Integer NumPreguntasTestsTemas = Integer
+			.parseInt(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
+	public static Integer NumPreguntasTestsAnhos = Integer
+			.parseInt(ConfigProperties.getProperty("tests.anhos.num_preguntas_por_test"));
+	public static Integer NumPreguntasTestsExamenes = Integer
+			.parseInt(ConfigProperties.getProperty("tests.examenes.num_preguntas_por_test"));
+
+	/*
+	# NÃºmero de tests por cada tipo
+	tests.globales.num_preguntas_por_test=130
+	tests.globales.num_preguntasA_por_test=30
+	tests.globales.num_preguntasB_por_test=100
+	tests.bloques.num_preguntas_por_test=100
+	tests.temas.num_preguntas_por_test=100
+	tests.anhos.num_preguntas_por_test=100
+	tests.examenes.num_preguntas_por_test=100
+	*/
+	
+	private final int MaxNumPreguntas;
 	
 	private String htmlFilename;
 	private String pdfFilename;
@@ -110,7 +132,35 @@ private final int MaxNumPreguntas;
 		this.tipoTest = tipoTest;
 		this.IdLongName = idBloqueTematicaAnho;
 		this.idTest = idTest;
-		MaxNumPreguntas = Test.NumPreguntas;
+
+/*
+	public static Integer NumPreguntasTestsBloques = Integer
+			.parseInt(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
+	public static Integer NumPreguntasTestsTemas = Integer
+			.parseInt(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
+	public static Integer NumPreguntasTestsAnhos = Integer
+			.parseInt(ConfigProperties.getProperty("tests.anhos.num_preguntas_por_test"));
+	public static Integer NumPreguntasTestsExamenes = Integer
+			.parseInt(ConfigProperties.getProperty("tests.examenes.num_preguntas_por_test"));
+ */
+		
+		if(tipoTest == eTipoTest.BLOQUE) {
+			MaxNumPreguntas = Test.NumPreguntasTestsBloques;						
+		}
+		else if(tipoTest == eTipoTest.TEMA) {
+			MaxNumPreguntas = Test.NumPreguntasTestsTemas;			
+		}
+		else if(tipoTest == eTipoTest.AÑO) {
+			MaxNumPreguntas = Test.NumPreguntasTestsAnhos;			
+		}		
+		else if(tipoTest == eTipoTest.EXAMEN) {
+			MaxNumPreguntas = Test.NumPreguntasTestsExamenes;			
+		}		
+		else {
+			MaxNumPreguntas = Test.NumPreguntas; 
+			//Que son las preguntas de simulacro de tests (combinando bloque A y bloque B)			
+		}
+		
 		ListaPreguntas = new ArrayList<Integer>(MaxNumPreguntas);
 	}
 
