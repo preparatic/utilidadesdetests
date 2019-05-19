@@ -20,6 +20,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.stream.Collectors;
+import java.util.Random;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -291,6 +292,8 @@ public class TestGenerator  {
 			//int totalTestsBloque = (int) Math.ceil(totalPreguntasBloque / num_preguntas_por_test);
 			int totalTestsBloque = divisionCeil(totalPreguntasBloque, num_preguntas_por_test);
 			//mod_AZ 2018_03_11 END
+			
+			Collections.shuffle(filteredList, new Random()); 
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
