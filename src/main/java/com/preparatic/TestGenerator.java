@@ -293,6 +293,7 @@ public class TestGenerator  {
 			int totalTestsBloque = divisionCeil(totalPreguntasBloque, num_preguntas_por_test);
 			//mod_AZ 2018_03_11 END
 			
+			// Mezclamos las preguntas del bloque
 			Collections.shuffle(filteredList, new Random()); 
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
@@ -348,7 +349,10 @@ public class TestGenerator  {
 			int totalPreguntasTema = filteredList.size();
 			//int totalTestsTema = (int) Math.ceil(totalPreguntasTema / num_preguntas_por_test);
 			int totalTestsTema = divisionCeil(totalPreguntasTema, num_preguntas_por_test);
-			//mod_AZ 2018_03_11 END			
+			//mod_AZ 2018_03_11 END
+			
+			// Mezclamos las preguntas del tema
+			Collections.shuffle(filteredList, new Random());
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
@@ -403,6 +407,9 @@ public class TestGenerator  {
 			//int totalTestsAnho =  (int) Math.ceil(totalPreguntasBloque / num_preguntas_por_test);
 			int totalTestsAnho = divisionCeil(totalPreguntasBloque, num_preguntas_por_test);
 			//mod_AZ 2018_03_11 END
+			
+			// Mezclamos las preguntas del anho
+			Collections.shuffle(filteredList, new Random());
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del anho
