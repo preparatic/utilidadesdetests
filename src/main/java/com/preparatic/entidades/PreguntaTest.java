@@ -300,8 +300,19 @@ public class PreguntaTest {
 	public List<Integer> getTemas() {
 		return temas;
 	}
+	/*
+	 * El peso de una pregunta para tests ponderados se calcula como el peso
+	 * del tema dividido entre el nº de preguntas existentes para ese tema.
+	 * El peso aumenta si está vinculada a varios temas
+	 */
 	public double getPeso() {
-		return GestorInfoTema.getInstance().getPesoTemas(temas);
+		double peso = 0;
+		InfoTema infoTema = null;
+		for (int t : temas){
+			infoTema = GestorInfoTema.getInstance().getTema(t);
+			peso += infoTema.getPesoFinal() / infoTema.getNumPreguntas();
+		}
+		return peso;
 	}
 	public String getTemasStr() {
 		String joined = temas.stream().map(Object::toString).collect(Collectors.joining(", "));
@@ -319,7 +330,8 @@ public class PreguntaTest {
 		{
 			try {
 				int tema = Integer.parseInt(t.trim());
-				if (tema < 1 || tema > 125)
+				//if (tema < 1 || tema > 125)
+				if (tema < 1 || tema > 132)
 					logger.warn("Encontrado un tema con valor erroneo: " + temas + " en pregunta " + this.getPregunta());
 				else
 					this.temas.add(tema);

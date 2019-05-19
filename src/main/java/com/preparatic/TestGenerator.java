@@ -70,9 +70,12 @@ public class TestGenerator  {
 			// Obtenemos todas las preguntas del excel/BD
 			GestorPreguntaTest.getInstance().leerPreguntas(ficheroExcel);
 			GestorPreguntaTest.getInstance().reasignaIdentificadores();
-
-			// Para depurar con salidas por pantalla.
+			
+			// Contamos las preguntas por tema
 			List<PreguntaTest> listaPreguntas = GestorPreguntaTest.getInstance().getPreguntas();
+			GestorInfoTema.getInstance().contarPreguntasPorTema(listaPreguntas);
+			
+			// Para depurar con salidas por pantalla.
 			listaPreguntas.forEach(pt -> logger.debug(pt.toString()));
 
 			generarTest(listaPreguntas);
@@ -203,22 +206,43 @@ public class TestGenerator  {
 		}
 	}
 	
+	/*
+	 * Genera tests con X preguntas de temas generales e Y preguntas de temas específicos
+	 * Se hace una ponderación en base a los pesos de los temas, recogidos en el Google Sheet
+	 * 'Bloques, temas y temáticas', en la pestaña de 'Temas'
+	 * El peso de cada pregunta (su probabilidad de aparecer en un test) se calcula en 
+	 * función del peso del tema y del nº de preguntas existentes para ese tema,
+	 * para evitar que temas con más preguntas disponibles aparezcan con más frecuencia
+	 */
 	private static void generarTestPonderados(List<PreguntaTest> listaPreguntas) {
+		
+		List<PreguntaTest> preguntasBA = GestorPreguntaTest.filterBloqueA(listaPreguntas);
+		List<PreguntaTest> preguntasBB = GestorPreguntaTest.filterBloqueB(listaPreguntas);
+		
 		/*
 		 * Distribuimos las preguntas en tantos test como diga la Corrección.
 		 */
 		int inicio_test = 1 + Integer.parseInt(ConfigProperties.getProperty("tests.por_frecuencia_y_fecha"));
 		int numTestPonderados = Integer.parseInt(ConfigProperties.getProperty("tests.ponderados"));
-		RandomCollection<PreguntaTest> randomPreguntas = new RandomCollection<PreguntaTest>();
-		listaPreguntas.forEach(q -> randomPreguntas.add(q.getPeso(), q));
+		
+		RandomCollection<PreguntaTest> randomPreguntasA = new RandomCollection<PreguntaTest>();
+		preguntasBA.forEach(q -> randomPreguntasA.add(q.getPeso(), q));
 
-		for (int i = inicio_test; i <= inicio_test + numTestPonderados; i++) {
+		RandomCollection<PreguntaTest> randomPreguntasB = new RandomCollection<PreguntaTest>();
+		preguntasBB.forEach(q -> randomPreguntasB.add(q.getPeso(), q));
+
+		for (int i = inicio_test; i < inicio_test + numTestPonderados; i++) {
 			Test test = new Test(Test.eTipoTest.RELEVANCIA, "relevancia", i);
-			while (!test.estaCompleto()) {
-				while (!test.asignarIdPregunta(randomPreguntas.next().getNumId()))
+			
+			for (int cnt = 0; cnt < Test.NumPreguntasA; cnt++) {
+				while (!test.asignarIdPregunta(randomPreguntasA.next().getNumId()))
 					;
 			}
-
+			for (int cnt = 0; cnt < Test.NumPreguntasB && !test.estaCompleto(); cnt++) {
+				while (!test.asignarIdPregunta(randomPreguntasB.next().getNumId()))
+					;
+			}
+			
 			// Generamos los pdf y los html de cada test.
 			test.generarDocumentos(listaPreguntas, inicio_test + numTestPonderados);
 			gestorTest.addTest(test);

@@ -17,6 +17,8 @@
 package com.preparatic.entidades;
 
 import java.util.List;
+import java.util.stream.Collectors;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -42,19 +44,48 @@ public class GestorInfoTema {
 	public List<InfoTema> getTemas() {
 		return infoTemas;
 	}
+	
+	public InfoTema getTema(int t) {
+		if (t <= infoTemas.size() && t >= 1) {
+			return infoTemas.get(t-1);
+		} else {
+			return null;
+		}
+	}
 
 	public void leerTemas(IExcel reader) {
 		this.infoTemas = reader.getListaTemas();
 	}
 	
+	public double getPesoTema(int t) {
+		double peso = 0;
+		if (t <= infoTemas.size() && t >= 1)
+			peso += infoTemas.get(t-1).getPesoFinal();
+		else
+			logger.warn("Hay una pregunta con un tema fuera de rango");
+		return peso;
+	}
+	
 	public double getPesoTemas(List<Integer> temas) {
 		double peso = 0;
 		for (int t : temas){
-			if (t <= infoTemas.size() && t >= 1)
-				peso += infoTemas.get(t-1).getPesoFinal();
-			else
-				logger.warn("Hay una pregunta con un tema fuera de rango");
+			peso += this.getPesoTema(t);
 		}
 		return peso;
 	}
+	
+	/*
+	 * Cuenta las preguntas existentes de cada tema en 'listaPreguntas'
+	 * y lo añade como atributo al objeto InfoTema asociado.
+	 * Se utiliza luego en el cálculo de peso de preguntas para tests ponderados
+	 */
+	public void contarPreguntasPorTema(List<PreguntaTest> listaPreguntas) {
+		List<PreguntaTest> filteredList = null;
+		for (InfoTema tema : this.infoTemas) {
+			filteredList = listaPreguntas.stream()
+					.filter(question -> question.getTemas().contains(tema.getNumTema())).collect(Collectors.toList());			
+			tema.setNumPreguntas(filteredList.size());
+		}
+	}
+	
 }

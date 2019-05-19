@@ -71,6 +71,8 @@ public class InfoTema {
 	private float pesoNormalizado;
 	private float pesoFinal;
 	
+	private int numPreguntas;
+	
 	public InfoTema() {
 	}
 
@@ -182,6 +184,14 @@ public class InfoTema {
 
 	public void setPesoFinal(float pesoFinal) {
 		this.pesoFinal = pesoFinal;
+	}
+	
+	public int getNumPreguntas() {
+		return this.numPreguntas;
+	}
+
+	public void setNumPreguntas(int numPreguntas) {
+		this.numPreguntas = numPreguntas;
 	}
 	
 	/*

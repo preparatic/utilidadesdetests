@@ -135,7 +135,7 @@ function hideAnswer(questionNumber) {
 
 function showHideSolutions()
 {
-    var bttn = $('input[name=showhide']);
+    var bttn = $('input[name=showhide]');
     if (bttn.attr('value') == 'Ver') {
         showSolutions();
         bttn.val('Ocultar');
@@ -162,7 +162,7 @@ function correctQuiz(testID) {
     hideAllRevealOptions();
     clearVariables();
 
-    $('input[name=showhide']).attr('disabled', true);
+    $('input[name=showhide]').attr('disabled', true);
 
     for (var i = 0; i < questions.length; i++) {
         correctQuestion(i);
