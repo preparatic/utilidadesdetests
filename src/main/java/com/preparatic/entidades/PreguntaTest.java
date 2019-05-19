@@ -23,6 +23,8 @@ import org.apache.commons.lang3.StringEscapeUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.preparatic.ConfigProperties;
+
 public class PreguntaTest {
 	private static Logger logger = LogManager.getLogger(PreguntaTest.class);
 
@@ -330,8 +332,7 @@ public class PreguntaTest {
 		{
 			try {
 				int tema = Integer.parseInt(t.trim());
-				//if (tema < 1 || tema > 125)
-				if (tema < 1 || tema > 132)
+				if (tema < 1 || tema > Integer.parseInt(ConfigProperties.getProperty("tests.tema")))
 					logger.warn("Encontrado un tema con valor erroneo: " + temas + " en pregunta " + this.getPregunta());
 				else
 					this.temas.add(tema);
