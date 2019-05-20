@@ -283,7 +283,7 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 		// Entrada para los temas
 		GestorInfoTema gt =   GestorInfoTema.getInstance();
 		InfoTema t = gt.getTemas().get(0);
-		f = new FachadaArchivos(eTipoTest.TEMA, t.getNumTemaStr());
+		f = new FachadaArchivos(eTipoTest.TEMA, "T" + t.getNumTemaStr());
 		String filenameT = f.getNombreArchivosTest();
 		if (filenameT != null)
 			escribirAddElement(salida, "list", "pages/" + filenameT, "Test por temas",
