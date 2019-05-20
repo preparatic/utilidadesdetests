@@ -18,6 +18,8 @@
 
 - Añadido test oficial de TIC A1 de 2017.
 
+- Se ha cambiado a 130 el número de preguntas en los tests por temas, por bloques y por años, siguiendo las características del examen oficial.
+
 *** 
 
 # utilidadesdetests
