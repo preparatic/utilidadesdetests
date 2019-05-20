@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tests Preparatic XXIV | $titulo$ </title>
+    <title>Tests Preparatic XXVI | $titulo$ </title>
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -92,7 +92,7 @@
                             <li class="">
                                 <!--<div class="container-fluid">-->
                                 <a class="navbar-brand" href="#">
-                                    <img alt="Preparatic XXIV" src="../images/logo-alpha.png">
+                                    <img alt="Preparatic XXVI" src="../images/logo-alpha.png">
                                 </a>
 
                                 <h2>
@@ -275,7 +275,7 @@
             <footer>
                 <p>Si tienes dudas o crees que alguna pregunta requiere corrección, accede al <a href="http://www.preparatic.org/foro/viewforum.php?f=216">foro de preparatic </a></p>
                 <div class="pull-right">
-                    Copyright &copy; 2017-2018 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
+                    Copyright &copy; 2019 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
                 </div>
                 <div class="clearfix"></div>
             </footer>
