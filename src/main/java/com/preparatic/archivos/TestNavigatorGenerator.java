@@ -64,7 +64,7 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 		GestorInfoTema g = GestorInfoTema.getInstance();
 
 		for (InfoTema t : g.getTemas()) {
-			escribirNavigationAddOption(salida, "box", "" + t.getNumTema(),
+			escribirNavigationAddOption(salida, "box", "" + t.getNumTemaStr(),
 					t.getTituloCorto());
 		}
 
@@ -225,7 +225,7 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 		// Entrada para los temas
 		GestorInfoTema gt =   GestorInfoTema.getInstance();
 		InfoTema t = gt.getTemas().get(0);
-		f = new FachadaArchivos(eTipoTest.TEMA, "T" + t.getNumTema());
+		f = new FachadaArchivos(eTipoTest.TEMA, "T" + t.getNumTemaStr());
 		String filenameT = f.getNombreArchivosTest();
 		if (filenameT != null)
 			escribirAddElement(salida, "list", filenameT, "Test por temas", "tipoTest=='" + Test.eTipoTest.TEMA + "' ");
@@ -283,7 +283,7 @@ public class TestNavigatorGenerator extends HtmlGenerator {
 		// Entrada para los temas
 		GestorInfoTema gt =   GestorInfoTema.getInstance();
 		InfoTema t = gt.getTemas().get(0);
-		f = new FachadaArchivos(eTipoTest.TEMA, "T" + t.getNumTema());
+		f = new FachadaArchivos(eTipoTest.TEMA, t.getNumTemaStr());
 		String filenameT = f.getNombreArchivosTest();
 		if (filenameT != null)
 			escribirAddElement(salida, "list", "pages/" + filenameT, "Test por temas",

@@ -358,7 +358,7 @@ public class TestGenerator  {
 			// Repartimos las preguntas entre los test del bloque.
 			for (int i = 1; i <= totalTestsTema; i++) {
 				Test test = new Test(Test.eTipoTest.TEMA, "T"
-						+  tema.getNumTema()  /* + ". " + bloque.getTitulo() */, i);
+						+  tema.getNumTemaStr()  /* + ". " + bloque.getTitulo() */, i);
 				while ((!test.estaCompleto()) && (iterator.hasNext())) {
 					PreguntaTest t = iterator.next();
 					try {

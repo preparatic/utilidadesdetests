@@ -62,6 +62,7 @@ public class InfoTema {
 	public static final int NUM_COLUMNAS = 	Campo.NUM_COLUMNAS.index;
 	
 	private int numTema;
+	private String numTemaStr;
 	private String bloqueId;
 	private String tituloCorto;
 	private String tituloLargo;
@@ -84,6 +85,7 @@ public class InfoTema {
 	public InfoTema(int numTema, String nombreBloque, String tituloCorto, String tituloLargo) {
 		super();
 		this.numTema = numTema;
+		this.numTemaStr = String.format("%03d", this.numTema);
 		this.bloqueId = nombreBloque;
 		this.tituloCorto = tituloCorto;
 		this.tituloLargo = tituloLargo;
@@ -91,6 +93,7 @@ public class InfoTema {
 	
 	public InfoTema(ArrayList<String> celdas) {
 		this.setNumTema(Integer.parseInt(celdas.get(Campo.NUMERO.index)));
+		this.setNumTemaStr(Integer.parseInt(celdas.get(Campo.NUMERO.index)));
 		this.setBloqueID(celdas.get(Campo.BLOQUEID.index));
 		this.setTituloCorto(celdas.get(Campo.TITULOCORTO.index));
 		this.setTituloLargo(celdas.get(Campo.TITULOLARGO.index));
@@ -117,6 +120,21 @@ public class InfoTema {
 		this.numTema = numTema;
 	}
 
+	/**
+	 * @return the numTema
+	 */
+	public String getNumTemaStr() {
+		return numTemaStr;
+	}
+
+	/**
+	 * @param numTema
+	 *            the numTema to set
+	 */
+	public void setNumTemaStr(int numTema) {
+		this.numTemaStr = String.format("%03d", numTema);
+	}
+	
 	/**
 	 * @return the BloqueID
 	 */
