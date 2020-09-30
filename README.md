@@ -1,3 +1,20 @@
+# Novedades PreparaTIC 27
+
+- Revisión del funcionamiento de los tests. La ponderación tiene en cuenta la frecuencia actualizada de aparición de preguntas en los exámenes oficiales en años previos, dando mayor importancia a las convocatorias recientes.
+- Reagrupación de preguntas de test por examen, cuerpo y año.
+- Se ha realizado una profunda revisión de todas las preguntas, quedando de forma resumida:
+	- Nuevas: 1.733
+	- Corregidas: 915
+	- Revisadas: 9.624
+	- Eliminadas: 690
+- Añadido además del test oficial de TIC A1 de la convocatoria 2018 (y el extraordinario):
+    - Examen TIC A1 2016
+    - Examen de Facultativos Superiores especialidad Tecnología de la Información para el Gobierno de Canarias (OEP 2018)
+    - Examen Técnico/a Superior de Informática del Ayuntamiento de Albacete (OEP 2016)
+    - Examen Cuerpo de Sistemas y Tecnologías de la Información de la Xunta de Galicia (OEP 2018, acceso libre)
+    - Examen Cuerpo de Sistemas y Tecnologías de la Información de la Xunta de Galicia (OEP 2018, promoción interna)
+    - Examen Ingenieros de Aplicaciones y Sistemas de Instituciones Sanitarias de la Conselleria de Sanidad de la Generalitat Valenciana (OEP 2016, acceso libre)
+
 # Novedades PreparaTIC 26
 
 - Adaptación de los temas al temario de la nueva convocatoria y redistribución de las preguntas de forma acorde.

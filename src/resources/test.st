@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tests Preparatic XXVI | $titulo$ </title>
+    <title>Tests Preparatic XXVII | $titulo$ </title>
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -92,7 +92,7 @@
                             <li class="">
                                 <!--<div class="container-fluid">-->
                                 <a class="navbar-brand" href="#">
-                                    <img alt="Preparatic XXVI" src="../images/logo-alpha.png">
+                                    <img alt="Preparatic XXVII" src="../images/logo-alpha.png">
                                 </a>
 
                                 <h2>
@@ -128,13 +128,20 @@
                         	<div>
                         	
                         	<p>
-                        	Si detecta algún error las preguntas de test, por favor
+                        	Si detecta algún error en las preguntas de test, por favor
                         	haga click <a href="$test_foro_link$" target="_blank"><u>aquí</u></a>
                         	y publique un mensaje en este foro indicando:<br> 
                         	(i) el texto completo de la pregunta y de las respuestas,<br>
                         	(ii) el motivo por el que cree que puede existir un error.<br>
                         	</p> 
-                        	
+                        	<p>
+                            Acciones de los botones de correción:<br> 
+                            <ul>
+                            <li>VER/OCULTAR: Muestra/oculta la respuesta de TODAS las preguntas del test SIN guardar los resultados.<br>
+                            </li><li>CORREGIR: Muestra la respuesta de TODAS las preguntas del test, GUARDA los resultados y deshabilita las opciones.<br>
+                            </li><li>RESET: Recarga el test eliminando cualquier respuesta seleccionada.<br>
+                            </li></ul>
+                            </p>
                         	</div>                        	
 						</div>                    
 					</div>
@@ -247,9 +254,9 @@
             <!-- /page content -->
             <!-- footer content -->
             <footer>
-                <p>Si tienes dudas o crees que alguna pregunta requiere corrección, accede al <a href="http://www.preparatic.org/foro/viewforum.php?f=216">foro de preparatic </a></p>
+                <p>Si tienes dudas o crees que alguna pregunta requiere corrección, accede al <a href="$test_foro_link$">foro de preparatic </a></p>
                 <div class="pull-right">
-                    Copyright &copy; 2019 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
+                    Copyright &copy; 2020 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
                 </div>
                 <div class="clearfix"></div>
             </footer>

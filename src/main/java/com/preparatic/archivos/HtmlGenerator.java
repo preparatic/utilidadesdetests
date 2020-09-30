@@ -505,8 +505,9 @@ public class HtmlGenerator {
 //				debug = 1;
 
 			// Question
+			//CAmbios Prprp 27
 			s = " questions[" + idCuestion + "]= \"" + (idCuestion + 1) + ")  "
-					+ campoAHtml(pregunta, Campo.PREGUNTA) + "\";";
+					+ campoAHtml(pregunta, Campo.PREGUNTA) + "<br/>\";";
 			salida.println(s);
 
 			// Choices
@@ -616,8 +617,11 @@ public class HtmlGenerator {
 			if (s == null)
 				return "";
 			s = s.replaceAll("\r", "");
-			s = s.replaceAll("\n", "");
+			//Cambios prep27
+			s = s.replace("\\", "\\\\");
 			s = StringEscapeUtils.escapeHtml4(s);
+			s = s.replaceAll("\n", "<br/>");
+
 		} catch (Exception e) {
 			logger.error("texto A HTML " + e.getMessage());
 			logger.error(s);
