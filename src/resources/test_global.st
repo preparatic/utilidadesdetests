@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tests Preparatic XXVII | $titulo$ </title>
+    <title>Tests Preparatic XXVIII | $titulo$ </title>
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -92,7 +92,7 @@
                             <li class="">
                                 <!--<div class="container-fluid">-->
                                 <a class="navbar-brand" href="#">
-                                    <img alt="Preparatic XXVII" src="../images/logo-alpha.png">
+                                    <img alt="Preparatic XXVIII" src="../images/logo-alpha.png">
                                 </a>
 
                                 <h2>
@@ -128,12 +128,12 @@
                         	<div>
                         	
                         	<p>
-                        	Si detecta algún error en las preguntas de test, por favor
-                        	haga click <a href="$test_foro_link$" target="_blank"><u>aquí</u></a>
-                        	y publique un mensaje en este foro indicando:<br> 
+                        	Si se detectara algún error en la aplicación o en las preguntas de test, se podrá remitir correo
+                            a la cuenta del <a href="mailto:$test_foro_link$" target="_blank"><u>Grupo de Tests</u></a>
+                        	indicando en todo caso:<br> 
                         	(i) el texto completo de la pregunta y de las respuestas,<br>
-                        	(ii) el motivo por el que cree que puede existir un error.<br>
-                        	</p> 
+                        	(ii) el motivo por el que se cree que puede existir un error.<br>
+                        	</p>
                         	<p>
                             Acciones de los botones de correción:<br> 
                          <ul>
@@ -280,9 +280,9 @@
             <!-- /page content -->
             <!-- footer content -->
             <footer>
-                <p>Si tienes dudas o crees que alguna pregunta requiere corrección, accede al <a href="$test_foro_link$">foro de preparatic </a></p>
+                <p>Si tienes dudas o crees que alguna pregunta requiere corrección, envía un correo a la cuenta del <a href="$test_foro_link$">Grupo de Tests</a></p>
                 <div class="pull-right">
-                    Copyright &copy; 2020 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
+                    Copyright &copy; 2022 by Preparatic. All rights reserved. Plantilla de Bootstrap Gentelella - <a href="https://colorlib.com">Colorlib</a>
                 </div>
                 <div class="clearfix"></div>
             </footer>

@@ -22,7 +22,7 @@ con enlaces a los test que se han generado.
 
 
 
-const DB_NAME = 'preparatic27-tests-db';
+const DB_NAME = 'preparatic28-tests-db';
 const DB_VERSION = 1; // Use a long long for this value (don't use a float)
 const DB_STORE_NAME = 'testsrealizados';
 
