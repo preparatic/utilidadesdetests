@@ -70,7 +70,7 @@ public class TestGenerator  {
 
 			// Obtenemos todas las preguntas del excel/BD
 			GestorPreguntaTest.getInstance().leerPreguntas(ficheroExcel);
-			GestorPreguntaTest.getInstance().reasignaIdentificadores();
+			//GestorPreguntaTest.getInstance().reasignaIdentificadores();
 			
 			// Contamos las preguntas por tema
 			List<PreguntaTest> listaPreguntas = GestorPreguntaTest.getInstance().getPreguntas();
