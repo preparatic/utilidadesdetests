@@ -1,21 +1,14 @@
 package com.preparatic.utils;
 
 import java.util.NavigableMap;
-import java.util.Random;
 import java.util.TreeMap;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomCollection<E> {
 	private final NavigableMap<Double, E> map = new TreeMap<Double, E>();
-	private final Random random;
 	private double total = 0;
 
-	public RandomCollection() {
-		this(new Random());
-	}
-
-	public RandomCollection(Random random) {
-		this.random = random;
-	}
+	public RandomCollection() {	}
 
 	public void add(double weight, E result) {
 		if (weight <= 0)
@@ -25,8 +18,7 @@ public class RandomCollection<E> {
 	}
 
 	public E next() {
-		double value = random.nextDouble() * total;
+		double value =  ThreadLocalRandom.current().nextDouble() * total;
 		return map.ceilingEntry(value).getValue();
 	}
 }
-

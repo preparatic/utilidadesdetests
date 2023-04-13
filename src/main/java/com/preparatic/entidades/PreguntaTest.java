@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringEscapeUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -31,25 +32,25 @@ public class PreguntaTest {
 	// Si cambia el orden o la cantidad de columnas del excel, solo habrá que
 	// modificar este atributo.
 	public enum Campo {
-		PREGUNTA(0),  // A
-		//BLANCO(1), // Columna en blanco
+		PREGUNTA(0), // A
+		// BLANCO(1), // Columna en blanco
 		RESPUESTA_A(1), // B
 		RESPUESTA_B(2), // C
 		RESPUESTA_C(3), // D
-		RESPUESTA_D(4), //E
-		RESPUESTA_CORRECTA(5), // F 
+		RESPUESTA_D(4), // E
+		RESPUESTA_CORRECTA(5), // F
 		BLOQUE(6), // G
 		AUTOR(7), // H
-		PROMOCION(8),  // I
+		PROMOCION(8), // I
 		ANNO_CREACION(9), // J
 		OBSERVACIONES(10), // K
 		NUMERO_TEST(11), // L
 		NUMERO_PREGUNTA(12), // M
-		ID(13),  // N
-		TEMAS(14),  // O
-		REVISADA(15),  // P
-		ESTADO(16),  // Q
-		REVISOR(17),  // R
+		ID(13), // N
+		TEMAS(14), // O
+		REVISADA(15), // P
+		ESTADO(16), // Q
+		REVISOR(17), // R
 		SENTENCIA(18), // S
 		NOTAS(19), // T
 		EXAMEN(20), // U
@@ -62,8 +63,9 @@ public class PreguntaTest {
 			index = indice;
 		}
 	};
-	public static final int NUM_COLUMNAS = 	Campo.NUM_COLUMNAS.index;
-	
+
+	public static final int NUM_COLUMNAS = Campo.NUM_COLUMNAS.index;
+
 	private Campo campo;
 
 	private String pregunta;
@@ -81,25 +83,25 @@ public class PreguntaTest {
 	private String numeroTest;
 	private String numeroPregunta;
 	private String id;
-	private List<Integer>  temas = new ArrayList<Integer>();
+	private List<Integer> temas = new ArrayList<Integer>();
 	private String revisada;
 	private String estado;
 	private String revisor;
 	private String sentencia;
 	private String notas;
 	private String examen;
-	
+
 	public PreguntaTest() {
 	}
 
-	public PreguntaTest(ArrayList<String> celdas) {
+	public PreguntaTest(List<String> celdas) {
 		this.setPregunta(celdas.get(Campo.PREGUNTA.index));
 		this.setRespuesta_a(celdas.get(Campo.RESPUESTA_A.index));
 		this.setRespuesta_b(celdas.get(Campo.RESPUESTA_B.index));
 		this.setRespuesta_c(celdas.get(Campo.RESPUESTA_C.index));
 		this.setRespuesta_d(celdas.get(Campo.RESPUESTA_D.index));
 		this.setRespuesta_correcta(celdas.get(Campo.RESPUESTA_CORRECTA.index));
-		//this.setBloque(celdas.get(Campo.BLOQUE.index));
+		// this.setBloque(celdas.get(Campo.BLOQUE.index));
 		this.setAutor(celdas.get(Campo.AUTOR.index));
 		this.setPromocion(celdas.get(Campo.PROMOCION.index));
 		this.setAnno_creacion(celdas.get(Campo.ANNO_CREACION.index));
@@ -114,7 +116,7 @@ public class PreguntaTest {
 		this.setSentencia(celdas.get(Campo.SENTENCIA.index));
 		this.setNotas(celdas.get(Campo.NOTAS.index));
 		this.setExamen(celdas.get(Campo.EXAMEN.index));
-		
+
 		// this should be the last thing to do.
 		this.setTemas(celdas.get(Campo.TEMAS.index));
 	}
@@ -146,7 +148,6 @@ public class PreguntaTest {
 		cadena = cadena + "Examen: " + this.examen + "%n";
 		return cadena;
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -212,18 +213,18 @@ public class PreguntaTest {
 	public List<String> getBloques() {
 		return bloques;
 	}
-	
+
 	public String getBloquesStr() {
 		String joined = String.join(", ", bloques);
 		return joined;
 	}
+
 	public String getBloquesStrWithQuotes() {
 		String joined = bloques.stream().map((s) -> "'" + s + "'").collect(Collectors.joining(", "));
 		return joined;
 	}
-	
-	public void calculaBloques(List<InfoBloque> listaBloques)
-	{
+
+	public void calculaBloques(List<InfoBloque> listaBloques) {
 		for (Integer t : this.temas) {
 			for (InfoBloque b : listaBloques) {
 				if (t >= b.getMinPregunta() && t <= b.getMaxPregunta() && !this.bloques.contains(b.getNombreBloque())) {
@@ -233,9 +234,8 @@ public class PreguntaTest {
 			}
 		}
 	}
-	
-	
-	public void setBloques( List<String> bloques) {
+
+	public void setBloques(List<String> bloques) {
 		this.bloques = bloques;
 	}
 
@@ -290,11 +290,11 @@ public class PreguntaTest {
 	public String getId() {
 		return id;
 	}
+
 	public int getNumId() {
-		if(id == null || id.trim().isEmpty())
-			return -1;
-		return Integer.parseInt(id);
+		return StringUtils.isEmpty(id) ? -1 : Integer.parseInt(id);
 	}
+
 	public void setId(String id) {
 		this.id = id.trim();
 	}
@@ -302,6 +302,7 @@ public class PreguntaTest {
 	public List<Integer> getTemas() {
 		return temas;
 	}
+
 	/*
 	 * El peso de una pregunta para tests ponderados se calcula como el peso
 	 * del tema dividido entre el nº de preguntas existentes para ese tema.
@@ -310,34 +311,37 @@ public class PreguntaTest {
 	public double getPeso() {
 		double peso = 0;
 		InfoTema infoTema = null;
-		for (int t : temas){
+		for (int t : temas) {
 			infoTema = GestorInfoTema.getInstance().getTema(t);
 			peso += infoTema.getPesoFinal() / infoTema.getNumPreguntas();
 		}
 		return peso;
 	}
+
 	public String getTemasStr() {
 		String joined = temas.stream().map(Object::toString).collect(Collectors.joining(", "));
 		return joined;
 	}
+
 	public String getTemasStrWithQuotes() {
 		String joined = temas.stream().map((s) -> "'" + s + "'").collect(Collectors.joining(", "));
 		return joined;
 	}
+
 	public void setTemas(String temas) {
 		if (this.getSentencia().equalsIgnoreCase("delete"))
 			return;
 		String[] temasArr = temas.trim().split("[.,y]");
-		for(String t : temasArr)
-		{
+		for (String t : temasArr) {
 			try {
 				int tema = Integer.parseInt(t.trim());
 				if (tema < 1 || tema > Integer.parseInt(ConfigProperties.getProperty("tests.tema")))
-					logger.warn("Encontrado un tema con valor erroneo: " + temas + " en pregunta " + this.getPregunta());
+					logger.warn(
+							"Encontrado un tema con valor erroneo: " + temas + " en pregunta " + this.getPregunta());
 				else
 					this.temas.add(tema);
 			} catch (Exception e) {
-					logger.warn("Error al procesar temas " + temas + " en pregunta " + this.getPregunta());
+				logger.warn("Error al procesar temas " + temas + " en pregunta " + this.getPregunta());
 			}
 		}
 	}
@@ -374,7 +378,6 @@ public class PreguntaTest {
 		this.sentencia = sentencia.trim();
 	}
 
-
 	public String getNotas() {
 		return notas;
 	}
@@ -389,20 +392,20 @@ public class PreguntaTest {
 	public String getExamen() {
 		return examen;
 	}
+
 	public String getExamenHtml() {
 		return StringEscapeUtils.escapeHtml4(examen);
 	}
-	
+
 	/**
 	 * @param examen the examen to set
 	 */
 	public void setExamen(String examen) {
 		this.examen = examen.trim();
 	}
-	
+
 	public String getString(Campo campo) {
-		switch (campo)
-		{
+		switch (campo) {
 			case PREGUNTA:
 				return this.getPregunta();
 			case RESPUESTA_A:

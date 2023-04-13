@@ -28,7 +28,7 @@
     <Logger name="filelogger" level="debug">
       <AppenderRef ref="LogFile"/>
     </Logger>
-    <Root level="debug">
+    <Root level="info">
       <AppenderRef ref="LogFile"/>
       <AppenderRef ref="STDOUT"/>
     </Root>

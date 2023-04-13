@@ -19,8 +19,9 @@ import java.sql.SQLException;
 import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.stream.Collectors;
+import java.util.Map;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -75,11 +76,9 @@ public class TestGenerator  {
 			// Contamos las preguntas por tema
 			List<PreguntaTest> listaPreguntas = GestorPreguntaTest.getInstance().getPreguntas();
 			GestorInfoTema.getInstance().contarPreguntasPorTema(listaPreguntas);
-			
-			// Para depurar con salidas por pantalla.
-			listaPreguntas.forEach(pt -> logger.debug(pt.toString()));
 
-			generarTest(listaPreguntas);
+			Map<Integer, PreguntaTest> preguntas = listaPreguntas.stream().collect(Collectors.toMap(PreguntaTest::getNumId, p -> p));
+			generarTest(preguntas);
 
 		} catch (SQLException e) {
 			logger.error(e.getMessage());
@@ -91,50 +90,21 @@ public class TestGenerator  {
 	/**
 	 * Se generan tanto los tests globales, como los test por bloques.
 	 */
-	private static void generarTest(List<PreguntaTest> listaPreguntas) {
-		// Esta funcion genera un test llamado 0000 que tiene todas las preguntas
-		// solo lo uso para comprobaciones. Con todas las preguntas se convierte 
-		// en algo inviable
-		//generarTodosLosTest(listaPreguntas);
+	private static void generarTest(Map<Integer, PreguntaTest> preguntas) {		
 
-		generarTestExamenes(listaPreguntas);
-		
-		generarTestPonderados(listaPreguntas);
-		
-		generarTestAleatorios(listaPreguntas);
+		generarTestExamenes(preguntas);		
+		generarTestPonderados(preguntas);		
+		generarTestAleatorios(preguntas);
 
-		generarTestBloques(listaPreguntas);
-		generarTestTemas(listaPreguntas);
-		generarTestAnhos(listaPreguntas);
+		generarTestBloques(preguntas);
+		generarTestTemas(preguntas);
+		generarTestAnhos(preguntas);
 		
 		HtmlGenerator.generarMetaInfoV2();
 		TestNavigatorGenerator.generarTestNavigation();
 	}
 
-	/**
-	 * Genera un test con todas las preguntas disponibles
-	 * 
-	 * @param listaPreguntas
-	 */
-	private static void generarTodosLosTest(List<PreguntaTest> listaPreguntas) {
-
-		/*
-		 * Generamos un test con todas las preguntas disponibles.
-		 */
-		Test testcompleto = new Test(0, listaPreguntas.size());
-		for (PreguntaTest t : listaPreguntas) {
-			try {
-				int id = t.getNumId();
-				testcompleto.asignarIdPregunta(id);
-			} catch (Exception ex) {
-				logger.error("Error procesing id of question " + t);
-			}
-		}
-		
-		// Generamos los pdf y los html de cada test.
-		testcompleto.generarDocumentos(listaPreguntas, listaPreguntas.size());
-		gestorTest.addTest(testcompleto);
-	}
+	
 
 	/**
 	 * Distribuye las preguntas en tantos Test como haga falta.
@@ -142,7 +112,9 @@ public class TestGenerator  {
 	 * @param listaPreguntas
 	 */
 
-	private static void generarTestAleatorios(List<PreguntaTest> listaPreguntas) {
+	private static void generarTestAleatorios(Map<Integer, PreguntaTest> preguntas) {
+
+		List<PreguntaTest> listaPreguntas = preguntas.values().stream().collect(Collectors.toList());
 
 		List<PreguntaTest> preguntasBA = GestorPreguntaTest.filterBloqueA(listaPreguntas);
 		List<PreguntaTest> preguntasBB = GestorPreguntaTest.filterBloqueB(listaPreguntas);
@@ -202,7 +174,7 @@ public class TestGenerator  {
 			}
 			
 			// Generamos los pdf y los html de cada test.
-			test.generarDocumentos(listaPreguntas, inicio_test + numTestAleatorios);
+			test.generarDocumentos(preguntas, inicio_test + numTestAleatorios);
 			gestorTest.addTest(test);
 		}
 	}
@@ -215,7 +187,9 @@ public class TestGenerator  {
 	 * función del peso del tema y del nº de preguntas existentes para ese tema,
 	 * para evitar que temas con más preguntas disponibles aparezcan con más frecuencia
 	 */
-	private static void generarTestPonderados(List<PreguntaTest> listaPreguntas) {
+	private static void generarTestPonderados(Map<Integer, PreguntaTest> preguntas) {
+
+		List<PreguntaTest> listaPreguntas = preguntas.values().stream().collect(Collectors.toList());
 		
 		List<PreguntaTest> preguntasBA = GestorPreguntaTest.filterBloqueA(listaPreguntas);
 		List<PreguntaTest> preguntasBB = GestorPreguntaTest.filterBloqueB(listaPreguntas);
@@ -245,7 +219,7 @@ public class TestGenerator  {
 			}
 			
 			// Generamos los pdf y los html de cada test.
-			test.generarDocumentos(listaPreguntas, inicio_test + numTestPonderados);
+			test.generarDocumentos(preguntas, inicio_test + numTestPonderados);
 			gestorTest.addTest(test);
 		}
 	}
@@ -263,7 +237,7 @@ public class TestGenerator  {
 		//output = (a + b - 1) / b;
 		//output = (int) Math.ceil((float) a / (float) b);
 		output = (int) Math.ceil((double) a / b);
-		logger.info("divisionCeil(int a=" + a + ", int b=" + b + ") => " + output);
+		logger.debug("divisionCeil(int a=" + a + ", int b=" + b + ") => " + output);
 		return output;
 	}
 		
@@ -273,7 +247,7 @@ public class TestGenerator  {
 	 * @param numBloque
 	 * @param numTest
 	 */
-	private static void generarTestBloques(List<PreguntaTest> listaPreguntas) {
+	private static void generarTestBloques(Map<Integer, PreguntaTest> preguntas) {
 		//float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
 		int num_preguntas_por_test = Integer.parseInt(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
 
@@ -282,8 +256,9 @@ public class TestGenerator  {
 		 * preguntas.
 		 */
 		List<InfoBloque> listaBloques = GestorInfoBloque.getInstance().getBloques();
+
 		for (InfoBloque bloque : listaBloques) {
-			List<PreguntaTest> filteredList = listaPreguntas.stream()
+			List<PreguntaTest> filteredList = preguntas.values().stream()
 					.filter(question -> question.getBloques().contains(bloque.getNombreBloque()))
 					.collect(Collectors.toList());
 			//mod_AZ 2018_03_11 START
@@ -315,13 +290,12 @@ public class TestGenerator  {
 	            //if (test.estaCompleto()) 
 	            //{ 
 					// Generamos los pdf y los html de cada test.
-					test.generarDocumentos(listaPreguntas, totalTestsBloque);
+					test.generarDocumentos(preguntas, totalTestsBloque);
 					gestorTest.addTest(test);
 	            //} 
-	            //mod_AZ 2018_03_11 para que no se generen tests vacíos											
-			}
-
-			logger.info("Generado test bloque " + bloque.getTitulo());
+	            //mod_AZ 2018_03_11 para que no se generen tests vacíos	
+				logger.info("Generado test Bloque {} con {} preguntas",bloque.getTitulo(), test.getTotalPreguntas());										
+			}			
 		}
 		return;
 	}
@@ -332,7 +306,7 @@ public class TestGenerator  {
 	 * @param numBloque
 	 * @param numTest
 	 */
-	private static void generarTestTemas(List<PreguntaTest> listaPreguntas) {
+	private static void generarTestTemas(Map<Integer, PreguntaTest> preguntas) {
 		//int num_preguntas_por_test = (int) Float.parseFloat(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
 		int num_preguntas_por_test = Integer.parseInt(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
 
@@ -342,7 +316,7 @@ public class TestGenerator  {
 		 */
 		List<InfoTema> listaTemas = GestorInfoTema.getInstance().getTemas();
 		for (InfoTema tema : listaTemas) {
-			List<PreguntaTest> filteredList = listaPreguntas.stream()
+			List<PreguntaTest> filteredList = preguntas.values().stream()
 					.filter(question -> question.getTemas().contains(tema.getNumTema())).collect(Collectors.toList());
 			//mod_AZ 2018_03_11 START
 			//float totalPreguntasTema = filteredList.size();			
@@ -372,13 +346,13 @@ public class TestGenerator  {
 				//mod_AZ 2018_03_11 para que no se generen tests vacíos
                 //if (test.estaCompleto()) 
                 //{ 
-    				test.generarDocumentos(listaPreguntas, totalTestsTema);
+    				test.generarDocumentos(preguntas, totalTestsTema);
     				gestorTest.addTest(test);                	
                 //} 
                 //mod_AZ 2018_03_11 para que no se generen tests vacíos
+				logger.info("Generado test {} con {} preguntas",tema.getTituloCorto(), test.getTotalPreguntas());
 			}
 
-			logger.info("Generado test tema " + tema.getTituloCorto());
 		}
 		return;
 	}
@@ -388,7 +362,7 @@ public class TestGenerator  {
 	 * 
 	 */
 
-	private static void generarTestAnhos(List<PreguntaTest> listaPreguntas) {
+	private static void generarTestAnhos(Map<Integer, PreguntaTest> preguntas) {
 		//float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.anhos.num_preguntas_por_test"));
 		int num_preguntas_por_test = Integer.parseInt(ConfigProperties.getProperty("tests.anhos.num_preguntas_por_test"));
 		String[] annos = ConfigProperties.getProperty("tests.anhos").toString().split(",");
@@ -398,7 +372,7 @@ public class TestGenerator  {
 		 * preguntas.
 		 */
 		for (String idAño : annos) {
-			List<PreguntaTest> filteredList = listaPreguntas.stream()
+			List<PreguntaTest> filteredList = preguntas.values().stream()
 					.filter(question -> question.getAnno_creacion().equalsIgnoreCase(idAño.trim()))
 					.collect(Collectors.toList());
 			//mod_AZ 2018_03_11 START
@@ -427,21 +401,20 @@ public class TestGenerator  {
 				
 				//mod_AZ 2018_03_11 para que no se generen tests vacíos
                 //if (test.estaCompleto()) { 
-    				test.generarDocumentos(listaPreguntas, totalTestsAnho);
+    				test.generarDocumentos(preguntas, totalTestsAnho);
     				gestorTest.addTest(test);                	
                 //} 
                 //mod_AZ 2018_03_11 para que no se generen tests vacíos				
+				logger.debug("Generado test Añp {} con {} preguntas", idAño, test.getTotalPreguntas());
 			}
-
-			logger.info("Generado test Anho " + idAño);
 		}
 		return;
 	}
 	
-	private static void generarTestExamenes(List<PreguntaTest> listaPreguntas) {
+	private static void generarTestExamenes(Map<Integer, PreguntaTest> preguntas) {
 		//float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.examenes.num_preguntas_por_test"));
 		// Create a list with the distinct elements using stream.
-		List<String> examenes = listaPreguntas.stream()
+		List<String> examenes = preguntas.values().stream()
 				.filter(p -> !p.getExamen().isEmpty())
 				.map(p -> StringUtils.stripAccents(p.getExamen().toUpperCase()))
 				.distinct()
@@ -452,7 +425,7 @@ public class TestGenerator  {
 		 * preguntas.
 		 */
 		for (String examen : examenes) {
-			List<PreguntaTest> filteredList = listaPreguntas.stream()
+			List<PreguntaTest> filteredList = preguntas.values().stream()
 					.filter(question -> StringUtils.stripAccents(question.getExamen()).equalsIgnoreCase(examen.trim()))
 					.collect(Collectors.toList());
 
@@ -469,9 +442,9 @@ public class TestGenerator  {
 				}
 			}
 			
-			test.generarDocumentos(listaPreguntas, 1);
+			test.generarDocumentos(preguntas, 1);
 			gestorTest.addTest(test);
-			logger.info("Generado test Examen " + examen);
+			logger.info("Generado test Examen {} con {} preguntas", examen, test.getTotalPreguntas());
 		}
 		return;
 	}
