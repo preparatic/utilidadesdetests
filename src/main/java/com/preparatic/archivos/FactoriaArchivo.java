@@ -247,7 +247,7 @@ public class FactoriaArchivo {
 		default:
 			break;
 		}
-		return nombreArchivo.toString().replace(' ', '_');
+		return nombreArchivo.toString().replaceAll("[^a-zA-Z0-9\\.\\-]", "_");
 
 	}
 
@@ -305,7 +305,7 @@ public class FactoriaArchivo {
 		default:
 			break;
 		}
-		return nombreArchivo.toString();
+		return nombreArchivo.toString().replaceAll("[^a-zA-Z0-9\\.\\-]", "_");
 
 	}
 

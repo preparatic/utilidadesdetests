@@ -125,7 +125,8 @@ public class TestGenerator  {
 		int inicio_test = 1 + Integer.parseInt(ConfigProperties.getProperty("tests.por_frecuencia_y_fecha"));
 		int numTestAleatorios = Integer.parseInt(ConfigProperties.getProperty("tests.aleatorios"));
 
-		for (int i = inicio_test; i <= inicio_test + numTestAleatorios; i++) {
+		int contador = 0;
+		for (int i = inicio_test; i < inicio_test + numTestAleatorios; i++) {
 			Test test = new Test(i);
 
 			if (preguntasBA.size() > 0) {
@@ -176,7 +177,11 @@ public class TestGenerator  {
 			// Generamos los pdf y los html de cada test.
 			test.generarDocumentos(preguntas, inicio_test + numTestAleatorios);
 			gestorTest.addTest(test);
-		}
+			
+			logger.debug("Generado test Aleatorio {} con {} preguntas", i, test.getTotalPreguntas());	
+			contador++;								
+		}		
+		logger.info("Generados {} tests Aleatorios", contador);
 	}
 	
 	/*
@@ -206,6 +211,7 @@ public class TestGenerator  {
 		RandomCollection<PreguntaTest> randomPreguntasB = new RandomCollection<PreguntaTest>();
 		preguntasBB.forEach(q -> randomPreguntasB.add(q.getPeso(), q));
 
+		int contador = 0;
 		for (int i = inicio_test; i < inicio_test + numTestPonderados; i++) {
 			Test test = new Test(Test.eTipoTest.RELEVANCIA, "relevancia", i);
 			
@@ -221,7 +227,11 @@ public class TestGenerator  {
 			// Generamos los pdf y los html de cada test.
 			test.generarDocumentos(preguntas, inicio_test + numTestPonderados);
 			gestorTest.addTest(test);
-		}
+			
+			logger.debug("Generado test Ponderado {} con {} preguntas", i, test.getTotalPreguntas());	
+			contador++;								
+		}		
+		logger.info("Generados {} tests Ponderados", contador);
 	}
 
 	/**
@@ -241,12 +251,6 @@ public class TestGenerator  {
 		return output;
 	}
 		
-	/**
-	 * Generamos los test por bloques.
-	 * 
-	 * @param numBloque
-	 * @param numTest
-	 */
 	private static void generarTestBloques(Map<Integer, PreguntaTest> preguntas) {
 		//float num_preguntas_por_test = Float.parseFloat(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
 		int num_preguntas_por_test = Integer.parseInt(ConfigProperties.getProperty("tests.bloques.num_preguntas_por_test"));
@@ -273,7 +277,8 @@ public class TestGenerator  {
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
-			for (int i = 1; i <= totalTestsBloque; i++) {
+			int contador = 0;
+			for (int i = 1; i <= totalTestsBloque; i++) {				
 				Test test = new Test(Test.eTipoTest.BLOQUE, bloque
 						.getNombreBloque() /* + ". " + bloque.getTitulo() */, i);
 				while ((!test.estaCompleto()) && (iterator.hasNext())) {
@@ -282,7 +287,7 @@ public class TestGenerator  {
 						int id = t.getNumId();
 						test.asignarIdPregunta(id);
 					} catch (Exception ex) {
-						logger.error("Error procesing id of question " + t);
+						logger.error("Error procesing id of question " + t);						
 					}
 				}	
 
@@ -290,22 +295,19 @@ public class TestGenerator  {
 	            //if (test.estaCompleto()) 
 	            //{ 
 					// Generamos los pdf y los html de cada test.
-					test.generarDocumentos(preguntas, totalTestsBloque);
-					gestorTest.addTest(test);
+				test.generarDocumentos(preguntas, totalTestsBloque);
+				gestorTest.addTest(test);
+
 	            //} 
 	            //mod_AZ 2018_03_11 para que no se generen tests vacíos	
-				logger.info("Generado test Bloque {} con {} preguntas",bloque.getTitulo(), test.getTotalPreguntas());										
-			}			
+				logger.debug("Generado test Bloque {} con {} preguntas",bloque.getTitulo(), test.getTotalPreguntas());	
+				contador++;								
+			}		
+			logger.info("Generados {} tests del Bloque {}", contador, bloque.getTitulo());	
 		}
 		return;
 	}
-
-	/**
-	 * Generamos los test por temas.
-	 * 
-	 * @param numBloque
-	 * @param numTest
-	 */
+	
 	private static void generarTestTemas(Map<Integer, PreguntaTest> preguntas) {
 		//int num_preguntas_por_test = (int) Float.parseFloat(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
 		int num_preguntas_por_test = Integer.parseInt(ConfigProperties.getProperty("tests.temas.num_preguntas_por_test"));
@@ -330,6 +332,7 @@ public class TestGenerator  {
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del bloque.
+			int contador = 0;
 			for (int i = 1; i <= totalTestsTema; i++) {
 				Test test = new Test(Test.eTipoTest.TEMA, "T"
 						+  tema.getNumTemaStr()  /* + ". " + bloque.getTitulo() */, i);
@@ -350,9 +353,10 @@ public class TestGenerator  {
     				gestorTest.addTest(test);                	
                 //} 
                 //mod_AZ 2018_03_11 para que no se generen tests vacíos
-				logger.info("Generado test {} con {} preguntas",tema.getTituloCorto(), test.getTotalPreguntas());
+				logger.debug("Generado test {} con {} preguntas",tema.getTituloCorto(), test.getTotalPreguntas());
+				contador++;
 			}
-
+			logger.info("Generados {} tests del Tema {}", contador, tema.getTituloCorto());
 		}
 		return;
 	}
@@ -387,6 +391,7 @@ public class TestGenerator  {
 
 			ListIterator<PreguntaTest> iterator = filteredList.listIterator();
 			// Repartimos las preguntas entre los test del anho
+			int contador = 0;
 			for (int i = 1; i <= totalTestsAnho; i++) {
 				Test test = new Test(Test.eTipoTest.AÑO, idAño, i);
 				while ((!test.estaCompleto()) && (iterator.hasNext())) {
@@ -406,7 +411,9 @@ public class TestGenerator  {
                 //} 
                 //mod_AZ 2018_03_11 para que no se generen tests vacíos				
 				logger.debug("Generado test Añp {} con {} preguntas", idAño, test.getTotalPreguntas());
+				contador++;
 			}
+			logger.info("Generados {} tests del Año {}", contador, idAño);
 		}
 		return;
 	}
